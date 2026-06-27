@@ -1,0 +1,16 @@
+{
+  "Responses API": "Responses API",
+  "Agents SDK": "Agents SDK",
+  "Realtime API": "Realtime API",
+  "Apps SDK": "Apps SDK",
+  "Workspace Agents": "Workspace Agents",
+  "structured outputs": "结构化输出",
+  "tool call": "工具调用",
+  "function calling": "函数调用",
+  "vector store": "向量存储",
+  "prompt caching": "提示缓存",
+  "reasoning model": "推理模型",
+  "fine-tuning": "微调",
+  "webhook": "Webhook",
+  "model context protocol": "模型上下文协议"
+}

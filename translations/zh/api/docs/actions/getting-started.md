@@ -1,0 +1,306 @@
+---
+status: needs-review
+sourceId: "c8cfd1e77de7"
+sourceChecksum: "c8cfd1e77de77f18bdb5b2b3e3663c5a1ee41b540e7036ef03b2aeb0a74c80de"
+sourceUrl: "https://developers.openai.com/api/docs/actions/getting-started"
+translatedAt: "2026-06-27T17:44:20.0905341+08:00"
+translator: codex-gpt-5.5-xhigh
+---
+
+# GPT Actions 入门
+
+## Weather.gov 示例
+
+NSW (National Weather Service) 维护一个[公共 API](https://www.weather.gov/documentation/services-web-api)，用户可以查询它以获取任何经纬度点的天气预报。要检索预报，有 2 个步骤：
+
+1. 用户向 api.weather.gov/points API 提供经纬度，并收到 WFO（weather forecast office）、grid-X 和 grid-Y 坐标
+2. 这 3 个元素会传入 api.weather.gov/forecast API，以检索该坐标的天气预报
+
+在本练习中，我们来构建一个 Custom GPT：用户输入城市、地标或经纬度坐标，Custom GPT 回答该地点天气预报相关的问题。
+
+## 步骤 1：编写并测试 Open API schema（使用 Actions GPT）
+
+GPT Action 需要一个 [Open API schema](https://swagger.io/specification/) 来描述 API 调用的参数。Open API schema 是描述 API 的标准。
+
+OpenAI 发布了一个公共 [Actions GPT](https://chatgpt.com/g/g-TYEliDU6A-actionsgpt)，帮助开发者编写这个 schema。例如，前往 Actions GPT 并询问：_“访问 https://www.weather.gov/documentation/services-web-api，阅读该页面上的文档。为 /points/\{latitude},\{longitude} 和 /gridpoints/\{office}/\{gridX},\{gridY}/forecast 这两个 API 调用构建 Open API Schema”_
+
+<img
+  className="images-example-image" src="https://cdn.openai.com/API/images/guides/actions_action_gpt.png"
+  alt="上面的 Actions GPT 请求"
+/>
+
+
+
+下面是 Actions GPT 返回的完整 Open API Schema：
+
+```yaml
+openapi: 3.1.0
+info:
+  title: NWS Weather API
+  description: Access to weather data including forecasts, alerts, and observations.
+  version: 1.0.0
+servers:
+  - url: https://api.weather.gov
+    description: Main API Server
+paths:
+  /points/{latitude},{longitude}:
+    get:
+      operationId: getPointData
+      summary: Get forecast grid endpoints for a specific location
+      parameters:
+        - name: latitude
+          in: path
+          required: true
+          schema:
+            type: number
+            format: float
+          description: Latitude of the point
+        - name: longitude
+          in: path
+          required: true
+          schema:
+            type: number
+            format: float
+          description: Longitude of the point
+      responses:
+        "200":
+          description: Successfully retrieved grid endpoints
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  properties:
+                    type: object
+                    properties:
+                      forecast:
+                        type: string
+                        format: uri
+                      forecastHourly:
+                        type: string
+                        format: uri
+                      forecastGridData:
+                        type: string
+                        format: uri
+
+  /gridpoints/{office}/{gridX},{gridY}/forecast:
+    get:
+      operationId: getGridpointForecast
+      summary: Get forecast for a given grid point
+      parameters:
+        - name: office
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Weather Forecast Office ID
+        - name: gridX
+          in: path
+          required: true
+          schema:
+            type: integer
+          description: X coordinate of the grid
+        - name: gridY
+          in: path
+          required: true
+          schema:
+            type: integer
+          description: Y coordinate of the grid
+      responses:
+        "200":
+          description: Successfully retrieved gridpoint forecast
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  properties:
+                    type: object
+                    properties:
+                      periods:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            number:
+                              type: integer
+                            name:
+                              type: string
+                            startTime:
+                              type: string
+                              format: date-time
+                            endTime:
+                              type: string
+                              format: date-time
+                            temperature:
+                              type: integer
+                            temperatureUnit:
+                              type: string
+                            windSpeed:
+                              type: string
+                            windDirection:
+                              type: string
+                            icon:
+                              type: string
+                              format: uri
+                            shortForecast:
+                              type: string
+                            detailedForecast:
+                              type: string
+```
+
+
+
+ChatGPT 会使用顶部的 **info**（尤其包括 description）来判断该 action 是否与用户查询相关。
+
+```yaml
+info:
+  title: NWS Weather API
+  description: Access to weather data including forecasts, alerts, and observations.
+  version: 1.0.0
+```
+
+然后，下面的 **parameters** 会进一步定义 schema 的每一部分。例如，我们是在告诉 ChatGPT，_office_ 参数指的是 Weather Forecast Office (WFO)。
+
+```yaml
+/gridpoints/{office}/{gridX},{gridY}/forecast:
+  get:
+    operationId: getGridpointForecast
+    summary: Get forecast for a given grid point
+    parameters:
+      - name: office
+        in: path
+        required: true
+        schema:
+          type: string
+        description: Weather Forecast Office ID
+```
+
+**关键：**请特别注意你在这个 Open API schema 中使用的 **schema names** 和 **descriptions**。ChatGPT 会使用这些名称和描述来理解：(a) 应调用哪个 API action，以及 (b) 应使用哪个参数。如果某个字段被限制为只能取某些值，你也可以提供一个带有描述性类别名称的 "enum"。
+
+虽然你可以直接在 GPT Action 中尝试 Open API schema，但直接在 ChatGPT 中调试可能具有挑战性。我们建议使用第三方服务（如 [Postman](https://www.postman.com/)）来测试你的 API 调用是否正常工作。Postman 可免费注册，错误处理信息详尽，并且认证选项全面。它甚至提供直接导入 Open API schemas 的选项（见下文）。
+
+<img
+  className="images-example-image" src="https://cdn.openai.com/API/images/guides/actions_import.png"
+  alt="选择用 Postman 导入你的 API"
+/>
+
+## 步骤 2：确定认证要求
+
+这个 Weather 第三方服务不需要认证，因此对于这个 Custom GPT，你可以跳过该步骤。对于其他确实需要认证的 GPT Actions，有 2 个选项：API Key 或 OAuth。询问 ChatGPT 可以帮助你开始处理大多数常见应用。例如，如果我需要使用 OAuth 对 Google Cloud 进行认证，可以提供一张截图并询问细节：_“我正在通过 OAuth 构建到 Google Cloud 的连接。请说明如何填写这些框中的每一项。”_
+
+<img
+  className="images-example-image" src="https://cdn.openai.com/API/images/guides/actions_oauth_panel.png"
+  alt="上面的 ChatGPT 请求"
+/>
+
+通常，ChatGPT 会对所有 5 个元素给出正确方向。一旦你准备好这些基础内容，就可以尝试在 Postman 或另一个类似服务中测试和调试认证。如果遇到错误，请把错误提供给 ChatGPT，它通常可以帮助你继续调试。
+
+## 步骤 3：创建 GPT Action 并测试
+
+现在该创建你的 Custom GPT 了。如果你以前从未创建过 Custom GPT，请先从我们的 [Creating a GPT guide](https://help.openai.com/en/articles/8554397-creating-a-gpt) 开始。
+
+1. 提供名称、描述和图片来描述你的 Custom GPT
+2. 前往 Action 部分并粘贴你的 Open API schema。编写说明时，请记下 Action 名称和 json 参数。
+3. 添加你的认证设置
+4. 回到主页并添加说明
+
+
+
+成功说明的写法有很多；最重要的是说明能让模型反映用户偏好。
+
+通常有三个部分：
+
+1. _Context_：向模型解释 GPT Action(s) 正在做什么
+2. _Instructions_：说明步骤顺序，也就是引用 Action 名称以及 API 调用需要关注的任何参数的地方
+3. _Additional Notes_：任何需要牢记的事项
+
+下面是 Weather GPT 的说明示例。注意这些说明如何引用 Open API schema 中的 API action 名称和 json 参数。
+
+```
+**Context**: A user needs information related to a weather forecast of a specific location.
+
+**Instructions**:
+1. The user will provide a lat-long point or a general location or landmark (e.g. New York City, the White House). If the user does not provide one, ask for the relevant location
+2. If the user provides a general location or landmark, convert that into a lat-long coordinate. If required, browse the web to look up the lat-long point.
+3. Run the "getPointData" API action and retrieve back the gridId, gridX, and gridY parameters.
+4. Apply those variables as the office, gridX, and gridY variables in the "getGridpointForecast" API action to retrieve back a forecast
+5. Use that forecast to answer the user's question
+
+**Additional Notes**:
+- Assume the user uses US weather units (e.g. Fahrenheit) unless otherwise specified
+- If the user says "Let's get started" or "What do I do?", explain the purpose of this Custom GPT
+```
+
+
+
+### 测试 GPT Action
+
+在每个 action 旁边，你会看到一个 **Test** 按钮。点击每个 action 的该按钮。在测试中，你可以看到每个 API 调用的详细输入和输出。
+
+<img
+  className="images-example-image" src="https://cdn.openai.com/API/images/guides/actions_available_action.png"
+  alt="可用 actions"
+/>
+
+如果你的 API 调用在 Postman 这样的第三方工具中正常工作，但在 ChatGPT 中不正常，可能有几个原因：
+
+- ChatGPT 中的参数错误或缺失
+- ChatGPT 中存在认证问题
+- 你的说明不完整或不清晰
+- Open API schema 中的描述不清楚
+
+<img
+  className="images-example-image" src="https://cdn.openai.com/API/images/guides/actions_test_action.png"
+  alt="测试天气 API 调用时的预览响应"
+/>
+
+## 步骤 4：在第三方应用中设置 callback URL
+
+如果你的 GPT Action 使用 OAuth Authentication，你需要在第三方应用中设置 callback URL。一旦你使用 OAuth 设置 GPT Action，ChatGPT 会向你提供一个 callback URL（每次更新某个 OAuth 参数时，该 URL 都会更新）。复制该 callback URL，并将其添加到你的应用中的相应位置。
+
+<img
+  className="images-example-image" src="https://cdn.openai.com/API/images/guides/actions_bq_callback.png"
+  alt="设置 callback URL"
+/>
+
+## 步骤 5：评估 Custom GPT
+
+即使你已经在上一步测试了 GPT Action，你仍然需要评估 Instructions 和 GPT Action 是否以用户期望的方式运行。尝试想出至少 5-10 个有代表性的问题（越多越好），作为要询问 Custom GPT 的 **“evaluation set”**。
+
+**关键：**测试 Custom GPT 是否按你的预期处理每一个问题。
+
+示例问题：_“这个周末去 White House 旅行我应该带什么？”_ 它会测试 Custom GPT 的能力：(1) 将地标转换为经纬度，(2) 运行两个 GPT Actions，以及 (3) 回答用户的问题。
+
+<img
+  className="images-example-image" src="https://cdn.openai.com/API/images/guides/actions_prompt_2_actions.png"
+  alt="对上面 ChatGPT 请求的响应，其中包含天气数据"
+/>
+<img
+  className="images-example-image" src="https://cdn.openai.com/API/images/guides/actions_output.png"
+  alt="上述响应的后续内容"
+/>
+
+## 常见调试步骤
+
+_挑战：_ GPT Action 正在调用错误的 API 调用（或根本没有调用）
+
+- _解决方案：_ 确保 Actions 的描述清楚，并在你的 Custom GPT Instructions 中引用 Action 名称
+
+_挑战：_ GPT Action 调用了正确的 API 调用，但没有正确使用参数
+
+- _解决方案：_ 添加或修改 GPT Action 中参数的描述
+
+_挑战：_ Custom GPT 无法工作，但我没有得到清晰错误
+
+- _解决方案：_ 确保测试 Action；测试窗口中有更健壮的日志。如果仍然不清楚，请使用 Postman 或另一个第三方服务进行更好的诊断。
+
+_挑战：_ Custom GPT 给出认证错误
+
+- _解决方案：_ 确保你的 callback URL 已正确设置。尝试在 Postman 或另一个第三方服务中测试完全相同的认证设置
+
+_挑战：_ Custom GPT 无法处理更困难或更模糊的问题
+
+- _解决方案：_ 尝试对 Custom GPT 中的说明进行 prompt engineering。参见我们的 [prompt engineering guide](https://developers.openai.com/api/docs/guides/prompt-engineering) 中的示例
+
+这就是构建 Custom GPT 指南的全部内容。祝你构建顺利；如果还有其他问题，也欢迎利用 [OpenAI developer forum](https://community.openai.com/)。

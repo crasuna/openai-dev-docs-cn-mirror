@@ -1,0 +1,6 @@
+node_modules/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+reports/*.tmp
+.DS_Store
+Thumbs.db

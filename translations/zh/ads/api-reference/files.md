@@ -1,0 +1,65 @@
+---
+status: needs-review
+sourceId: "b82b636e2a5f"
+sourceChecksum: "b82b636e2a5f61df7ec336545e9bef15566a3c990eca286ca8a7b8ea92173df4"
+sourceUrl: "https://developers.openai.com/ads/api-reference/files"
+translatedAt: "2026-06-27T19:35:31.9333790+08:00"
+translator: codex-gpt-5.5-xhigh
+---
+
+# Files
+
+## 从图片 URL 上传
+
+使用 JSON 上传远程图片，并接收可复用的 `file_id`。
+
+`POST /upload`
+
+```bash
+curl -X POST "https://api.ads.openai.com/v1/upload" \
+  -H "Authorization: Bearer $OPENAI_ADS_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "image_url": "https://example.com/assets/workspace-planner-card.png"
+  }'
+```
+
+```json
+{
+  "file_id": "file_901"
+}
+```
+
+## 上传二进制文件
+
+同一 endpoint 也接受带有二进制文件的 `multipart/form-data`。
+
+```bash
+curl -X POST "https://api.ads.openai.com/v1/upload" \
+  -H "Authorization: Bearer $OPENAI_ADS_API_KEY" \
+  -F "file=@workspace-planner-card.png"
+```
+
+## 在广告中使用已上传文件
+
+创建或更新 ad creative 时传入返回的 `file_id`。
+
+`POST /ads`
+
+```bash
+curl -X POST "https://api.ads.openai.com/v1/ads" \
+  -H "Authorization: Bearer $OPENAI_ADS_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "ad_group_id": "adgrp_301",
+    "name": "Planner launch card",
+    "status": "active",
+    "creative": {
+      "type": "chat_card",
+      "title": "Try the new workspace planner",
+      "body": "Coordinate tasks, docs, and meetings in one place.",
+      "target_url": "https://example.com/workspace-planner",
+      "file_id": "file_901"
+    }
+  }'
+```

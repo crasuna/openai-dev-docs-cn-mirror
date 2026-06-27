@@ -1,0 +1,28 @@
+{
+  "name": "openai-dev-docs-cn-mirror",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A local, unofficial bilingual mirror scaffold for OpenAI developer documentation.",
+  "scripts": {
+    "fetch:docs": "tsx scripts/fetch-docs.ts",
+    "build:pages": "tsx scripts/build-pages.ts",
+    "translate:plan": "tsx scripts/translation-plan.ts",
+    "translate:report": "tsx scripts/translation-report.ts",
+    "translate:status": "tsx scripts/translation-status.ts",
+    "check:translations": "tsx scripts/translation-qa.ts",
+    "check:manifest": "tsx scripts/check-manifest.ts",
+    "check:links": "tsx scripts/check-links.ts",
+    "typecheck": "tsc --noEmit",
+    "dev": "vitepress dev docs --host 127.0.0.1",
+    "build": "node --max-old-space-size=8192 ./node_modules/vitepress/bin/vitepress.js build docs",
+    "preview": "vitepress preview docs --host 127.0.0.1",
+    "check": "pnpm build:pages && pnpm check:translations && pnpm check:manifest && pnpm check:links && pnpm typecheck && pnpm build"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0",
+    "vitepress": "^1.6.0"
+  }
+}

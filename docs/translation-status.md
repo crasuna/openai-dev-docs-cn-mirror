@@ -1,0 +1,539 @@
+# 翻译状态
+
+该页面由 `pnpm build:pages` 生成，用来追踪中文译文覆盖情况。
+
+## 译文待复核
+
+- [Overview](/mirror/ads/api-overview) — Ads / Ads — Api Overview
+- [Quickstart](/mirror/ads/api-quickstart) — Ads / Ads — Api Quickstart
+- [Ad Account](/mirror/ads/api-reference/ad-account) — Ads / Ads — Api Reference
+- [Ad Groups](/mirror/ads/api-reference/ad-groups) — Ads / Ads — Api Reference
+- [Ads](/mirror/ads/api-reference/ads) — Ads / Ads — Api Reference
+- [Authentication](/mirror/ads/api-reference/authentication) — Ads / Ads — Api Reference
+- [Campaigns](/mirror/ads/api-reference/campaigns) — Ads / Ads — Api Reference
+- [Files](/mirror/ads/api-reference/files) — Ads / Ads — Api Reference
+- [Insights](/mirror/ads/api-reference/insights) — Ads / Ads — Api Reference
+- [Campaign Targeting](/mirror/ads/campaign-targeting) — Ads / Ads — Campaign Targeting
+- [Conversions API](/mirror/ads/conversions-api) — Ads / Ads — Conversions Api
+- [Image tag](/mirror/ads/image-tag) — Ads / Ads — Image Tag
+- [JavaScript Pixel](/mirror/ads/measurement-pixel) — Ads / Ads — Measurement Pixel
+- [Product feeds](/mirror/ads/product-feeds) — Ads / Ads — Product Feeds
+- [Supported events](/mirror/ads/supported-events) — Ads / Ads — Supported Events
+- [Administration Overview](/mirror/api/reference/administration/overview) — API Reference / OpenAI API — Reference
+- [API Overview](/mirror/api/reference/overview) — API Reference / OpenAI API — Reference
+- [Audio](/mirror/api/reference/resources/audio) — API Reference / OpenAI API — Reference
+- [Audio Speech — Create](/mirror/api/reference/resources/audio/subresources/speech/methods/create) — API Reference / OpenAI API — Reference
+- [Audio Transcriptions — Create](/mirror/api/reference/resources/audio/subresources/transcriptions/methods/create) — API Reference / OpenAI API — Reference
+- [Audio Translations — Create](/mirror/api/reference/resources/audio/subresources/translations/methods/create) — API Reference / OpenAI API — Reference
+- [Audio Voice Consents — Create](/mirror/api/reference/resources/audio/subresources/voice_consents/methods/create) — API Reference / OpenAI API — Reference
+- [Audio Voice Consents — Delete](/mirror/api/reference/resources/audio/subresources/voice_consents/methods/delete) — API Reference / OpenAI API — Reference
+- [Audio Voice Consents — List](/mirror/api/reference/resources/audio/subresources/voice_consents/methods/list) — API Reference / OpenAI API — Reference
+- [Audio Voice Consents — Retrieve](/mirror/api/reference/resources/audio/subresources/voice_consents/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Audio Voice Consents — Update](/mirror/api/reference/resources/audio/subresources/voice_consents/methods/update) — API Reference / OpenAI API — Reference
+- [Audio Voices — Create](/mirror/api/reference/resources/audio/subresources/voices/methods/create) — API Reference / OpenAI API — Reference
+- [Batches](/mirror/api/reference/resources/batches) — API Reference / OpenAI API — Reference
+- [Batches — Cancel](/mirror/api/reference/resources/batches/methods/cancel) — API Reference / OpenAI API — Reference
+- [Batches — Create](/mirror/api/reference/resources/batches/methods/create) — API Reference / OpenAI API — Reference
+- [Batches — List](/mirror/api/reference/resources/batches/methods/list) — API Reference / OpenAI API — Reference
+- [Batches — Retrieve](/mirror/api/reference/resources/batches/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Beta Assistants](/mirror/api/reference/resources/beta/subresources/assistants) — API Reference / OpenAI API — Reference
+- [Beta Assistants — Create](/mirror/api/reference/resources/beta/subresources/assistants/methods/create) — API Reference / OpenAI API — Reference
+- [Beta Assistants — Delete](/mirror/api/reference/resources/beta/subresources/assistants/methods/delete) — API Reference / OpenAI API — Reference
+- [Beta Assistants — List](/mirror/api/reference/resources/beta/subresources/assistants/methods/list) — API Reference / OpenAI API — Reference
+- [Beta Assistants — Retrieve](/mirror/api/reference/resources/beta/subresources/assistants/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Beta Assistants — Update](/mirror/api/reference/resources/beta/subresources/assistants/methods/update) — API Reference / OpenAI API — Reference
+- [Beta Chatkit](/mirror/api/reference/resources/beta/subresources/chatkit) — API Reference / OpenAI API — Reference
+- [Beta Chatkit Sessions](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/sessions) — API Reference / OpenAI API — Reference
+- [Beta Chatkit Sessions — Cancel](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/cancel) — API Reference / OpenAI API — Reference
+- [Beta Chatkit Sessions — Create](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/create) — API Reference / OpenAI API — Reference
+- [Beta Chatkit Threads](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads) — API Reference / OpenAI API — Reference
+- [Beta Chatkit Threads — Delete](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/delete) — API Reference / OpenAI API — Reference
+- [Beta Chatkit Threads — List](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/list) — API Reference / OpenAI API — Reference
+- [Beta Chatkit Threads — List Items](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/list_items) — API Reference / OpenAI API — Reference
+- [Beta Chatkit Threads — Retrieve](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Beta Threads](/mirror/api/reference/resources/beta/subresources/threads) — API Reference / OpenAI API — Reference
+- [Beta Threads — Create](/mirror/api/reference/resources/beta/subresources/threads/methods/create) — API Reference / OpenAI API — Reference
+- [Beta Threads — Delete](/mirror/api/reference/resources/beta/subresources/threads/methods/delete) — API Reference / OpenAI API — Reference
+- [Beta Threads — Retrieve](/mirror/api/reference/resources/beta/subresources/threads/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Beta Threads — Update](/mirror/api/reference/resources/beta/subresources/threads/methods/update) — API Reference / OpenAI API — Reference
+- [Beta Threads Messages](/mirror/api/reference/resources/beta/subresources/threads/subresources/messages) — API Reference / OpenAI API — Reference
+- [Beta Threads Messages — Create](/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/create) — API Reference / OpenAI API — Reference
+- [Beta Threads Messages — Delete](/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/delete) — API Reference / OpenAI API — Reference
+- [Beta Threads Messages — List](/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/list) — API Reference / OpenAI API — Reference
+- [Beta Threads Messages — Retrieve](/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Beta Threads Messages — Update](/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/update) — API Reference / OpenAI API — Reference
+- [Beta Threads Runs](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs) — API Reference / OpenAI API — Reference
+- [Beta Threads Runs — Cancel](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/cancel) — API Reference / OpenAI API — Reference
+- [Beta Threads Runs — Create](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/create) — API Reference / OpenAI API — Reference
+- [Beta Threads Runs — List](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/list) — API Reference / OpenAI API — Reference
+- [Beta Threads Runs — Retrieve](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Beta Threads Runs — Submit Tool Outputs](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/submit_tool_outputs) — API Reference / OpenAI API — Reference
+- [Beta Threads Runs — Update](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/update) — API Reference / OpenAI API — Reference
+- [Beta Threads Runs Steps](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps) — API Reference / OpenAI API — Reference
+- [Beta Threads Runs Steps — List](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps/methods/list) — API Reference / OpenAI API — Reference
+- [Beta Threads Runs Steps — Retrieve](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Chat](/mirror/api/reference/resources/chat) — API Reference / OpenAI API — Reference
+- [Chat Completions — Retrieve](/mirror/api/reference/resources/chat/subresources/completions/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Chat Completions Overview](/mirror/api/reference/chat-completions/overview) — API Reference / OpenAI API — Reference
+- [Completions](/mirror/api/reference/resources/completions) — API Reference / OpenAI API — Reference
+- [Completions — Create](/mirror/api/reference/resources/completions/methods/create) — API Reference / OpenAI API — Reference
+- [Containers](/mirror/api/reference/resources/containers) — API Reference / OpenAI API — Reference
+- [Containers — Create](/mirror/api/reference/resources/containers/methods/create) — API Reference / OpenAI API — Reference
+- [Containers — Delete](/mirror/api/reference/resources/containers/methods/delete) — API Reference / OpenAI API — Reference
+- [Containers — List](/mirror/api/reference/resources/containers/methods/list) — API Reference / OpenAI API — Reference
+- [Containers — Retrieve](/mirror/api/reference/resources/containers/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Containers Files](/mirror/api/reference/resources/containers/subresources/files) — API Reference / OpenAI API — Reference
+- [Containers Files — Create](/mirror/api/reference/resources/containers/subresources/files/methods/create) — API Reference / OpenAI API — Reference
+- [Containers Files — Delete](/mirror/api/reference/resources/containers/subresources/files/methods/delete) — API Reference / OpenAI API — Reference
+- [Containers Files — List](/mirror/api/reference/resources/containers/subresources/files/methods/list) — API Reference / OpenAI API — Reference
+- [Containers Files — Retrieve](/mirror/api/reference/resources/containers/subresources/files/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Containers Files Content — Retrieve](/mirror/api/reference/resources/containers/subresources/files/subresources/content/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Conversations](/mirror/api/reference/resources/conversations) — API Reference / OpenAI API — Reference
+- [Conversations — Create](/mirror/api/reference/resources/conversations/methods/create) — API Reference / OpenAI API — Reference
+- [Conversations — Delete](/mirror/api/reference/resources/conversations/methods/delete) — API Reference / OpenAI API — Reference
+- [Conversations — Retrieve](/mirror/api/reference/resources/conversations/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Conversations — Update](/mirror/api/reference/resources/conversations/methods/update) — API Reference / OpenAI API — Reference
+- [Conversations Items — List](/mirror/api/reference/resources/conversations/subresources/items/methods/list) — API Reference / OpenAI API — Reference
+- [Embeddings](/mirror/api/reference/resources/embeddings) — API Reference / OpenAI API — Reference
+- [Embeddings — Create](/mirror/api/reference/resources/embeddings/methods/create) — API Reference / OpenAI API — Reference
+- [Evals](/mirror/api/reference/resources/evals) — API Reference / OpenAI API — Reference
+- [Evals — Create](/mirror/api/reference/resources/evals/methods/create) — API Reference / OpenAI API — Reference
+- [Evals — Delete](/mirror/api/reference/resources/evals/methods/delete) — API Reference / OpenAI API — Reference
+- [Evals — List](/mirror/api/reference/resources/evals/methods/list) — API Reference / OpenAI API — Reference
+- [Evals — Retrieve](/mirror/api/reference/resources/evals/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Evals — Update](/mirror/api/reference/resources/evals/methods/update) — API Reference / OpenAI API — Reference
+- [Evals Runs — Cancel](/mirror/api/reference/resources/evals/subresources/runs/methods/cancel) — API Reference / OpenAI API — Reference
+- [Files](/mirror/api/reference/resources/files) — API Reference / OpenAI API — Reference
+- [Files — Create](/mirror/api/reference/resources/files/methods/create) — API Reference / OpenAI API — Reference
+- [Files — Delete](/mirror/api/reference/resources/files/methods/delete) — API Reference / OpenAI API — Reference
+- [Files — List](/mirror/api/reference/resources/files/methods/list) — API Reference / OpenAI API — Reference
+- [Files — Retrieve](/mirror/api/reference/resources/files/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Fine Tuning](/mirror/api/reference/resources/fine_tuning) — API Reference / OpenAI API — Reference
+- [Fine Tuning Checkpoints Permissions — Create](/mirror/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/create) — API Reference / OpenAI API — Reference
+- [Fine Tuning Checkpoints Permissions — Delete](/mirror/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/delete) — API Reference / OpenAI API — Reference
+- [Fine Tuning Jobs — List](/mirror/api/reference/resources/fine_tuning/subresources/jobs/methods/list) — API Reference / OpenAI API — Reference
+- [Fine Tuning Jobs Checkpoints — List](/mirror/api/reference/resources/fine_tuning/subresources/jobs/subresources/checkpoints/methods/list) — API Reference / OpenAI API — Reference
+- [Graders](/mirror/api/reference/resources/graders) — API Reference / OpenAI API — Reference
+- [Images](/mirror/api/reference/resources/images) — API Reference / OpenAI API — Reference
+- [Images — Create Variation](/mirror/api/reference/resources/images/methods/create_variation) — API Reference / OpenAI API — Reference
+- [Models](/mirror/api/reference/resources/models) — API Reference / OpenAI API — Reference
+- [Models — Delete](/mirror/api/reference/resources/models/methods/delete) — API Reference / OpenAI API — Reference
+- [Models — List](/mirror/api/reference/resources/models/methods/list) — API Reference / OpenAI API — Reference
+- [Models — Retrieve](/mirror/api/reference/resources/models/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Moderations](/mirror/api/reference/resources/moderations) — API Reference / OpenAI API — Reference
+- [Moderations — Create](/mirror/api/reference/resources/moderations/methods/create) — API Reference / OpenAI API — Reference
+- [Organization](/mirror/api/reference/resources/organization) — API Reference / OpenAI API — Reference
+- [Organization Audit Logs](/mirror/api/reference/resources/organization/subresources/audit_logs) — API Reference / OpenAI API — Reference
+- [Organization Audit Logs — List](/mirror/api/reference/resources/organization/subresources/audit_logs/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Audit Logs Admin Api Keys](/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys) — API Reference / OpenAI API — Reference
+- [Organization Audit Logs Admin Api Keys — Create](/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys/methods/create) — API Reference / OpenAI API — Reference
+- [Organization Audit Logs Admin Api Keys — Delete](/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Audit Logs Admin Api Keys — List](/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Audit Logs Admin Api Keys — Retrieve](/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Organization Audit Logs Usage](/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/usage) — API Reference / OpenAI API — Reference
+- [Organization Groups](/mirror/api/reference/resources/organization/subresources/groups) — API Reference / OpenAI API — Reference
+- [Organization Groups — Create](/mirror/api/reference/resources/organization/subresources/groups/methods/create) — API Reference / OpenAI API — Reference
+- [Organization Groups — Delete](/mirror/api/reference/resources/organization/subresources/groups/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Groups — List](/mirror/api/reference/resources/organization/subresources/groups/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Groups — Update](/mirror/api/reference/resources/organization/subresources/groups/methods/update) — API Reference / OpenAI API — Reference
+- [Organization Groups Users](/mirror/api/reference/resources/organization/subresources/groups/subresources/users) — API Reference / OpenAI API — Reference
+- [Organization Groups Users — Create](/mirror/api/reference/resources/organization/subresources/groups/subresources/users/methods/create) — API Reference / OpenAI API — Reference
+- [Organization Groups Users — Delete](/mirror/api/reference/resources/organization/subresources/groups/subresources/users/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Groups Users — List](/mirror/api/reference/resources/organization/subresources/groups/subresources/users/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Invites](/mirror/api/reference/resources/organization/subresources/invites) — API Reference / OpenAI API — Reference
+- [Organization Invites — Create](/mirror/api/reference/resources/organization/subresources/invites/methods/create) — API Reference / OpenAI API — Reference
+- [Organization Invites — Delete](/mirror/api/reference/resources/organization/subresources/invites/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Invites — List](/mirror/api/reference/resources/organization/subresources/invites/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Invites — Retrieve](/mirror/api/reference/resources/organization/subresources/invites/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Organization Projects](/mirror/api/reference/resources/organization/subresources/projects) — API Reference / OpenAI API — Reference
+- [Organization Projects — Create](/mirror/api/reference/resources/organization/subresources/projects/methods/create) — API Reference / OpenAI API — Reference
+- [Organization Projects — List](/mirror/api/reference/resources/organization/subresources/projects/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Projects — Retrieve](/mirror/api/reference/resources/organization/subresources/projects/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Organization Projects — Update](/mirror/api/reference/resources/organization/subresources/projects/methods/update) — API Reference / OpenAI API — Reference
+- [Organization Projects Api Keys](/mirror/api/reference/resources/organization/subresources/projects/subresources/api_keys) — API Reference / OpenAI API — Reference
+- [Organization Projects Api Keys — Delete](/mirror/api/reference/resources/organization/subresources/projects/subresources/api_keys/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Projects Api Keys — List](/mirror/api/reference/resources/organization/subresources/projects/subresources/api_keys/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Projects Api Keys — Retrieve](/mirror/api/reference/resources/organization/subresources/projects/subresources/api_keys/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Organization Projects Groups](/mirror/api/reference/resources/organization/subresources/projects/subresources/groups) — API Reference / OpenAI API — Reference
+- [Organization Projects Groups — Delete](/mirror/api/reference/resources/organization/subresources/projects/subresources/groups/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Projects Groups — List](/mirror/api/reference/resources/organization/subresources/projects/subresources/groups/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Projects Rate Limits](/mirror/api/reference/resources/organization/subresources/projects/subresources/rate_limits) — API Reference / OpenAI API — Reference
+- [Organization Projects Service Accounts](/mirror/api/reference/resources/organization/subresources/projects/subresources/service_accounts) — API Reference / OpenAI API — Reference
+- [Organization Projects Service Accounts — Create](/mirror/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/create) — API Reference / OpenAI API — Reference
+- [Organization Projects Service Accounts — Delete](/mirror/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Projects Service Accounts — List](/mirror/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Projects Service Accounts — Retrieve](/mirror/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Organization Projects Users](/mirror/api/reference/resources/organization/subresources/projects/subresources/users) — API Reference / OpenAI API — Reference
+- [Organization Projects Users — Create](/mirror/api/reference/resources/organization/subresources/projects/subresources/users/methods/create) — API Reference / OpenAI API — Reference
+- [Organization Projects Users — Delete](/mirror/api/reference/resources/organization/subresources/projects/subresources/users/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Projects Users — List](/mirror/api/reference/resources/organization/subresources/projects/subresources/users/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Projects Users — Retrieve](/mirror/api/reference/resources/organization/subresources/projects/subresources/users/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Organization Projects Users — Update](/mirror/api/reference/resources/organization/subresources/projects/subresources/users/methods/update) — API Reference / OpenAI API — Reference
+- [Organization Roles](/mirror/api/reference/resources/organization/subresources/roles) — API Reference / OpenAI API — Reference
+- [Organization Roles — Create](/mirror/api/reference/resources/organization/subresources/roles/methods/create) — API Reference / OpenAI API — Reference
+- [Organization Roles — Delete](/mirror/api/reference/resources/organization/subresources/roles/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Roles — List](/mirror/api/reference/resources/organization/subresources/roles/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Roles — Update](/mirror/api/reference/resources/organization/subresources/roles/methods/update) — API Reference / OpenAI API — Reference
+- [Organization Users](/mirror/api/reference/resources/organization/subresources/users) — API Reference / OpenAI API — Reference
+- [Organization Users — Delete](/mirror/api/reference/resources/organization/subresources/users/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Users — List](/mirror/api/reference/resources/organization/subresources/users/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Users — Retrieve](/mirror/api/reference/resources/organization/subresources/users/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Organization Users — Update](/mirror/api/reference/resources/organization/subresources/users/methods/update) — API Reference / OpenAI API — Reference
+- [Organization Users Roles — Create](/mirror/api/reference/resources/organization/subresources/users/subresources/roles/methods/create) — API Reference / OpenAI API — Reference
+- [Organization Users Roles — Delete](/mirror/api/reference/resources/organization/subresources/users/subresources/roles/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Users Roles — List](/mirror/api/reference/resources/organization/subresources/users/subresources/roles/methods/list) — API Reference / OpenAI API — Reference
+- [Projects](/mirror/api/reference/resources/projects) — API Reference / OpenAI API — Reference
+- [Projects Groups](/mirror/api/reference/resources/projects/subresources/groups) — API Reference / OpenAI API — Reference
+- [Projects Groups Roles — Create](/mirror/api/reference/resources/projects/subresources/groups/subresources/roles/methods/create) — API Reference / OpenAI API — Reference
+- [Projects Groups Roles — Delete](/mirror/api/reference/resources/projects/subresources/groups/subresources/roles/methods/delete) — API Reference / OpenAI API — Reference
+- [Projects Groups Roles — List](/mirror/api/reference/resources/projects/subresources/groups/subresources/roles/methods/list) — API Reference / OpenAI API — Reference
+- [Projects Roles — Create](/mirror/api/reference/resources/projects/subresources/roles/methods/create) — API Reference / OpenAI API — Reference
+- [Projects Roles — Delete](/mirror/api/reference/resources/projects/subresources/roles/methods/delete) — API Reference / OpenAI API — Reference
+- [Projects Roles — List](/mirror/api/reference/resources/projects/subresources/roles/methods/list) — API Reference / OpenAI API — Reference
+- [Projects Roles — Update](/mirror/api/reference/resources/projects/subresources/roles/methods/update) — API Reference / OpenAI API — Reference
+- [Projects Users](/mirror/api/reference/resources/projects/subresources/users) — API Reference / OpenAI API — Reference
+- [Projects Users Roles — Create](/mirror/api/reference/resources/projects/subresources/users/subresources/roles/methods/create) — API Reference / OpenAI API — Reference
+- [Projects Users Roles — Delete](/mirror/api/reference/resources/projects/subresources/users/subresources/roles/methods/delete) — API Reference / OpenAI API — Reference
+- [Projects Users Roles — List](/mirror/api/reference/resources/projects/subresources/users/subresources/roles/methods/list) — API Reference / OpenAI API — Reference
+- [Realtime](/mirror/api/reference/resources/realtime) — API Reference / OpenAI API — Reference
+- [Realtime Beta Overview](/mirror/api/reference/realtime-beta/overview) — API Reference / OpenAI API — Reference
+- [Realtime Calls](/mirror/api/reference/resources/realtime/subresources/calls) — API Reference / OpenAI API — Reference
+- [Realtime Calls — Accept](/mirror/api/reference/resources/realtime/subresources/calls/methods/accept) — API Reference / OpenAI API — Reference
+- [Realtime Calls — Create](/mirror/api/reference/resources/realtime/subresources/calls/methods/create) — API Reference / OpenAI API — Reference
+- [Realtime Calls — Hangup](/mirror/api/reference/resources/realtime/subresources/calls/methods/hangup) — API Reference / OpenAI API — Reference
+- [Realtime Calls — Refer](/mirror/api/reference/resources/realtime/subresources/calls/methods/refer) — API Reference / OpenAI API — Reference
+- [Realtime Calls — Reject](/mirror/api/reference/resources/realtime/subresources/calls/methods/reject) — API Reference / OpenAI API — Reference
+- [Realtime Client Secrets](/mirror/api/reference/resources/realtime/subresources/client_secrets) — API Reference / OpenAI API — Reference
+- [Realtime Client Secrets — Create](/mirror/api/reference/resources/realtime/subresources/client_secrets/methods/create) — API Reference / OpenAI API — Reference
+- [Responses](/mirror/api/reference/resources/responses) — API Reference / OpenAI API — Reference
+- [Responses — Cancel](/mirror/api/reference/resources/responses/methods/cancel) — API Reference / OpenAI API — Reference
+- [Responses — Compact](/mirror/api/reference/resources/responses/methods/compact) — API Reference / OpenAI API — Reference
+- [Responses — Create](/mirror/api/reference/resources/responses/methods/create) — API Reference / OpenAI API — Reference
+- [Responses — Delete](/mirror/api/reference/resources/responses/methods/delete) — API Reference / OpenAI API — Reference
+- [Responses — Retrieve](/mirror/api/reference/resources/responses/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Responses Input Items — List](/mirror/api/reference/resources/responses/subresources/input_items/methods/list) — API Reference / OpenAI API — Reference
+- [Responses Input Tokens](/mirror/api/reference/resources/responses/subresources/input_tokens) — API Reference / OpenAI API — Reference
+- [Responses Overview](/mirror/api/reference/responses/overview) — API Reference / OpenAI API — Reference
+- [Unwrap](/mirror/api/reference/resources/webhooks/methods/unwrap) — API Reference / OpenAI API — Reference
+- [Uploads](/mirror/api/reference/resources/uploads) — API Reference / OpenAI API — Reference
+- [Uploads — Cancel](/mirror/api/reference/resources/uploads/methods/cancel) — API Reference / OpenAI API — Reference
+- [Uploads — Create](/mirror/api/reference/resources/uploads/methods/create) — API Reference / OpenAI API — Reference
+- [Uploads Parts — Create](/mirror/api/reference/resources/uploads/subresources/parts/methods/create) — API Reference / OpenAI API — Reference
+- [Vector Stores](/mirror/api/reference/resources/vector_stores) — API Reference / OpenAI API — Reference
+- [Vector Stores — Create](/mirror/api/reference/resources/vector_stores/methods/create) — API Reference / OpenAI API — Reference
+- [Vector Stores — Delete](/mirror/api/reference/resources/vector_stores/methods/delete) — API Reference / OpenAI API — Reference
+- [Vector Stores — List](/mirror/api/reference/resources/vector_stores/methods/list) — API Reference / OpenAI API — Reference
+- [Vector Stores — Retrieve](/mirror/api/reference/resources/vector_stores/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Vector Stores — Search](/mirror/api/reference/resources/vector_stores/methods/search) — API Reference / OpenAI API — Reference
+- [Vector Stores — Update](/mirror/api/reference/resources/vector_stores/methods/update) — API Reference / OpenAI API — Reference
+- [Vector Stores File Batches](/mirror/api/reference/resources/vector_stores/subresources/file_batches) — API Reference / OpenAI API — Reference
+- [Vector Stores File Batches — Cancel](/mirror/api/reference/resources/vector_stores/subresources/file_batches/methods/cancel) — API Reference / OpenAI API — Reference
+- [Vector Stores File Batches — Create](/mirror/api/reference/resources/vector_stores/subresources/file_batches/methods/create) — API Reference / OpenAI API — Reference
+- [Vector Stores File Batches — List Files](/mirror/api/reference/resources/vector_stores/subresources/file_batches/methods/list_files) — API Reference / OpenAI API — Reference
+- [Vector Stores File Batches — Retrieve](/mirror/api/reference/resources/vector_stores/subresources/file_batches/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Vector Stores Files](/mirror/api/reference/resources/vector_stores/subresources/files) — API Reference / OpenAI API — Reference
+- [Vector Stores Files — Content](/mirror/api/reference/resources/vector_stores/subresources/files/methods/content) — API Reference / OpenAI API — Reference
+- [Vector Stores Files — Create](/mirror/api/reference/resources/vector_stores/subresources/files/methods/create) — API Reference / OpenAI API — Reference
+- [Vector Stores Files — Delete](/mirror/api/reference/resources/vector_stores/subresources/files/methods/delete) — API Reference / OpenAI API — Reference
+- [Vector Stores Files — List](/mirror/api/reference/resources/vector_stores/subresources/files/methods/list) — API Reference / OpenAI API — Reference
+- [Vector Stores Files — Retrieve](/mirror/api/reference/resources/vector_stores/subresources/files/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Vector Stores Files — Update](/mirror/api/reference/resources/vector_stores/subresources/files/methods/update) — API Reference / OpenAI API — Reference
+- [Videos](/mirror/api/reference/resources/videos) — API Reference / OpenAI API — Reference
+- [Videos — Create](/mirror/api/reference/resources/videos/methods/create) — API Reference / OpenAI API — Reference
+- [Videos — Delete](/mirror/api/reference/resources/videos/methods/delete) — API Reference / OpenAI API — Reference
+- [Videos — List](/mirror/api/reference/resources/videos/methods/list) — API Reference / OpenAI API — Reference
+- [Videos — Retrieve](/mirror/api/reference/resources/videos/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Webhooks](/mirror/api/reference/resources/webhooks) — API Reference / OpenAI API — Reference
+- [Workload identity token exchange](/mirror/api/reference/workload-identity-federation) — API Reference / OpenAI API — Reference
+- [App submission guidelines](/mirror/apps-sdk/app-submission-guidelines) — Apps SDK / Apps SDK — App Submission Guidelines
+- [Authentication](/mirror/apps-sdk/build/auth) — Apps SDK / Apps SDK — Build
+- [Build your ChatGPT UI](/mirror/apps-sdk/build/chatgpt-ui) — Apps SDK / Apps SDK — Build
+- [Build your MCP server](/mirror/apps-sdk/build/mcp-server) — Apps SDK / Apps SDK — Build
+- [Examples](/mirror/apps-sdk/build/examples) — Apps SDK / Apps SDK — Build
+- [Managing State](/mirror/apps-sdk/build/state-management) — Apps SDK / Apps SDK — Build
+- [Monetization](/mirror/apps-sdk/build/monetization) — Apps SDK / Apps SDK — Build
+- [MCP](/mirror/apps-sdk/concepts/mcp-server) — Apps SDK / Apps SDK — Concepts
+- [UI guidelines](/mirror/apps-sdk/concepts/ui-guidelines) — Apps SDK / Apps SDK — Concepts
+- [User Interaction](/mirror/apps-sdk/concepts/user-interaction) — Apps SDK / Apps SDK — Concepts
+- [UX principles](/mirror/apps-sdk/concepts/ux-principles) — Apps SDK / Apps SDK — Concepts
+- [Connect from ChatGPT](/mirror/apps-sdk/deploy/connect-chatgpt) — Apps SDK / Apps SDK — Deploy
+- [Deploy your app](/mirror/apps-sdk/deploy) — Apps SDK / Apps SDK — Deploy
+- [Submit and maintain your app](/mirror/apps-sdk/deploy/submission) — Apps SDK / Apps SDK — Deploy
+- [Test your integration](/mirror/apps-sdk/deploy/testing) — Apps SDK / Apps SDK — Deploy
+- [Troubleshooting](/mirror/apps-sdk/deploy/troubleshooting) — Apps SDK / Apps SDK — Deploy
+- [Optimize Metadata](/mirror/apps-sdk/guides/optimize-metadata) — Apps SDK / Apps SDK — Guides
+- [Product checkout conversion spec](/mirror/apps-sdk/guides/product-checkout-conversion-spec) — Apps SDK / Apps SDK — Guides
+- [Restaurant reservation conversion spec](/mirror/apps-sdk/guides/restaurant-reservation-conversion-spec) — Apps SDK / Apps SDK — Guides
+- [Security & Privacy](/mirror/apps-sdk/guides/security-privacy) — Apps SDK / Apps SDK — Guides
+- [MCP Apps compatibility in ChatGPT](/mirror/apps-sdk/mcp-apps-in-chatgpt) — Apps SDK / Apps SDK — Mcp Apps In Chatgpt
+- [Define tools](/mirror/apps-sdk/plan/tools) — Apps SDK / Apps SDK — Plan
+- [Design components](/mirror/apps-sdk/plan/components) — Apps SDK / Apps SDK — Plan
+- [Research use cases](/mirror/apps-sdk/plan/use-case) — Apps SDK / Apps SDK — Plan
+- [Quickstart](/mirror/apps-sdk/quickstart) — Apps SDK / Apps SDK — Quickstart
+- [Apps SDK reference (Markdown)](/mirror/apps-sdk/reference) — Apps SDK / Documentation sets
+- [Agent approvals & security](/mirror/codex/agent-approvals-security) — Codex / Codex — Agent Approvals Security
+- [Use Codex with Amazon Bedrock](/mirror/codex/amazon-bedrock) — Codex / Codex — Amazon Bedrock
+- [Automations](/mirror/codex/app/automations) — Codex / Codex — App
+- [Codex app](/mirror/codex/app) — Codex / Codex — App
+- [Codex app commands](/mirror/codex/app/commands) — Codex / Codex — App
+- [Codex app features](/mirror/codex/app/features) — Codex / Codex — App
+- [Codex app settings](/mirror/codex/app/settings) — Codex / Codex — App
+- [Codex Chrome extension](/mirror/codex/app/chrome-extension) — Codex / Codex — App
+- [Computer Use](/mirror/codex/app/computer-use) — Codex / Codex — App
+- [In-app browser](/mirror/codex/app/browser) — Codex / Codex — App
+- [Local environments](/mirror/codex/app/local-environments) — Codex / Codex — App
+- [Review](/mirror/codex/app/review) — Codex / Codex — App
+- [Troubleshooting](/mirror/codex/app/troubleshooting) — Codex / Codex — App
+- [Windows](/mirror/codex/app/windows) — Codex / Codex — App
+- [Worktrees](/mirror/codex/app/worktrees) — Codex / Codex — App
+- [Codex App Server](/mirror/codex/app-server) — Codex / Codex — App Server
+- [Appshots](/mirror/codex/appshots) — Codex / Codex — Appshots
+- [Authentication](/mirror/codex/auth) — Codex / Codex — Auth
+- [Codex CLI](/mirror/codex/cli) — Codex / Codex — Cli
+- [Codex CLI features](/mirror/codex/cli/features) — Codex / Codex — Cli
+- [Command line options](/mirror/codex/cli/reference) — Codex / Codex — Cli
+- [Slash commands in Codex CLI](/mirror/codex/cli/slash-commands) — Codex / Codex — Cli
+- [Agent internet access](/mirror/codex/cloud/internet-access) — Codex / Codex — Cloud
+- [Cloud environments](/mirror/codex/cloud/environments) — Codex / Codex — Cloud
+- [Codex web](/mirror/codex/cloud) — Codex / Codex — Cloud
+- [Codex for Open Source](/mirror/codex/community/codex-for-oss) — Codex / Codex — Community
+- [Auto-review](/mirror/codex/concepts/sandboxing/auto-review) — Codex / Codex — Concepts
+- [Customization](/mirror/codex/concepts/customization) — Codex / Codex — Concepts
+- [Cyber Safety](/mirror/codex/concepts/cyber-safety) — Codex / Codex — Concepts
+- [Sandbox](/mirror/codex/concepts/sandboxing) — Codex / Codex — Concepts
+- [Subagents](/mirror/codex/concepts/subagents) — Codex / Codex — Concepts
+- [Advanced Configuration](/mirror/codex/config-advanced) — Codex / Codex — Config Advanced
+- [Config basics](/mirror/codex/config-basic) — Codex / Codex — Config Basic
+- [Configuration Reference](/mirror/codex/config-reference) — Codex / Codex — Config Reference
+- [Sample Configuration](/mirror/codex/config-sample) — Codex / Codex — Config Sample
+- [Custom Prompts](/mirror/codex/custom-prompts) — Codex / Codex — Custom Prompts
+- [Access tokens](/mirror/codex/enterprise/access-tokens) — Codex / Codex — Enterprise
+- [Admin Setup](/mirror/codex/enterprise/admin-setup) — Codex / Codex — Enterprise
+- [Governance](/mirror/codex/enterprise/governance) — Codex / Codex — Enterprise
+- [Managed configuration](/mirror/codex/enterprise/managed-configuration) — Codex / Codex — Enterprise
+- [Environment variables](/mirror/codex/environment-variables) — Codex / Codex — Environment Variables
+- [Feature Maturity](/mirror/codex/feature-maturity) — Codex / Codex — Feature Maturity
+- [Codex GitHub Action](/mirror/codex/github-action) — Codex / Codex — Github Action
+- [Glossary](/mirror/codex/glossary) — Codex / Codex — Glossary
+- [Building an AI-Native Engineering Team](/mirror/codex/guides/build-ai-native-engineering-team) — Codex / Codex — Guides
+- [Custom instructions with AGENTS.md](/mirror/codex/guides/agents-md) — Codex / Codex — Guides
+- [Use Codex with the Agents SDK](/mirror/codex/guides/agents-sdk) — Codex / Codex — Guides
+- [Hooks](/mirror/codex/hooks) — Codex / Codex — Hooks
+- [Codex IDE extension](/mirror/codex/ide) — Codex / Codex — Ide
+- [Codex IDE extension commands](/mirror/codex/ide/commands) — Codex / Codex — Ide
+- [Codex IDE extension features](/mirror/codex/ide/features) — Codex / Codex — Ide
+- [Codex IDE extension settings](/mirror/codex/ide/settings) — Codex / Codex — Ide
+- [Codex IDE extension slash commands](/mirror/codex/ide/slash-commands) — Codex / Codex — Ide
+- [Import to Codex](/mirror/codex/import) — Codex / Codex — Import
+- [Codex code review in GitHub](/mirror/codex/integrations/github) — Codex / Codex — Integrations
+- [Use Codex in Linear](/mirror/codex/integrations/linear) — Codex / Codex — Integrations
+- [Use Codex in Slack](/mirror/codex/integrations/slack) — Codex / Codex — Integrations
+- [Best practices](/mirror/codex/learn/best-practices) — Codex / Codex — Learn
+- [Model Context Protocol](/mirror/codex/mcp) — Codex / Codex — Mcp
+- [Chronicle](/mirror/codex/memories/chronicle) — Codex / Codex — Memories
+- [Memories](/mirror/codex/memories) — Codex / Codex — Memories
+- [Codex Models](/mirror/codex/models) — Codex / Codex — Models
+- [Non-interactive mode](/mirror/codex/noninteractive) — Codex / Codex — Noninteractive
+- [Open Source](/mirror/codex/open-source) — Codex / Codex — Open Source
+- [Codex](/mirror/codex/overview) — Codex / Codex — Overview
+- [Permissions](/mirror/codex/permissions) — Codex / Codex — Permissions
+- [Build plugins](/mirror/codex/plugins/build) — Codex / Codex — Plugins
+- [Plugins](/mirror/codex/plugins) — Codex / Codex — Plugins
+- [Codex Pricing](/mirror/codex/pricing) — Codex / Codex — Pricing
+- [Prompting](/mirror/codex/prompting) — Codex / Codex — Prompting
+- [Quickstart](/mirror/codex/quickstart) — Codex / Codex — Quickstart
+- [Record & Replay](/mirror/codex/record-and-replay) — Codex / Codex — Record And Replay
+- [Remote connections](/mirror/codex/remote-connections) — Codex / Codex — Remote Connections
+- [Rules](/mirror/codex/rules) — Codex / Codex — Rules
+- [Codex SDK](/mirror/codex/sdk) — Codex / Codex — Sdk
+- [Codex Security](/mirror/codex/security) — Codex / Codex — Security
+- [Codex Security plugin changelog](/mirror/codex/security/plugin/changelog) — Codex / Codex — Security
+- [Codex Security plugin quickstart](/mirror/codex/security/plugin) — Codex / Codex — Security
+- [Codex Security setup](/mirror/codex/security/setup) — Codex / Codex — Security
+- [Export and track security findings](/mirror/codex/security/plugin/export-findings) — Codex / Codex — Security
+- [FAQ](/mirror/codex/security/faq) — Codex / Codex — Security
+- [Fix and verify security findings](/mirror/codex/security/plugin/fix-findings) — Codex / Codex — Security
+- [Improving the threat model](/mirror/codex/security/threat-model) — Codex / Codex — Security
+- [Review code changes for security](/mirror/codex/security/plugin/code-changes) — Codex / Codex — Security
+- [Run a Codex Security scan](/mirror/codex/security/plugin/scans) — Codex / Codex — Security
+- [Run a deep security scan](/mirror/codex/security/plugin/deep-scans) — Codex / Codex — Security
+- [Triage a backlog](/mirror/codex/security/plugin/triage-backlog) — Codex / Codex — Security
+- [Sites](/mirror/codex/sites) — Codex / Codex — Sites
+- [Agent Skills](/mirror/codex/skills) — Codex / Codex — Skills
+- [Speed](/mirror/codex/speed) — Codex / Codex — Speed
+- [Subagents](/mirror/codex/subagents) — Codex / Codex — Subagents
+- [Videos](/mirror/codex/videos) — Codex / Codex — Videos
+- [Windows](/mirror/codex/windows) — Codex / Codex — Windows
+- [Workflows](/mirror/codex/workflows) — Codex / Codex — Workflows
+- [Codex manual (Markdown)](/mirror/codex/codex-manual) — Codex / Documentation sets
+- [Agentic commerce in production](/mirror/commerce/guides/production) — Commerce / Agentic Commerce — Guides
+- [Best practices](/mirror/commerce/guides/best-practices) — Commerce / Agentic Commerce — Guides
+- [Get Started](/mirror/commerce/guides/get-started) — Commerce / Agentic Commerce — Guides
+- [Key concepts](/mirror/commerce/guides/key-concepts) — Commerce / Agentic Commerce — Guides
+- [Agentic Checkout Spec](/mirror/commerce/specs/checkout) — Commerce / Agentic Commerce — Specs
+- [Delegated Payment Spec](/mirror/commerce/specs/payment) — Commerce / Agentic Commerce — Specs
+- [Feeds](/mirror/commerce/specs/api/feeds) — Commerce / Agentic Commerce — Specs
+- [File Upload](/mirror/commerce/specs/file-upload/legacy) — Commerce / Agentic Commerce — Specs
+- [Onboarding](/mirror/commerce/specs/onboarding) — Commerce / Agentic Commerce — Specs
+- [Overview](/mirror/commerce/specs/api/overview) — Commerce / Agentic Commerce — Specs
+- [Overview](/mirror/commerce/specs/file-upload/overview) — Commerce / Agentic Commerce — Specs
+- [Product Feed Spec](/mirror/commerce/specs/spec) — Commerce / Agentic Commerce — Specs
+- [Products](/mirror/commerce/specs/api/products) — Commerce / Agentic Commerce — Specs
+- [Products](/mirror/commerce/specs/file-upload/products) — Commerce / Agentic Commerce — Specs
+- [Promotions](/mirror/commerce/specs/api/promotions) — Commerce / Agentic Commerce — Specs
+- [Actions in ChatKit](/mirror/api/docs/guides/chatkit-actions) — OpenAI API Docs / OpenAI API — Docs
+- [Admin APIs](/mirror/api/docs/guides/admin-apis) — OpenAI API Docs / OpenAI API — Docs
+- [Advanced integrations with ChatKit](/mirror/api/docs/guides/custom-chatkit) — OpenAI API Docs / OpenAI API — Docs
+- [Advanced usage](/mirror/api/docs/guides/advanced-usage) — OpenAI API Docs / OpenAI API — Docs
+- [Agent Builder](/mirror/api/docs/guides/agent-builder) — OpenAI API Docs / OpenAI API — Docs
+- [Agent definitions](/mirror/api/docs/guides/agents/define-agents) — OpenAI API Docs / OpenAI API — Docs
+- [Agents SDK](/mirror/api/docs/guides/agents) — OpenAI API Docs / OpenAI API — Docs
+- [API deployment checklist](/mirror/api/docs/guides/deployment-checklist) — OpenAI API Docs / OpenAI API — Docs
+- [Apply Patch](/mirror/api/docs/guides/tools-apply-patch) — OpenAI API Docs / OpenAI API — Docs
+- [Assistants API deep dive](/mirror/api/docs/assistants/deep-dive) — OpenAI API Docs / OpenAI API — Docs
+- [Assistants API tools](/mirror/api/docs/assistants/tools) — OpenAI API Docs / OpenAI API — Docs
+- [Assistants Code Interpreter](/mirror/api/docs/assistants/tools/code-interpreter) — OpenAI API Docs / OpenAI API — Docs
+- [Assistants File Search](/mirror/api/docs/assistants/tools/file-search) — OpenAI API Docs / OpenAI API — Docs
+- [Assistants Function Calling](/mirror/api/docs/assistants/tools/function-calling) — OpenAI API Docs / OpenAI API — Docs
+- [Assistants migration guide](/mirror/api/docs/assistants/migration) — OpenAI API Docs / OpenAI API — Docs
+- [Audio and speech](/mirror/api/docs/guides/audio) — OpenAI API Docs / OpenAI API — Docs
+- [Background mode](/mirror/api/docs/guides/background) — OpenAI API Docs / OpenAI API — Docs
+- [Batch API](/mirror/api/docs/guides/batch) — OpenAI API Docs / OpenAI API — Docs
+- [Building MCP servers for ChatGPT Apps and API integrations](/mirror/api/docs/mcp) — OpenAI API Docs / OpenAI API — Docs
+- [ChatGPT Developer mode](/mirror/api/docs/guides/developer-mode) — OpenAI API Docs / OpenAI API — Docs
+- [ChatKit](/mirror/api/docs/guides/chatkit) — OpenAI API Docs / OpenAI API — Docs
+- [ChatKit widgets](/mirror/api/docs/guides/chatkit-widgets) — OpenAI API Docs / OpenAI API — Docs
+- [Citation Formatting](/mirror/api/docs/guides/citation-formatting) — OpenAI API Docs / OpenAI API — Docs
+- [Code generation](/mirror/api/docs/guides/code-generation) — OpenAI API Docs / OpenAI API — Docs
+- [Code Interpreter](/mirror/api/docs/guides/tools-code-interpreter) — OpenAI API Docs / OpenAI API — Docs
+- [Compaction](/mirror/api/docs/guides/compaction) — OpenAI API Docs / OpenAI API — Docs
+- [Completions API](/mirror/api/docs/guides/completions) — OpenAI API Docs / OpenAI API — Docs
+- [Computer use](/mirror/api/docs/guides/tools-computer-use) — OpenAI API Docs / OpenAI API — Docs
+- [Configuring workload identity federation for AWS](/mirror/api/docs/guides/workload-identity-federation/aws) — OpenAI API Docs / OpenAI API — Docs
+- [Configuring workload identity federation for GitHub Actions](/mirror/api/docs/guides/workload-identity-federation/github-actions) — OpenAI API Docs / OpenAI API — Docs
+- [Configuring workload identity federation for Google Cloud](/mirror/api/docs/guides/workload-identity-federation/google-cloud) — OpenAI API Docs / OpenAI API — Docs
+- [Configuring workload identity federation for Kubernetes](/mirror/api/docs/guides/workload-identity-federation/kubernetes) — OpenAI API Docs / OpenAI API — Docs
+- [Configuring workload identity federation for Microsoft Azure](/mirror/api/docs/guides/workload-identity-federation/microsoft-azure) — OpenAI API Docs / OpenAI API — Docs
+- [Configuring workload identity federation for SPIFFE](/mirror/api/docs/guides/workload-identity-federation/spiffe) — OpenAI API Docs / OpenAI API — Docs
+- [Conversation state](/mirror/api/docs/guides/conversation-state) — OpenAI API Docs / OpenAI API — Docs
+- [Cost optimization](/mirror/api/docs/guides/cost-optimization) — OpenAI API Docs / OpenAI API — Docs
+- [Counting tokens](/mirror/api/docs/guides/token-counting) — OpenAI API Docs / OpenAI API — Docs
+- [Cybersecurity checks](/mirror/api/docs/guides/safety-checks/cybersecurity) — OpenAI API Docs / OpenAI API — Docs
+- [Data controls in the OpenAI platform](/mirror/api/docs/guides/your-data) — OpenAI API Docs / OpenAI API — Docs
+- [Data retrieval with GPT Actions](/mirror/api/docs/actions/data-retrieval) — OpenAI API Docs / OpenAI API — Docs
+- [Deep research](/mirror/api/docs/guides/deep-research) — OpenAI API Docs / OpenAI API — Docs
+- [Deprecations](/mirror/api/docs/deprecations) — OpenAI API Docs / OpenAI API — Docs
+- [Developer quickstart](/mirror/api/docs/quickstart) — OpenAI API Docs / OpenAI API — Docs
+- [Direct preference optimization](/mirror/api/docs/guides/direct-preference-optimization) — OpenAI API Docs / OpenAI API — Docs
+- [Error codes](/mirror/api/docs/guides/error-codes) — OpenAI API Docs / OpenAI API — Docs
+- [Evaluate agent workflows](/mirror/api/docs/guides/agent-evals) — OpenAI API Docs / OpenAI API — Docs
+- [Evaluate external models](/mirror/api/docs/guides/external-models) — OpenAI API Docs / OpenAI API — Docs
+- [Evaluation best practices](/mirror/api/docs/guides/evaluation-best-practices) — OpenAI API Docs / OpenAI API — Docs
+- [File inputs](/mirror/api/docs/guides/file-inputs) — OpenAI API Docs / OpenAI API — Docs
+- [File search](/mirror/api/docs/guides/tools-file-search) — OpenAI API Docs / OpenAI API — Docs
+- [Fine-tuning best practices](/mirror/api/docs/guides/fine-tuning-best-practices) — OpenAI API Docs / OpenAI API — Docs
+- [Flex processing](/mirror/api/docs/guides/flex-processing) — OpenAI API Docs / OpenAI API — Docs
+- [Frontend prompt instructions](/mirror/api/docs/guides/frontend-prompt) — OpenAI API Docs / OpenAI API — Docs
+- [Function calling](/mirror/api/docs/guides/function-calling) — OpenAI API Docs / OpenAI API — Docs
+- [Getting started with datasets](/mirror/api/docs/guides/evaluation-getting-started) — OpenAI API Docs / OpenAI API — Docs
+- [Getting started with GPT Actions](/mirror/api/docs/actions/getting-started) — OpenAI API Docs / OpenAI API — Docs
+- [GPT Action authentication](/mirror/api/docs/actions/authentication) — OpenAI API Docs / OpenAI API — Docs
+- [GPT Actions](/mirror/api/docs/actions/introduction) — OpenAI API Docs / OpenAI API — Docs
+- [GPT Actions library](/mirror/api/docs/actions/actions-library) — OpenAI API Docs / OpenAI API — Docs
+- [GPT Release Notes](/mirror/api/docs/gpts/release-notes) — OpenAI API Docs / OpenAI API — Docs
+- [Graders](/mirror/api/docs/guides/graders) — OpenAI API Docs / OpenAI API — Docs
+- [Guardrails and human review](/mirror/api/docs/guides/agents/guardrails-approvals) — OpenAI API Docs / OpenAI API — Docs
+- [Image generation](/mirror/api/docs/guides/image-generation) — OpenAI API Docs / OpenAI API — Docs
+- [Image generation](/mirror/api/docs/guides/tools-image-generation) — OpenAI API Docs / OpenAI API — Docs
+- [Images and vision](/mirror/api/docs/guides/images-vision) — OpenAI API Docs / OpenAI API — Docs
+- [Integrations and observability](/mirror/api/docs/guides/agents/integrations-observability) — OpenAI API Docs / OpenAI API — Docs
+- [IP egress ranges](/mirror/api/docs/guides/ip-addresses) — OpenAI API Docs / OpenAI API — Docs
+- [Key concepts](/mirror/api/docs/concepts) — OpenAI API Docs / OpenAI API — Docs
+- [Latency optimization](/mirror/api/docs/guides/latency-optimization) — OpenAI API Docs / OpenAI API — Docs
+- [Local shell](/mirror/api/docs/guides/tools-local-shell) — OpenAI API Docs / OpenAI API — Docs
+- [Manage permissions in the OpenAI platform](/mirror/api/docs/guides/rbac) — OpenAI API Docs / OpenAI API — Docs
+- [Managing costs](/mirror/api/docs/guides/realtime-costs) — OpenAI API Docs / OpenAI API — Docs
+- [MCP and Connectors](/mirror/api/docs/guides/tools-connectors-mcp) — OpenAI API Docs / OpenAI API — Docs
+- [Meeting minutes](/mirror/api/docs/tutorials/meeting-minutes) — OpenAI API Docs / OpenAI API — Docs
+- [Migrate from Agent Builder](/mirror/api/docs/guides/agent-builder/migrate-from-agent-builder) — OpenAI API Docs / OpenAI API — Docs
+- [Migrate from prompt objects](/mirror/api/docs/guides/prompting/migrate-from-prompt-object) — OpenAI API Docs / OpenAI API — Docs
+- [Migrate to the Responses API](/mirror/api/docs/guides/migrate-to-responses) — OpenAI API Docs / OpenAI API — Docs
+- [Model optimization](/mirror/api/docs/guides/model-optimization) — OpenAI API Docs / OpenAI API — Docs
+- [Model selection](/mirror/api/docs/guides/model-selection) — OpenAI API Docs / OpenAI API — Docs
+- [Models and providers](/mirror/api/docs/guides/agents/models) — OpenAI API Docs / OpenAI API — Docs
+- [Moderation](/mirror/api/docs/guides/moderation) — OpenAI API Docs / OpenAI API — Docs
+- [Node reference](/mirror/api/docs/guides/node-reference) — OpenAI API Docs / OpenAI API — Docs
+- [OpenAI CLI](/mirror/api/docs/libraries/openai-cli) — OpenAI API Docs / OpenAI API — Docs
+- [OpenAI models in Amazon Bedrock](/mirror/api/docs/guides/amazon-bedrock) — OpenAI API Docs / OpenAI API — Docs
+- [Optimizing LLM Accuracy](/mirror/api/docs/guides/optimizing-llm-accuracy) — OpenAI API Docs / OpenAI API — Docs
+- [Orchestration and handoffs](/mirror/api/docs/guides/agents/orchestration) — OpenAI API Docs / OpenAI API — Docs
+- [Overview of OpenAI Crawlers](/mirror/api/docs/bots) — OpenAI API Docs / OpenAI API — Docs
+- [Predicted Outputs](/mirror/api/docs/guides/predicted-outputs) — OpenAI API Docs / OpenAI API — Docs
+- [Pricing](/mirror/api/docs/pricing) — OpenAI API Docs / OpenAI API — Docs
+- [Priority processing](/mirror/api/docs/guides/priority-processing) — OpenAI API Docs / OpenAI API — Docs
+- [Production best practices](/mirror/api/docs/guides/production-best-practices) — OpenAI API Docs / OpenAI API — Docs
+- [Production notes on GPT Actions](/mirror/api/docs/actions/production) — OpenAI API Docs / OpenAI API — Docs
+- [Prompt caching](/mirror/api/docs/guides/prompt-caching) — OpenAI API Docs / OpenAI API — Docs
+- [Prompt engineering](/mirror/api/docs/guides/prompt-engineering) — OpenAI API Docs / OpenAI API — Docs
+- [Prompt generation](/mirror/api/docs/guides/prompt-generation) — OpenAI API Docs / OpenAI API — Docs
+- [Prompt guidance](/mirror/api/docs/guides/prompt-guidance) — OpenAI API Docs / OpenAI API — Docs
+- [Prompt optimizer](/mirror/api/docs/guides/prompt-optimizer) — OpenAI API Docs / OpenAI API — Docs
+- [Prompting](/mirror/api/docs/guides/prompting) — OpenAI API Docs / OpenAI API — Docs
+- [Quickstart](/mirror/api/docs/guides/agents/quickstart) — OpenAI API Docs / OpenAI API — Docs
+- [Rate limits](/mirror/api/docs/guides/rate-limits) — OpenAI API Docs / OpenAI API — Docs
+- [Realtime and audio](/mirror/api/docs/guides/realtime) — OpenAI API Docs / OpenAI API — Docs
+- [Realtime API with SIP](/mirror/api/docs/guides/realtime-sip) — OpenAI API Docs / OpenAI API — Docs
+- [Realtime API with WebRTC](/mirror/api/docs/guides/realtime-webrtc) — OpenAI API Docs / OpenAI API — Docs
+- [Realtime API with WebSocket](/mirror/api/docs/guides/realtime-websocket) — OpenAI API Docs / OpenAI API — Docs
+- [Realtime conversations](/mirror/api/docs/guides/realtime-conversations) — OpenAI API Docs / OpenAI API — Docs
+- [Realtime transcription](/mirror/api/docs/guides/realtime-transcription) — OpenAI API Docs / OpenAI API — Docs
+- [Realtime translation](/mirror/api/docs/guides/realtime-translation) — OpenAI API Docs / OpenAI API — Docs
+- [Realtime with tools](/mirror/api/docs/guides/realtime-mcp) — OpenAI API Docs / OpenAI API — Docs
+- [Reasoning best practices](/mirror/api/docs/guides/reasoning-best-practices) — OpenAI API Docs / OpenAI API — Docs
+- [Reasoning models](/mirror/api/docs/guides/reasoning) — OpenAI API Docs / OpenAI API — Docs
+- [Red teaming](/mirror/api/docs/guides/red-teaming) — OpenAI API Docs / OpenAI API — Docs
+- [Reinforcement fine-tuning](/mirror/api/docs/guides/reinforcement-fine-tuning) — OpenAI API Docs / OpenAI API — Docs
+- [Reinforcement fine-tuning use cases](/mirror/api/docs/guides/rft-use-cases) — OpenAI API Docs / OpenAI API — Docs
+- [Results and state](/mirror/api/docs/guides/agents/results) — OpenAI API Docs / OpenAI API — Docs
+- [Retrieval](/mirror/api/docs/guides/retrieval) — OpenAI API Docs / OpenAI API — Docs
+- [Running agents](/mirror/api/docs/guides/agents/running-agents) — OpenAI API Docs / OpenAI API — Docs
+- [Safety best practices](/mirror/api/docs/guides/safety-best-practices) — OpenAI API Docs / OpenAI API — Docs
+- [Safety checks](/mirror/api/docs/guides/safety-checks) — OpenAI API Docs / OpenAI API — Docs
+- [Safety in building agents](/mirror/api/docs/guides/agent-builder-safety) — OpenAI API Docs / OpenAI API — Docs
+- [Sandbox Agents](/mirror/api/docs/guides/agents/sandboxes) — OpenAI API Docs / OpenAI API — Docs
+- [SDKs and CLI](/mirror/api/docs/libraries) — OpenAI API Docs / OpenAI API — Docs
+- [Secure MCP Tunnel](/mirror/api/docs/guides/secure-mcp-tunnels) — OpenAI API Docs / OpenAI API — Docs
+- [Sending and returning files with GPT Actions](/mirror/api/docs/actions/sending-files) — OpenAI API Docs / OpenAI API — Docs
+- [Shell](/mirror/api/docs/guides/tools-shell) — OpenAI API Docs / OpenAI API — Docs
+- [Skills](/mirror/api/docs/guides/tools-skills) — OpenAI API Docs / OpenAI API — Docs
+- [Speech to text](/mirror/api/docs/guides/speech-to-text) — OpenAI API Docs / OpenAI API — Docs
+- [Streaming API responses](/mirror/api/docs/guides/streaming-responses) — OpenAI API Docs / OpenAI API — Docs
+- [Structured model outputs](/mirror/api/docs/guides/structured-outputs) — OpenAI API Docs / OpenAI API — Docs
+- [Supervised fine-tuning](/mirror/api/docs/guides/supervised-fine-tuning) — OpenAI API Docs / OpenAI API — Docs
+- [Supported countries and territories](/mirror/api/docs/supported-countries) — OpenAI API Docs / OpenAI API — Docs
+- [Text generation](/mirror/api/docs/guides/text) — OpenAI API Docs / OpenAI API — Docs
+- [Text to speech](/mirror/api/docs/guides/text-to-speech) — OpenAI API Docs / OpenAI API — Docs
+- [Theming and customization in ChatKit](/mirror/api/docs/guides/chatkit-themes) — OpenAI API Docs / OpenAI API — Docs
+- [Tool search](/mirror/api/docs/guides/tools-tool-search) — OpenAI API Docs / OpenAI API — Docs
+- [Trace grading](/mirror/api/docs/guides/trace-grading) — OpenAI API Docs / OpenAI API — Docs
+- [UI Kit Demo](/mirror/api/docs/ui-kit-demo) — OpenAI API Docs / OpenAI API — Docs
+- [Under 18 API Guidance](/mirror/api/docs/guides/safety-checks/under-18-api-guidance) — OpenAI API Docs / OpenAI API — Docs
+- [Upgrading to GPT-5.4](/mirror/api/docs/guides/upgrading-to-gpt-5p4) — OpenAI API Docs / OpenAI API — Docs
+- [Upgrading to GPT-5.5](/mirror/api/docs/guides/upgrading-to-gpt-5p5) — OpenAI API Docs / OpenAI API — Docs
+- [Using GPT-5.5](/mirror/api/docs/guides/latest-model) — OpenAI API Docs / OpenAI API — Docs
+- [Using realtime models](/mirror/api/docs/guides/realtime-models-prompting) — OpenAI API Docs / OpenAI API — Docs
+- [Using tools](/mirror/api/docs/guides/tools) — OpenAI API Docs / OpenAI API — Docs
+- [Vector embeddings](/mirror/api/docs/guides/embeddings) — OpenAI API Docs / OpenAI API — Docs
+- [Video generation with Sora](/mirror/api/docs/guides/video-generation) — OpenAI API Docs / OpenAI API — Docs
+- [Vision fine-tuning](/mirror/api/docs/guides/vision-fine-tuning) — OpenAI API Docs / OpenAI API — Docs
+- [Voice activity detection (VAD)](/mirror/api/docs/guides/realtime-vad) — OpenAI API Docs / OpenAI API — Docs
+- [Voice agents](/mirror/api/docs/guides/voice-agents) — OpenAI API Docs / OpenAI API — Docs
+- [Web QA with embeddings](/mirror/api/docs/tutorials/web-qa-embeddings) — OpenAI API Docs / OpenAI API — Docs
+- [Web search](/mirror/api/docs/guides/tools-web-search) — OpenAI API Docs / OpenAI API — Docs
+- [Webhooks](/mirror/api/docs/guides/webhooks) — OpenAI API Docs / OpenAI API — Docs
+- [Webhooks and server-side controls](/mirror/api/docs/guides/realtime-server-controls) — OpenAI API Docs / OpenAI API — Docs
+- [WebSocket Mode](/mirror/api/docs/guides/websocket-mode) — OpenAI API Docs / OpenAI API — Docs
+- [Working with evals](/mirror/api/docs/guides/evals) — OpenAI API Docs / OpenAI API — Docs
+- [Workload identity federation](/mirror/api/docs/guides/workload-identity-federation) — OpenAI API Docs / OpenAI API — Docs
+- [Authenticate with Workspace Agent access tokens](/mirror/workspace-agents/authentication) — Workspace Agents / Workspace Agents — Authentication
+- [Trigger workspace agent runs](/mirror/workspace-agents/trigger-runs) — Workspace Agents / Workspace Agents — Trigger Runs

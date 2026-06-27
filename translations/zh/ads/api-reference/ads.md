@@ -1,0 +1,176 @@
+---
+status: needs-review
+sourceId: "d062db753230"
+sourceChecksum: "d062db7532307a1ab0006e16902b8fc920d9d0e4dc938f18d7c07f7f9e098a77"
+sourceUrl: "https://developers.openai.com/ads/api-reference/ads"
+translatedAt: "2026-06-27T19:35:31.9333790+08:00"
+translator: codex-gpt-5.5-xhigh
+---
+
+# Ads
+
+## 列出广告
+
+列出某个 ad group 的广告。
+
+`GET /ads`
+
+| Parameter     | Type    | Required | Notes |
+| ------------- | ------- | -------- | ----- |
+| `ad_group_id` | string  | Yes      | 父级 ad group ID。 |
+| `limit`       | integer | No       | 介于 `1` 和 `500` 之间。默认值为 20。 |
+| `after`       | string  | No       | 下一页的 cursor。 |
+| `before`      | string  | No       | 上一页的 cursor。 |
+| `order`       | string  | No       | `asc` 或 `desc`。 |
+
+```bash
+curl -X GET "https://api.ads.openai.com/v1/ads?ad_group_id=adgrp_301&limit=10" \
+  -H "Authorization: Bearer $OPENAI_ADS_API_KEY"
+```
+
+```json
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "ad_501",
+      "name": "Planner launch card",
+      "created_at": 1735689800,
+      "updated_at": 1735776200,
+      "creative": {
+        "type": "chat_card",
+        "title": "Try the new workspace planner",
+        "body": "Coordinate tasks, docs, and meetings in one place.",
+        "file_id": "file_901",
+        "image_url": "https://cdn.openai.com/ads/file_901.png",
+        "target_url": "https://example.com/workspace-planner"
+      },
+      "status": "active",
+      "review_status": "approved"
+    }
+  ],
+  "first_id": "ad_501",
+  "last_id": "ad_501",
+  "has_more": false
+}
+```
+
+## 创建广告
+
+为 ad group 创建广告。
+
+`POST /ads`
+
+| Field                 | Type   | Required        | Notes |
+| --------------------- | ------ | --------------- | ----- |
+| `ad_group_id`         | string | Yes             | 父级 ad group ID。 |
+| `name`                | string | Yes             | `3` 到 `1000` 个字符，并且必须包含一个非空格字符。用于组织管理，不会显示给最终用户。 |
+| `creative.type`       | string | Yes             | `chat_card` 或 `product_ad_template`。参阅 [Product feeds](https://developers.openai.com/ads/product-feeds)。 |
+| `creative.title`      | string | Yes             | `3` 到 `50` 个字符。 |
+| `creative.body`       | string | Yes             | 最多 `100` 个字符。 |
+| `creative.price`      | string | No              | 价格文本，或 product-ad template 使用的 `{{product.price}}`。 |
+| `creative.target_url` | string | For `chat_card` | 目标 URL。product-ad template 会从所选 feed item 接收该值。 |
+| `creative.file_id`    | string | For `chat_card` | `POST /upload` 返回的文件。product-ad template 会从所选 feed item 接收其图片。 |
+| `status`              | string | Yes             | `active` 或 `paused`。 |
+
+```bash
+curl -X POST "https://api.ads.openai.com/v1/ads" \
+  -H "Authorization: Bearer $OPENAI_ADS_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "ad_group_id": "adgrp_301",
+    "name": "Planner launch card",
+    "status": "active",
+    "creative": {
+      "type": "chat_card",
+      "title": "Try the new workspace planner",
+      "body": "Coordinate tasks, docs, and meetings in one place.",
+      "target_url": "https://example.com/workspace-planner",
+      "file_id": "file_901"
+    }
+  }'
+```
+
+### Product-ad templates
+
+一个 product-feed ad group 最多只能包含一个未归档的 `product_ad_template` 广告。Product-ad templates 会从所选 feed item 接收图片和目标 URL，因此不需要 `creative.file_id` 或 `creative.target_url`。
+
+请按照 [product feeds guide](https://developers.openai.com/ads/product-feeds) 完成 campaign、product-set 和 template 工作流。
+
+## 检索广告
+
+按 ID 获取一条广告。
+
+`GET /ads/{ad_id}`
+
+```bash
+curl -X GET "https://api.ads.openai.com/v1/ads/ad_501" \
+  -H "Authorization: Bearer $OPENAI_ADS_API_KEY"
+```
+
+## 更新广告
+
+使用 `POST` 更新广告。
+
+`POST /ads/{ad_id}`
+
+更新时所有字段都是可选的。如果包含 `creative`，请发送完整 creative 对象。`status` 接受 `active`、`paused` 或 `archived`。
+
+```bash
+curl -X POST "https://api.ads.openai.com/v1/ads/ad_501" \
+  -H "Authorization: Bearer $OPENAI_ADS_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Planner launch card v2",
+    "status": "paused",
+    "creative": {
+      "type": "chat_card",
+      "title": "Plan work faster",
+      "body": "Bring tasks, docs, and meetings together.",
+      "target_url": "https://example.com/workspace-planner",
+      "file_id": "file_901"
+    }
+  }'
+```
+
+## Review status
+
+每个广告响应都包含 `review_status`，其值可以是：
+
+- `in_review`
+- `rejected`
+- `approved`
+
+如果你的广告被 rejected，则说明它违反了我们的 [ads policies](https://openai.com/policies/ad-policies/)。请编辑广告，以便重新 review。
+
+## 使用专用操作更改状态
+
+Ads API 还公开了显式状态转换。Paused ads 不会向客户投放。只归档不再需要的对象，因为归档不可逆。
+
+- `POST /ads/{ad_id}/activate`
+- `POST /ads/{ad_id}/pause`
+- `POST /ads/{ad_id}/archive`
+
+```bash
+curl -X POST "https://api.ads.openai.com/v1/ads/ad_501/pause" \
+  -H "Authorization: Bearer $OPENAI_ADS_API_KEY"
+```
+
+```json
+{
+  "id": "ad_501",
+  "name": "Planner launch card",
+  "created_at": 1735689800,
+  "updated_at": 1736035200,
+  "creative": {
+    "type": "chat_card",
+    "title": "Try the new workspace planner",
+    "body": "Coordinate tasks, docs, and meetings in one place.",
+    "file_id": "file_901",
+    "image_url": "https://cdn.openai.com/ads/file_901.png",
+    "target_url": "https://example.com/workspace-planner"
+  },
+  "status": "paused",
+  "review_status": "approved"
+}
+```

@@ -1,0 +1,2637 @@
+[
+  {
+    "text": "本地镜像",
+    "items": [
+      {
+        "text": "首页",
+        "link": "/"
+      },
+      {
+        "text": "文档目录",
+        "link": "/catalog"
+      },
+      {
+        "text": "翻译状态",
+        "link": "/translation-status"
+      }
+    ]
+  },
+  {
+    "text": "Ads",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "Ads — Api Overview",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Overview",
+            "link": "/mirror/ads/api-overview"
+          }
+        ]
+      },
+      {
+        "text": "Ads — Api Quickstart",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Quickstart",
+            "link": "/mirror/ads/api-quickstart"
+          }
+        ]
+      },
+      {
+        "text": "Ads — Api Reference",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Ad Account",
+            "link": "/mirror/ads/api-reference/ad-account"
+          },
+          {
+            "text": "Ad Groups",
+            "link": "/mirror/ads/api-reference/ad-groups"
+          },
+          {
+            "text": "Ads",
+            "link": "/mirror/ads/api-reference/ads"
+          },
+          {
+            "text": "Authentication",
+            "link": "/mirror/ads/api-reference/authentication"
+          },
+          {
+            "text": "Campaigns",
+            "link": "/mirror/ads/api-reference/campaigns"
+          },
+          {
+            "text": "Files",
+            "link": "/mirror/ads/api-reference/files"
+          },
+          {
+            "text": "Insights",
+            "link": "/mirror/ads/api-reference/insights"
+          }
+        ]
+      },
+      {
+        "text": "Ads — Campaign Targeting",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Campaign Targeting",
+            "link": "/mirror/ads/campaign-targeting"
+          }
+        ]
+      },
+      {
+        "text": "Ads — Conversions Api",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Conversions API",
+            "link": "/mirror/ads/conversions-api"
+          }
+        ]
+      },
+      {
+        "text": "Ads — Image Tag",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Image tag",
+            "link": "/mirror/ads/image-tag"
+          }
+        ]
+      },
+      {
+        "text": "Ads — Measurement Pixel",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "JavaScript Pixel",
+            "link": "/mirror/ads/measurement-pixel"
+          }
+        ]
+      },
+      {
+        "text": "Ads — Product Feeds",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Product feeds",
+            "link": "/mirror/ads/product-feeds"
+          }
+        ]
+      },
+      {
+        "text": "Ads — Supported Events",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Supported events",
+            "link": "/mirror/ads/supported-events"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "API Reference",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "OpenAI API — Reference",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Administration Overview",
+            "link": "/mirror/api/reference/administration/overview"
+          },
+          {
+            "text": "API Overview",
+            "link": "/mirror/api/reference/overview"
+          },
+          {
+            "text": "Audio",
+            "link": "/mirror/api/reference/resources/audio"
+          },
+          {
+            "text": "Audio Speech — Create",
+            "link": "/mirror/api/reference/resources/audio/subresources/speech/methods/create"
+          },
+          {
+            "text": "Audio Transcriptions — Create",
+            "link": "/mirror/api/reference/resources/audio/subresources/transcriptions/methods/create"
+          },
+          {
+            "text": "Audio Translations — Create",
+            "link": "/mirror/api/reference/resources/audio/subresources/translations/methods/create"
+          },
+          {
+            "text": "Audio Voice Consents — Create",
+            "link": "/mirror/api/reference/resources/audio/subresources/voice_consents/methods/create"
+          },
+          {
+            "text": "Audio Voice Consents — Delete",
+            "link": "/mirror/api/reference/resources/audio/subresources/voice_consents/methods/delete"
+          },
+          {
+            "text": "Audio Voice Consents — List",
+            "link": "/mirror/api/reference/resources/audio/subresources/voice_consents/methods/list"
+          },
+          {
+            "text": "Audio Voice Consents — Retrieve",
+            "link": "/mirror/api/reference/resources/audio/subresources/voice_consents/methods/retrieve"
+          },
+          {
+            "text": "Audio Voice Consents — Update",
+            "link": "/mirror/api/reference/resources/audio/subresources/voice_consents/methods/update"
+          },
+          {
+            "text": "Audio Voices — Create",
+            "link": "/mirror/api/reference/resources/audio/subresources/voices/methods/create"
+          },
+          {
+            "text": "Batches",
+            "link": "/mirror/api/reference/resources/batches"
+          },
+          {
+            "text": "Batches — Cancel",
+            "link": "/mirror/api/reference/resources/batches/methods/cancel"
+          },
+          {
+            "text": "Batches — Create",
+            "link": "/mirror/api/reference/resources/batches/methods/create"
+          },
+          {
+            "text": "Batches — List",
+            "link": "/mirror/api/reference/resources/batches/methods/list"
+          },
+          {
+            "text": "Batches — Retrieve",
+            "link": "/mirror/api/reference/resources/batches/methods/retrieve"
+          },
+          {
+            "text": "Beta Assistants",
+            "link": "/mirror/api/reference/resources/beta/subresources/assistants"
+          },
+          {
+            "text": "Beta Assistants — Create",
+            "link": "/mirror/api/reference/resources/beta/subresources/assistants/methods/create"
+          },
+          {
+            "text": "Beta Assistants — Delete",
+            "link": "/mirror/api/reference/resources/beta/subresources/assistants/methods/delete"
+          },
+          {
+            "text": "Beta Assistants — List",
+            "link": "/mirror/api/reference/resources/beta/subresources/assistants/methods/list"
+          },
+          {
+            "text": "Beta Assistants — Retrieve",
+            "link": "/mirror/api/reference/resources/beta/subresources/assistants/methods/retrieve"
+          },
+          {
+            "text": "Beta Assistants — Update",
+            "link": "/mirror/api/reference/resources/beta/subresources/assistants/methods/update"
+          },
+          {
+            "text": "Beta Chatkit",
+            "link": "/mirror/api/reference/resources/beta/subresources/chatkit"
+          },
+          {
+            "text": "Beta Chatkit Sessions",
+            "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/sessions"
+          },
+          {
+            "text": "Beta Chatkit Sessions — Cancel",
+            "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/cancel"
+          },
+          {
+            "text": "Beta Chatkit Sessions — Create",
+            "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/create"
+          },
+          {
+            "text": "Beta Chatkit Threads",
+            "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads"
+          },
+          {
+            "text": "Beta Chatkit Threads — Delete",
+            "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/delete"
+          },
+          {
+            "text": "Beta Chatkit Threads — List",
+            "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/list"
+          },
+          {
+            "text": "Beta Chatkit Threads — List Items",
+            "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/list_items"
+          },
+          {
+            "text": "Beta Chatkit Threads — Retrieve",
+            "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/retrieve"
+          },
+          {
+            "text": "Beta Threads",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads"
+          },
+          {
+            "text": "Beta Threads — Create",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads/methods/create"
+          },
+          {
+            "text": "Beta Threads — Delete",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads/methods/delete"
+          },
+          {
+            "text": "Beta Threads — Retrieve",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads/methods/retrieve"
+          },
+          {
+            "text": "Beta Threads — Update",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads/methods/update"
+          },
+          {
+            "text": "Beta Threads Messages",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/messages"
+          },
+          {
+            "text": "Beta Threads Messages — Create",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/create"
+          },
+          {
+            "text": "Beta Threads Messages — Delete",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/delete"
+          },
+          {
+            "text": "Beta Threads Messages — List",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/list"
+          },
+          {
+            "text": "Beta Threads Messages — Retrieve",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/retrieve"
+          },
+          {
+            "text": "Beta Threads Messages — Update",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/update"
+          },
+          {
+            "text": "Beta Threads Runs",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs"
+          },
+          {
+            "text": "Beta Threads Runs — Cancel",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/cancel"
+          },
+          {
+            "text": "Beta Threads Runs — Create",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/create"
+          },
+          {
+            "text": "Beta Threads Runs — List",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/list"
+          },
+          {
+            "text": "Beta Threads Runs — Retrieve",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/retrieve"
+          },
+          {
+            "text": "Beta Threads Runs — Submit Tool Outputs",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/submit_tool_outputs"
+          },
+          {
+            "text": "Beta Threads Runs — Update",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/update"
+          },
+          {
+            "text": "Beta Threads Runs Steps",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps"
+          },
+          {
+            "text": "Beta Threads Runs Steps — List",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps/methods/list"
+          },
+          {
+            "text": "Beta Threads Runs Steps — Retrieve",
+            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps/methods/retrieve"
+          },
+          {
+            "text": "Chat",
+            "link": "/mirror/api/reference/resources/chat"
+          },
+          {
+            "text": "Chat Completions — Retrieve",
+            "link": "/mirror/api/reference/resources/chat/subresources/completions/methods/retrieve"
+          },
+          {
+            "text": "Chat Completions Overview",
+            "link": "/mirror/api/reference/chat-completions/overview"
+          },
+          {
+            "text": "Completions",
+            "link": "/mirror/api/reference/resources/completions"
+          },
+          {
+            "text": "Completions — Create",
+            "link": "/mirror/api/reference/resources/completions/methods/create"
+          },
+          {
+            "text": "Containers",
+            "link": "/mirror/api/reference/resources/containers"
+          },
+          {
+            "text": "Containers — Create",
+            "link": "/mirror/api/reference/resources/containers/methods/create"
+          },
+          {
+            "text": "Containers — Delete",
+            "link": "/mirror/api/reference/resources/containers/methods/delete"
+          },
+          {
+            "text": "Containers — List",
+            "link": "/mirror/api/reference/resources/containers/methods/list"
+          },
+          {
+            "text": "Containers — Retrieve",
+            "link": "/mirror/api/reference/resources/containers/methods/retrieve"
+          },
+          {
+            "text": "Containers Files",
+            "link": "/mirror/api/reference/resources/containers/subresources/files"
+          },
+          {
+            "text": "Containers Files — Create",
+            "link": "/mirror/api/reference/resources/containers/subresources/files/methods/create"
+          },
+          {
+            "text": "Containers Files — Delete",
+            "link": "/mirror/api/reference/resources/containers/subresources/files/methods/delete"
+          },
+          {
+            "text": "Containers Files — List",
+            "link": "/mirror/api/reference/resources/containers/subresources/files/methods/list"
+          },
+          {
+            "text": "Containers Files — Retrieve",
+            "link": "/mirror/api/reference/resources/containers/subresources/files/methods/retrieve"
+          },
+          {
+            "text": "Containers Files Content — Retrieve",
+            "link": "/mirror/api/reference/resources/containers/subresources/files/subresources/content/methods/retrieve"
+          },
+          {
+            "text": "Conversations",
+            "link": "/mirror/api/reference/resources/conversations"
+          },
+          {
+            "text": "Conversations — Create",
+            "link": "/mirror/api/reference/resources/conversations/methods/create"
+          },
+          {
+            "text": "Conversations — Delete",
+            "link": "/mirror/api/reference/resources/conversations/methods/delete"
+          },
+          {
+            "text": "Conversations — Retrieve",
+            "link": "/mirror/api/reference/resources/conversations/methods/retrieve"
+          },
+          {
+            "text": "Conversations — Update",
+            "link": "/mirror/api/reference/resources/conversations/methods/update"
+          },
+          {
+            "text": "Conversations Items — List",
+            "link": "/mirror/api/reference/resources/conversations/subresources/items/methods/list"
+          },
+          {
+            "text": "Embeddings",
+            "link": "/mirror/api/reference/resources/embeddings"
+          },
+          {
+            "text": "Embeddings — Create",
+            "link": "/mirror/api/reference/resources/embeddings/methods/create"
+          },
+          {
+            "text": "Evals",
+            "link": "/mirror/api/reference/resources/evals"
+          },
+          {
+            "text": "Evals — Create",
+            "link": "/mirror/api/reference/resources/evals/methods/create"
+          },
+          {
+            "text": "Evals — Delete",
+            "link": "/mirror/api/reference/resources/evals/methods/delete"
+          },
+          {
+            "text": "Evals — List",
+            "link": "/mirror/api/reference/resources/evals/methods/list"
+          },
+          {
+            "text": "Evals — Retrieve",
+            "link": "/mirror/api/reference/resources/evals/methods/retrieve"
+          },
+          {
+            "text": "Evals — Update",
+            "link": "/mirror/api/reference/resources/evals/methods/update"
+          },
+          {
+            "text": "Evals Runs — Cancel",
+            "link": "/mirror/api/reference/resources/evals/subresources/runs/methods/cancel"
+          },
+          {
+            "text": "Files",
+            "link": "/mirror/api/reference/resources/files"
+          },
+          {
+            "text": "Files — Create",
+            "link": "/mirror/api/reference/resources/files/methods/create"
+          },
+          {
+            "text": "Files — Delete",
+            "link": "/mirror/api/reference/resources/files/methods/delete"
+          },
+          {
+            "text": "Files — List",
+            "link": "/mirror/api/reference/resources/files/methods/list"
+          },
+          {
+            "text": "Files — Retrieve",
+            "link": "/mirror/api/reference/resources/files/methods/retrieve"
+          },
+          {
+            "text": "Fine Tuning",
+            "link": "/mirror/api/reference/resources/fine_tuning"
+          },
+          {
+            "text": "Fine Tuning Checkpoints Permissions — Create",
+            "link": "/mirror/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/create"
+          },
+          {
+            "text": "Fine Tuning Checkpoints Permissions — Delete",
+            "link": "/mirror/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/delete"
+          },
+          {
+            "text": "Fine Tuning Jobs — List",
+            "link": "/mirror/api/reference/resources/fine_tuning/subresources/jobs/methods/list"
+          },
+          {
+            "text": "Fine Tuning Jobs Checkpoints — List",
+            "link": "/mirror/api/reference/resources/fine_tuning/subresources/jobs/subresources/checkpoints/methods/list"
+          },
+          {
+            "text": "Graders",
+            "link": "/mirror/api/reference/resources/graders"
+          },
+          {
+            "text": "Images",
+            "link": "/mirror/api/reference/resources/images"
+          },
+          {
+            "text": "Images — Create Variation",
+            "link": "/mirror/api/reference/resources/images/methods/create_variation"
+          },
+          {
+            "text": "Models",
+            "link": "/mirror/api/reference/resources/models"
+          },
+          {
+            "text": "Models — Delete",
+            "link": "/mirror/api/reference/resources/models/methods/delete"
+          },
+          {
+            "text": "Models — List",
+            "link": "/mirror/api/reference/resources/models/methods/list"
+          },
+          {
+            "text": "Models — Retrieve",
+            "link": "/mirror/api/reference/resources/models/methods/retrieve"
+          },
+          {
+            "text": "Moderations",
+            "link": "/mirror/api/reference/resources/moderations"
+          },
+          {
+            "text": "Moderations — Create",
+            "link": "/mirror/api/reference/resources/moderations/methods/create"
+          },
+          {
+            "text": "Organization",
+            "link": "/mirror/api/reference/resources/organization"
+          },
+          {
+            "text": "Organization Audit Logs",
+            "link": "/mirror/api/reference/resources/organization/subresources/audit_logs"
+          },
+          {
+            "text": "Organization Audit Logs — List",
+            "link": "/mirror/api/reference/resources/organization/subresources/audit_logs/methods/list"
+          },
+          {
+            "text": "Organization Audit Logs Admin Api Keys",
+            "link": "/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys"
+          },
+          {
+            "text": "Organization Audit Logs Admin Api Keys — Create",
+            "link": "/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys/methods/create"
+          },
+          {
+            "text": "Organization Audit Logs Admin Api Keys — Delete",
+            "link": "/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys/methods/delete"
+          },
+          {
+            "text": "Organization Audit Logs Admin Api Keys — List",
+            "link": "/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys/methods/list"
+          },
+          {
+            "text": "Organization Audit Logs Admin Api Keys — Retrieve",
+            "link": "/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys/methods/retrieve"
+          },
+          {
+            "text": "Organization Audit Logs Usage",
+            "link": "/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/usage"
+          },
+          {
+            "text": "Organization Groups",
+            "link": "/mirror/api/reference/resources/organization/subresources/groups"
+          },
+          {
+            "text": "Organization Groups — Create",
+            "link": "/mirror/api/reference/resources/organization/subresources/groups/methods/create"
+          },
+          {
+            "text": "Organization Groups — Delete",
+            "link": "/mirror/api/reference/resources/organization/subresources/groups/methods/delete"
+          },
+          {
+            "text": "Organization Groups — List",
+            "link": "/mirror/api/reference/resources/organization/subresources/groups/methods/list"
+          },
+          {
+            "text": "Organization Groups — Update",
+            "link": "/mirror/api/reference/resources/organization/subresources/groups/methods/update"
+          },
+          {
+            "text": "Organization Groups Users",
+            "link": "/mirror/api/reference/resources/organization/subresources/groups/subresources/users"
+          },
+          {
+            "text": "Organization Groups Users — Create",
+            "link": "/mirror/api/reference/resources/organization/subresources/groups/subresources/users/methods/create"
+          },
+          {
+            "text": "Organization Groups Users — Delete",
+            "link": "/mirror/api/reference/resources/organization/subresources/groups/subresources/users/methods/delete"
+          },
+          {
+            "text": "Organization Groups Users — List",
+            "link": "/mirror/api/reference/resources/organization/subresources/groups/subresources/users/methods/list"
+          },
+          {
+            "text": "Organization Invites",
+            "link": "/mirror/api/reference/resources/organization/subresources/invites"
+          },
+          {
+            "text": "Organization Invites — Create",
+            "link": "/mirror/api/reference/resources/organization/subresources/invites/methods/create"
+          },
+          {
+            "text": "Organization Invites — Delete",
+            "link": "/mirror/api/reference/resources/organization/subresources/invites/methods/delete"
+          },
+          {
+            "text": "Organization Invites — List",
+            "link": "/mirror/api/reference/resources/organization/subresources/invites/methods/list"
+          },
+          {
+            "text": "Organization Invites — Retrieve",
+            "link": "/mirror/api/reference/resources/organization/subresources/invites/methods/retrieve"
+          },
+          {
+            "text": "Organization Projects",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects"
+          },
+          {
+            "text": "Organization Projects — Create",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/methods/create"
+          },
+          {
+            "text": "Organization Projects — List",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/methods/list"
+          },
+          {
+            "text": "Organization Projects — Retrieve",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/methods/retrieve"
+          },
+          {
+            "text": "Organization Projects — Update",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/methods/update"
+          },
+          {
+            "text": "Organization Projects Api Keys",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/subresources/api_keys"
+          },
+          {
+            "text": "Organization Projects Api Keys — Delete",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/subresources/api_keys/methods/delete"
+          },
+          {
+            "text": "Organization Projects Api Keys — List",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/subresources/api_keys/methods/list"
+          },
+          {
+            "text": "Organization Projects Api Keys — Retrieve",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/subresources/api_keys/methods/retrieve"
+          },
+          {
+            "text": "Organization Projects Groups",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/subresources/groups"
+          },
+          {
+            "text": "Organization Projects Groups — Delete",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/subresources/groups/methods/delete"
+          },
+          {
+            "text": "Organization Projects Groups — List",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/subresources/groups/methods/list"
+          },
+          {
+            "text": "Organization Projects Rate Limits",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/subresources/rate_limits"
+          },
+          {
+            "text": "Organization Projects Service Accounts",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/subresources/service_accounts"
+          },
+          {
+            "text": "Organization Projects Service Accounts — Create",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/create"
+          },
+          {
+            "text": "Organization Projects Service Accounts — Delete",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/delete"
+          },
+          {
+            "text": "Organization Projects Service Accounts — List",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/list"
+          },
+          {
+            "text": "Organization Projects Service Accounts — Retrieve",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/retrieve"
+          },
+          {
+            "text": "Organization Projects Users",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/subresources/users"
+          },
+          {
+            "text": "Organization Projects Users — Create",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/subresources/users/methods/create"
+          },
+          {
+            "text": "Organization Projects Users — Delete",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/subresources/users/methods/delete"
+          },
+          {
+            "text": "Organization Projects Users — List",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/subresources/users/methods/list"
+          },
+          {
+            "text": "Organization Projects Users — Retrieve",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/subresources/users/methods/retrieve"
+          },
+          {
+            "text": "Organization Projects Users — Update",
+            "link": "/mirror/api/reference/resources/organization/subresources/projects/subresources/users/methods/update"
+          },
+          {
+            "text": "Organization Roles",
+            "link": "/mirror/api/reference/resources/organization/subresources/roles"
+          },
+          {
+            "text": "Organization Roles — Create",
+            "link": "/mirror/api/reference/resources/organization/subresources/roles/methods/create"
+          },
+          {
+            "text": "Organization Roles — Delete",
+            "link": "/mirror/api/reference/resources/organization/subresources/roles/methods/delete"
+          },
+          {
+            "text": "Organization Roles — List",
+            "link": "/mirror/api/reference/resources/organization/subresources/roles/methods/list"
+          },
+          {
+            "text": "Organization Roles — Update",
+            "link": "/mirror/api/reference/resources/organization/subresources/roles/methods/update"
+          },
+          {
+            "text": "Organization Users",
+            "link": "/mirror/api/reference/resources/organization/subresources/users"
+          },
+          {
+            "text": "Organization Users — Delete",
+            "link": "/mirror/api/reference/resources/organization/subresources/users/methods/delete"
+          },
+          {
+            "text": "Organization Users — List",
+            "link": "/mirror/api/reference/resources/organization/subresources/users/methods/list"
+          },
+          {
+            "text": "Organization Users — Retrieve",
+            "link": "/mirror/api/reference/resources/organization/subresources/users/methods/retrieve"
+          },
+          {
+            "text": "Organization Users — Update",
+            "link": "/mirror/api/reference/resources/organization/subresources/users/methods/update"
+          },
+          {
+            "text": "Organization Users Roles — Create",
+            "link": "/mirror/api/reference/resources/organization/subresources/users/subresources/roles/methods/create"
+          },
+          {
+            "text": "Organization Users Roles — Delete",
+            "link": "/mirror/api/reference/resources/organization/subresources/users/subresources/roles/methods/delete"
+          },
+          {
+            "text": "Organization Users Roles — List",
+            "link": "/mirror/api/reference/resources/organization/subresources/users/subresources/roles/methods/list"
+          },
+          {
+            "text": "Projects",
+            "link": "/mirror/api/reference/resources/projects"
+          },
+          {
+            "text": "Projects Groups",
+            "link": "/mirror/api/reference/resources/projects/subresources/groups"
+          },
+          {
+            "text": "Projects Groups Roles — Create",
+            "link": "/mirror/api/reference/resources/projects/subresources/groups/subresources/roles/methods/create"
+          },
+          {
+            "text": "Projects Groups Roles — Delete",
+            "link": "/mirror/api/reference/resources/projects/subresources/groups/subresources/roles/methods/delete"
+          },
+          {
+            "text": "Projects Groups Roles — List",
+            "link": "/mirror/api/reference/resources/projects/subresources/groups/subresources/roles/methods/list"
+          },
+          {
+            "text": "Projects Roles — Create",
+            "link": "/mirror/api/reference/resources/projects/subresources/roles/methods/create"
+          },
+          {
+            "text": "Projects Roles — Delete",
+            "link": "/mirror/api/reference/resources/projects/subresources/roles/methods/delete"
+          },
+          {
+            "text": "Projects Roles — List",
+            "link": "/mirror/api/reference/resources/projects/subresources/roles/methods/list"
+          },
+          {
+            "text": "Projects Roles — Update",
+            "link": "/mirror/api/reference/resources/projects/subresources/roles/methods/update"
+          },
+          {
+            "text": "Projects Users",
+            "link": "/mirror/api/reference/resources/projects/subresources/users"
+          },
+          {
+            "text": "Projects Users Roles — Create",
+            "link": "/mirror/api/reference/resources/projects/subresources/users/subresources/roles/methods/create"
+          },
+          {
+            "text": "Projects Users Roles — Delete",
+            "link": "/mirror/api/reference/resources/projects/subresources/users/subresources/roles/methods/delete"
+          },
+          {
+            "text": "Projects Users Roles — List",
+            "link": "/mirror/api/reference/resources/projects/subresources/users/subresources/roles/methods/list"
+          },
+          {
+            "text": "Realtime",
+            "link": "/mirror/api/reference/resources/realtime"
+          },
+          {
+            "text": "Realtime Beta Overview",
+            "link": "/mirror/api/reference/realtime-beta/overview"
+          },
+          {
+            "text": "Realtime Calls",
+            "link": "/mirror/api/reference/resources/realtime/subresources/calls"
+          },
+          {
+            "text": "Realtime Calls — Accept",
+            "link": "/mirror/api/reference/resources/realtime/subresources/calls/methods/accept"
+          },
+          {
+            "text": "Realtime Calls — Create",
+            "link": "/mirror/api/reference/resources/realtime/subresources/calls/methods/create"
+          },
+          {
+            "text": "Realtime Calls — Hangup",
+            "link": "/mirror/api/reference/resources/realtime/subresources/calls/methods/hangup"
+          },
+          {
+            "text": "Realtime Calls — Refer",
+            "link": "/mirror/api/reference/resources/realtime/subresources/calls/methods/refer"
+          },
+          {
+            "text": "Realtime Calls — Reject",
+            "link": "/mirror/api/reference/resources/realtime/subresources/calls/methods/reject"
+          },
+          {
+            "text": "Realtime Client Secrets",
+            "link": "/mirror/api/reference/resources/realtime/subresources/client_secrets"
+          },
+          {
+            "text": "Realtime Client Secrets — Create",
+            "link": "/mirror/api/reference/resources/realtime/subresources/client_secrets/methods/create"
+          },
+          {
+            "text": "Responses",
+            "link": "/mirror/api/reference/resources/responses"
+          },
+          {
+            "text": "Responses — Cancel",
+            "link": "/mirror/api/reference/resources/responses/methods/cancel"
+          },
+          {
+            "text": "Responses — Compact",
+            "link": "/mirror/api/reference/resources/responses/methods/compact"
+          },
+          {
+            "text": "Responses — Create",
+            "link": "/mirror/api/reference/resources/responses/methods/create"
+          },
+          {
+            "text": "Responses — Delete",
+            "link": "/mirror/api/reference/resources/responses/methods/delete"
+          },
+          {
+            "text": "Responses — Retrieve",
+            "link": "/mirror/api/reference/resources/responses/methods/retrieve"
+          },
+          {
+            "text": "Responses Input Items — List",
+            "link": "/mirror/api/reference/resources/responses/subresources/input_items/methods/list"
+          },
+          {
+            "text": "Responses Input Tokens",
+            "link": "/mirror/api/reference/resources/responses/subresources/input_tokens"
+          },
+          {
+            "text": "Responses Overview",
+            "link": "/mirror/api/reference/responses/overview"
+          },
+          {
+            "text": "Unwrap",
+            "link": "/mirror/api/reference/resources/webhooks/methods/unwrap"
+          },
+          {
+            "text": "Uploads",
+            "link": "/mirror/api/reference/resources/uploads"
+          },
+          {
+            "text": "Uploads — Cancel",
+            "link": "/mirror/api/reference/resources/uploads/methods/cancel"
+          },
+          {
+            "text": "Uploads — Create",
+            "link": "/mirror/api/reference/resources/uploads/methods/create"
+          },
+          {
+            "text": "Uploads Parts — Create",
+            "link": "/mirror/api/reference/resources/uploads/subresources/parts/methods/create"
+          },
+          {
+            "text": "Vector Stores",
+            "link": "/mirror/api/reference/resources/vector_stores"
+          },
+          {
+            "text": "Vector Stores — Create",
+            "link": "/mirror/api/reference/resources/vector_stores/methods/create"
+          },
+          {
+            "text": "Vector Stores — Delete",
+            "link": "/mirror/api/reference/resources/vector_stores/methods/delete"
+          },
+          {
+            "text": "Vector Stores — List",
+            "link": "/mirror/api/reference/resources/vector_stores/methods/list"
+          },
+          {
+            "text": "Vector Stores — Retrieve",
+            "link": "/mirror/api/reference/resources/vector_stores/methods/retrieve"
+          },
+          {
+            "text": "Vector Stores — Search",
+            "link": "/mirror/api/reference/resources/vector_stores/methods/search"
+          },
+          {
+            "text": "Vector Stores — Update",
+            "link": "/mirror/api/reference/resources/vector_stores/methods/update"
+          },
+          {
+            "text": "Vector Stores File Batches",
+            "link": "/mirror/api/reference/resources/vector_stores/subresources/file_batches"
+          },
+          {
+            "text": "Vector Stores File Batches — Cancel",
+            "link": "/mirror/api/reference/resources/vector_stores/subresources/file_batches/methods/cancel"
+          },
+          {
+            "text": "Vector Stores File Batches — Create",
+            "link": "/mirror/api/reference/resources/vector_stores/subresources/file_batches/methods/create"
+          },
+          {
+            "text": "Vector Stores File Batches — List Files",
+            "link": "/mirror/api/reference/resources/vector_stores/subresources/file_batches/methods/list_files"
+          },
+          {
+            "text": "Vector Stores File Batches — Retrieve",
+            "link": "/mirror/api/reference/resources/vector_stores/subresources/file_batches/methods/retrieve"
+          },
+          {
+            "text": "Vector Stores Files",
+            "link": "/mirror/api/reference/resources/vector_stores/subresources/files"
+          },
+          {
+            "text": "Vector Stores Files — Content",
+            "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/content"
+          },
+          {
+            "text": "Vector Stores Files — Create",
+            "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/create"
+          },
+          {
+            "text": "Vector Stores Files — Delete",
+            "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/delete"
+          },
+          {
+            "text": "Vector Stores Files — List",
+            "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/list"
+          },
+          {
+            "text": "Vector Stores Files — Retrieve",
+            "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/retrieve"
+          },
+          {
+            "text": "Vector Stores Files — Update",
+            "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/update"
+          },
+          {
+            "text": "Videos",
+            "link": "/mirror/api/reference/resources/videos"
+          },
+          {
+            "text": "Videos — Create",
+            "link": "/mirror/api/reference/resources/videos/methods/create"
+          },
+          {
+            "text": "Videos — Delete",
+            "link": "/mirror/api/reference/resources/videos/methods/delete"
+          },
+          {
+            "text": "Videos — List",
+            "link": "/mirror/api/reference/resources/videos/methods/list"
+          },
+          {
+            "text": "Videos — Retrieve",
+            "link": "/mirror/api/reference/resources/videos/methods/retrieve"
+          },
+          {
+            "text": "Webhooks",
+            "link": "/mirror/api/reference/resources/webhooks"
+          },
+          {
+            "text": "Workload identity token exchange",
+            "link": "/mirror/api/reference/workload-identity-federation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Apps SDK",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "Apps SDK — App Submission Guidelines",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "App submission guidelines",
+            "link": "/mirror/apps-sdk/app-submission-guidelines"
+          }
+        ]
+      },
+      {
+        "text": "Apps SDK — Build",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Authentication",
+            "link": "/mirror/apps-sdk/build/auth"
+          },
+          {
+            "text": "Build your ChatGPT UI",
+            "link": "/mirror/apps-sdk/build/chatgpt-ui"
+          },
+          {
+            "text": "Build your MCP server",
+            "link": "/mirror/apps-sdk/build/mcp-server"
+          },
+          {
+            "text": "Examples",
+            "link": "/mirror/apps-sdk/build/examples"
+          },
+          {
+            "text": "Managing State",
+            "link": "/mirror/apps-sdk/build/state-management"
+          },
+          {
+            "text": "Monetization",
+            "link": "/mirror/apps-sdk/build/monetization"
+          }
+        ]
+      },
+      {
+        "text": "Apps SDK — Concepts",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "MCP",
+            "link": "/mirror/apps-sdk/concepts/mcp-server"
+          },
+          {
+            "text": "UI guidelines",
+            "link": "/mirror/apps-sdk/concepts/ui-guidelines"
+          },
+          {
+            "text": "User Interaction",
+            "link": "/mirror/apps-sdk/concepts/user-interaction"
+          },
+          {
+            "text": "UX principles",
+            "link": "/mirror/apps-sdk/concepts/ux-principles"
+          }
+        ]
+      },
+      {
+        "text": "Apps SDK — Deploy",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Connect from ChatGPT",
+            "link": "/mirror/apps-sdk/deploy/connect-chatgpt"
+          },
+          {
+            "text": "Deploy your app",
+            "link": "/mirror/apps-sdk/deploy"
+          },
+          {
+            "text": "Submit and maintain your app",
+            "link": "/mirror/apps-sdk/deploy/submission"
+          },
+          {
+            "text": "Test your integration",
+            "link": "/mirror/apps-sdk/deploy/testing"
+          },
+          {
+            "text": "Troubleshooting",
+            "link": "/mirror/apps-sdk/deploy/troubleshooting"
+          }
+        ]
+      },
+      {
+        "text": "Apps SDK — Guides",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Optimize Metadata",
+            "link": "/mirror/apps-sdk/guides/optimize-metadata"
+          },
+          {
+            "text": "Product checkout conversion spec",
+            "link": "/mirror/apps-sdk/guides/product-checkout-conversion-spec"
+          },
+          {
+            "text": "Restaurant reservation conversion spec",
+            "link": "/mirror/apps-sdk/guides/restaurant-reservation-conversion-spec"
+          },
+          {
+            "text": "Security & Privacy",
+            "link": "/mirror/apps-sdk/guides/security-privacy"
+          }
+        ]
+      },
+      {
+        "text": "Apps SDK — Mcp Apps In Chatgpt",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "MCP Apps compatibility in ChatGPT",
+            "link": "/mirror/apps-sdk/mcp-apps-in-chatgpt"
+          }
+        ]
+      },
+      {
+        "text": "Apps SDK — Plan",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Define tools",
+            "link": "/mirror/apps-sdk/plan/tools"
+          },
+          {
+            "text": "Design components",
+            "link": "/mirror/apps-sdk/plan/components"
+          },
+          {
+            "text": "Research use cases",
+            "link": "/mirror/apps-sdk/plan/use-case"
+          }
+        ]
+      },
+      {
+        "text": "Apps SDK — Quickstart",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Quickstart",
+            "link": "/mirror/apps-sdk/quickstart"
+          }
+        ]
+      },
+      {
+        "text": "Documentation sets",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Apps SDK reference (Markdown)",
+            "link": "/mirror/apps-sdk/reference"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Codex",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "Codex — Agent Approvals Security",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Agent approvals & security",
+            "link": "/mirror/codex/agent-approvals-security"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Amazon Bedrock",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Use Codex with Amazon Bedrock",
+            "link": "/mirror/codex/amazon-bedrock"
+          }
+        ]
+      },
+      {
+        "text": "Codex — App",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Automations",
+            "link": "/mirror/codex/app/automations"
+          },
+          {
+            "text": "Codex app",
+            "link": "/mirror/codex/app"
+          },
+          {
+            "text": "Codex app commands",
+            "link": "/mirror/codex/app/commands"
+          },
+          {
+            "text": "Codex app features",
+            "link": "/mirror/codex/app/features"
+          },
+          {
+            "text": "Codex app settings",
+            "link": "/mirror/codex/app/settings"
+          },
+          {
+            "text": "Codex Chrome extension",
+            "link": "/mirror/codex/app/chrome-extension"
+          },
+          {
+            "text": "Computer Use",
+            "link": "/mirror/codex/app/computer-use"
+          },
+          {
+            "text": "In-app browser",
+            "link": "/mirror/codex/app/browser"
+          },
+          {
+            "text": "Local environments",
+            "link": "/mirror/codex/app/local-environments"
+          },
+          {
+            "text": "Review",
+            "link": "/mirror/codex/app/review"
+          },
+          {
+            "text": "Troubleshooting",
+            "link": "/mirror/codex/app/troubleshooting"
+          },
+          {
+            "text": "Windows",
+            "link": "/mirror/codex/app/windows"
+          },
+          {
+            "text": "Worktrees",
+            "link": "/mirror/codex/app/worktrees"
+          }
+        ]
+      },
+      {
+        "text": "Codex — App Server",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Codex App Server",
+            "link": "/mirror/codex/app-server"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Appshots",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Appshots",
+            "link": "/mirror/codex/appshots"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Auth",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Authentication",
+            "link": "/mirror/codex/auth"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Cli",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Codex CLI",
+            "link": "/mirror/codex/cli"
+          },
+          {
+            "text": "Codex CLI features",
+            "link": "/mirror/codex/cli/features"
+          },
+          {
+            "text": "Command line options",
+            "link": "/mirror/codex/cli/reference"
+          },
+          {
+            "text": "Slash commands in Codex CLI",
+            "link": "/mirror/codex/cli/slash-commands"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Cloud",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Agent internet access",
+            "link": "/mirror/codex/cloud/internet-access"
+          },
+          {
+            "text": "Cloud environments",
+            "link": "/mirror/codex/cloud/environments"
+          },
+          {
+            "text": "Codex web",
+            "link": "/mirror/codex/cloud"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Community",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Codex for Open Source",
+            "link": "/mirror/codex/community/codex-for-oss"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Concepts",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Auto-review",
+            "link": "/mirror/codex/concepts/sandboxing/auto-review"
+          },
+          {
+            "text": "Customization",
+            "link": "/mirror/codex/concepts/customization"
+          },
+          {
+            "text": "Cyber Safety",
+            "link": "/mirror/codex/concepts/cyber-safety"
+          },
+          {
+            "text": "Sandbox",
+            "link": "/mirror/codex/concepts/sandboxing"
+          },
+          {
+            "text": "Subagents",
+            "link": "/mirror/codex/concepts/subagents"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Config Advanced",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Advanced Configuration",
+            "link": "/mirror/codex/config-advanced"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Config Basic",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Config basics",
+            "link": "/mirror/codex/config-basic"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Config Reference",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Configuration Reference",
+            "link": "/mirror/codex/config-reference"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Config Sample",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Sample Configuration",
+            "link": "/mirror/codex/config-sample"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Custom Prompts",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Custom Prompts",
+            "link": "/mirror/codex/custom-prompts"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Enterprise",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Access tokens",
+            "link": "/mirror/codex/enterprise/access-tokens"
+          },
+          {
+            "text": "Admin Setup",
+            "link": "/mirror/codex/enterprise/admin-setup"
+          },
+          {
+            "text": "Governance",
+            "link": "/mirror/codex/enterprise/governance"
+          },
+          {
+            "text": "Managed configuration",
+            "link": "/mirror/codex/enterprise/managed-configuration"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Environment Variables",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Environment variables",
+            "link": "/mirror/codex/environment-variables"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Feature Maturity",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Feature Maturity",
+            "link": "/mirror/codex/feature-maturity"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Github Action",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Codex GitHub Action",
+            "link": "/mirror/codex/github-action"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Glossary",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Glossary",
+            "link": "/mirror/codex/glossary"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Guides",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Building an AI-Native Engineering Team",
+            "link": "/mirror/codex/guides/build-ai-native-engineering-team"
+          },
+          {
+            "text": "Custom instructions with AGENTS.md",
+            "link": "/mirror/codex/guides/agents-md"
+          },
+          {
+            "text": "Use Codex with the Agents SDK",
+            "link": "/mirror/codex/guides/agents-sdk"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Hooks",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Hooks",
+            "link": "/mirror/codex/hooks"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Ide",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Codex IDE extension",
+            "link": "/mirror/codex/ide"
+          },
+          {
+            "text": "Codex IDE extension commands",
+            "link": "/mirror/codex/ide/commands"
+          },
+          {
+            "text": "Codex IDE extension features",
+            "link": "/mirror/codex/ide/features"
+          },
+          {
+            "text": "Codex IDE extension settings",
+            "link": "/mirror/codex/ide/settings"
+          },
+          {
+            "text": "Codex IDE extension slash commands",
+            "link": "/mirror/codex/ide/slash-commands"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Import",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Import to Codex",
+            "link": "/mirror/codex/import"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Integrations",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Codex code review in GitHub",
+            "link": "/mirror/codex/integrations/github"
+          },
+          {
+            "text": "Use Codex in Linear",
+            "link": "/mirror/codex/integrations/linear"
+          },
+          {
+            "text": "Use Codex in Slack",
+            "link": "/mirror/codex/integrations/slack"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Learn",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Best practices",
+            "link": "/mirror/codex/learn/best-practices"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Mcp",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Model Context Protocol",
+            "link": "/mirror/codex/mcp"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Memories",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Chronicle",
+            "link": "/mirror/codex/memories/chronicle"
+          },
+          {
+            "text": "Memories",
+            "link": "/mirror/codex/memories"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Models",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Codex Models",
+            "link": "/mirror/codex/models"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Noninteractive",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Non-interactive mode",
+            "link": "/mirror/codex/noninteractive"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Open Source",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Open Source",
+            "link": "/mirror/codex/open-source"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Overview",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Codex",
+            "link": "/mirror/codex/overview"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Permissions",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Permissions",
+            "link": "/mirror/codex/permissions"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Plugins",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Build plugins",
+            "link": "/mirror/codex/plugins/build"
+          },
+          {
+            "text": "Plugins",
+            "link": "/mirror/codex/plugins"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Pricing",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Codex Pricing",
+            "link": "/mirror/codex/pricing"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Prompting",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Prompting",
+            "link": "/mirror/codex/prompting"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Quickstart",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Quickstart",
+            "link": "/mirror/codex/quickstart"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Record And Replay",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Record & Replay",
+            "link": "/mirror/codex/record-and-replay"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Remote Connections",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Remote connections",
+            "link": "/mirror/codex/remote-connections"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Rules",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Rules",
+            "link": "/mirror/codex/rules"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Sdk",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Codex SDK",
+            "link": "/mirror/codex/sdk"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Security",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Codex Security",
+            "link": "/mirror/codex/security"
+          },
+          {
+            "text": "Codex Security plugin changelog",
+            "link": "/mirror/codex/security/plugin/changelog"
+          },
+          {
+            "text": "Codex Security plugin quickstart",
+            "link": "/mirror/codex/security/plugin"
+          },
+          {
+            "text": "Codex Security setup",
+            "link": "/mirror/codex/security/setup"
+          },
+          {
+            "text": "Export and track security findings",
+            "link": "/mirror/codex/security/plugin/export-findings"
+          },
+          {
+            "text": "FAQ",
+            "link": "/mirror/codex/security/faq"
+          },
+          {
+            "text": "Fix and verify security findings",
+            "link": "/mirror/codex/security/plugin/fix-findings"
+          },
+          {
+            "text": "Improving the threat model",
+            "link": "/mirror/codex/security/threat-model"
+          },
+          {
+            "text": "Review code changes for security",
+            "link": "/mirror/codex/security/plugin/code-changes"
+          },
+          {
+            "text": "Run a Codex Security scan",
+            "link": "/mirror/codex/security/plugin/scans"
+          },
+          {
+            "text": "Run a deep security scan",
+            "link": "/mirror/codex/security/plugin/deep-scans"
+          },
+          {
+            "text": "Triage a backlog",
+            "link": "/mirror/codex/security/plugin/triage-backlog"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Sites",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Sites",
+            "link": "/mirror/codex/sites"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Skills",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Agent Skills",
+            "link": "/mirror/codex/skills"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Speed",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Speed",
+            "link": "/mirror/codex/speed"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Subagents",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Subagents",
+            "link": "/mirror/codex/subagents"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Videos",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Videos",
+            "link": "/mirror/codex/videos"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Windows",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Windows",
+            "link": "/mirror/codex/windows"
+          }
+        ]
+      },
+      {
+        "text": "Codex — Workflows",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Workflows",
+            "link": "/mirror/codex/workflows"
+          }
+        ]
+      },
+      {
+        "text": "Documentation sets",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Codex manual (Markdown)",
+            "link": "/mirror/codex/codex-manual"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Commerce",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "Agentic Commerce — Guides",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Agentic commerce in production",
+            "link": "/mirror/commerce/guides/production"
+          },
+          {
+            "text": "Best practices",
+            "link": "/mirror/commerce/guides/best-practices"
+          },
+          {
+            "text": "Get Started",
+            "link": "/mirror/commerce/guides/get-started"
+          },
+          {
+            "text": "Key concepts",
+            "link": "/mirror/commerce/guides/key-concepts"
+          }
+        ]
+      },
+      {
+        "text": "Agentic Commerce — Specs",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Agentic Checkout Spec",
+            "link": "/mirror/commerce/specs/checkout"
+          },
+          {
+            "text": "Delegated Payment Spec",
+            "link": "/mirror/commerce/specs/payment"
+          },
+          {
+            "text": "Feeds",
+            "link": "/mirror/commerce/specs/api/feeds"
+          },
+          {
+            "text": "File Upload",
+            "link": "/mirror/commerce/specs/file-upload/legacy"
+          },
+          {
+            "text": "Onboarding",
+            "link": "/mirror/commerce/specs/onboarding"
+          },
+          {
+            "text": "Overview",
+            "link": "/mirror/commerce/specs/api/overview"
+          },
+          {
+            "text": "Overview",
+            "link": "/mirror/commerce/specs/file-upload/overview"
+          },
+          {
+            "text": "Product Feed Spec",
+            "link": "/mirror/commerce/specs/spec"
+          },
+          {
+            "text": "Products",
+            "link": "/mirror/commerce/specs/api/products"
+          },
+          {
+            "text": "Products",
+            "link": "/mirror/commerce/specs/file-upload/products"
+          },
+          {
+            "text": "Promotions",
+            "link": "/mirror/commerce/specs/api/promotions"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "OpenAI API Docs",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "OpenAI API — Docs",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Actions in ChatKit",
+            "link": "/mirror/api/docs/guides/chatkit-actions"
+          },
+          {
+            "text": "Admin APIs",
+            "link": "/mirror/api/docs/guides/admin-apis"
+          },
+          {
+            "text": "Advanced integrations with ChatKit",
+            "link": "/mirror/api/docs/guides/custom-chatkit"
+          },
+          {
+            "text": "Advanced usage",
+            "link": "/mirror/api/docs/guides/advanced-usage"
+          },
+          {
+            "text": "Agent Builder",
+            "link": "/mirror/api/docs/guides/agent-builder"
+          },
+          {
+            "text": "Agent definitions",
+            "link": "/mirror/api/docs/guides/agents/define-agents"
+          },
+          {
+            "text": "Agents SDK",
+            "link": "/mirror/api/docs/guides/agents"
+          },
+          {
+            "text": "API deployment checklist",
+            "link": "/mirror/api/docs/guides/deployment-checklist"
+          },
+          {
+            "text": "Apply Patch",
+            "link": "/mirror/api/docs/guides/tools-apply-patch"
+          },
+          {
+            "text": "Assistants API deep dive",
+            "link": "/mirror/api/docs/assistants/deep-dive"
+          },
+          {
+            "text": "Assistants API tools",
+            "link": "/mirror/api/docs/assistants/tools"
+          },
+          {
+            "text": "Assistants Code Interpreter",
+            "link": "/mirror/api/docs/assistants/tools/code-interpreter"
+          },
+          {
+            "text": "Assistants File Search",
+            "link": "/mirror/api/docs/assistants/tools/file-search"
+          },
+          {
+            "text": "Assistants Function Calling",
+            "link": "/mirror/api/docs/assistants/tools/function-calling"
+          },
+          {
+            "text": "Assistants migration guide",
+            "link": "/mirror/api/docs/assistants/migration"
+          },
+          {
+            "text": "Audio and speech",
+            "link": "/mirror/api/docs/guides/audio"
+          },
+          {
+            "text": "Background mode",
+            "link": "/mirror/api/docs/guides/background"
+          },
+          {
+            "text": "Batch API",
+            "link": "/mirror/api/docs/guides/batch"
+          },
+          {
+            "text": "Building MCP servers for ChatGPT Apps and API integrations",
+            "link": "/mirror/api/docs/mcp"
+          },
+          {
+            "text": "ChatGPT Developer mode",
+            "link": "/mirror/api/docs/guides/developer-mode"
+          },
+          {
+            "text": "ChatKit",
+            "link": "/mirror/api/docs/guides/chatkit"
+          },
+          {
+            "text": "ChatKit widgets",
+            "link": "/mirror/api/docs/guides/chatkit-widgets"
+          },
+          {
+            "text": "Citation Formatting",
+            "link": "/mirror/api/docs/guides/citation-formatting"
+          },
+          {
+            "text": "Code generation",
+            "link": "/mirror/api/docs/guides/code-generation"
+          },
+          {
+            "text": "Code Interpreter",
+            "link": "/mirror/api/docs/guides/tools-code-interpreter"
+          },
+          {
+            "text": "Compaction",
+            "link": "/mirror/api/docs/guides/compaction"
+          },
+          {
+            "text": "Completions API",
+            "link": "/mirror/api/docs/guides/completions"
+          },
+          {
+            "text": "Computer use",
+            "link": "/mirror/api/docs/guides/tools-computer-use"
+          },
+          {
+            "text": "Configuring workload identity federation for AWS",
+            "link": "/mirror/api/docs/guides/workload-identity-federation/aws"
+          },
+          {
+            "text": "Configuring workload identity federation for GitHub Actions",
+            "link": "/mirror/api/docs/guides/workload-identity-federation/github-actions"
+          },
+          {
+            "text": "Configuring workload identity federation for Google Cloud",
+            "link": "/mirror/api/docs/guides/workload-identity-federation/google-cloud"
+          },
+          {
+            "text": "Configuring workload identity federation for Kubernetes",
+            "link": "/mirror/api/docs/guides/workload-identity-federation/kubernetes"
+          },
+          {
+            "text": "Configuring workload identity federation for Microsoft Azure",
+            "link": "/mirror/api/docs/guides/workload-identity-federation/microsoft-azure"
+          },
+          {
+            "text": "Configuring workload identity federation for SPIFFE",
+            "link": "/mirror/api/docs/guides/workload-identity-federation/spiffe"
+          },
+          {
+            "text": "Conversation state",
+            "link": "/mirror/api/docs/guides/conversation-state"
+          },
+          {
+            "text": "Cost optimization",
+            "link": "/mirror/api/docs/guides/cost-optimization"
+          },
+          {
+            "text": "Counting tokens",
+            "link": "/mirror/api/docs/guides/token-counting"
+          },
+          {
+            "text": "Cybersecurity checks",
+            "link": "/mirror/api/docs/guides/safety-checks/cybersecurity"
+          },
+          {
+            "text": "Data controls in the OpenAI platform",
+            "link": "/mirror/api/docs/guides/your-data"
+          },
+          {
+            "text": "Data retrieval with GPT Actions",
+            "link": "/mirror/api/docs/actions/data-retrieval"
+          },
+          {
+            "text": "Deep research",
+            "link": "/mirror/api/docs/guides/deep-research"
+          },
+          {
+            "text": "Deprecations",
+            "link": "/mirror/api/docs/deprecations"
+          },
+          {
+            "text": "Developer quickstart",
+            "link": "/mirror/api/docs/quickstart"
+          },
+          {
+            "text": "Direct preference optimization",
+            "link": "/mirror/api/docs/guides/direct-preference-optimization"
+          },
+          {
+            "text": "Error codes",
+            "link": "/mirror/api/docs/guides/error-codes"
+          },
+          {
+            "text": "Evaluate agent workflows",
+            "link": "/mirror/api/docs/guides/agent-evals"
+          },
+          {
+            "text": "Evaluate external models",
+            "link": "/mirror/api/docs/guides/external-models"
+          },
+          {
+            "text": "Evaluation best practices",
+            "link": "/mirror/api/docs/guides/evaluation-best-practices"
+          },
+          {
+            "text": "File inputs",
+            "link": "/mirror/api/docs/guides/file-inputs"
+          },
+          {
+            "text": "File search",
+            "link": "/mirror/api/docs/guides/tools-file-search"
+          },
+          {
+            "text": "Fine-tuning best practices",
+            "link": "/mirror/api/docs/guides/fine-tuning-best-practices"
+          },
+          {
+            "text": "Flex processing",
+            "link": "/mirror/api/docs/guides/flex-processing"
+          },
+          {
+            "text": "Frontend prompt instructions",
+            "link": "/mirror/api/docs/guides/frontend-prompt"
+          },
+          {
+            "text": "Function calling",
+            "link": "/mirror/api/docs/guides/function-calling"
+          },
+          {
+            "text": "Getting started with datasets",
+            "link": "/mirror/api/docs/guides/evaluation-getting-started"
+          },
+          {
+            "text": "Getting started with GPT Actions",
+            "link": "/mirror/api/docs/actions/getting-started"
+          },
+          {
+            "text": "GPT Action authentication",
+            "link": "/mirror/api/docs/actions/authentication"
+          },
+          {
+            "text": "GPT Actions",
+            "link": "/mirror/api/docs/actions/introduction"
+          },
+          {
+            "text": "GPT Actions library",
+            "link": "/mirror/api/docs/actions/actions-library"
+          },
+          {
+            "text": "GPT Release Notes",
+            "link": "/mirror/api/docs/gpts/release-notes"
+          },
+          {
+            "text": "Graders",
+            "link": "/mirror/api/docs/guides/graders"
+          },
+          {
+            "text": "Guardrails and human review",
+            "link": "/mirror/api/docs/guides/agents/guardrails-approvals"
+          },
+          {
+            "text": "Image generation",
+            "link": "/mirror/api/docs/guides/image-generation"
+          },
+          {
+            "text": "Image generation",
+            "link": "/mirror/api/docs/guides/tools-image-generation"
+          },
+          {
+            "text": "Images and vision",
+            "link": "/mirror/api/docs/guides/images-vision"
+          },
+          {
+            "text": "Integrations and observability",
+            "link": "/mirror/api/docs/guides/agents/integrations-observability"
+          },
+          {
+            "text": "IP egress ranges",
+            "link": "/mirror/api/docs/guides/ip-addresses"
+          },
+          {
+            "text": "Key concepts",
+            "link": "/mirror/api/docs/concepts"
+          },
+          {
+            "text": "Latency optimization",
+            "link": "/mirror/api/docs/guides/latency-optimization"
+          },
+          {
+            "text": "Local shell",
+            "link": "/mirror/api/docs/guides/tools-local-shell"
+          },
+          {
+            "text": "Manage permissions in the OpenAI platform",
+            "link": "/mirror/api/docs/guides/rbac"
+          },
+          {
+            "text": "Managing costs",
+            "link": "/mirror/api/docs/guides/realtime-costs"
+          },
+          {
+            "text": "MCP and Connectors",
+            "link": "/mirror/api/docs/guides/tools-connectors-mcp"
+          },
+          {
+            "text": "Meeting minutes",
+            "link": "/mirror/api/docs/tutorials/meeting-minutes"
+          },
+          {
+            "text": "Migrate from Agent Builder",
+            "link": "/mirror/api/docs/guides/agent-builder/migrate-from-agent-builder"
+          },
+          {
+            "text": "Migrate from prompt objects",
+            "link": "/mirror/api/docs/guides/prompting/migrate-from-prompt-object"
+          },
+          {
+            "text": "Migrate to the Responses API",
+            "link": "/mirror/api/docs/guides/migrate-to-responses"
+          },
+          {
+            "text": "Model optimization",
+            "link": "/mirror/api/docs/guides/model-optimization"
+          },
+          {
+            "text": "Model selection",
+            "link": "/mirror/api/docs/guides/model-selection"
+          },
+          {
+            "text": "Models and providers",
+            "link": "/mirror/api/docs/guides/agents/models"
+          },
+          {
+            "text": "Moderation",
+            "link": "/mirror/api/docs/guides/moderation"
+          },
+          {
+            "text": "Node reference",
+            "link": "/mirror/api/docs/guides/node-reference"
+          },
+          {
+            "text": "OpenAI CLI",
+            "link": "/mirror/api/docs/libraries/openai-cli"
+          },
+          {
+            "text": "OpenAI models in Amazon Bedrock",
+            "link": "/mirror/api/docs/guides/amazon-bedrock"
+          },
+          {
+            "text": "Optimizing LLM Accuracy",
+            "link": "/mirror/api/docs/guides/optimizing-llm-accuracy"
+          },
+          {
+            "text": "Orchestration and handoffs",
+            "link": "/mirror/api/docs/guides/agents/orchestration"
+          },
+          {
+            "text": "Overview of OpenAI Crawlers",
+            "link": "/mirror/api/docs/bots"
+          },
+          {
+            "text": "Predicted Outputs",
+            "link": "/mirror/api/docs/guides/predicted-outputs"
+          },
+          {
+            "text": "Pricing",
+            "link": "/mirror/api/docs/pricing"
+          },
+          {
+            "text": "Priority processing",
+            "link": "/mirror/api/docs/guides/priority-processing"
+          },
+          {
+            "text": "Production best practices",
+            "link": "/mirror/api/docs/guides/production-best-practices"
+          },
+          {
+            "text": "Production notes on GPT Actions",
+            "link": "/mirror/api/docs/actions/production"
+          },
+          {
+            "text": "Prompt caching",
+            "link": "/mirror/api/docs/guides/prompt-caching"
+          },
+          {
+            "text": "Prompt engineering",
+            "link": "/mirror/api/docs/guides/prompt-engineering"
+          },
+          {
+            "text": "Prompt generation",
+            "link": "/mirror/api/docs/guides/prompt-generation"
+          },
+          {
+            "text": "Prompt guidance",
+            "link": "/mirror/api/docs/guides/prompt-guidance"
+          },
+          {
+            "text": "Prompt optimizer",
+            "link": "/mirror/api/docs/guides/prompt-optimizer"
+          },
+          {
+            "text": "Prompting",
+            "link": "/mirror/api/docs/guides/prompting"
+          },
+          {
+            "text": "Quickstart",
+            "link": "/mirror/api/docs/guides/agents/quickstart"
+          },
+          {
+            "text": "Rate limits",
+            "link": "/mirror/api/docs/guides/rate-limits"
+          },
+          {
+            "text": "Realtime and audio",
+            "link": "/mirror/api/docs/guides/realtime"
+          },
+          {
+            "text": "Realtime API with SIP",
+            "link": "/mirror/api/docs/guides/realtime-sip"
+          },
+          {
+            "text": "Realtime API with WebRTC",
+            "link": "/mirror/api/docs/guides/realtime-webrtc"
+          },
+          {
+            "text": "Realtime API with WebSocket",
+            "link": "/mirror/api/docs/guides/realtime-websocket"
+          },
+          {
+            "text": "Realtime conversations",
+            "link": "/mirror/api/docs/guides/realtime-conversations"
+          },
+          {
+            "text": "Realtime transcription",
+            "link": "/mirror/api/docs/guides/realtime-transcription"
+          },
+          {
+            "text": "Realtime translation",
+            "link": "/mirror/api/docs/guides/realtime-translation"
+          },
+          {
+            "text": "Realtime with tools",
+            "link": "/mirror/api/docs/guides/realtime-mcp"
+          },
+          {
+            "text": "Reasoning best practices",
+            "link": "/mirror/api/docs/guides/reasoning-best-practices"
+          },
+          {
+            "text": "Reasoning models",
+            "link": "/mirror/api/docs/guides/reasoning"
+          },
+          {
+            "text": "Red teaming",
+            "link": "/mirror/api/docs/guides/red-teaming"
+          },
+          {
+            "text": "Reinforcement fine-tuning",
+            "link": "/mirror/api/docs/guides/reinforcement-fine-tuning"
+          },
+          {
+            "text": "Reinforcement fine-tuning use cases",
+            "link": "/mirror/api/docs/guides/rft-use-cases"
+          },
+          {
+            "text": "Results and state",
+            "link": "/mirror/api/docs/guides/agents/results"
+          },
+          {
+            "text": "Retrieval",
+            "link": "/mirror/api/docs/guides/retrieval"
+          },
+          {
+            "text": "Running agents",
+            "link": "/mirror/api/docs/guides/agents/running-agents"
+          },
+          {
+            "text": "Safety best practices",
+            "link": "/mirror/api/docs/guides/safety-best-practices"
+          },
+          {
+            "text": "Safety checks",
+            "link": "/mirror/api/docs/guides/safety-checks"
+          },
+          {
+            "text": "Safety in building agents",
+            "link": "/mirror/api/docs/guides/agent-builder-safety"
+          },
+          {
+            "text": "Sandbox Agents",
+            "link": "/mirror/api/docs/guides/agents/sandboxes"
+          },
+          {
+            "text": "SDKs and CLI",
+            "link": "/mirror/api/docs/libraries"
+          },
+          {
+            "text": "Secure MCP Tunnel",
+            "link": "/mirror/api/docs/guides/secure-mcp-tunnels"
+          },
+          {
+            "text": "Sending and returning files with GPT Actions",
+            "link": "/mirror/api/docs/actions/sending-files"
+          },
+          {
+            "text": "Shell",
+            "link": "/mirror/api/docs/guides/tools-shell"
+          },
+          {
+            "text": "Skills",
+            "link": "/mirror/api/docs/guides/tools-skills"
+          },
+          {
+            "text": "Speech to text",
+            "link": "/mirror/api/docs/guides/speech-to-text"
+          },
+          {
+            "text": "Streaming API responses",
+            "link": "/mirror/api/docs/guides/streaming-responses"
+          },
+          {
+            "text": "Structured model outputs",
+            "link": "/mirror/api/docs/guides/structured-outputs"
+          },
+          {
+            "text": "Supervised fine-tuning",
+            "link": "/mirror/api/docs/guides/supervised-fine-tuning"
+          },
+          {
+            "text": "Supported countries and territories",
+            "link": "/mirror/api/docs/supported-countries"
+          },
+          {
+            "text": "Text generation",
+            "link": "/mirror/api/docs/guides/text"
+          },
+          {
+            "text": "Text to speech",
+            "link": "/mirror/api/docs/guides/text-to-speech"
+          },
+          {
+            "text": "Theming and customization in ChatKit",
+            "link": "/mirror/api/docs/guides/chatkit-themes"
+          },
+          {
+            "text": "Tool search",
+            "link": "/mirror/api/docs/guides/tools-tool-search"
+          },
+          {
+            "text": "Trace grading",
+            "link": "/mirror/api/docs/guides/trace-grading"
+          },
+          {
+            "text": "UI Kit Demo",
+            "link": "/mirror/api/docs/ui-kit-demo"
+          },
+          {
+            "text": "Under 18 API Guidance",
+            "link": "/mirror/api/docs/guides/safety-checks/under-18-api-guidance"
+          },
+          {
+            "text": "Upgrading to GPT-5.4",
+            "link": "/mirror/api/docs/guides/upgrading-to-gpt-5p4"
+          },
+          {
+            "text": "Upgrading to GPT-5.5",
+            "link": "/mirror/api/docs/guides/upgrading-to-gpt-5p5"
+          },
+          {
+            "text": "Using GPT-5.5",
+            "link": "/mirror/api/docs/guides/latest-model"
+          },
+          {
+            "text": "Using realtime models",
+            "link": "/mirror/api/docs/guides/realtime-models-prompting"
+          },
+          {
+            "text": "Using tools",
+            "link": "/mirror/api/docs/guides/tools"
+          },
+          {
+            "text": "Vector embeddings",
+            "link": "/mirror/api/docs/guides/embeddings"
+          },
+          {
+            "text": "Video generation with Sora",
+            "link": "/mirror/api/docs/guides/video-generation"
+          },
+          {
+            "text": "Vision fine-tuning",
+            "link": "/mirror/api/docs/guides/vision-fine-tuning"
+          },
+          {
+            "text": "Voice activity detection (VAD)",
+            "link": "/mirror/api/docs/guides/realtime-vad"
+          },
+          {
+            "text": "Voice agents",
+            "link": "/mirror/api/docs/guides/voice-agents"
+          },
+          {
+            "text": "Web QA with embeddings",
+            "link": "/mirror/api/docs/tutorials/web-qa-embeddings"
+          },
+          {
+            "text": "Web search",
+            "link": "/mirror/api/docs/guides/tools-web-search"
+          },
+          {
+            "text": "Webhooks",
+            "link": "/mirror/api/docs/guides/webhooks"
+          },
+          {
+            "text": "Webhooks and server-side controls",
+            "link": "/mirror/api/docs/guides/realtime-server-controls"
+          },
+          {
+            "text": "WebSocket Mode",
+            "link": "/mirror/api/docs/guides/websocket-mode"
+          },
+          {
+            "text": "Working with evals",
+            "link": "/mirror/api/docs/guides/evals"
+          },
+          {
+            "text": "Workload identity federation",
+            "link": "/mirror/api/docs/guides/workload-identity-federation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Workspace Agents",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "Workspace Agents — Authentication",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Authenticate with Workspace Agent access tokens",
+            "link": "/mirror/workspace-agents/authentication"
+          }
+        ]
+      },
+      {
+        "text": "Workspace Agents — Trigger Runs",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Trigger workspace agent runs",
+            "link": "/mirror/workspace-agents/trigger-runs"
+          }
+        ]
+      }
+    ]
+  }
+]
