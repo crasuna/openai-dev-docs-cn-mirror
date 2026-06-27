@@ -12,6 +12,7 @@ function readGeneratedJson<T>(name: string, fallback: T): T {
 }
 
 export default defineConfig({
+  base: process.env.VITEPRESS_BASE || "/",
   lang: "zh-CN",
   title: "OpenAI 开发者文档本地镜像",
   description: "非官方、本地学习用 OpenAI Developers 双语镜像站",
