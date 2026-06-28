@@ -24,6 +24,7 @@
 - `docs/.vitepress/dist/` 是构建产物，不提交。
 - `node_modules/` 是依赖目录，不提交。
 - `reports/*.md` 和 `reports/*.json` 是维护报告。运行检查后如果只有 `Generated at` 时间戳变化，尤其是 `reports/build-report.md` 或 `reports/translation-qa-report.md`，应恢复这些噪声变化，不要混入提交。
+- 只提交稳定维护报告；不要提交 `reports/dev-server*`、`reports/dev-server/` 或 `reports/codex-manual-chunks/` 这类本地运行日志和翻译临时分块目录。
 
 ## 常用验证
 

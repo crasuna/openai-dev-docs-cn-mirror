@@ -2,5 +2,8 @@ node_modules/
 docs/.vitepress/cache/
 docs/.vitepress/dist/
 reports/*.tmp
+reports/dev-server*.log
+reports/dev-server/
+reports/codex-manual-chunks/
 .DS_Store
 Thumbs.db

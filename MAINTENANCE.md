@@ -115,6 +115,14 @@ pnpm check
 
 如果这些报告只有时间戳变化，应恢复它们，不要提交。若报告内容出现实质变化，例如错误数量、页面数量、产品列表或 QA 结果变化，应阅读差异并在提交说明或最终输出中解释原因。
 
+以下内容是本地运行或翻译过程产生的临时材料，不提交：
+
+- `reports/dev-server*.log`
+- `reports/dev-server/`
+- `reports/codex-manual-chunks/`
+
+其中 `reports/dev-server*` 和 `reports/dev-server/` 是本地开发服务器日志；`reports/codex-manual-chunks/` 是大文档分块翻译中间产物。最终译文应进入 `translations/zh/**`，生成页面应进入 `docs/**`。
+
 推荐检查方式：
 
 ```powershell
