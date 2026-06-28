@@ -14,8 +14,8 @@ function readGeneratedJson<T>(name: string, fallback: T): T {
 export default defineConfig({
   base: process.env.VITEPRESS_BASE || "/",
   lang: "zh-CN",
-  title: "OpenAI 开发者文档本地镜像",
-  description: "非官方、本地学习用 OpenAI Developers 双语镜像站",
+  title: "OpenAI Developers 文档中文学习镜像",
+  description: "非官方 OpenAI Developers 中文学习镜像站",
   cleanUrls: true,
   lastUpdated: true,
   ignoreDeadLinks: false,
@@ -36,7 +36,7 @@ export default defineConfig({
     ]),
     sidebar: readGeneratedJson("sidebar.json", [
       {
-        text: "本地镜像",
+        text: "中文镜像",
         items: [
           { text: "首页", link: "/" },
           { text: "文档目录", link: "/catalog" },

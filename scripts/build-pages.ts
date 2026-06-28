@@ -65,14 +65,15 @@ async function generateHome(manifest: Manifest): Promise<void> {
 
   const translated = manifest.docs.filter((doc) => doc.translationStatus === "translated").length;
   const needsReview = manifest.docs.filter((doc) => doc.translationStatus === "needs-review").length;
+  const covered = translated + needsReview;
   const untranslated = manifest.docs.length - translated - needsReview;
 
-  const content = `# OpenAI 开发者文档本地中文镜像
+  const content = `# OpenAI Developers 文档非官方中文学习镜像站
 
-这是一个非官方、本地学习用的 OpenAI Developers 文档镜像。当前阶段已建立英文源文档缓存、中文译文覆盖层和本地搜索；没有中文译文的页面会直接显示英文原文。
+这是一个非官方 OpenAI Developers 中文学习镜像站，已通过 GitHub Pages 公开部署。本站用于个人学习和中文阅读辅助，当前阶段已建立英文源文档缓存、中文译文覆盖层和本地搜索；没有中文译文覆盖的页面会显示英文原文。
 
-::: warning 使用说明
-本地页面保留官方源链接、抓取时间和内容校验值。学习和开发时请以官方页面为最终依据；公开部署前请重新确认 OpenAI 当前条款、品牌规范和文档授权范围。
+::: warning 非官方说明
+本站不是 OpenAI 官方网站，内容可能滞后、遗漏或存在翻译错误。学习、开发、上线和合规判断应以 OpenAI 官方英文文档为准。
 :::
 
 ## 文档状态
@@ -80,9 +81,10 @@ async function generateHome(manifest: Manifest): Promise<void> {
 | 指标 | 数量 |
 | --- | ---: |
 | 已索引页面 | ${manifest.docs.length} |
-| 已翻译 | ${translated} |
-| 待复核译文 | ${needsReview} |
-| 待翻译 | ${untranslated} |
+| 中文译文覆盖 | ${covered} |
+| 人工复核完成 | ${translated} |
+| 待人工复核 | ${needsReview} |
+| 待补译 | ${untranslated} |
 | 最近抓取 | ${manifest.generatedAt || "尚未抓取"} |
 
 ## 文档集
@@ -91,11 +93,11 @@ async function generateHome(manifest: Manifest): Promise<void> {
 | --- | ---: | --- |
 ${productRows || "| 暂无 | 0 | - |"}
 
-## 本地工作流
+## 维护工作流
 
 1. 运行 \`pnpm fetch:docs\` 更新官方英文源文档。
-2. 运行 \`pnpm build:pages\` 重建本地镜像页面。
-3. 在 \`translations/zh/**.md\` 添加中文译文。
+2. 运行 \`pnpm build:pages\` 重建镜像页面。
+3. 在 \`translations/zh/**.md\` 添加或复核中文译文。
 4. 运行 \`pnpm translate:status\` 查看中文化进度。
 5. 运行 \`pnpm check\` 完整校验并构建站点。
 `;
@@ -401,7 +403,7 @@ async function generateVitePressData(manifest: Manifest): Promise<void> {
 function buildSidebar(manifest: Manifest): unknown[] {
   const base: unknown[] = [
     {
-      text: "本地镜像",
+      text: "中文镜像",
       items: [
         { text: "首页", link: "/" },
         { text: "文档目录", link: "/catalog" },
