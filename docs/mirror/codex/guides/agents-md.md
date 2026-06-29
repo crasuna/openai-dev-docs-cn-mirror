@@ -6,8 +6,8 @@ outline: deep
 
 # 使用 AGENTS.md 编写自定义指令
 
-**文档集**：Codex<br>
-**分组**：指南<br>
+**文档集**：Codex\
+**分组**：指南\
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

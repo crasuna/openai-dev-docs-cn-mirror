@@ -6,8 +6,8 @@ outline: deep
 
 # 构建你的 ChatGPT UI
 
-**文档集**：Apps SDK<br>
-**分组**：构建<br>
+**文档集**：Apps SDK\
+**分组**：构建\
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

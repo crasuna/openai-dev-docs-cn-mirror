@@ -6,8 +6,8 @@ outline: deep
 
 # Windows 支持
 
-**文档集**：Codex<br>
-**分组**：Windows<br>
+**文档集**：Codex\
+**分组**：Windows\
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

@@ -6,8 +6,8 @@ outline: deep
 
 # Conversions API（转化 API）
 
-**文档集**：广告<br>
-**分组**：转化 API<br>
+**文档集**：广告\
+**分组**：转化 API\
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

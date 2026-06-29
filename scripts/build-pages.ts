@@ -345,8 +345,8 @@ outline: deep
 
 # ${doc.displayTitle}
 
-**文档集**：${doc.displayProduct}<br>
-**分组**：${doc.displaySection}<br>
+**文档集**：${doc.displayProduct}\\
+**分组**：${doc.displaySection}\\
 **翻译状态**：${statusLabel(doc.translationStatus)}
 
 ::: warning 非官方本地镜像

@@ -6,8 +6,8 @@ outline: deep
 
 # 导入到 Codex
 
-**文档集**：Codex<br>
-**分组**：导入<br>
+**文档集**：Codex\
+**分组**：导入\
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像
