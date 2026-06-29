@@ -33,7 +33,8 @@ export default defineConfig({
     nav: readGeneratedJson("nav.json", [
       { text: "首页", link: "/" },
       { text: "目录", link: "/catalog" },
-      { text: "翻译状态", link: "/translation-status" }
+      { text: "翻译状态", link: "/translation-status" },
+      { text: "官方文档", link: "https://developers.openai.com/" }
     ]),
     sidebar: readGeneratedJson("sidebar.json", [
       {

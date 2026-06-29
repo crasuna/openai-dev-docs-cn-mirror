@@ -546,7 +546,7 @@ async function generateVitePressData(manifest: DisplayManifest): Promise<void> {
     { text: "首页", link: "/" },
     { text: "目录", link: "/catalog" },
     { text: "翻译状态", link: "/translation-status" },
-    { text: "官方 Docs", link: "https://developers.openai.com/" }
+    { text: "官方文档", link: "https://developers.openai.com/" }
   ]);
 }
 
