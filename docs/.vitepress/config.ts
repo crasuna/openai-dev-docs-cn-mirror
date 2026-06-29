@@ -32,6 +32,29 @@ export default defineConfig({
     siteTitle: "OpenAI 文档镜像",
     nav: readGeneratedJson("nav.json", [
       { text: "首页", link: "/" },
+      {
+        text: "API",
+        items: [
+          { text: "OpenAI API 文档", link: "/mirror/api/docs/quickstart" },
+          { text: "API 参考", link: "/mirror/api/reference/overview" }
+        ]
+      },
+      {
+        text: "Codex",
+        items: [
+          { text: "Codex 文档", link: "/mirror/codex/overview" },
+          { text: "快速开始", link: "/mirror/codex/quickstart" }
+        ]
+      },
+      {
+        text: "ChatGPT",
+        items: [
+          { text: "Apps SDK", link: "/mirror/apps-sdk/quickstart" },
+          { text: "工作区智能体", link: "/mirror/workspace-agents/authentication" },
+          { text: "商务", link: "/mirror/commerce/guides/get-started" },
+          { text: "广告", link: "/mirror/ads/api-overview" }
+        ]
+      },
       { text: "目录", link: "/catalog" },
       { text: "翻译状态", link: "/translation-status" },
       { text: "官方文档", link: "https://developers.openai.com/" }

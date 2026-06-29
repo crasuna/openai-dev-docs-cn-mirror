@@ -42,7 +42,26 @@ export interface TranslationInfo {
 export interface NavigationSnapshot {
   generatedAt: string;
   source: string;
+  topNavigation: TopNavigationItem[];
   products: NavigationProduct[];
+}
+
+export type TopNavigationItem = TopNavigationLink | TopNavigationGroup;
+
+export interface TopNavigationLink {
+  type: "link";
+  title: string;
+  href: string;
+  slug?: string;
+  external?: boolean;
+}
+
+export interface TopNavigationGroup {
+  type: "group";
+  title: string;
+  href: string;
+  slug?: string;
+  items: TopNavigationLink[];
 }
 
 export interface NavigationProduct {

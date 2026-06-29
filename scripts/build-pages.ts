@@ -22,7 +22,7 @@ import {
   writeJsonFile,
   writeTextFile
 } from "./lib.js";
-import type { DocEntry, Manifest, NavigationItem, NavigationSection, NavigationSnapshot } from "./types.js";
+import type { DocEntry, Manifest, NavigationItem, NavigationSection, NavigationSnapshot, TopNavigationGroup } from "./types.js";
 
 interface DisplayDocEntry extends DocEntry {
   displayProduct: string;
@@ -58,6 +58,26 @@ interface OrderedNavigationSection {
   doc?: DisplayDocEntry;
   items: OrderedNavigationItem[];
   fallback?: boolean;
+}
+
+interface VitePressNavItem {
+  text: string;
+  link?: string;
+  items?: VitePressNavItem[];
+}
+
+interface TopNavigationGroupConfig {
+  text: string;
+  officialTitle: string;
+  items: TopNavigationTarget[];
+}
+
+interface TopNavigationTarget {
+  text: string;
+  officialTitle: string;
+  officialHref: string;
+  product: string;
+  preferredSlugs: string[];
 }
 
 const PRODUCT_DISPLAY_LABELS: Record<string, string> = {
@@ -250,10 +270,88 @@ const NAVIGATION_GROUP_DISPLAY_LABELS: Record<string, string> = {
   "Webhooks": "Webhook"
 };
 
+const TOP_NAVIGATION_GROUPS: TopNavigationGroupConfig[] = [
+  {
+    text: "API",
+    officialTitle: "API",
+    items: [
+      {
+        text: "OpenAI API 文档",
+        officialTitle: "Docs",
+        officialHref: "/api/docs",
+        product: "OpenAI API Docs",
+        preferredSlugs: ["api/docs/quickstart"]
+      },
+      {
+        text: "API 参考",
+        officialTitle: "API reference",
+        officialHref: "/api/reference/overview",
+        product: "API Reference",
+        preferredSlugs: ["api/reference/overview"]
+      }
+    ]
+  },
+  {
+    text: "Codex",
+    officialTitle: "Codex",
+    items: [
+      {
+        text: "Codex 文档",
+        officialTitle: "Docs",
+        officialHref: "/codex",
+        product: "Codex",
+        preferredSlugs: ["codex/overview"]
+      },
+      {
+        text: "快速开始",
+        officialTitle: "Quickstart",
+        officialHref: "/codex/quickstart",
+        product: "Codex",
+        preferredSlugs: ["codex/quickstart"]
+      }
+    ]
+  },
+  {
+    text: "ChatGPT",
+    officialTitle: "ChatGPT",
+    items: [
+      {
+        text: "Apps SDK",
+        officialTitle: "Apps SDK",
+        officialHref: "/apps-sdk",
+        product: "Apps SDK",
+        preferredSlugs: ["apps-sdk/quickstart"]
+      },
+      {
+        text: "工作区智能体",
+        officialTitle: "Workspace Agents",
+        officialHref: "/workspace-agents",
+        product: "Workspace Agents",
+        preferredSlugs: ["workspace-agents/authentication"]
+      },
+      {
+        text: "商务",
+        officialTitle: "Commerce",
+        officialHref: "/commerce",
+        product: "Commerce",
+        preferredSlugs: ["commerce/guides/get-started"]
+      },
+      {
+        text: "广告",
+        officialTitle: "Ads",
+        officialHref: "/ads",
+        product: "Ads",
+        preferredSlugs: ["ads/api-overview"]
+      }
+    ]
+  }
+];
+
 const warnedDisplayProducts = new Set<string>();
 const warnedDisplaySections = new Set<string>();
 const warnedNavigationLabels = new Set<string>();
 const warnedNavigationBuild = new Set<string>();
+const warnedTopNavigation = new Set<string>();
 
 const manifest = await refreshTranslationStatuses(await readJsonFile<Manifest>(MANIFEST_PATH, createEmptyManifest()));
 const displayManifest = await addDisplayMetadata(manifest);
@@ -822,12 +920,141 @@ async function generateVitePressData(manifest: DisplayManifest, navigation: Navi
   const generatedDir = path.join(DOCS_DIR, ".vitepress", "generated");
   await ensureDir(generatedDir);
   await writeJsonFile(path.join(generatedDir, "sidebar.json"), buildSidebar(manifest, navigation));
-  await writeJsonFile(path.join(generatedDir, "nav.json"), [
-    { text: "首页", link: "/" },
+  await writeJsonFile(path.join(generatedDir, "nav.json"), buildTopNavigation(manifest, navigation));
+}
+
+function buildTopNavigation(manifest: DisplayManifest, navigation: NavigationSnapshot | null): VitePressNavItem[] {
+  const docsBySlug = new Map(manifest.docs.map((doc) => [doc.slug, doc]));
+  const navItems: VitePressNavItem[] = [{ text: "首页", link: "/" }];
+
+  for (const group of TOP_NAVIGATION_GROUPS) {
+    const officialGroup = findOfficialTopNavigationGroup(navigation, group.officialTitle);
+    if (!officialGroup) {
+      warnOnce(warnedTopNavigation, `Official top navigation group not found in snapshot: ${group.officialTitle}`);
+    }
+
+    const items = group.items
+      .map((target) => resolveTopNavigationTarget(target, officialGroup, navigation, docsBySlug, manifest.docs))
+      .filter((item): item is VitePressNavItem => Boolean(item));
+
+    if (items.length) {
+      navItems.push({
+        text: group.text,
+        items
+      });
+    } else {
+      warnOnce(warnedTopNavigation, `No mirrored top navigation entries generated for group: ${group.text}`);
+    }
+  }
+
+  navItems.push(
     { text: "目录", link: "/catalog" },
     { text: "翻译状态", link: "/translation-status" },
     { text: "官方文档", link: "https://developers.openai.com/" }
-  ]);
+  );
+
+  return navItems;
+}
+
+function resolveTopNavigationTarget(
+  target: TopNavigationTarget,
+  officialGroup: TopNavigationGroup | undefined,
+  navigation: NavigationSnapshot | null,
+  docsBySlug: Map<string, DisplayDocEntry>,
+  docs: DisplayDocEntry[]
+): VitePressNavItem | null {
+  const officialItem = officialGroup?.items.find(
+    (item) => normalizeTopNavigationText(item.title) === normalizeTopNavigationText(target.officialTitle) || item.href === target.officialHref
+  );
+  const candidateSlugs = [
+    officialItem?.slug,
+    officialHrefToSlug(officialItem?.href),
+    officialHrefToSlug(target.officialHref),
+    ...target.preferredSlugs,
+    firstMirroredSlugFromOfficialProductNavigation(target.product, navigation, docsBySlug)
+  ].filter((slug): slug is string => Boolean(slug));
+
+  for (const slug of candidateSlugs) {
+    const doc = docsBySlug.get(slug);
+    if (doc?.product === target.product) {
+      return {
+        text: target.text,
+        link: pageLinkForSlug(doc.slug)
+      };
+    }
+  }
+
+  const fallbackDoc = docs.find((doc) => doc.product === target.product);
+  if (fallbackDoc) {
+    warnOnce(
+      warnedTopNavigation,
+      `Falling back to first manifest doc for top navigation entry ${target.text}: ${fallbackDoc.slug}`
+    );
+    return {
+      text: target.text,
+      link: pageLinkForSlug(fallbackDoc.slug)
+    };
+  }
+
+  warnOnce(warnedTopNavigation, `No mirrored document found for top navigation entry: ${target.text}`);
+  return null;
+}
+
+function findOfficialTopNavigationGroup(
+  navigation: NavigationSnapshot | null,
+  title: string
+): TopNavigationGroup | undefined {
+  return navigation?.topNavigation?.find(
+    (item): item is TopNavigationGroup => item.type === "group" && normalizeTopNavigationText(item.title) === normalizeTopNavigationText(title)
+  );
+}
+
+function firstMirroredSlugFromOfficialProductNavigation(
+  product: string,
+  navigation: NavigationSnapshot | null,
+  docsBySlug: Map<string, DisplayDocEntry>
+): string | undefined {
+  const navigationProduct = navigation?.products.find((entry) => entry.product === product);
+  if (!navigationProduct) return undefined;
+  return firstMirroredSlugFromNavigationItems(navigationProduct.items, product, docsBySlug);
+}
+
+function firstMirroredSlugFromNavigationItems(
+  items: NavigationItem[],
+  product: string,
+  docsBySlug: Map<string, DisplayDocEntry>
+): string | undefined {
+  for (const item of items) {
+    if (item.slug && docsBySlug.get(item.slug)?.product === product) return item.slug;
+    if (item.type === "section") {
+      const nested = firstMirroredSlugFromNavigationItems(item.items, product, docsBySlug);
+      if (nested) return nested;
+    }
+  }
+  return undefined;
+}
+
+function officialHrefToSlug(href: string | undefined): string | undefined {
+  if (!href) return undefined;
+  try {
+    const parsed = new URL(href, "https://developers.openai.com");
+    if (parsed.hostname !== "developers.openai.com") return undefined;
+    parsed.hash = "";
+    parsed.search = "";
+    const raw = parsed.pathname.replace(/^\/+/, "").replace(/\/+$/, "").replace(/\.md$/, "");
+    if (!raw) return undefined;
+    return raw
+      .split("/")
+      .map((segment) => segment.replace(/[^a-zA-Z0-9._-]/g, "-"))
+      .filter(Boolean)
+      .join("/");
+  } catch {
+    return undefined;
+  }
+}
+
+function normalizeTopNavigationText(value: string): string {
+  return value.toLowerCase().replace(/\s+/g, " ").trim();
 }
 
 function buildSidebar(manifest: DisplayManifest, navigation: NavigationSnapshot | null): unknown[] {

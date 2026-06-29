@@ -6,9 +6,10 @@ import {
   writeJsonFile
 } from "./lib.js";
 import { fetchText } from "./fetch-utils.js";
-import type { Manifest, NavigationItem, NavigationProduct, NavigationSnapshot } from "./types.js";
+import type { Manifest, NavigationItem, NavigationProduct, NavigationSnapshot, TopNavigationItem, TopNavigationLink } from "./types.js";
 
 const OFFICIAL_ORIGIN = "https://developers.openai.com";
+const TOP_NAVIGATION_SOURCE = "https://developers.openai.com/docs/overview";
 
 const PRODUCT_NAVIGATION_SOURCES: Record<string, string> = {
   "Ads": "https://developers.openai.com/ads/api-overview",
@@ -32,6 +33,16 @@ interface HtmlNode {
 
 const manifest = await readJsonFile<Manifest>(MANIFEST_PATH, createEmptyManifest());
 const products: NavigationProduct[] = [];
+let topNavigation: TopNavigationItem[] = [];
+
+try {
+  console.log(`Fetching top navigation: ${TOP_NAVIGATION_SOURCE}`);
+  topNavigation = parseTopNavigation(await fetchText(TOP_NAVIGATION_SOURCE));
+  console.log(`Parsed ${topNavigation.length} top navigation items.`);
+} catch (error) {
+  const message = error instanceof Error ? error.message : String(error);
+  console.warn(`Failed to fetch top navigation: ${message}`);
+}
 
 for (const product of manifest.products) {
   const sourceUrl = PRODUCT_NAVIGATION_SOURCES[product] ?? manifest.docs.find((doc) => doc.product === product)?.sourceUrl;
@@ -61,6 +72,7 @@ for (const product of manifest.products) {
 const snapshot: NavigationSnapshot = {
   generatedAt: new Date().toISOString(),
   source: OFFICIAL_ORIGIN,
+  topNavigation,
   products
 };
 
@@ -79,6 +91,55 @@ function parseOfficialNavigation(html: string): { items: NavigationItem[]; warni
   }
 
   return { items: [], warnings: ["No official left navigation block found."] };
+}
+
+function parseTopNavigation(html: string): TopNavigationItem[] {
+  const headerHtml = extractHeaderHtml(html);
+  if (!headerHtml) return [];
+
+  const root = parseHtmlFragment(headerHtml);
+  const desktopNav = findDescendant(
+    root,
+    (node) => node.tag === "nav" && hasClass(node, "hidden") && hasClass(node, "md:flex")
+  );
+  if (!desktopNav) return [];
+
+  const items: TopNavigationItem[] = [];
+  for (const container of elementChildren(desktopNav)) {
+    const primaryLink = findDescendant(container, (node) => node.tag === "a");
+    if (!primaryLink) continue;
+
+    const menu = findDescendant(container, (node) => node.attrs.role === "menu");
+    if (!menu) {
+      const link = anchorToTopNavigationLink(primaryLink);
+      if (link) items.push(link);
+      continue;
+    }
+
+    const children = findDescendants(menu, (node) => node.tag === "a").map(anchorToTopNavigationLink).filter(isTopNavigationLink);
+    items.push({
+      type: "group",
+      title: topNavigationTitle(primaryLink),
+      href: primaryLink.attrs.href,
+      slug: slugFromOfficialHref(primaryLink.attrs.href) ?? undefined,
+      items: children
+    });
+  }
+
+  const dashboardLink = findDescendant(
+    root,
+    (node) => node.tag === "a" && node.attrs.href === "https://platform.openai.com/login"
+  );
+  const dashboard = dashboardLink ? anchorToTopNavigationLink(dashboardLink) : null;
+  if (dashboard) items.push(dashboard);
+
+  return items;
+}
+
+function extractHeaderHtml(html: string): string | null {
+  const marker = html.search(/<header\b[^>]*id=["']header["'][^>]*>/i);
+  if (marker === -1) return null;
+  return extractElementHtml(html, marker, "header");
 }
 
 function extractDataLeftNavHtml(html: string): string | null {
@@ -231,8 +292,39 @@ function anchorToNavigationLink(anchor: HtmlNode): NavigationItem | null {
   };
 }
 
+function anchorToTopNavigationLink(anchor: HtmlNode): TopNavigationLink | null {
+  const href = anchor.attrs.href;
+  if (!href) return null;
+  const slug = slugFromOfficialHref(href) ?? undefined;
+  return {
+    type: "link",
+    title: topNavigationTitle(anchor),
+    href,
+    slug,
+    external: isExternalHref(href)
+  };
+}
+
 function isNavigationLink(item: NavigationItem | null): item is NavigationItem {
   return Boolean(item);
+}
+
+function isTopNavigationLink(item: TopNavigationLink | null): item is TopNavigationLink {
+  return Boolean(item);
+}
+
+function topNavigationTitle(anchor: HtmlNode): string {
+  const label = findDescendant(anchor, (node) => hasClass(node, "font-medium"));
+  return (label ? textContent(label) : textContent(anchor)).trim();
+}
+
+function isExternalHref(href: string): boolean {
+  try {
+    const parsed = new URL(href, OFFICIAL_ORIGIN);
+    return parsed.hostname !== "developers.openai.com";
+  } catch {
+    return false;
+  }
 }
 
 function slugFromOfficialHref(href: string): string | null {

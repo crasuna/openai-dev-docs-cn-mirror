@@ -1,6 +1,143 @@
 {
-  "generatedAt": "2026-06-29T07:27:24.661Z",
+  "generatedAt": "2026-06-29T07:57:22.382Z",
   "source": "https://developers.openai.com",
+  "topNavigation": [
+    {
+      "type": "link",
+      "title": "Home",
+      "href": "/",
+      "external": false
+    },
+    {
+      "type": "group",
+      "title": "API",
+      "href": "/api",
+      "slug": "api",
+      "items": [
+        {
+          "type": "link",
+          "title": "Docs",
+          "href": "/api/docs",
+          "slug": "api/docs",
+          "external": false
+        },
+        {
+          "type": "link",
+          "title": "API reference",
+          "href": "/api/reference/overview",
+          "slug": "api/reference/overview",
+          "external": false
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Codex",
+      "href": "/codex",
+      "slug": "codex",
+      "items": [
+        {
+          "type": "link",
+          "title": "Docs",
+          "href": "/codex",
+          "slug": "codex",
+          "external": false
+        },
+        {
+          "type": "link",
+          "title": "Use cases",
+          "href": "/codex/use-cases",
+          "slug": "codex/use-cases",
+          "external": false
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "title": "ChatGPT",
+      "href": "/chatgpt",
+      "slug": "chatgpt",
+      "items": [
+        {
+          "type": "link",
+          "title": "Apps SDK",
+          "href": "/apps-sdk",
+          "slug": "apps-sdk",
+          "external": false
+        },
+        {
+          "type": "link",
+          "title": "Workspace Agents",
+          "href": "/workspace-agents",
+          "slug": "workspace-agents",
+          "external": false
+        },
+        {
+          "type": "link",
+          "title": "Commerce",
+          "href": "/commerce",
+          "slug": "commerce",
+          "external": false
+        },
+        {
+          "type": "link",
+          "title": "Ads",
+          "href": "/ads",
+          "slug": "ads",
+          "external": false
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Resources",
+      "href": "/learn",
+      "slug": "learn",
+      "items": [
+        {
+          "type": "link",
+          "title": "Showcase",
+          "href": "/showcase",
+          "slug": "showcase",
+          "external": false
+        },
+        {
+          "type": "link",
+          "title": "Blog",
+          "href": "/blog",
+          "slug": "blog",
+          "external": false
+        },
+        {
+          "type": "link",
+          "title": "Cookbook",
+          "href": "/cookbook",
+          "slug": "cookbook",
+          "external": false
+        },
+        {
+          "type": "link",
+          "title": "Learn",
+          "href": "/learn",
+          "slug": "learn",
+          "external": false
+        },
+        {
+          "type": "link",
+          "title": "Community",
+          "href": "/community",
+          "slug": "community",
+          "external": false
+        }
+      ]
+    },
+    {
+      "type": "link",
+      "title": "API Dashboard",
+      "href": "https://platform.openai.com/login",
+      "external": true
+    }
+  ],
   "products": [
     {
       "product": "Ads",
