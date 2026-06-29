@@ -24,7 +24,7 @@
 - `docs/.vitepress/config.ts`：VitePress 配置。
 - `docs/.vitepress/generated/**`：由 `pnpm build:pages` 生成的导航和侧边栏数据。
 - `scripts/**`：抓取、生成页面、翻译计划、检查和报告脚本。
-- `reports/**`：抓取、构建、翻译计划、翻译状态和 QA 报告。
+- `reports/**`：抓取、构建、翻译状态和 QA 报告；翻译计划和队列按需本地生成，不提交。
 - `.github/workflows/deploy.yml`：GitHub Pages 部署 workflow。
 
 ## 常用命令
@@ -106,6 +106,12 @@ pnpm check
 
 当前首页中的“中文译文覆盖”包含 `translated` 和 `needs-review`。因此“人工复核完成 0、待人工复核 533”表示已有 533 个中文覆盖页面，但还没有页面完成人工复核。
 
+`pnpm translate:plan` 默认只排 `untranslated` 页面。当所有页面已有中文覆盖但仍是 `needs-review` 时，默认队列可以为空；需要为待复核页面生成队列时，使用：
+
+```powershell
+pnpm translate:plan -- --include-needs-review
+```
+
 ## 报告文件和时间戳噪声
 
 `pnpm check` 会运行 `pnpm build:pages` 和 `pnpm check:translations`，常见结果是以下文件只有 `Generated at` 时间戳变化：
@@ -117,11 +123,13 @@ pnpm check
 
 以下内容是本地运行或翻译过程产生的临时材料，不提交：
 
+- `reports/translation-plan.md`
+- `reports/translation-queue.json`
 - `reports/dev-server*.log`
 - `reports/dev-server/`
 - `reports/codex-manual-chunks/`
 
-其中 `reports/dev-server*` 和 `reports/dev-server/` 是本地开发服务器日志；`reports/codex-manual-chunks/` 是大文档分块翻译中间产物。最终译文应进入 `translations/zh/**`，生成页面应进入 `docs/**`。
+其中 `reports/translation-plan.md` 和 `reports/translation-queue.json` 是按需生成的本地翻译队列；`reports/dev-server*` 和 `reports/dev-server/` 是本地开发服务器日志；`reports/codex-manual-chunks/` 是大文档分块翻译中间产物。最终译文应进入 `translations/zh/**`，生成页面应进入 `docs/**`。
 
 推荐检查方式：
 
