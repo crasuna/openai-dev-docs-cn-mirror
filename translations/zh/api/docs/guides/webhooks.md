@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T18:23:48.7352177+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Webhooks
+# Webhooks 网络钩子
 
 OpenAI [webhooks](http://chatgpt.com/?q=eli5+what+is+a+webhook?) 让你可以接收 API 中事件的实时通知，例如 batch 完成、background response 生成，或 fine-tuning job 结束。Webhooks 会投递到你控制的 HTTP endpoint，并遵循 [Standard Webhooks specification](https://github.com/standard-webhooks/standard-webhooks/blob/main/spec/standard-webhooks.md)。完整的 webhook events 列表可在 [API reference](https://developers.openai.com/api/docs/api-reference/webhook-events) 中找到。
 

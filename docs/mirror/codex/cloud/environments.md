@@ -1,10 +1,10 @@
 ---
-title: "Cloud environments"
+title: "Cloud 环境"
 description: "Customize dependencies and tools for Codex"
 outline: deep
 ---
 
-# Cloud environments
+# Cloud 环境
 
 **文档集**：Codex  
 **分组**：Codex — Cloud  

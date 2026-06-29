@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T10:01:07.242Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Prompt caching
+# Prompt caching 提示词缓存
 
 模型 prompts 通常包含重复内容，例如 system prompts 和通用 instructions。OpenAI 会将 API 请求路由到最近处理过相同 prompt 的服务器，使其比从头处理 prompt 更便宜、更快。Prompt Caching 最多可将延迟降低 80%，并将输入 token 成本最多降低 90%。Prompt Caching 会自动作用于你的所有 API 请求（无需更改代码），且不会产生额外费用。Prompt Caching 已为所有近期[模型](https://developers.openai.com/api/docs/models)、gpt-4o 及更新模型启用。
 

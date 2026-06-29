@@ -1,10 +1,10 @@
 ---
-title: "Sites"
+title: "Sites 站点"
 description: "Build and deploy hosted sites from Codex with the Sites plugin"
 outline: deep
 ---
 
-# Sites
+# Sites 站点
 
 **文档集**：Codex  
 **分组**：Codex — Sites  

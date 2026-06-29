@@ -1,10 +1,10 @@
 ---
-title: "Chat"
+title: "Chat 聊天"
 description: "OpenAI API endpoint reference."
 outline: deep
 ---
 
-# Chat
+# Chat 聊天
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  
@@ -24,9 +24,9 @@ outline: deep
 :::
 
 ::: v-pre
-OpenAI API endpoint 参考。
+OpenAI API 端点参考。
 
-规范参考 URL: https://developers.openai.com/api/reference/resources/chat
+规范参考 URL：https://developers.openai.com/api/reference/resources/chat
 
 此 API 参考页面由 Stainless 生成。
 

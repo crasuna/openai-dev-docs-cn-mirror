@@ -1,10 +1,10 @@
 ---
-title: "Reasoning models"
+title: "Reasoning models 推理模型"
 description: "Learn how to use OpenAI reasoning models in the Responses API, choose a reasoning effort, manage reasoning tokens, and keep reasoning state across turns."
 outline: deep
 ---
 
-# Reasoning models
+# Reasoning models 推理模型
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:07:21.7838419+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Codex CLI
+# Codex CLI 命令行
 
 Codex CLI 是 OpenAI 的编码 agent，你可以从本地终端运行它。它可以在所选目录中读取、修改并运行你机器上的代码。
 它是[开源的](https://github.com/openai/codex)，并且使用 Rust 构建，以获得速度和效率。

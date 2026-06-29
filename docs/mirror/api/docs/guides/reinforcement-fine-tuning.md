@@ -1,10 +1,10 @@
 ---
-title: "Reinforcement fine-tuning"
+title: "Reinforcement fine-tuning 强化微调"
 description: "Fine-tune models for expert-level performance within a domain."
 outline: deep
 ---
 
-# Reinforcement fine-tuning
+# Reinforcement fine-tuning 强化微调
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

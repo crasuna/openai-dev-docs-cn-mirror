@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T17:29:03.6672446+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Direct preference optimization
+# Direct preference optimization 直接偏好优化
 
 [Direct Preference Optimization](https://arxiv.org/abs/2305.18290) (DPO) fine-tuning 允许你基于 prompt 和成对 response 来 fine-tune 模型。这种方法使模型能够从更主观的人类偏好中学习，优化出更可能被偏好的输出。DPO 目前仅支持文本输入和输出。
 

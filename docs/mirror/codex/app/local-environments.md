@@ -1,10 +1,10 @@
 ---
-title: "Local environments"
+title: "Local environments 本地环境"
 description: "Configure common actions and setup scripts for worktrees"
 outline: deep
 ---
 
-# Local environments
+# Local environments 本地环境
 
 **文档集**：Codex  
 **分组**：Codex — App  

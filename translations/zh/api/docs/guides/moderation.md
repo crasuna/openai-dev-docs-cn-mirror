@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T18:00:55+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Moderation
+# Moderation 内容审核
 
 使用 OpenAI moderation models 检测文本和图像中的有害内容。你可以使用 [moderation endpoint](https://developers.openai.com/api/docs/api-reference/moderations) 对独立输入进行分类，也可以请求在生成回复的同时返回 moderation scores。使用结果执行你的应用政策，例如过滤内容、将请求路由到审核，或干预提交被标记内容的账号。
 

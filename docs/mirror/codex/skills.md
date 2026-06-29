@@ -1,10 +1,10 @@
 ---
-title: "Agent Skills"
+title: "Agent Skills 代理技能"
 description: "Give Codex new capabilities and expertise"
 outline: deep
 ---
 
-# Agent Skills
+# Agent Skills 代理技能
 
 **文档集**：Codex  
 **分组**：Codex — Skills  

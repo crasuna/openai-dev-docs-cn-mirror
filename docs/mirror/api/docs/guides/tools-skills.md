@@ -1,10 +1,10 @@
 ---
-title: "Skills"
+title: "Skills 技能"
 description: "Upload, manage, and attach reusable skills to hosted environments."
 outline: deep
 ---
 
-# Skills
+# Skills 技能
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

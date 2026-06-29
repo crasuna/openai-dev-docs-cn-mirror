@@ -7,7 +7,7 @@ translatedAt: 2026-06-27T17:13:53.3182238+08:00
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Completions API
+# Completions API 补全 API
 
 Completions API endpoint 已于 2023 年 7 月收到最后一次更新，它的接口不同于新的 Chat Completions endpoint。它的输入不是消息列表，而是一个称为 `prompt` 的自由格式文本字符串。
 

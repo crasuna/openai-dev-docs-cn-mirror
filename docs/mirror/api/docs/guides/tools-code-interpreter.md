@@ -1,10 +1,10 @@
 ---
-title: "Code Interpreter"
+title: "Code Interpreter 代码解释器"
 description: "Allow models to write and run Python to solve problems."
 outline: deep
 ---
 
-# Code Interpreter
+# Code Interpreter 代码解释器
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

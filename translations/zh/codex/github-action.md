@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:05:47.1891485+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Codex GitHub Action
+# Codex GitHub Action 操作
 
 使用 Codex GitHub Action（`openai/codex-action@v1`）可以在 CI/CD 作业中运行 Codex、应用补丁，或从 GitHub Actions workflow 发布 review。
 该 action 会安装 Codex CLI，在你提供 API key 时启动 Responses API proxy，并按你指定的权限运行 `codex exec`。

@@ -1,10 +1,10 @@
 ---
-title: "Organization Projects Api Keys"
+title: "Organization Projects API Keys 项目密钥"
 description: "OpenAI API endpoint reference."
 outline: deep
 ---
 
-# Organization Projects Api Keys
+# Organization Projects API Keys 项目密钥
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  
@@ -24,11 +24,11 @@ outline: deep
 :::
 
 ::: v-pre
-OpenAI API endpoint reference。
+OpenAI API 端点参考。
 
-规范 reference URL：https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/api_keys
+规范参考 URL：https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/api_keys
 
-此 API reference 页面由 Stainless 生成。
+此 API 参考页面由 Stainless 生成。
 
 :::
 

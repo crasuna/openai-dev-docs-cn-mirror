@@ -9,10 +9,10 @@ translator: codex-gpt-5.5-xhigh
 
 # Administration 概览
 
-使用 Administration API 管理组织资源，例如用户、邀请、项目、API keys 和审计日志。
-要访问这些 endpoint，请[创建 Admin API key](https://platform.openai.com/settings/organization/admin-keys)。Admin API keys 不能用于非 administration endpoint。
+使用 Administration API 管理组织资源，例如用户、邀请、项目、API key 和审计日志。
+要访问这些端点，请[创建 Admin API key](https://platform.openai.com/settings/organization/admin-keys)。Admin API key 不能用于非 Administration 端点。
 
 相关指南：
 
 - [设置组织的最佳实践](https://developers.openai.com/api/docs/guides/production-best-practices#setting-up-your-organization)
-- [使用 Admin APIs](https://developers.openai.com/api/docs/guides/admin-apis)。
+- [使用 Admin API](https://developers.openai.com/api/docs/guides/admin-apis)。

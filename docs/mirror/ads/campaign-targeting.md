@@ -1,10 +1,10 @@
 ---
-title: "Campaign Targeting"
+title: "Campaign 定向"
 description: "Target campaigns by country, region, or DMA."
 outline: deep
 ---
 
-# Campaign Targeting
+# Campaign 定向
 
 **文档集**：Ads  
 **分组**：Ads — Campaign Targeting  
@@ -62,7 +62,7 @@ curl -G "https://api.ads.openai.com/v1/geo_lookup/search" \
   {"下载 OpenAI Ads locations"}
 
 
-## Campaign creation
+## 创建 campaign
 
 使用 `targeting.locations.include` 创建 campaign。每一项只需要 location `id`；API 会使用匹配的位置详情扩展已保存的 campaign。
 
@@ -92,7 +92,7 @@ curl -X POST "https://api.ads.openai.com/v1/campaigns" \
 
 在此示例中：
 
-| Location ID | Meaning | Type |
+| Location ID | 含义 | 类型 |
 | ----------- | ------- | ---- |
 | `2000043`   | California, United States | `region` |
 | `3000194`   | San Francisco - Oakland - San Jose, United States | `dma` |

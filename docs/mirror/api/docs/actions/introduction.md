@@ -1,10 +1,10 @@
 ---
-title: "GPT Actions"
+title: "GPT Actions 概览"
 description: "Learn about GPT Actions for customizing ChatGPT and interacting with external applications via APIs."
 outline: deep
 ---
 
-# GPT Actions
+# GPT Actions 概览
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

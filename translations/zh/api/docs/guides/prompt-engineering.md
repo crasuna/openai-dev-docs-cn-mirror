@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T10:01:07.242Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Prompt engineering
+# Prompt engineering 提示词工程
 
 借助 OpenAI API，你可以使用[大型语言模型](https://developers.openai.com/api/docs/models)从 prompt 生成文本，就像你使用 [ChatGPT](https://chatgpt.com) 一样。模型几乎可以生成任何类型的文本响应，例如代码、数学方程、结构化 JSON 数据或类人的散文。
 

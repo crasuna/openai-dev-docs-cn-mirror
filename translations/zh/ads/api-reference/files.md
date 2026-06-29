@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:35:31.9333790+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Files
+# Files（文件）
 
 ## 从图片 URL 上传
 

@@ -1,10 +1,10 @@
 ---
-title: "Beta Threads Messages — Delete"
+title: "Beta Threads Messages — 删除"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Beta Threads Messages — Delete
+# Beta Threads Messages — 删除
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  
@@ -24,11 +24,11 @@ outline: deep
 :::
 
 ::: v-pre
-OpenAI API endpoint 方法参考。
+OpenAI API 端点方法参考。
 
-规范参考 URL: https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/messages/methods/delete
+规范参考 URL：https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/messages/methods/delete
 
-此 API Reference 页面由 Stainless 生成。
+此 API 参考页面由 Stainless 生成。
 
 :::
 

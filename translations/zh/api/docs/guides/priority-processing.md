@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T10:01:07.242Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Priority processing
+# Priority processing 优先处理
 
 与 Standard processing 相比，Priority processing 能提供显著更低且更稳定的延迟，同时保留按量付费的灵活性。
 

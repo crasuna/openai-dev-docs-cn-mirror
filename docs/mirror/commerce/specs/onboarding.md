@@ -1,10 +1,10 @@
 ---
-title: "Onboarding"
+title: "Onboarding（入门引导）"
 description: "This content has been consolidated into the Get started guide."
 outline: deep
 ---
 
-# Onboarding
+# Onboarding（入门引导）
 
 **文档集**：Commerce  
 **分组**：Agentic Commerce — Specs  
@@ -28,11 +28,11 @@ outline: deep
 
 请使用该页面了解：
 
-- Application form CTA。
-- Overview。
-- Integration path。
+- 申请表 CTA。
+- 概览。
+- 集成路径。
 - Feed model 和 delivery guidance。
-- Best practices。
+- 最佳实践。
 
 :::
 

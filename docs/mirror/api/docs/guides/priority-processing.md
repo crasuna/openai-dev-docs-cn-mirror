@@ -1,10 +1,10 @@
 ---
-title: "Priority processing"
+title: "Priority processing 优先处理"
 description: "Get faster processing in the API while retaining flexible pay-as-you-go pricing."
 outline: deep
 ---
 
-# Priority processing
+# Priority processing 优先处理
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

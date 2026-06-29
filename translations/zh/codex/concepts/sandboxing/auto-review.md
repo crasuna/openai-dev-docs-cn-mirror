@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T11:05:32.948Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Auto-review
+# Auto-review 自动审查
 
 Auto-review 用一个独立的 reviewer agent 取代 sandbox 边界处的人工 approval。主 Codex agent 仍然运行在同一个 sandbox 内，使用同样的 approval policy，以及同样的网络和文件系统限制。区别在于由谁来审核符合条件的 escalation requests。
 

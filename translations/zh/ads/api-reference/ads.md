@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:35:31.9333790+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Ads
+# Ads（广告）
 
 ## 列出广告
 
@@ -15,13 +15,13 @@ translator: codex-gpt-5.5-xhigh
 
 `GET /ads`
 
-| Parameter     | Type    | Required | Notes |
+| 参数          | 类型    | 是否必填 | 说明 |
 | ------------- | ------- | -------- | ----- |
-| `ad_group_id` | string  | Yes      | 父级 ad group ID。 |
-| `limit`       | integer | No       | 介于 `1` 和 `500` 之间。默认值为 20。 |
-| `after`       | string  | No       | 下一页的 cursor。 |
-| `before`      | string  | No       | 上一页的 cursor。 |
-| `order`       | string  | No       | `asc` 或 `desc`。 |
+| `ad_group_id` | string  | 是 | 父级 ad group ID。 |
+| `limit`       | integer | 否 | 介于 `1` 和 `500` 之间。默认值为 20。 |
+| `after`       | string  | 否 | 下一页的 cursor。 |
+| `before`      | string  | 否 | 上一页的 cursor。 |
+| `order`       | string  | 否 | `asc` 或 `desc`。 |
 
 ```bash
 curl -X GET "https://api.ads.openai.com/v1/ads?ad_group_id=adgrp_301&limit=10" \
@@ -61,17 +61,17 @@ curl -X GET "https://api.ads.openai.com/v1/ads?ad_group_id=adgrp_301&limit=10" \
 
 `POST /ads`
 
-| Field                 | Type   | Required        | Notes |
+| 字段                  | 类型   | 是否必填        | 说明 |
 | --------------------- | ------ | --------------- | ----- |
-| `ad_group_id`         | string | Yes             | 父级 ad group ID。 |
-| `name`                | string | Yes             | `3` 到 `1000` 个字符，并且必须包含一个非空格字符。用于组织管理，不会显示给最终用户。 |
-| `creative.type`       | string | Yes             | `chat_card` 或 `product_ad_template`。参阅 [Product feeds](https://developers.openai.com/ads/product-feeds)。 |
-| `creative.title`      | string | Yes             | `3` 到 `50` 个字符。 |
-| `creative.body`       | string | Yes             | 最多 `100` 个字符。 |
-| `creative.price`      | string | No              | 价格文本，或 product-ad template 使用的 `{{product.price}}`。 |
-| `creative.target_url` | string | For `chat_card` | 目标 URL。product-ad template 会从所选 feed item 接收该值。 |
-| `creative.file_id`    | string | For `chat_card` | `POST /upload` 返回的文件。product-ad template 会从所选 feed item 接收其图片。 |
-| `status`              | string | Yes             | `active` 或 `paused`。 |
+| `ad_group_id`         | string | 是 | 父级 ad group ID。 |
+| `name`                | string | 是 | `3` 到 `1000` 个字符，并且必须包含一个非空格字符。用于组织管理，不会显示给最终用户。 |
+| `creative.type`       | string | 是 | `chat_card` 或 `product_ad_template`。参阅 [Product feeds](https://developers.openai.com/ads/product-feeds)。 |
+| `creative.title`      | string | 是 | `3` 到 `50` 个字符。 |
+| `creative.body`       | string | 是 | 最多 `100` 个字符。 |
+| `creative.price`      | string | 否 | 价格文本，或 product-ad template 使用的 `{{product.price}}`。 |
+| `creative.target_url` | string | `chat_card` 适用 | 目标 URL。product-ad template 会从所选 feed item 接收该值。 |
+| `creative.file_id`    | string | `chat_card` 适用 | `POST /upload` 返回的文件。product-ad template 会从所选 feed item 接收其图片。 |
+| `status`              | string | 是 | `active` 或 `paused`。 |
 
 ```bash
 curl -X POST "https://api.ads.openai.com/v1/ads" \
@@ -91,7 +91,7 @@ curl -X POST "https://api.ads.openai.com/v1/ads" \
   }'
 ```
 
-### Product-ad templates
+### Product-ad templates（商品广告模板）
 
 一个 product-feed ad group 最多只能包含一个未归档的 `product_ad_template` 广告。Product-ad templates 会从所选 feed item 接收图片和目标 URL，因此不需要 `creative.file_id` 或 `creative.target_url`。
 
@@ -133,7 +133,7 @@ curl -X POST "https://api.ads.openai.com/v1/ads/ad_501" \
   }'
 ```
 
-## Review status
+## Review status（审核状态）
 
 每个广告响应都包含 `review_status`，其值可以是：
 
@@ -141,7 +141,7 @@ curl -X POST "https://api.ads.openai.com/v1/ads/ad_501" \
 - `rejected`
 - `approved`
 
-如果你的广告被 rejected，则说明它违反了我们的 [ads policies](https://openai.com/policies/ad-policies/)。请编辑广告，以便重新 review。
+如果你的广告被 rejected，则说明它违反了我们的 [ads policies](https://openai.com/policies/ad-policies/)。请编辑广告，以便重新审核。
 
 ## 使用专用操作更改状态
 

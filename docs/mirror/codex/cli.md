@@ -1,10 +1,10 @@
 ---
-title: "Codex CLI"
+title: "Codex CLI 命令行"
 description: "Pair with Codex in your terminal"
 outline: deep
 ---
 
-# Codex CLI
+# Codex CLI 命令行
 
 **文档集**：Codex  
 **分组**：Codex — Cli  

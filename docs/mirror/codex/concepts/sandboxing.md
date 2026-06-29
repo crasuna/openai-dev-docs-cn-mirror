@@ -1,10 +1,10 @@
 ---
-title: "Sandbox"
+title: "Sandbox 沙盒"
 description: "How Codex uses sandboxes across the Codex app, IDE, and CLI"
 outline: deep
 ---
 
-# Sandbox
+# Sandbox 沙盒
 
 **文档集**：Codex  
 **分组**：Codex — Concepts  

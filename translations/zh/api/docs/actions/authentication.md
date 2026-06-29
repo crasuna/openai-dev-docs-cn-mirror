@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T17:44:20.0905341+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# GPT Action authentication
+# GPT Action authentication 身份验证
 
 Actions 提供不同的认证 schema，以适配各种用例。要为你的 action 指定认证 schema，请使用 GPT editor，并选择 "None"、"API Key" 或 "OAuth"。
 

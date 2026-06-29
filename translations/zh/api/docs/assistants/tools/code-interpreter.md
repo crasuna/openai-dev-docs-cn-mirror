@@ -7,7 +7,7 @@ translatedAt: 2026-06-27T16:51:57.1346199+08:00
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Assistants Code Interpreter
+# Assistants Code Interpreter 代码解释器
 
 ## 概览
 

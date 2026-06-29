@@ -1,10 +1,10 @@
 ---
-title: "Subagents"
+title: "Subagents 子代理"
 description: "How subagent workflows keep Codex focused and how to choose models for different agents"
 outline: deep
 ---
 
-# Subagents
+# Subagents 子代理
 
 **文档集**：Codex  
 **分组**：Codex — Concepts  

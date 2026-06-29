@@ -7,9 +7,9 @@ translatedAt: "2026-06-27T11:05:57.267Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Uploads
+# Uploads 上传
 
-OpenAI API endpoint 参考。
+OpenAI API 端点参考。
 
 规范参考 URL：https://developers.openai.com/api/reference/resources/uploads
 

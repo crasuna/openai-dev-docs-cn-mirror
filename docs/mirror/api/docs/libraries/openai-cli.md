@@ -1,10 +1,10 @@
 ---
-title: "OpenAI CLI"
+title: "OpenAI CLI 命令行"
 description: "Install and use the generated openai command-line tool for Responses, structured outputs, images, speech, and shell workflows."
 outline: deep
 ---
 
-# OpenAI CLI
+# OpenAI CLI 命令行
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

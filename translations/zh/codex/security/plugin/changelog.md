@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:34:30.6847913+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Codex Security plugin changelog
+# Codex Security plugin 变更日志
 
 此 changelog 概述会影响你运行扫描、审查结果以及推动发现项进入修复的变化。
 
@@ -36,4 +36,3 @@ translator: codex-gpt-5.5-xhigh
 - 根据当前 codebase 分流来自 scanners、advisories、bug bounty reports、GitHub、Jira、Linear 或 Codex Security 结果的现有发现项。triage 工作流会返回有证据支持的 verdict 和按优先级排序的 action queue。
 - 将选定的已验证发现项跟踪到 Linear、Jira 或 GitHub issues，或在 repository 满足 advisory 要求时创建一个私有 draft GitHub Security Advisory。
 - 在批准写入前审查重复检查、source context、destination visibility 和确切的拟议内容。Codex 会在创建或更新后读回结果以进行验证。
-

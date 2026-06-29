@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:06:51.2133192+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Codex
+# Codex 概览
 
 <div class="flex flex-col-reverse gap-8 lg:flex-row-reverse">
   <div class="w-full lg:w-1/2">

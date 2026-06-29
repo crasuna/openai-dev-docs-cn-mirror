@@ -1,10 +1,10 @@
 ---
-title: "Trace grading"
+title: "Trace grading 轨迹评分"
 description: "Use trace grading to create datasets, configure graders, and track evaluation runs for your models."
 outline: deep
 ---
 
-# Trace grading
+# Trace grading 轨迹评分
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

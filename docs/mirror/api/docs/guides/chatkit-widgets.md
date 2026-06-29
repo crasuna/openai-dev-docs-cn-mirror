@@ -1,10 +1,10 @@
 ---
-title: "ChatKit widgets"
+title: "ChatKit widgets 小组件"
 description: "Learn how to design widgets in your chat experience with ChatKit."
 outline: deep
 ---
 
-# ChatKit widgets
+# ChatKit widgets 小组件
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

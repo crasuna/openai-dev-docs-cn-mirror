@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T08:52:13.975Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# ChatKit
+# ChatKit 聊天组件
 
 ChatKit 是构建 agentic chat experiences 的最佳方式。无论你是在构建内部知识库助手、HR 入职助手、研究伙伴、购物或日程助手、故障排查 bot、财务规划顾问，还是 support agent，ChatKit 都提供了可自定义的 chat embed 来处理所有用户体验细节。
 

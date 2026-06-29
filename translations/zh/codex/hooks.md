@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:05:47.1891485+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Hooks
+# Hooks 钩子
 
 Hooks 是 Codex 的扩展性框架。它们允许你将自己的 scripts 注入 agentic loop，从而启用如下功能：
 

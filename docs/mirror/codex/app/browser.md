@@ -1,10 +1,10 @@
 ---
-title: "In-app browser"
+title: "In-app browser 应用内浏览器"
 description: "Preview and comment on web apps from Codex"
 outline: deep
 ---
 
-# In-app browser
+# In-app browser 应用内浏览器
 
 **文档集**：Codex  
 **分组**：Codex — App  

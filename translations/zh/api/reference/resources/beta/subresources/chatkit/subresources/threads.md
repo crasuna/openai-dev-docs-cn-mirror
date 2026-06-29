@@ -7,10 +7,10 @@ translatedAt: "2026-06-27T18:55:35.0049914+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Beta Chatkit Threads
+# Beta ChatKit Threads 线程
 
-OpenAI API endpoint 参考。
+OpenAI API 端点参考。
 
-规范参考 URL: https://developers.openai.com/api/reference/resources/beta/subresources/chatkit/subresources/threads
+规范参考 URL：https://developers.openai.com/api/reference/resources/beta/subresources/chatkit/subresources/threads
 
-此 API Reference 页面由 Stainless 生成。
+此 API 参考页面由 Stainless 生成。

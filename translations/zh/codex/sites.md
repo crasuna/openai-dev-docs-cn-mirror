@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:34:30.6847913+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Sites
+# Sites 站点
 
 Sites 让 Codex 可以创建、保存、部署和检查由 OpenAI 托管的网站、web apps 和 games。当你想把一个 prompt 或兼容的现有项目变成托管站点，而不想设置单独部署工作流时，请使用 **Sites** plugin。
 

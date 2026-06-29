@@ -7,7 +7,7 @@ translatedAt: 2026-06-27T16:52:06+08:00
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Admin APIs
+# Admin APIs 管理 API
 
 Admin APIs 可让你自动化组织管理工作流，例如用户邀请、审计日志查看、项目管理、API key 管理、费用提醒、数据保留和速率限制操作。请将它们用于后台自动化、安全工作流，以及应在控制台之外运行的运维工具。
 

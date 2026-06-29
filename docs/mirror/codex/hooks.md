@@ -1,10 +1,10 @@
 ---
-title: "Hooks"
+title: "Hooks 钩子"
 description: "Run deterministic scripts during the Codex lifecycle"
 outline: deep
 ---
 
-# Hooks
+# Hooks 钩子
 
 **文档集**：Codex  
 **分组**：Codex — Hooks  

@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:34:30.6847913+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Codex SDK
+# Codex SDK 软件开发工具包
 
 如果你通过 Codex CLI、IDE extension 或 Codex Web 使用 Codex，也可以用编程方式控制它。
 

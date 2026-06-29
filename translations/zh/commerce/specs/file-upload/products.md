@@ -18,7 +18,7 @@ translator: codex-gpt-5.5-xhigh
         schema：字段名称、数据类型、约束，以及实现准确发现、定价、可售性和卖家上下文所需的示例值。
       </p>
       <p>
-        下方每个表格都会按 schema object 对字段分组，并说明字段是 Required 还是 Optional，
+        下方每个表格都会按 schema object 对字段分组，并说明字段是必填还是可选，
         同时提供校验规则，帮助你的工程团队构建和维护合规的上传文件。
       </p>
       <p>

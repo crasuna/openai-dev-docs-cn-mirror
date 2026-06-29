@@ -7,33 +7,33 @@ translatedAt: "2026-06-27T19:36:03+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Key concepts
+# 关键概念
 
-在 ChatGPT 中支持 Instant Checkout 需要商家实现三个 flows。
+在 ChatGPT 中支持 Instant Checkout 需要商家实现三个流程。
 
-## Sharing a product feed
+## 共享 product feed
 
 [Product feeds docs](https://developers.openai.com/commerce/specs) 定义了商家如何与 OpenAI 共享结构化 product data，使 ChatGPT 能在搜索和购物体验中准确展示其产品。
 
 - 商家提供安全、定期刷新的 feed（CSV 或 JSON），其中包含 identifiers、descriptions、pricing、inventory、media 和 fulfillment options 等关键细节。
-- Required fields 确保 price 和 availability 正确显示，而 rich media、reviews 和 performance signals 等推荐 attributes 会提升 ranking、relevance 和 user trust。
-- 集成包括发送初始 sample feed 以供 validation，以及 daily snapshots。
+- 必填字段确保 price 和 availability 正确显示，而 rich media、reviews 和 performance signals 等推荐 attributes 会提升 ranking、relevance 和 user trust。
+- 集成包括发送初始 sample feed 以供 validation，以及每日 snapshots。
 
-## Handling orders and checkout
+## 处理订单和结账
 
 [Agentic Checkout Spec](https://developers.openai.com/commerce/specs/checkout) 让 ChatGPT 能作为客户的 AI agent，并渲染嵌入 ChatGPT UI 的 checkout experience。
 
 - ChatGPT 从用户处收集 buyer、fulfillment 和 payment information。
 - ChatGPT 调用商家的 Agentic Commerce Protocol endpoints，以创建或更新 checkout session，并安全共享信息。
 - 商家执行 validation、确定 fulfillment options、计算并收取 sales tax，在自己的 stack 上分析 payment 和 risk signals，并通过现有 payment processor 对 payment method 扣款。商家接受或拒绝订单，并将此状态返回给 ChatGPT。
-- ChatGPT 反映 states，并向用户显示 order confirmation（或 decline）message。
+- ChatGPT 反映这些状态，并向用户显示 order confirmation（或 decline）message。
 
 checkout session 在 OpenAI UI 中渲染，但实际 checkout
   state 和 payment processing 发生在商家系统中。OpenAI 向商家发送
   信息，商家决定是否接受或拒绝订单、对 payment method 扣款并确认订单，全部
   都在自己的系统中完成。
 
-## Handling payments
+## 处理付款
 
 [Delegated Payment Spec](https://developers.openai.com/commerce/specs/payment) 允许 OpenAI 与商家或其指定 payment service provider (PSP) 安全共享 payment details。商家及其 PSP 随后会以处理他们收集的其他订单和付款相同的方式处理交易和相关付款。
 
@@ -48,7 +48,7 @@ OpenAI 不是 Agentic Commerce Protocol 中的 merchant of record。
   商家应自带 PSP，并像接受其他数字付款一样处理付款。OpenAI Delegated Payment Spec
   确保这些 payment credentials 的使用方式受到限制，从而保护用户交易。
 
-## End-to-end flow diagram
+## 端到端流程图
 
 此图说明 Agentic Commerce Protocol 的端到端 data flow。
 

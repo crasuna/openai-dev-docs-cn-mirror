@@ -1,10 +1,10 @@
 ---
-title: "Prompt engineering"
+title: "Prompt engineering 提示词工程"
 description: "Learn strategies and tactics for better results using large language models in the OpenAI API."
 outline: deep
 ---
 
-# Prompt engineering
+# Prompt engineering 提示词工程
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

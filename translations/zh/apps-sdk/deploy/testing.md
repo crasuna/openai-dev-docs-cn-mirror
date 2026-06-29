@@ -13,7 +13,7 @@ translator: codex-gpt-5.5-xhigh
 
 测试用于验证你的 connector 在暴露给用户之前能否以可预测的方式运行。重点关注三个方面：工具正确性、组件 UX 和 discovery 精度。
 
-## 对工具 handlers 进行单元测试
+## 对工具 handler 进行单元测试
 
 - 使用有代表性的输入直接测试每个工具函数。验证 schema validation、错误处理和边界情况（空结果、缺失 ID）。
 - 如果你签发 token 或要求 linking，请包含认证流程的自动化测试。

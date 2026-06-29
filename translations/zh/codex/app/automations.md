@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T11:05:57.267Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Automations
+# Automations 自动化
 
 <div class="feature-grid">
 

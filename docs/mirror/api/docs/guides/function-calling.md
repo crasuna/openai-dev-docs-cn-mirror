@@ -1,10 +1,10 @@
 ---
-title: "Function calling"
+title: "Function calling 函数调用"
 description: "Learn how function calling enables large language models to connect to external data and systems."
 outline: deep
 ---
 
-# Function calling
+# Function calling 函数调用
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

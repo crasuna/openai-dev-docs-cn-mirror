@@ -7,10 +7,10 @@ translatedAt: "2026-06-27T18:55:35.0049914+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Beta Assistants — Update
+# Beta Assistants — 更新
 
-OpenAI API endpoint 方法参考。
+OpenAI API 端点方法参考。
 
-规范参考 URL: https://developers.openai.com/api/reference/resources/beta/subresources/assistants/methods/update
+规范参考 URL：https://developers.openai.com/api/reference/resources/beta/subresources/assistants/methods/update
 
-此 API Reference 页面由 Stainless 生成。
+此 API 参考页面由 Stainless 生成。

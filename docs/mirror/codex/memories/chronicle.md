@@ -1,10 +1,10 @@
 ---
-title: "Chronicle"
+title: "Chronicle 编年记忆"
 description: "Build Codex memories from recent screen context."
 outline: deep
 ---
 
-# Chronicle
+# Chronicle 编年记忆
 
 **文档集**：Codex  
 **分组**：Codex — Memories  

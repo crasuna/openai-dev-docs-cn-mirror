@@ -1,10 +1,10 @@
 ---
-title: "Graders"
+title: "Graders 评分器"
 description: "Learn about graders used for evals and fine-tuning."
 outline: deep
 ---
 
-# Graders
+# Graders 评分器
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

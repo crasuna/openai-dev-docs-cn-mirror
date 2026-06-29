@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T11:05:57.267Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# In-app browser
+# In-app browser 应用内浏览器
 
 In-app browser 让你和 Codex 在线程内共享 rendered web pages 的视图。当你正在构建或调试 web app，并希望 preview pages 和附加 visual comments 时，请使用它。
 

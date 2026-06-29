@@ -7,17 +7,17 @@ translatedAt: 2026-06-27T16:52:09.8881258+08:00
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Assistants File Search
+# Assistants 文件搜索
 
 ## 概览
 
-File Search 可用模型以外的知识增强 Assistant，例如专有产品信息或用户提供的文档。OpenAI 会自动解析文档、切分文档块、创建并存储 embeddings，并同时使用向量搜索和关键词搜索来检索相关内容，以回答用户查询。
+文件搜索（File Search）可以用模型以外的知识增强 Assistant，例如专有产品信息或用户提供的文档。OpenAI 会自动解析文档、切分文档块、创建并存储嵌入（embeddings），并同时使用向量搜索和关键词搜索来检索相关内容，以回答用户查询。
 
 ## 快速开始
 
 在这个示例中，我们将创建一个可以帮助回答公司财务报表问题的 assistant。
 
-### 第 1 步：创建启用 File Search 的新 Assistant
+### 第 1 步：创建启用文件搜索的新 Assistant
 
 在 Assistant 的 `tools` 参数中启用 `file_search`，创建一个新的 assistant。
 
@@ -66,11 +66,11 @@ curl https://api.openai.com/v1/assistants \
 
 启用 `file_search` 工具后，模型会根据用户消息决定何时检索内容。
 
-### 第 2 步：上传文件并将其添加到 Vector Store
+### 第 2 步：上传文件并将其添加到向量存储
 
-为了访问你的文件，`file_search` 工具会使用 Vector Store 对象。
-上传文件并创建一个 Vector Store 来容纳它们。
-创建 Vector Store 后，你应轮询其状态，直到所有文件都离开 `in_progress` 状态，
+为了访问你的文件，`file_search` 工具会使用向量存储（Vector Store）对象。
+上传文件并创建一个向量存储来容纳它们。
+创建向量存储后，你应轮询其状态，直到所有文件都离开 `in_progress` 状态，
 以确保全部内容都已完成处理。SDK 提供了可一次性完成上传和轮询的辅助方法。
 
 ```python
@@ -110,7 +110,7 @@ await openai.vectorStores.fileBatches.uploadAndPoll(vectorStore.id, fileStreams)
 ```
 
 
-### 第 3 步：更新 assistant 以使用新的 Vector Store
+### 第 3 步：更新 assistant 以使用新的向量存储
 
 为了让 assistant 能访问这些文件，请用新的 `vector_store` id 更新 assistant 的 `tool_resources`。
 
@@ -132,7 +132,7 @@ await openai.beta.assistants.update(assistant.id, {
 
 你也可以把文件作为 Message 附件附加到 thread。这样会创建另一个与该 thread 关联的 `vector_store`；如果这个 thread 已经附加了 vector store，则会把新文件附加到现有的 thread vector store。在该 thread 上创建 Run 时，file search 工具会同时查询来自 assistant 的 `vector_store` 和 thread 上的 `vector_store`。
 
-在这个示例中，用户附加了一份 Apple 最新 10-K 文件的副本。
+在这个示例中，用户附加了一份 Apple 最新 10-K 文件副本。
 
 ```python
 # Upload the user provided file to OpenAI
@@ -187,7 +187,7 @@ console.log(thread.tool_resources?.file_search);
 
 ### 第 5 步：创建 run 并检查输出
 
-现在，创建一个 Run，并观察模型如何使用 File Search 工具回答用户的问题。
+现在，创建一个 Run，并观察模型如何使用文件搜索工具回答用户的问题。
 
 
 
@@ -330,7 +330,7 @@ console.log(citations.join("\n"));
 
 
 
-你的新 assistant 会查询两个已附加的 vector store（一个包含 `goog-10k.pdf` 和 `brka-10k.txt`，另一个包含 `aapl-10k.pdf`），并从 `aapl-10k.pdf` 返回此结果。
+你的新 assistant 会查询两个已附加的向量存储（一个包含 `goog-10k.pdf` 和 `brka-10k.txt`，另一个包含 `aapl-10k.pdf`），并从 `aapl-10k.pdf` 返回此结果。
 
 要检索模型所使用的 file search 结果内容，请使用 `include` 查询参数，并以 `?include[]=step_details.tool_calls[*].file_search.results[*].content` 格式提供值 `step_details.tool_calls[*].file_search.results[*].content`。
 
@@ -363,9 +363,9 @@ console.log(citations.join("\n"));
 3. 支持对结构化文件格式（如 `csv` 或 `jsonl`）进行检索。
 4. 更好地支持摘要生成；目前该工具针对搜索查询进行了优化。
 
-## Vector stores
+## 向量存储
 
-Vector Store 对象赋予 File Search 工具搜索文件的能力。向 `vector_store` 添加文件会自动解析、切分、嵌入并将该文件存储到一个支持关键词搜索和语义搜索的向量数据库中。每个 `vector_store` 最多可容纳 10,000 个文件。对于从 2025 年 11 月开始创建的 vector store，此限制为 100,000,000 个文件。Vector store 可以附加到 Assistants 和 Threads。目前，你最多可以向一个 assistant 附加一个 vector store，并且最多向一个 thread 附加一个 vector store。
+向量存储（Vector Store）对象赋予文件搜索工具搜索文件的能力。向 `vector_store` 添加文件会自动解析、切分、嵌入并将该文件存储到一个支持关键词搜索和语义搜索的向量数据库中。每个 `vector_store` 最多可容纳 10,000 个文件。对于从 2025 年 11 月开始创建的向量存储，此限制为 100,000,000 个文件。向量存储可以附加到 Assistants 和 Threads。目前，你最多可以向一个 assistant 附加一个向量存储，并且最多向一个 thread 附加一个向量存储。
 
 #### 创建 vector store 并添加文件
 
@@ -463,7 +463,7 @@ const batch = await openai.vectorStores.fileBatches.createAndPoll(
 
 最大文件大小为 512 MB。每个文件包含的 token 数不应超过 5,000,000（附加文件时会自动计算）。
 
-File Search 支持多种文件格式，包括 `.pdf`、`.md` 和 `.docx`。有关受支持文件扩展名及其对应 MIME 类型的更多详细信息，请参见下面的[支持的文件](#supported-files)部分。
+文件搜索支持多种文件格式，包括 `.pdf`、`.md` 和 `.docx`。有关受支持文件扩展名及其对应 MIME 类型的更多详细信息，请参见下面的[支持的文件](#supported-files)部分。
 
 #### 附加 vector store
 
@@ -522,11 +522,11 @@ tool_resources: {
 
 作为兜底机制，当 **thread 的** vector store 中包含仍在处理的文件时，我们在 Run 对象中内置了最长 **60 秒等待**。这是为了确保用户在线程中上传的任何文件，在 run 继续之前都已完全可搜索。此兜底等待_不_适用于 assistant 的 vector store。
 
-#### 自定义 File Search 设置 {#customizing-file-search-settings}
+#### 自定义文件搜索设置 {#customizing-file-search-settings}
 
 你可以自定义 `file_search` 工具切分数据的方式，以及它向模型上下文返回多少个 chunk。
 
-**Chunking 配置**
+**分块配置**
 
 默认情况下，`max_chunk_size_tokens` 设置为 `800`，`chunk_overlap_tokens` 设置为 `400`，这意味着每个文件都会通过拆分为 800-token 的 chunk 进行索引，相邻 chunk 之间有 400-token 的重叠。
 
@@ -547,15 +547,15 @@ tool_resources: {
   - `gpt-4*` 模型为 16,000 tokens
   - o-series 模型为 16,000 tokens
 
-#### 通过 chunk ranking 提升 file search 结果相关性
+#### 通过 chunk ranking 提升文件搜索结果相关性
 
-默认情况下，file search 工具在生成响应时，会把它认为具有任何相关性的所有搜索结果返回给模型。不过，如果响应使用了低相关性的内容生成，可能会导致响应质量下降。你可以先检查生成响应时返回的 file search 结果，再调整 file search 工具 ranker 的行为，以改变结果在被用于生成响应前必须达到的相关性程度。
+默认情况下，file search 工具在生成响应时，会把它认为具有任何相关性的所有搜索结果返回给模型。不过，如果响应使用了低相关性的内容生成，可能会导致响应质量下降。你可以先检查生成响应时返回的文件搜索结果，再调整 file search 工具排序器（ranker）的行为，以改变结果在被用于生成响应前必须达到的相关性程度。
 
 **检查 file search chunks**
 
-提升 file search 结果质量的第一步，是检查 assistant 当前的行为。多数情况下，这意味着调查 assistant 表现不佳的响应。你可以使用 REST API 获取[过去某个 run step 的细粒度信息](https://developers.openai.com/api/docs/api-reference/run-steps/getRunStep)，具体做法是使用 `include` 查询参数获取用于生成结果的文件 chunk。
+提升文件搜索结果质量的第一步，是检查 assistant 当前的行为。多数情况下，这意味着调查 assistant 表现不佳的响应。你可以使用 REST API 获取[过去某个 run step 的细粒度信息](https://developers.openai.com/api/docs/api-reference/run-steps/getRunStep)，具体做法是使用 `include` 查询参数获取用于生成结果的文件 chunk。
 
-创建 run 时在响应中包含 file search 结果
+创建 run 时在响应中包含文件搜索结果
 
 ```python
 from openai import OpenAI
@@ -597,13 +597,13 @@ curl -g https://api.openai.com/v1/threads/thread_abc123/runs/run_abc123/steps/st
 
 然后，你可以记录并检查 run step 期间使用的搜索结果，判断它们是否持续与 assistant 应生成的响应相关。
 
-**配置 ranking options**
+**配置排序选项**
 
-如果你已经确定 file search 结果的相关性不足以生成高质量响应，可以调整用于选择哪些搜索结果应被用于生成响应的 result ranker 设置。你可以在**创建 assistant** 或**创建 run** 时，在工具中调整 [`file_search.ranking_options`](https://developers.openai.com/api/docs/api-reference/assistants/createAssistant#assistants-createassistant-tools) 设置。
+如果你已经确定文件搜索结果的相关性不足以生成高质量响应，可以调整用于选择哪些搜索结果应被用于生成响应的结果排序器设置。你可以在**创建 assistant** 或**创建 run** 时，在工具中调整 [`file_search.ranking_options`](https://developers.openai.com/api/docs/api-reference/assistants/createAssistant#assistants-createassistant-tools) 设置。
 
 你可以配置的设置包括：
 
-- `ranker` - 用于确定要使用哪些 chunk 的 ranker。可用值为 `auto`（使用最新可用的 ranker）和 `default_2024_08_21`。
+- `ranker` - 用于确定要使用哪些 chunk 的排序器。可用值为 `auto`（使用最新可用的排序器）和 `default_2024_08_21`。
 - `score_threshold` - 0.0 到 1.0 之间的排名分数，其中 1.0 表示最高排名。数值越高，越会限制用于生成结果的文件 chunk 只包含可能相关性更高的 chunk，但代价是可能遗漏相关 chunk。
 - `hybrid_search.embedding_weight`（也称为 `rrf_embedding_weight`）- 决定在使用[倒数排序融合](https://en.wikipedia.org/wiki/Reciprocal_rank_fusion)组合 dense（embedding）和 sparse（文本）排名时，对语义相似度赋予多少权重。提高该权重会更偏向 embedding 空间中接近的 chunk。
 - `hybrid_search.text_weight`（也称为 `rrf_text_weight`）- 决定启用 hybrid search 时，对关键词/文本匹配赋予多少权重。提高该权重会更偏向与查询共享精确词项的 chunk。
@@ -612,9 +612,9 @@ curl -g https://api.openai.com/v1/threads/thread_abc123/runs/run_abc123/steps/st
 
 #### 使用过期策略管理成本 {#managing-costs-with-expiration-policies}
 
-`file_search` 工具使用 `vector_stores` 对象作为资源，你将根据所创建 `vector_store` 对象的[大小](https://developers.openai.com/api/docs/api-reference/vector-stores/object#vector-stores/object-bytes)付费。Vector store 对象的大小是所有来自文件的已解析 chunk 及其对应 embeddings 的总和。
+`file_search` 工具使用 `vector_stores` 对象作为资源，你将根据所创建 `vector_store` 对象的[大小](https://developers.openai.com/api/docs/api-reference/vector-stores/object#vector-stores/object-bytes)付费。向量存储对象的大小是所有来自文件的已解析 chunk 及其对应嵌入的总和。
 
-你的第一个 GB 免费，超出后按 $0.10/GB/day 的向量存储费用计费。Vector store 操作没有其他相关成本。
+你的第一个 GB 免费，超出后按 $0.10/GB/day 的向量存储费用计费。向量存储操作没有其他相关成本。
 
 为了帮助你管理与这些 `vector_store` 对象相关的成本，我们在 `vector_store` 对象中增加了对过期策略的支持。你可以在创建或更新 `vector_store` 对象时设置这些策略。
 
@@ -641,7 +641,7 @@ let vectorStore = await openai.vectorStores.create({
 ```
 
 
-**Thread vector store 具有默认过期策略**
+**Thread 向量存储具有默认过期策略**
 
 使用 thread 辅助方法创建的 vector store（例如 Threads 中的 [`tool_resources.file_search.vector_stores`](https://developers.openai.com/api/docs/api-reference/threads/createThread#threads-createthread-tool_resources)，或 Messages 中的 [message.attachments](https://developers.openai.com/api/docs/api-reference/messages/createMessage#messages-createmessage-attachments)）默认过期策略为最后一次活跃后 7 天过期（“活跃”定义为该 vector store 最后一次参与某个 run）。
 

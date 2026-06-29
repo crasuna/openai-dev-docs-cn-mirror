@@ -1,10 +1,10 @@
 ---
-title: "Codex app features"
+title: "Codex app 功能"
 description: "What you can do with the Codex app"
 outline: deep
 ---
 
-# Codex app features
+# Codex app 功能
 
 **文档集**：Codex  
 **分组**：Codex — App  

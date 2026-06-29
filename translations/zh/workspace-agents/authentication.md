@@ -7,9 +7,9 @@ translatedAt: "2026-06-27T19:35:31.9333790+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# 使用 Workspace Agent access tokens 进行认证
+# 使用 Workspace Agent 访问令牌进行认证
 
-Workspace Agents API 调用使用 Workspace Agent access tokens 进行认证。这些 tokens 通过 ChatGPT admin access-token flow 配置，并限定 scope 为 workspace 使用。
+Workspace Agents API 调用使用 Workspace Agent 访问令牌进行认证。这些 tokens 通过 ChatGPT admin access-token flow 配置，并限定 scope 为 workspace 使用。
 
 ## 配置 token
 

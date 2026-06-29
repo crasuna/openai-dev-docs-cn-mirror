@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:05:47.1891485+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Codex IDE extension
+# Codex IDE extension 扩展
 
 Codex 是 OpenAI 的 coding agent，可以读取、编辑和运行代码。它能帮助你更快构建、修复 bug，并理解不熟悉的代码。借助 Codex VS Code extension，你可以在 IDE 中并排使用 Codex，或将任务委托给 Codex Cloud。
 

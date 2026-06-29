@@ -1,10 +1,10 @@
 ---
-title: "Codex"
+title: "Codex 概览"
 description: "One agent for everywhere you code"
 outline: deep
 ---
 
-# Codex
+# Codex 概览
 
 **文档集**：Codex  
 **分组**：Codex — Overview  

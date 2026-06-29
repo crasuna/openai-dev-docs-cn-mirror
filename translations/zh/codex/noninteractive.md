@@ -166,7 +166,7 @@ API keys 是自动化的正确默认选择，因为它们更易于 provision 和
 
 </ToggleSection>
 
-## 恢复非交互式 session
+## 恢复非交互式会话
 
 如果你需要继续此前的运行（例如 two-stage pipeline），请使用 `resume` subcommand：
 
@@ -177,13 +177,13 @@ codex exec resume --last "fix the race conditions you found"
 
 你也可以使用 `codex exec resume <SESSION_ID>` 指定特定 session ID。
 
-## 需要 Git repository
+## 需要 Git 仓库
 
 Codex 要求命令在 Git repository 内运行，以防止破坏性更改。如果你确定环境安全，可以用 `codex exec --skip-git-repo-check` 覆盖此检查。
 
 ## 常见自动化模式
 
-### 示例：在 GitHub Actions 中自动修复 CI failures
+### 示例：在 GitHub Actions 中自动修复 CI 失败
 
 对于 GitHub Actions workflows，请使用 [`openai/codex-action`](https://github.com/openai/codex-action)，而不是安装 Codex 并把 API key 传给 shell step。该 action 会为 OpenAI API key 启动安全 proxy。
 
@@ -314,7 +314,7 @@ jobs:
             --body-file pr-body.md
 ```
 
-## Advanced stdin piping
+## 高级 stdin piping
 
 当另一个命令为 Codex 产生输入时，请根据 instruction 应来自何处来选择 stdin pattern。当你已经知道 instruction，并希望将 piped output 作为上下文传入时，请使用 prompt-plus-stdin。当 stdin 应成为完整 prompt 时，请使用 `codex exec -`。
 

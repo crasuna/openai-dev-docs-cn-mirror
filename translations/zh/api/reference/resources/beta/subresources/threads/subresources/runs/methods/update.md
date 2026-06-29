@@ -9,8 +9,8 @@ translator: codex-gpt-5.5-xhigh
 
 # Beta Threads Runs — 更新
 
-OpenAI API endpoint 方法参考。
+OpenAI API 端点方法参考。
 
-规范参考 URL: https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/runs/methods/update
+规范参考 URL：https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/runs/methods/update
 
 此 API 参考页面由 Stainless 生成。

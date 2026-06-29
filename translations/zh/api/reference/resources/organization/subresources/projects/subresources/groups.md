@@ -7,10 +7,10 @@ translatedAt: "2026-06-27T18:55:40.8691393+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Organization Projects Groups
+# Organization Projects Groups 项目组
 
-OpenAI API endpoint reference。
+OpenAI API 端点参考。
 
-规范 reference URL：https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/groups
+规范参考 URL：https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/groups
 
-此 API reference 页面由 Stainless 生成。
+此 API 参考页面由 Stainless 生成。

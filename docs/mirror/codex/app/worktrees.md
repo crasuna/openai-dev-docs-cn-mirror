@@ -1,10 +1,10 @@
 ---
-title: "Worktrees"
+title: "Worktrees 工作树"
 description: "Leverage Git worktrees within the Codex app to let Codex work in parallel"
 outline: deep
 ---
 
-# Worktrees
+# Worktrees 工作树
 
 **文档集**：Codex  
 **分组**：Codex — App  

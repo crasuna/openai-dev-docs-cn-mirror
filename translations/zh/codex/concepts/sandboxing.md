@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T11:05:32.948Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Sandbox
+# Sandbox 沙盒
 
 Sandbox 是让 Codex 可以自主行动、但不默认获得你机器无限制访问权的边界。当 Codex 在
 **Codex app**、**IDE extension** 或 **CLI** 中运行本地命令时，这些命令会在受约束的环境中运行，而不是默认以完全访问权限运行。

@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:07:21.7838419+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Codex CLI features
+# Codex CLI 功能
 
 Codex 支持 chat 之外的工作流。使用本指南了解每个功能可以解锁什么，以及何时使用。
 

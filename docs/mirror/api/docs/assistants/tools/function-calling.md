@@ -1,10 +1,10 @@
 ---
-title: "Assistants Function Calling"
+title: "Assistants Function Calling 函数调用"
 description: "Use function calling to extend assistants with your own tools."
 outline: deep
 ---
 
-# Assistants Function Calling
+# Assistants Function Calling 函数调用
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

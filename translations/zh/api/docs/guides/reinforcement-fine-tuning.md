@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T18:24:42.5859087+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Reinforcement fine-tuning
+# Reinforcement fine-tuning 强化微调
 
 Reinforcement fine-tuning（RFT）会使用你定义的反馈信号来调整 OpenAI reasoning model。和 [supervised fine-tuning](https://developers.openai.com/api/docs/guides/supervised-fine-tuning) 一样，它会让模型更贴合你的任务。区别在于，它不是基于固定的“正确”答案训练，而是依赖一个可编程 grader，对每个候选响应评分。训练算法随后会移动模型权重，让高分输出更可能出现，而低分输出逐渐减少。
 

@@ -9,7 +9,7 @@ translator: codex-gpt-5.5-xhigh
 
 # 向量存储文件批次
 
-OpenAI API endpoint 参考。
+OpenAI API 端点参考。
 
 规范参考 URL：https://developers.openai.com/api/reference/resources/vector_stores/subresources/file_batches
 

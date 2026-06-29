@@ -7,23 +7,23 @@ translatedAt: "2026-06-27T19:35:31.9333790+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Supported events
+# 支持的事件
 
-## Supported event names
+## 支持的事件名称
 
-| Event name               | Data type         | Use for |
+| 事件名称                 | 数据类型          | 用途 |
 | ------------------------ | ----------------- | ------- |
-| `app_installed`          | `customer_action` | 用户安装 app。 |
-| `app_opened`             | `customer_action` | 用户打开 app。 |
+| `app_installed`          | `customer_action` | 用户安装应用。 |
+| `app_opened`             | `customer_action` | 用户打开应用。 |
 | `appointment_scheduled`  | `customer_action` | 用户预约会议、demo 或咨询。 |
-| `checkout_started`       | `contents`        | 用户开始 checkout。 |
+| `checkout_started`       | `contents`        | 用户开始结账。 |
 | `contents_viewed`        | `contents`        | 用户查看商品、listing、文章或其他内容单元。 |
-| `custom`                 | `custom`          | 未被标准 taxonomy 覆盖的用户定义 event。 |
-| `items_added`            | `contents`        | 用户向购物车、bundle 或 selection 添加一个或多个 items。 |
+| `custom`                 | `custom`          | 标准 taxonomy 未覆盖的用户自定义事件。 |
+| `items_added`            | `contents`        | 用户向购物车、bundle 或 selection 添加一个或多个 item。 |
 | `lead_created`           | `customer_action` | 用户提交 lead form 或请求联系。 |
 | `order_created`          | `contents`        | 购买已完成。 |
 | `page_viewed`            | `contents`        | 用户到达或查看重要页面。 |
-| `registration_completed` | `customer_action` | 用户完成账户或活动 registration flow。 |
+| `registration_completed` | `customer_action` | 用户完成账户或活动注册流程。 |
 | `subscription_created`   | `plan_enrollment` | 付费订阅开始。 |
 | `trial_started`          | `plan_enrollment` | 免费试用开始。 |
 
@@ -31,58 +31,58 @@ translator: codex-gpt-5.5-xhigh
 
 页面加载请使用 `page_viewed`。当用户查看特定商品或内容项时，包括页面加载后发生的交互，请使用 `contents_viewed`。
 
-## Event data shapes
+## 事件数据结构
 
-所有 event data objects 都必须包含与所发送 event 匹配的 `type` 字段。如果包含 `amount`，也要包含 `currency`。请以你提供的 currency code 对应的标准 ISO 4217 最小货币单位，将 monetary values 作为整数发送，例如 `currency: "USD"` 时 $129.99 应发送为 `12999`。
+所有事件数据对象都必须包含与所发送事件匹配的 `type` 字段。如果包含 `amount`，也要包含 `currency`。请按所提供 currency code 对应的标准 ISO 4217 最小货币单位，以整数形式发送金额值，例如 `currency: "USD"` 时，$129.99 应发送为 `12999`。
 
 ### `contents`
 
-| Field      | Required | Type               | Notes |
+| 字段       | 是否必填 | 类型               | 说明 |
 | ---------- | -------- | ------------------ | ----- |
-| `type`     | Yes      | string             | 必须为 `contents`。 |
-| `amount`   | No       | integer            | 使用该 currency 标准最小单位的 event-level monetary value。 |
-| `currency` | Depends  | string             | 当存在 `amount` 时必填。 |
-| `contents` | No       | array of `Content` | 与 event 关联的 items。 |
+| `type`     | 是 | string             | 必须为 `contents`。 |
+| `amount`   | 否 | integer            | 使用该 currency 标准最小单位的事件级金额值。 |
+| `currency` | 视情况而定 | string             | 当存在 `amount` 时必填。 |
+| `contents` | 否 | array of `Content` | 与事件关联的 item。 |
 
 ### `customer_action`
 
-| Field      | Required | Type    | Notes |
+| 字段       | 是否必填 | 类型    | 说明 |
 | ---------- | -------- | ------- | ----- |
-| `type`     | Yes      | string  | 必须为 `customer_action`。 |
-| `amount`   | No       | integer | 使用该 currency 标准最小单位的 event-level monetary value。 |
-| `currency` | Depends  | string  | 当存在 `amount` 时必填。 |
+| `type`     | 是 | string  | 必须为 `customer_action`。 |
+| `amount`   | 否 | integer | 使用该 currency 标准最小单位的事件级金额值。 |
+| `currency` | 视情况而定 | string  | 当存在 `amount` 时必填。 |
 
 ### `plan_enrollment`
 
-| Field      | Required | Type               | Notes |
+| 字段       | 是否必填 | 类型               | 说明 |
 | ---------- | -------- | ------------------ | ----- |
-| `type`     | Yes      | string             | 必须为 `plan_enrollment`。 |
-| `plan_id`  | No       | string             | 你的内部 plan identifier。 |
-| `amount`   | No       | integer            | 使用该 currency 标准最小单位的 event-level monetary value。 |
-| `currency` | Depends  | string             | 当存在 `amount` 时必填。 |
-| `contents` | No       | array of `Content` | 可选的 plan-related items。 |
+| `type`     | 是 | string             | 必须为 `plan_enrollment`。 |
+| `plan_id`  | 否 | string             | 你的内部 plan identifier。 |
+| `amount`   | 否 | integer            | 使用该 currency 标准最小单位的事件级金额值。 |
+| `currency` | 视情况而定 | string             | 当存在 `amount` 时必填。 |
+| `contents` | 否 | array of `Content` | 可选的 plan 相关 item。 |
 
 ### `custom`
 
-| Field      | Required | Type               | Notes |
+| 字段       | 是否必填 | 类型               | 说明 |
 | ---------- | -------- | ------------------ | ----- |
-| `type`     | Yes      | string             | 必须为 `custom`。 |
-| `plan_id`  | No       | string             | 可选的 plan identifier。 |
-| `amount`   | No       | integer            | 使用该 currency 标准最小单位的 event-level monetary value。 |
-| `currency` | Depends  | string             | 当存在 `amount` 时必填。 |
-| `contents` | No       | array of `Content` | 与 custom event 关联的可选 items。 |
+| `type`     | 是 | string             | 必须为 `custom`。 |
+| `plan_id`  | 否 | string             | 可选的 plan identifier。 |
+| `amount`   | 否 | integer            | 使用该 currency 标准最小单位的事件级金额值。 |
+| `currency` | 视情况而定 | string             | 当存在 `amount` 时必填。 |
+| `contents` | 否 | array of `Content` | 与 custom event 关联的可选 item。 |
 
 ### `Content`
 
 每个 `contents[]` item 只能使用这些字段。
 
-| Field          | Required | Type    | Notes |
+| 字段           | 是否必填 | 类型    | 说明 |
 | -------------- | -------- | ------- | ----- |
-| `id`           | No       | string  | 你的内部 item identifier。 |
-| `name`         | No       | string  | 人类可读的 item name。 |
-| `content_type` | No       | string  | 可选的非空类别，例如 `product`、`plan` 或 `page`。 |
-| `quantity`     | No       | integer | item 的数量。使用整数，不要使用字符串。 |
-| `amount`       | No       | integer | 使用该 currency 标准最小单位的 item-level monetary value。 |
-| `currency`     | No       | string  | 发送 item-level `amount` 时包含；如果一种 currency 适用于整个 event，也可以依赖 event-level `currency`。 |
+| `id`           | 否 | string  | 你的内部 item identifier。 |
+| `name`         | 否 | string  | 人类可读的 item name。 |
+| `content_type` | 否 | string  | 可选的非空类别，例如 `product`、`plan` 或 `page`。 |
+| `quantity`     | 否 | integer | item 的数量。使用整数，不要使用字符串。 |
+| `amount`       | 否 | integer | 使用该 currency 标准最小单位的 item 级金额值。 |
+| `currency`     | 否 | string  | 发送 item 级 `amount` 时包含；如果一种 currency 适用于整个事件，也可以依赖事件级 `currency`。 |
 
-在 `custom_event_name` 中使用小写字母、数字、下划线或连字符。名称长度保持在 1 到 64 个字符之间，并且不要复用任何内置 event name。
+在 `custom_event_name` 中使用小写字母、数字、下划线或连字符。名称长度保持在 1 到 64 个字符之间，并且不要复用任何内置事件名称。

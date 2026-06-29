@@ -1,10 +1,10 @@
 ---
-title: "Codex IDE extension"
+title: "Codex IDE extension 扩展"
 description: "Pair with Codex in your IDE"
 outline: deep
 ---
 
-# Codex IDE extension
+# Codex IDE extension 扩展
 
 **文档集**：Codex  
 **分组**：Codex — Ide  

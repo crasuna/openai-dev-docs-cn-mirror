@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:06:51.2133192+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Memories
+# Memories 记忆
 
 Memories 默认关闭。在欧洲经济区、英国和瑞士，Codex 只有在你于 Codex 设置中启用 memories，或在 `~/.codex/config.toml` 的 `[features]` 表中设置 `memories = true` 后，才会使用或生成 memories。
 

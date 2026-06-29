@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:35:17.0701114+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# MCP
+# MCP 服务器
 
 ## 什么是 MCP？
 

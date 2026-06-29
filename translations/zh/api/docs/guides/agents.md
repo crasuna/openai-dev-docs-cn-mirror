@@ -7,7 +7,7 @@ translatedAt: 2026-06-27T16:52:06+08:00
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Agents SDK
+# Agents SDK 智能体 SDK
 
 agent 是能够规划、调用工具、跨专家协作，并保留足够状态以完成多步骤工作的应用。
 

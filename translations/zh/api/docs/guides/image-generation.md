@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T17:45:12.7147584+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Image generation
+# Image generation 图像生成
 
 ## 概览
 

@@ -1,10 +1,10 @@
 ---
-title: "Codex SDK"
+title: "Codex SDK 软件开发工具包"
 description: "Programmatically control local Codex agents"
 outline: deep
 ---
 
-# Codex SDK
+# Codex SDK 软件开发工具包
 
 **文档集**：Codex  
 **分组**：Codex — Sdk  

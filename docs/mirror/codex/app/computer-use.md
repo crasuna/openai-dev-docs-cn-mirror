@@ -1,10 +1,10 @@
 ---
-title: "Computer Use"
+title: "Computer Use 计算机使用"
 description: "Let Codex use desktop apps while it works"
 outline: deep
 ---
 
-# Computer Use
+# Computer Use 计算机使用
 
 **文档集**：Codex  
 **分组**：Codex — App  

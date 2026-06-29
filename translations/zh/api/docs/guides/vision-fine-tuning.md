@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T18:23:55.4970917+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Vision fine-tuning
+# Vision fine-tuning 视觉微调
 
 Vision fine-tuning 使用图像输入进行 [supervised fine-tuning](https://developers.openai.com/api/docs/guides/supervised-fine-tuning)，以提升模型对图像输入的理解。本指南会带你了解 SFT 的这一子集，并概述使用图像输入进行 fine-tuning 时的一些重要注意事项。
 

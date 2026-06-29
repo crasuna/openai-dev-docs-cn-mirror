@@ -1,10 +1,10 @@
 ---
-title: "Node reference"
+title: "Node reference 节点参考"
 description: "Explore all available nodes for composing workflows in Agent Builder."
 outline: deep
 ---
 
-# Node reference
+# Node reference 节点参考
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

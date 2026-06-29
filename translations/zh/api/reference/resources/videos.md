@@ -9,7 +9,7 @@ translator: codex-gpt-5.5-xhigh
 
 # 视频
 
-OpenAI API endpoint 参考。
+OpenAI API 端点参考。
 
 规范参考 URL：https://developers.openai.com/api/reference/resources/videos
 

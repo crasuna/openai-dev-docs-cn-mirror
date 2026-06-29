@@ -7,7 +7,7 @@ translatedAt: 2026-06-27T16:51:57.1346199+08:00
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Apply Patch
+# Apply Patch 补丁工具
 
 `apply_patch` 工具让 GPT-5.1 能够使用结构化 diff 在你的代码库中创建、更新和删除文件。模型不只是建议修改，而是发出由你的应用负责应用并回报结果的 patch 操作，从而支持迭代式、多步骤的代码编辑工作流。
 

@@ -1,10 +1,10 @@
 ---
-title: "JavaScript Pixel"
+title: "JavaScript Pixel（测量像素）"
 description: "Send conversion events from web pages."
 outline: deep
 ---
 
-# JavaScript Pixel
+# JavaScript Pixel（测量像素）
 
 **文档集**：Ads  
 **分组**：Ads — Measurement Pixel  
@@ -24,11 +24,11 @@ outline: deep
 :::
 
 ::: v-pre
-OpenAI Ads Measurement Pixel 是一个浏览器 SDK，用于在有人点击 ChatGPT 中的广告后 measurement 网站 events。通过将脚本添加到你的网站、使用 Pixel ID 初始化它，并在 conversion 发生时调用 `oaiq("measure", ...)` 来使用该 pixel。
+OpenAI Ads Measurement Pixel 是一个浏览器 SDK，用于在有人点击 ChatGPT 中的广告后衡量网站事件。通过将脚本添加到你的网站、使用 Pixel ID 初始化它，并在 conversion 发生时调用 `oaiq("measure", ...)` 来使用该 Pixel。
 
 ## 安装 Measurement Pixel
 
-将以下 snippet 添加到你想捕获 conversions 的每个页面的 `&lt;head&gt;` 部分。请将脚本放在 `&lt;head&gt;` 靠前位置，以确保其他内容加载时不会丢失早期 conversions。
+将以下代码片段添加到你想捕获 conversions 的每个页面的 `&lt;head&gt;` 部分。请将脚本放在 `&lt;head&gt;` 靠前位置，以确保其他内容加载时不会丢失早期 conversions。
 
 ```html
 <script>
@@ -52,27 +52,27 @@ OpenAI Ads Measurement Pixel 是一个浏览器 SDK，用于在有人点击 Chat
 </script>
 ```
 
-`pixelId` 是必填项。请在 Ads Manager 的 conversions 标签页中创建新的 pixelId。`debug` 是可选项，在你测试集成时会将 SDK activity 记录到浏览器 console。
+`pixelId` 是必填项。请在 Ads Manager 的 Conversions 标签页中创建新的 pixelId。`debug` 是可选项，在你测试集成时会将 SDK 活动记录到浏览器 console。
 
-## 配置 content security policy
+## 配置 Content Security Policy
 
-如果你的网站执行 Content Security Policy (CSP)，请将这些来源合并到现有 policy 中：
+如果你的网站执行 Content Security Policy (CSP)，请将这些来源合并到现有策略中：
 
-| Directive     | Source                      | Purpose |
+| 指令          | 来源                        | 用途 |
 | ------------- | --------------------------- | ------- |
 | `script-src`  | `https://bzrcdn.openai.com` | 加载 Measurement Pixel SDK。 |
 | `connect-src` | `https://bzr.openai.com`    | 使用 `fetch` 或 `sendBeacon` 发送 events。 |
 | `img-src`     | `https://bzr.openai.com`    | 使用 image request fallback 发送 events。 |
 
-例如，一个除此之外只允许 same-origin resources 并使用 nonce 的 policy 会包含：
+例如，一个除此之外只允许 same-origin resources 并使用 nonce 的策略会包含：
 
 ```http
 Content-Security-Policy: default-src 'self'; script-src 'self' 'nonce-<NONCE>' https://bzrcdn.openai.com; connect-src 'self' https://bzr.openai.com; img-src 'self' https://bzr.openai.com;
 ```
 
-将 `&lt;NONCE&gt;` 替换为每个响应的新 nonce，并将相同值添加到安装 snippet 的 opening tag：`&lt;script nonce="&lt;NONCE&gt;"&gt;`。你也可以使用你网站现有的基于 hash 的 CSP 机制。不要仅为了 Measurement Pixel 添加 `'unsafe-inline'`。如果你的 policy 定义了 `script-src-elem`，也请将 CDN source 以及你的 nonce 或 hash source 添加到该 directive。
+将 `&lt;NONCE&gt;` 替换为每个响应的新 nonce，并将相同值添加到安装代码片段的开始标签：`&lt;script nonce="&lt;NONCE&gt;"&gt;`。你也可以使用你网站现有的基于 hash 的 CSP 机制。不要仅为了 Measurement Pixel 添加 `'unsafe-inline'`。如果你的策略定义了 `script-src-elem`，也请将 CDN source 以及你的 nonce 或 hash source 添加到该 directive。
 
-## 发送 user data
+## 发送用户数据
 
 向 `oaiq("init", ...)` 添加可选的 `user` 对象，以改进 conversion matching。User data 是 request-scoped，因此不要把它添加到单个 `oaiq("measure", ...)` 调用中。
 
@@ -94,7 +94,7 @@ oaiq("init", {
 
 如果这些值在安装 snippet 运行时可用，你也可以在初始 `oaiq("init", ...)` 调用中，与 Pixel ID 一起包含相同的 `user` 对象。
 
-| Field                | Description |
+| 字段                 | 说明 |
 | -------------------- | ----------- |
 | `email_sha256`       | 对 email address 去除首尾空白并转换为小写后得到的 SHA-256 hash。 |
 | `external_id_sha256` | 来自你系统的稳定、假名化 customer identifier 的 SHA-256 hash。 |
@@ -106,7 +106,7 @@ oaiq("init", {
 
 如果 user data 在第一次 `init` 调用之后才可用，例如用户登录后，请使用完整的 `user` 对象再次调用 `init`。第一次成功初始化后，可以省略 `pixelId`。
 
-## 发送 events
+## 发送事件
 
 JavaScript Pixel 不支持 `app_installed` 或 `app_opened`。
 
@@ -125,18 +125,18 @@ oaiq("measure", "order_created", {
 
 一次 `measure` 调用最多接受四个参数，顺序如下：
 
-| Argument   | Required | What to send |
+| 参数       | 是否必填 | 发送内容 |
 | ---------- | -------- | ------------ |
-| Command    | Yes      | 命令 `"measure"`。 |
-| Event name | Yes      | 一个[受支持的 event name](/mirror/ads/supported-events)，例如 `order_created`，或 `"custom"`。 |
-| Event data | Yes      | 一个对象，其 `type` 与 event 的 [data shape](/mirror/ads/supported-events#event-data-shapes) 匹配。 |
-| Options    | Depends  | 对标准 events 可选。对 custom events 必填，用于传入 `custom_event_name`。 |
+| Command    | 是 | 命令 `"measure"`。 |
+| Event name | 是 | 一个[受支持的 event name](/mirror/ads/supported-events)，例如 `order_created`，或 `"custom"`。 |
+| Event data | 是 | 一个对象，其 `type` 与 event 的 [data shape](/mirror/ads/supported-events#event-data-shapes) 匹配。 |
+| Options    | 视情况而定 | 对标准 events 可选。对 custom events 必填，用于传入 `custom_event_name`。 |
 
 Event name 描述发生了什么。Event data 对象的 `type` 选择随附数据的形状。例如，`order_created` 使用 `contents` data type。
 
 Options 对象支持这些字段：
 
-| Field               | When to use it |
+| 字段                | 使用时机 |
 | ------------------- | -------------- |
 | `event_id`          | 对从浏览器和服务器发送的同一 event 去重时，设置唯一 ID。 |
 | `custom_event_name` | 命名 custom event。该字段对 custom events 必填，标准 events 不支持。 |
@@ -176,7 +176,7 @@ Custom event names 必须：
 
 使用这些示例作为常见 measurement 模式的模板。
 
-### Page and content views
+### 页面和内容浏览
 
 ```js
 oaiq("measure", "page_viewed", {
@@ -202,7 +202,7 @@ oaiq("measure", "contents_viewed", {
 });
 ```
 
-### Commerce flow
+### 电商流程
 
 对 `items_added`、`checkout_started` 和 `order_created` 使用 `contents` data shape。
 
@@ -252,7 +252,7 @@ oaiq("measure", "order_created", {
 });
 ```
 
-### Lead generation and registration
+### 潜在客户生成与注册
 
 对 `lead_created`、`registration_completed` 和 `appointment_scheduled` 使用 `customer_action` data shape。
 
@@ -272,7 +272,7 @@ oaiq("measure", "appointment_scheduled", {
 });
 ```
 
-### Subscription and trial events
+### 订阅和试用事件
 
 对 `subscription_created` 和 `trial_started` 使用 `plan_enrollment` data shape。
 
@@ -290,7 +290,7 @@ oaiq("measure", "trial_started", {
 });
 ```
 
-## 对 browser 和 server events 去重
+## 对浏览器和服务器事件去重
 
 如果你同时从 Measurement Pixel 和 server-side 集成发送同一个 conversion，请在两处复用相同的 `event_id`。
 
@@ -322,7 +322,7 @@ Pixel 会替你处理若干传输细节：
 
 使用 pixel 时不需要手动配置这些细节。
 
-## Troubleshooting
+## 故障排查
 
 - 测试时保持 `debug: true`，以便在浏览器 console 中检查 Pixel activity。
 - 对 `amount` 和 `quantity` 使用整数值。

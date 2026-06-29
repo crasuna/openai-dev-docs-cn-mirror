@@ -7,11 +7,11 @@ translatedAt: "2026-06-27T19:35:31.9333790+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Quickstart
+# 快速开始
 
 Ads API 可以通过程序创建广告 campaign 并监控结果。本指南介绍让广告上线并检查结果所需的最小实现。
 
-## Ad Structure
+## 广告结构
 
 广告位于 Ad Group 内，Ad Group 位于 Campaign 内。Campaign 和 Ad Group 定义预算与定向，而 Ads 承载广告的标题、描述和图片。
 
@@ -27,7 +27,7 @@ curl -X GET "https://api.ads.openai.com/v1/ad_account" \
   -H "Accept: application/json"
 ```
 
-Response:
+响应：
 
 ```json
 {
@@ -53,7 +53,7 @@ curl -X POST "https://api.ads.openai.com/v1/upload" \
   }'
 ```
 
-Response:
+响应：
 
 ```json
 {
@@ -80,7 +80,7 @@ curl -X POST "https://api.ads.openai.com/v1/campaigns" \
   }'
 ```
 
-Response:
+响应：
 
 ```json
 {
@@ -119,7 +119,7 @@ curl -X POST "https://api.ads.openai.com/v1/ad_groups" \
   }'
 ```
 
-Response:
+响应：
 
 ```json
 {
@@ -159,7 +159,7 @@ curl -X POST "https://api.ads.openai.com/v1/ads" \
   }'
 ```
 
-Response:
+响应：
 
 ```json
 {

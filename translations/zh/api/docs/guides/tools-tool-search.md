@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T10:24:24.269Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Tool search
+# Tool search 工具搜索
 
 Tool search 允许模型根据需要动态搜索工具并将其加载到模型上下文中。这样你就可以避免一开始就把所有工具定义都加载到模型上下文中，并且**可能有助于降低总体 token 使用量和成本**。为实现最佳成本和延迟，tool search 被设计为**保留模型缓存**。当模型发现新工具时，它们会被注入到上下文窗口末尾。
 

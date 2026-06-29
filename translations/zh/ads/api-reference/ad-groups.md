@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:35:31.9333790+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Ad Groups
+# Ad Groups（广告组）
 
 ## 列出 ad group
 
@@ -15,13 +15,13 @@ translator: codex-gpt-5.5-xhigh
 
 `GET /ad_groups`
 
-| Parameter     | Type    | Required | Notes |
+| 参数          | 类型    | 是否必填 | 说明 |
 | ------------- | ------- | -------- | ----- |
-| `campaign_id` | string  | Yes      | 父级 campaign ID。 |
-| `limit`       | integer | No       | 介于 `1` 和 `500` 之间。默认值为 20。 |
-| `after`       | string  | No       | 下一页的 cursor。 |
-| `before`      | string  | No       | 上一页的 cursor。 |
-| `order`       | string  | No       | `asc` 或 `desc`。 |
+| `campaign_id` | string  | 是 | 父级 campaign ID。 |
+| `limit`       | integer | 否 | 介于 `1` 和 `500` 之间。默认值为 20。 |
+| `after`       | string  | 否 | 下一页的 cursor。 |
+| `before`      | string  | 否 | 上一页的 cursor。 |
+| `order`       | string  | 否 | `asc` 或 `desc`。 |
 
 ```bash
 curl -X GET "https://api.ads.openai.com/v1/ad_groups?campaign_id=cmpn_101&limit=10" \
@@ -58,18 +58,18 @@ curl -X GET "https://api.ads.openai.com/v1/ad_groups?campaign_id=cmpn_101&limit=
 
 `POST /ad_groups`
 
-| Field                               | Type     | Required                   | Notes |
+| 字段                                | 类型     | 是否必填                   | 说明 |
 | ----------------------------------- | -------- | -------------------------- | ----- |
-| `campaign_id`                       | string   | Yes                        | 父级 campaign ID。 |
-| `name`                              | string   | Yes                        | `3` 到 `1000` 个字符，并且必须包含一个非空格字符。 |
-| `description`                       | string   | No                         | Ad group 描述。 |
-| `context_hints`                     | string[] | No                         | 自由格式的受众或展示位置提示。 |
-| `status`                            | string   | Yes                        | `active` 或 `paused`。 |
-| `bidding_config.billing_event_type` | string   | Yes                        | 当前为 `impression`。 |
-| `bidding_config.max_bid_micros`     | integer  | Yes                        | 介于 `1` 和 `100000000` 之间。 |
-| `product_set`                       | object   | For product-feed campaigns | 选择已链接的 feed 和可选 product filters。参阅 [Product feeds](https://developers.openai.com/ads/product-feeds)。 |
-| `product_set.product_feed_id`       | string   | For product-feed campaigns | 链接到当前 ad account 的 Feed ID。 |
-| `product_set.filters`               | object[] | No                         | Product filters。不要在一个 product set 中重复同一个字段。 |
+| `campaign_id`                       | string   | 是 | 父级 campaign ID。 |
+| `name`                              | string   | 是 | `3` 到 `1000` 个字符，并且必须包含一个非空格字符。 |
+| `description`                       | string   | 否 | Ad group 描述。 |
+| `context_hints`                     | string[] | 否 | 自由格式的受众或展示位置提示。 |
+| `status`                            | string   | 是 | `active` 或 `paused`。 |
+| `bidding_config.billing_event_type` | string   | 是 | 当前为 `impression`。 |
+| `bidding_config.max_bid_micros`     | integer  | 是 | 介于 `1` 和 `100000000` 之间。 |
+| `product_set`                       | object   | product-feed campaign 适用 | 选择已链接的 feed 和可选 product filters。参阅 [Product feeds](https://developers.openai.com/ads/product-feeds)。 |
+| `product_set.product_feed_id`       | string   | product-feed campaign 适用 | 链接到当前 ad account 的 Feed ID。 |
+| `product_set.filters`               | object[] | 否 | Product filters。不要在一个 product set 中重复同一个字段。 |
 | `product_set.filters[].field`       | string   | Yes, in each filter        | 要过滤的 feed attribute。 |
 | `product_set.filters[].operator`    | string   | Yes, in each filter        | `in`、`gt`、`gte`、`lt` 或 `lte`。 |
 | `product_set.filters[].values`      | string[] | Yes, in each filter        | 匹配值。将数值比较值作为字符串发送，例如 `"4.5"`。 |

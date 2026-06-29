@@ -9,7 +9,7 @@ translator: codex-gpt-5.5-xhigh
 
 # Responses — 取消
 
-OpenAI API endpoint 方法参考。
+OpenAI API 端点方法参考。
 
 规范参考 URL：https://developers.openai.com/api/reference/resources/responses/methods/cancel
 

@@ -160,7 +160,7 @@ translator: codex-gpt-5.5-xhigh
       key: "windows.sandbox_private_desktop",
       type: "boolean",
       description:
-        "在原生 Windows 上默认让最终 sandboxed child process 运行在 private desktop 上。仅在需要兼容较旧的 `Winsta0\\\\Default` 行为时才设置为 `false`。",
+        "在原生 Windows 上默认让最终 sandboxed 子进程运行在 private desktop 上。仅在需要兼容较旧的 `Winsta0\\\\Default` 行为时才设置为 `false`。",
     },
     {
       key: "notify",
@@ -318,7 +318,7 @@ translator: codex-gpt-5.5-xhigh
       key: "apps.<id>.approvals_reviewer",
       type: "user | auto_review",
       description:
-        "此 app 的 tool approval prompts 的 reviewer。覆盖 `apps._default.approvals_reviewer`。",
+        "此 app 的 tool approval prompts 审核者。覆盖 `apps._default.approvals_reviewer`。",
     },
     {
       key: "apps.<id>.default_tools_approval_mode",
@@ -528,7 +528,7 @@ translator: codex-gpt-5.5-xhigh
       key: "mcp_servers.<id>.disabled_tools",
       type: "array<string>",
       description:
-        "在 MCP server 的 `enabled_tools` 之后应用的 deny list。",
+        "在 MCP server 的 `enabled_tools` 之后应用的拒绝列表。",
     },
     {
       key: "mcp_servers.<id>.default_tools_approval_mode",
@@ -704,7 +704,7 @@ translator: codex-gpt-5.5-xhigh
       key: "features.network_proxy.domains",
       type: "map<string, allow | deny>",
       description:
-        "Sandboxed networking 的 domain policy。默认未设置，意味着在添加 `allow` rules 前不允许外部目标。支持 exact hosts、仅匹配 subdomains 的 `*.example.com`、匹配 apex 加 subdomains 的 `**.example.com`，以及 global `*` allow rules；请优先使用 scoped rules，因为 `*` 会广泛打开 public outbound access。为 blocked destinations 添加 `deny` rules；冲突时 `deny` 获胜。",
+        "Sandboxed networking 的 domain policy。默认未设置，意味着在添加 `allow` rules 前不允许外部目标。支持精确主机、仅匹配子域的 `*.example.com`、匹配 apex 加子域的 `**.example.com`，以及全局 `*` allow rules；请优先使用有范围的规则，因为 `*` 会广泛打开公共出站访问。为被阻止的目标添加 `deny` rules；冲突时 `deny` 获胜。",
     },
     {
       key: "features.network_proxy.unix_sockets",
@@ -716,7 +716,7 @@ translator: codex-gpt-5.5-xhigh
       key: "features.network_proxy.allow_local_binding",
       type: "boolean",
       description:
-        "允许更广泛的 local/private-network access。默认是 `false`；exact local IP literal 或 `localhost` allow rules 仍可允许特定本地目标。",
+        "允许更广泛的本地/私有网络访问。默认是 `false`；精确本地 IP literal 或 `localhost` allow rules 仍可允许特定本地目标。",
     },
     {
       key: "features.network_proxy.enable_socks5",
@@ -744,7 +744,7 @@ translator: codex-gpt-5.5-xhigh
       key: "features.network_proxy.dangerously_allow_all_unix_sockets",
       type: "boolean",
       description:
-        "允许任意 Unix socket destinations，而不是仅限 allowlist access。默认是 `false`；仅在严格受控环境中使用。",
+        "允许任意 Unix socket 目标，而不是仅限允许列表访问。默认是 `false`；仅在严格受控环境中使用。",
     },
     {
       key: "features.network_proxy.proxy_url",
@@ -950,7 +950,7 @@ translator: codex-gpt-5.5-xhigh
       key: "plan_mode_reasoning_effort",
       type: "none | minimal | low | medium | high | xhigh",
       description:
-        "Plan mode 专用的 reasoning override。未设置时，Plan mode 使用其内置 preset default。",
+        "Plan mode 专用的 reasoning override。未设置时，Plan mode 使用其内置 preset 默认值。",
     },
     {
       key: "model_reasoning_summary",
@@ -985,7 +985,7 @@ translator: codex-gpt-5.5-xhigh
       key: "shell_environment_policy.exclude",
       type: "array<string>",
       description:
-        "在 defaults 之后移除环境变量的 glob patterns。",
+        "在默认值之后移除环境变量的 glob patterns。",
     },
     {
       key: "shell_environment_policy.include_only",
@@ -1211,7 +1211,7 @@ translator: codex-gpt-5.5-xhigh
       key: "tui.theme",
       type: "string",
       description:
-        "Syntax-highlighting theme override（kebab-case theme name）。",
+        "语法高亮 theme 覆盖（kebab-case theme name）。",
     },
     {
       key: "tui.keymap.<context>.<action>",
@@ -1247,7 +1247,7 @@ translator: codex-gpt-5.5-xhigh
       key: "plugins.<plugin>.mcp_servers.<server>.disabled_tools",
       type: "array<string>",
       description:
-        "在 plugin-provided MCP server 的 `enabled_tools` 之后应用的 deny list。",
+        "在 plugin-provided MCP server 的 `enabled_tools` 之后应用的拒绝列表。",
     },
     {
       key: "plugins.<plugin>.mcp_servers.<server>.tools.<tool>.approval_mode",
@@ -1442,31 +1442,31 @@ translator: codex-gpt-5.5-xhigh
       key: "permissions.<name>.network.domains",
       type: "table",
       description:
-        "Sandboxed networking 的 domain rules。支持 exact hosts、仅匹配 subdomains 的 `*.example.com`、匹配 apex 加 subdomains 的 `**.example.com`，以及 global `*` allow rules。冲突时 `deny` 获胜。",
+        "Sandboxed networking 的 domain rules。支持精确主机、仅匹配子域的 `*.example.com`、匹配 apex 加子域的 `**.example.com`，以及全局 `*` allow rules。冲突时 `deny` 获胜。",
     },
     {
       key: "permissions.<name>.network.domains.<pattern>",
       type: "allow | deny",
       description:
-        "允许或拒绝 exact host 或 scoped wildcard pattern，例如 `*.example.com` 或 `**.example.com`。",
+        "允许或拒绝精确主机或有范围的 wildcard pattern，例如 `*.example.com` 或 `**.example.com`。",
     },
     {
       key: "permissions.<name>.network.unix_sockets",
       type: "table",
       description:
-        "Sandboxed networking 的 Unix socket allowlist overrides。使用 socket paths 作为 keys；`allow` 添加路径，`deny` 拒绝路径。",
+        "Sandboxed networking 的 Unix socket 允许列表覆盖。使用 socket paths 作为 keys；`allow` 添加路径，`deny` 拒绝路径。",
     },
     {
       key: "permissions.<name>.network.unix_sockets.<path>",
       type: "allow | deny",
       description:
-        "使用 `allow` 将一个绝对 Unix socket path 添加到 effective allowlist，或使用 `deny` 拒绝它。Denied entries 会从 effective allowlist 中省略。",
+        "使用 `allow` 将一个绝对 Unix socket path 添加到有效允许列表，或使用 `deny` 拒绝它。被拒绝的条目会从有效允许列表中省略。",
     },
     {
       key: "permissions.<name>.network.allow_local_binding",
       type: "boolean",
       description:
-        "允许通过 sandboxed networking 进行更广泛的 local/private-network access。当此值保持 `false` 时，exact local IP literal 或 `localhost` allow rules 仍可允许特定本地目标。",
+        "允许通过 sandboxed networking 进行更广泛的本地/私有网络访问。当此值保持 `false` 时，精确本地 IP literal 或 `localhost` allow rules 仍可允许特定本地目标。",
     },
     {
       key: "projects.<path>.trust_level",
@@ -1522,7 +1522,7 @@ translator: codex-gpt-5.5-xhigh
 
 你可以在[这里](https://developers.openai.com/codex/config-schema.json)找到 `config.toml` 的最新 JSON schema。
 
-要在 VS Code 或 Cursor 中编辑 `config.toml` 时获得 autocompletion 和 diagnostics，可以安装 [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml) 扩展，并将此行添加到 `config.toml` 顶部：
+要在 VS Code 或 Cursor 中编辑 `config.toml` 时获得自动补全和诊断，可以安装 [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml) 扩展，并将此行添加到 `config.toml` 顶部：
 
 ```toml
 #:schema https://developers.openai.com/codex/config-schema.json
@@ -1534,13 +1534,13 @@ translator: codex-gpt-5.5-xhigh
 
 `requirements.toml` 是管理员强制执行的配置文件，用于约束用户无法覆盖的安全敏感设置。有关详情、位置和示例，请参阅 [Admin-enforced requirements](https://developers.openai.com/codex/enterprise/managed-configuration#admin-enforced-requirements-requirementstoml)。
 
-对于 ChatGPT Business 和 Enterprise 用户，Codex 还可以应用从 cloud 获取的 requirements。有关优先级详情，请参阅安全页面。
+对于 ChatGPT Business 和 Enterprise 用户，Codex 还可以应用从云端获取的 requirements。有关优先级详情，请参阅安全页面。
 
-在 `requirements.toml` 中使用 `[features]`，通过与 `config.toml` 相同的 canonical keys pin feature flags。省略的 keys 保持不受约束。
+在 `requirements.toml` 中使用 `[features]`，通过与 `config.toml` 相同的 canonical keys 固定 feature flags。省略的 keys 保持不受约束。
 
-Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Codex 0.137.0 及更早版本会忽略 `allowed_permission_profiles` 和托管 `default_permissions`。
+托管 permission-profile 允许列表需要 Codex 0.138.0 或更高版本。Codex 0.137.0 及更早版本会忽略 `allowed_permission_profiles` 和托管 `default_permissions`。
 
-将 `allowed_sandbox_modes` 与 `sandbox_mode` 搭配使用。对于 permission-profile deployments，请将 `allowed_permission_profiles` 与托管 `default_permissions` 搭配使用。
+将 `allowed_sandbox_modes` 与 `sandbox_mode` 搭配使用。对于 permission-profile 部署，请将 `allowed_permission_profiles` 与托管 `default_permissions` 搭配使用。
 
 <ConfigTable
   options={[
@@ -1566,7 +1566,7 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "allowed_permission_profiles",
       type: "table<boolean>",
       description:
-        "允许的 permission profiles 的完整列表。设置为 `true` 的 profiles 被允许。省略或设置为 `false` 的 profiles 会被拒绝，包括未来版本中新增的 profiles。组合 requirements sources 时，entries 按 profile name 匹配。",
+        "允许的 permission profiles 的完整列表。设置为 `true` 的 profiles 被允许。省略或设置为 `false` 的 profiles 会被拒绝，包括未来版本中新增的 profiles。组合 requirements sources 时，条目按 profile name 匹配。",
     },
     {
       key: "allowed_permission_profiles.<name>",
@@ -1590,13 +1590,13 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "permissions",
       type: "table",
       description:
-        "按 profile name keyed 的 admin-defined permission profiles。使用与 `config.toml` 相同的 profile fields。",
+        "按 profile name 作为 key 的 admin-defined permission profiles。使用与 `config.toml` 相同的 profile fields。",
     },
     {
       key: "permissions.<name>",
       type: "table",
       description:
-        "Admin-defined permission profile。名称不能以 `:` 开头、不能使用保留名称 `filesystem`，也不能与已加载 config 中的 profile 重名。使用与 `config.toml` 相同的 profile fields；完整 profile schema 请参阅 Permissions guide。",
+        "管理员定义的 permission profile。名称不能以 `:` 开头、不能使用保留名称 `filesystem`，也不能与已加载 config 中的 profile 重名。使用与 `config.toml` 相同的 profile fields；完整 profile schema 请参阅 Permissions guide。",
     },
     {
       key: "allowed_sandbox_modes",
@@ -1606,7 +1606,7 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
     {
       key: "windows",
       type: "table",
-      description: "Native Windows sandbox requirements。",
+      description: "原生 Windows sandbox requirements。",
     },
     {
       key: "windows.allowed_sandbox_implementations",
@@ -1618,7 +1618,7 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "remote_sandbox_config",
       type: "array<table>",
       description:
-        "Host-specific sandbox requirements。第一个 `hostname_patterns` 匹配解析出的 host name 的条目，会覆盖该 requirements source 的顶层 `allowed_sandbox_modes`。Host-specific entries 目前只覆盖 sandbox modes。",
+        "特定 host 的 sandbox requirements。第一个 `hostname_patterns` 匹配解析出的 host name 的条目，会覆盖该 requirements source 的顶层 `allowed_sandbox_modes`。特定 host 的条目目前只覆盖 sandbox modes。",
     },
     {
       key: "remote_sandbox_config[].hostname_patterns",
@@ -1642,7 +1642,7 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "allow_managed_hooks_only",
       type: "boolean",
       description:
-        "为 `true` 时，Codex 会跳过 user、project、session 和 plugin hooks，同时仍允许来自 `requirements.toml` 和其他 managed config layers 的 managed hooks。",
+        "为 `true` 时，Codex 会跳过 user、project、session 和 plugin hooks，同时仍允许来自 `requirements.toml` 和其他托管 config layers 的 managed hooks。",
     },
     {
       key: "allow_appshots",
@@ -1660,7 +1660,7 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "features.plugin_sharing",
       type: "boolean",
       description:
-        "在 cloud-managed `requirements.toml` 中设置为 `false`，可禁用 locally built plugins 的 workspace sharing。",
+        "在 cloud-managed `requirements.toml` 中设置为 `false`，可禁用本地构建 plugins 的 workspace 共享。",
     },
     {
       key: "features",
@@ -1678,13 +1678,13 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "features.apps",
       type: "boolean",
       description:
-        "为受管用户 pin Apps integration availability on 或 off。",
+        "为受管用户固定 Apps integration 的开启或关闭状态。",
     },
     {
       key: "features.in_app_browser",
       type: "boolean",
       description:
-        "在 `requirements.toml` 中设置为 `false` 可禁用 in-app browser pane。",
+        "在 `requirements.toml` 中设置为 `false` 可禁用应用内浏览器窗格。",
     },
     {
       key: "features.browser_use",
@@ -1702,46 +1702,46 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "features.browser_use_full_cdp_access",
       type: "boolean",
       description:
-        "在 `requirements.toml` 中设置为 `false`，可阻止用户在 Browser Developer mode 中启用完整 Chrome DevTools Protocol access。如果省略，则应用正常产品可用性。",
+        "在 `requirements.toml` 中设置为 `false`，可阻止用户在 Browser Developer mode 中启用完整 Chrome DevTools Protocol 访问权限。如果省略，则应用正常产品可用性。",
     },
     {
       key: "features.fast_mode",
       type: "boolean",
       description:
-        "为受管用户 pin canonical `fast_mode` feature on 或 off。",
+        "为受管用户固定 canonical `fast_mode` feature 的开启或关闭状态。",
     },
     {
       key: "features.guardian_approval",
       type: "boolean",
       description:
-        "为受管用户 pin Guardian approval availability on 或 off。",
+        "为受管用户固定 Guardian approval 的开启或关闭状态。",
     },
     {
       key: "features.memories",
       type: "boolean",
-      description: "为受管用户 pin Memories availability on 或 off。",
+      description: "为受管用户固定 Memories 的开启或关闭状态。",
     },
     {
       key: "features.multi_agent",
       type: "boolean",
-      description: "为受管用户 pin multi-agent availability on 或 off。",
+      description: "为受管用户固定 multi-agent 的开启或关闭状态。",
     },
     {
       key: "features.plugins",
       type: "boolean",
-      description: "为受管用户 pin plugin availability on 或 off。",
+      description: "为受管用户固定 plugin 的开启或关闭状态。",
     },
     {
       key: "features.computer_use",
       type: "boolean",
       description:
-        "在 `requirements.toml` 中设置为 `false` 可禁用 Computer Use、Record & Replay 以及相关 install 或 enablement flows。",
+        "在 `requirements.toml` 中设置为 `false` 可禁用 Computer Use、Record & Replay 以及相关安装或启用流程。",
     },
     {
       key: "features.workspace_dependencies",
       type: "boolean",
       description:
-        "为受管用户 pin bundled workspace-dependency runtime availability on 或 off。",
+        "为受管用户固定 bundled workspace-dependency runtime 的开启或关闭状态。",
     },
     {
       key: "computer_use",
@@ -1753,31 +1753,31 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "computer_use.allow_locked_computer_use",
       type: "boolean",
       description:
-        "设置为 `false` 可阻止 Computer Use 在受管 macOS device 锁定后运行。如果省略，locked use 不受 requirements 约束。",
+        "设置为 `false` 可阻止 Computer Use 在受管 macOS device 锁定后运行。如果省略，锁定后使用不受 requirements 约束。",
     },
     {
       key: "experimental_network",
       type: "table",
       description:
-        "从 `requirements.toml` 强制执行的 network access requirements。这些约束独立于 `features.network_proxy`，并且可以在没有用户 feature flag 的情况下配置 sandboxed networking。",
+        "从 `requirements.toml` 强制执行的网络访问 requirements。这些约束独立于 `features.network_proxy`，并且可以在没有用户 feature flag 的情况下配置 sandboxed networking。",
     },
     {
       key: "experimental_network.enabled",
       type: "boolean",
       description:
-        "启用 sandboxed networking requirements。当活动 sandbox 保持 command networking 关闭时，这不会授予 network access。",
+        "启用 sandboxed networking requirements。当活动 sandbox 保持 command networking 关闭时，这不会授予网络访问权限。",
     },
     {
       key: "experimental_network.http_port",
       type: "integer",
       description:
-        "`[experimental_network]` requirements 使用的 loopback HTTP listener port。",
+        "`[experimental_network]` requirements 使用的 loopback HTTP 监听端口。",
     },
     {
       key: "experimental_network.socks_port",
       type: "integer",
       description:
-        "`[experimental_network]` requirements 使用的 loopback SOCKS5 listener port。",
+        "`[experimental_network]` requirements 使用的 loopback SOCKS5 监听端口。",
     },
     {
       key: "experimental_network.allow_upstream_proxy",
@@ -1795,13 +1795,13 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "experimental_network.dangerously_allow_all_unix_sockets",
       type: "boolean",
       description:
-        "允许任意 Unix socket destinations，而不是仅限 allowlist access。仅在严格受控环境中使用。",
+        "允许任意 Unix socket 目标，而不是仅限允许列表访问。仅在严格受控环境中使用。",
     },
     {
       key: "experimental_network.domains",
       type: "map<string, allow | deny>",
       description:
-        "Sandboxed networking 的 map-shaped administrator domain policy。支持 exact hosts、仅匹配 subdomains 的 `*.example.com`、匹配 apex 加 subdomains 的 `**.example.com`，以及 global `*` allow rules；请优先使用 scoped rules，因为 `*` 会广泛打开 public outbound access。冲突时 `deny` 获胜。不要将其与 `experimental_network.allowed_domains` 或 `experimental_network.denied_domains` 组合使用。",
+        "Sandboxed networking 的 map-shaped administrator domain policy。支持精确主机、仅匹配子域的 `*.example.com`、匹配 apex 加子域的 `**.example.com`，以及全局 `*` allow rules；请优先使用有范围的规则，因为 `*` 会广泛打开公共出站访问。冲突时 `deny` 获胜。不要将其与 `experimental_network.allowed_domains` 或 `experimental_network.denied_domains` 组合使用。",
     },
     {
       key: "experimental_network.allowed_domains",
@@ -1819,7 +1819,7 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "experimental_network.managed_allowed_domains_only",
       type: "boolean",
       description:
-        "为 `true` 时，在 sandboxed networking requirements 处于活动状态期间，只有 administrator-managed allow rules 继续生效；用户 allowlist additions 会被忽略。没有 managed allow rules 时，用户添加的 domain allow rules 不会继续生效。",
+        "为 `true` 时，在 sandboxed networking requirements 处于活动状态期间，只有 administrator-managed allow rules 继续生效；用户添加的允许列表会被忽略。没有 managed allow rules 时，用户添加的 domain allow rules 不会继续生效。",
     },
     {
       key: "experimental_network.unix_sockets",
@@ -1831,13 +1831,13 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "experimental_network.allow_local_binding",
       type: "boolean",
       description:
-        "允许 sandboxed networking 进行更广泛的 local/private-network access。当此值保持 `false` 时，exact local IP literal 或 `localhost` allow rules 仍可允许特定本地目标。",
+        "允许 sandboxed networking 进行更广泛的本地/私有网络访问。当此值保持 `false` 时，精确本地 IP literal 或 `localhost` allow rules 仍可允许特定本地目标。",
     },
     {
       key: "hooks",
       type: "table",
       description:
-        "Admin-enforced managed lifecycle hooks。需要 managed hook directory，并使用与 `config.toml` 中 inline `[hooks]` 相同的 event schema。",
+        "管理员强制执行的 managed lifecycle hooks。需要 managed hook directory，并使用与 `config.toml` 中 inline `[hooks]` 相同的 event schema。",
     },
     {
       key: "hooks.managed_dir",
@@ -1873,13 +1873,13 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "permissions.filesystem.deny_read",
       type: "array<string>",
       description:
-        "Admin-enforced filesystem read denials。Entries 可以是 paths 或 glob patterns，用户无法通过 local config 削弱它们。",
+        "管理员强制执行的文件系统读取拒绝规则。Entries 可以是 paths 或 glob patterns，用户无法通过 local config 削弱它们。",
     },
     {
       key: "mcp_servers",
       type: "table",
       description:
-        "可启用 MCP servers 的 allowlist。MCP server 必须同时匹配 server name（`<id>`）和 identity 才会启用。任何未在 allowlist 中的已配置 MCP server（或 identity 不匹配的 server）都会被禁用。",
+        "可启用 MCP servers 的允许列表。MCP server 必须同时匹配 server name（`<id>`）和 identity 才会启用。任何未在允许列表中的已配置 MCP server（或 identity 不匹配的 server）都会被禁用。",
     },
     {
       key: "mcp_servers.<id>.identity",
@@ -1891,7 +1891,7 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "mcp_servers.<id>.identity.command",
       type: "string | table",
       description:
-        "通过 exact command string 允许一个 MCP stdio server，或使用 matcher table 要求 exact executable 和 ordered argument matchers。字符串形式不会检查 arguments、`cwd`、`env` 或 `env_vars`。",
+        "通过精确 command string 允许一个 MCP stdio server，或使用 matcher table 要求精确 executable 和有序 argument matchers。字符串形式不会检查 arguments、`cwd`、`env` 或 `env_vars`。",
     },
     {
       key: "mcp_servers.<id>.identity.command.executable",
@@ -1919,13 +1919,13 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "mcp_servers.<id>.identity.command.args[].expression",
       type: "string",
       description:
-        "`regex` argument matcher 使用的 regular expression。该 expression 必须有效，并匹配完整 argument value。",
+        "`regex` argument matcher 使用的正则表达式。该 expression 必须有效，并匹配完整 argument value。",
     },
     {
       key: "mcp_servers.<id>.identity.url",
       type: "string | table",
       description:
-        "通过 exact URL string 允许一个 MCP streamable HTTP server，或使用 `exact`、`prefix` 或 `regex` value matcher table。",
+        "通过精确 URL string 允许一个 MCP streamable HTTP server，或使用 `exact`、`prefix` 或 `regex` value matcher table。",
     },
     {
       key: "mcp_servers.<id>.identity.url.match",
@@ -1941,19 +1941,19 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "mcp_servers.<id>.identity.url.expression",
       type: "string",
       description:
-        "`regex` URL matcher 使用的 regular expression。该 expression 必须有效，并匹配完整 URL value。",
+        "`regex` URL matcher 使用的正则表达式。该 expression 必须有效，并匹配完整 URL value。",
     },
     {
       key: "plugins",
       type: "table",
       description:
-        "按 plugin identifier keyed 的 plugin-specific MCP server allowlists。当此表存在时，没有匹配 plugin 和 server entry 的 plugin-bundled servers 会被禁用。",
+        "按 plugin identifier 作为 key 的 plugin-specific MCP server allowlists。当此表存在时，没有匹配 plugin 和 server entry 的 plugin-bundled servers 会被禁用。",
     },
     {
       key: "plugins.<plugin>.mcp_servers",
       type: "table",
       description:
-        "一个 plugin 捆绑的 MCP servers 的 allowlist。Plugin server requirements 使用与顶层 `mcp_servers` requirements 相同的 exact identity 和 matcher forms。",
+        "一个 plugin 捆绑的 MCP servers 的允许列表。Plugin server requirements 使用与顶层 `mcp_servers` requirements 相同的精确 identity 和 matcher forms。",
     },
     {
       key: "plugins.<plugin>.mcp_servers.<server>.identity",
@@ -1965,7 +1965,7 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "plugins.<plugin>.mcp_servers.<server>.identity.command",
       type: "string | table",
       description:
-        "通过 exact command string 允许 plugin 的 stdio MCP server，或使用 matcher table 要求 exact executable 和 ordered argument matchers。",
+        "通过精确 command string 允许 plugin 的 stdio MCP server，或使用 matcher table 要求精确 executable 和有序 argument matchers。",
     },
     {
       key: "plugins.<plugin>.mcp_servers.<server>.identity.command.executable",
@@ -1993,13 +1993,13 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "plugins.<plugin>.mcp_servers.<server>.identity.command.args[].expression",
       type: "string",
       description:
-        "`regex` argument matcher 使用的 regular expression。该 expression 必须匹配完整 argument value。",
+        "`regex` argument matcher 使用的正则表达式。该 expression 必须匹配完整 argument value。",
     },
     {
       key: "plugins.<plugin>.mcp_servers.<server>.identity.url",
       type: "string | table",
       description:
-        "通过 exact URL string 允许 plugin 的 streamable HTTP MCP server，或使用 `exact`、`prefix` 或 `regex` value matcher table。",
+        "通过精确 URL string 允许 plugin 的 streamable HTTP MCP server，或使用 `exact`、`prefix` 或 `regex` value matcher table。",
     },
     {
       key: "plugins.<plugin>.mcp_servers.<server>.identity.url.match",
@@ -2015,7 +2015,7 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "plugins.<plugin>.mcp_servers.<server>.identity.url.expression",
       type: "string",
       description:
-        "`regex` URL matcher 使用的 regular expression。该 expression 必须匹配完整 URL value。",
+        "`regex` URL matcher 使用的正则表达式。该 expression 必须匹配完整 URL value。",
     },
     {
       key: "marketplaces",
@@ -2033,37 +2033,37 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "marketplaces.allowed_sources",
       type: "table",
       description:
-        "按 administrator-chosen rule name keyed 的 allowed marketplace sources。不同 names 会跨 requirements layers 累积；同名下的 fields 使用正常 layer precedence。",
+        "按管理员选择的 rule name 作为 key 的 allowed marketplace sources。不同 names 会跨 requirements layers 累积；同名下的 fields 使用正常 layer precedence。",
     },
     {
       key: "marketplaces.allowed_sources.<name>",
       type: "table",
       description:
-        "一个 allowed source rule。Requirements merge 后的最终 `source` 值决定 Codex 解释哪些 sibling fields。",
+        "一个 allowed source rule。Requirements merge 后的最终 `source` 值决定 Codex 解释哪些同级 fields。",
     },
     {
       key: "marketplaces.allowed_sources.<name>.source",
       type: "git | host_pattern | local",
       description:
-        "Marketplace source matcher type。使用 `git` 匹配一个 repository，使用 `host_pattern` 匹配由 regular expression 匹配的 Git hosts，或使用 `local` 匹配一个 directory。",
+        "Marketplace source matcher type。使用 `git` 匹配一个 repository，使用 `host_pattern` 匹配由正则表达式匹配的 Git hosts，或使用 `local` 匹配一个 directory。",
     },
     {
       key: "marketplaces.allowed_sources.<name>.url",
       type: "string",
       description:
-        '当 `source = "git"` 时需要的 Git repository URL。Codex 会先规范化 configured 和 allowed URLs，再要求 exact repository match。',
+        '当 `source = "git"` 时需要的 Git repository URL。Codex 会先规范化已配置和已允许的 URLs，再要求精确 repository 匹配。',
     },
     {
       key: "marketplaces.allowed_sources.<name>.ref",
       type: "string",
       description:
-        "用于 `git` rule 的可选 exact Git ref。省略时，该 rule 允许匹配 repository 的任何 ref。",
+        "用于 `git` rule 的可选精确 Git ref。省略时，该 rule 允许匹配 repository 的任何 ref。",
     },
     {
       key: "marketplaces.allowed_sources.<name>.host_pattern",
       type: "string",
       description:
-        '当 `source = "host_pattern"` 时需要的 regular expression。Codex 会将它与从 HTTPS、SSH 或 SCP-style Git source 解析出的小写 hostname 匹配。请使用 `^` 和 `$` 要求 whole-host match。',
+        '当 `source = "host_pattern"` 时需要的正则表达式。Codex 会将它与从 HTTPS、SSH 或 SCP-style Git source 解析出的小写 hostname 匹配。请使用 `^` 和 `$` 要求 whole-host match。',
     },
     {
       key: "marketplaces.allowed_sources.<name>.path",
@@ -2075,7 +2075,7 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "apps",
       type: "table",
       description:
-        "按 app identifier keyed 的 managed app requirements。Requirements 可以禁用 app，或约束 individual tools 的 approval behavior。",
+        "按 app identifier 作为 key 的 managed app requirements。Requirements 可以禁用 app，或约束单个 tools 的 approval behavior。",
     },
     {
       key: "apps.<id>.enabled",
@@ -2092,7 +2092,7 @@ Managed permission-profile allowlists 需要 Codex 0.138.0 或更高版本。Cod
       key: "rules",
       type: "table",
       description:
-        "与 `.rules` files 合并的 admin-enforced command rules。Requirements rules 必须是限制性的。",
+        "与 `.rules` files 合并的管理员强制 command rules。Requirements rules 必须是限制性的。",
     },
     {
       key: "rules.prefix_rules",

@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T18:00:38.1935616+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Predicted Outputs
+# Predicted Outputs 预测输出
 
 当许多输出 tokens 已经提前已知时，**Predicted Outputs** 可帮助你加速来自 [Chat Completions](https://developers.openai.com/api/docs/api-reference/chat/create) 的 API 响应。最常见的情况是，你正在重新生成只做了少量修改的文本或代码文件。你可以使用 [Chat Completions 中的 `prediction` 请求参数](https://developers.openai.com/api/docs/api-reference/chat/create#chat-create-prediction)来提供预测内容。
 

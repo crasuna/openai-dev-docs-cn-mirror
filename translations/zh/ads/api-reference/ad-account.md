@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:35:31.9333790+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Ad Account
+# Ad Account（广告账户）
 
 ## 获取 ad account metadata
 

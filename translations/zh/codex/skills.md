@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:34:30.6847913+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Agent Skills
+# Agent Skills 代理技能
 
 使用 agent skills 为 Codex 扩展特定任务能力。一个 skill 会打包 instructions、resources 和可选 scripts，让 Codex 能可靠地遵循某个工作流。Skills 建立在 [open agent skills standard](https://agentskills.io) 之上。
 

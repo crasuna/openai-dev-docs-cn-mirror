@@ -24,7 +24,7 @@ outline: deep
 :::
 
 ::: v-pre
-本指南介绍一组核心原则，你可以将它们应用到各种与 LLM 相关的用例中以改善延迟。这些技巧来自我们与大量客户和开发者一起构建生产应用的经验，因此无论你正在构建什么，从细粒度 workflow 到端到端 chatbot，它们都应适用。
+本指南介绍一组核心原则，你可以将它们应用到各种与 LLM 相关的用例中以改善延迟。这些技巧来自我们与大量客户和开发者一起构建生产应用的经验，因此无论你正在构建什么，从细粒度工作流到端到端聊天机器人，它们都应适用。
 
 虽然存在许多单独技巧，但我们会把它们归入 **七条原则**，用于代表改进延迟方法的高层分类。
 
@@ -42,27 +42,27 @@ outline: deep
 
 ## 更快地处理 tokens
 
-**Inference speed** 可能是处理延迟时首先想到的事情（但你很快会看到，它远不是唯一因素）。它指的是 **LLM 处理 tokens 的实际速率**，通常用 TPM（tokens per minute）或 TPS（tokens per second）衡量。
+**推理速度（inference speed）** 可能是处理延迟时首先想到的事情（但你很快会看到，它远不是唯一因素）。它指的是 **LLM 处理 token 的实际速率**，通常用 TPM（每分钟 token 数）或 TPS（每秒 token 数）衡量。
 
-影响 inference speed 的主要因素是 **model size**。较小的模型通常运行得更快（也更便宜），并且在正确使用时甚至可以胜过更大的模型。为了用较小模型保持高质量表现，你可以探索：
+影响推理速度的主要因素是 **模型大小**。较小的模型通常运行得更快（也更便宜），并且在正确使用时甚至可以胜过更大的模型。为了用较小模型保持高质量表现，你可以探索：
 
 - 使用更长、[更详细的 prompt](/mirror/api/docs/guides/prompt-engineering#tactic-specify-the-steps-required-to-complete-a-task)，
 - 添加（更多）[few-shot examples](/mirror/api/docs/guides/prompt-engineering#tactic-provide-examples)，或
 - [fine-tuning](/mirror/api/docs/guides/model-optimization) / distillation。
 
-你还可以采用 inference optimizations，例如我们的 [**Predicted outputs**](/mirror/api/docs/guides/predicted-outputs) 功能。Predicted outputs 允许你在提前知道大部分输出内容时显著降低 generation 的延迟，例如代码编辑任务。通过给模型提供 prediction，LLM 可以更多地关注实际变化，而更少关注保持不变的内容。
+你还可以采用推理优化，例如我们的 [**Predicted outputs**](/mirror/api/docs/guides/predicted-outputs) 功能。Predicted outputs 允许你在提前知道大部分输出内容时显著降低生成延迟，例如代码编辑任务。通过给模型提供预测内容，LLM 可以更多地关注实际变化，而更少关注保持不变的内容。
 
 
 
-影响 inference speed 的其他因素包括你可用的
-  &lt;strong&gt;compute&lt;/strong&gt; 数量，以及你采用的任何额外
-  &lt;strong&gt;inference optimizations&lt;/strong&gt;。&lt;br /&gt; &lt;br /&gt;
+影响推理速度的其他因素包括你可用的
+  &lt;strong&gt;计算资源&lt;/strong&gt; 数量，以及你采用的任何额外
+  &lt;strong&gt;推理优化&lt;/strong&gt;。&lt;br /&gt; &lt;br /&gt;
   大多数人无法直接影响这些因素，但如果你感兴趣，并且对自己的基础设施有一定控制权，
   &lt;strong&gt;更快的硬件&lt;/strong&gt; 或
-  &lt;strong&gt;以更低饱和度运行 engines&lt;/strong&gt; 可能会带来适度的
+  &lt;strong&gt;以更低饱和度运行引擎&lt;/strong&gt; 可能会带来适度的
   TPM 提升。如果你已经深入到细节层面，还有大量其他
 
-    inference optimizations
+    推理优化
 
   略超出了本指南范围。
 
@@ -70,100 +70,100 @@ outline: deep
 
 ## 生成更少 tokens
 
-使用 LLM 时，生成 tokens 几乎总是延迟最高的一步。作为一般启发式规则，**减少 50% 的 output tokens 可能会减少约 50% 的延迟**。减少输出大小的方式取决于输出类型：
+使用 LLM 时，生成 token 几乎总是延迟最高的一步。作为一般启发式规则，**减少 50% 的输出 token 可能会减少约 50% 的延迟**。减少输出大小的方式取决于输出类型：
 
-如果你生成的是 **natural language**，只需 **要求模型更简洁**（“under 20 words” 或 “be very brief”）可能就有帮助。你也可以使用 few shot examples 和/或 fine-tuning 来教模型给出更短的响应。
+如果你生成的是 **自然语言**，只需 **要求模型更简洁**（“under 20 words” 或 “be very brief”）可能就有帮助。你也可以使用 few-shot examples 和/或 fine-tuning 来教模型给出更短的响应。
 
-如果你生成的是 **structured output**，请尽可能 **最小化输出语法**：缩短 function names、省略 named arguments、合并 parameters 等。
+如果你生成的是 **结构化输出**，请尽可能 **最小化输出语法**：缩短函数名、省略具名参数、合并参数等。
 
-最后，虽然不常见，你也可以使用 `max_tokens` 或 `stop_tokens` 来提前结束 generation。
+最后，虽然不常见，你也可以使用 `max_tokens` 或 `stop_tokens` 来提前结束生成。
 
 请始终记住：减少一个 output token，就是赢回一段（毫）秒！
 
 ## 使用更少 input tokens
 
-尽管减少 input tokens 数量确实会降低延迟，但这通常不是显著因素。**减少 50% 的 prompt 可能只会带来 1-5% 的延迟改善**。除非你正在处理真正巨大的 context sizes（文档、图像），否则可能更应该把精力放在别处。
+尽管减少输入 token 数量确实会降低延迟，但这通常不是显著因素。**减少 50% 的 prompt 可能只会带来 1-5% 的延迟改善**。除非你正在处理真正巨大的上下文（文档、图像），否则可能更应该把精力放在别处。
 
-话虽如此，如果你_确实_在处理 massive contexts（或者你决心榨出最后一点性能，并且_已经_耗尽所有其他选项），可以使用以下技巧减少 input tokens：
+话虽如此，如果你_确实_在处理超大上下文（或者你决心榨出最后一点性能，并且_已经_耗尽所有其他选项），可以使用以下技巧减少输入 token：
 
 - **Fine-tuning 模型**，以替代冗长 instructions / examples 的需求。
-- **过滤 context input**，例如修剪 RAG results、清理 HTML 等。
-- **最大化 shared prompt prefix**，把动态部分（例如 RAG results、history 等）放到 prompt 后面。这会让你的请求更适合 [KV cache](https://medium.com/@joaolages/kv-caching-explained-276520203249)（大多数 LLM providers 都使用它），也意味着每次请求需要处理的 input tokens 更少。
+- **过滤上下文输入**，例如修剪 RAG 结果、清理 HTML 等。
+- **最大化共享 prompt 前缀**，把动态部分（例如 RAG 结果、历史记录等）放到 prompt 后面。这会让你的请求更适合 [KV cache](https://medium.com/@joaolages/kv-caching-explained-276520203249)（大多数 LLM 提供商都使用它），也意味着每次请求需要处理的输入 token 更少。
 
 请查看我们的文档，了解 [prompt caching](/mirror/api/docs/guides/prompt-engineering#prompt-caching) 如何工作。
 
 ## 发起更少请求
 
-每次发起请求时，都会产生一些 round-trip latency；这些延迟会逐渐累积。
+每次发起请求时，都会产生一些往返延迟；这些延迟会逐渐累积。
 
-如果你有需要 LLM 顺序执行的步骤，与其每一步发起一次请求，不如考虑 **把它们放在一个 prompt 中，并在一个 response 中一次性得到所有结果**。这样可以避免额外的 round-trip latency，并且可能降低处理多个 responses 的复杂性。
+如果你有需要 LLM 顺序执行的步骤，与其每一步发起一次请求，不如考虑 **把它们放在一个 prompt 中，并在一个响应中一次性得到所有结果**。这样可以避免额外的往返延迟，并且可能降低处理多个响应的复杂性。
 
-一种实现方式是把这些步骤整理成 combined prompt 中的编号列表，然后要求模型以 JSON 中的 named fields 返回结果。这样你就可以轻松解析并引用每个结果！
+一种实现方式是把这些步骤整理成组合 prompt 中的编号列表，然后要求模型以 JSON 中的具名字段返回结果。这样你就可以轻松解析并引用每个结果！
 
 ## 并行化
 
 在用 LLM 执行多个步骤时，并行化可能非常强大。
 
-如果步骤 **并非_严格_顺序执行**，你可以 **把它们拆成 parallel calls**。两件衬衫和一件衬衫晾干所需时间一样长。
+如果步骤 **并非_严格_顺序执行**，你可以 **把它们拆成并行调用**。两件衬衫和一件衬衫晾干所需时间一样长。
 
-但如果步骤 **_确实_严格顺序执行**，你仍可能可以 **利用 speculative execution**。这对某个结果比其他结果更可能出现的分类步骤尤其有效（例如 moderation）。
+但如果步骤 **_确实_严格顺序执行**，你仍可能可以 **利用推测执行（speculative execution）**。这对某个结果比其他结果更可能出现的分类步骤尤其有效（例如 moderation）。
 
-1. 同时启动 step 1 和 step 2（例如 input moderation 和 story generation）
-2. 验证 step 1 的结果
-3. 如果结果不是预期结果，取消 step 2（必要时重试）
+1. 同时启动第 1 步和第 2 步（例如输入审核和故事生成）
+2. 验证第 1 步的结果
+3. 如果结果不是预期结果，取消第 2 步（必要时重试）
 
-如果你对 step 1 的猜测是正确的，那么它本质上就以零额外延迟运行了！
+如果你对第 1 步的猜测是正确的，那么它本质上就以零额外延迟运行了！
 
 ## 让用户少等
 
 **等待** 和 **看着进度发生** 之间有巨大差别，请确保用户体验到后者。以下是一些技巧：
 
-- **Streaming**：最有效的单一方法，因为它把_等待_时间缩短到一秒或更少。（如果你在每条回复完成前都看不到任何内容，ChatGPT 的感觉会很不一样。）
-- **Chunking**：如果输出在展示给用户前需要进一步处理（moderation、translation），请考虑 **分块处理**，而不是一次性处理全部。做法是 stream 到你的 backend，然后把处理后的 chunks 发送到 frontend。
-- **展示步骤**：如果你正在执行多个步骤或使用 tools，请把这些信息展示给用户。你能展示的真实进度越多越好。
-- **Loading states**：Spinners 和 progress bars 很有帮助。
+- **流式传输（Streaming）**：最有效的单一方法，因为它把_等待_时间缩短到一秒或更少。（如果你在每条回复完成前都看不到任何内容，ChatGPT 的感觉会很不一样。）
+- **分块（Chunking）**：如果输出在展示给用户前需要进一步处理（moderation、translation），请考虑 **分块处理**，而不是一次性处理全部。做法是流式传输到你的后端，然后把处理后的 chunks 发送到前端。
+- **展示步骤**：如果你正在执行多个步骤或使用工具，请把这些信息展示给用户。你能展示的真实进度越多越好。
+- **加载状态**：Spinners 和进度条很有帮助。
 
-请注意，虽然 **展示步骤和提供 loading states** 主要是心理层面的影响，**streaming 和 chunking** 在把 app + user 系统一起考虑时，确实会降低总体延迟：用户会更早读完响应。
+请注意，虽然 **展示步骤和提供加载状态** 主要是心理层面的影响，**流式传输和分块** 在把应用 + 用户系统一起考虑时，确实会降低总体延迟：用户会更早读完响应。
 
 ## 不要默认使用 LLM
 
 LLM 极其强大且通用，因此有时会被用于其实 **更快的经典方法** 更合适的场景。识别这些场景可能让你显著降低延迟。请考虑以下示例：
 
-- **Hard-coding**：如果你的 **output** 高度受限，可能不需要 LLM 来生成。操作确认、拒绝消息和请求标准输入都非常适合 hard-code。（你甚至可以使用老办法，为每种情况准备几个变体。）
-- **Pre-computing**：如果你的 **input** 受限（例如类别选择），你可以提前生成多个响应，并确保永远不会向同一用户展示同一个响应两次。
-- **利用 UI**：汇总指标、报告或搜索结果，有时用经典的、定制的 UI components 表达会比 LLM 生成文本更好。
-- **传统优化技术**：LLM 应用仍然是应用；binary search、caching、hash maps 和 runtime complexity 在 LLM 世界中_仍然_有用。
+- **硬编码（Hard-coding）**：如果你的 **输出** 高度受限，可能不需要 LLM 来生成。操作确认、拒绝消息和请求标准输入都非常适合硬编码。（你甚至可以使用老办法，为每种情况准备几个变体。）
+- **预计算（Pre-computing）**：如果你的 **输入** 受限（例如类别选择），你可以提前生成多个响应，并确保永远不会向同一用户展示同一个响应两次。
+- **利用 UI**：汇总指标、报告或搜索结果，有时用经典的、定制的 UI 组件表达会比 LLM 生成文本更好。
+- **传统优化技术**：LLM 应用仍然是应用；二分搜索、缓存、哈希表和运行时复杂度在 LLM 世界中_仍然_有用。
 
 ## 示例
 
 现在来看一个示例应用，识别潜在的延迟优化，并提出一些解决方案！
 
-我们将分析一个假想客服 bot 的 architecture 和 prompts，该 bot 受真实生产应用启发。[Architecture and prompts](/mirror/api/docs/guides/latency-optimization#architecture-and-prompts) 部分会设定场景，[analysis and optimizations](/mirror/api/docs/guides/latency-optimization#analysis-and-optimizations) 部分会逐步展示延迟优化过程。
+我们将分析一个假想客服机器人（bot）的架构和 prompt，该 bot 受真实生产应用启发。[架构和 prompts](/mirror/api/docs/guides/latency-optimization#architecture-and-prompts) 部分会设定场景，[分析与优化](/mirror/api/docs/guides/latency-optimization#analysis-and-optimizations) 部分会逐步展示延迟优化过程。
 
 你会注意到，这个示例并没有覆盖每一条原则，就像真实用例并不需要应用每一项技术一样。
 
-### Architecture 和 prompts
+### 架构和 prompts
 
-下面是假想 **customer service bot** 的 **initial architecture**。我们将对它进行修改。
+下面是假想 **客服机器人** 的 **初始架构**。我们将对它进行修改。
 
 ![Assistants object architecture diagram](https://cdn.openai.com/API/docs/images/diagram-latency-customer-service-0.png)
 
-从高层看，diagram flow 描述了以下过程：
+从高层看，图中的流程描述了以下过程：
 
-1. 用户在一段 ongoing conversation 中发送消息。
-2. 最新消息被转化为 **self-contained query**（见 prompt 中的示例）。
-3. 我们判断是否需要 **additional (retrieved) information** 来回复该 query。
-4. 执行 **Retrieval**，生成 search results。
-5. assistant 对用户 query 和 search results 进行 **reasoning**，并 **produces a response**。
-6. response 被发送回用户。
+1. 用户在一段进行中的对话中发送消息。
+2. 最新消息被转化为 **自包含查询**（见 prompt 中的示例）。
+3. 我们判断是否需要 **额外的检索信息** 来回复该查询。
+4. 执行 **检索**，生成搜索结果。
+5. assistant 对用户查询和搜索结果进行 **推理**，并 **生成响应**。
+6. 响应被发送回用户。
 
 下面是 diagram 每个部分使用的 prompts。虽然它们仍然只是简化的假设示例，但它们采用了你会在生产应用中看到的相同结构和措辞。
 
-你看到像 "**[user input here]**" 这样的 placeholders 时，它们表示动态部分，会在运行时被实际数据替换。
+你看到像 "**[user input here]**" 这样的占位符时，它们表示动态部分，会在运行时被实际数据替换。
 
-Query contextualization prompt
+查询上下文化 prompt
 
-Re-writes user query to be a self-contained search query.
+将用户查询改写为自包含的搜索查询。
 
 ```text
 SYSTEM: Given the previous conversation, re-write the last user query so it contains
@@ -183,9 +183,9 @@ Response: "How long does the return policy cover?"
 USER: [JSON-formatted input conversation here]
 ```
 
-Retrieval check prompt
+检索检查 prompt
 
-Determines whether a query requires performing retrieval to respond.
+判断一个查询是否需要执行检索才能回复。
 
 ```text
 SYSTEM: Given a user query, determine whether it requires doing a realtime lookup to
@@ -201,9 +201,9 @@ Response: "false"
 USER: [input user query here]
 ```
 
-Assistant prompt
+Assistant prompt（助手提示词）
 
-Fills the fields of a JSON to reason through a pre-defined set of steps to produce a final response given a user conversation and relevant retrieved information.
+给定用户对话和相关检索信息后，填充 JSON 字段，让模型按预定义步骤推理并生成最终响应。
 
 ```text
 SYSTEM: You are a helpful customer service bot.
@@ -237,19 +237,19 @@ USER: [input user query here]
 
 ### 分析与优化
 
-#### 第 1 部分：查看 retrieval prompts
+#### 第 1 部分：查看检索 prompts
 
-查看 architecture，首先引人注意的是 **连续的 GPT-4 calls**。这暗示着潜在低效，并且通常可以用单次 call 或 parallel calls 替代。
+查看架构，首先引人注意的是 **连续的 GPT-4 调用**。这暗示着潜在低效，并且通常可以用单次调用或并行调用替代。
 
 ![Assistants object architecture diagram](https://cdn.openai.com/API/docs/images/diagram-latency-customer-service-2.png)
 
-在这个案例中，由于 retrieval check 需要 contextualized query，让我们 **把它们合并到单个 prompt 中**，以[发起更少请求](/mirror/api/docs/guides/latency-optimization#make-fewer-requests)。
+在这个案例中，由于检索检查需要上下文化后的查询，让我们 **把它们合并到单个 prompt 中**，以[发起更少请求](/mirror/api/docs/guides/latency-optimization#make-fewer-requests)。
 
 ![Assistants object architecture diagram](https://cdn.openai.com/API/docs/images/diagram-latency-customer-service-3.png)
 
-Combined query contextualization and retrieval check prompt
+合并查询上下文化和检索检查的 prompt
 
-**发生了什么变化？** 之前，我们有一个 prompt 用来重写 query，另一个 prompt 用来判断是否需要执行 retrieval lookup。现在，这个 combined prompt 会同时完成二者。具体来说，请注意 prompt 第一行更新后的 instruction，以及更新后的 output JSON：
+**发生了什么变化？** 之前，我们有一个 prompt 用来重写查询，另一个 prompt 用来判断是否需要执行检索查找。现在，这个组合 prompt 会同时完成二者。具体来说，请注意 prompt 第一行更新后的指令，以及更新后的输出 JSON：
 
 ```jsx
 {
@@ -289,19 +289,19 @@ USER: [JSON-formatted input conversation here]
 ```
 
 
-实际上，添加 context 和判断是否 retrieve 都是非常直接且定义明确的任务，因此我们很可能可以改用 **更小、经过 fine-tuned 的模型**。切换到 GPT-3.5 可以让我们[更快地处理 tokens](/mirror/api/docs/guides/latency-optimization#process-tokens-faster)。
+实际上，添加上下文和判断是否需要检索都是非常直接且定义明确的任务，因此我们很可能可以改用 **更小、经过 fine-tuned 的模型**。切换到 GPT-3.5 可以让我们[更快地处理 tokens](/mirror/api/docs/guides/latency-optimization#process-tokens-faster)。
 
 ![Assistants object architecture diagram](https://cdn.openai.com/API/docs/images/diagram-latency-customer-service-4.png)
 
 #### 第 2 部分：分析 assistant prompt
 
-现在把注意力转向 Assistant prompt。它在填充 JSON fields 时似乎发生了许多不同步骤，这可能表明存在[并行化](/mirror/api/docs/guides/latency-optimization#parallelize)机会。
+现在把注意力转向 Assistant prompt。它在填充 JSON 字段时似乎发生了许多不同步骤，这可能表明存在[并行化](/mirror/api/docs/guides/latency-optimization#parallelize)机会。
 
 ![Assistants object architecture diagram](https://cdn.openai.com/API/docs/images/diagram-latency-customer-service-5.png)
 
-不过，我们先假设已经运行了一些测试，并发现拆分 JSON 中的 reasoning steps 会产生更差的 responses，因此需要探索不同解决方案。
+不过，我们先假设已经运行了一些测试，并发现拆分 JSON 中的推理步骤会产生更差的响应，因此需要探索不同解决方案。
 
-**我们能否使用 fine-tuned GPT-3.5 而不是 GPT-4？** 也许可以，但通常来说，assistants 的开放式 responses 最好留给 GPT-4，以便它更好地处理更广泛的情况。话虽如此，观察 reasoning steps 本身，它们可能并不都需要 GPT-4 级别的 reasoning 才能生成。它们定义明确、范围有限，因此是 **fine-tuning 的良好潜在候选项**。
+**我们能否使用 fine-tuned GPT-3.5 而不是 GPT-4？** 也许可以，但通常来说，assistants 的开放式响应最好留给 GPT-4，以便它更好地处理更广泛的情况。话虽如此，观察推理步骤本身，它们可能并不都需要 GPT-4 级别的推理才能生成。它们定义明确、范围有限，因此是 **fine-tuning 的良好潜在候选项**。
 
 ```jsx
 {
@@ -317,11 +317,11 @@ USER: [JSON-formatted input conversation here]
 }
 ```
 
-这开启了一个 trade-off 的可能性。我们是把它保留为 **完全由 GPT-4 生成的单个请求**，还是 **拆成两个顺序请求**，除最终 response 外都使用 GPT-3.5？这里存在原则冲突：第一个选项让我们可以[发起更少请求](/mirror/api/docs/guides/latency-optimization#make-fewer-requests)，第二个选项则可能让我们[更快地处理 tokens](/mirror/api/docs/guides/latency-optimization#1-process-tokens-faster)。
+这开启了一个取舍的可能性。我们是把它保留为 **完全由 GPT-4 生成的单个请求**，还是 **拆成两个顺序请求**，除最终响应外都使用 GPT-3.5？这里存在原则冲突：第一个选项让我们可以[发起更少请求](/mirror/api/docs/guides/latency-optimization#make-fewer-requests)，第二个选项则可能让我们[更快地处理 tokens](/mirror/api/docs/guides/latency-optimization#1-process-tokens-faster)。
 
-和许多优化 tradeoffs 一样，答案取决于细节。例如：
+和许多优化取舍一样，答案取决于细节。例如：
 
-- `response` 与其他 fields 的 tokens 占比。
+- `response` 与其他字段的 token 占比。
 - 更快处理大多数字段带来的平均延迟下降。
 - 做两个请求而非一个请求带来的平均延迟_增加_。
 
@@ -329,13 +329,13 @@ USER: [JSON-formatted input conversation here]
 
 ![Assistants object architecture diagram](https://cdn.openai.com/API/docs/images/diagram-latency-customer-service-6.png)
 
-**Note:** 我们会把 `response` 和 `enough_information_in_context` 放在第二个 prompt 中一起处理，以避免把 retrieved context 传给两个新 prompts。
+**注意：** 我们会把 `response` 和 `enough_information_in_context` 放在第二个 prompt 中一起处理，以避免把检索上下文传给两个新 prompt。
 
-Assistants prompt - reasoning
+Assistants prompt - reasoning（推理）
 
-这个 prompt 会传给 GPT-3.5，并可以在 curated examples 上 fine-tune。
+这个 prompt 会传给 GPT-3.5，并可以在精选示例上 fine-tune。
 
-**发生了什么变化？** “enough_information_in_context” 和 “response” fields 被移除，retrieval results 不再加载到这个 prompt 中。
+**发生了什么变化？** “enough_information_in_context” 和 “response” 字段被移除，检索结果不再加载到这个 prompt 中。
 
 ```text
 SYSTEM: You are a helpful customer service bot.
@@ -358,11 +358,11 @@ Assistant Response:
   "user_requesting_to_talk_to_human": "False",
 }
 ```
-Assistants prompt - response
+Assistants prompt - response（响应）
 
-这个 prompt 将由 GPT-4 处理，并会接收 prior prompt 中确定的 reasoning steps，以及 retrieval 得到的结果。
+这个 prompt 将由 GPT-4 处理，并会接收前一个 prompt 中确定的推理步骤，以及检索得到的结果。
 
-**发生了什么变化？** 除了 “enough_information_in_context” 和 “response” 之外，所有 steps 都被移除。此外，我们之前作为 output 填写的 JSON 会被传入这个 prompt。
+**发生了什么变化？** 除了 “enough_information_in_context” 和 “response” 之外，所有步骤都被移除。此外，我们之前作为输出填写的 JSON 会被传入这个 prompt。
 
 ```text
 SYSTEM: You are a helpful customer service bot.
@@ -393,17 +393,17 @@ USER: # Relevant Information
 
 
 
-事实上，现在 reasoning prompt 不依赖 retrieved context，我们就可以[并行化](/mirror/api/docs/guides/latency-optimization#parallelize)，让它与 retrieval prompts 同时发起。
+事实上，现在推理 prompt 不依赖检索上下文，我们就可以[并行化](/mirror/api/docs/guides/latency-optimization#parallelize)，让它与检索 prompts 同时发起。
 
 ![Assistants object architecture diagram](https://cdn.openai.com/API/docs/images/diagram-latency-customer-service-6b.png)
 
-#### 第 3 部分：优化 structured output
+#### 第 3 部分：优化结构化输出
 
-让我们再看一眼 reasoning prompt。
+让我们再看一眼推理 prompt。
 
 ![Assistants object architecture diagram](https://cdn.openai.com/API/docs/images/diagram-latency-customer-service-7b.png)
 
-仔细看 reasoning JSON，你可能会注意到 field names 本身相当长。
+仔细看推理 JSON，你可能会注意到字段名本身相当长。
 
 ```jsx
 {
@@ -417,7 +417,7 @@ USER: # Relevant Information
 }
 ```
 
-通过缩短它们，并把解释移动到 comments 中，我们可以[生成更少 tokens](/mirror/api/docs/guides/latency-optimization#generate-fewer-tokens)。
+通过缩短它们，并把解释移动到注释中，我们可以[生成更少 tokens](/mirror/api/docs/guides/latency-optimization#generate-fewer-tokens)。
 
 ```jsx
 {
@@ -439,19 +439,19 @@ USER: # Relevant Information
 
 不过你也可以想象，对于更大的模型输出，这会产生相当显著的影响。
 
-我们还可以更进一步，为 JSON fields 使用单个字符，或把所有内容放进数组，但这可能开始损害 response quality。再次强调，最好的判断方式是测试。
+我们还可以更进一步，为 JSON 字段使用单个字符，或把所有内容放进数组，但这可能开始损害响应质量。再次强调，最好的判断方式是测试。
 
 #### 示例收尾
 
-让我们回顾为 customer service bot 示例实现的优化：
+让我们回顾为客服机器人示例实现的优化：
 
 ![Assistants object architecture diagram](https://cdn.openai.com/API/docs/images/diagram-latency-customer-service-11b.png)
 
-1. **合并** query contextualization 和 retrieval check 步骤，以[发起更少请求](/mirror/api/docs/guides/latency-optimization#make-fewer-requests)。
+1. **合并**查询上下文化和检索检查步骤，以[发起更少请求](/mirror/api/docs/guides/latency-optimization#make-fewer-requests)。
 2. 对新的 prompt，**切换到更小、经过 fine-tuned 的 GPT-3.5**，以[更快地处理 tokens](https://developers.openai.com/api/docs/guides/process-tokens-faster)。
 3. 将 assistant prompt 拆成两个，再次为 reasoning **切换到更小、经过 fine-tuned 的 GPT-3.5**，以[更快地处理 tokens](/mirror/api/docs/guides/latency-optimization#process-tokens-faster)。
-4. [并行化](/mirror/api/docs/guides/latency-optimization#parallelize) retrieval checks 和 reasoning steps。
-5. **缩短 reasoning field names**，并将 comments 移到 prompt 中，以[生成更少 tokens](/mirror/api/docs/guides/latency-optimization#generate-fewer-tokens)。
+4. [并行化](/mirror/api/docs/guides/latency-optimization#parallelize)检索检查和推理步骤。
+5. **缩短推理字段名**，并将注释移到 prompt 中，以[生成更少 tokens](/mirror/api/docs/guides/latency-optimization#generate-fewer-tokens)。
 
 :::
 

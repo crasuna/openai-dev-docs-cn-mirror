@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T17:43:53.3580579+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Flex processing
+# Flex processing 弹性处理
 
 Flex processing 可以为 [Responses](https://developers.openai.com/api/docs/api-reference/responses) 或 [Chat Completions](https://developers.openai.com/api/docs/api-reference/chat) 请求降低成本，代价是响应时间更慢，并且偶尔会遇到资源不可用。它非常适合非生产环境或优先级较低的任务，例如模型评估、数据补充和异步工作负载。
 

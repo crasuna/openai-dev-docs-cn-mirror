@@ -1,10 +1,10 @@
 ---
-title: "Assistants Code Interpreter"
+title: "Assistants Code Interpreter 代码解释器"
 description: "Allow assistants to run Python code with the Code Interpreter tool."
 outline: deep
 ---
 
-# Assistants Code Interpreter
+# Assistants Code Interpreter 代码解释器
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

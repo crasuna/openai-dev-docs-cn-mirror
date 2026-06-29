@@ -1,10 +1,10 @@
 ---
-title: "Direct preference optimization"
+title: "Direct preference optimization 直接偏好优化"
 description: "Fine-tune models for subjective decision-making by comparing model outputs."
 outline: deep
 ---
 
-# Direct preference optimization
+# Direct preference optimization 直接偏好优化
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

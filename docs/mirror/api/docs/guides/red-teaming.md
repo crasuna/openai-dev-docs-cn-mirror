@@ -1,10 +1,10 @@
 ---
-title: "Red teaming"
+title: "Red teaming 红队测试"
 description: "Learn how red teaming fits into AI evaluation, including Promptfoo open source and OpenAI Red Teaming for enterprise teams."
 outline: deep
 ---
 
-# Red teaming
+# Red teaming 红队测试
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

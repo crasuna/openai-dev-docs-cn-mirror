@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T17:29:03.6672446+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Evaluation best practices
+# Evaluation best practices 评估最佳实践
 
 生成式 AI 具有可变性。模型有时会对相同输入产生不同输出，这使传统软件测试方法不足以应对 AI 架构。Evaluations（**evals**）是一种在这种可变性存在时测试 AI 系统的方式。
 

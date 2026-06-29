@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T18:23:41.3718846+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Reasoning models
+# Reasoning models 推理模型
 
 像 [GPT-5.5](https://developers.openai.com/api/docs/models/gpt-5.5) 这样的 **reasoning models** 会在生成回复前使用内部 reasoning tokens。这有助于模型规划、有效使用工具、检查替代方案、从模糊性中恢复，并解决更困难的多步骤任务。Reasoning models 特别适合复杂问题求解、编码、科学推理和多步骤 agentic 工作流。它们也是 [Codex CLI](https://github.com/openai/codex)（我们的轻量级 coding agent）的最佳模型。
 

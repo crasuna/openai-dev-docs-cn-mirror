@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T11:05:57.267Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Codex app features
+# Codex app 功能
 
 Codex app 是一个专注的 desktop experience，用于并行处理 Codex threads，并内置 worktree support、automations 和 Git functionality。
 

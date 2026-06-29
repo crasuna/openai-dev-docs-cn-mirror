@@ -7,7 +7,7 @@ translatedAt: 2026-06-27T16:52:09.8881258+08:00
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Assistants Function Calling
+# Assistants Function Calling 函数调用
 
 ## 概览
 

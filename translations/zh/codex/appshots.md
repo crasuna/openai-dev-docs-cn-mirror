@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:07:21.7838419+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Appshots
+# Appshots 应用快照
 
 Appshots 让你可以把最前方的应用窗口发送到 Codex thread。当你正在电脑上的另一个应用中工作，并希望向 Codex 提供当前上下文，让它帮助你完成任务时，可以使用 Appshots。
 

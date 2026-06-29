@@ -7,7 +7,7 @@ translatedAt: 2026-06-27T16:52:09.8881258+08:00
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Background mode
+# Background mode 后台模式
 
 像 [Codex](https://openai.com/index/introducing-codex/) 和 [Deep Research](https://openai.com/index/introducing-deep-research/) 这样的 agents 表明，reasoning models 可能需要几分钟才能解决复杂问题。Background mode 让你可以在 GPT-5.2 和 GPT-5.2 Pro 等模型上可靠地执行长时间运行的任务，而不必担心超时或其他连接问题。
 

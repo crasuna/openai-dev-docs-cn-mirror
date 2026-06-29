@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T11:05:57.267Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Codex app commands
+# Codex app 命令
 
 使用这些 commands 和 keyboard shortcuts 在 Codex app 中导航。
 

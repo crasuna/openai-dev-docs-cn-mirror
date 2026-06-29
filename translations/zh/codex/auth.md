@@ -7,9 +7,9 @@ translatedAt: "2026-06-27T19:07:21.7838419+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Authentication
+# 认证
 
-## OpenAI authentication
+## OpenAI 认证
 
 使用 OpenAI 模型时，Codex 支持两种登录方式：
 

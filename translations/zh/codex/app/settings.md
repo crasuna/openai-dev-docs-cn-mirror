@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T11:05:57.267Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Codex app settings
+# Codex app 设置
 
 使用 settings panel 调整 Codex app 的行为、文件打开方式，以及它如何连接到 tools。从 app menu 打开 [**Settings**](codex://settings)，或按 <kbd>Cmd</kbd>+<kbd>,</kbd>。
 

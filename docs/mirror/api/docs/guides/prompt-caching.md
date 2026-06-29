@@ -1,10 +1,10 @@
 ---
-title: "Prompt caching"
+title: "Prompt caching 提示词缓存"
 description: "Learn how prompt caching reduces latency and cost for long prompts in OpenAI's API."
 outline: deep
 ---
 
-# Prompt caching
+# Prompt caching 提示词缓存
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

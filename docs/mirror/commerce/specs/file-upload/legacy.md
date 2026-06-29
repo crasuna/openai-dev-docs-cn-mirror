@@ -1,10 +1,10 @@
 ---
-title: "File Upload"
+title: "文件上传"
 description: "Provide a structured product feed so ChatGPT accurately indexes and displays your products with up-to-date price and availability."
 outline: deep
 ---
 
-# File Upload
+# 文件上传
 
 **文档集**：Commerce  
 **分组**：Agentic Commerce — Specs  
@@ -26,8 +26,8 @@ outline: deep
 ::: v-pre
 file upload schema reference 现在位于 Products 页面。
 
-- [Stable](/mirror/commerce/specs/file-upload/products)
-- [Draft](/mirror/commerce/specs/file-upload/products)
+- [Stable（稳定版）](/mirror/commerce/specs/file-upload/products)
+- [Draft（草案版）](/mirror/commerce/specs/file-upload/products)
 
 :::
 

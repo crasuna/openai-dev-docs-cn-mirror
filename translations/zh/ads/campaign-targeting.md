@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:35:31.9333790+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Campaign Targeting
+# Campaign 定向
 
 使用 campaign targeting 控制广告可以投放到哪些位置。OpenAI Ads 支持 country、region 和 DMA targeting。查找你想要的位置，复制它们的 location ID，然后在创建或更新 campaign 时传入这些 ID。
 
@@ -47,7 +47,7 @@ curl -G "https://api.ads.openai.com/v1/geo_lookup/search" \
   {"下载 OpenAI Ads locations"}
 </a>
 
-## Campaign creation
+## 创建 campaign
 
 使用 `targeting.locations.include` 创建 campaign。每一项只需要 location `id`；API 会使用匹配的位置详情扩展已保存的 campaign。
 
@@ -77,7 +77,7 @@ curl -X POST "https://api.ads.openai.com/v1/campaigns" \
 
 在此示例中：
 
-| Location ID | Meaning | Type |
+| Location ID | 含义 | 类型 |
 | ----------- | ------- | ---- |
 | `2000043`   | California, United States | `region` |
 | `3000194`   | San Francisco - Oakland - San Jose, United States | `dma` |

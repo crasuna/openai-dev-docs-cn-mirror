@@ -9,7 +9,7 @@ translator: codex-gpt-5.5-xhigh
 
 # 向量存储 — 创建
 
-OpenAI API endpoint 方法参考。
+OpenAI API 端点方法参考。
 
 规范参考 URL：https://developers.openai.com/api/reference/resources/vector_stores/methods/create
 

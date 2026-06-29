@@ -7,10 +7,10 @@ translatedAt: "2026-06-27T18:56:04.2669018+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Fine Tuning Checkpoints Permissions — Delete
+# Fine Tuning Checkpoints Permissions — 删除
 
-OpenAI API endpoint method reference。
+OpenAI API 端点方法参考。
 
-规范 reference URL：https://developers.openai.com/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/delete
+规范参考 URL：https://developers.openai.com/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/delete
 
-此 API reference 页面由 Stainless 生成。
+此 API 参考页面由 Stainless 生成。

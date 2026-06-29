@@ -5,188 +5,188 @@
 ## 译文待复核
 
 - [概览](/mirror/ads/api-overview) — Ads / Ads — Api Overview
-- [Quickstart](/mirror/ads/api-quickstart) — Ads / Ads — Api Quickstart
-- [Ad Account](/mirror/ads/api-reference/ad-account) — Ads / Ads — Api Reference
-- [Ad Groups](/mirror/ads/api-reference/ad-groups) — Ads / Ads — Api Reference
-- [Ads](/mirror/ads/api-reference/ads) — Ads / Ads — Api Reference
-- [Authentication](/mirror/ads/api-reference/authentication) — Ads / Ads — Api Reference
-- [Campaigns](/mirror/ads/api-reference/campaigns) — Ads / Ads — Api Reference
-- [Files](/mirror/ads/api-reference/files) — Ads / Ads — Api Reference
-- [Insights](/mirror/ads/api-reference/insights) — Ads / Ads — Api Reference
-- [Campaign Targeting](/mirror/ads/campaign-targeting) — Ads / Ads — Campaign Targeting
-- [Conversions API](/mirror/ads/conversions-api) — Ads / Ads — Conversions Api
-- [Image tag](/mirror/ads/image-tag) — Ads / Ads — Image Tag
-- [JavaScript Pixel](/mirror/ads/measurement-pixel) — Ads / Ads — Measurement Pixel
-- [Product feeds](/mirror/ads/product-feeds) — Ads / Ads — Product Feeds
-- [Supported events](/mirror/ads/supported-events) — Ads / Ads — Supported Events
+- [快速开始](/mirror/ads/api-quickstart) — Ads / Ads — Api Quickstart
+- [Ad Account（广告账户）](/mirror/ads/api-reference/ad-account) — Ads / Ads — Api Reference
+- [Ad Groups（广告组）](/mirror/ads/api-reference/ad-groups) — Ads / Ads — Api Reference
+- [Ads（广告）](/mirror/ads/api-reference/ads) — Ads / Ads — Api Reference
+- [认证](/mirror/ads/api-reference/authentication) — Ads / Ads — Api Reference
+- [Campaigns（广告活动）](/mirror/ads/api-reference/campaigns) — Ads / Ads — Api Reference
+- [Files（文件）](/mirror/ads/api-reference/files) — Ads / Ads — Api Reference
+- [Insights（效果洞察）](/mirror/ads/api-reference/insights) — Ads / Ads — Api Reference
+- [Campaign 定向](/mirror/ads/campaign-targeting) — Ads / Ads — Campaign Targeting
+- [Conversions API（转化 API）](/mirror/ads/conversions-api) — Ads / Ads — Conversions Api
+- [Image tag（图片标签）](/mirror/ads/image-tag) — Ads / Ads — Image Tag
+- [JavaScript Pixel（测量像素）](/mirror/ads/measurement-pixel) — Ads / Ads — Measurement Pixel
+- [商品 feed](/mirror/ads/product-feeds) — Ads / Ads — Product Feeds
+- [支持的事件](/mirror/ads/supported-events) — Ads / Ads — Supported Events
 - [Administration 概览](/mirror/api/reference/administration/overview) — API Reference / OpenAI API — Reference
 - [API 概览](/mirror/api/reference/overview) — API Reference / OpenAI API — Reference
-- [Audio](/mirror/api/reference/resources/audio) — API Reference / OpenAI API — Reference
-- [Audio Speech — Create](/mirror/api/reference/resources/audio/subresources/speech/methods/create) — API Reference / OpenAI API — Reference
-- [Audio Transcriptions — Create](/mirror/api/reference/resources/audio/subresources/transcriptions/methods/create) — API Reference / OpenAI API — Reference
-- [Audio Translations — Create](/mirror/api/reference/resources/audio/subresources/translations/methods/create) — API Reference / OpenAI API — Reference
-- [Audio Voice Consents — Create](/mirror/api/reference/resources/audio/subresources/voice_consents/methods/create) — API Reference / OpenAI API — Reference
-- [Audio Voice Consents — Delete](/mirror/api/reference/resources/audio/subresources/voice_consents/methods/delete) — API Reference / OpenAI API — Reference
-- [Audio Voice Consents — List](/mirror/api/reference/resources/audio/subresources/voice_consents/methods/list) — API Reference / OpenAI API — Reference
-- [Audio Voice Consents — Retrieve](/mirror/api/reference/resources/audio/subresources/voice_consents/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Audio Voice Consents — Update](/mirror/api/reference/resources/audio/subresources/voice_consents/methods/update) — API Reference / OpenAI API — Reference
-- [Audio Voices — Create](/mirror/api/reference/resources/audio/subresources/voices/methods/create) — API Reference / OpenAI API — Reference
-- [Batches](/mirror/api/reference/resources/batches) — API Reference / OpenAI API — Reference
-- [Batches — Cancel](/mirror/api/reference/resources/batches/methods/cancel) — API Reference / OpenAI API — Reference
-- [Batches — Create](/mirror/api/reference/resources/batches/methods/create) — API Reference / OpenAI API — Reference
-- [Batches — List](/mirror/api/reference/resources/batches/methods/list) — API Reference / OpenAI API — Reference
-- [Batches — Retrieve](/mirror/api/reference/resources/batches/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Beta Assistants](/mirror/api/reference/resources/beta/subresources/assistants) — API Reference / OpenAI API — Reference
-- [Beta Assistants — Create](/mirror/api/reference/resources/beta/subresources/assistants/methods/create) — API Reference / OpenAI API — Reference
-- [Beta Assistants — Delete](/mirror/api/reference/resources/beta/subresources/assistants/methods/delete) — API Reference / OpenAI API — Reference
-- [Beta Assistants — List](/mirror/api/reference/resources/beta/subresources/assistants/methods/list) — API Reference / OpenAI API — Reference
-- [Beta Assistants — Retrieve](/mirror/api/reference/resources/beta/subresources/assistants/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Beta Assistants — Update](/mirror/api/reference/resources/beta/subresources/assistants/methods/update) — API Reference / OpenAI API — Reference
-- [Beta Chatkit](/mirror/api/reference/resources/beta/subresources/chatkit) — API Reference / OpenAI API — Reference
-- [Beta Chatkit Sessions](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/sessions) — API Reference / OpenAI API — Reference
-- [Beta Chatkit Sessions — Cancel](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/cancel) — API Reference / OpenAI API — Reference
-- [Beta Chatkit Sessions — Create](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/create) — API Reference / OpenAI API — Reference
-- [Beta Chatkit Threads](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads) — API Reference / OpenAI API — Reference
-- [Beta Chatkit Threads — Delete](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/delete) — API Reference / OpenAI API — Reference
-- [Beta Chatkit Threads — List](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/list) — API Reference / OpenAI API — Reference
-- [Beta Chatkit Threads — List Items](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/list_items) — API Reference / OpenAI API — Reference
-- [Beta Chatkit Threads — Retrieve](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Beta Threads](/mirror/api/reference/resources/beta/subresources/threads) — API Reference / OpenAI API — Reference
-- [Beta Threads — Create](/mirror/api/reference/resources/beta/subresources/threads/methods/create) — API Reference / OpenAI API — Reference
-- [Beta Threads — Delete](/mirror/api/reference/resources/beta/subresources/threads/methods/delete) — API Reference / OpenAI API — Reference
-- [Beta Threads — Retrieve](/mirror/api/reference/resources/beta/subresources/threads/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Beta Threads — Update](/mirror/api/reference/resources/beta/subresources/threads/methods/update) — API Reference / OpenAI API — Reference
-- [Beta Threads Messages](/mirror/api/reference/resources/beta/subresources/threads/subresources/messages) — API Reference / OpenAI API — Reference
-- [Beta Threads Messages — Create](/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/create) — API Reference / OpenAI API — Reference
-- [Beta Threads Messages — Delete](/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/delete) — API Reference / OpenAI API — Reference
-- [Beta Threads Messages — List](/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/list) — API Reference / OpenAI API — Reference
-- [Beta Threads Messages — Retrieve](/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Beta Threads Messages — Update](/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/update) — API Reference / OpenAI API — Reference
-- [Beta Threads Runs](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs) — API Reference / OpenAI API — Reference
+- [Audio 音频](/mirror/api/reference/resources/audio) — API Reference / OpenAI API — Reference
+- [Audio Speech — 创建](/mirror/api/reference/resources/audio/subresources/speech/methods/create) — API Reference / OpenAI API — Reference
+- [Audio Transcriptions — 创建](/mirror/api/reference/resources/audio/subresources/transcriptions/methods/create) — API Reference / OpenAI API — Reference
+- [Audio Translations — 创建](/mirror/api/reference/resources/audio/subresources/translations/methods/create) — API Reference / OpenAI API — Reference
+- [Audio Voice Consents — 创建](/mirror/api/reference/resources/audio/subresources/voice_consents/methods/create) — API Reference / OpenAI API — Reference
+- [Audio Voice Consents — 删除](/mirror/api/reference/resources/audio/subresources/voice_consents/methods/delete) — API Reference / OpenAI API — Reference
+- [Audio Voice Consents — 列出](/mirror/api/reference/resources/audio/subresources/voice_consents/methods/list) — API Reference / OpenAI API — Reference
+- [Audio Voice Consents — 检索](/mirror/api/reference/resources/audio/subresources/voice_consents/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Audio Voice Consents — 更新](/mirror/api/reference/resources/audio/subresources/voice_consents/methods/update) — API Reference / OpenAI API — Reference
+- [Audio Voices — 创建](/mirror/api/reference/resources/audio/subresources/voices/methods/create) — API Reference / OpenAI API — Reference
+- [Batches 批处理](/mirror/api/reference/resources/batches) — API Reference / OpenAI API — Reference
+- [Batches — 取消](/mirror/api/reference/resources/batches/methods/cancel) — API Reference / OpenAI API — Reference
+- [Batches — 创建](/mirror/api/reference/resources/batches/methods/create) — API Reference / OpenAI API — Reference
+- [Batches — 列出](/mirror/api/reference/resources/batches/methods/list) — API Reference / OpenAI API — Reference
+- [Batches — 检索](/mirror/api/reference/resources/batches/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Beta Assistants 助手](/mirror/api/reference/resources/beta/subresources/assistants) — API Reference / OpenAI API — Reference
+- [Beta Assistants — 创建](/mirror/api/reference/resources/beta/subresources/assistants/methods/create) — API Reference / OpenAI API — Reference
+- [Beta Assistants — 删除](/mirror/api/reference/resources/beta/subresources/assistants/methods/delete) — API Reference / OpenAI API — Reference
+- [Beta Assistants — 列出](/mirror/api/reference/resources/beta/subresources/assistants/methods/list) — API Reference / OpenAI API — Reference
+- [Beta Assistants — 检索](/mirror/api/reference/resources/beta/subresources/assistants/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Beta Assistants — 更新](/mirror/api/reference/resources/beta/subresources/assistants/methods/update) — API Reference / OpenAI API — Reference
+- [Beta ChatKit 资源](/mirror/api/reference/resources/beta/subresources/chatkit) — API Reference / OpenAI API — Reference
+- [Beta ChatKit Sessions 会话](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/sessions) — API Reference / OpenAI API — Reference
+- [Beta ChatKit Sessions — 取消](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/cancel) — API Reference / OpenAI API — Reference
+- [Beta ChatKit Sessions — 创建](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/create) — API Reference / OpenAI API — Reference
+- [Beta ChatKit Threads 线程](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads) — API Reference / OpenAI API — Reference
+- [Beta ChatKit Threads — 删除](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/delete) — API Reference / OpenAI API — Reference
+- [Beta ChatKit Threads — 列出](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/list) — API Reference / OpenAI API — Reference
+- [Beta ChatKit Threads — 列出项](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/list_items) — API Reference / OpenAI API — Reference
+- [Beta ChatKit Threads — 检索](/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Beta Threads 线程](/mirror/api/reference/resources/beta/subresources/threads) — API Reference / OpenAI API — Reference
+- [Beta Threads — 创建](/mirror/api/reference/resources/beta/subresources/threads/methods/create) — API Reference / OpenAI API — Reference
+- [Beta Threads — 删除](/mirror/api/reference/resources/beta/subresources/threads/methods/delete) — API Reference / OpenAI API — Reference
+- [Beta Threads — 检索](/mirror/api/reference/resources/beta/subresources/threads/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Beta Threads — 更新](/mirror/api/reference/resources/beta/subresources/threads/methods/update) — API Reference / OpenAI API — Reference
+- [Beta Threads Messages 消息](/mirror/api/reference/resources/beta/subresources/threads/subresources/messages) — API Reference / OpenAI API — Reference
+- [Beta Threads Messages — 创建](/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/create) — API Reference / OpenAI API — Reference
+- [Beta Threads Messages — 删除](/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/delete) — API Reference / OpenAI API — Reference
+- [Beta Threads Messages — 列出](/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/list) — API Reference / OpenAI API — Reference
+- [Beta Threads Messages — 检索](/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Beta Threads Messages — 更新](/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/update) — API Reference / OpenAI API — Reference
+- [Beta Threads Runs 运行](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs) — API Reference / OpenAI API — Reference
 - [Beta Threads Runs — 取消](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/cancel) — API Reference / OpenAI API — Reference
 - [Beta Threads Runs — 创建](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/create) — API Reference / OpenAI API — Reference
 - [Beta Threads Runs — 列出](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/list) — API Reference / OpenAI API — Reference
 - [Beta Threads Runs — 检索](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/retrieve) — API Reference / OpenAI API — Reference
 - [Beta Threads Runs — 提交工具输出](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/submit_tool_outputs) — API Reference / OpenAI API — Reference
 - [Beta Threads Runs — 更新](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/update) — API Reference / OpenAI API — Reference
-- [Beta Threads Runs Steps](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps) — API Reference / OpenAI API — Reference
+- [Beta Threads Runs Steps 步骤](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps) — API Reference / OpenAI API — Reference
 - [Beta Threads Runs Steps — 列出](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps/methods/list) — API Reference / OpenAI API — Reference
 - [Beta Threads Runs Steps — 检索](/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Chat](/mirror/api/reference/resources/chat) — API Reference / OpenAI API — Reference
+- [Chat 聊天](/mirror/api/reference/resources/chat) — API Reference / OpenAI API — Reference
 - [Chat Completions — 检索](/mirror/api/reference/resources/chat/subresources/completions/methods/retrieve) — API Reference / OpenAI API — Reference
 - [Chat Completions 概览](/mirror/api/reference/chat-completions/overview) — API Reference / OpenAI API — Reference
-- [Completions](/mirror/api/reference/resources/completions) — API Reference / OpenAI API — Reference
+- [Completions 补全](/mirror/api/reference/resources/completions) — API Reference / OpenAI API — Reference
 - [Completions — 创建](/mirror/api/reference/resources/completions/methods/create) — API Reference / OpenAI API — Reference
-- [Containers](/mirror/api/reference/resources/containers) — API Reference / OpenAI API — Reference
+- [Containers 容器](/mirror/api/reference/resources/containers) — API Reference / OpenAI API — Reference
 - [Containers — 创建](/mirror/api/reference/resources/containers/methods/create) — API Reference / OpenAI API — Reference
 - [Containers — 删除](/mirror/api/reference/resources/containers/methods/delete) — API Reference / OpenAI API — Reference
 - [Containers — 列出](/mirror/api/reference/resources/containers/methods/list) — API Reference / OpenAI API — Reference
 - [Containers — 检索](/mirror/api/reference/resources/containers/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Containers Files](/mirror/api/reference/resources/containers/subresources/files) — API Reference / OpenAI API — Reference
+- [Containers Files 文件](/mirror/api/reference/resources/containers/subresources/files) — API Reference / OpenAI API — Reference
 - [Containers Files — 创建](/mirror/api/reference/resources/containers/subresources/files/methods/create) — API Reference / OpenAI API — Reference
 - [Containers Files — 删除](/mirror/api/reference/resources/containers/subresources/files/methods/delete) — API Reference / OpenAI API — Reference
 - [Containers Files — 列出](/mirror/api/reference/resources/containers/subresources/files/methods/list) — API Reference / OpenAI API — Reference
 - [Containers Files — 检索](/mirror/api/reference/resources/containers/subresources/files/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Containers Files Content — Retrieve](/mirror/api/reference/resources/containers/subresources/files/subresources/content/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Conversations](/mirror/api/reference/resources/conversations) — API Reference / OpenAI API — Reference
-- [Conversations — Create](/mirror/api/reference/resources/conversations/methods/create) — API Reference / OpenAI API — Reference
-- [Conversations — Delete](/mirror/api/reference/resources/conversations/methods/delete) — API Reference / OpenAI API — Reference
-- [Conversations — Retrieve](/mirror/api/reference/resources/conversations/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Conversations — Update](/mirror/api/reference/resources/conversations/methods/update) — API Reference / OpenAI API — Reference
-- [Conversations Items — List](/mirror/api/reference/resources/conversations/subresources/items/methods/list) — API Reference / OpenAI API — Reference
-- [Embeddings](/mirror/api/reference/resources/embeddings) — API Reference / OpenAI API — Reference
-- [Embeddings — Create](/mirror/api/reference/resources/embeddings/methods/create) — API Reference / OpenAI API — Reference
-- [Evals](/mirror/api/reference/resources/evals) — API Reference / OpenAI API — Reference
-- [Evals — Create](/mirror/api/reference/resources/evals/methods/create) — API Reference / OpenAI API — Reference
-- [Evals — Delete](/mirror/api/reference/resources/evals/methods/delete) — API Reference / OpenAI API — Reference
-- [Evals — List](/mirror/api/reference/resources/evals/methods/list) — API Reference / OpenAI API — Reference
-- [Evals — Retrieve](/mirror/api/reference/resources/evals/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Evals — Update](/mirror/api/reference/resources/evals/methods/update) — API Reference / OpenAI API — Reference
-- [Evals Runs — Cancel](/mirror/api/reference/resources/evals/subresources/runs/methods/cancel) — API Reference / OpenAI API — Reference
-- [Files](/mirror/api/reference/resources/files) — API Reference / OpenAI API — Reference
-- [Files — Create](/mirror/api/reference/resources/files/methods/create) — API Reference / OpenAI API — Reference
-- [Files — Delete](/mirror/api/reference/resources/files/methods/delete) — API Reference / OpenAI API — Reference
-- [Files — List](/mirror/api/reference/resources/files/methods/list) — API Reference / OpenAI API — Reference
-- [Files — Retrieve](/mirror/api/reference/resources/files/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Fine Tuning](/mirror/api/reference/resources/fine_tuning) — API Reference / OpenAI API — Reference
-- [Fine Tuning Checkpoints Permissions — Create](/mirror/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/create) — API Reference / OpenAI API — Reference
-- [Fine Tuning Checkpoints Permissions — Delete](/mirror/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/delete) — API Reference / OpenAI API — Reference
-- [Fine Tuning Jobs — List](/mirror/api/reference/resources/fine_tuning/subresources/jobs/methods/list) — API Reference / OpenAI API — Reference
-- [Fine Tuning Jobs Checkpoints — List](/mirror/api/reference/resources/fine_tuning/subresources/jobs/subresources/checkpoints/methods/list) — API Reference / OpenAI API — Reference
-- [Graders](/mirror/api/reference/resources/graders) — API Reference / OpenAI API — Reference
-- [Images](/mirror/api/reference/resources/images) — API Reference / OpenAI API — Reference
-- [Images — Create Variation](/mirror/api/reference/resources/images/methods/create_variation) — API Reference / OpenAI API — Reference
-- [Models](/mirror/api/reference/resources/models) — API Reference / OpenAI API — Reference
-- [Models — Delete](/mirror/api/reference/resources/models/methods/delete) — API Reference / OpenAI API — Reference
-- [Models — List](/mirror/api/reference/resources/models/methods/list) — API Reference / OpenAI API — Reference
-- [Models — Retrieve](/mirror/api/reference/resources/models/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Moderations](/mirror/api/reference/resources/moderations) — API Reference / OpenAI API — Reference
-- [Moderations — Create](/mirror/api/reference/resources/moderations/methods/create) — API Reference / OpenAI API — Reference
-- [Organization](/mirror/api/reference/resources/organization) — API Reference / OpenAI API — Reference
-- [Organization Audit Logs](/mirror/api/reference/resources/organization/subresources/audit_logs) — API Reference / OpenAI API — Reference
-- [Organization Audit Logs — List](/mirror/api/reference/resources/organization/subresources/audit_logs/methods/list) — API Reference / OpenAI API — Reference
-- [Organization Audit Logs Admin Api Keys](/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys) — API Reference / OpenAI API — Reference
-- [Organization Audit Logs Admin Api Keys — Create](/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys/methods/create) — API Reference / OpenAI API — Reference
-- [Organization Audit Logs Admin Api Keys — Delete](/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys/methods/delete) — API Reference / OpenAI API — Reference
-- [Organization Audit Logs Admin Api Keys — List](/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys/methods/list) — API Reference / OpenAI API — Reference
-- [Organization Audit Logs Admin Api Keys — Retrieve](/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Organization Audit Logs Usage](/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/usage) — API Reference / OpenAI API — Reference
-- [Organization Groups](/mirror/api/reference/resources/organization/subresources/groups) — API Reference / OpenAI API — Reference
-- [Organization Groups — Create](/mirror/api/reference/resources/organization/subresources/groups/methods/create) — API Reference / OpenAI API — Reference
-- [Organization Groups — Delete](/mirror/api/reference/resources/organization/subresources/groups/methods/delete) — API Reference / OpenAI API — Reference
-- [Organization Groups — List](/mirror/api/reference/resources/organization/subresources/groups/methods/list) — API Reference / OpenAI API — Reference
-- [Organization Groups — Update](/mirror/api/reference/resources/organization/subresources/groups/methods/update) — API Reference / OpenAI API — Reference
-- [Organization Groups Users](/mirror/api/reference/resources/organization/subresources/groups/subresources/users) — API Reference / OpenAI API — Reference
-- [Organization Groups Users — Create](/mirror/api/reference/resources/organization/subresources/groups/subresources/users/methods/create) — API Reference / OpenAI API — Reference
-- [Organization Groups Users — Delete](/mirror/api/reference/resources/organization/subresources/groups/subresources/users/methods/delete) — API Reference / OpenAI API — Reference
-- [Organization Groups Users — List](/mirror/api/reference/resources/organization/subresources/groups/subresources/users/methods/list) — API Reference / OpenAI API — Reference
-- [Organization Invites](/mirror/api/reference/resources/organization/subresources/invites) — API Reference / OpenAI API — Reference
-- [Organization Invites — Create](/mirror/api/reference/resources/organization/subresources/invites/methods/create) — API Reference / OpenAI API — Reference
-- [Organization Invites — Delete](/mirror/api/reference/resources/organization/subresources/invites/methods/delete) — API Reference / OpenAI API — Reference
-- [Organization Invites — List](/mirror/api/reference/resources/organization/subresources/invites/methods/list) — API Reference / OpenAI API — Reference
-- [Organization Invites — Retrieve](/mirror/api/reference/resources/organization/subresources/invites/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Organization Projects](/mirror/api/reference/resources/organization/subresources/projects) — API Reference / OpenAI API — Reference
-- [Organization Projects — Create](/mirror/api/reference/resources/organization/subresources/projects/methods/create) — API Reference / OpenAI API — Reference
-- [Organization Projects — List](/mirror/api/reference/resources/organization/subresources/projects/methods/list) — API Reference / OpenAI API — Reference
-- [Organization Projects — Retrieve](/mirror/api/reference/resources/organization/subresources/projects/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Organization Projects — Update](/mirror/api/reference/resources/organization/subresources/projects/methods/update) — API Reference / OpenAI API — Reference
-- [Organization Projects Api Keys](/mirror/api/reference/resources/organization/subresources/projects/subresources/api_keys) — API Reference / OpenAI API — Reference
-- [Organization Projects Api Keys — Delete](/mirror/api/reference/resources/organization/subresources/projects/subresources/api_keys/methods/delete) — API Reference / OpenAI API — Reference
-- [Organization Projects Api Keys — List](/mirror/api/reference/resources/organization/subresources/projects/subresources/api_keys/methods/list) — API Reference / OpenAI API — Reference
-- [Organization Projects Api Keys — Retrieve](/mirror/api/reference/resources/organization/subresources/projects/subresources/api_keys/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Organization Projects Groups](/mirror/api/reference/resources/organization/subresources/projects/subresources/groups) — API Reference / OpenAI API — Reference
-- [Organization Projects Groups — Delete](/mirror/api/reference/resources/organization/subresources/projects/subresources/groups/methods/delete) — API Reference / OpenAI API — Reference
-- [Organization Projects Groups — List](/mirror/api/reference/resources/organization/subresources/projects/subresources/groups/methods/list) — API Reference / OpenAI API — Reference
-- [Organization Projects Rate Limits](/mirror/api/reference/resources/organization/subresources/projects/subresources/rate_limits) — API Reference / OpenAI API — Reference
-- [Organization Projects Service Accounts](/mirror/api/reference/resources/organization/subresources/projects/subresources/service_accounts) — API Reference / OpenAI API — Reference
-- [Organization Projects Service Accounts — Create](/mirror/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/create) — API Reference / OpenAI API — Reference
-- [Organization Projects Service Accounts — Delete](/mirror/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/delete) — API Reference / OpenAI API — Reference
-- [Organization Projects Service Accounts — List](/mirror/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/list) — API Reference / OpenAI API — Reference
-- [Organization Projects Service Accounts — Retrieve](/mirror/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Organization Projects Users](/mirror/api/reference/resources/organization/subresources/projects/subresources/users) — API Reference / OpenAI API — Reference
-- [Organization Projects Users — Create](/mirror/api/reference/resources/organization/subresources/projects/subresources/users/methods/create) — API Reference / OpenAI API — Reference
-- [Organization Projects Users — Delete](/mirror/api/reference/resources/organization/subresources/projects/subresources/users/methods/delete) — API Reference / OpenAI API — Reference
-- [Organization Projects Users — List](/mirror/api/reference/resources/organization/subresources/projects/subresources/users/methods/list) — API Reference / OpenAI API — Reference
-- [Organization Projects Users — Retrieve](/mirror/api/reference/resources/organization/subresources/projects/subresources/users/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Organization Projects Users — Update](/mirror/api/reference/resources/organization/subresources/projects/subresources/users/methods/update) — API Reference / OpenAI API — Reference
-- [Organization Roles](/mirror/api/reference/resources/organization/subresources/roles) — API Reference / OpenAI API — Reference
-- [Organization Roles — Create](/mirror/api/reference/resources/organization/subresources/roles/methods/create) — API Reference / OpenAI API — Reference
-- [Organization Roles — Delete](/mirror/api/reference/resources/organization/subresources/roles/methods/delete) — API Reference / OpenAI API — Reference
-- [Organization Roles — List](/mirror/api/reference/resources/organization/subresources/roles/methods/list) — API Reference / OpenAI API — Reference
-- [Organization Roles — Update](/mirror/api/reference/resources/organization/subresources/roles/methods/update) — API Reference / OpenAI API — Reference
-- [Organization Users](/mirror/api/reference/resources/organization/subresources/users) — API Reference / OpenAI API — Reference
-- [Organization Users — Delete](/mirror/api/reference/resources/organization/subresources/users/methods/delete) — API Reference / OpenAI API — Reference
-- [Organization Users — List](/mirror/api/reference/resources/organization/subresources/users/methods/list) — API Reference / OpenAI API — Reference
-- [Organization Users — Retrieve](/mirror/api/reference/resources/organization/subresources/users/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Organization Users — Update](/mirror/api/reference/resources/organization/subresources/users/methods/update) — API Reference / OpenAI API — Reference
-- [Organization Users Roles — Create](/mirror/api/reference/resources/organization/subresources/users/subresources/roles/methods/create) — API Reference / OpenAI API — Reference
-- [Organization Users Roles — Delete](/mirror/api/reference/resources/organization/subresources/users/subresources/roles/methods/delete) — API Reference / OpenAI API — Reference
-- [Organization Users Roles — List](/mirror/api/reference/resources/organization/subresources/users/subresources/roles/methods/list) — API Reference / OpenAI API — Reference
-- [Projects](/mirror/api/reference/resources/projects) — API Reference / OpenAI API — Reference
-- [Projects Groups](/mirror/api/reference/resources/projects/subresources/groups) — API Reference / OpenAI API — Reference
-- [Projects Groups Roles — Create](/mirror/api/reference/resources/projects/subresources/groups/subresources/roles/methods/create) — API Reference / OpenAI API — Reference
-- [Projects Groups Roles — Delete](/mirror/api/reference/resources/projects/subresources/groups/subresources/roles/methods/delete) — API Reference / OpenAI API — Reference
-- [Projects Groups Roles — List](/mirror/api/reference/resources/projects/subresources/groups/subresources/roles/methods/list) — API Reference / OpenAI API — Reference
+- [Containers Files Content — 检索](/mirror/api/reference/resources/containers/subresources/files/subresources/content/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Conversations 对话](/mirror/api/reference/resources/conversations) — API Reference / OpenAI API — Reference
+- [Conversations — 创建](/mirror/api/reference/resources/conversations/methods/create) — API Reference / OpenAI API — Reference
+- [Conversations — 删除](/mirror/api/reference/resources/conversations/methods/delete) — API Reference / OpenAI API — Reference
+- [Conversations — 检索](/mirror/api/reference/resources/conversations/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Conversations — 更新](/mirror/api/reference/resources/conversations/methods/update) — API Reference / OpenAI API — Reference
+- [Conversations Items — 列出](/mirror/api/reference/resources/conversations/subresources/items/methods/list) — API Reference / OpenAI API — Reference
+- [Embeddings 嵌入](/mirror/api/reference/resources/embeddings) — API Reference / OpenAI API — Reference
+- [Embeddings — 创建](/mirror/api/reference/resources/embeddings/methods/create) — API Reference / OpenAI API — Reference
+- [Evals 评估](/mirror/api/reference/resources/evals) — API Reference / OpenAI API — Reference
+- [Evals — 创建](/mirror/api/reference/resources/evals/methods/create) — API Reference / OpenAI API — Reference
+- [Evals — 删除](/mirror/api/reference/resources/evals/methods/delete) — API Reference / OpenAI API — Reference
+- [Evals — 列出](/mirror/api/reference/resources/evals/methods/list) — API Reference / OpenAI API — Reference
+- [Evals — 检索](/mirror/api/reference/resources/evals/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Evals — 更新](/mirror/api/reference/resources/evals/methods/update) — API Reference / OpenAI API — Reference
+- [Evals Runs — 取消](/mirror/api/reference/resources/evals/subresources/runs/methods/cancel) — API Reference / OpenAI API — Reference
+- [Files 文件](/mirror/api/reference/resources/files) — API Reference / OpenAI API — Reference
+- [Files — 创建](/mirror/api/reference/resources/files/methods/create) — API Reference / OpenAI API — Reference
+- [Files — 删除](/mirror/api/reference/resources/files/methods/delete) — API Reference / OpenAI API — Reference
+- [Files — 列出](/mirror/api/reference/resources/files/methods/list) — API Reference / OpenAI API — Reference
+- [Files — 检索](/mirror/api/reference/resources/files/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Fine Tuning 微调](/mirror/api/reference/resources/fine_tuning) — API Reference / OpenAI API — Reference
+- [Fine Tuning Checkpoints Permissions — 创建](/mirror/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/create) — API Reference / OpenAI API — Reference
+- [Fine Tuning Checkpoints Permissions — 删除](/mirror/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/delete) — API Reference / OpenAI API — Reference
+- [Fine Tuning Jobs — 列出](/mirror/api/reference/resources/fine_tuning/subresources/jobs/methods/list) — API Reference / OpenAI API — Reference
+- [Fine Tuning Jobs Checkpoints — 列出](/mirror/api/reference/resources/fine_tuning/subresources/jobs/subresources/checkpoints/methods/list) — API Reference / OpenAI API — Reference
+- [Graders 评分器](/mirror/api/reference/resources/graders) — API Reference / OpenAI API — Reference
+- [Images 图像](/mirror/api/reference/resources/images) — API Reference / OpenAI API — Reference
+- [Images — 创建变体](/mirror/api/reference/resources/images/methods/create_variation) — API Reference / OpenAI API — Reference
+- [Models 模型](/mirror/api/reference/resources/models) — API Reference / OpenAI API — Reference
+- [Models — 删除](/mirror/api/reference/resources/models/methods/delete) — API Reference / OpenAI API — Reference
+- [Models — 列出](/mirror/api/reference/resources/models/methods/list) — API Reference / OpenAI API — Reference
+- [Models — 检索](/mirror/api/reference/resources/models/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Moderations 内容审核](/mirror/api/reference/resources/moderations) — API Reference / OpenAI API — Reference
+- [Moderations — 创建](/mirror/api/reference/resources/moderations/methods/create) — API Reference / OpenAI API — Reference
+- [Organization 组织](/mirror/api/reference/resources/organization) — API Reference / OpenAI API — Reference
+- [Organization Audit Logs 审计日志](/mirror/api/reference/resources/organization/subresources/audit_logs) — API Reference / OpenAI API — Reference
+- [Organization Audit Logs — 列出](/mirror/api/reference/resources/organization/subresources/audit_logs/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Audit Logs Admin API Keys 管理密钥](/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys) — API Reference / OpenAI API — Reference
+- [Organization Audit Logs Admin API Keys — 创建](/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys/methods/create) — API Reference / OpenAI API — Reference
+- [Organization Audit Logs Admin API Keys — 删除](/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Audit Logs Admin API Keys — 列出](/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Audit Logs Admin API Keys — 检索](/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/admin_api_keys/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Organization Audit Logs Usage 用量](/mirror/api/reference/resources/organization/subresources/audit_logs/subresources/usage) — API Reference / OpenAI API — Reference
+- [Organization Groups 组织组](/mirror/api/reference/resources/organization/subresources/groups) — API Reference / OpenAI API — Reference
+- [Organization Groups — 创建](/mirror/api/reference/resources/organization/subresources/groups/methods/create) — API Reference / OpenAI API — Reference
+- [Organization Groups — 删除](/mirror/api/reference/resources/organization/subresources/groups/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Groups — 列出](/mirror/api/reference/resources/organization/subresources/groups/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Groups — 更新](/mirror/api/reference/resources/organization/subresources/groups/methods/update) — API Reference / OpenAI API — Reference
+- [Organization Groups Users 组用户](/mirror/api/reference/resources/organization/subresources/groups/subresources/users) — API Reference / OpenAI API — Reference
+- [Organization Groups Users — 创建](/mirror/api/reference/resources/organization/subresources/groups/subresources/users/methods/create) — API Reference / OpenAI API — Reference
+- [Organization Groups Users — 删除](/mirror/api/reference/resources/organization/subresources/groups/subresources/users/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Groups Users — 列出](/mirror/api/reference/resources/organization/subresources/groups/subresources/users/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Invites 邀请](/mirror/api/reference/resources/organization/subresources/invites) — API Reference / OpenAI API — Reference
+- [Organization Invites — 创建](/mirror/api/reference/resources/organization/subresources/invites/methods/create) — API Reference / OpenAI API — Reference
+- [Organization Invites — 删除](/mirror/api/reference/resources/organization/subresources/invites/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Invites — 列出](/mirror/api/reference/resources/organization/subresources/invites/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Invites — 检索](/mirror/api/reference/resources/organization/subresources/invites/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Organization Projects 项目](/mirror/api/reference/resources/organization/subresources/projects) — API Reference / OpenAI API — Reference
+- [Organization Projects — 创建](/mirror/api/reference/resources/organization/subresources/projects/methods/create) — API Reference / OpenAI API — Reference
+- [Organization Projects — 列出](/mirror/api/reference/resources/organization/subresources/projects/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Projects — 检索](/mirror/api/reference/resources/organization/subresources/projects/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Organization Projects — 更新](/mirror/api/reference/resources/organization/subresources/projects/methods/update) — API Reference / OpenAI API — Reference
+- [Organization Projects API Keys 项目密钥](/mirror/api/reference/resources/organization/subresources/projects/subresources/api_keys) — API Reference / OpenAI API — Reference
+- [Organization Projects API Keys — 删除](/mirror/api/reference/resources/organization/subresources/projects/subresources/api_keys/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Projects API Keys — 列出](/mirror/api/reference/resources/organization/subresources/projects/subresources/api_keys/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Projects API Keys — 检索](/mirror/api/reference/resources/organization/subresources/projects/subresources/api_keys/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Organization Projects Groups 项目组](/mirror/api/reference/resources/organization/subresources/projects/subresources/groups) — API Reference / OpenAI API — Reference
+- [Organization Projects Groups — 删除](/mirror/api/reference/resources/organization/subresources/projects/subresources/groups/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Projects Groups — 列出](/mirror/api/reference/resources/organization/subresources/projects/subresources/groups/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Projects Rate Limits 速率限制](/mirror/api/reference/resources/organization/subresources/projects/subresources/rate_limits) — API Reference / OpenAI API — Reference
+- [Organization Projects Service Accounts 服务账号](/mirror/api/reference/resources/organization/subresources/projects/subresources/service_accounts) — API Reference / OpenAI API — Reference
+- [Organization Projects Service Accounts — 创建](/mirror/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/create) — API Reference / OpenAI API — Reference
+- [Organization Projects Service Accounts — 删除](/mirror/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Projects Service Accounts — 列出](/mirror/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Projects Service Accounts — 检索](/mirror/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Organization Projects Users 项目用户](/mirror/api/reference/resources/organization/subresources/projects/subresources/users) — API Reference / OpenAI API — Reference
+- [Organization Projects Users — 创建](/mirror/api/reference/resources/organization/subresources/projects/subresources/users/methods/create) — API Reference / OpenAI API — Reference
+- [Organization Projects Users — 删除](/mirror/api/reference/resources/organization/subresources/projects/subresources/users/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Projects Users — 列出](/mirror/api/reference/resources/organization/subresources/projects/subresources/users/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Projects Users — 检索](/mirror/api/reference/resources/organization/subresources/projects/subresources/users/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Organization Projects Users — 更新](/mirror/api/reference/resources/organization/subresources/projects/subresources/users/methods/update) — API Reference / OpenAI API — Reference
+- [Organization Roles 角色](/mirror/api/reference/resources/organization/subresources/roles) — API Reference / OpenAI API — Reference
+- [Organization Roles — 创建](/mirror/api/reference/resources/organization/subresources/roles/methods/create) — API Reference / OpenAI API — Reference
+- [Organization Roles — 删除](/mirror/api/reference/resources/organization/subresources/roles/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Roles — 列出](/mirror/api/reference/resources/organization/subresources/roles/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Roles — 更新](/mirror/api/reference/resources/organization/subresources/roles/methods/update) — API Reference / OpenAI API — Reference
+- [Organization Users 用户](/mirror/api/reference/resources/organization/subresources/users) — API Reference / OpenAI API — Reference
+- [Organization Users — 删除](/mirror/api/reference/resources/organization/subresources/users/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Users — 列出](/mirror/api/reference/resources/organization/subresources/users/methods/list) — API Reference / OpenAI API — Reference
+- [Organization Users — 检索](/mirror/api/reference/resources/organization/subresources/users/methods/retrieve) — API Reference / OpenAI API — Reference
+- [Organization Users — 更新](/mirror/api/reference/resources/organization/subresources/users/methods/update) — API Reference / OpenAI API — Reference
+- [Organization Users Roles — 创建](/mirror/api/reference/resources/organization/subresources/users/subresources/roles/methods/create) — API Reference / OpenAI API — Reference
+- [Organization Users Roles — 删除](/mirror/api/reference/resources/organization/subresources/users/subresources/roles/methods/delete) — API Reference / OpenAI API — Reference
+- [Organization Users Roles — 列出](/mirror/api/reference/resources/organization/subresources/users/subresources/roles/methods/list) — API Reference / OpenAI API — Reference
+- [Projects 项目](/mirror/api/reference/resources/projects) — API Reference / OpenAI API — Reference
+- [Projects Groups 项目组](/mirror/api/reference/resources/projects/subresources/groups) — API Reference / OpenAI API — Reference
+- [Projects Groups Roles — 创建](/mirror/api/reference/resources/projects/subresources/groups/subresources/roles/methods/create) — API Reference / OpenAI API — Reference
+- [Projects Groups Roles — 删除](/mirror/api/reference/resources/projects/subresources/groups/subresources/roles/methods/delete) — API Reference / OpenAI API — Reference
+- [Projects Groups Roles — 列出](/mirror/api/reference/resources/projects/subresources/groups/subresources/roles/methods/list) — API Reference / OpenAI API — Reference
 - [项目角色 — 创建](/mirror/api/reference/resources/projects/subresources/roles/methods/create) — API Reference / OpenAI API — Reference
 - [项目角色 — 删除](/mirror/api/reference/resources/projects/subresources/roles/methods/delete) — API Reference / OpenAI API — Reference
 - [项目角色 — 列出](/mirror/api/reference/resources/projects/subresources/roles/methods/list) — API Reference / OpenAI API — Reference
@@ -195,9 +195,9 @@
 - [项目用户角色 — 创建](/mirror/api/reference/resources/projects/subresources/users/subresources/roles/methods/create) — API Reference / OpenAI API — Reference
 - [项目用户角色 — 删除](/mirror/api/reference/resources/projects/subresources/users/subresources/roles/methods/delete) — API Reference / OpenAI API — Reference
 - [项目用户角色 — 列出](/mirror/api/reference/resources/projects/subresources/users/subresources/roles/methods/list) — API Reference / OpenAI API — Reference
-- [Realtime](/mirror/api/reference/resources/realtime) — API Reference / OpenAI API — Reference
+- [Realtime 实时](/mirror/api/reference/resources/realtime) — API Reference / OpenAI API — Reference
 - [Realtime Beta 概览](/mirror/api/reference/realtime-beta/overview) — API Reference / OpenAI API — Reference
-- [Realtime Calls](/mirror/api/reference/resources/realtime/subresources/calls) — API Reference / OpenAI API — Reference
+- [Realtime Calls 通话](/mirror/api/reference/resources/realtime/subresources/calls) — API Reference / OpenAI API — Reference
 - [Realtime Calls — 接受](/mirror/api/reference/resources/realtime/subresources/calls/methods/accept) — API Reference / OpenAI API — Reference
 - [Realtime Calls — 创建](/mirror/api/reference/resources/realtime/subresources/calls/methods/create) — API Reference / OpenAI API — Reference
 - [Realtime Calls — 挂断](/mirror/api/reference/resources/realtime/subresources/calls/methods/hangup) — API Reference / OpenAI API — Reference
@@ -205,7 +205,7 @@
 - [Realtime Calls — 拒绝](/mirror/api/reference/resources/realtime/subresources/calls/methods/reject) — API Reference / OpenAI API — Reference
 - [Realtime 客户端密钥](/mirror/api/reference/resources/realtime/subresources/client_secrets) — API Reference / OpenAI API — Reference
 - [Realtime 客户端密钥 — 创建](/mirror/api/reference/resources/realtime/subresources/client_secrets/methods/create) — API Reference / OpenAI API — Reference
-- [Responses](/mirror/api/reference/resources/responses) — API Reference / OpenAI API — Reference
+- [Responses 响应](/mirror/api/reference/resources/responses) — API Reference / OpenAI API — Reference
 - [Responses — 取消](/mirror/api/reference/resources/responses/methods/cancel) — API Reference / OpenAI API — Reference
 - [Responses — 压缩](/mirror/api/reference/resources/responses/methods/compact) — API Reference / OpenAI API — Reference
 - [Responses — 创建](/mirror/api/reference/resources/responses/methods/create) — API Reference / OpenAI API — Reference
@@ -214,8 +214,8 @@
 - [Responses 输入项 — 列出](/mirror/api/reference/resources/responses/subresources/input_items/methods/list) — API Reference / OpenAI API — Reference
 - [Responses 输入 tokens](/mirror/api/reference/resources/responses/subresources/input_tokens) — API Reference / OpenAI API — Reference
 - [Responses 概览](/mirror/api/reference/responses/overview) — API Reference / OpenAI API — Reference
-- [Unwrap](/mirror/api/reference/resources/webhooks/methods/unwrap) — API Reference / OpenAI API — Reference
-- [Uploads](/mirror/api/reference/resources/uploads) — API Reference / OpenAI API — Reference
+- [Webhooks — 解包](/mirror/api/reference/resources/webhooks/methods/unwrap) — API Reference / OpenAI API — Reference
+- [Uploads 上传](/mirror/api/reference/resources/uploads) — API Reference / OpenAI API — Reference
 - [Uploads — 取消](/mirror/api/reference/resources/uploads/methods/cancel) — API Reference / OpenAI API — Reference
 - [Uploads — 创建](/mirror/api/reference/resources/uploads/methods/create) — API Reference / OpenAI API — Reference
 - [Uploads Parts — 创建](/mirror/api/reference/resources/uploads/subresources/parts/methods/create) — API Reference / OpenAI API — Reference
@@ -243,7 +243,7 @@
 - [视频 — 删除](/mirror/api/reference/resources/videos/methods/delete) — API Reference / OpenAI API — Reference
 - [视频 — 列出](/mirror/api/reference/resources/videos/methods/list) — API Reference / OpenAI API — Reference
 - [视频 — 检索](/mirror/api/reference/resources/videos/methods/retrieve) — API Reference / OpenAI API — Reference
-- [Webhooks](/mirror/api/reference/resources/webhooks) — API Reference / OpenAI API — Reference
+- [Webhooks 网络钩子](/mirror/api/reference/resources/webhooks) — API Reference / OpenAI API — Reference
 - [工作负载身份 token 交换](/mirror/api/reference/workload-identity-federation) — API Reference / OpenAI API — Reference
 - [应用提交指南](/mirror/apps-sdk/app-submission-guidelines) — Apps SDK / Apps SDK — App Submission Guidelines
 - [认证](/mirror/apps-sdk/build/auth) — Apps SDK / Apps SDK — Build
@@ -252,7 +252,7 @@
 - [示例](/mirror/apps-sdk/build/examples) — Apps SDK / Apps SDK — Build
 - [管理状态](/mirror/apps-sdk/build/state-management) — Apps SDK / Apps SDK — Build
 - [商业化](/mirror/apps-sdk/build/monetization) — Apps SDK / Apps SDK — Build
-- [MCP](/mirror/apps-sdk/concepts/mcp-server) — Apps SDK / Apps SDK — Concepts
+- [MCP 服务器](/mirror/apps-sdk/concepts/mcp-server) — Apps SDK / Apps SDK — Concepts
 - [UI 指南](/mirror/apps-sdk/concepts/ui-guidelines) — Apps SDK / Apps SDK — Concepts
 - [用户交互](/mirror/apps-sdk/concepts/user-interaction) — Apps SDK / Apps SDK — Concepts
 - [UX 原则](/mirror/apps-sdk/concepts/ux-principles) — Apps SDK / Apps SDK — Concepts
@@ -261,47 +261,47 @@
 - [提交并维护你的应用](/mirror/apps-sdk/deploy/submission) — Apps SDK / Apps SDK — Deploy
 - [测试你的集成](/mirror/apps-sdk/deploy/testing) — Apps SDK / Apps SDK — Deploy
 - [故障排查](/mirror/apps-sdk/deploy/troubleshooting) — Apps SDK / Apps SDK — Deploy
-- [优化 Metadata](/mirror/apps-sdk/guides/optimize-metadata) — Apps SDK / Apps SDK — Guides
+- [优化元数据](/mirror/apps-sdk/guides/optimize-metadata) — Apps SDK / Apps SDK — Guides
 - [产品结账转化规格](/mirror/apps-sdk/guides/product-checkout-conversion-spec) — Apps SDK / Apps SDK — Guides
 - [餐厅预订转化规格](/mirror/apps-sdk/guides/restaurant-reservation-conversion-spec) — Apps SDK / Apps SDK — Guides
 - [安全与隐私](/mirror/apps-sdk/guides/security-privacy) — Apps SDK / Apps SDK — Guides
 - [ChatGPT 中的 MCP Apps 兼容性](/mirror/apps-sdk/mcp-apps-in-chatgpt) — Apps SDK / Apps SDK — Mcp Apps In Chatgpt
-- [定义 Tools](/mirror/apps-sdk/plan/tools) — Apps SDK / Apps SDK — Plan
-- [设计 Components](/mirror/apps-sdk/plan/components) — Apps SDK / Apps SDK — Plan
-- [研究 Use Cases](/mirror/apps-sdk/plan/use-case) — Apps SDK / Apps SDK — Plan
-- [Quickstart](/mirror/apps-sdk/quickstart) — Apps SDK / Apps SDK — Quickstart
-- [Reference](/mirror/apps-sdk/reference) — Apps SDK / Documentation sets
+- [定义工具](/mirror/apps-sdk/plan/tools) — Apps SDK / Apps SDK — Plan
+- [设计组件](/mirror/apps-sdk/plan/components) — Apps SDK / Apps SDK — Plan
+- [研究使用场景](/mirror/apps-sdk/plan/use-case) — Apps SDK / Apps SDK — Plan
+- [快速开始](/mirror/apps-sdk/quickstart) — Apps SDK / Apps SDK — Quickstart
+- [参考](/mirror/apps-sdk/reference) — Apps SDK / Documentation sets
 - [Agent approvals 与安全](/mirror/codex/agent-approvals-security) — Codex / Codex — Agent Approvals Security
 - [将 Codex 与 Amazon Bedrock 搭配使用](/mirror/codex/amazon-bedrock) — Codex / Codex — Amazon Bedrock
-- [Automations](/mirror/codex/app/automations) — Codex / Codex — App
-- [Codex app](/mirror/codex/app) — Codex / Codex — App
-- [Codex app commands](/mirror/codex/app/commands) — Codex / Codex — App
-- [Codex app features](/mirror/codex/app/features) — Codex / Codex — App
-- [Codex app settings](/mirror/codex/app/settings) — Codex / Codex — App
-- [Codex Chrome extension](/mirror/codex/app/chrome-extension) — Codex / Codex — App
-- [Computer Use](/mirror/codex/app/computer-use) — Codex / Codex — App
-- [In-app browser](/mirror/codex/app/browser) — Codex / Codex — App
-- [Local environments](/mirror/codex/app/local-environments) — Codex / Codex — App
-- [Review](/mirror/codex/app/review) — Codex / Codex — App
+- [Automations 自动化](/mirror/codex/app/automations) — Codex / Codex — App
+- [Codex app 应用](/mirror/codex/app) — Codex / Codex — App
+- [Codex app 命令](/mirror/codex/app/commands) — Codex / Codex — App
+- [Codex app 功能](/mirror/codex/app/features) — Codex / Codex — App
+- [Codex app 设置](/mirror/codex/app/settings) — Codex / Codex — App
+- [Codex Chrome 扩展](/mirror/codex/app/chrome-extension) — Codex / Codex — App
+- [Computer Use 计算机使用](/mirror/codex/app/computer-use) — Codex / Codex — App
+- [In-app browser 应用内浏览器](/mirror/codex/app/browser) — Codex / Codex — App
+- [Local environments 本地环境](/mirror/codex/app/local-environments) — Codex / Codex — App
+- [Review 代码审查](/mirror/codex/app/review) — Codex / Codex — App
 - [故障排除](/mirror/codex/app/troubleshooting) — Codex / Codex — App
-- [Windows](/mirror/codex/app/windows) — Codex / Codex — App
-- [Worktrees](/mirror/codex/app/worktrees) — Codex / Codex — App
-- [Codex App Server](/mirror/codex/app-server) — Codex / Codex — App Server
-- [Appshots](/mirror/codex/appshots) — Codex / Codex — Appshots
-- [Authentication](/mirror/codex/auth) — Codex / Codex — Auth
-- [Codex CLI](/mirror/codex/cli) — Codex / Codex — Cli
-- [Codex CLI features](/mirror/codex/cli/features) — Codex / Codex — Cli
+- [Windows 应用](/mirror/codex/app/windows) — Codex / Codex — App
+- [Worktrees 工作树](/mirror/codex/app/worktrees) — Codex / Codex — App
+- [Codex App Server 应用服务器](/mirror/codex/app-server) — Codex / Codex — App Server
+- [Appshots 应用快照](/mirror/codex/appshots) — Codex / Codex — Appshots
+- [认证](/mirror/codex/auth) — Codex / Codex — Auth
+- [Codex CLI 命令行](/mirror/codex/cli) — Codex / Codex — Cli
+- [Codex CLI 功能](/mirror/codex/cli/features) — Codex / Codex — Cli
 - [命令行选项](/mirror/codex/cli/reference) — Codex / Codex — Cli
 - [Codex CLI 中的 Slash commands](/mirror/codex/cli/slash-commands) — Codex / Codex — Cli
 - [Agent 互联网访问](/mirror/codex/cloud/internet-access) — Codex / Codex — Cloud
-- [Cloud environments](/mirror/codex/cloud/environments) — Codex / Codex — Cloud
-- [Codex web](/mirror/codex/cloud) — Codex / Codex — Cloud
+- [Cloud 环境](/mirror/codex/cloud/environments) — Codex / Codex — Cloud
+- [Codex web 网页版](/mirror/codex/cloud) — Codex / Codex — Cloud
 - [面向开源的 Codex](/mirror/codex/community/codex-for-oss) — Codex / Codex — Community
-- [Auto-review](/mirror/codex/concepts/sandboxing/auto-review) — Codex / Codex — Concepts
+- [Auto-review 自动审查](/mirror/codex/concepts/sandboxing/auto-review) — Codex / Codex — Concepts
 - [自定义](/mirror/codex/concepts/customization) — Codex / Codex — Concepts
 - [网络安全](/mirror/codex/concepts/cyber-safety) — Codex / Codex — Concepts
-- [Sandbox](/mirror/codex/concepts/sandboxing) — Codex / Codex — Concepts
-- [Subagents](/mirror/codex/concepts/subagents) — Codex / Codex — Concepts
+- [Sandbox 沙盒](/mirror/codex/concepts/sandboxing) — Codex / Codex — Concepts
+- [Subagents 子代理](/mirror/codex/concepts/subagents) — Codex / Codex — Concepts
 - [高级配置](/mirror/codex/config-advanced) — Codex / Codex — Config Advanced
 - [配置基础](/mirror/codex/config-basic) — Codex / Codex — Config Basic
 - [配置参考](/mirror/codex/config-reference) — Codex / Codex — Config Reference
@@ -313,13 +313,13 @@
 - [托管配置](/mirror/codex/enterprise/managed-configuration) — Codex / Codex — Enterprise
 - [环境变量](/mirror/codex/environment-variables) — Codex / Codex — Environment Variables
 - [功能成熟度](/mirror/codex/feature-maturity) — Codex / Codex — Feature Maturity
-- [Codex GitHub Action](/mirror/codex/github-action) — Codex / Codex — Github Action
+- [Codex GitHub Action 操作](/mirror/codex/github-action) — Codex / Codex — Github Action
 - [术语表](/mirror/codex/glossary) — Codex / Codex — Glossary
 - [构建 AI-Native 工程团队](/mirror/codex/guides/build-ai-native-engineering-team) — Codex / Codex — Guides
 - [使用 AGENTS.md 编写自定义指令](/mirror/codex/guides/agents-md) — Codex / Codex — Guides
 - [将 Codex 与 Agents SDK 结合使用](/mirror/codex/guides/agents-sdk) — Codex / Codex — Guides
-- [Hooks](/mirror/codex/hooks) — Codex / Codex — Hooks
-- [Codex IDE extension](/mirror/codex/ide) — Codex / Codex — Ide
+- [Hooks 钩子](/mirror/codex/hooks) — Codex / Codex — Hooks
+- [Codex IDE extension 扩展](/mirror/codex/ide) — Codex / Codex — Ide
 - [Codex IDE extension 命令](/mirror/codex/ide/commands) — Codex / Codex — Ide
 - [Codex IDE extension 功能](/mirror/codex/ide/features) — Codex / Codex — Ide
 - [Codex IDE extension 设置](/mirror/codex/ide/settings) — Codex / Codex — Ide
@@ -329,86 +329,86 @@
 - [在 Linear 中使用 Codex](/mirror/codex/integrations/linear) — Codex / Codex — Integrations
 - [在 Slack 中使用 Codex](/mirror/codex/integrations/slack) — Codex / Codex — Integrations
 - [最佳实践](/mirror/codex/learn/best-practices) — Codex / Codex — Learn
-- [Model Context Protocol](/mirror/codex/mcp) — Codex / Codex — Mcp
-- [Chronicle](/mirror/codex/memories/chronicle) — Codex / Codex — Memories
-- [Memories](/mirror/codex/memories) — Codex / Codex — Memories
+- [Model Context Protocol 模型上下文协议](/mirror/codex/mcp) — Codex / Codex — Mcp
+- [Chronicle 编年记忆](/mirror/codex/memories/chronicle) — Codex / Codex — Memories
+- [Memories 记忆](/mirror/codex/memories) — Codex / Codex — Memories
 - [Codex 模型](/mirror/codex/models) — Codex / Codex — Models
 - [非交互模式](/mirror/codex/noninteractive) — Codex / Codex — Noninteractive
-- [Open Source](/mirror/codex/open-source) — Codex / Codex — Open Source
-- [Codex](/mirror/codex/overview) — Codex / Codex — Overview
+- [开源](/mirror/codex/open-source) — Codex / Codex — Open Source
+- [Codex 概览](/mirror/codex/overview) — Codex / Codex — Overview
 - [权限](/mirror/codex/permissions) — Codex / Codex — Permissions
 - [构建 plugins](/mirror/codex/plugins/build) — Codex / Codex — Plugins
-- [Plugins](/mirror/codex/plugins) — Codex / Codex — Plugins
+- [Plugins 插件](/mirror/codex/plugins) — Codex / Codex — Plugins
 - [Codex 定价](/mirror/codex/pricing) — Codex / Codex — Pricing
-- [Prompting](/mirror/codex/prompting) — Codex / Codex — Prompting
+- [提示词](/mirror/codex/prompting) — Codex / Codex — Prompting
 - [快速开始](/mirror/codex/quickstart) — Codex / Codex — Quickstart
 - [录制与回放](/mirror/codex/record-and-replay) — Codex / Codex — Record And Replay
 - [远程连接](/mirror/codex/remote-connections) — Codex / Codex — Remote Connections
-- [Rules](/mirror/codex/rules) — Codex / Codex — Rules
-- [Codex SDK](/mirror/codex/sdk) — Codex / Codex — Sdk
-- [Codex Security](/mirror/codex/security) — Codex / Codex — Security
-- [Codex Security plugin changelog](/mirror/codex/security/plugin/changelog) — Codex / Codex — Security
-- [Codex Security plugin quickstart](/mirror/codex/security/plugin) — Codex / Codex — Security
-- [Codex Security setup](/mirror/codex/security/setup) — Codex / Codex — Security
+- [Rules 规则](/mirror/codex/rules) — Codex / Codex — Rules
+- [Codex SDK 软件开发工具包](/mirror/codex/sdk) — Codex / Codex — Sdk
+- [Codex Security 安全](/mirror/codex/security) — Codex / Codex — Security
+- [Codex Security plugin 变更日志](/mirror/codex/security/plugin/changelog) — Codex / Codex — Security
+- [Codex Security plugin 快速入门](/mirror/codex/security/plugin) — Codex / Codex — Security
+- [Codex Security 设置](/mirror/codex/security/setup) — Codex / Codex — Security
 - [导出并跟踪安全发现项](/mirror/codex/security/plugin/export-findings) — Codex / Codex — Security
-- [FAQ](/mirror/codex/security/faq) — Codex / Codex — Security
+- [常见问题](/mirror/codex/security/faq) — Codex / Codex — Security
 - [修复并验证安全发现项](/mirror/codex/security/plugin/fix-findings) — Codex / Codex — Security
-- [改进 threat model](/mirror/codex/security/threat-model) — Codex / Codex — Security
+- [改进威胁模型](/mirror/codex/security/threat-model) — Codex / Codex — Security
 - [审查代码变更的安全性](/mirror/codex/security/plugin/code-changes) — Codex / Codex — Security
 - [运行 Codex Security 扫描](/mirror/codex/security/plugin/scans) — Codex / Codex — Security
 - [运行深度安全扫描](/mirror/codex/security/plugin/deep-scans) — Codex / Codex — Security
 - [分流 backlog](/mirror/codex/security/plugin/triage-backlog) — Codex / Codex — Security
-- [Sites](/mirror/codex/sites) — Codex / Codex — Sites
-- [Agent Skills](/mirror/codex/skills) — Codex / Codex — Skills
+- [Sites 站点](/mirror/codex/sites) — Codex / Codex — Sites
+- [Agent Skills 代理技能](/mirror/codex/skills) — Codex / Codex — Skills
 - [速度](/mirror/codex/speed) — Codex / Codex — Speed
-- [Subagents](/mirror/codex/subagents) — Codex / Codex — Subagents
+- [Subagents 子代理](/mirror/codex/subagents) — Codex / Codex — Subagents
 - [视频](/mirror/codex/videos) — Codex / Codex — Videos
-- [Windows](/mirror/codex/windows) — Codex / Codex — Windows
+- [Windows 支持](/mirror/codex/windows) — Codex / Codex — Windows
 - [工作流](/mirror/codex/workflows) — Codex / Codex — Workflows
-- [web_search = "disabled"](/mirror/codex/codex-manual) — Codex / Documentation sets
-- [生产环境中的 Agentic commerce](/mirror/commerce/guides/production) — Commerce / Agentic Commerce — Guides
-- [Best practices](/mirror/commerce/guides/best-practices) — Commerce / Agentic Commerce — Guides
-- [Get Started](/mirror/commerce/guides/get-started) — Commerce / Agentic Commerce — Guides
-- [Key concepts](/mirror/commerce/guides/key-concepts) — Commerce / Agentic Commerce — Guides
-- [Agentic Checkout Spec](/mirror/commerce/specs/checkout) — Commerce / Agentic Commerce — Specs
-- [Delegated Payment Spec](/mirror/commerce/specs/payment) — Commerce / Agentic Commerce — Specs
-- [Feeds](/mirror/commerce/specs/api/feeds) — Commerce / Agentic Commerce — Specs
-- [File Upload](/mirror/commerce/specs/file-upload/legacy) — Commerce / Agentic Commerce — Specs
-- [Onboarding](/mirror/commerce/specs/onboarding) — Commerce / Agentic Commerce — Specs
-- [Overview](/mirror/commerce/specs/api/overview) — Commerce / Agentic Commerce — Specs
-- [Overview](/mirror/commerce/specs/file-upload/overview) — Commerce / Agentic Commerce — Specs
-- [Product Feed Spec](/mirror/commerce/specs/spec) — Commerce / Agentic Commerce — Specs
+- [Codex 手册](/mirror/codex/codex-manual) — Codex / Documentation sets
+- [生产环境中的 Agentic Commerce](/mirror/commerce/guides/production) — Commerce / Agentic Commerce — Guides
+- [最佳实践](/mirror/commerce/guides/best-practices) — Commerce / Agentic Commerce — Guides
+- [快速开始](/mirror/commerce/guides/get-started) — Commerce / Agentic Commerce — Guides
+- [关键概念](/mirror/commerce/guides/key-concepts) — Commerce / Agentic Commerce — Guides
+- [Agentic Checkout Spec（Agentic Checkout 规范）](/mirror/commerce/specs/checkout) — Commerce / Agentic Commerce — Specs
+- [Delegated Payment Spec（委托付款规范）](/mirror/commerce/specs/payment) — Commerce / Agentic Commerce — Specs
+- [Feeds（Feed 管理）](/mirror/commerce/specs/api/feeds) — Commerce / Agentic Commerce — Specs
+- [文件上传](/mirror/commerce/specs/file-upload/legacy) — Commerce / Agentic Commerce — Specs
+- [Onboarding（入门引导）](/mirror/commerce/specs/onboarding) — Commerce / Agentic Commerce — Specs
+- [API 概览](/mirror/commerce/specs/api/overview) — Commerce / Agentic Commerce — Specs
+- [文件上传概览](/mirror/commerce/specs/file-upload/overview) — Commerce / Agentic Commerce — Specs
+- [Product Feed Spec（商品 Feed 规范）](/mirror/commerce/specs/spec) — Commerce / Agentic Commerce — Specs
 - [商品](/mirror/commerce/specs/api/products) — Commerce / Agentic Commerce — Specs
 - [商品](/mirror/commerce/specs/file-upload/products) — Commerce / Agentic Commerce — Specs
 - [促销](/mirror/commerce/specs/api/promotions) — Commerce / Agentic Commerce — Specs
 - [ChatKit 中的操作](/mirror/api/docs/guides/chatkit-actions) — OpenAI API Docs / OpenAI API — Docs
-- [Admin APIs](/mirror/api/docs/guides/admin-apis) — OpenAI API Docs / OpenAI API — Docs
+- [Admin APIs 管理 API](/mirror/api/docs/guides/admin-apis) — OpenAI API Docs / OpenAI API — Docs
 - [ChatKit 高级集成](/mirror/api/docs/guides/custom-chatkit) — OpenAI API Docs / OpenAI API — Docs
 - [高级用法](/mirror/api/docs/guides/advanced-usage) — OpenAI API Docs / OpenAI API — Docs
-- [Agent Builder](/mirror/api/docs/guides/agent-builder) — OpenAI API Docs / OpenAI API — Docs
+- [Agent Builder 智能体构建器](/mirror/api/docs/guides/agent-builder) — OpenAI API Docs / OpenAI API — Docs
 - [Agent 定义](/mirror/api/docs/guides/agents/define-agents) — OpenAI API Docs / OpenAI API — Docs
-- [Agents SDK](/mirror/api/docs/guides/agents) — OpenAI API Docs / OpenAI API — Docs
+- [Agents SDK 智能体 SDK](/mirror/api/docs/guides/agents) — OpenAI API Docs / OpenAI API — Docs
 - [API 部署检查清单](/mirror/api/docs/guides/deployment-checklist) — OpenAI API Docs / OpenAI API — Docs
-- [Apply Patch](/mirror/api/docs/guides/tools-apply-patch) — OpenAI API Docs / OpenAI API — Docs
+- [Apply Patch 补丁工具](/mirror/api/docs/guides/tools-apply-patch) — OpenAI API Docs / OpenAI API — Docs
 - [Assistants API 深入指南](/mirror/api/docs/assistants/deep-dive) — OpenAI API Docs / OpenAI API — Docs
 - [Assistants API 工具](/mirror/api/docs/assistants/tools) — OpenAI API Docs / OpenAI API — Docs
-- [Assistants Code Interpreter](/mirror/api/docs/assistants/tools/code-interpreter) — OpenAI API Docs / OpenAI API — Docs
-- [Assistants File Search](/mirror/api/docs/assistants/tools/file-search) — OpenAI API Docs / OpenAI API — Docs
-- [Assistants Function Calling](/mirror/api/docs/assistants/tools/function-calling) — OpenAI API Docs / OpenAI API — Docs
+- [Assistants Code Interpreter 代码解释器](/mirror/api/docs/assistants/tools/code-interpreter) — OpenAI API Docs / OpenAI API — Docs
+- [Assistants 文件搜索](/mirror/api/docs/assistants/tools/file-search) — OpenAI API Docs / OpenAI API — Docs
+- [Assistants Function Calling 函数调用](/mirror/api/docs/assistants/tools/function-calling) — OpenAI API Docs / OpenAI API — Docs
 - [Assistants 迁移指南](/mirror/api/docs/assistants/migration) — OpenAI API Docs / OpenAI API — Docs
 - [音频与语音](/mirror/api/docs/guides/audio) — OpenAI API Docs / OpenAI API — Docs
-- [Background mode](/mirror/api/docs/guides/background) — OpenAI API Docs / OpenAI API — Docs
-- [Batch API](/mirror/api/docs/guides/batch) — OpenAI API Docs / OpenAI API — Docs
+- [Background mode 后台模式](/mirror/api/docs/guides/background) — OpenAI API Docs / OpenAI API — Docs
+- [Batch API 批处理 API](/mirror/api/docs/guides/batch) — OpenAI API Docs / OpenAI API — Docs
 - [为 ChatGPT Apps 和 API 集成构建 MCP server](/mirror/api/docs/mcp) — OpenAI API Docs / OpenAI API — Docs
-- [ChatGPT Developer mode](/mirror/api/docs/guides/developer-mode) — OpenAI API Docs / OpenAI API — Docs
-- [ChatKit](/mirror/api/docs/guides/chatkit) — OpenAI API Docs / OpenAI API — Docs
-- [ChatKit widgets](/mirror/api/docs/guides/chatkit-widgets) — OpenAI API Docs / OpenAI API — Docs
+- [ChatGPT Developer mode 开发者模式](/mirror/api/docs/guides/developer-mode) — OpenAI API Docs / OpenAI API — Docs
+- [ChatKit 聊天组件](/mirror/api/docs/guides/chatkit) — OpenAI API Docs / OpenAI API — Docs
+- [ChatKit widgets 小组件](/mirror/api/docs/guides/chatkit-widgets) — OpenAI API Docs / OpenAI API — Docs
 - [引用格式化](/mirror/api/docs/guides/citation-formatting) — OpenAI API Docs / OpenAI API — Docs
 - [代码生成](/mirror/api/docs/guides/code-generation) — OpenAI API Docs / OpenAI API — Docs
-- [Code Interpreter](/mirror/api/docs/guides/tools-code-interpreter) — OpenAI API Docs / OpenAI API — Docs
+- [Code Interpreter 代码解释器](/mirror/api/docs/guides/tools-code-interpreter) — OpenAI API Docs / OpenAI API — Docs
 - [Compaction（压缩）](/mirror/api/docs/guides/compaction) — OpenAI API Docs / OpenAI API — Docs
-- [Completions API](/mirror/api/docs/guides/completions) — OpenAI API Docs / OpenAI API — Docs
-- [Computer use](/mirror/api/docs/guides/tools-computer-use) — OpenAI API Docs / OpenAI API — Docs
+- [Completions API 补全 API](/mirror/api/docs/guides/completions) — OpenAI API Docs / OpenAI API — Docs
+- [Computer use 计算机使用](/mirror/api/docs/guides/tools-computer-use) — OpenAI API Docs / OpenAI API — Docs
 - [为 AWS 配置工作负载身份联合](/mirror/api/docs/guides/workload-identity-federation/aws) — OpenAI API Docs / OpenAI API — Docs
 - [为 GitHub Actions 配置工作负载身份联合](/mirror/api/docs/guides/workload-identity-federation/github-actions) — OpenAI API Docs / OpenAI API — Docs
 - [为 Google Cloud 配置 workload identity federation](/mirror/api/docs/guides/workload-identity-federation/google-cloud) — OpenAI API Docs / OpenAI API — Docs
@@ -424,33 +424,33 @@
 - [深度研究](/mirror/api/docs/guides/deep-research) — OpenAI API Docs / OpenAI API — Docs
 - [弃用](/mirror/api/docs/deprecations) — OpenAI API Docs / OpenAI API — Docs
 - [开发者快速入门](/mirror/api/docs/quickstart) — OpenAI API Docs / OpenAI API — Docs
-- [Direct preference optimization](/mirror/api/docs/guides/direct-preference-optimization) — OpenAI API Docs / OpenAI API — Docs
-- [Error codes](/mirror/api/docs/guides/error-codes) — OpenAI API Docs / OpenAI API — Docs
+- [Direct preference optimization 直接偏好优化](/mirror/api/docs/guides/direct-preference-optimization) — OpenAI API Docs / OpenAI API — Docs
+- [错误代码](/mirror/api/docs/guides/error-codes) — OpenAI API Docs / OpenAI API — Docs
 - [评估 agent 工作流](/mirror/api/docs/guides/agent-evals) — OpenAI API Docs / OpenAI API — Docs
 - [评估 external model](/mirror/api/docs/guides/external-models) — OpenAI API Docs / OpenAI API — Docs
-- [Evaluation best practices](/mirror/api/docs/guides/evaluation-best-practices) — OpenAI API Docs / OpenAI API — Docs
+- [Evaluation best practices 评估最佳实践](/mirror/api/docs/guides/evaluation-best-practices) — OpenAI API Docs / OpenAI API — Docs
 - [文件输入](/mirror/api/docs/guides/file-inputs) — OpenAI API Docs / OpenAI API — Docs
-- [File Search](/mirror/api/docs/guides/tools-file-search) — OpenAI API Docs / OpenAI API — Docs
+- [文件搜索](/mirror/api/docs/guides/tools-file-search) — OpenAI API Docs / OpenAI API — Docs
 - [Fine-tuning 最佳实践](/mirror/api/docs/guides/fine-tuning-best-practices) — OpenAI API Docs / OpenAI API — Docs
-- [Flex processing](/mirror/api/docs/guides/flex-processing) — OpenAI API Docs / OpenAI API — Docs
+- [Flex processing 弹性处理](/mirror/api/docs/guides/flex-processing) — OpenAI API Docs / OpenAI API — Docs
 - [Frontend prompt 指令](/mirror/api/docs/guides/frontend-prompt) — OpenAI API Docs / OpenAI API — Docs
-- [Function calling](/mirror/api/docs/guides/function-calling) — OpenAI API Docs / OpenAI API — Docs
+- [Function calling 函数调用](/mirror/api/docs/guides/function-calling) — OpenAI API Docs / OpenAI API — Docs
 - [数据集入门](/mirror/api/docs/guides/evaluation-getting-started) — OpenAI API Docs / OpenAI API — Docs
 - [GPT Actions 入门](/mirror/api/docs/actions/getting-started) — OpenAI API Docs / OpenAI API — Docs
-- [GPT Action authentication](/mirror/api/docs/actions/authentication) — OpenAI API Docs / OpenAI API — Docs
-- [GPT Actions](/mirror/api/docs/actions/introduction) — OpenAI API Docs / OpenAI API — Docs
-- [GPT Actions library](/mirror/api/docs/actions/actions-library) — OpenAI API Docs / OpenAI API — Docs
+- [GPT Action authentication 身份验证](/mirror/api/docs/actions/authentication) — OpenAI API Docs / OpenAI API — Docs
+- [GPT Actions 概览](/mirror/api/docs/actions/introduction) — OpenAI API Docs / OpenAI API — Docs
+- [GPT Actions library 操作库](/mirror/api/docs/actions/actions-library) — OpenAI API Docs / OpenAI API — Docs
 - [GPT 发布说明](/mirror/api/docs/gpts/release-notes) — OpenAI API Docs / OpenAI API — Docs
-- [Graders](/mirror/api/docs/guides/graders) — OpenAI API Docs / OpenAI API — Docs
+- [Graders 评分器](/mirror/api/docs/guides/graders) — OpenAI API Docs / OpenAI API — Docs
 - [Guardrails 和人工审核](/mirror/api/docs/guides/agents/guardrails-approvals) — OpenAI API Docs / OpenAI API — Docs
-- [Image generation](/mirror/api/docs/guides/image-generation) — OpenAI API Docs / OpenAI API — Docs
+- [Image generation 图像生成](/mirror/api/docs/guides/image-generation) — OpenAI API Docs / OpenAI API — Docs
 - [图像生成](/mirror/api/docs/guides/tools-image-generation) — OpenAI API Docs / OpenAI API — Docs
 - [图像与视觉](/mirror/api/docs/guides/images-vision) — OpenAI API Docs / OpenAI API — Docs
 - [集成与可观测性](/mirror/api/docs/guides/agents/integrations-observability) — OpenAI API Docs / OpenAI API — Docs
 - [IP 出站范围](/mirror/api/docs/guides/ip-addresses) — OpenAI API Docs / OpenAI API — Docs
 - [核心概念](/mirror/api/docs/concepts) — OpenAI API Docs / OpenAI API — Docs
 - [延迟优化](/mirror/api/docs/guides/latency-optimization) — OpenAI API Docs / OpenAI API — Docs
-- [Local shell](/mirror/api/docs/guides/tools-local-shell) — OpenAI API Docs / OpenAI API — Docs
+- [Local shell 本地 Shell](/mirror/api/docs/guides/tools-local-shell) — OpenAI API Docs / OpenAI API — Docs
 - [在 OpenAI 平台中管理权限](/mirror/api/docs/guides/rbac) — OpenAI API Docs / OpenAI API — Docs
 - [管理成本](/mirror/api/docs/guides/realtime-costs) — OpenAI API Docs / OpenAI API — Docs
 - [MCP 和 Connectors](/mirror/api/docs/guides/tools-connectors-mcp) — OpenAI API Docs / OpenAI API — Docs
@@ -461,20 +461,20 @@
 - [模型优化](/mirror/api/docs/guides/model-optimization) — OpenAI API Docs / OpenAI API — Docs
 - [模型选择](/mirror/api/docs/guides/model-selection) — OpenAI API Docs / OpenAI API — Docs
 - [Models 和 providers](/mirror/api/docs/guides/agents/models) — OpenAI API Docs / OpenAI API — Docs
-- [Moderation](/mirror/api/docs/guides/moderation) — OpenAI API Docs / OpenAI API — Docs
-- [Node reference](/mirror/api/docs/guides/node-reference) — OpenAI API Docs / OpenAI API — Docs
-- [OpenAI CLI](/mirror/api/docs/libraries/openai-cli) — OpenAI API Docs / OpenAI API — Docs
+- [Moderation 内容审核](/mirror/api/docs/guides/moderation) — OpenAI API Docs / OpenAI API — Docs
+- [Node reference 节点参考](/mirror/api/docs/guides/node-reference) — OpenAI API Docs / OpenAI API — Docs
+- [OpenAI CLI 命令行](/mirror/api/docs/libraries/openai-cli) — OpenAI API Docs / OpenAI API — Docs
 - [Amazon Bedrock 中的 OpenAI 模型](/mirror/api/docs/guides/amazon-bedrock) — OpenAI API Docs / OpenAI API — Docs
 - [优化 LLM 准确率](/mirror/api/docs/guides/optimizing-llm-accuracy) — OpenAI API Docs / OpenAI API — Docs
 - [Orchestration 与 handoffs](/mirror/api/docs/guides/agents/orchestration) — OpenAI API Docs / OpenAI API — Docs
 - [OpenAI Crawlers 概览](/mirror/api/docs/bots) — OpenAI API Docs / OpenAI API — Docs
-- [Predicted Outputs](/mirror/api/docs/guides/predicted-outputs) — OpenAI API Docs / OpenAI API — Docs
+- [Predicted Outputs 预测输出](/mirror/api/docs/guides/predicted-outputs) — OpenAI API Docs / OpenAI API — Docs
 - [定价](/mirror/api/docs/pricing) — OpenAI API Docs / OpenAI API — Docs
-- [Priority processing](/mirror/api/docs/guides/priority-processing) — OpenAI API Docs / OpenAI API — Docs
+- [Priority processing 优先处理](/mirror/api/docs/guides/priority-processing) — OpenAI API Docs / OpenAI API — Docs
 - [生产最佳实践](/mirror/api/docs/guides/production-best-practices) — OpenAI API Docs / OpenAI API — Docs
 - [GPT Actions 的生产说明](/mirror/api/docs/actions/production) — OpenAI API Docs / OpenAI API — Docs
-- [Prompt caching](/mirror/api/docs/guides/prompt-caching) — OpenAI API Docs / OpenAI API — Docs
-- [Prompt engineering](/mirror/api/docs/guides/prompt-engineering) — OpenAI API Docs / OpenAI API — Docs
+- [Prompt caching 提示词缓存](/mirror/api/docs/guides/prompt-caching) — OpenAI API Docs / OpenAI API — Docs
+- [Prompt engineering 提示词工程](/mirror/api/docs/guides/prompt-engineering) — OpenAI API Docs / OpenAI API — Docs
 - [提示词生成](/mirror/api/docs/guides/prompt-generation) — OpenAI API Docs / OpenAI API — Docs
 - [GPT-5.5 提示词指南](/mirror/api/docs/guides/prompt-guidance) — OpenAI API Docs / OpenAI API — Docs
 - [提示词优化器](/mirror/api/docs/guides/prompt-optimizer) — OpenAI API Docs / OpenAI API — Docs
@@ -490,22 +490,22 @@
 - [Realtime 翻译](/mirror/api/docs/guides/realtime-translation) — OpenAI API Docs / OpenAI API — Docs
 - [Realtime 与工具](/mirror/api/docs/guides/realtime-mcp) — OpenAI API Docs / OpenAI API — Docs
 - [Reasoning 最佳实践](/mirror/api/docs/guides/reasoning-best-practices) — OpenAI API Docs / OpenAI API — Docs
-- [Reasoning models](/mirror/api/docs/guides/reasoning) — OpenAI API Docs / OpenAI API — Docs
-- [Red teaming](/mirror/api/docs/guides/red-teaming) — OpenAI API Docs / OpenAI API — Docs
-- [Reinforcement fine-tuning](/mirror/api/docs/guides/reinforcement-fine-tuning) — OpenAI API Docs / OpenAI API — Docs
+- [Reasoning models 推理模型](/mirror/api/docs/guides/reasoning) — OpenAI API Docs / OpenAI API — Docs
+- [Red teaming 红队测试](/mirror/api/docs/guides/red-teaming) — OpenAI API Docs / OpenAI API — Docs
+- [Reinforcement fine-tuning 强化微调](/mirror/api/docs/guides/reinforcement-fine-tuning) — OpenAI API Docs / OpenAI API — Docs
 - [Reinforcement fine-tuning 使用场景](/mirror/api/docs/guides/rft-use-cases) — OpenAI API Docs / OpenAI API — Docs
 - [结果和状态](/mirror/api/docs/guides/agents/results) — OpenAI API Docs / OpenAI API — Docs
-- [Retrieval](/mirror/api/docs/guides/retrieval) — OpenAI API Docs / OpenAI API — Docs
+- [检索](/mirror/api/docs/guides/retrieval) — OpenAI API Docs / OpenAI API — Docs
 - [运行 agents](/mirror/api/docs/guides/agents/running-agents) — OpenAI API Docs / OpenAI API — Docs
 - [安全最佳实践](/mirror/api/docs/guides/safety-best-practices) — OpenAI API Docs / OpenAI API — Docs
-- [Safety checks](/mirror/api/docs/guides/safety-checks) — OpenAI API Docs / OpenAI API — Docs
+- [Safety checks 安全检查](/mirror/api/docs/guides/safety-checks) — OpenAI API Docs / OpenAI API — Docs
 - [构建 agents 时的安全](/mirror/api/docs/guides/agent-builder-safety) — OpenAI API Docs / OpenAI API — Docs
-- [Sandbox Agents](/mirror/api/docs/guides/agents/sandboxes) — OpenAI API Docs / OpenAI API — Docs
+- [Sandbox Agents 沙盒智能体](/mirror/api/docs/guides/agents/sandboxes) — OpenAI API Docs / OpenAI API — Docs
 - [SDKs 和 CLI](/mirror/api/docs/libraries) — OpenAI API Docs / OpenAI API — Docs
-- [Secure MCP Tunnel](/mirror/api/docs/guides/secure-mcp-tunnels) — OpenAI API Docs / OpenAI API — Docs
+- [Secure MCP Tunnel 安全 MCP 隧道](/mirror/api/docs/guides/secure-mcp-tunnels) — OpenAI API Docs / OpenAI API — Docs
 - [使用 GPT Actions 发送和返回文件](/mirror/api/docs/actions/sending-files) — OpenAI API Docs / OpenAI API — Docs
-- [Shell](/mirror/api/docs/guides/tools-shell) — OpenAI API Docs / OpenAI API — Docs
-- [Skills](/mirror/api/docs/guides/tools-skills) — OpenAI API Docs / OpenAI API — Docs
+- [Shell 工具](/mirror/api/docs/guides/tools-shell) — OpenAI API Docs / OpenAI API — Docs
+- [Skills 技能](/mirror/api/docs/guides/tools-skills) — OpenAI API Docs / OpenAI API — Docs
 - [语音转文本](/mirror/api/docs/guides/speech-to-text) — OpenAI API Docs / OpenAI API — Docs
 - [流式传输 API 响应](/mirror/api/docs/guides/streaming-responses) — OpenAI API Docs / OpenAI API — Docs
 - [结构化模型输出](/mirror/api/docs/guides/structured-outputs) — OpenAI API Docs / OpenAI API — Docs
@@ -514,26 +514,26 @@
 - [文本生成](/mirror/api/docs/guides/text) — OpenAI API Docs / OpenAI API — Docs
 - [文本转语音](/mirror/api/docs/guides/text-to-speech) — OpenAI API Docs / OpenAI API — Docs
 - [ChatKit 中的主题和自定义](/mirror/api/docs/guides/chatkit-themes) — OpenAI API Docs / OpenAI API — Docs
-- [Tool search](/mirror/api/docs/guides/tools-tool-search) — OpenAI API Docs / OpenAI API — Docs
-- [Trace grading](/mirror/api/docs/guides/trace-grading) — OpenAI API Docs / OpenAI API — Docs
+- [Tool search 工具搜索](/mirror/api/docs/guides/tools-tool-search) — OpenAI API Docs / OpenAI API — Docs
+- [Trace grading 轨迹评分](/mirror/api/docs/guides/trace-grading) — OpenAI API Docs / OpenAI API — Docs
 - [UI Kit 演示](/mirror/api/docs/ui-kit-demo) — OpenAI API Docs / OpenAI API — Docs
 - [未满 18 岁 API 指引](/mirror/api/docs/guides/safety-checks/under-18-api-guidance) — OpenAI API Docs / OpenAI API — Docs
 - [升级到 GPT-5.4](/mirror/api/docs/guides/upgrading-to-gpt-5p4) — OpenAI API Docs / OpenAI API — Docs
 - [升级到 GPT-5.5](/mirror/api/docs/guides/upgrading-to-gpt-5p5) — OpenAI API Docs / OpenAI API — Docs
 - [使用 GPT-5.5](/mirror/api/docs/guides/latest-model) — OpenAI API Docs / OpenAI API — Docs
-- [使用 realtime 模型](/mirror/api/docs/guides/realtime-models-prompting) — OpenAI API Docs / OpenAI API — Docs
+- [使用 Realtime 模型](/mirror/api/docs/guides/realtime-models-prompting) — OpenAI API Docs / OpenAI API — Docs
 - [使用工具](/mirror/api/docs/guides/tools) — OpenAI API Docs / OpenAI API — Docs
 - [向量 embeddings](/mirror/api/docs/guides/embeddings) — OpenAI API Docs / OpenAI API — Docs
 - [使用 Sora 生成视频](/mirror/api/docs/guides/video-generation) — OpenAI API Docs / OpenAI API — Docs
-- [Vision fine-tuning](/mirror/api/docs/guides/vision-fine-tuning) — OpenAI API Docs / OpenAI API — Docs
+- [Vision fine-tuning 视觉微调](/mirror/api/docs/guides/vision-fine-tuning) — OpenAI API Docs / OpenAI API — Docs
 - [语音活动检测（VAD）](/mirror/api/docs/guides/realtime-vad) — OpenAI API Docs / OpenAI API — Docs
 - [语音 agents](/mirror/api/docs/guides/voice-agents) — OpenAI API Docs / OpenAI API — Docs
 - [使用 embeddings 进行网页问答](/mirror/api/docs/tutorials/web-qa-embeddings) — OpenAI API Docs / OpenAI API — Docs
-- [Web search](/mirror/api/docs/guides/tools-web-search) — OpenAI API Docs / OpenAI API — Docs
-- [Webhooks](/mirror/api/docs/guides/webhooks) — OpenAI API Docs / OpenAI API — Docs
+- [Web search 网页搜索](/mirror/api/docs/guides/tools-web-search) — OpenAI API Docs / OpenAI API — Docs
+- [Webhooks 网络钩子](/mirror/api/docs/guides/webhooks) — OpenAI API Docs / OpenAI API — Docs
 - [Webhooks 和服务端控制](/mirror/api/docs/guides/realtime-server-controls) — OpenAI API Docs / OpenAI API — Docs
 - [WebSocket 模式](/mirror/api/docs/guides/websocket-mode) — OpenAI API Docs / OpenAI API — Docs
 - [使用 evals](/mirror/api/docs/guides/evals) — OpenAI API Docs / OpenAI API — Docs
-- [Workload identity federation](/mirror/api/docs/guides/workload-identity-federation) — OpenAI API Docs / OpenAI API — Docs
-- [使用 Workspace Agent access tokens 进行认证](/mirror/workspace-agents/authentication) — Workspace Agents / Workspace Agents — Authentication
-- [触发 workspace agent runs](/mirror/workspace-agents/trigger-runs) — Workspace Agents / Workspace Agents — Trigger Runs
+- [Workload identity federation 工作负载身份联合](/mirror/api/docs/guides/workload-identity-federation) — OpenAI API Docs / OpenAI API — Docs
+- [使用 Workspace Agent 访问令牌进行认证](/mirror/workspace-agents/authentication) — Workspace Agents / Workspace Agents — Authentication
+- [触发 Workspace Agent 运行](/mirror/workspace-agents/trigger-runs) — Workspace Agents / Workspace Agents — Trigger Runs

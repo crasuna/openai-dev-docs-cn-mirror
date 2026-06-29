@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T10:24:24.269Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Trace grading
+# Trace grading 轨迹评分
 
 Trace grading 是为 agent 的 trace（也就是决策、工具调用和推理步骤的端到端日志）分配结构化分数或标签的过程，用于评估正确性、质量或是否符合预期。这些标注有助于识别 agent 哪里做得好、哪里出错，从而有针对性地改进编排或行为。
 

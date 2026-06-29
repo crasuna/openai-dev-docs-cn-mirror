@@ -7,10 +7,10 @@ translatedAt: "2026-06-27T18:56:06.0289556+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Organization Audit Logs Usage
+# Organization Audit Logs Usage 用量
 
-OpenAI API endpoint reference。
+OpenAI API 端点参考。
 
-规范 reference URL：https://developers.openai.com/api/reference/resources/organization/subresources/audit_logs/subresources/usage
+规范参考 URL：https://developers.openai.com/api/reference/resources/organization/subresources/audit_logs/subresources/usage
 
-此 API reference 页面由 Stainless 生成。
+此 API 参考页面由 Stainless 生成。

@@ -1,10 +1,10 @@
 ---
-title: "Containers"
+title: "Containers 容器"
 description: "OpenAI API endpoint reference."
 outline: deep
 ---
 
-# Containers
+# Containers 容器
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  
@@ -24,9 +24,9 @@ outline: deep
 :::
 
 ::: v-pre
-OpenAI API endpoint 参考。
+OpenAI API 端点参考。
 
-规范参考 URL: https://developers.openai.com/api/reference/resources/containers
+规范参考 URL：https://developers.openai.com/api/reference/resources/containers
 
 此 API 参考页面由 Stainless 生成。
 

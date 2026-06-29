@@ -1,10 +1,10 @@
 ---
-title: "Realtime Calls"
+title: "Realtime Calls 通话"
 description: "OpenAI API endpoint reference."
 outline: deep
 ---
 
-# Realtime Calls
+# Realtime Calls 通话
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  
@@ -24,7 +24,7 @@ outline: deep
 :::
 
 ::: v-pre
-OpenAI API endpoint 参考。
+OpenAI API 端点参考。
 
 规范参考 URL：https://developers.openai.com/api/reference/resources/realtime/subresources/calls
 

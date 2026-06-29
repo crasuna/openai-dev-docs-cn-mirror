@@ -1,10 +1,10 @@
 ---
-title: "Beta Threads Runs"
+title: "Beta Threads Runs 运行"
 description: "OpenAI API endpoint reference."
 outline: deep
 ---
 
-# Beta Threads Runs
+# Beta Threads Runs 运行
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  
@@ -24,9 +24,9 @@ outline: deep
 :::
 
 ::: v-pre
-OpenAI API endpoint 参考。
+OpenAI API 端点参考。
 
-规范参考 URL: https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/runs
+规范参考 URL：https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/runs
 
 此 API 参考页面由 Stainless 生成。
 

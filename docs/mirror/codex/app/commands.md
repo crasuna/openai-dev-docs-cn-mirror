@@ -1,10 +1,10 @@
 ---
-title: "Codex app commands"
+title: "Codex app 命令"
 description: "Reference for Codex app commands and keyboard shortcuts"
 outline: deep
 ---
 
-# Codex app commands
+# Codex app 命令
 
 **文档集**：Codex  
 **分组**：Codex — App  

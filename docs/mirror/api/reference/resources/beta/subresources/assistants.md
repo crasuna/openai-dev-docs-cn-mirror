@@ -1,10 +1,10 @@
 ---
-title: "Beta Assistants"
+title: "Beta Assistants 助手"
 description: "OpenAI API endpoint reference."
 outline: deep
 ---
 
-# Beta Assistants
+# Beta Assistants 助手
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  
@@ -24,11 +24,11 @@ outline: deep
 :::
 
 ::: v-pre
-OpenAI API endpoint reference。
+OpenAI API 端点参考。
 
-规范 reference URL：https://developers.openai.com/api/reference/resources/beta/subresources/assistants
+规范参考 URL：https://developers.openai.com/api/reference/resources/beta/subresources/assistants
 
-此 API reference 页面由 Stainless 生成。
+此 API 参考页面由 Stainless 生成。
 
 :::
 

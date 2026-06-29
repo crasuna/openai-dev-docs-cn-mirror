@@ -1,10 +1,10 @@
 ---
-title: "Codex Chrome extension"
+title: "Codex Chrome 扩展"
 description: "Use Chrome with Codex while managing browser permissions, website approvals, and browsing data"
 outline: deep
 ---
 
-# Codex Chrome extension
+# Codex Chrome 扩展
 
 **文档集**：Codex  
 **分组**：Codex — App  

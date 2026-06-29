@@ -77,4 +77,4 @@ Please help me convert this workflow into an agent:
 - [Safety in building agents](https://developers.openai.com/api/docs/guides/agent-builder-safety)
 - [Agents SDK overview](https://developers.openai.com/api/docs/guides/agents)
 - [Agents SDK quickstart](https://developers.openai.com/api/docs/guides/agents/quickstart)
-- [Build workspace agents in ChatGPT for repeatable work](https://developers.openai.com/cookbook/articles/chatgpt-agents-sales-meeting-prep)
+- [在 ChatGPT 中构建 workspace agents，用于可重复工作](https://developers.openai.com/cookbook/articles/chatgpt-agents-sales-meeting-prep)

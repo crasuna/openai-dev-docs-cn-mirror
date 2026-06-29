@@ -1,10 +1,10 @@
 ---
-title: "Agent Builder"
+title: "Agent Builder 智能体构建器"
 description: "Use the OpenAI Agent Builder to start from templates, compose nodes, preview runs, and export workflows to code."
 outline: deep
 ---
 
-# Agent Builder
+# Agent Builder 智能体构建器
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

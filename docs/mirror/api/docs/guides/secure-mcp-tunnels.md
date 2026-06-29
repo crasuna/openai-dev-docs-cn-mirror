@@ -1,10 +1,10 @@
 ---
-title: "Secure MCP Tunnel"
+title: "Secure MCP Tunnel 安全 MCP 隧道"
 description: "Connect private or on-prem MCP servers to supported OpenAI products with an outbound-only MCP tunnel, without exposing them to the public internet."
 outline: deep
 ---
 
-# Secure MCP Tunnel
+# Secure MCP Tunnel 安全 MCP 隧道
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

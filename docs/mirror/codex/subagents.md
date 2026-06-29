@@ -1,10 +1,10 @@
 ---
-title: "Subagents"
+title: "Subagents 子代理"
 description: "Use subagents and custom agents in Codex"
 outline: deep
 ---
 
-# Subagents
+# Subagents 子代理
 
 **文档集**：Codex  
 **分组**：Codex — Subagents  

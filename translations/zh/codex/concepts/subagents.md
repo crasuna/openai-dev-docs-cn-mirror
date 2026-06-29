@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T11:05:32.948Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Subagents
+# Subagents 子代理
 
 Codex 可以通过并行启动专门的 agents 来运行 subagent workflows，让它们并发探索、处理或分析工作。
 

@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T18:24:42.5859087+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Sandbox Agents
+# Sandbox Agents 沙盒智能体
 
 Sandbox 为 agent 提供隔离的类 Unix 执行环境，其中包含 filesystem、shell、已安装 packages、mounted data、exposed ports、snapshots，以及对外部系统的受控访问。
 

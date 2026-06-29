@@ -1,10 +1,10 @@
 ---
-title: "Memories"
+title: "Memories 记忆"
 description: "How Codex carries useful context forward across threads"
 outline: deep
 ---
 
-# Memories
+# Memories 记忆
 
 **文档集**：Codex  
 **分组**：Codex — Memories  

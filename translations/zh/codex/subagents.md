@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:34:30.6847913+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Subagents
+# Subagents 子代理
 
 Codex 可以通过并行生成 specialized agents，然后在一个 response 中汇总结果，来运行 subagent workflows。这对于高度并行的复杂任务特别有帮助，例如 codebase exploration 或实现多步骤 feature plan。
 

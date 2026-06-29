@@ -7,7 +7,7 @@ translatedAt: 2026-06-27T17:13:53.3182238+08:00
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Code Interpreter
+# Code Interpreter 代码解释器
 
 Code Interpreter 工具允许模型在沙盒环境中编写并运行 Python 代码，以解决数据分析、编码和数学等领域的复杂问题。可将其用于：
 

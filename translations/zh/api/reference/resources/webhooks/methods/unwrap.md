@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T11:05:57.267Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Unwrap
+# Webhooks — 解包
 
 Unwrap 是官方 SDK 中提供的便捷 helper，可在一次调用中验证 webhook 签名并解析 JSON payload。使用 `client.webhooks.unwrap(body, headers, options?)` 可在一次调用中验证签名并解析 JSON payload。端到端 webhook 示例见 [Webhooks 指南](https://developers.openai.com/api/docs/guides/webhooks)。
 

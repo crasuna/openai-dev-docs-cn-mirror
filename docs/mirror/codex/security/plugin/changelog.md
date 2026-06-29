@@ -1,10 +1,10 @@
 ---
-title: "Codex Security plugin changelog"
+title: "Codex Security plugin 变更日志"
 description: "Notable user-facing changes to the Codex Security plugin."
 outline: deep
 ---
 
-# Codex Security plugin changelog
+# Codex Security plugin 变更日志
 
 **文档集**：Codex  
 **分组**：Codex — Security  

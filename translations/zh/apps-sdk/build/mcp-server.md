@@ -15,7 +15,7 @@ translator: codex-gpt-5.5-xhigh
 
 ## 概览
 
-### MCP server 为你的 app 做什么
+### MCP server 为你的应用做什么
 
 ChatGPT Apps 有三个组件：
 
@@ -189,7 +189,7 @@ contents: [{ uri: "ui://widget/kanban-board-v2.html" /* ... */ }];
 
 如果你频繁发布更新，请保持简短、一致的 versioning scheme，这样你可以 roll forward（或 back）而不复用同一个 URI。
 
-### Step 2 – 描述 tools
+### Step 2 – 描述工具
 
 Tools 是模型推理所依据的 contract。为每个用户意图定义一个 tool（例如 `list_tasks`、`update_task`）。每个 descriptor 应包含：
 
@@ -248,7 +248,7 @@ registerAppTool(
 );
 ```
 
-#### Memory 和 tool calls
+#### 记忆和工具调用
 
 Memory 由用户控制，并由模型中介：模型在选择或参数化 tool call 时决定是否以及如何使用它。默认情况下，apps 的 memories 处于关闭状态。用户可以为 app 启用或禁用 memory。Apps 不会收到单独的 memory feed；它们只能看到模型包含在 tool inputs 中的内容。当 memory 关闭时，请求会在没有 memory 的模型上下文中重新评估。
 
@@ -398,7 +398,7 @@ window.addEventListener(
 );
 ```
 
-## Troubleshooting
+## 故障排查
 
 - **Widget doesn’t render** – 确保 template resource 返回 `mimeType: "text/html;profile=mcp-app"`，且 bundled JS/CSS URLs 能在 sandbox 内解析。
 - **No `ui/*` messages arrive** – host 只会为 `text/html;profile=mcp-app` resources 启用 MCP Apps bridge；请仔细检查 MIME type，并确认 widget 已加载且没有 CSP violations。
@@ -410,7 +410,7 @@ window.addEventListener(
 
 ## 高级能力
 
-### Component-initiated tool calls
+### 组件发起的工具调用
 
 使用 `tools/call` 直接从 UI 调用 tools。默认情况下，tools 同时可供模型和 UI 使用。使用 `_meta.ui.visibility` 限制工具可用位置。
 
@@ -423,7 +423,7 @@ window.addEventListener(
 }
 ```
 
-#### Tool visibility
+#### 工具可见性
 
 若要让工具可从 UI 调用但对模型隐藏，请将 `_meta.ui.visibility` 设为 `["app"]`。这会让工具通过 `tools/call` 对 widget 可用，同时不影响模型的 tool selection。
 
@@ -436,7 +436,7 @@ window.addEventListener(
 }
 ```
 
-### Tool annotations 和 elicitation
+### 工具注解和 elicitation
 
 MCP tools 必须包含描述工具 _potential impact_ 的 [`tool annotations`](https://modelcontextprotocol.io/legacy/concepts/tools#tool-annotations)。这些 hints 是 tool definitions 的必需项。
 
@@ -551,7 +551,7 @@ registerAppTool(
 
 ChatGPT 还支持作为 MCP [`resource_link`](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#resource-links) content 返回的可下载文件。对于应作为下载暴露给用户的 file outputs，请使用此方式。对于直接 web downloads，请按 MCP 定义返回 [`https://`](https://modelcontextprotocol.io/specification/2025-06-18/server/resources#https) resource URI。ChatGPT 会在为用户下载该文件前引发用户批准。
 
-### Content security policy（CSP）
+### 内容安全策略（CSP）
 
 在 widget resource 上设置 `_meta.ui.csp`，让 sandbox 知道应为 `connect-src`、`img-src`、`frame-src` 等允许哪些 domains。这是 broad distribution 前的必需项。
 
@@ -575,7 +575,7 @@ ChatGPT 还支持作为 MCP [`resource_link`](https://modelcontextprotocol.io/sp
 
 注意：不鼓励使用 `frameDomains`，且只应在嵌入 iframes 是你体验核心时使用（例如 code editor 或 notebook environment）。声明 `frameDomains` 的 apps 在审核时会受到更高审查，并且很可能被拒绝或延后广泛分发。
 
-### Widget domains
+### Widget domain
 
 在 widget resource template（`registerAppResource` template）上设置 `_meta.ui.domain`。这是 app submission 的必需项，并且每个 app 必须唯一。ChatGPT 会在 `<domain>.web-sandbox.oaiusercontent.com` 下渲染 widget，这也会启用 fullscreen punch-out button。
 
@@ -591,7 +591,7 @@ ChatGPT 还支持作为 MCP [`resource_link`](https://modelcontextprotocol.io/sp
 }
 ```
 
-### Component descriptions
+### 组件描述
 
 **ChatGPT extension（可选）：** 在 widget resource 上设置 `_meta["openai/widgetDescription"]`，让 widget 描述自己，从而减少 widget 下方的冗余文本。
 
@@ -612,7 +612,7 @@ ChatGPT 还支持作为 MCP [`resource_link`](https://modelcontextprotocol.io/sp
 
 ChatGPT 会在 client request 中通过 `_meta["openai/locale"]`（以及 legacy key `_meta["webplus/i18n"]`）发送请求的 locale。使用 RFC 4647 matching 选择最接近的 supported locale，在响应中回显它，并相应格式化 numbers/dates。
 
-### Client context hints
+### Client context hint
 
 ChatGPT 也可能在 client request metadata 中发送 `_meta["openai/userAgent"]` 和 `_meta["openai/userLocation"]` 等 hints。这些对调整 analytics 或 formatting 可能有帮助，但 **绝不要** 依赖它们进行 authorization。请将 `_meta["openai/userAgent"]` 视为可选、best-effort metadata，而不是检测哪个 host surface 正在调用 server 的稳定方式。
 

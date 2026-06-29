@@ -1,10 +1,10 @@
 ---
-title: "Image tag"
+title: "Image tag（图片标签）"
 description: "Send conversion events from HTML without JavaScript."
 outline: deep
 ---
 
-# Image tag
+# Image tag（图片标签）
 
 **文档集**：Ads  
 **分组**：Ads — Image Tag  
@@ -24,7 +24,7 @@ outline: deep
 :::
 
 ::: v-pre
-使用 image tag 在页面加载时发送网站 conversion，而不运行 JavaScript。每个 image request 会发送一个 event。
+使用 image tag 在页面加载时发送网站 conversion，而不运行 JavaScript。每个图片请求会发送一个 event。
 
 对于页面加载后由点击、表单提交或其他交互触发的 events，请使用 [JavaScript Pixel](/mirror/ads/measurement-pixel)。当你可以从服务器发送 event 时，请使用 [Conversions API](/mirror/ads/conversions-api)。
 
@@ -117,17 +117,17 @@ outline: deep
 
 Custom event names 必须为 1 到 64 个字符，只能包含字母、数字、下划线或连字符，并且以字母或数字开头和结尾。Custom event name 不能匹配标准 event name。为保持一致性，请使用小写名称。
 
-## Parameters
+## 参数
 
-| Parameter           | Required | What to send |
+| 参数                | 是否必填 | 发送内容 |
 | ------------------- | -------- | ------------ |
-| `pid`               | Yes      | 你的 Pixel ID。 |
-| `event`             | Yes      | 一个[受支持的 event name](/mirror/ads/supported-events)，或 `custom`。 |
-| `custom_event_name` | Depends  | 当 `event=custom` 时必填。标准 events 请省略它。 |
-| `event_id`          | No       | 唯一去重 ID。仅在重试或通过其他 channel 发送同一个 conversion 时复用。 |
-| `oppref`            | No       | OpenAI 提供的隐私保护归因标识符。 |
-| `data[type]`        | Yes      | event 所需的 [data type](/mirror/ads/supported-events#event-data-shapes)。 |
-| `data[&lt;field&gt;]`     | No       | 所选 data type 文档中说明的任何字段。OpenAI 会拒绝未知字段。 |
+| `pid`               | 是 | 你的 Pixel ID。 |
+| `event`             | 是 | 一个[受支持的 event name](/mirror/ads/supported-events)，或 `custom`。 |
+| `custom_event_name` | 视情况而定 | 当 `event=custom` 时必填。标准 events 请省略它。 |
+| `event_id`          | 否 | 唯一去重 ID。仅在重试或通过其他 channel 发送同一个 conversion 时复用。 |
+| `oppref`            | 否 | OpenAI 提供的隐私保护归因标识符。 |
+| `data[type]`        | 是 | event 所需的 [data type](/mirror/ads/supported-events#event-data-shapes)。 |
+| `data[&lt;field&gt;]`     | 否 | 所选 data type 文档中说明的任何字段。OpenAI 会拒绝未知字段。 |
 
 每个参数最多提供一次。Amounts 和 quantities 是整数。如果包含 `data[amount]`，还要包含 `data[currency]`，其值应为三字母 ISO 4217 代码，例如 `USD`。
 
@@ -153,7 +153,7 @@ curl --get --silent --show-error \
 200 image/gif
 ```
 
-`200` 响应确认 OpenAI 已将 event 发布到其 ingestion pipeline。它并不确认下游 event processing 已完成。在浏览器中，请使用 Network panel 检查隐藏图片请求及其状态。
+`200` 响应确认 OpenAI 已将 event 发布到其 ingestion pipeline。它并不确认下游 event processing 已完成。在浏览器中，请使用 Network 面板检查隐藏图片请求及其状态。
 
 ## 限制
 

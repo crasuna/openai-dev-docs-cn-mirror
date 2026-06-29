@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T08:52:13.975Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# ChatGPT Developer mode
+# ChatGPT Developer mode 开发者模式
 
 <div class="not-prose mt-2 mb-6">
   <a

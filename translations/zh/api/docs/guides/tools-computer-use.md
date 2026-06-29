@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T18:23:34.8670908+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Computer use
+# Computer use 计算机使用
 
 Computer use 让模型能够通过用户界面操作软件。它可以查看截图、返回由你的代码执行的界面动作，或通过自定义 harness 工作，在其中混合使用对 UI 的视觉交互和程序化交互。
 

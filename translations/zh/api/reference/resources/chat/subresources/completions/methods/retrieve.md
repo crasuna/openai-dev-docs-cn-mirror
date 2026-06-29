@@ -9,8 +9,8 @@ translator: codex-gpt-5.5-xhigh
 
 # Chat Completions — 检索
 
-OpenAI API endpoint 方法参考。
+OpenAI API 端点方法参考。
 
-规范参考 URL: https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/retrieve
+规范参考 URL：https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/retrieve
 
 此 API 参考页面由 Stainless 生成。

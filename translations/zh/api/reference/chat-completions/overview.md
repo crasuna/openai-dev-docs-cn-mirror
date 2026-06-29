@@ -9,7 +9,7 @@ translator: codex-gpt-5.5-xhigh
 
 # Chat Completions 概览
 
-Chat Completions API endpoint 会根据构成一段对话的消息列表生成模型响应。
+Chat Completions API 端点会根据构成一段对话的消息列表生成模型响应。
 
 相关指南：
 

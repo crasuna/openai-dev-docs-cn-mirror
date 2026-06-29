@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:06:51.2133192+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Chronicle
+# Chronicle 编年记忆
 
 Chronicle 处于 **opt-in research preview**。它仅面向 macOS 上的 ChatGPT Pro 订阅者开放。启用前，请阅读 [Privacy and Security](#privacy-and-security) 部分了解详情并理解当前风险。
 

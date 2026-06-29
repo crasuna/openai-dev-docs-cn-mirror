@@ -1,10 +1,10 @@
 ---
-title: "Image generation"
+title: "Image generation 图像生成"
 description: "Learn how to generate or edit images with the OpenAI API and image generation models."
 outline: deep
 ---
 
-# Image generation
+# Image generation 图像生成
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

@@ -1,10 +1,10 @@
 ---
-title: "Organization Groups"
+title: "Organization Groups 组织组"
 description: "OpenAI API endpoint reference."
 outline: deep
 ---
 
-# Organization Groups
+# Organization Groups 组织组
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  
@@ -24,11 +24,11 @@ outline: deep
 :::
 
 ::: v-pre
-OpenAI API endpoint reference。
+OpenAI API 端点参考。
 
-规范 reference URL：https://developers.openai.com/api/reference/resources/organization/subresources/groups
+规范参考 URL：https://developers.openai.com/api/reference/resources/organization/subresources/groups
 
-此 API reference 页面由 Stainless 生成。
+此 API 参考页面由 Stainless 生成。
 
 :::
 

@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T11:05:32.948Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Cloud environments
+# Cloud 环境
 
 使用 environments 来控制 Codex 在 cloud tasks 中安装和运行什么。例如，你可以添加依赖、安装 linters 和 formatters 等工具，并设置环境变量。
 

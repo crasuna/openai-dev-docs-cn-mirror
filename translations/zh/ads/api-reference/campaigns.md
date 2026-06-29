@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:35:31.9333790+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Campaigns
+# Campaigns（广告活动）
 
 ## 列出 campaign
 
@@ -15,12 +15,12 @@ translator: codex-gpt-5.5-xhigh
 
 `GET /campaigns`
 
-| Parameter | Type    | Required | Notes |
+| 参数      | 类型    | 是否必填 | 说明 |
 | --------- | ------- | -------- | ----- |
-| `limit`   | integer | No       | 介于 `1` 和 `500` 之间。默认值为 20。 |
-| `after`   | string  | No       | 下一页的 cursor。 |
-| `before`  | string  | No       | 上一页的 cursor。 |
-| `order`   | string  | No       | `asc` 或 `desc`。 |
+| `limit`   | integer | 否 | 介于 `1` 和 `500` 之间。默认值为 20。 |
+| `after`   | string  | 否 | 下一页的 cursor。 |
+| `before`  | string  | 否 | 上一页的 cursor。 |
+| `order`   | string  | 否 | `asc` 或 `desc`。 |
 
 ```bash
 curl -X GET "https://api.ads.openai.com/v1/campaigns?limit=20&order=desc" \
@@ -65,16 +65,16 @@ curl -X GET "https://api.ads.openai.com/v1/campaigns?limit=20&order=desc" \
 
 `POST /campaigns`
 
-| Field                                | Type     | Required | Notes |
+| 字段                                 | 类型     | 是否必填 | 说明 |
 | ------------------------------------ | -------- | -------- | ----- |
-| `name`                               | string   | Yes      | `3` 到 `1000` 个字符，并且必须包含一个非空格字符。 |
-| `description`                        | string   | No       | Campaign 描述。 |
-| `start_time`                         | integer  | No       | 介于 `946684800` 和 `4102444800` 之间的 Unix timestamp。 |
-| `end_time`                           | integer  | No       | 介于 `946684800` 和 `4102444800` 之间的 Unix timestamp。 |
-| `status`                             | string   | Yes      | `active` 或 `paused`。 |
-| `budget.lifetime_spend_limit_micros` | integer  | Yes      | 最小值为 `1000000`。 |
-| `mode`                               | string   | No       | 设置为 `product_feed` 可创建 [product-feed campaign](https://developers.openai.com/ads/product-feeds)。 |
-| `targeting.locations.include`        | object[] | No       | 包含的位置 ID。 |
+| `name`                               | string   | 是 | `3` 到 `1000` 个字符，并且必须包含一个非空格字符。 |
+| `description`                        | string   | 否 | Campaign 描述。 |
+| `start_time`                         | integer  | 否 | 介于 `946684800` 和 `4102444800` 之间的 Unix timestamp。 |
+| `end_time`                           | integer  | 否 | 介于 `946684800` 和 `4102444800` 之间的 Unix timestamp。 |
+| `status`                             | string   | 是 | `active` 或 `paused`。 |
+| `budget.lifetime_spend_limit_micros` | integer  | 是 | 最小值为 `1000000`。 |
+| `mode`                               | string   | 否 | 设置为 `product_feed` 可创建 [product-feed campaign](https://developers.openai.com/ads/product-feeds)。 |
+| `targeting.locations.include`        | object[] | 否 | 包含的位置 ID。 |
 
 ```bash
 curl -X POST "https://api.ads.openai.com/v1/campaigns" \

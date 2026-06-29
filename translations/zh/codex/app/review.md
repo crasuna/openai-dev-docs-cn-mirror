@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T11:05:57.267Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Review
+# Review 代码审查
 
 Review pane 可帮助你理解 Codex 更改了什么、提供有针对性的 feedback，并决定保留什么。
 

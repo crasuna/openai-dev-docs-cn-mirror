@@ -1,10 +1,10 @@
 ---
-title: "Product Feed Spec"
+title: "Product Feed Spec（商品 Feed 规范）"
 description: "Provide a structured product feed so ChatGPT accurately indexes and displays your products with up-to-date price and availability."
 outline: deep
 ---
 
-# Product Feed Spec
+# Product Feed Spec（商品 Feed 规范）
 
 **文档集**：Commerce  
 **分组**：Agentic Commerce — Specs  
@@ -24,11 +24,11 @@ outline: deep
 :::
 
 ::: v-pre
-## Feed Reference
+## Feed 参考
 
 为了让你的产品能在 ChatGPT 中被发现，商家需要提供结构化 product feed file，供 OpenAI 摄取并索引。此 specification 定义了用于 file uploads 的 product schema：field names、data types、constraints，以及实现准确 discovery、pricing、availability 和 seller context 所需的 example values。
 
-下面的每个表格都会按 schema object 对 fields 分组，并标明 field 是 Required 还是 Optional，同时给出 validation rules，帮助你的 engineering team 构建并维护合规的 upload file。
+下面的每个表格都会按 schema object 对 fields 分组，并标明 field 是必填还是可选，同时给出 validation rules，帮助你的工程团队构建并维护合规的 upload file。
 
 提供所有 required fields 可确保你的产品正确显示，而 optional fields 会丰富 relevance 和 user trust。
 

@@ -1,10 +1,10 @@
 ---
-title: "Moderation"
+title: "Moderation 内容审核"
 description: "Learn how to identify harmful content in text and images with OpenAI moderation models."
 outline: deep
 ---
 
-# Moderation
+# Moderation 内容审核
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

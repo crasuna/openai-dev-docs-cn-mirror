@@ -1,10 +1,10 @@
 ---
-title: "Batch API"
+title: "Batch API 批处理 API"
 description: "Learn how to use OpenAI's Batch API for processing jobs with asynchronous requests, increased rate limits, and cost efficiency."
 outline: deep
 ---
 
-# Batch API
+# Batch API 批处理 API
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

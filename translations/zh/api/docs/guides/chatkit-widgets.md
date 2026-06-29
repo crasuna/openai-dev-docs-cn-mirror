@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T08:52:13.975Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# ChatKit widgets
+# ChatKit widgets 小组件
 
 Widgets 是 ChatKit 随附的容器和组件。你可以使用预构建 widgets、修改 templates，或设计自己的 widgets，以便在产品中完全自定义 ChatKit。
 

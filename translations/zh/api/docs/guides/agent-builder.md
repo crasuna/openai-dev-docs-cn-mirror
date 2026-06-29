@@ -7,7 +7,7 @@ translatedAt: 2026-06-27T16:52:06+08:00
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Agent Builder
+# Agent Builder 智能体构建器
 
 **Agent Builder** 是用于构建多步骤 agent 工作流的可视化画布。
 

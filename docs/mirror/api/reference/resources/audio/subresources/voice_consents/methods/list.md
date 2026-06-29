@@ -1,10 +1,10 @@
 ---
-title: "Audio Voice Consents — List"
+title: "Audio Voice Consents — 列出"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Audio Voice Consents — List
+# Audio Voice Consents — 列出
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  
@@ -24,11 +24,11 @@ outline: deep
 :::
 
 ::: v-pre
-OpenAI API endpoint method reference。
+OpenAI API 端点方法参考。
 
-规范 reference URL：https://developers.openai.com/api/reference/resources/audio/subresources/voice_consents/methods/list
+规范参考 URL：https://developers.openai.com/api/reference/resources/audio/subresources/voice_consents/methods/list
 
-此 API reference 页面由 Stainless 生成。
+此 API 参考页面由 Stainless 生成。
 
 :::
 

@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:07:21.7838419+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Codex App Server
+# Codex App Server 应用服务器
 
 Codex app-server 是 Codex 用来驱动富客户端（例如 Codex VS Code extension）的接口。当你想在自己的产品中进行深度集成时使用它：认证、对话历史、approvals，以及流式 agent events。app-server 实现在 Codex GitHub 仓库中开源（[openai/codex/codex-rs/app-server](https://github.com/openai/codex/tree/main/codex-rs/app-server)）。完整的开源 Codex 组件列表参见 [Open Source](https://developers.openai.com/codex/open-source) 页面。
 

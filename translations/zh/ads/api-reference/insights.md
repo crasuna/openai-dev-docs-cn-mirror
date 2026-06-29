@@ -7,13 +7,13 @@ translatedAt: "2026-06-27T19:35:31.9333790+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Insights
+# Insights（效果洞察）
 
-## Endpoint
+## Endpoint（端点）
 
 使用与你想获取结果的 scope 相匹配的 endpoint。每个 endpoint 都返回相同的顶层响应形状，其中包含适合该 scope 的 ID、metadata 和 metrics。
 
-| Endpoint                                |
+| 端点                                    |
 | --------------------------------------- |
 | `GET /ad_account/insights`              |
 | `GET /campaigns/{campaign_id}/insights` |
@@ -22,7 +22,7 @@ translator: codex-gpt-5.5-xhigh
 
 ## 术语
 
-| Term                             | Values | Meaning |
+| 术语                             | 取值 | 含义 |
 | -------------------------------- | ------ | ------- |
 | `{aggregation_level}`            | `ad_account`、`campaign`、`ad_group`、`ad` | 公共行实体。endpoint 设置 scope；`aggregation_level` 选择该 scope 内的行实体。 |
 | `time_granularity`               | `hourly`、`daily`、`monthly`、`none` | Bucket 大小。`none` 会针对完整请求窗口返回一个 bucket。 |
@@ -42,11 +42,11 @@ translator: codex-gpt-5.5-xhigh
 | `includes[]`                     | `zero_impression_items`、`zero_impression_products` | 可选的 zero-row 扩展。请参阅 [Includes](#includes) 了解每个值何时可用。 |
 | `time_ranges[].type`             | `unix_range`、`hour_range`、`date_range` | Time-range object 类型。`unix_range` 使用 Unix 秒形式的 `start` 和 `end`。`hour_range` 使用 `YYYY-MM-DDTHH` 形式的本地 `since` 和 `until` 值。`date_range` 使用 `YYYY-MM-DD` 形式的本地 `since` 和 `until` 值。`hour_range` 和 `date_range` 可以包含 IANA `timezone`；否则使用 ad account timezone。 |
 
-## Request parameters
+## 请求参数
 
 所有查询参数都是可选的。
 
-| Parameter                      | Type       | Value shape | Rules |
+| 参数                           | 类型       | 值形状 | 规则 |
 | ------------------------------ | ---------- | ----------- | ----- |
 | `time_granularity`             | `string`   | 一个 `time_granularity` 值 | 默认值为 `daily`。Bucket 行为请参阅 [Terminology](#术语)。 |
 | `aggregation_level`            | `string`   | 一个公共 `{aggregation_level}` | 设置 endpoint scope 内的行实体。每个 endpoint 支持自己的实体级别，以及 `ad_account` > `campaign` > `ad_group` > `ad` 层级中的更低级别。 |
@@ -61,59 +61,59 @@ translator: codex-gpt-5.5-xhigh
 | `before`                       | `string`   | 上一页 cursor | 按当前行顺序向后翻页。一次只发送一个 cursor；使用上一页的 `first_id`。 |
 | `after`                        | `string`   | 下一页 cursor | 按当前行顺序向前翻页。一次只发送一个 cursor；使用上一页的 `last_id`。 |
 
-### Projection
+### Projection（字段投影）
 
 Projection 控制返回的列，而不是行分组。将 `fields[]` 与上方的 canonical field names 一起使用。响应会将许多字段序列化为扁平 wire keys，例如 `campaign.id` 到 `campaign_id`、`metadata.readable_time` 到 `readable_time`，以及 `product.feed_id` 到 `product_feed_id`。
 
 如果省略 `fields[]`，响应默认返回 `impressions`；当 `time_granularity` 不是 `none` 时添加 `readable_time`；并添加行实体的默认名称，例如 `campaign_name` 或 `ad_name`。
 
-### Filters
+### Filters（过滤）
 
-| Parameter            | Value shape | Rules | Example |
+| 参数                 | 值形状 | 规则 | 示例 |
 | -------------------- | ----------- | ----- | ------- |
 | `filters[]`          | 带有 `field`、`operator`、`value` 的 JSON 编码对象 | 重复 `filters[]` 可将 filters 以 AND 组合。 | `{"field":"campaign.id","operator":"IN","value":["cmpn_101"]}` |
 | `filters[].field`    | 来自 [Terminology](#术语) 的一个 canonical field name | 字段必须对当前行形状有效。仅在精确 feed/item 对 filter 中使用 `product.feed_item_id`，并使用形如 `{"feed_id":"feed_1","item_id":"sku_1"}` 的 JSON-string `IN` 值。 | `campaign.id` 或 `ad.clicks` |
 | `filters[].operator` | `IN`、`GREATER_THAN`、`LESS_THAN` | 对 resource、segment 或 metadata 等值使用 `IN`。对数值 metadata 或 grouped metric 阈值使用 `GREATER_THAN` 或 `LESS_THAN`。 | `IN` 或 `GREATER_THAN` |
 | `filters[].value`    | 字符串数组或数字，取决于 operator | 值形状必须与 operator 匹配。 | `["cmpn_101"]` 或 `10` |
 
-### Sorts
+### Sorts（排序）
 
-| Parameter          | Value shape | Rules | Example |
+| 参数               | 值形状 | 规则 | 示例 |
 | ------------------ | ----------- | ----- | ------- |
 | `sort[]`           | JSON 编码对象 | 重复 `sort[]` 并带上 `field` 和 `direction`。 | `{"field":"ad.clicks","direction":"desc"}` |
 | `sort[].field`     | 来自 [Terminology](#术语) 的一个 canonical sort key | 使用对当前行形状有效的 sort key。 | `ad.clicks` 或 `product.title` |
 | `sort[].direction` | 一个 `sort[].direction` 值 | 使用 `asc` 或 `desc`。 | `desc` |
 
-### Segments
+### Segments（细分）
 
-#### Segment rules
+#### Segment rules（细分规则）
 
-| Parameter                        | Rules |
+| 参数                             | 规则 |
 | -------------------------------- | ----- |
 | `segments[]`                     | 添加一个可选细分维度。 |
 | `time_granularity`               | Segmented requests 支持 `none`、`daily` 和 `monthly`。 |
 | Segment fields                   | 仅在请求了该 segment 时使用 `{segment}.{metadata}`。 |
 | `override_segment_group_order[]` | 按顺序恰好包含一次行 `aggregation_level` 和请求的 segment。 |
 
-#### Product example
+#### Product example（商品示例）
 
-| Goal                 | Request shape |
+| 目标                 | 请求形状 |
 | -------------------- | ------------- |
 | Product breakdown    | 向 `ad_account`、`campaign`、`ad_group` 或 `ad` aggregation level 添加 `segments[]=product`。 |
 | Product fields       | 从 [Terminology](#术语) 投影 `product.*` 字段。 |
 | Product-first rows   | 先设置 `override_segment_group_order[]=product`，再设置 `override_segment_group_order[]=<aggregation_level>`。 |
 | Zero-impression rows | 添加 `includes[]=zero_impression_products`；请求要求请参阅 [Includes](#includes)。 |
 
-### Includes
+### Includes（附加行）
 
 `includes[]` 会使用受支持的 zero-metric rows 扩展结果集。它不会改变 endpoint scope 或 `aggregation_level`。
 
-| Include                    | Works when | Adds |
+| Include                    | 生效条件 | 添加内容 |
 | -------------------------- | ---------- | ---- |
 | `zero_impression_items`    | 仅默认实体分组：不要发送 `segments[]`。 | 在所请求窗口中 impressions 为零的实体行。 |
 | `zero_impression_products` | 仅 product reporting：使用 `segments[]=product`，并将 `override_segment_group_order[]=product` 放在首位。 | 在所请求窗口中 impressions 为零的已配置 product 行。 |
 
-## Examples
+## 示例
 
 
 

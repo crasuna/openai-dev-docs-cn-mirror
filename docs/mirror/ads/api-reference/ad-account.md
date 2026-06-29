@@ -1,10 +1,10 @@
 ---
-title: "Ad Account"
+title: "Ad Account（广告账户）"
 description: "Retrieve metadata for the current ad account."
 outline: deep
 ---
 
-# Ad Account
+# Ad Account（广告账户）
 
 **文档集**：Ads  
 **分组**：Ads — Api Reference  

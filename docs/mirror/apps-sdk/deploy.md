@@ -88,7 +88,7 @@ Alpic 还提供通过 [Alpic Cloud](https://app.alpic.ai/) 一键部署的方案
 - **Logging**：记录 tool-call IDs、request latency 和 error payloads。这有助于 connector 上线后调试用户报告。
 - **Observability**：监控 CPU、memory 和 request counts，这样你可以为部署选择合适规格。
 
-## Dogfood 和 rollout
+## 内部试用和逐步发布
 
 在广泛发布前：
 
@@ -100,8 +100,8 @@ Alpic 还提供通过 [Alpic Cloud](https://app.alpic.ai/) 一键部署的方案
 
 ## 后续步骤
 
-- 使用 [Test your integration](/mirror/apps-sdk/deploy/testing) 指南验证 tooling 和 telemetry。
-- 通过 [Troubleshooting](/mirror/apps-sdk/deploy/troubleshooting) 准备一份 troubleshooting playbook，帮助 on-call responders 快速诊断问题。
+- 使用 [测试你的集成](/mirror/apps-sdk/deploy/testing) 指南验证工具链和遥测。
+- 通过 [故障排查](/mirror/apps-sdk/deploy/troubleshooting) 准备一份故障排查手册，帮助值班响应人员快速诊断问题。
 - 通过当前审核流程提交你的应用。阅读 [Submit your app](/mirror/apps-sdk/deploy/submission) 指南了解更多。
 
 :::

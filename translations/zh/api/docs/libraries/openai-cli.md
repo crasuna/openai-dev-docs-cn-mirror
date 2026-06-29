@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T18:00:38.1935616+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# OpenAI CLI
+# OpenAI CLI 命令行
 
 使用 `openai` 命令行工具，直接从终端与 OpenAI API 交互。
 

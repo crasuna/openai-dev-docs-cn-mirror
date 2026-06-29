@@ -7,11 +7,11 @@ translatedAt: "2026-06-27T19:34:30.6847913+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Codex Security plugin quickstart
+# Codex Security plugin 快速入门
 
 Codex Security 是面向 Codex 的安全审查 plugin，可扫描你的代码以寻找漏洞、验证可信的发现项，并在可审查的 workspace 中呈现证据和修复指导。使用它可以在代码进入生产环境之前，查找你拥有或已获授权评估的代码中的安全问题。
 
-本 quickstart 会带你完成一次推荐的首次运行：在 Codex app 中对本地 repository 执行一次普通的只读扫描。
+本快速入门会带你完成一次推荐的首次运行：在 Codex app 中对本地 repository 执行一次普通的只读扫描。
 
 本页介绍在本地 Codex thread 中运行的 plugin。若要在 Codex web 中扫描已连接的 GitHub repository，请参见 [Codex Security cloud setup](https://developers.openai.com/codex/security/setup)。
 
@@ -71,7 +71,7 @@ Codex Security 是面向 Codex 的安全审查 plugin，可扫描你的代码以
        />
      </div>
      <figcaption className="mt-3 text-sm text-secondary">
-       在开始扫描前配置扫描目标、扫描区域、branch，以及可选的 threat model
+       在开始扫描前配置扫描目标、扫描区域、branch，以及可选的威胁模型
        guidance。
      </figcaption>
    </figure>
@@ -126,4 +126,3 @@ codex
 ```
 
 搜索 **Codex Security**，选择 `Install plugin`，然后启动一个新 thread。之后使用同一个首次扫描 prompt。
-

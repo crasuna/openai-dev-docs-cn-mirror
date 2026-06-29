@@ -1,10 +1,10 @@
 ---
-title: "Conversations — Delete"
+title: "Conversations — 删除"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Conversations — Delete
+# Conversations — 删除
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  
@@ -24,11 +24,11 @@ outline: deep
 :::
 
 ::: v-pre
-OpenAI API endpoint method reference。
+OpenAI API 端点方法参考。
 
-规范 reference URL：https://developers.openai.com/api/reference/resources/conversations/methods/delete
+规范参考 URL：https://developers.openai.com/api/reference/resources/conversations/methods/delete
 
-此 API reference 页面由 Stainless 生成。
+此 API 参考页面由 Stainless 生成。
 
 :::
 

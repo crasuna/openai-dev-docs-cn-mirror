@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T10:24:24.269Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Shell
+# Shell 工具
 
 Shell tool 赋予模型在完整终端环境中工作的能力。我们支持用于本地执行的 shell，也支持通过 Responses API 进行 hosted execution。
 

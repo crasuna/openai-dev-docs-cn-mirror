@@ -1,10 +1,10 @@
 ---
-title: "Safety checks"
+title: "Safety checks 安全检查"
 description: "Learn how OpenAI assesses for safety, OpenAI classifiers across safety categories, and implementation tips for how to pass safety checks."
 outline: deep
 ---
 
-# Safety checks
+# Safety checks 安全检查
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

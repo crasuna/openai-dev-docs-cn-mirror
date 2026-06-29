@@ -1,10 +1,10 @@
 ---
-title: "Rules"
+title: "Rules 规则"
 description: "Control which commands Codex can run outside the sandbox"
 outline: deep
 ---
 
-# Rules
+# Rules 规则
 
 **文档集**：Codex  
 **分组**：Codex — Rules  

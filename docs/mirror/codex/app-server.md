@@ -1,10 +1,10 @@
 ---
-title: "Codex App Server"
+title: "Codex App Server 应用服务器"
 description: "Embed Codex into your product with the app-server protocol"
 outline: deep
 ---
 
-# Codex App Server
+# Codex App Server 应用服务器
 
 **文档集**：Codex  
 **分组**：Codex — App Server  

@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:34:30.6847913+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Codex Security
+# Codex Security 安全
 
 <CtaPillLink
   href="https://chatgpt.com/plugins/share/676aca3811d54fa7bcdef5255236b3c4"

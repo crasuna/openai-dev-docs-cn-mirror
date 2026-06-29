@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T17:44:39.0189315+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Local shell
+# Local shell 本地 Shell
 
 local shell tool 已过时。对于新的用例，请改用 GPT-5.1 的
   [`shell`](https://developers.openai.com/api/docs/guides/tools-shell) tool。[了解更多](https://developers.openai.com/api/docs/guides/tools-shell)。

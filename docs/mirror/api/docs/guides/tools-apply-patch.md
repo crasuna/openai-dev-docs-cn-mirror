@@ -1,10 +1,10 @@
 ---
-title: "Apply Patch"
+title: "Apply Patch 补丁工具"
 description: "Allow models to propose structured diffs that your integration applies."
 outline: deep
 ---
 
-# Apply Patch
+# Apply Patch 补丁工具
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

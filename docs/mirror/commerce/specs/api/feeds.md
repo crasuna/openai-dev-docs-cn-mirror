@@ -1,10 +1,10 @@
 ---
-title: "Feeds"
+title: "Feeds（Feed 管理）"
 description: "Create product feeds and retrieve feed metadata."
 outline: deep
 ---
 
-# Feeds
+# Feeds（Feed 管理）
 
 **文档集**：Commerce  
 **分组**：Agentic Commerce — Specs  
@@ -24,11 +24,11 @@ outline: deep
 :::
 
 ::: v-pre
-## Overview
+## 概览
 
 使用这些 endpoints 创建 product feed 并检索 feed metadata。
 
-## REST endpoints
+## REST endpoints（REST 端点）
 
 - &lt;code&gt;GET /product_feeds/&#123;id&#125;&lt;/code&gt; 返回 feed 的 metadata。
 - &lt;code&gt;POST /product_feeds&lt;/code&gt; 创建新的 product feed，并返回其
@@ -38,25 +38,25 @@ outline: deep
 
 返回指定 product feed 的 metadata。
 
-#### Path parameters
+#### Path parameters（路径参数）
 
-| Field | Type | Required | Description |
+| 字段 | 类型 | 是否必填 | 说明 |
 | :---- | :------- | :------- | :------------------------------- |
-| `id` | `string` | Yes | Product feed 的 identifier。 |
+| `id` | `string` | 是 | Product feed 的 identifier。 |
 
-#### Request
+#### Request（请求）
 
 此 endpoint 不定义 request body。
 
-#### Response
+#### Response（响应）
 
 `200 OK`
 
-| Field | Type | Required | Description |
+| 字段 | 类型 | 是否必填 | 说明 |
 | :--------------- | :------- | :------- | :----------------------------------------------- |
-| `id` | `string` | Yes | Product feed 的 identifier。 |
-| `target_country` | `string` | No | 符合 ISO 3166 的两字母国家/地区代码。 |
-| `updated_at` | `string` | No | feed 最近一次更新的 timestamp。 |
+| `id` | `string` | 是 | Product feed 的 identifier。 |
+| `target_country` | `string` | 否 | 符合 ISO 3166 的两字母国家/地区代码。 |
+| `updated_at` | `string` | 否 | feed 最近一次更新的 timestamp。 |
 
 `404 Not Found`
 
@@ -66,21 +66,21 @@ outline: deep
 
 创建新的 product feed，并返回其 metadata。
 
-#### Request
+#### Request（请求）
 
-| Field | Type | Required | Description |
+| 字段 | 类型 | 是否必填 | 说明 |
 | :--------------- | :------- | :------- | :------------------------------------ |
-| `target_country` | `string` | No | 符合 ISO 3166 的两字母国家/地区代码。 |
+| `target_country` | `string` | 否 | 符合 ISO 3166 的两字母国家/地区代码。 |
 
-#### Response
+#### Response（响应）
 
 `200 OK`
 
-| Field | Type | Required | Description |
+| 字段 | 类型 | 是否必填 | 说明 |
 | :--------------- | :------- | :------- | :----------------------------------------------- |
-| `id` | `string` | Yes | Product feed 的 identifier。 |
-| `target_country` | `string` | No | 符合 ISO 3166 的两字母国家/地区代码。 |
-| `updated_at` | `string` | No | feed 最近一次更新的 timestamp。 |
+| `id` | `string` | 是 | Product feed 的 identifier。 |
+| `target_country` | `string` | 否 | 符合 ISO 3166 的两字母国家/地区代码。 |
+| `updated_at` | `string` | 否 | feed 最近一次更新的 timestamp。 |
 
 `400 Bad Request`
 

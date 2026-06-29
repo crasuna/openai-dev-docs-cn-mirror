@@ -1,10 +1,10 @@
 ---
-title: "Background mode"
+title: "Background mode 后台模式"
 description: "Run long running tasks asynchronously in the background."
 outline: deep
 ---
 
-# Background mode
+# Background mode 后台模式
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

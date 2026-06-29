@@ -1,10 +1,10 @@
 ---
-title: "Auto-review"
+title: "Auto-review 自动审查"
 description: "How Codex routes sandbox-boundary approvals through a reviewer agent"
 outline: deep
 ---
 
-# Auto-review
+# Auto-review 自动审查
 
 **文档集**：Codex  
 **分组**：Codex — Concepts  

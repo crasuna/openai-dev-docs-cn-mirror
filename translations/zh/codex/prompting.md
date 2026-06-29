@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:06:51.2133192+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Prompting
+# 提示词
 
 ## Prompts
 
@@ -45,7 +45,7 @@ Threads 可以在本地或 cloud 中运行：
 
 在 Codex app 中，你也可以在不选择项目的情况下开始聊天。Chats 不绑定到已保存 repository 或 project folder。请将它们用于研究、规划、connected-tool workflows，或其他 Codex 不应从代码库开始的工作。Chats 使用 Codex 管理的 `threads` directory 作为工作位置，该目录位于你的 Codex home 下。默认情况下，此位置为 `~/.codex/threads`。要更改此状态的基础位置，请设置 `CODEX_HOME`；请参阅 [Config and state locations](https://developers.openai.com/codex/config-advanced#config-and-state-locations)。
 
-## Context
+## 上下文
 
 提交 prompt 时，请包含 Codex 可以使用的上下文，例如相关文件和图片的 references。Codex IDE extension 会自动把打开文件列表和所选文本范围作为上下文包含进去。
 

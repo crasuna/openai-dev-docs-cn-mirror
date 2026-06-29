@@ -1,10 +1,10 @@
 ---
-title: "Predicted Outputs"
+title: "Predicted Outputs 预测输出"
 description: "Understand how to reduce latency for model responses where much of the response is known ahead of time."
 outline: deep
 ---
 
-# Predicted Outputs
+# Predicted Outputs 预测输出
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

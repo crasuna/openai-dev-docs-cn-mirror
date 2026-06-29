@@ -1,10 +1,10 @@
 ---
-title: "Codex web"
+title: "Codex web 网页版"
 description: "Delegate to Codex in the cloud"
 outline: deep
 ---
 
-# Codex web
+# Codex web 网页版
 
 **文档集**：Codex  
 **分组**：Codex — Cloud  

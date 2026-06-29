@@ -1,10 +1,10 @@
 ---
-title: "Authentication"
+title: "认证"
 description: "Setting up bearer token authentication."
 outline: deep
 ---
 
-# Authentication
+# 认证
 
 **文档集**：Ads  
 **分组**：Ads — Api Reference  
@@ -24,7 +24,7 @@ outline: deep
 :::
 
 ::: v-pre
-## Base URL
+## Base URL（基础 URL）
 
 将 Ads API 请求发送到：
 
@@ -32,15 +32,15 @@ outline: deep
 https://api.ads.openai.com/v1
 ```
 
-## Authorization
+## Authorization（授权）
 
 OpenAPI spec 定义了 bearer security scheme。请在每个请求中传入你的 Ads API key：
 
-| Header          | Value |
+| Header          | 值 |
 | --------------- | ----- |
 | `Authorization` | `Bearer $OPENAI_ADS_API_KEY` |
 
-## Request formats
+## 请求格式
 
 大多数 Ads API endpoint 接受 `application/json`。upload endpoint 支持两种请求格式：
 

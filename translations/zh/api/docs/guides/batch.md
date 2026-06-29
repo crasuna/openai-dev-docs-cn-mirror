@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T08:52:13.975Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Batch API
+# Batch API 批处理 API
 
 了解如何使用 OpenAI 的 Batch API 发送异步请求组：成本降低 50%，使用一组单独且显著更高的速率限制，并提供明确的 24 小时完成时限。该服务非常适合处理不需要即时响应的任务。你也可以[在这里直接查看 API reference](https://developers.openai.com/api/docs/api-reference/batch)。
 

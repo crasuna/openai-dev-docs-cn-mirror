@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T18:23:48.7352177+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Workload identity federation
+# Workload identity federation 工作负载身份联合
 
 Workload identity federation 允许受信任的 workloads 将外部签发的 identity tokens 交换为短期 OpenAI access tokens。使用这些指南来配置外部 identity provider、创建 OpenAI service account mappings，并在不存储长期 API keys 的情况下对 workloads 进行身份验证。
 

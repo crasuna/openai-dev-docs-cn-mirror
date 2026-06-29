@@ -1,10 +1,10 @@
 ---
-title: "Codex GitHub Action"
+title: "Codex GitHub Action 操作"
 description: "Trigger Codex actions from GitHub Events"
 outline: deep
 ---
 
-# Codex GitHub Action
+# Codex GitHub Action 操作
 
 **文档集**：Codex  
 **分组**：Codex — Github Action  

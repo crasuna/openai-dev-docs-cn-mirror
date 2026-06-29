@@ -174,7 +174,7 @@ UI state 描述数据正在 **如何** 被查看，而不是数据本身。
 
 由于 host 会异步持久化 widget state，调用 `window.openai.setWidgetState` 时没有任何内容需要 `await`。把它当作更新本地 component state 一样处理，并在每次有意义的 UI-state change 后立即调用。
 
-### 示例（React component）
+### 示例（React 组件）
 
 此示例展示 ChatGPT widget-state persistence（可选）。如果你想在 React 中使用它，请将 `window.openai.widgetState` 和 `window.openai.setWidgetState` 包装到一个小 hook（例如 `useWidgetState`）中，并从你的项目导入。
 
@@ -208,7 +208,7 @@ export function TaskList({ data }) {
 }
 ```
 
-### 示例（vanilla JS component）
+### 示例（vanilla JS 组件）
 
 ```js
 let tasks = [];
@@ -258,7 +258,7 @@ function renderTasks() {
 renderTasks();
 ```
 
-### Widget state 中的 image IDs（model-visible images，ChatGPT extension）
+### Widget state 中的 image IDs（model-visible images，ChatGPT 扩展）
 
 如果你的 widget 处理图像，请使用结构化 widget state shape，并包含 `imageIds` array。host 会在后续轮次把这些 file IDs 暴露给模型，让模型可以对图像进行推理。
 
@@ -291,13 +291,13 @@ setState({
 
 ---
 
-## 3. Cross-session state
+## 3. 跨会话状态
 
 必须跨对话、设备或 sessions 持久存在的 preferences 应存储在你的后端中。
 
 Apps SDK 会自动处理 conversation state，但大多数现实世界 apps 也需要持久 storage。你可能会缓存已获取的数据、跟踪用户 preferences，或持久化在组件内创建的 artifacts。选择添加 storage layer 会带来额外能力，但也会增加复杂性。
 
-## Bring your own backend
+## 使用你自己的后端
 
 如果你已经运行 API，或需要多用户协作，请集成现有 storage layer。在此模型中：
 

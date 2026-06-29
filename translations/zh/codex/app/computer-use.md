@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T11:05:57.267Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Computer Use
+# Computer Use 计算机使用
 
 在支持的 regions 中，Codex app 中的 computer use 可用于 macOS 和 Windows。安装 Computer Use plugin。在 macOS 上，在提示时授予 Screen Recording 和 Accessibility permissions。
 

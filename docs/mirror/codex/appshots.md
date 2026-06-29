@@ -1,10 +1,10 @@
 ---
-title: "Appshots"
+title: "Appshots 应用快照"
 description: "Give Codex context from any Mac app"
 outline: deep
 ---
 
-# Appshots
+# Appshots 应用快照
 
 **文档集**：Codex  
 **分组**：Codex — Appshots  

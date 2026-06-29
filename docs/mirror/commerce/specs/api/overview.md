@@ -1,10 +1,10 @@
 ---
-title: "Overview"
+title: "API 概览"
 description: "Create, retrieve, and upsert product feed data using an API."
 outline: deep
 ---
 
-# Overview
+# API 概览
 
 **文档集**：Commerce  
 **分组**：Agentic Commerce — Specs  
@@ -35,15 +35,15 @@ API 让你通过三个 API surfaces 管理 product feed data：
 
 当你想通过 API-based delivery 而不是 file upload 来创建 feed、检索当前数据，并 upsert product 和 promotion changes 时，请组合使用这些 APIs。
 
-## REST endpoints
+## REST endpoints（REST 端点）
 
 所有 API endpoints 都使用相同的 request headers 和 response
 headers。`Feeds`、`Products` 和 `Promotions` subtabs 定义 endpoint-
 specific request 和 response bodies。
 
-### Request headers
+### Request headers（请求标头）
 
-| Field | Description | Example Value |
+| 字段 | 说明 | 示例值 |
 | :---------------- | :-------------------------------------------------------- | :---------------------------------------------- |
 | `Authorization` | 用于发起 requests 的 API key | `Bearer api_key_123` |
 | `Accept-Language` | messages 和 errors 等内容的首选 locale | `en-US` |
@@ -52,11 +52,11 @@ specific request 和 response bodies。
 | `Request-Id` | 每个 request 的唯一 key，用于 tracing purposes | `request_id_123` |
 | `Content-Type` | request content 的类型 | `application/json` |
 | `Timestamp` | 格式为 RFC 3339 string | `2025-09-25T10:30:00Z` |
-| `API-Version` | API version | `2025-09-12` |
+| `API-Version` | API 版本 | `2025-09-12` |
 
-### Response headers
+### Response headers（响应标头）
 
-| Field | Description | Example Value |
+| 字段 | 说明 | 示例值 |
 | :---------------- | :------------------------------------ | :-------------------- |
 | `Idempotency-Key` | request 中传入的 idempotency key | `idempotency_key_123` |
 | `Request-Id` | request 中传入的 request ID | `request_id_123` |

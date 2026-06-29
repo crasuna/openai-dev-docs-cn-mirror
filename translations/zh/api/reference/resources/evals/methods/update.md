@@ -7,10 +7,10 @@ translatedAt: "2026-06-27T18:56:04.2669018+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Evals — Update
+# Evals — 更新
 
-OpenAI API endpoint method reference。
+OpenAI API 端点方法参考。
 
-规范 reference URL：https://developers.openai.com/api/reference/resources/evals/methods/update
+规范参考 URL：https://developers.openai.com/api/reference/resources/evals/methods/update
 
-此 API reference 页面由 Stainless 生成。
+此 API 参考页面由 Stainless 生成。

@@ -1,10 +1,10 @@
 ---
-title: "Codex Security"
+title: "Codex Security 安全"
 description: "Find and remediate vulnerabilities with the Codex Security plugin or Codex Security cloud."
 outline: deep
 ---
 
-# Codex Security
+# Codex Security 安全
 
 **文档集**：Codex  
 **分组**：Codex — Security  

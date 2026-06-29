@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T18:24:42.5859087+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Secure MCP Tunnel
+# Secure MCP Tunnel 安全 MCP 隧道
 
 Secure MCP Tunnel 让你可以把私有 MCP servers 连接到受支持的 OpenAI 产品，而无需打开入站防火墙端口，也无需把这些 servers 暴露到公网。请在已经能够访问你的 MCP server 的网络内运行 `tunnel-client`；它会打开一条通往 OpenAI 的出站 HTTPS 路径，拉取排队的 MCP 工作，在本地转发请求，并通过同一个 tunnel 返回响应。
 

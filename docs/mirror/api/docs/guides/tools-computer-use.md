@@ -1,10 +1,10 @@
 ---
-title: "Computer use"
+title: "Computer use 计算机使用"
 description: "Use the Responses API computer tool to click, type, scroll, and inspect screenshots."
 outline: deep
 ---
 
-# Computer use
+# Computer use 计算机使用
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

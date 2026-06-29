@@ -1,10 +1,10 @@
 ---
-title: "Shell"
+title: "Shell 工具"
 description: "Run shell commands in hosted containers or your own local runtime."
 outline: deep
 ---
 
-# Shell
+# Shell 工具
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

@@ -1,10 +1,10 @@
 ---
-title: "Files"
+title: "Files（文件）"
 description: "Upload remote images or binary files and reuse the returned file ID in ad creatives."
 outline: deep
 ---
 
-# Files
+# Files（文件）
 
 **文档集**：Ads  
 **分组**：Ads — Api Reference  

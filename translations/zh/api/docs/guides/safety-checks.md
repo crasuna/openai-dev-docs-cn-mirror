@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T18:24:42.5859087+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Safety checks
+# Safety checks 安全检查
 
 我们会对模型以及模型的使用方式运行多种类型的评估。本指南介绍我们如何测试安全性，以及你可以做些什么来避免违规。
 

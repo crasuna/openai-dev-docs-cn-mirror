@@ -1,10 +1,10 @@
 ---
-title: "使用 Workspace Agent access tokens 进行认证"
+title: "使用 Workspace Agent 访问令牌进行认证"
 description: "Provision and use bearer credentials for the Workspace Agents API."
 outline: deep
 ---
 
-# 使用 Workspace Agent access tokens 进行认证
+# 使用 Workspace Agent 访问令牌进行认证
 
 **文档集**：Workspace Agents  
 **分组**：Workspace Agents — Authentication  
@@ -24,7 +24,7 @@ outline: deep
 :::
 
 ::: v-pre
-Workspace Agents API 调用使用 Workspace Agent access tokens 进行认证。这些 tokens 通过 ChatGPT admin access-token flow 配置，并限定 scope 为 workspace 使用。
+Workspace Agents API 调用使用 Workspace Agent 访问令牌进行认证。这些 tokens 通过 ChatGPT admin access-token flow 配置，并限定 scope 为 workspace 使用。
 
 ## 配置 token
 

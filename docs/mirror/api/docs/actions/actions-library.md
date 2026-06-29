@@ -1,10 +1,10 @@
 ---
-title: "GPT Actions library"
+title: "GPT Actions library 操作库"
 description: "Learn how to build and integrate GPT Actions for common applications using OpenAI's guidance."
 outline: deep
 ---
 
-# GPT Actions library
+# GPT Actions library 操作库
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

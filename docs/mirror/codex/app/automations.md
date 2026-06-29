@@ -1,10 +1,10 @@
 ---
-title: "Automations"
+title: "Automations 自动化"
 description: "Schedule recurring Codex tasks"
 outline: deep
 ---
 
-# Automations
+# Automations 自动化
 
 **文档集**：Codex  
 **分组**：Codex — App  

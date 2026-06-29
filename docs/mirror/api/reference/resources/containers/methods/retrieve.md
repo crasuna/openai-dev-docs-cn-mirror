@@ -24,9 +24,9 @@ outline: deep
 :::
 
 ::: v-pre
-OpenAI API endpoint 方法参考。
+OpenAI API 端点方法参考。
 
-规范参考 URL: https://developers.openai.com/api/reference/resources/containers/methods/retrieve
+规范参考 URL：https://developers.openai.com/api/reference/resources/containers/methods/retrieve
 
 此 API 参考页面由 Stainless 生成。
 

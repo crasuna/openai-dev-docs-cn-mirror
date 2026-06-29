@@ -1,10 +1,10 @@
 ---
-title: "Model Context Protocol"
+title: "Model Context Protocol 模型上下文协议"
 description: "Give Codex access to third-party tools and context"
 outline: deep
 ---
 
-# Model Context Protocol
+# Model Context Protocol 模型上下文协议
 
 **文档集**：Codex  
 **分组**：Codex — Mcp  

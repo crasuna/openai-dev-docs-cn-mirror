@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:07:21.7838419+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Worktrees
+# Worktrees 工作树
 
 在 Codex app 中，worktree 让 Codex 可以在同一个项目里运行多个互相独立的任务，而不会彼此干扰。对于 Git 仓库，[automations](https://developers.openai.com/codex/app/automations) 会在专用的后台 worktree 上运行，因此不会与你正在进行的工作冲突。在未使用版本控制的项目中，automations 会直接在项目目录中运行。你也可以手动在某个 worktree 上启动 thread，并使用 Handoff 在 Local 和 Worktree 之间移动 thread。
 

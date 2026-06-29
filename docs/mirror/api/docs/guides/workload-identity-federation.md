@@ -1,10 +1,10 @@
 ---
-title: "Workload identity federation"
+title: "Workload identity federation 工作负载身份联合"
 description: "Authenticate to OpenAI APIs with short-lived credentials through workload identity federation instead of storing static long-lived API keys."
 outline: deep
 ---
 
-# Workload identity federation
+# Workload identity federation 工作负载身份联合
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

@@ -1,10 +1,10 @@
 ---
-title: "Codex app settings"
+title: "Codex app 设置"
 description: "Configure Codex app behavior and preferences"
 outline: deep
 ---
 
-# Codex app settings
+# Codex app 设置
 
 **文档集**：Codex  
 **分组**：Codex — App  

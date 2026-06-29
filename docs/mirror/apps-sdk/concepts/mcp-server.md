@@ -1,10 +1,10 @@
 ---
-title: "MCP"
+title: "MCP 服务器"
 description: "Understand how the Model Context Protocol works with Apps SDK."
 outline: deep
 ---
 
-# MCP
+# MCP 服务器
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Concepts  

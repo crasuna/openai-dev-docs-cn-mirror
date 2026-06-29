@@ -7,14 +7,14 @@ translatedAt: "2026-06-27T19:36:03+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Onboarding
+# Onboarding（入门引导）
 
 此 guide 已合并到 [Get started](https://developers.openai.com/commerce/guides/get-started)。
 
 请使用该页面了解：
 
-- Application form CTA。
-- Overview。
-- Integration path。
+- 申请表 CTA。
+- 概览。
+- 集成路径。
 - Feed model 和 delivery guidance。
-- Best practices。
+- 最佳实践。

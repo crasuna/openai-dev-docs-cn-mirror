@@ -1,10 +1,10 @@
 ---
-title: "Web search"
+title: "Web search 网页搜索"
 description: "Allow models to search the web for the latest information before generating a response."
 outline: deep
 ---
 
-# Web search
+# Web search 网页搜索
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

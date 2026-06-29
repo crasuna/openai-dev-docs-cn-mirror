@@ -1,10 +1,10 @@
 ---
-title: "Codex CLI features"
+title: "Codex CLI 功能"
 description: "Overview of functionality in the Codex terminal client"
 outline: deep
 ---
 
-# Codex CLI features
+# Codex CLI 功能
 
 **文档集**：Codex  
 **分组**：Codex — Cli  

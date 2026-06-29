@@ -1,10 +1,10 @@
 ---
-title: "ChatKit"
+title: "ChatKit 聊天组件"
 description: "Embed a widget to build your own chat experiences."
 outline: deep
 ---
 
-# ChatKit
+# ChatKit 聊天组件
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

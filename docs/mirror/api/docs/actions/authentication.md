@@ -1,10 +1,10 @@
 ---
-title: "GPT Action authentication"
+title: "GPT Action authentication 身份验证"
 description: "Learn about authentication options for GPT actions, including no authentication, API key, and OAuth methods."
 outline: deep
 ---
 
-# GPT Action authentication
+# GPT Action authentication 身份验证
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

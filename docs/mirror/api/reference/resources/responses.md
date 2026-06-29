@@ -1,10 +1,10 @@
 ---
-title: "Responses"
+title: "Responses 响应"
 description: "OpenAI API endpoint reference."
 outline: deep
 ---
 
-# Responses
+# Responses 响应
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  
@@ -24,7 +24,7 @@ outline: deep
 :::
 
 ::: v-pre
-OpenAI API endpoint 参考。
+OpenAI API 端点参考。
 
 规范参考 URL：https://developers.openai.com/api/reference/resources/responses
 

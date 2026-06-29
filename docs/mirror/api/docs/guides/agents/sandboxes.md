@@ -1,10 +1,10 @@
 ---
-title: "Sandbox Agents"
+title: "Sandbox Agents 沙盒智能体"
 description: "Learn how sandboxes fit into Agents SDK workflows, when to use them, and how orchestration stays separate from execution."
 outline: deep
 ---
 
-# Sandbox Agents
+# Sandbox Agents 沙盒智能体
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

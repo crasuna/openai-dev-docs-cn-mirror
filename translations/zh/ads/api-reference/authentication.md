@@ -7,9 +7,9 @@ translatedAt: "2026-06-27T19:35:31.9333790+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Authentication
+# 认证
 
-## Base URL
+## Base URL（基础 URL）
 
 将 Ads API 请求发送到：
 
@@ -17,15 +17,15 @@ translator: codex-gpt-5.5-xhigh
 https://api.ads.openai.com/v1
 ```
 
-## Authorization
+## Authorization（授权）
 
 OpenAPI spec 定义了 bearer security scheme。请在每个请求中传入你的 Ads API key：
 
-| Header          | Value |
+| Header          | 值 |
 | --------------- | ----- |
 | `Authorization` | `Bearer $OPENAI_ADS_API_KEY` |
 
-## Request formats
+## 请求格式
 
 大多数 Ads API endpoint 接受 `application/json`。upload endpoint 支持两种请求格式：
 

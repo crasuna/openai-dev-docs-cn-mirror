@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T17:44:20.0905341+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Function calling
+# Function calling 函数调用
 
 **Function calling**（也称为 **tool calling**）提供了一种强大且灵活的方式，让 OpenAI 模型能够对接外部系统，并访问其训练数据之外的数据。本指南展示如何将模型连接到你的应用提供的数据和操作。我们会演示如何使用 function tools（由 JSON schema 定义），以及使用可处理自由形式文本输入和输出的 custom tools。
 

@@ -1,10 +1,10 @@
 ---
-title: "Vision fine-tuning"
+title: "Vision fine-tuning 视觉微调"
 description: "Fine-tune models for better image understanding."
 outline: deep
 ---
 
-# Vision fine-tuning
+# Vision fine-tuning 视觉微调
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

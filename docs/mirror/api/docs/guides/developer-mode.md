@@ -1,10 +1,10 @@
 ---
-title: "ChatGPT Developer mode"
+title: "ChatGPT Developer mode 开发者模式"
 description: "Full MCP client access for apps and tools."
 outline: deep
 ---
 
-# ChatGPT Developer mode
+# ChatGPT Developer mode 开发者模式
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

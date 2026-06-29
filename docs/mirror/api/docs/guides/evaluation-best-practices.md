@@ -1,10 +1,10 @@
 ---
-title: "Evaluation best practices"
+title: "Evaluation best practices 评估最佳实践"
 description: "Learn best practices for designing evals to test and improve model performance in production."
 outline: deep
 ---
 
-# Evaluation best practices
+# Evaluation best practices 评估最佳实践
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

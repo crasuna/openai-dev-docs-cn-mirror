@@ -24,7 +24,7 @@ outline: deep
 :::
 
 ::: v-pre
-OpenAI API endpoint 方法参考。
+OpenAI API 端点方法参考。
 
 规范参考 URL：https://developers.openai.com/api/reference/resources/projects/subresources/roles/methods/create
 

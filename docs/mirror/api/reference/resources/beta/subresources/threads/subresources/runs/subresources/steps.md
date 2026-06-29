@@ -1,10 +1,10 @@
 ---
-title: "Beta Threads Runs Steps"
+title: "Beta Threads Runs Steps 步骤"
 description: "OpenAI API endpoint reference."
 outline: deep
 ---
 
-# Beta Threads Runs Steps
+# Beta Threads Runs Steps 步骤
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  
@@ -24,9 +24,9 @@ outline: deep
 :::
 
 ::: v-pre
-OpenAI API endpoint 参考。
+OpenAI API 端点参考。
 
-规范参考 URL: https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps
+规范参考 URL：https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps
 
 此 API 参考页面由 Stainless 生成。
 

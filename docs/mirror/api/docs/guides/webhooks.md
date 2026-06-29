@@ -1,10 +1,10 @@
 ---
-title: "Webhooks"
+title: "Webhooks 网络钩子"
 description: "Use webhooks to receive real-time updates from the OpenAI API."
 outline: deep
 ---
 
-# Webhooks
+# Webhooks 网络钩子
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

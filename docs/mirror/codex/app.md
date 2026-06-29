@@ -1,10 +1,10 @@
 ---
-title: "Codex app"
+title: "Codex app 应用"
 description: "Your Codex command center"
 outline: deep
 ---
 
-# Codex app
+# Codex app 应用
 
 **文档集**：Codex  
 **分组**：Codex — App  

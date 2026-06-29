@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T11:05:57.267Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Local environments
+# Local environments 本地环境
 
 Local environments 让你可以为 worktrees 配置 setup steps，并为 project 配置 common actions。
 

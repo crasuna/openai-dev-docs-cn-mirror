@@ -1,10 +1,10 @@
 ---
-title: "Admin APIs"
+title: "Admin APIs 管理 API"
 description: "Use Admin APIs and Admin API keys to automate organization management tasks such as invitations and audit log retrieval."
 outline: deep
 ---
 
-# Admin APIs
+# Admin APIs 管理 API
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

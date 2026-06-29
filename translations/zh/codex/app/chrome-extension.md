@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T11:05:57.267Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Codex Chrome extension
+# Codex Chrome 扩展
 
 Codex Chrome extension 让 Codex 可以使用 Chrome 处理需要你 signed-in browser state 的 browser tasks。当 Codex 需要读取或操作 LinkedIn、Salesforce、Gmail 或内部工具等 sites 时，请使用它。
 

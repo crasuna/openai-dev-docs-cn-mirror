@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T18:23:41.3718846+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Red teaming
+# Red teaming 红队测试
 
 Red teaming 使用对抗性测试用例，帮助在部署前发现不安全、不可靠或违反政策的行为。它通过聚焦滥用场景、失败模式和普通质量测试可能暴露不出的高风险交互，对 evals 形成补充。
 

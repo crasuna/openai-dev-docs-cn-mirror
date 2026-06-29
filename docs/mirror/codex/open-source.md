@@ -1,10 +1,10 @@
 ---
-title: "Open Source"
+title: "开源"
 description: "Open-source components of Codex and where to collaborate"
 outline: deep
 ---
 
-# Open Source
+# 开源
 
 **文档集**：Codex  
 **分组**：Codex — Open Source  

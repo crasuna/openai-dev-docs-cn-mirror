@@ -1,10 +1,10 @@
 ---
-title: "Authentication"
+title: "认证"
 description: "Sign-in methods for Codex"
 outline: deep
 ---
 
-# Authentication
+# 认证
 
 **文档集**：Codex  
 **分组**：Codex — Auth  
@@ -24,7 +24,7 @@ outline: deep
 :::
 
 ::: v-pre
-## OpenAI authentication
+## OpenAI 认证
 
 使用 OpenAI 模型时，Codex 支持两种登录方式：
 

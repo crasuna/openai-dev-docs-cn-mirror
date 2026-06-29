@@ -7,10 +7,10 @@ translatedAt: "2026-06-27T18:55:40.8691393+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Organization Projects Service Accounts — Delete
+# Organization Projects Service Accounts — 删除
 
-OpenAI API endpoint method reference。
+OpenAI API 端点方法参考。
 
-规范 reference URL：https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/delete
+规范参考 URL：https://developers.openai.com/api/reference/resources/organization/subresources/projects/subresources/service_accounts/methods/delete
 
-此 API reference 页面由 Stainless 生成。
+此 API 参考页面由 Stainless 生成。

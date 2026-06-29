@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T17:44:20.0905341+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# GPT Actions
+# GPT Actions 概览
 
 GPT Actions 存储在 [Custom GPTs](https://openai.com/blog/introducing-gpts) 中。Custom GPTs 让用户能够通过提供说明、附加文档作为知识，以及连接第三方服务，针对特定用例自定义 ChatGPT。
 

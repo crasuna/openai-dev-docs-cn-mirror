@@ -66,7 +66,7 @@ ChatGPT 会使用每个应用的 tool annotations 和用户的应用权限设置
 
 此刷新流程适用于 developer mode connectors。已发布的应用使用经过审核的 [app version snapshots](https://developers.openai.com/apps-sdk/deploy/submission#how-published-app-versions-work)。若要更新已发布应用的工具或 metadata，请扫描、提交并发布新的应用版本。
 
-## 使用其他 clients
+## 使用其他 client
 
 你可以在其他 clients 上连接到你的 MCP server。
 

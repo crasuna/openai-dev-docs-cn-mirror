@@ -7,13 +7,13 @@ translatedAt: "2026-06-27T17:43:53.3580579+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# File Search
+# 文件搜索
 
-File Search 是 [Responses API](https://developers.openai.com/api/docs/api-reference/responses) 中可用的工具。
+文件搜索（File Search）是 [Responses API](https://developers.openai.com/api/docs/api-reference/responses) 中可用的工具。
 它让模型能够通过语义搜索和关键词搜索，在先前上传文件构成的知识库中检索信息。
-通过创建 vector stores 并向其中上传文件，你可以让模型访问这些知识库或 `vector_stores`，从而增强模型的固有知识。
+通过创建向量存储（vector stores）并向其中上传文件，你可以让模型访问这些知识库或 `vector_stores`，从而增强模型的固有知识。
 
-要进一步了解 vector stores 和语义搜索的工作方式，请参阅我们的
+要进一步了解向量存储和语义搜索的工作方式，请参阅我们的
   [检索指南](https://developers.openai.com/api/docs/guides/retrieval)。
 
 这是由 OpenAI 管理的托管工具，也就是说，你不必在自己这端实现代码来处理它的执行。
@@ -21,11 +21,11 @@ File Search 是 [Responses API](https://developers.openai.com/api/docs/api-refer
 
 ## 如何使用
 
-在通过 Responses API 使用 File Search 之前，你需要先在 vector store 中设置好知识库，并向其中上传文件。
+在通过 Responses API 使用文件搜索之前，你需要先在向量存储中设置好知识库，并向其中上传文件。
 
-创建 vector store 并上传文件
+创建向量存储并上传文件
 
-按照以下步骤创建 vector store 并向其中上传文件。你可以使用[这个示例文件](https://cdn.openai.com/API/docs/deep_research_blog.pdf)，也可以上传自己的文件。
+按照以下步骤创建向量存储并向其中上传文件。你可以使用[这个示例文件](https://cdn.openai.com/API/docs/deep_research_blog.pdf)，也可以上传自己的文件。
 
 #### 将文件上传到 File API
 
@@ -101,9 +101,9 @@ console.log(fileId);
 ```
 
 
-#### 创建 vector store
+#### 创建向量存储
 
-创建 vector store
+创建向量存储
 
 ```python
 vector_store = client.vector_stores.create(
@@ -120,9 +120,9 @@ console.log(vectorStore.id);
 ```
 
 
-#### 将文件添加到 vector store
+#### 将文件添加到向量存储
 
-将文件添加到 vector store
+将文件添加到向量存储
 
 ```python
 result = client.vector_stores.files.create(
@@ -163,9 +163,9 @@ console.log(result);
 ```
 
 
-知识库设置完成后，你可以在可供模型使用的工具列表中包含 `file_search` 工具，并同时提供要搜索的 vector stores 列表。
+知识库设置完成后，你可以在可供模型使用的工具列表中包含 `file_search` 工具，并同时提供要搜索的向量存储列表。
 
-File Search 工具
+文件搜索工具
 
 ```python
 from openai import OpenAI
@@ -220,10 +220,10 @@ Console.WriteLine(response.GetOutputText());
 
 当模型调用此工具时，你会收到包含多个输出的响应：
 
-1. 一个 `file_search_call` output item，其中包含 File Search 调用的 id。
-2. 一个 `message` output item，其中包含模型响应以及文件引用。
+1. 一个 `file_search_call` 输出项，其中包含文件搜索调用的 id。
+2. 一个 `message` 输出项，其中包含模型响应以及文件引用。
 
-File Search 响应
+文件搜索响应
 
 ```json
 {
@@ -281,7 +281,7 @@ File Search 响应
 
 ### 限制结果数量
 
-通过 Responses API 使用 File Search 工具时，你可以自定义想要从 vector stores 中检索的结果数量。这有助于同时减少 token 使用量和延迟，但可能会以回答质量下降为代价。
+通过 Responses API 使用文件搜索工具时，你可以自定义想要从向量存储中检索的结果数量。这有助于同时减少 token 使用量和延迟，但可能会以回答质量下降为代价。
 
 限制结果数量
 
@@ -318,7 +318,7 @@ console.log(response);
 
 ### 在响应中包含搜索结果
 
-虽然你可以在输出文本中看到 annotations（对文件的引用），但 File Search 调用默认不会返回搜索结果。
+虽然你可以在输出文本中看到注解（annotations，即对文件的引用），但文件搜索调用默认不会返回搜索结果。
 
 要在响应中包含搜索结果，可以在创建响应时使用 `include` 参数。
 
@@ -359,8 +359,8 @@ console.log(response);
 
 你可以根据文件的元数据筛选搜索结果。更多细节请参阅我们的[检索指南](https://developers.openai.com/api/docs/guides/retrieval)，其中涵盖：
 
-- 如何[在 vector store files 上设置 attributes](https://developers.openai.com/api/docs/guides/retrieval#attributes)
-- 如何[定义 filters](https://developers.openai.com/api/docs/guides/retrieval#attribute-filtering)
+- 如何[在向量存储文件上设置属性（attributes）](https://developers.openai.com/api/docs/guides/retrieval#attributes)
+- 如何[定义筛选器（filters）](https://developers.openai.com/api/docs/guides/retrieval#attribute-filtering)
 
 元数据筛选
 
@@ -405,11 +405,11 @@ console.log(response);
 
 ## 支持的文件
 
-_对于 `text/` MIME types，编码必须是 `utf-8`、`utf-16` 或 `ascii` 之一。_
+_对于 `text/` MIME 类型，编码必须是 `utf-8`、`utf-16` 或 `ascii` 之一。_
 
 {/* Keep this table in sync with RETRIEVAL_SUPPORTED_EXTENSIONS in the agentapi service */}
 
-| File format | MIME type                                                                   |
+| 文件格式 | MIME 类型                                                                   |
 | ----------- | --------------------------------------------------------------------------- |
 | `.c`        | `text/x-c`                                                                  |
 | `.cpp`      | `text/x-c++`                                                                |

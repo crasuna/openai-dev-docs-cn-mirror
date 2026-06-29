@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:06:51.2133192+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Open Source
+# 开源
 
 OpenAI 以开放方式开发 Codex 的关键部分。这些工作托管在 GitHub 上，因此你可以关注进展、报告问题并贡献改进。
 

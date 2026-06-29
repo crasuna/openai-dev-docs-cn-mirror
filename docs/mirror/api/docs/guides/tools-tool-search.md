@@ -1,10 +1,10 @@
 ---
-title: "Tool search"
+title: "Tool search 工具搜索"
 description: "Use tool search to defer large tool surfaces, group related tools with namespaces, and load only the relevant functions at runtime."
 outline: deep
 ---
 
-# Tool search
+# Tool search 工具搜索
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

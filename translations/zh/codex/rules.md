@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:34:30.6847913+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Rules
+# Rules 规则
 
 使用 rules 控制 Codex 可以在 sandbox 之外运行哪些命令。
 

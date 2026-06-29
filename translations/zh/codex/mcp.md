@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T19:06:51.2133192+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Model Context Protocol
+# Model Context Protocol 模型上下文协议
 
 Model Context Protocol (MCP) 将模型连接到工具和上下文。可以用它让 Codex 访问第三方文档，或让 Codex 与你的浏览器、Figma 等开发者工具交互。
 

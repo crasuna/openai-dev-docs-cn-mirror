@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T18:23:48.7352177+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Web search
+# Web search 网页搜索
 
 Web search 允许模型访问互联网上的最新信息，并提供带来源引用的答案。要启用此功能，请在 Responses API 中使用 web search tool，或在某些情况下使用 Chat Completions。
 

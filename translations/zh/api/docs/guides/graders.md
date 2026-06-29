@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T17:45:12.7147584+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Graders
+# Graders 评分器
 
 Graders 是一种根据参考答案评估模型表现的方式。我们的 [graders API](https://developers.openai.com/api/docs/api-reference/graders) 可用于测试你的 graders、试验结果，并改进你的 fine-tuning 或 evaluation 框架，以获得你想要的结果。
 

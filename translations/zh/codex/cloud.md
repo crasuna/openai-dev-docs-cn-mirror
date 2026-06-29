@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T11:05:32.948Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Codex web
+# Codex web 网页版
 
 Codex 是 OpenAI 的 coding agent，可以读取、编辑并运行代码。它能帮助你更快构建、修复 bug，并理解不熟悉的代码。借助 Codex cloud，Codex 可以使用自己的 cloud environment 在后台处理 tasks（包括并行处理）。
 

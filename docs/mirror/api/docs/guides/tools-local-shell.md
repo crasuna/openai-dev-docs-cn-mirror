@@ -1,10 +1,10 @@
 ---
-title: "Local shell"
+title: "Local shell 本地 Shell"
 description: "Enable agents to run commands in a local shell."
 outline: deep
 ---
 
-# Local shell
+# Local shell 本地 Shell
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

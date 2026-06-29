@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T10:24:24.269Z"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Skills
+# Skills 技能
 
 Agent Skills 让你可以在 hosted 和 local shell environments 中上传并复用版本化的文件 bundle。
 

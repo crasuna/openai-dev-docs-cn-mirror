@@ -7,7 +7,7 @@ translatedAt: "2026-06-27T18:00:55+08:00"
 translator: codex-gpt-5.5-xhigh
 ---
 
-# Node reference
+# Node reference 节点参考
 
 [Agent Builder](https://platform.openai.com/agent-builder) 是一个用于组合 agentic workflows 的可视化画布。Workflows 由 nodes 和 connections 组成，用于控制顺序和流转。插入 nodes，然后配置并连接它们，以定义你希望 agents 遵循的流程。
 
