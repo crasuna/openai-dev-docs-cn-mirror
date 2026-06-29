@@ -4,6 +4,7 @@ import {
   DOCS_DIR,
   MANIFEST_PATH,
   MIRROR_DIR,
+  NAVIGATION_PATH,
   REPORTS_DIR,
   createEmptyManifest,
   ensureDir,
@@ -21,7 +22,7 @@ import {
   writeJsonFile,
   writeTextFile
 } from "./lib.js";
-import type { DocEntry, Manifest } from "./types.js";
+import type { DocEntry, Manifest, NavigationItem, NavigationSection, NavigationSnapshot } from "./types.js";
 
 interface DisplayDocEntry extends DocEntry {
   displayProduct: string;
@@ -31,6 +32,32 @@ interface DisplayDocEntry extends DocEntry {
 
 interface DisplayManifest extends Omit<Manifest, "docs"> {
   docs: DisplayDocEntry[];
+}
+
+interface OrderedNavigation {
+  products: OrderedProductNavigation[];
+}
+
+interface OrderedProductNavigation {
+  product: string;
+  displayProduct: string;
+  items: OrderedNavigationItem[];
+}
+
+type OrderedNavigationItem = OrderedNavigationLink | OrderedNavigationSection;
+
+interface OrderedNavigationLink {
+  type: "link";
+  doc: DisplayDocEntry;
+}
+
+interface OrderedNavigationSection {
+  type: "section";
+  title: string;
+  displayTitle: string;
+  doc?: DisplayDocEntry;
+  items: OrderedNavigationItem[];
+  fallback?: boolean;
 }
 
 const PRODUCT_DISPLAY_LABELS: Record<string, string> = {
@@ -119,20 +146,127 @@ const SECTION_DISPLAY_LABELS: Record<string, string> = {
   "Workspace Agents — Trigger Runs": "触发运行"
 };
 
+const NAVIGATION_GROUP_DISPLAY_LABELS: Record<string, string> = {
+  "API": "API",
+  "API Reference": "API 参考",
+  "Administration": "管理",
+  "Agents SDK": "Agents SDK",
+  "Agent Builder": "Agent Builder",
+  "App": "应用",
+  "Assistants": "Assistants 助手",
+  "Assistants API": "Assistants API",
+  "Audio": "音频",
+  "Authentication": "身份验证",
+  "Automation": "自动化",
+  "Advertiser API": "广告主 API",
+  "Batches": "批处理",
+  "Build": "构建",
+  "Calls": "调用",
+  "Chat Completions": "Chat Completions",
+  "ChatGPT Actions": "ChatGPT Actions",
+  "ChatKit": "ChatKit",
+  "Checkpoints": "检查点",
+  "CLI": "CLI",
+  "Client Secrets": "客户端密钥",
+  "Completions": "Completions 补全",
+  "Concepts": "概念",
+  "Configuration": "配置",
+  "Config File": "配置文件",
+  "Connection methods": "连接方式",
+  "Containers": "容器",
+  "Content": "内容",
+  "Context management": "上下文管理",
+  "Conversations": "Conversations 对话",
+  "Conversion apps": "转化应用",
+  "Codex Security": "Codex Security",
+  "Codex Security cloud": "Codex Security 云端",
+  "Codex Security plugin": "Codex Security 插件",
+  "Cost optimization": "成本优化",
+  "Core Concepts": "核心概念",
+  "Core concepts": "核心概念",
+  "Deploy": "部署",
+  "Deployment": "部署",
+  "Embeddings": "嵌入",
+  "Enterprise": "企业",
+  "Evals": "评估",
+  "Evaluation": "评估",
+  "File Upload": "文件上传",
+  "File Batches": "文件批次",
+  "File search and retrieval": "文件搜索与检索",
+  "Files": "文件",
+  "Fine Tuning": "微调",
+  "Fine-tuning": "微调",
+  "Get started": "入门",
+  "Getting Started": "入门",
+  "Going live": "上线",
+  "Guides": "指南",
+  "IDE Extension": "IDE 扩展",
+  "Images": "图像",
+  "Integrations": "集成",
+  "Items": "项",
+  "Jobs": "作业",
+  "Latency optimization": "延迟优化",
+  "Learn": "学习",
+  "Legacy": "旧版",
+  "Legacy APIs": "旧版 API",
+  "Measurement": "衡量",
+  "Messages": "消息",
+  "Models": "模型",
+  "Moderations": "内容审核",
+  "More tools": "更多工具",
+  "Parts": "分片",
+  "Permissions": "权限",
+  "Plan": "规划",
+  "Platform APIs": "平台 API",
+  "Plugins": "插件",
+  "Prompting": "提示",
+  "Realtime": "Realtime",
+  "Realtime and audio": "Realtime 与音频",
+  "Realtime Beta": "Realtime Beta",
+  "Realtime sessions": "Realtime 会话",
+  "Reasoning": "推理",
+  "Releases": "发布",
+  "Responses": "Responses 响应",
+  "Responses API": "Responses API",
+  "Resources": "资源",
+  "Runs": "运行",
+  "Run and scale": "运行与扩展",
+  "Safety": "安全",
+  "Security": "安全",
+  "Sessions": "会话",
+  "Skills": "技能",
+  "SDKs and CLI": "SDK 和 CLI",
+  "Specialized models": "专用模型",
+  "Steps": "步骤",
+  "Threads": "线程",
+  "Tools": "工具",
+  "Transcription": "转录",
+  "Uploads": "上传",
+  "Using Codex": "使用 Codex",
+  "Vector Stores": "向量存储",
+  "Videos": "视频",
+  "Voice Consents": "语音授权",
+  "Web": "Web",
+  "Webhooks": "Webhook"
+};
+
 const warnedDisplayProducts = new Set<string>();
 const warnedDisplaySections = new Set<string>();
+const warnedNavigationLabels = new Set<string>();
+const warnedNavigationBuild = new Set<string>();
 
 const manifest = await refreshTranslationStatuses(await readJsonFile<Manifest>(MANIFEST_PATH, createEmptyManifest()));
 const displayManifest = await addDisplayMetadata(manifest);
+const navigationSnapshot = await readJsonFile<NavigationSnapshot | null>(NAVIGATION_PATH, null);
 const urlMap = buildUrlMap(displayManifest.docs);
 
 await ensureDir(DOCS_DIR);
 await removeGeneratedDir(MIRROR_DIR);
 await generateHome(displayManifest);
-await generateCatalog(displayManifest);
+await generateCatalog(displayManifest, navigationSnapshot);
 await generateTranslationStatus(displayManifest);
 await generatePages(displayManifest);
-await generateVitePressData(displayManifest);
+await generateVitePressData(displayManifest, navigationSnapshot);
 await writeBuildReport(displayManifest);
 
 console.log(`Generated ${displayManifest.docs.length} pages under ${relativeFromRoot(MIRROR_DIR)}.`);
@@ -257,25 +391,43 @@ function productLink(product: string, docs: DisplayDocEntry[]): string {
   return firstDoc ? pageLinkForSlug(firstDoc.slug) : "/catalog";
 }
 
-async function generateCatalog(manifest: DisplayManifest): Promise<void> {
-  const rows = manifest.docs
-    .map(
-      (doc) =>
-        `| ${escapeTable(doc.displayProduct)} | ${escapeTable(doc.displaySection)} | [${escapeTable(doc.displayTitle)}](${pageLinkForSlug(doc.slug)}) | ${statusLabel(
-          doc.translationStatus
-        )} | [官方](${doc.sourceUrl}) |`
-    )
-    .join("\n");
+async function generateCatalog(manifest: DisplayManifest, navigation: NavigationSnapshot | null): Promise<void> {
+  const ordered = buildOrderedNavigation(manifest, navigation);
+  const sections = ordered.products.map((product) => {
+    const items = renderCatalogItems(product.items, 0);
+    return `## ${escapeMarkdownText(product.displayProduct)}\n\n${items || "- 暂无文档"}`;
+  });
 
   await writeTextFile(
     path.join(DOCS_DIR, "catalog.md"),
     `# 文档目录
 
-| 文档集 | 分组 | 标题 | 翻译状态 | 官方源 |
-| --- | --- | --- | --- | --- |
-${rows || "| - | - | 暂无文档 | - | - |"}
+该页面按 OpenAI Developers 官方站左侧导航的层级与顺序生成；未被官方导航快照覆盖但已镜像的页面会追加在对应文档集末尾。
+
+${sections.join("\n\n") || "暂无文档。"}
 `
   );
+}
+
+function renderCatalogItems(items: OrderedNavigationItem[], depth: number): string {
+  const indent = "  ".repeat(depth);
+  return items
+    .map((item) => {
+      if (item.type === "link") {
+        return `${indent}- ${catalogDocLink(item.doc)}`;
+      }
+
+      const sectionLink = item.doc ? `：${catalogDocLink(item.doc)}` : "";
+      const nested = renderCatalogItems(item.items, depth + 1);
+      return [`${indent}- **${escapeMarkdownText(item.displayTitle)}**${sectionLink}`, nested].filter(Boolean).join("\n");
+    })
+    .join("\n");
+}
+
+function catalogDocLink(doc: DisplayDocEntry): string {
+  return `[${escapeMarkdownText(doc.displayTitle)}](${pageLinkForSlug(doc.slug)}) — ${statusLabel(doc.translationStatus)} — [官方](${
+    doc.sourceUrl
+  })`;
 }
 
 async function generateTranslationStatus(manifest: DisplayManifest): Promise<void> {
@@ -538,10 +690,138 @@ function buildUrlMap(docs: DocEntry[]): Map<string, string> {
   return map;
 }
 
-async function generateVitePressData(manifest: DisplayManifest): Promise<void> {
+function buildOrderedNavigation(manifest: DisplayManifest, navigation: NavigationSnapshot | null): OrderedNavigation {
+  if (!navigation) {
+    warnOnce(warnedNavigationBuild, `Missing navigation snapshot: ${relativeFromRoot(NAVIGATION_PATH)}. Falling back to manifest order.`);
+  }
+
+  const docsBySlug = new Map(manifest.docs.map((doc) => [doc.slug, doc]));
+  const navigationByProduct = new Map(navigation?.products.map((product) => [product.product, product]) ?? []);
+  const products = manifest.products.map((product) => {
+    const docs = manifest.docs.filter((doc) => doc.product === product);
+    const navigationProduct = navigationByProduct.get(product);
+    const usedSlugs = new Set<string>();
+    let items: OrderedNavigationItem[] = [];
+
+    if (navigationProduct?.items.length) {
+      for (const warning of navigationProduct.warnings) {
+        warnOnce(warnedNavigationBuild, `Navigation snapshot warning for ${product}: ${warning}`);
+      }
+      const stats = { skippedOfficialLinks: 0, duplicateOfficialLinks: 0 };
+      items = materializeNavigationItems(navigationProduct.items, product, docsBySlug, usedSlugs, stats);
+      if (stats.skippedOfficialLinks) {
+        warnOnce(
+          warnedNavigationBuild,
+          `Skipped ${stats.skippedOfficialLinks} official navigation links for ${product} because they are not mirrored in the manifest.`
+        );
+      }
+      if (stats.duplicateOfficialLinks) {
+        warnOnce(warnedNavigationBuild, `Skipped ${stats.duplicateOfficialLinks} duplicate official navigation links for ${product}.`);
+      }
+    } else {
+      warnOnce(warnedNavigationBuild, `No navigation snapshot items for ${product}. Falling back to manifest section order.`);
+    }
+
+    const fallbackDocs = docs.filter((doc) => !usedSlugs.has(doc.slug));
+    if (fallbackDocs.length) {
+      warnOnce(
+        warnedNavigationBuild,
+        `Appended ${fallbackDocs.length} mirrored docs for ${product} that were not found in the official navigation snapshot.`
+      );
+      items.push(...fallbackSectionsForDocs(fallbackDocs));
+    }
+
+    return {
+      product,
+      displayProduct: displayProductLabel(product),
+      items
+    };
+  });
+
+  return { products };
+}
+
+function materializeNavigationItems(
+  items: NavigationItem[],
+  product: string,
+  docsBySlug: Map<string, DisplayDocEntry>,
+  usedSlugs: Set<string>,
+  stats: { skippedOfficialLinks: number; duplicateOfficialLinks: number }
+): OrderedNavigationItem[] {
+  const ordered: OrderedNavigationItem[] = [];
+  for (const item of items) {
+    if (item.type === "link") {
+      const doc = takeNavigationDoc(item.slug, product, docsBySlug, usedSlugs, stats);
+      if (doc) ordered.push({ type: "link", doc });
+      continue;
+    }
+
+    const sectionDoc = item.slug ? takeNavigationDoc(item.slug, product, docsBySlug, usedSlugs, stats) : undefined;
+    const sectionItems = materializeNavigationItems(item.items, product, docsBySlug, usedSlugs, stats);
+    if (!sectionDoc && !sectionItems.length) continue;
+
+    ordered.push({
+      type: "section",
+      title: item.title,
+      displayTitle: displayNavigationGroupLabel(product, item, sectionDoc),
+      doc: sectionDoc,
+      items: sectionItems
+    });
+  }
+  return ordered;
+}
+
+function takeNavigationDoc(
+  slug: string,
+  product: string,
+  docsBySlug: Map<string, DisplayDocEntry>,
+  usedSlugs: Set<string>,
+  stats: { skippedOfficialLinks: number; duplicateOfficialLinks: number }
+): DisplayDocEntry | undefined {
+  if (usedSlugs.has(slug)) {
+    stats.duplicateOfficialLinks += 1;
+    return undefined;
+  }
+
+  const doc = docsBySlug.get(slug);
+  if (!doc || doc.product !== product) {
+    stats.skippedOfficialLinks += 1;
+    return undefined;
+  }
+
+  usedSlugs.add(slug);
+  return doc;
+}
+
+function fallbackSectionsForDocs(docs: DisplayDocEntry[]): OrderedNavigationItem[] {
+  const bySection = new Map<string, DisplayDocEntry[]>();
+  for (const doc of docs) {
+    bySection.set(doc.section, [...(bySection.get(doc.section) ?? []), doc]);
+  }
+
+  return [...bySection.entries()].map(([section, sectionDocs]) => ({
+    type: "section" as const,
+    title: section,
+    displayTitle: displaySectionLabel(section),
+    items: sectionDocs.map((doc) => ({ type: "link" as const, doc })),
+    fallback: true
+  }));
+}
+
+function displayNavigationGroupLabel(product: string, item: NavigationSection, doc?: DisplayDocEntry): string {
+  const productSpecific = NAVIGATION_GROUP_DISPLAY_LABELS[`${product}::${item.title}`];
+  if (productSpecific) return productSpecific;
+  const generic = NAVIGATION_GROUP_DISPLAY_LABELS[item.title];
+  if (generic) return generic;
+  if (doc) return doc.displayTitle;
+  warnOnce(warnedNavigationLabels, `Unmapped official navigation group label for ${product}: ${item.title}`);
+  return item.title;
+}
+
+async function generateVitePressData(manifest: DisplayManifest, navigation: NavigationSnapshot | null): Promise<void> {
   const generatedDir = path.join(DOCS_DIR, ".vitepress", "generated");
   await ensureDir(generatedDir);
-  await writeJsonFile(path.join(generatedDir, "sidebar.json"), buildSidebar(manifest));
+  await writeJsonFile(path.join(generatedDir, "sidebar.json"), buildSidebar(manifest, navigation));
   await writeJsonFile(path.join(generatedDir, "nav.json"), [
     { text: "首页", link: "/" },
     { text: "目录", link: "/catalog" },
@@ -550,7 +830,7 @@ async function generateVitePressData(manifest: DisplayManifest): Promise<void> {
   ]);
 }
 
-function buildSidebar(manifest: DisplayManifest): unknown[] {
+function buildSidebar(manifest: DisplayManifest, navigation: NavigationSnapshot | null): unknown[] {
   const base: unknown[] = [
     {
       text: "中文镜像",
@@ -562,31 +842,33 @@ function buildSidebar(manifest: DisplayManifest): unknown[] {
     }
   ];
 
-  const byProduct = new Map<string, DisplayDocEntry[]>();
-  for (const doc of manifest.docs) {
-    byProduct.set(doc.product, [...(byProduct.get(doc.product) ?? []), doc]);
-  }
-
-  for (const [product, docs] of byProduct) {
-    const bySection = new Map<string, DisplayDocEntry[]>();
-    for (const doc of docs) {
-      bySection.set(doc.section, [...(bySection.get(doc.section) ?? []), doc]);
-    }
+  const ordered = buildOrderedNavigation(manifest, navigation);
+  for (const product of ordered.products) {
     base.push({
-      text: displayProductLabel(product),
+      text: product.displayProduct,
       collapsed: true,
-      items: [...bySection.entries()].map(([section, sectionDocs]) => ({
-        text: displaySectionLabel(section),
-        collapsed: true,
-        items: sectionDocs.map((doc) => ({
-          text: doc.displayTitle,
-          link: pageLinkForSlug(doc.slug)
-        }))
-      }))
+      items: product.items.map(sidebarItemForNavigationItem)
     });
   }
 
   return base;
+}
+
+function sidebarItemForNavigationItem(item: OrderedNavigationItem): unknown {
+  if (item.type === "link") {
+    return {
+      text: item.doc.displayTitle,
+      link: pageLinkForSlug(item.doc.slug)
+    };
+  }
+
+  const sidebarItem: Record<string, unknown> = {
+    text: item.displayTitle,
+    collapsed: true,
+    items: item.items.map(sidebarItemForNavigationItem)
+  };
+  if (item.doc) sidebarItem.link = pageLinkForSlug(item.doc.slug);
+  return sidebarItem;
 }
 
 async function writeBuildReport(manifest: DisplayManifest): Promise<void> {
@@ -611,4 +893,8 @@ function statusLabel(status: string): string {
 
 function escapeTable(value: string): string {
   return value.replace(/\|/g, "\\|");
+}
+
+function escapeMarkdownText(value: string): string {
+  return value.replace(/\\/g, "\\\\").replace(/\*/g, "\\*").replace(/\[/g, "\\[").replace(/\]/g, "\\]").replace(/\|/g, "\\|");
 }

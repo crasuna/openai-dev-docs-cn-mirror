@@ -38,3 +38,33 @@ export interface TranslationInfo {
   status: TranslationStatus;
   sourceChecksum?: string;
 }
+
+export interface NavigationSnapshot {
+  generatedAt: string;
+  source: string;
+  products: NavigationProduct[];
+}
+
+export interface NavigationProduct {
+  product: string;
+  sourceUrl: string;
+  items: NavigationItem[];
+  warnings: string[];
+}
+
+export type NavigationItem = NavigationLink | NavigationSection;
+
+export interface NavigationLink {
+  type: "link";
+  title: string;
+  href: string;
+  slug: string;
+}
+
+export interface NavigationSection {
+  type: "section";
+  title: string;
+  href?: string;
+  slug?: string;
+  items: NavigationItem[];
+}

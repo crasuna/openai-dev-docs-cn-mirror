@@ -21,22 +21,46 @@
     "collapsed": true,
     "items": [
       {
-        "text": "API 概览",
+        "text": "衡量",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "JavaScript Pixel（测量像素）",
+            "link": "/mirror/ads/measurement-pixel"
+          },
+          {
+            "text": "Image tag（图片标签）",
+            "link": "/mirror/ads/image-tag"
+          },
+          {
+            "text": "Conversions API（转化 API）",
+            "link": "/mirror/ads/conversions-api"
+          },
+          {
+            "text": "支持的事件",
+            "link": "/mirror/ads/supported-events"
+          }
+        ]
+      },
+      {
+        "text": "广告主 API",
         "collapsed": true,
         "items": [
           {
             "text": "概览",
             "link": "/mirror/ads/api-overview"
-          }
-        ]
-      },
-      {
-        "text": "API 快速开始",
-        "collapsed": true,
-        "items": [
+          },
           {
             "text": "快速开始",
             "link": "/mirror/ads/api-quickstart"
+          },
+          {
+            "text": "商品 feed",
+            "link": "/mirror/ads/product-feeds"
+          },
+          {
+            "text": "Campaign 定向",
+            "link": "/mirror/ads/campaign-targeting"
           }
         ]
       },
@@ -45,8 +69,12 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Ad Account（广告账户）",
-            "link": "/mirror/ads/api-reference/ad-account"
+            "text": "认证",
+            "link": "/mirror/ads/api-reference/authentication"
+          },
+          {
+            "text": "Campaigns（广告活动）",
+            "link": "/mirror/ads/api-reference/campaigns"
           },
           {
             "text": "Ad Groups（广告组）",
@@ -57,80 +85,16 @@
             "link": "/mirror/ads/api-reference/ads"
           },
           {
-            "text": "认证",
-            "link": "/mirror/ads/api-reference/authentication"
-          },
-          {
-            "text": "Campaigns（广告活动）",
-            "link": "/mirror/ads/api-reference/campaigns"
-          },
-          {
-            "text": "Files（文件）",
-            "link": "/mirror/ads/api-reference/files"
+            "text": "Ad Account（广告账户）",
+            "link": "/mirror/ads/api-reference/ad-account"
           },
           {
             "text": "Insights（效果洞察）",
             "link": "/mirror/ads/api-reference/insights"
-          }
-        ]
-      },
-      {
-        "text": "广告活动定向",
-        "collapsed": true,
-        "items": [
+          },
           {
-            "text": "Campaign 定向",
-            "link": "/mirror/ads/campaign-targeting"
-          }
-        ]
-      },
-      {
-        "text": "转化 API",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Conversions API（转化 API）",
-            "link": "/mirror/ads/conversions-api"
-          }
-        ]
-      },
-      {
-        "text": "图片标签",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Image tag（图片标签）",
-            "link": "/mirror/ads/image-tag"
-          }
-        ]
-      },
-      {
-        "text": "测量像素",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "JavaScript Pixel（测量像素）",
-            "link": "/mirror/ads/measurement-pixel"
-          }
-        ]
-      },
-      {
-        "text": "商品 Feed",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "商品 feed",
-            "link": "/mirror/ads/product-feeds"
-          }
-        ]
-      },
-      {
-        "text": "支持的事件",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "支持的事件",
-            "link": "/mirror/ads/supported-events"
+            "text": "Files（文件）",
+            "link": "/mirror/ads/api-reference/files"
           }
         ]
       }
@@ -141,100 +105,792 @@
     "collapsed": true,
     "items": [
       {
-        "text": "参考",
+        "text": "API 参考",
         "collapsed": true,
         "items": [
-          {
-            "text": "Administration 概览",
-            "link": "/mirror/api/reference/administration/overview"
-          },
           {
             "text": "API 概览",
             "link": "/mirror/api/reference/overview"
           },
           {
+            "text": "工作负载身份 token 交换",
+            "link": "/mirror/api/reference/workload-identity-federation"
+          }
+        ]
+      },
+      {
+        "text": "Responses API",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Responses 概览",
+            "link": "/mirror/api/reference/responses/overview"
+          },
+          {
+            "text": "Responses 响应",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Responses — 创建",
+                "link": "/mirror/api/reference/resources/responses/methods/create"
+              },
+              {
+                "text": "Responses — 检索",
+                "link": "/mirror/api/reference/resources/responses/methods/retrieve"
+              },
+              {
+                "text": "Responses — 删除",
+                "link": "/mirror/api/reference/resources/responses/methods/delete"
+              },
+              {
+                "text": "Responses 输入项 — 列出",
+                "link": "/mirror/api/reference/resources/responses/subresources/input_items/methods/list"
+              },
+              {
+                "text": "Responses — 取消",
+                "link": "/mirror/api/reference/resources/responses/methods/cancel"
+              },
+              {
+                "text": "Responses — 压缩",
+                "link": "/mirror/api/reference/resources/responses/methods/compact"
+              }
+            ]
+          },
+          {
+            "text": "Conversations 对话",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Conversations — 创建",
+                "link": "/mirror/api/reference/resources/conversations/methods/create"
+              },
+              {
+                "text": "Conversations — 检索",
+                "link": "/mirror/api/reference/resources/conversations/methods/retrieve"
+              },
+              {
+                "text": "Conversations — 更新",
+                "link": "/mirror/api/reference/resources/conversations/methods/update"
+              },
+              {
+                "text": "Conversations — 删除",
+                "link": "/mirror/api/reference/resources/conversations/methods/delete"
+              },
+              {
+                "text": "项",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "Conversations Items — 列出",
+                    "link": "/mirror/api/reference/resources/conversations/subresources/items/methods/list"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Webhook",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Webhooks 网络钩子",
+            "link": "/mirror/api/reference/resources/webhooks"
+          }
+        ]
+      },
+      {
+        "text": "平台 API",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "音频",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Audio Transcriptions — 创建",
+                "link": "/mirror/api/reference/resources/audio/subresources/transcriptions/methods/create"
+              },
+              {
+                "text": "Audio Translations — 创建",
+                "link": "/mirror/api/reference/resources/audio/subresources/translations/methods/create"
+              },
+              {
+                "text": "Audio Speech — 创建",
+                "link": "/mirror/api/reference/resources/audio/subresources/speech/methods/create"
+              },
+              {
+                "text": "Audio Voices — 创建",
+                "link": "/mirror/api/reference/resources/audio/subresources/voices/methods/create"
+              },
+              {
+                "text": "语音授权",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "Audio Voice Consents — 创建",
+                    "link": "/mirror/api/reference/resources/audio/subresources/voice_consents/methods/create"
+                  },
+                  {
+                    "text": "Audio Voice Consents — 检索",
+                    "link": "/mirror/api/reference/resources/audio/subresources/voice_consents/methods/retrieve"
+                  },
+                  {
+                    "text": "Audio Voice Consents — 更新",
+                    "link": "/mirror/api/reference/resources/audio/subresources/voice_consents/methods/update"
+                  },
+                  {
+                    "text": "Audio Voice Consents — 删除",
+                    "link": "/mirror/api/reference/resources/audio/subresources/voice_consents/methods/delete"
+                  },
+                  {
+                    "text": "Audio Voice Consents — 列出",
+                    "link": "/mirror/api/reference/resources/audio/subresources/voice_consents/methods/list"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "视频",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "视频 — 创建",
+                "link": "/mirror/api/reference/resources/videos/methods/create"
+              },
+              {
+                "text": "视频 — 检索",
+                "link": "/mirror/api/reference/resources/videos/methods/retrieve"
+              },
+              {
+                "text": "视频 — 删除",
+                "link": "/mirror/api/reference/resources/videos/methods/delete"
+              },
+              {
+                "text": "视频 — 列出",
+                "link": "/mirror/api/reference/resources/videos/methods/list"
+              }
+            ]
+          },
+          {
+            "text": "图像",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Images — 创建变体",
+                "link": "/mirror/api/reference/resources/images/methods/create_variation"
+              }
+            ]
+          },
+          {
+            "text": "嵌入",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Embeddings — 创建",
+                "link": "/mirror/api/reference/resources/embeddings/methods/create"
+              }
+            ]
+          },
+          {
+            "text": "评估",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Evals — 创建",
+                "link": "/mirror/api/reference/resources/evals/methods/create"
+              },
+              {
+                "text": "Evals — 检索",
+                "link": "/mirror/api/reference/resources/evals/methods/retrieve"
+              },
+              {
+                "text": "Evals — 更新",
+                "link": "/mirror/api/reference/resources/evals/methods/update"
+              },
+              {
+                "text": "Evals — 删除",
+                "link": "/mirror/api/reference/resources/evals/methods/delete"
+              },
+              {
+                "text": "Evals — 列出",
+                "link": "/mirror/api/reference/resources/evals/methods/list"
+              },
+              {
+                "text": "运行",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "Evals Runs — 取消",
+                    "link": "/mirror/api/reference/resources/evals/subresources/runs/methods/cancel"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "微调",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "作业",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "Fine Tuning Jobs — 列出",
+                    "link": "/mirror/api/reference/resources/fine_tuning/subresources/jobs/methods/list"
+                  },
+                  {
+                    "text": "检查点",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Fine Tuning Jobs Checkpoints — 列出",
+                        "link": "/mirror/api/reference/resources/fine_tuning/subresources/jobs/subresources/checkpoints/methods/list"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "检查点",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "权限",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Fine Tuning Checkpoints Permissions — 创建",
+                        "link": "/mirror/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/create"
+                      },
+                      {
+                        "text": "Fine Tuning Checkpoints Permissions — 删除",
+                        "link": "/mirror/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/delete"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "批处理",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Batches — 创建",
+                "link": "/mirror/api/reference/resources/batches/methods/create"
+              },
+              {
+                "text": "Batches — 检索",
+                "link": "/mirror/api/reference/resources/batches/methods/retrieve"
+              },
+              {
+                "text": "Batches — 列出",
+                "link": "/mirror/api/reference/resources/batches/methods/list"
+              },
+              {
+                "text": "Batches — 取消",
+                "link": "/mirror/api/reference/resources/batches/methods/cancel"
+              }
+            ]
+          },
+          {
+            "text": "文件",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Files — 列出",
+                "link": "/mirror/api/reference/resources/files/methods/list"
+              },
+              {
+                "text": "Files — 创建",
+                "link": "/mirror/api/reference/resources/files/methods/create"
+              },
+              {
+                "text": "Files — 检索",
+                "link": "/mirror/api/reference/resources/files/methods/retrieve"
+              },
+              {
+                "text": "Files — 删除",
+                "link": "/mirror/api/reference/resources/files/methods/delete"
+              }
+            ]
+          },
+          {
+            "text": "上传",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Uploads — 创建",
+                "link": "/mirror/api/reference/resources/uploads/methods/create"
+              },
+              {
+                "text": "Uploads — 取消",
+                "link": "/mirror/api/reference/resources/uploads/methods/cancel"
+              },
+              {
+                "text": "分片",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "Uploads Parts — 创建",
+                    "link": "/mirror/api/reference/resources/uploads/subresources/parts/methods/create"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "模型",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Models — 检索",
+                "link": "/mirror/api/reference/resources/models/methods/retrieve"
+              },
+              {
+                "text": "Models — 删除",
+                "link": "/mirror/api/reference/resources/models/methods/delete"
+              },
+              {
+                "text": "Models — 列出",
+                "link": "/mirror/api/reference/resources/models/methods/list"
+              }
+            ]
+          },
+          {
+            "text": "内容审核",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Moderations — 创建",
+                "link": "/mirror/api/reference/resources/moderations/methods/create"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "向量存储",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "向量存储",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "向量存储 — 创建",
+                "link": "/mirror/api/reference/resources/vector_stores/methods/create"
+              },
+              {
+                "text": "向量存储 — 检索",
+                "link": "/mirror/api/reference/resources/vector_stores/methods/retrieve"
+              },
+              {
+                "text": "向量存储 — 更新",
+                "link": "/mirror/api/reference/resources/vector_stores/methods/update"
+              },
+              {
+                "text": "向量存储 — 删除",
+                "link": "/mirror/api/reference/resources/vector_stores/methods/delete"
+              },
+              {
+                "text": "向量存储 — 列出",
+                "link": "/mirror/api/reference/resources/vector_stores/methods/list"
+              },
+              {
+                "text": "向量存储 — 搜索",
+                "link": "/mirror/api/reference/resources/vector_stores/methods/search"
+              }
+            ]
+          },
+          {
+            "text": "文件",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "向量存储文件 — 列出",
+                "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/list"
+              },
+              {
+                "text": "向量存储文件 — 创建",
+                "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/create"
+              },
+              {
+                "text": "向量存储文件 — 检索",
+                "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/retrieve"
+              },
+              {
+                "text": "向量存储文件 — 更新",
+                "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/update"
+              },
+              {
+                "text": "向量存储文件 — 删除",
+                "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/delete"
+              },
+              {
+                "text": "向量存储文件 — 内容",
+                "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/content"
+              }
+            ]
+          },
+          {
+            "text": "文件批次",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "向量存储文件批次 — 创建",
+                "link": "/mirror/api/reference/resources/vector_stores/subresources/file_batches/methods/create"
+              },
+              {
+                "text": "向量存储文件批次 — 检索",
+                "link": "/mirror/api/reference/resources/vector_stores/subresources/file_batches/methods/retrieve"
+              },
+              {
+                "text": "向量存储文件批次 — 列出文件",
+                "link": "/mirror/api/reference/resources/vector_stores/subresources/file_batches/methods/list_files"
+              },
+              {
+                "text": "向量存储文件批次 — 取消",
+                "link": "/mirror/api/reference/resources/vector_stores/subresources/file_batches/methods/cancel"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "ChatKit",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "会话",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Beta ChatKit Sessions — 创建",
+                "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/create"
+              },
+              {
+                "text": "Beta ChatKit Sessions — 取消",
+                "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/cancel"
+              }
+            ]
+          },
+          {
+            "text": "线程",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Beta ChatKit Threads — 检索",
+                "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/retrieve"
+              },
+              {
+                "text": "Beta ChatKit Threads — 删除",
+                "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/delete"
+              },
+              {
+                "text": "Beta ChatKit Threads — 列出项",
+                "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/list_items"
+              },
+              {
+                "text": "Beta ChatKit Threads — 列出",
+                "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/list"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "容器",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "容器",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Containers — 创建",
+                "link": "/mirror/api/reference/resources/containers/methods/create"
+              },
+              {
+                "text": "Containers — 检索",
+                "link": "/mirror/api/reference/resources/containers/methods/retrieve"
+              },
+              {
+                "text": "Containers — 删除",
+                "link": "/mirror/api/reference/resources/containers/methods/delete"
+              },
+              {
+                "text": "Containers — 列出",
+                "link": "/mirror/api/reference/resources/containers/methods/list"
+              }
+            ]
+          },
+          {
+            "text": "文件",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Containers Files — 列出",
+                "link": "/mirror/api/reference/resources/containers/subresources/files/methods/list"
+              },
+              {
+                "text": "Containers Files — 创建",
+                "link": "/mirror/api/reference/resources/containers/subresources/files/methods/create"
+              },
+              {
+                "text": "Containers Files — 检索",
+                "link": "/mirror/api/reference/resources/containers/subresources/files/methods/retrieve"
+              },
+              {
+                "text": "Containers Files — 删除",
+                "link": "/mirror/api/reference/resources/containers/subresources/files/methods/delete"
+              },
+              {
+                "text": "内容",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "Containers Files Content — 检索",
+                    "link": "/mirror/api/reference/resources/containers/subresources/files/subresources/content/methods/retrieve"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Realtime",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "客户端密钥",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Realtime 客户端密钥 — 创建",
+                "link": "/mirror/api/reference/resources/realtime/subresources/client_secrets/methods/create"
+              }
+            ]
+          },
+          {
+            "text": "调用",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Realtime Calls — 接受",
+                "link": "/mirror/api/reference/resources/realtime/subresources/calls/methods/accept"
+              },
+              {
+                "text": "Realtime Calls — 挂断",
+                "link": "/mirror/api/reference/resources/realtime/subresources/calls/methods/hangup"
+              },
+              {
+                "text": "Realtime Calls — 转接",
+                "link": "/mirror/api/reference/resources/realtime/subresources/calls/methods/refer"
+              },
+              {
+                "text": "Realtime Calls — 拒绝",
+                "link": "/mirror/api/reference/resources/realtime/subresources/calls/methods/reject"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "管理",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Administration 概览",
+            "link": "/mirror/api/reference/administration/overview"
+          }
+        ]
+      },
+      {
+        "text": "Chat Completions",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Chat Completions",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Chat Completions 概览",
+                "link": "/mirror/api/reference/chat-completions/overview"
+              },
+              {
+                "text": "Chat Completions — 检索",
+                "link": "/mirror/api/reference/resources/chat/subresources/completions/methods/retrieve"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "旧版",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Realtime Beta",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Realtime Beta 概览",
+                "link": "/mirror/api/reference/realtime-beta/overview"
+              }
+            ]
+          },
+          {
+            "text": "Assistants 助手",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Beta Assistants — 创建",
+                "link": "/mirror/api/reference/resources/beta/subresources/assistants/methods/create"
+              },
+              {
+                "text": "Beta Assistants — 检索",
+                "link": "/mirror/api/reference/resources/beta/subresources/assistants/methods/retrieve"
+              },
+              {
+                "text": "Beta Assistants — 更新",
+                "link": "/mirror/api/reference/resources/beta/subresources/assistants/methods/update"
+              },
+              {
+                "text": "Beta Assistants — 删除",
+                "link": "/mirror/api/reference/resources/beta/subresources/assistants/methods/delete"
+              },
+              {
+                "text": "Beta Assistants — 列出",
+                "link": "/mirror/api/reference/resources/beta/subresources/assistants/methods/list"
+              },
+              {
+                "text": "线程",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "Beta Threads — 创建",
+                    "link": "/mirror/api/reference/resources/beta/subresources/threads/methods/create"
+                  },
+                  {
+                    "text": "Beta Threads — 检索",
+                    "link": "/mirror/api/reference/resources/beta/subresources/threads/methods/retrieve"
+                  },
+                  {
+                    "text": "Beta Threads — 更新",
+                    "link": "/mirror/api/reference/resources/beta/subresources/threads/methods/update"
+                  },
+                  {
+                    "text": "Beta Threads — 删除",
+                    "link": "/mirror/api/reference/resources/beta/subresources/threads/methods/delete"
+                  },
+                  {
+                    "text": "运行",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Beta Threads Runs — 创建",
+                        "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/create"
+                      },
+                      {
+                        "text": "Beta Threads Runs — 检索",
+                        "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/retrieve"
+                      },
+                      {
+                        "text": "Beta Threads Runs — 更新",
+                        "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/update"
+                      },
+                      {
+                        "text": "Beta Threads Runs — 列出",
+                        "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/list"
+                      },
+                      {
+                        "text": "Beta Threads Runs — 取消",
+                        "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/cancel"
+                      },
+                      {
+                        "text": "Beta Threads Runs — 提交工具输出",
+                        "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/submit_tool_outputs"
+                      },
+                      {
+                        "text": "步骤",
+                        "collapsed": true,
+                        "items": [
+                          {
+                            "text": "Beta Threads Runs Steps — 检索",
+                            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps/methods/retrieve"
+                          },
+                          {
+                            "text": "Beta Threads Runs Steps — 列出",
+                            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps/methods/list"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "消息",
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "text": "Beta Threads Messages — 创建",
+                        "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/create"
+                      },
+                      {
+                        "text": "Beta Threads Messages — 检索",
+                        "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/retrieve"
+                      },
+                      {
+                        "text": "Beta Threads Messages — 更新",
+                        "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/update"
+                      },
+                      {
+                        "text": "Beta Threads Messages — 删除",
+                        "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/delete"
+                      },
+                      {
+                        "text": "Beta Threads Messages — 列出",
+                        "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/list"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Completions 补全",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Completions — 创建",
+                "link": "/mirror/api/reference/resources/completions/methods/create"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "参考",
+        "collapsed": true,
+        "items": [
+          {
             "text": "Audio 音频",
             "link": "/mirror/api/reference/resources/audio"
-          },
-          {
-            "text": "Audio Speech — 创建",
-            "link": "/mirror/api/reference/resources/audio/subresources/speech/methods/create"
-          },
-          {
-            "text": "Audio Transcriptions — 创建",
-            "link": "/mirror/api/reference/resources/audio/subresources/transcriptions/methods/create"
-          },
-          {
-            "text": "Audio Translations — 创建",
-            "link": "/mirror/api/reference/resources/audio/subresources/translations/methods/create"
-          },
-          {
-            "text": "Audio Voice Consents — 创建",
-            "link": "/mirror/api/reference/resources/audio/subresources/voice_consents/methods/create"
-          },
-          {
-            "text": "Audio Voice Consents — 删除",
-            "link": "/mirror/api/reference/resources/audio/subresources/voice_consents/methods/delete"
-          },
-          {
-            "text": "Audio Voice Consents — 列出",
-            "link": "/mirror/api/reference/resources/audio/subresources/voice_consents/methods/list"
-          },
-          {
-            "text": "Audio Voice Consents — 检索",
-            "link": "/mirror/api/reference/resources/audio/subresources/voice_consents/methods/retrieve"
-          },
-          {
-            "text": "Audio Voice Consents — 更新",
-            "link": "/mirror/api/reference/resources/audio/subresources/voice_consents/methods/update"
-          },
-          {
-            "text": "Audio Voices — 创建",
-            "link": "/mirror/api/reference/resources/audio/subresources/voices/methods/create"
           },
           {
             "text": "Batches 批处理",
             "link": "/mirror/api/reference/resources/batches"
           },
           {
-            "text": "Batches — 取消",
-            "link": "/mirror/api/reference/resources/batches/methods/cancel"
-          },
-          {
-            "text": "Batches — 创建",
-            "link": "/mirror/api/reference/resources/batches/methods/create"
-          },
-          {
-            "text": "Batches — 列出",
-            "link": "/mirror/api/reference/resources/batches/methods/list"
-          },
-          {
-            "text": "Batches — 检索",
-            "link": "/mirror/api/reference/resources/batches/methods/retrieve"
-          },
-          {
             "text": "Beta Assistants 助手",
             "link": "/mirror/api/reference/resources/beta/subresources/assistants"
-          },
-          {
-            "text": "Beta Assistants — 创建",
-            "link": "/mirror/api/reference/resources/beta/subresources/assistants/methods/create"
-          },
-          {
-            "text": "Beta Assistants — 删除",
-            "link": "/mirror/api/reference/resources/beta/subresources/assistants/methods/delete"
-          },
-          {
-            "text": "Beta Assistants — 列出",
-            "link": "/mirror/api/reference/resources/beta/subresources/assistants/methods/list"
-          },
-          {
-            "text": "Beta Assistants — 检索",
-            "link": "/mirror/api/reference/resources/beta/subresources/assistants/methods/retrieve"
-          },
-          {
-            "text": "Beta Assistants — 更新",
-            "link": "/mirror/api/reference/resources/beta/subresources/assistants/methods/update"
           },
           {
             "text": "Beta ChatKit 资源",
@@ -245,280 +901,60 @@
             "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/sessions"
           },
           {
-            "text": "Beta ChatKit Sessions — 取消",
-            "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/cancel"
-          },
-          {
-            "text": "Beta ChatKit Sessions — 创建",
-            "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/create"
-          },
-          {
             "text": "Beta ChatKit Threads 线程",
             "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads"
-          },
-          {
-            "text": "Beta ChatKit Threads — 删除",
-            "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/delete"
-          },
-          {
-            "text": "Beta ChatKit Threads — 列出",
-            "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/list"
-          },
-          {
-            "text": "Beta ChatKit Threads — 列出项",
-            "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/list_items"
-          },
-          {
-            "text": "Beta ChatKit Threads — 检索",
-            "link": "/mirror/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/retrieve"
           },
           {
             "text": "Beta Threads 线程",
             "link": "/mirror/api/reference/resources/beta/subresources/threads"
           },
           {
-            "text": "Beta Threads — 创建",
-            "link": "/mirror/api/reference/resources/beta/subresources/threads/methods/create"
-          },
-          {
-            "text": "Beta Threads — 删除",
-            "link": "/mirror/api/reference/resources/beta/subresources/threads/methods/delete"
-          },
-          {
-            "text": "Beta Threads — 检索",
-            "link": "/mirror/api/reference/resources/beta/subresources/threads/methods/retrieve"
-          },
-          {
-            "text": "Beta Threads — 更新",
-            "link": "/mirror/api/reference/resources/beta/subresources/threads/methods/update"
-          },
-          {
             "text": "Beta Threads Messages 消息",
             "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/messages"
-          },
-          {
-            "text": "Beta Threads Messages — 创建",
-            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/create"
-          },
-          {
-            "text": "Beta Threads Messages — 删除",
-            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/delete"
-          },
-          {
-            "text": "Beta Threads Messages — 列出",
-            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/list"
-          },
-          {
-            "text": "Beta Threads Messages — 检索",
-            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/retrieve"
-          },
-          {
-            "text": "Beta Threads Messages — 更新",
-            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/messages/methods/update"
           },
           {
             "text": "Beta Threads Runs 运行",
             "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs"
           },
           {
-            "text": "Beta Threads Runs — 取消",
-            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/cancel"
-          },
-          {
-            "text": "Beta Threads Runs — 创建",
-            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/create"
-          },
-          {
-            "text": "Beta Threads Runs — 列出",
-            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/list"
-          },
-          {
-            "text": "Beta Threads Runs — 检索",
-            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/retrieve"
-          },
-          {
-            "text": "Beta Threads Runs — 提交工具输出",
-            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/submit_tool_outputs"
-          },
-          {
-            "text": "Beta Threads Runs — 更新",
-            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/update"
-          },
-          {
             "text": "Beta Threads Runs Steps 步骤",
             "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps"
-          },
-          {
-            "text": "Beta Threads Runs Steps — 列出",
-            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps/methods/list"
-          },
-          {
-            "text": "Beta Threads Runs Steps — 检索",
-            "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps/methods/retrieve"
           },
           {
             "text": "Chat 聊天",
             "link": "/mirror/api/reference/resources/chat"
           },
           {
-            "text": "Chat Completions — 检索",
-            "link": "/mirror/api/reference/resources/chat/subresources/completions/methods/retrieve"
-          },
-          {
-            "text": "Chat Completions 概览",
-            "link": "/mirror/api/reference/chat-completions/overview"
-          },
-          {
             "text": "Completions 补全",
             "link": "/mirror/api/reference/resources/completions"
-          },
-          {
-            "text": "Completions — 创建",
-            "link": "/mirror/api/reference/resources/completions/methods/create"
           },
           {
             "text": "Containers 容器",
             "link": "/mirror/api/reference/resources/containers"
           },
           {
-            "text": "Containers — 创建",
-            "link": "/mirror/api/reference/resources/containers/methods/create"
-          },
-          {
-            "text": "Containers — 删除",
-            "link": "/mirror/api/reference/resources/containers/methods/delete"
-          },
-          {
-            "text": "Containers — 列出",
-            "link": "/mirror/api/reference/resources/containers/methods/list"
-          },
-          {
-            "text": "Containers — 检索",
-            "link": "/mirror/api/reference/resources/containers/methods/retrieve"
-          },
-          {
             "text": "Containers Files 文件",
             "link": "/mirror/api/reference/resources/containers/subresources/files"
-          },
-          {
-            "text": "Containers Files — 创建",
-            "link": "/mirror/api/reference/resources/containers/subresources/files/methods/create"
-          },
-          {
-            "text": "Containers Files — 删除",
-            "link": "/mirror/api/reference/resources/containers/subresources/files/methods/delete"
-          },
-          {
-            "text": "Containers Files — 列出",
-            "link": "/mirror/api/reference/resources/containers/subresources/files/methods/list"
-          },
-          {
-            "text": "Containers Files — 检索",
-            "link": "/mirror/api/reference/resources/containers/subresources/files/methods/retrieve"
-          },
-          {
-            "text": "Containers Files Content — 检索",
-            "link": "/mirror/api/reference/resources/containers/subresources/files/subresources/content/methods/retrieve"
           },
           {
             "text": "Conversations 对话",
             "link": "/mirror/api/reference/resources/conversations"
           },
           {
-            "text": "Conversations — 创建",
-            "link": "/mirror/api/reference/resources/conversations/methods/create"
-          },
-          {
-            "text": "Conversations — 删除",
-            "link": "/mirror/api/reference/resources/conversations/methods/delete"
-          },
-          {
-            "text": "Conversations — 检索",
-            "link": "/mirror/api/reference/resources/conversations/methods/retrieve"
-          },
-          {
-            "text": "Conversations — 更新",
-            "link": "/mirror/api/reference/resources/conversations/methods/update"
-          },
-          {
-            "text": "Conversations Items — 列出",
-            "link": "/mirror/api/reference/resources/conversations/subresources/items/methods/list"
-          },
-          {
             "text": "Embeddings 嵌入",
             "link": "/mirror/api/reference/resources/embeddings"
-          },
-          {
-            "text": "Embeddings — 创建",
-            "link": "/mirror/api/reference/resources/embeddings/methods/create"
           },
           {
             "text": "Evals 评估",
             "link": "/mirror/api/reference/resources/evals"
           },
           {
-            "text": "Evals — 创建",
-            "link": "/mirror/api/reference/resources/evals/methods/create"
-          },
-          {
-            "text": "Evals — 删除",
-            "link": "/mirror/api/reference/resources/evals/methods/delete"
-          },
-          {
-            "text": "Evals — 列出",
-            "link": "/mirror/api/reference/resources/evals/methods/list"
-          },
-          {
-            "text": "Evals — 检索",
-            "link": "/mirror/api/reference/resources/evals/methods/retrieve"
-          },
-          {
-            "text": "Evals — 更新",
-            "link": "/mirror/api/reference/resources/evals/methods/update"
-          },
-          {
-            "text": "Evals Runs — 取消",
-            "link": "/mirror/api/reference/resources/evals/subresources/runs/methods/cancel"
-          },
-          {
             "text": "Files 文件",
             "link": "/mirror/api/reference/resources/files"
           },
           {
-            "text": "Files — 创建",
-            "link": "/mirror/api/reference/resources/files/methods/create"
-          },
-          {
-            "text": "Files — 删除",
-            "link": "/mirror/api/reference/resources/files/methods/delete"
-          },
-          {
-            "text": "Files — 列出",
-            "link": "/mirror/api/reference/resources/files/methods/list"
-          },
-          {
-            "text": "Files — 检索",
-            "link": "/mirror/api/reference/resources/files/methods/retrieve"
-          },
-          {
             "text": "Fine Tuning 微调",
             "link": "/mirror/api/reference/resources/fine_tuning"
-          },
-          {
-            "text": "Fine Tuning Checkpoints Permissions — 创建",
-            "link": "/mirror/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/create"
-          },
-          {
-            "text": "Fine Tuning Checkpoints Permissions — 删除",
-            "link": "/mirror/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/delete"
-          },
-          {
-            "text": "Fine Tuning Jobs — 列出",
-            "link": "/mirror/api/reference/resources/fine_tuning/subresources/jobs/methods/list"
-          },
-          {
-            "text": "Fine Tuning Jobs Checkpoints — 列出",
-            "link": "/mirror/api/reference/resources/fine_tuning/subresources/jobs/subresources/checkpoints/methods/list"
           },
           {
             "text": "Graders 评分器",
@@ -529,32 +965,12 @@
             "link": "/mirror/api/reference/resources/images"
           },
           {
-            "text": "Images — 创建变体",
-            "link": "/mirror/api/reference/resources/images/methods/create_variation"
-          },
-          {
             "text": "Models 模型",
             "link": "/mirror/api/reference/resources/models"
           },
           {
-            "text": "Models — 删除",
-            "link": "/mirror/api/reference/resources/models/methods/delete"
-          },
-          {
-            "text": "Models — 列出",
-            "link": "/mirror/api/reference/resources/models/methods/list"
-          },
-          {
-            "text": "Models — 检索",
-            "link": "/mirror/api/reference/resources/models/methods/retrieve"
-          },
-          {
             "text": "Moderations 内容审核",
             "link": "/mirror/api/reference/resources/moderations"
-          },
-          {
-            "text": "Moderations — 创建",
-            "link": "/mirror/api/reference/resources/moderations/methods/create"
           },
           {
             "text": "Organization 组织",
@@ -853,76 +1269,24 @@
             "link": "/mirror/api/reference/resources/realtime"
           },
           {
-            "text": "Realtime Beta 概览",
-            "link": "/mirror/api/reference/realtime-beta/overview"
-          },
-          {
             "text": "Realtime Calls 通话",
             "link": "/mirror/api/reference/resources/realtime/subresources/calls"
-          },
-          {
-            "text": "Realtime Calls — 接受",
-            "link": "/mirror/api/reference/resources/realtime/subresources/calls/methods/accept"
           },
           {
             "text": "Realtime Calls — 创建",
             "link": "/mirror/api/reference/resources/realtime/subresources/calls/methods/create"
           },
           {
-            "text": "Realtime Calls — 挂断",
-            "link": "/mirror/api/reference/resources/realtime/subresources/calls/methods/hangup"
-          },
-          {
-            "text": "Realtime Calls — 转接",
-            "link": "/mirror/api/reference/resources/realtime/subresources/calls/methods/refer"
-          },
-          {
-            "text": "Realtime Calls — 拒绝",
-            "link": "/mirror/api/reference/resources/realtime/subresources/calls/methods/reject"
-          },
-          {
             "text": "Realtime 客户端密钥",
             "link": "/mirror/api/reference/resources/realtime/subresources/client_secrets"
-          },
-          {
-            "text": "Realtime 客户端密钥 — 创建",
-            "link": "/mirror/api/reference/resources/realtime/subresources/client_secrets/methods/create"
           },
           {
             "text": "Responses 响应",
             "link": "/mirror/api/reference/resources/responses"
           },
           {
-            "text": "Responses — 取消",
-            "link": "/mirror/api/reference/resources/responses/methods/cancel"
-          },
-          {
-            "text": "Responses — 压缩",
-            "link": "/mirror/api/reference/resources/responses/methods/compact"
-          },
-          {
-            "text": "Responses — 创建",
-            "link": "/mirror/api/reference/resources/responses/methods/create"
-          },
-          {
-            "text": "Responses — 删除",
-            "link": "/mirror/api/reference/resources/responses/methods/delete"
-          },
-          {
-            "text": "Responses — 检索",
-            "link": "/mirror/api/reference/resources/responses/methods/retrieve"
-          },
-          {
-            "text": "Responses 输入项 — 列出",
-            "link": "/mirror/api/reference/resources/responses/subresources/input_items/methods/list"
-          },
-          {
             "text": "Responses 输入 tokens",
             "link": "/mirror/api/reference/resources/responses/subresources/input_tokens"
-          },
-          {
-            "text": "Responses 概览",
-            "link": "/mirror/api/reference/responses/overview"
           },
           {
             "text": "Webhooks — 解包",
@@ -933,120 +1297,20 @@
             "link": "/mirror/api/reference/resources/uploads"
           },
           {
-            "text": "Uploads — 取消",
-            "link": "/mirror/api/reference/resources/uploads/methods/cancel"
-          },
-          {
-            "text": "Uploads — 创建",
-            "link": "/mirror/api/reference/resources/uploads/methods/create"
-          },
-          {
-            "text": "Uploads Parts — 创建",
-            "link": "/mirror/api/reference/resources/uploads/subresources/parts/methods/create"
-          },
-          {
             "text": "向量存储",
             "link": "/mirror/api/reference/resources/vector_stores"
-          },
-          {
-            "text": "向量存储 — 创建",
-            "link": "/mirror/api/reference/resources/vector_stores/methods/create"
-          },
-          {
-            "text": "向量存储 — 删除",
-            "link": "/mirror/api/reference/resources/vector_stores/methods/delete"
-          },
-          {
-            "text": "向量存储 — 列出",
-            "link": "/mirror/api/reference/resources/vector_stores/methods/list"
-          },
-          {
-            "text": "向量存储 — 检索",
-            "link": "/mirror/api/reference/resources/vector_stores/methods/retrieve"
-          },
-          {
-            "text": "向量存储 — 搜索",
-            "link": "/mirror/api/reference/resources/vector_stores/methods/search"
-          },
-          {
-            "text": "向量存储 — 更新",
-            "link": "/mirror/api/reference/resources/vector_stores/methods/update"
           },
           {
             "text": "向量存储文件批次",
             "link": "/mirror/api/reference/resources/vector_stores/subresources/file_batches"
           },
           {
-            "text": "向量存储文件批次 — 取消",
-            "link": "/mirror/api/reference/resources/vector_stores/subresources/file_batches/methods/cancel"
-          },
-          {
-            "text": "向量存储文件批次 — 创建",
-            "link": "/mirror/api/reference/resources/vector_stores/subresources/file_batches/methods/create"
-          },
-          {
-            "text": "向量存储文件批次 — 列出文件",
-            "link": "/mirror/api/reference/resources/vector_stores/subresources/file_batches/methods/list_files"
-          },
-          {
-            "text": "向量存储文件批次 — 检索",
-            "link": "/mirror/api/reference/resources/vector_stores/subresources/file_batches/methods/retrieve"
-          },
-          {
             "text": "向量存储文件",
             "link": "/mirror/api/reference/resources/vector_stores/subresources/files"
           },
           {
-            "text": "向量存储文件 — 内容",
-            "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/content"
-          },
-          {
-            "text": "向量存储文件 — 创建",
-            "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/create"
-          },
-          {
-            "text": "向量存储文件 — 删除",
-            "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/delete"
-          },
-          {
-            "text": "向量存储文件 — 列出",
-            "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/list"
-          },
-          {
-            "text": "向量存储文件 — 检索",
-            "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/retrieve"
-          },
-          {
-            "text": "向量存储文件 — 更新",
-            "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/update"
-          },
-          {
             "text": "视频",
             "link": "/mirror/api/reference/resources/videos"
-          },
-          {
-            "text": "视频 — 创建",
-            "link": "/mirror/api/reference/resources/videos/methods/create"
-          },
-          {
-            "text": "视频 — 删除",
-            "link": "/mirror/api/reference/resources/videos/methods/delete"
-          },
-          {
-            "text": "视频 — 列出",
-            "link": "/mirror/api/reference/resources/videos/methods/list"
-          },
-          {
-            "text": "视频 — 检索",
-            "link": "/mirror/api/reference/resources/videos/methods/retrieve"
-          },
-          {
-            "text": "Webhooks 网络钩子",
-            "link": "/mirror/api/reference/resources/webhooks"
-          },
-          {
-            "text": "工作负载身份 token 交换",
-            "link": "/mirror/api/reference/workload-identity-federation"
           }
         ]
       }
@@ -1057,12 +1321,46 @@
     "collapsed": true,
     "items": [
       {
-        "text": "应用提交指南",
+        "text": "快速开始",
+        "link": "/mirror/apps-sdk/quickstart"
+      },
+      {
+        "text": "核心概念",
         "collapsed": true,
         "items": [
           {
-            "text": "应用提交指南",
-            "link": "/mirror/apps-sdk/app-submission-guidelines"
+            "text": "ChatGPT 中的 MCP Apps 兼容性",
+            "link": "/mirror/apps-sdk/mcp-apps-in-chatgpt"
+          },
+          {
+            "text": "MCP 服务器",
+            "link": "/mirror/apps-sdk/concepts/mcp-server"
+          },
+          {
+            "text": "UX 原则",
+            "link": "/mirror/apps-sdk/concepts/ux-principles"
+          },
+          {
+            "text": "UI 指南",
+            "link": "/mirror/apps-sdk/concepts/ui-guidelines"
+          }
+        ]
+      },
+      {
+        "text": "规划",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "研究使用场景",
+            "link": "/mirror/apps-sdk/plan/use-case"
+          },
+          {
+            "text": "定义工具",
+            "link": "/mirror/apps-sdk/plan/tools"
+          },
+          {
+            "text": "设计组件",
+            "link": "/mirror/apps-sdk/plan/components"
           }
         ]
       },
@@ -1071,20 +1369,16 @@
         "collapsed": true,
         "items": [
           {
-            "text": "认证",
-            "link": "/mirror/apps-sdk/build/auth"
+            "text": "构建你的 MCP server",
+            "link": "/mirror/apps-sdk/build/mcp-server"
           },
           {
             "text": "构建你的 ChatGPT UI",
             "link": "/mirror/apps-sdk/build/chatgpt-ui"
           },
           {
-            "text": "构建你的 MCP server",
-            "link": "/mirror/apps-sdk/build/mcp-server"
-          },
-          {
-            "text": "示例",
-            "link": "/mirror/apps-sdk/build/examples"
+            "text": "认证",
+            "link": "/mirror/apps-sdk/build/auth"
           },
           {
             "text": "管理状态",
@@ -1093,28 +1387,10 @@
           {
             "text": "商业化",
             "link": "/mirror/apps-sdk/build/monetization"
-          }
-        ]
-      },
-      {
-        "text": "概念",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "MCP 服务器",
-            "link": "/mirror/apps-sdk/concepts/mcp-server"
           },
           {
-            "text": "UI 指南",
-            "link": "/mirror/apps-sdk/concepts/ui-guidelines"
-          },
-          {
-            "text": "用户交互",
-            "link": "/mirror/apps-sdk/concepts/user-interaction"
-          },
-          {
-            "text": "UX 原则",
-            "link": "/mirror/apps-sdk/concepts/ux-principles"
+            "text": "示例",
+            "link": "/mirror/apps-sdk/build/examples"
           }
         ]
       },
@@ -1123,24 +1399,34 @@
         "collapsed": true,
         "items": [
           {
-            "text": "从 ChatGPT 连接",
-            "link": "/mirror/apps-sdk/deploy/connect-chatgpt"
-          },
-          {
             "text": "部署你的应用",
             "link": "/mirror/apps-sdk/deploy"
           },
           {
-            "text": "提交并维护你的应用",
-            "link": "/mirror/apps-sdk/deploy/submission"
+            "text": "从 ChatGPT 连接",
+            "link": "/mirror/apps-sdk/deploy/connect-chatgpt"
           },
           {
             "text": "测试你的集成",
             "link": "/mirror/apps-sdk/deploy/testing"
           },
           {
-            "text": "故障排查",
-            "link": "/mirror/apps-sdk/deploy/troubleshooting"
+            "text": "提交并维护你的应用",
+            "link": "/mirror/apps-sdk/deploy/submission"
+          }
+        ]
+      },
+      {
+        "text": "转化应用",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "餐厅预订转化规格",
+            "link": "/mirror/apps-sdk/guides/restaurant-reservation-conversion-spec"
+          },
+          {
+            "text": "产品结账转化规格",
+            "link": "/mirror/apps-sdk/guides/product-checkout-conversion-spec"
           }
         ]
       },
@@ -1153,64 +1439,36 @@
             "link": "/mirror/apps-sdk/guides/optimize-metadata"
           },
           {
-            "text": "产品结账转化规格",
-            "link": "/mirror/apps-sdk/guides/product-checkout-conversion-spec"
-          },
-          {
-            "text": "餐厅预订转化规格",
-            "link": "/mirror/apps-sdk/guides/restaurant-reservation-conversion-spec"
-          },
-          {
             "text": "安全与隐私",
             "link": "/mirror/apps-sdk/guides/security-privacy"
-          }
-        ]
-      },
-      {
-        "text": "ChatGPT 中的 MCP 应用",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "ChatGPT 中的 MCP Apps 兼容性",
-            "link": "/mirror/apps-sdk/mcp-apps-in-chatgpt"
-          }
-        ]
-      },
-      {
-        "text": "规划",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "定义工具",
-            "link": "/mirror/apps-sdk/plan/tools"
           },
           {
-            "text": "设计组件",
-            "link": "/mirror/apps-sdk/plan/components"
+            "text": "故障排查",
+            "link": "/mirror/apps-sdk/deploy/troubleshooting"
+          }
+        ]
+      },
+      {
+        "text": "资源",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "应用提交指南",
+            "link": "/mirror/apps-sdk/app-submission-guidelines"
           },
-          {
-            "text": "研究使用场景",
-            "link": "/mirror/apps-sdk/plan/use-case"
-          }
-        ]
-      },
-      {
-        "text": "快速开始",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "快速开始",
-            "link": "/mirror/apps-sdk/quickstart"
-          }
-        ]
-      },
-      {
-        "text": "文档集",
-        "collapsed": true,
-        "items": [
           {
             "text": "参考",
             "link": "/mirror/apps-sdk/reference"
+          }
+        ]
+      },
+      {
+        "text": "概念",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "用户交互",
+            "link": "/mirror/apps-sdk/concepts/user-interaction"
           }
         ]
       }
@@ -1221,150 +1479,504 @@
     "collapsed": true,
     "items": [
       {
-        "text": "智能体审批与安全",
+        "text": "入门",
         "collapsed": true,
         "items": [
+          {
+            "text": "快速开始",
+            "link": "/mirror/codex/quickstart"
+          },
+          {
+            "text": "导入到 Codex",
+            "link": "/mirror/codex/import"
+          },
+          {
+            "text": "Codex 定价",
+            "link": "/mirror/codex/pricing"
+          },
+          {
+            "text": "概念",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "提示词",
+                "link": "/mirror/codex/prompting"
+              },
+              {
+                "text": "自定义",
+                "link": "/mirror/codex/concepts/customization"
+              },
+              {
+                "text": "Memories 记忆",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "Chronicle 编年记忆",
+                    "link": "/mirror/codex/memories/chronicle"
+                  }
+                ],
+                "link": "/mirror/codex/memories"
+              },
+              {
+                "text": "Sandbox 沙盒",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "Auto-review 自动审查",
+                    "link": "/mirror/codex/concepts/sandboxing/auto-review"
+                  }
+                ],
+                "link": "/mirror/codex/concepts/sandboxing"
+              },
+              {
+                "text": "Subagents 子代理",
+                "link": "/mirror/codex/concepts/subagents"
+              },
+              {
+                "text": "工作流",
+                "link": "/mirror/codex/workflows"
+              },
+              {
+                "text": "Codex 模型",
+                "link": "/mirror/codex/models"
+              },
+              {
+                "text": "网络安全",
+                "link": "/mirror/codex/concepts/cyber-safety"
+              },
+              {
+                "text": "术语表",
+                "link": "/mirror/codex/glossary"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "使用 Codex",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "应用",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Codex app 应用",
+                "link": "/mirror/codex/app"
+              },
+              {
+                "text": "Codex app 功能",
+                "link": "/mirror/codex/app/features"
+              },
+              {
+                "text": "Codex app 设置",
+                "link": "/mirror/codex/app/settings"
+              },
+              {
+                "text": "Review 代码审查",
+                "link": "/mirror/codex/app/review"
+              },
+              {
+                "text": "Automations 自动化",
+                "link": "/mirror/codex/app/automations"
+              },
+              {
+                "text": "Worktrees 工作树",
+                "link": "/mirror/codex/app/worktrees"
+              },
+              {
+                "text": "Local environments 本地环境",
+                "link": "/mirror/codex/app/local-environments"
+              },
+              {
+                "text": "In-app browser 应用内浏览器",
+                "link": "/mirror/codex/app/browser"
+              },
+              {
+                "text": "Codex Chrome 扩展",
+                "link": "/mirror/codex/app/chrome-extension"
+              },
+              {
+                "text": "Computer Use 计算机使用",
+                "link": "/mirror/codex/app/computer-use"
+              },
+              {
+                "text": "Appshots 应用快照",
+                "link": "/mirror/codex/appshots"
+              },
+              {
+                "text": "Codex app 命令",
+                "link": "/mirror/codex/app/commands"
+              },
+              {
+                "text": "Windows 应用",
+                "link": "/mirror/codex/app/windows"
+              },
+              {
+                "text": "故障排除",
+                "link": "/mirror/codex/app/troubleshooting"
+              }
+            ]
+          },
+          {
+            "text": "IDE 扩展",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Codex IDE extension 扩展",
+                "link": "/mirror/codex/ide"
+              },
+              {
+                "text": "Codex IDE extension 功能",
+                "link": "/mirror/codex/ide/features"
+              },
+              {
+                "text": "Codex IDE extension 设置",
+                "link": "/mirror/codex/ide/settings"
+              },
+              {
+                "text": "Codex IDE extension 命令",
+                "link": "/mirror/codex/ide/commands"
+              },
+              {
+                "text": "Codex IDE extension 斜杠命令",
+                "link": "/mirror/codex/ide/slash-commands"
+              }
+            ]
+          },
+          {
+            "text": "CLI",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Codex CLI 命令行",
+                "link": "/mirror/codex/cli"
+              },
+              {
+                "text": "Codex CLI 功能",
+                "link": "/mirror/codex/cli/features"
+              },
+              {
+                "text": "命令行选项",
+                "link": "/mirror/codex/cli/reference"
+              },
+              {
+                "text": "Codex CLI 中的 Slash commands",
+                "link": "/mirror/codex/cli/slash-commands"
+              }
+            ]
+          },
+          {
+            "text": "Web",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Codex web 网页版",
+                "link": "/mirror/codex/cloud"
+              },
+              {
+                "text": "Cloud 环境",
+                "link": "/mirror/codex/cloud/environments"
+              },
+              {
+                "text": "Agent 互联网访问",
+                "link": "/mirror/codex/cloud/internet-access"
+              }
+            ]
+          },
+          {
+            "text": "集成",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "GitHub 中的 Codex 代码审查",
+                "link": "/mirror/codex/integrations/github"
+              },
+              {
+                "text": "在 Slack 中使用 Codex",
+                "link": "/mirror/codex/integrations/slack"
+              },
+              {
+                "text": "在 Linear 中使用 Codex",
+                "link": "/mirror/codex/integrations/linear"
+              }
+            ]
+          },
+          {
+            "text": "Codex Security",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Codex Security 安全",
+                "link": "/mirror/codex/security"
+              },
+              {
+                "text": "Codex Security 插件",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "Codex Security plugin 快速入门",
+                    "link": "/mirror/codex/security/plugin"
+                  },
+                  {
+                    "text": "运行 Codex Security 扫描",
+                    "link": "/mirror/codex/security/plugin/scans"
+                  },
+                  {
+                    "text": "运行深度安全扫描",
+                    "link": "/mirror/codex/security/plugin/deep-scans"
+                  },
+                  {
+                    "text": "审查代码变更的安全性",
+                    "link": "/mirror/codex/security/plugin/code-changes"
+                  },
+                  {
+                    "text": "分流 backlog",
+                    "link": "/mirror/codex/security/plugin/triage-backlog"
+                  },
+                  {
+                    "text": "修复并验证安全发现项",
+                    "link": "/mirror/codex/security/plugin/fix-findings"
+                  },
+                  {
+                    "text": "导出并跟踪安全发现项",
+                    "link": "/mirror/codex/security/plugin/export-findings"
+                  },
+                  {
+                    "text": "Codex Security plugin 变更日志",
+                    "link": "/mirror/codex/security/plugin/changelog"
+                  }
+                ]
+              },
+              {
+                "text": "Codex Security 云端",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "Codex Security 设置",
+                    "link": "/mirror/codex/security/setup"
+                  },
+                  {
+                    "text": "改进威胁模型",
+                    "link": "/mirror/codex/security/threat-model"
+                  }
+                ]
+              },
+              {
+                "text": "常见问题",
+                "link": "/mirror/codex/security/faq"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "配置",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "配置文件",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "配置基础",
+                "link": "/mirror/codex/config-basic"
+              },
+              {
+                "text": "高级配置",
+                "link": "/mirror/codex/config-advanced"
+              },
+              {
+                "text": "配置参考",
+                "link": "/mirror/codex/config-reference"
+              },
+              {
+                "text": "环境变量",
+                "link": "/mirror/codex/environment-variables"
+              },
+              {
+                "text": "配置示例",
+                "link": "/mirror/codex/config-sample"
+              }
+            ]
+          },
+          {
+            "text": "权限",
+            "link": "/mirror/codex/permissions"
+          },
+          {
+            "text": "速度",
+            "link": "/mirror/codex/speed"
+          },
+          {
+            "text": "Rules 规则",
+            "link": "/mirror/codex/rules"
+          },
+          {
+            "text": "Hooks 钩子",
+            "link": "/mirror/codex/hooks"
+          },
+          {
+            "text": "使用 AGENTS.md 编写自定义指令",
+            "link": "/mirror/codex/guides/agents-md"
+          },
+          {
+            "text": "Model Context Protocol 模型上下文协议",
+            "link": "/mirror/codex/mcp"
+          },
+          {
+            "text": "插件",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Plugins 插件",
+                "link": "/mirror/codex/plugins"
+              },
+              {
+                "text": "构建 plugins",
+                "link": "/mirror/codex/plugins/build"
+              }
+            ]
+          },
+          {
+            "text": "Sites 站点",
+            "link": "/mirror/codex/sites"
+          },
+          {
+            "text": "技能",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Agent Skills 代理技能",
+                "link": "/mirror/codex/skills"
+              },
+              {
+                "text": "录制与回放",
+                "link": "/mirror/codex/record-and-replay"
+              }
+            ]
+          },
+          {
+            "text": "Subagents 子代理",
+            "link": "/mirror/codex/subagents"
+          }
+        ]
+      },
+      {
+        "text": "管理",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "身份验证",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "认证",
+                "link": "/mirror/codex/auth"
+              },
+              {
+                "text": "访问令牌",
+                "link": "/mirror/codex/enterprise/access-tokens"
+              }
+            ]
+          },
           {
             "text": "Agent approvals 与安全",
             "link": "/mirror/codex/agent-approvals-security"
+          },
+          {
+            "text": "远程连接",
+            "link": "/mirror/codex/remote-connections"
+          },
+          {
+            "text": "部署",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "将 Codex 与 Amazon Bedrock 搭配使用",
+                "link": "/mirror/codex/amazon-bedrock"
+              }
+            ]
+          },
+          {
+            "text": "企业",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "管理员设置",
+                "link": "/mirror/codex/enterprise/admin-setup"
+              },
+              {
+                "text": "治理",
+                "link": "/mirror/codex/enterprise/governance"
+              },
+              {
+                "text": "托管配置",
+                "link": "/mirror/codex/enterprise/managed-configuration"
+              }
+            ]
+          },
+          {
+            "text": "Windows 支持",
+            "link": "/mirror/codex/windows"
           }
         ]
       },
       {
-        "text": "Amazon Bedrock",
+        "text": "自动化",
         "collapsed": true,
         "items": [
           {
-            "text": "将 Codex 与 Amazon Bedrock 搭配使用",
-            "link": "/mirror/codex/amazon-bedrock"
-          }
-        ]
-      },
-      {
-        "text": "应用",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Automations 自动化",
-            "link": "/mirror/codex/app/automations"
+            "text": "非交互模式",
+            "link": "/mirror/codex/noninteractive"
           },
           {
-            "text": "Codex app 应用",
-            "link": "/mirror/codex/app"
+            "text": "Codex SDK 软件开发工具包",
+            "link": "/mirror/codex/sdk"
           },
-          {
-            "text": "Codex app 命令",
-            "link": "/mirror/codex/app/commands"
-          },
-          {
-            "text": "Codex app 功能",
-            "link": "/mirror/codex/app/features"
-          },
-          {
-            "text": "Codex app 设置",
-            "link": "/mirror/codex/app/settings"
-          },
-          {
-            "text": "Codex Chrome 扩展",
-            "link": "/mirror/codex/app/chrome-extension"
-          },
-          {
-            "text": "Computer Use 计算机使用",
-            "link": "/mirror/codex/app/computer-use"
-          },
-          {
-            "text": "In-app browser 应用内浏览器",
-            "link": "/mirror/codex/app/browser"
-          },
-          {
-            "text": "Local environments 本地环境",
-            "link": "/mirror/codex/app/local-environments"
-          },
-          {
-            "text": "Review 代码审查",
-            "link": "/mirror/codex/app/review"
-          },
-          {
-            "text": "故障排除",
-            "link": "/mirror/codex/app/troubleshooting"
-          },
-          {
-            "text": "Windows 应用",
-            "link": "/mirror/codex/app/windows"
-          },
-          {
-            "text": "Worktrees 工作树",
-            "link": "/mirror/codex/app/worktrees"
-          }
-        ]
-      },
-      {
-        "text": "应用服务器",
-        "collapsed": true,
-        "items": [
           {
             "text": "Codex App Server 应用服务器",
             "link": "/mirror/codex/app-server"
+          },
+          {
+            "text": "将 Codex 与 Agents SDK 结合使用",
+            "link": "/mirror/codex/guides/agents-sdk"
+          },
+          {
+            "text": "Codex GitHub Action 操作",
+            "link": "/mirror/codex/github-action"
           }
         ]
       },
       {
-        "text": "应用快照",
+        "text": "学习",
         "collapsed": true,
         "items": [
           {
-            "text": "Appshots 应用快照",
-            "link": "/mirror/codex/appshots"
+            "text": "最佳实践",
+            "link": "/mirror/codex/learn/best-practices"
+          },
+          {
+            "text": "视频",
+            "link": "/mirror/codex/videos"
+          },
+          {
+            "text": "构建 AI-Native 工程团队",
+            "link": "/mirror/codex/guides/build-ai-native-engineering-team"
           }
         ]
       },
       {
-        "text": "身份验证",
+        "text": "发布",
         "collapsed": true,
         "items": [
           {
-            "text": "认证",
-            "link": "/mirror/codex/auth"
-          }
-        ]
-      },
-      {
-        "text": "CLI",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Codex CLI 命令行",
-            "link": "/mirror/codex/cli"
+            "text": "功能成熟度",
+            "link": "/mirror/codex/feature-maturity"
           },
           {
-            "text": "Codex CLI 功能",
-            "link": "/mirror/codex/cli/features"
-          },
-          {
-            "text": "命令行选项",
-            "link": "/mirror/codex/cli/reference"
-          },
-          {
-            "text": "Codex CLI 中的 Slash commands",
-            "link": "/mirror/codex/cli/slash-commands"
-          }
-        ]
-      },
-      {
-        "text": "云端",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Agent 互联网访问",
-            "link": "/mirror/codex/cloud/internet-access"
-          },
-          {
-            "text": "Cloud 环境",
-            "link": "/mirror/codex/cloud/environments"
-          },
-          {
-            "text": "Codex web 网页版",
-            "link": "/mirror/codex/cloud"
+            "text": "开源",
+            "link": "/mirror/codex/open-source"
           }
         ]
       },
@@ -1379,72 +1991,6 @@
         ]
       },
       {
-        "text": "概念",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Auto-review 自动审查",
-            "link": "/mirror/codex/concepts/sandboxing/auto-review"
-          },
-          {
-            "text": "自定义",
-            "link": "/mirror/codex/concepts/customization"
-          },
-          {
-            "text": "网络安全",
-            "link": "/mirror/codex/concepts/cyber-safety"
-          },
-          {
-            "text": "Sandbox 沙盒",
-            "link": "/mirror/codex/concepts/sandboxing"
-          },
-          {
-            "text": "Subagents 子代理",
-            "link": "/mirror/codex/concepts/subagents"
-          }
-        ]
-      },
-      {
-        "text": "高级配置",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "高级配置",
-            "link": "/mirror/codex/config-advanced"
-          }
-        ]
-      },
-      {
-        "text": "基础配置",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "配置基础",
-            "link": "/mirror/codex/config-basic"
-          }
-        ]
-      },
-      {
-        "text": "配置参考",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "配置参考",
-            "link": "/mirror/codex/config-reference"
-          }
-        ]
-      },
-      {
-        "text": "配置示例",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "配置示例",
-            "link": "/mirror/codex/config-sample"
-          }
-        ]
-      },
-      {
         "text": "自定义提示",
         "collapsed": true,
         "items": [
@@ -1455,438 +2001,12 @@
         ]
       },
       {
-        "text": "企业",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "访问令牌",
-            "link": "/mirror/codex/enterprise/access-tokens"
-          },
-          {
-            "text": "管理员设置",
-            "link": "/mirror/codex/enterprise/admin-setup"
-          },
-          {
-            "text": "治理",
-            "link": "/mirror/codex/enterprise/governance"
-          },
-          {
-            "text": "托管配置",
-            "link": "/mirror/codex/enterprise/managed-configuration"
-          }
-        ]
-      },
-      {
-        "text": "环境变量",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "环境变量",
-            "link": "/mirror/codex/environment-variables"
-          }
-        ]
-      },
-      {
-        "text": "功能成熟度",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "功能成熟度",
-            "link": "/mirror/codex/feature-maturity"
-          }
-        ]
-      },
-      {
-        "text": "GitHub Action",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Codex GitHub Action 操作",
-            "link": "/mirror/codex/github-action"
-          }
-        ]
-      },
-      {
-        "text": "术语表",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "术语表",
-            "link": "/mirror/codex/glossary"
-          }
-        ]
-      },
-      {
-        "text": "指南",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "构建 AI-Native 工程团队",
-            "link": "/mirror/codex/guides/build-ai-native-engineering-team"
-          },
-          {
-            "text": "使用 AGENTS.md 编写自定义指令",
-            "link": "/mirror/codex/guides/agents-md"
-          },
-          {
-            "text": "将 Codex 与 Agents SDK 结合使用",
-            "link": "/mirror/codex/guides/agents-sdk"
-          }
-        ]
-      },
-      {
-        "text": "钩子",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Hooks 钩子",
-            "link": "/mirror/codex/hooks"
-          }
-        ]
-      },
-      {
-        "text": "IDE",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Codex IDE extension 扩展",
-            "link": "/mirror/codex/ide"
-          },
-          {
-            "text": "Codex IDE extension 命令",
-            "link": "/mirror/codex/ide/commands"
-          },
-          {
-            "text": "Codex IDE extension 功能",
-            "link": "/mirror/codex/ide/features"
-          },
-          {
-            "text": "Codex IDE extension 设置",
-            "link": "/mirror/codex/ide/settings"
-          },
-          {
-            "text": "Codex IDE extension 斜杠命令",
-            "link": "/mirror/codex/ide/slash-commands"
-          }
-        ]
-      },
-      {
-        "text": "导入",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "导入到 Codex",
-            "link": "/mirror/codex/import"
-          }
-        ]
-      },
-      {
-        "text": "集成",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "GitHub 中的 Codex 代码审查",
-            "link": "/mirror/codex/integrations/github"
-          },
-          {
-            "text": "在 Linear 中使用 Codex",
-            "link": "/mirror/codex/integrations/linear"
-          },
-          {
-            "text": "在 Slack 中使用 Codex",
-            "link": "/mirror/codex/integrations/slack"
-          }
-        ]
-      },
-      {
-        "text": "学习",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "最佳实践",
-            "link": "/mirror/codex/learn/best-practices"
-          }
-        ]
-      },
-      {
-        "text": "MCP",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Model Context Protocol 模型上下文协议",
-            "link": "/mirror/codex/mcp"
-          }
-        ]
-      },
-      {
-        "text": "记忆",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Chronicle 编年记忆",
-            "link": "/mirror/codex/memories/chronicle"
-          },
-          {
-            "text": "Memories 记忆",
-            "link": "/mirror/codex/memories"
-          }
-        ]
-      },
-      {
-        "text": "模型",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Codex 模型",
-            "link": "/mirror/codex/models"
-          }
-        ]
-      },
-      {
-        "text": "非交互式",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "非交互模式",
-            "link": "/mirror/codex/noninteractive"
-          }
-        ]
-      },
-      {
-        "text": "开源",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "开源",
-            "link": "/mirror/codex/open-source"
-          }
-        ]
-      },
-      {
         "text": "概览",
         "collapsed": true,
         "items": [
           {
             "text": "Codex 概览",
             "link": "/mirror/codex/overview"
-          }
-        ]
-      },
-      {
-        "text": "权限",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "权限",
-            "link": "/mirror/codex/permissions"
-          }
-        ]
-      },
-      {
-        "text": "插件",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "构建 plugins",
-            "link": "/mirror/codex/plugins/build"
-          },
-          {
-            "text": "Plugins 插件",
-            "link": "/mirror/codex/plugins"
-          }
-        ]
-      },
-      {
-        "text": "价格",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Codex 定价",
-            "link": "/mirror/codex/pricing"
-          }
-        ]
-      },
-      {
-        "text": "提示",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "提示词",
-            "link": "/mirror/codex/prompting"
-          }
-        ]
-      },
-      {
-        "text": "快速开始",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "快速开始",
-            "link": "/mirror/codex/quickstart"
-          }
-        ]
-      },
-      {
-        "text": "录制与回放",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "录制与回放",
-            "link": "/mirror/codex/record-and-replay"
-          }
-        ]
-      },
-      {
-        "text": "远程连接",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "远程连接",
-            "link": "/mirror/codex/remote-connections"
-          }
-        ]
-      },
-      {
-        "text": "规则",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Rules 规则",
-            "link": "/mirror/codex/rules"
-          }
-        ]
-      },
-      {
-        "text": "SDK",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Codex SDK 软件开发工具包",
-            "link": "/mirror/codex/sdk"
-          }
-        ]
-      },
-      {
-        "text": "安全",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Codex Security 安全",
-            "link": "/mirror/codex/security"
-          },
-          {
-            "text": "Codex Security plugin 变更日志",
-            "link": "/mirror/codex/security/plugin/changelog"
-          },
-          {
-            "text": "Codex Security plugin 快速入门",
-            "link": "/mirror/codex/security/plugin"
-          },
-          {
-            "text": "Codex Security 设置",
-            "link": "/mirror/codex/security/setup"
-          },
-          {
-            "text": "导出并跟踪安全发现项",
-            "link": "/mirror/codex/security/plugin/export-findings"
-          },
-          {
-            "text": "常见问题",
-            "link": "/mirror/codex/security/faq"
-          },
-          {
-            "text": "修复并验证安全发现项",
-            "link": "/mirror/codex/security/plugin/fix-findings"
-          },
-          {
-            "text": "改进威胁模型",
-            "link": "/mirror/codex/security/threat-model"
-          },
-          {
-            "text": "审查代码变更的安全性",
-            "link": "/mirror/codex/security/plugin/code-changes"
-          },
-          {
-            "text": "运行 Codex Security 扫描",
-            "link": "/mirror/codex/security/plugin/scans"
-          },
-          {
-            "text": "运行深度安全扫描",
-            "link": "/mirror/codex/security/plugin/deep-scans"
-          },
-          {
-            "text": "分流 backlog",
-            "link": "/mirror/codex/security/plugin/triage-backlog"
-          }
-        ]
-      },
-      {
-        "text": "站点",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Sites 站点",
-            "link": "/mirror/codex/sites"
-          }
-        ]
-      },
-      {
-        "text": "技能",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Agent Skills 代理技能",
-            "link": "/mirror/codex/skills"
-          }
-        ]
-      },
-      {
-        "text": "速度",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "速度",
-            "link": "/mirror/codex/speed"
-          }
-        ]
-      },
-      {
-        "text": "子代理",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Subagents 子代理",
-            "link": "/mirror/codex/subagents"
-          }
-        ]
-      },
-      {
-        "text": "视频",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "视频",
-            "link": "/mirror/codex/videos"
-          }
-        ]
-      },
-      {
-        "text": "Windows",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Windows 支持",
-            "link": "/mirror/codex/windows"
-          }
-        ]
-      },
-      {
-        "text": "工作流",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "工作流",
-            "link": "/mirror/codex/workflows"
           }
         ]
       },
@@ -1911,16 +2031,58 @@
         "collapsed": true,
         "items": [
           {
-            "text": "生产环境中的 Agentic Commerce",
-            "link": "/mirror/commerce/guides/production"
+            "text": "快速开始",
+            "link": "/mirror/commerce/guides/get-started"
           },
           {
             "text": "最佳实践",
             "link": "/mirror/commerce/guides/best-practices"
+          }
+        ]
+      },
+      {
+        "text": "文件上传",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "文件上传概览",
+            "link": "/mirror/commerce/specs/file-upload/overview"
           },
           {
-            "text": "快速开始",
-            "link": "/mirror/commerce/guides/get-started"
+            "text": "商品",
+            "link": "/mirror/commerce/specs/file-upload/products"
+          }
+        ]
+      },
+      {
+        "text": "API",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "API 概览",
+            "link": "/mirror/commerce/specs/api/overview"
+          },
+          {
+            "text": "Feeds（Feed 管理）",
+            "link": "/mirror/commerce/specs/api/feeds"
+          },
+          {
+            "text": "商品",
+            "link": "/mirror/commerce/specs/api/products"
+          },
+          {
+            "text": "促销",
+            "link": "/mirror/commerce/specs/api/promotions"
+          }
+        ]
+      },
+      {
+        "text": "指南",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "生产环境中的 Agentic Commerce",
+            "link": "/mirror/commerce/guides/production"
           },
           {
             "text": "关键概念",
@@ -1941,10 +2103,6 @@
             "link": "/mirror/commerce/specs/payment"
           },
           {
-            "text": "Feeds（Feed 管理）",
-            "link": "/mirror/commerce/specs/api/feeds"
-          },
-          {
             "text": "文件上传",
             "link": "/mirror/commerce/specs/file-upload/legacy"
           },
@@ -1953,28 +2111,8 @@
             "link": "/mirror/commerce/specs/onboarding"
           },
           {
-            "text": "API 概览",
-            "link": "/mirror/commerce/specs/api/overview"
-          },
-          {
-            "text": "文件上传概览",
-            "link": "/mirror/commerce/specs/file-upload/overview"
-          },
-          {
             "text": "Product Feed Spec（商品 Feed 规范）",
             "link": "/mirror/commerce/specs/spec"
-          },
-          {
-            "text": "商品",
-            "link": "/mirror/commerce/specs/api/products"
-          },
-          {
-            "text": "商品",
-            "link": "/mirror/commerce/specs/file-upload/products"
-          },
-          {
-            "text": "促销",
-            "link": "/mirror/commerce/specs/api/promotions"
           }
         ]
       }
@@ -1985,52 +2123,729 @@
     "collapsed": true,
     "items": [
       {
-        "text": "文档",
+        "text": "入门",
         "collapsed": true,
         "items": [
           {
-            "text": "ChatKit 中的操作",
-            "link": "/mirror/api/docs/guides/chatkit-actions"
+            "text": "开发者快速入门",
+            "link": "/mirror/api/docs/quickstart"
           },
           {
-            "text": "Admin APIs 管理 API",
-            "link": "/mirror/api/docs/guides/admin-apis"
+            "text": "定价",
+            "link": "/mirror/api/docs/pricing"
           },
           {
-            "text": "ChatKit 高级集成",
-            "link": "/mirror/api/docs/guides/custom-chatkit"
+            "text": "SDK 和 CLI",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Agents SDK 智能体 SDK",
+                "link": "/mirror/api/docs/guides/agents"
+              },
+              {
+                "text": "OpenAI CLI 命令行",
+                "link": "/mirror/api/docs/libraries/openai-cli"
+              }
+            ],
+            "link": "/mirror/api/docs/libraries"
           },
           {
-            "text": "高级用法",
-            "link": "/mirror/api/docs/guides/advanced-usage"
+            "text": "使用 GPT-5.5",
+            "link": "/mirror/api/docs/guides/latest-model"
           },
           {
-            "text": "Agent Builder 智能体构建器",
-            "link": "/mirror/api/docs/guides/agent-builder"
+            "text": "GPT-5.5 提示词指南",
+            "link": "/mirror/api/docs/guides/prompt-guidance"
+          }
+        ]
+      },
+      {
+        "text": "核心概念",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "文本生成",
+            "link": "/mirror/api/docs/guides/text"
+          },
+          {
+            "text": "代码生成",
+            "link": "/mirror/api/docs/guides/code-generation"
+          },
+          {
+            "text": "图像与视觉",
+            "link": "/mirror/api/docs/guides/images-vision"
+          },
+          {
+            "text": "音频与语音",
+            "link": "/mirror/api/docs/guides/audio"
+          },
+          {
+            "text": "结构化模型输出",
+            "link": "/mirror/api/docs/guides/structured-outputs"
+          },
+          {
+            "text": "Function calling 函数调用",
+            "link": "/mirror/api/docs/guides/function-calling"
+          },
+          {
+            "text": "迁移到 Responses API",
+            "link": "/mirror/api/docs/guides/migrate-to-responses"
+          },
+          {
+            "text": "使用工具",
+            "link": "/mirror/api/docs/guides/tools"
+          }
+        ]
+      },
+      {
+        "text": "Agents SDK",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "快速入门",
+            "link": "/mirror/api/docs/guides/agents/quickstart"
           },
           {
             "text": "Agent 定义",
             "link": "/mirror/api/docs/guides/agents/define-agents"
           },
           {
-            "text": "Agents SDK 智能体 SDK",
-            "link": "/mirror/api/docs/guides/agents"
+            "text": "Models 和 providers",
+            "link": "/mirror/api/docs/guides/agents/models"
+          },
+          {
+            "text": "运行 agents",
+            "link": "/mirror/api/docs/guides/agents/running-agents"
+          },
+          {
+            "text": "Sandbox Agents 沙盒智能体",
+            "link": "/mirror/api/docs/guides/agents/sandboxes"
+          },
+          {
+            "text": "Orchestration 与 handoffs",
+            "link": "/mirror/api/docs/guides/agents/orchestration"
+          },
+          {
+            "text": "Guardrails 和人工审核",
+            "link": "/mirror/api/docs/guides/agents/guardrails-approvals"
+          },
+          {
+            "text": "结果和状态",
+            "link": "/mirror/api/docs/guides/agents/results"
+          },
+          {
+            "text": "集成与可观测性",
+            "link": "/mirror/api/docs/guides/agents/integrations-observability"
+          },
+          {
+            "text": "评估 agent 工作流",
+            "link": "/mirror/api/docs/guides/agent-evals"
+          },
+          {
+            "text": "语音 agents",
+            "link": "/mirror/api/docs/guides/voice-agents"
+          },
+          {
+            "text": "ChatKit",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "ChatKit 聊天组件",
+                "link": "/mirror/api/docs/guides/chatkit"
+              },
+              {
+                "text": "ChatKit 中的主题和自定义",
+                "link": "/mirror/api/docs/guides/chatkit-themes"
+              },
+              {
+                "text": "ChatKit widgets 小组件",
+                "link": "/mirror/api/docs/guides/chatkit-widgets"
+              },
+              {
+                "text": "ChatKit 中的操作",
+                "link": "/mirror/api/docs/guides/chatkit-actions"
+              },
+              {
+                "text": "ChatKit 高级集成",
+                "link": "/mirror/api/docs/guides/custom-chatkit"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "工具",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Web search 网页搜索",
+            "link": "/mirror/api/docs/guides/tools-web-search"
+          },
+          {
+            "text": "MCP 和 Connectors",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Secure MCP Tunnel 安全 MCP 隧道",
+                "link": "/mirror/api/docs/guides/secure-mcp-tunnels"
+              }
+            ],
+            "link": "/mirror/api/docs/guides/tools-connectors-mcp"
+          },
+          {
+            "text": "Skills 技能",
+            "link": "/mirror/api/docs/guides/tools-skills"
+          },
+          {
+            "text": "Shell 工具",
+            "link": "/mirror/api/docs/guides/tools-shell"
+          },
+          {
+            "text": "Computer use 计算机使用",
+            "link": "/mirror/api/docs/guides/tools-computer-use"
+          },
+          {
+            "text": "文件搜索与检索",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "文件搜索",
+                "link": "/mirror/api/docs/guides/tools-file-search"
+              },
+              {
+                "text": "检索",
+                "link": "/mirror/api/docs/guides/retrieval"
+              }
+            ]
+          },
+          {
+            "text": "Tool search 工具搜索",
+            "link": "/mirror/api/docs/guides/tools-tool-search"
+          },
+          {
+            "text": "更多工具",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Apply Patch 补丁工具",
+                "link": "/mirror/api/docs/guides/tools-apply-patch"
+              },
+              {
+                "text": "Local shell 本地 Shell",
+                "link": "/mirror/api/docs/guides/tools-local-shell"
+              },
+              {
+                "text": "图像生成",
+                "link": "/mirror/api/docs/guides/tools-image-generation"
+              },
+              {
+                "text": "Code Interpreter 代码解释器",
+                "link": "/mirror/api/docs/guides/tools-code-interpreter"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "运行与扩展",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "对话状态",
+            "link": "/mirror/api/docs/guides/conversation-state"
+          },
+          {
+            "text": "Background mode 后台模式",
+            "link": "/mirror/api/docs/guides/background"
+          },
+          {
+            "text": "流式传输 API 响应",
+            "link": "/mirror/api/docs/guides/streaming-responses"
+          },
+          {
+            "text": "WebSocket 模式",
+            "link": "/mirror/api/docs/guides/websocket-mode"
+          },
+          {
+            "text": "Webhooks 网络钩子",
+            "link": "/mirror/api/docs/guides/webhooks"
+          },
+          {
+            "text": "文件输入",
+            "link": "/mirror/api/docs/guides/file-inputs"
+          },
+          {
+            "text": "上下文管理",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Compaction（压缩）",
+                "link": "/mirror/api/docs/guides/compaction"
+              },
+              {
+                "text": "统计 token",
+                "link": "/mirror/api/docs/guides/token-counting"
+              },
+              {
+                "text": "Prompt caching 提示词缓存",
+                "link": "/mirror/api/docs/guides/prompt-caching"
+              }
+            ]
+          },
+          {
+            "text": "提示",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "提示词",
+                "link": "/mirror/api/docs/guides/prompting"
+              },
+              {
+                "text": "Prompt engineering 提示词工程",
+                "link": "/mirror/api/docs/guides/prompt-engineering"
+              },
+              {
+                "text": "引用格式化",
+                "link": "/mirror/api/docs/guides/citation-formatting"
+              },
+              {
+                "text": "从 prompt objects 迁移",
+                "link": "/mirror/api/docs/guides/prompting/migrate-from-prompt-object"
+              }
+            ]
+          },
+          {
+            "text": "推理",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Reasoning models 推理模型",
+                "link": "/mirror/api/docs/guides/reasoning"
+              },
+              {
+                "text": "Reasoning 最佳实践",
+                "link": "/mirror/api/docs/guides/reasoning-best-practices"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "评估",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Red teaming 红队测试",
+            "link": "/mirror/api/docs/guides/red-teaming"
+          }
+        ]
+      },
+      {
+        "text": "Realtime 与音频",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Realtime 和音频",
+            "link": "/mirror/api/docs/guides/realtime"
+          },
+          {
+            "text": "Realtime 翻译",
+            "link": "/mirror/api/docs/guides/realtime-translation"
+          },
+          {
+            "text": "转录",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Realtime 转录",
+                "link": "/mirror/api/docs/guides/realtime-transcription"
+              },
+              {
+                "text": "语音转文本",
+                "link": "/mirror/api/docs/guides/speech-to-text"
+              }
+            ]
+          },
+          {
+            "text": "文本转语音",
+            "link": "/mirror/api/docs/guides/text-to-speech"
+          },
+          {
+            "text": "使用 Realtime 模型",
+            "link": "/mirror/api/docs/guides/realtime-models-prompting"
+          },
+          {
+            "text": "连接方式",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "使用 WebRTC 的 Realtime API",
+                "link": "/mirror/api/docs/guides/realtime-webrtc"
+              },
+              {
+                "text": "使用 WebSocket 的 Realtime API",
+                "link": "/mirror/api/docs/guides/realtime-websocket"
+              },
+              {
+                "text": "使用 SIP 的 Realtime API",
+                "link": "/mirror/api/docs/guides/realtime-sip"
+              }
+            ]
+          },
+          {
+            "text": "Realtime 会话",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Realtime 对话",
+                "link": "/mirror/api/docs/guides/realtime-conversations"
+              },
+              {
+                "text": "语音活动检测（VAD）",
+                "link": "/mirror/api/docs/guides/realtime-vad"
+              },
+              {
+                "text": "Realtime 与工具",
+                "link": "/mirror/api/docs/guides/realtime-mcp"
+              },
+              {
+                "text": "Webhooks 和服务端控制",
+                "link": "/mirror/api/docs/guides/realtime-server-controls"
+              },
+              {
+                "text": "管理成本",
+                "link": "/mirror/api/docs/guides/realtime-costs"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "专用模型",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Image generation 图像生成",
+            "link": "/mirror/api/docs/guides/image-generation"
+          },
+          {
+            "text": "使用 Sora 生成视频",
+            "link": "/mirror/api/docs/guides/video-generation"
+          },
+          {
+            "text": "深度研究",
+            "link": "/mirror/api/docs/guides/deep-research"
+          },
+          {
+            "text": "向量 embeddings",
+            "link": "/mirror/api/docs/guides/embeddings"
+          },
+          {
+            "text": "Moderation 内容审核",
+            "link": "/mirror/api/docs/guides/moderation"
+          }
+        ]
+      },
+      {
+        "text": "上线",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "生产最佳实践",
+            "link": "/mirror/api/docs/guides/production-best-practices"
+          },
+          {
+            "text": "Workload identity federation 工作负载身份联合",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "为 Kubernetes 配置 workload identity federation",
+                "link": "/mirror/api/docs/guides/workload-identity-federation/kubernetes"
+              },
+              {
+                "text": "为 AWS 配置工作负载身份联合",
+                "link": "/mirror/api/docs/guides/workload-identity-federation/aws"
+              },
+              {
+                "text": "为 Microsoft Azure 配置工作负载身份联合",
+                "link": "/mirror/api/docs/guides/workload-identity-federation/microsoft-azure"
+              },
+              {
+                "text": "为 Google Cloud 配置 workload identity federation",
+                "link": "/mirror/api/docs/guides/workload-identity-federation/google-cloud"
+              },
+              {
+                "text": "为 GitHub Actions 配置工作负载身份联合",
+                "link": "/mirror/api/docs/guides/workload-identity-federation/github-actions"
+              },
+              {
+                "text": "为 SPIFFE 配置工作负载身份联合",
+                "link": "/mirror/api/docs/guides/workload-identity-federation/spiffe"
+              }
+            ],
+            "link": "/mirror/api/docs/guides/workload-identity-federation"
           },
           {
             "text": "API 部署检查清单",
             "link": "/mirror/api/docs/guides/deployment-checklist"
           },
           {
-            "text": "Apply Patch 补丁工具",
-            "link": "/mirror/api/docs/guides/tools-apply-patch"
+            "text": "Amazon Bedrock 中的 OpenAI 模型",
+            "link": "/mirror/api/docs/guides/amazon-bedrock"
           },
           {
-            "text": "Assistants API 深入指南",
-            "link": "/mirror/api/docs/assistants/deep-dive"
+            "text": "延迟优化",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "延迟优化",
+                "link": "/mirror/api/docs/guides/latency-optimization"
+              },
+              {
+                "text": "Predicted Outputs 预测输出",
+                "link": "/mirror/api/docs/guides/predicted-outputs"
+              },
+              {
+                "text": "Priority processing 优先处理",
+                "link": "/mirror/api/docs/guides/priority-processing"
+              }
+            ]
           },
           {
-            "text": "Assistants API 工具",
-            "link": "/mirror/api/docs/assistants/tools"
+            "text": "成本优化",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "成本优化",
+                "link": "/mirror/api/docs/guides/cost-optimization"
+              },
+              {
+                "text": "Batch API 批处理 API",
+                "link": "/mirror/api/docs/guides/batch"
+              },
+              {
+                "text": "Flex processing 弹性处理",
+                "link": "/mirror/api/docs/guides/flex-processing"
+              }
+            ]
+          },
+          {
+            "text": "优化 LLM 准确率",
+            "link": "/mirror/api/docs/guides/optimizing-llm-accuracy"
+          },
+          {
+            "text": "安全",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "安全最佳实践",
+                "link": "/mirror/api/docs/guides/safety-best-practices"
+              },
+              {
+                "text": "Safety checks 安全检查",
+                "link": "/mirror/api/docs/guides/safety-checks"
+              },
+              {
+                "text": "网络安全检查",
+                "link": "/mirror/api/docs/guides/safety-checks/cybersecurity"
+              },
+              {
+                "text": "未满 18 岁 API 指引",
+                "link": "/mirror/api/docs/guides/safety-checks/under-18-api-guidance"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "旧版 API",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "Agent Builder",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Agent Builder 智能体构建器",
+                "link": "/mirror/api/docs/guides/agent-builder"
+              },
+              {
+                "text": "从 Agent Builder 迁移",
+                "link": "/mirror/api/docs/guides/agent-builder/migrate-from-agent-builder"
+              },
+              {
+                "text": "Node reference 节点参考",
+                "link": "/mirror/api/docs/guides/node-reference"
+              },
+              {
+                "text": "构建 agents 时的安全",
+                "link": "/mirror/api/docs/guides/agent-builder-safety"
+              }
+            ]
+          },
+          {
+            "text": "评估",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "数据集入门",
+                "link": "/mirror/api/docs/guides/evaluation-getting-started"
+              },
+              {
+                "text": "使用 evals",
+                "link": "/mirror/api/docs/guides/evals"
+              },
+              {
+                "text": "提示词优化器",
+                "link": "/mirror/api/docs/guides/prompt-optimizer"
+              },
+              {
+                "text": "评估 external model",
+                "link": "/mirror/api/docs/guides/external-models"
+              },
+              {
+                "text": "Evaluation best practices 评估最佳实践",
+                "link": "/mirror/api/docs/guides/evaluation-best-practices"
+              },
+              {
+                "text": "Graders 评分器",
+                "link": "/mirror/api/docs/guides/graders"
+              }
+            ]
+          },
+          {
+            "text": "微调",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "模型优化",
+                "link": "/mirror/api/docs/guides/model-optimization"
+              },
+              {
+                "text": "监督式微调",
+                "link": "/mirror/api/docs/guides/supervised-fine-tuning"
+              },
+              {
+                "text": "Vision fine-tuning 视觉微调",
+                "link": "/mirror/api/docs/guides/vision-fine-tuning"
+              },
+              {
+                "text": "Direct preference optimization 直接偏好优化",
+                "link": "/mirror/api/docs/guides/direct-preference-optimization"
+              },
+              {
+                "text": "Reinforcement fine-tuning 强化微调",
+                "link": "/mirror/api/docs/guides/reinforcement-fine-tuning"
+              },
+              {
+                "text": "Reinforcement fine-tuning 使用场景",
+                "link": "/mirror/api/docs/guides/rft-use-cases"
+              },
+              {
+                "text": "Fine-tuning 最佳实践",
+                "link": "/mirror/api/docs/guides/fine-tuning-best-practices"
+              }
+            ]
+          },
+          {
+            "text": "Assistants API",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Assistants 迁移指南",
+                "link": "/mirror/api/docs/assistants/migration"
+              },
+              {
+                "text": "Assistants API 深入指南",
+                "link": "/mirror/api/docs/assistants/deep-dive"
+              },
+              {
+                "text": "Assistants API 工具",
+                "link": "/mirror/api/docs/assistants/tools"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "资源",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "OpenAI 平台中的数据控制",
+            "link": "/mirror/api/docs/guides/your-data"
+          },
+          {
+            "text": "在 OpenAI 平台中管理权限",
+            "link": "/mirror/api/docs/guides/rbac"
+          },
+          {
+            "text": "速率限制",
+            "link": "/mirror/api/docs/guides/rate-limits"
+          },
+          {
+            "text": "IP 出站范围",
+            "link": "/mirror/api/docs/guides/ip-addresses"
+          },
+          {
+            "text": "Admin APIs 管理 API",
+            "link": "/mirror/api/docs/guides/admin-apis"
+          },
+          {
+            "text": "弃用",
+            "link": "/mirror/api/docs/deprecations"
+          },
+          {
+            "text": "为 ChatGPT Apps 和 API 集成构建 MCP server",
+            "link": "/mirror/api/docs/mcp"
+          },
+          {
+            "text": "ChatGPT Developer mode 开发者模式",
+            "link": "/mirror/api/docs/guides/developer-mode"
+          },
+          {
+            "text": "ChatGPT Actions",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "GPT Actions 概览",
+                "link": "/mirror/api/docs/actions/introduction"
+              },
+              {
+                "text": "GPT Actions 入门",
+                "link": "/mirror/api/docs/actions/getting-started"
+              },
+              {
+                "text": "GPT Actions library 操作库",
+                "link": "/mirror/api/docs/actions/actions-library"
+              },
+              {
+                "text": "GPT Action authentication 身份验证",
+                "link": "/mirror/api/docs/actions/authentication"
+              },
+              {
+                "text": "GPT Actions 的生产说明",
+                "link": "/mirror/api/docs/actions/production"
+              },
+              {
+                "text": "使用 GPT Actions 进行数据检索",
+                "link": "/mirror/api/docs/actions/data-retrieval"
+              },
+              {
+                "text": "使用 GPT Actions 发送和返回文件",
+                "link": "/mirror/api/docs/actions/sending-files"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "文档",
+        "collapsed": true,
+        "items": [
+          {
+            "text": "高级用法",
+            "link": "/mirror/api/docs/guides/advanced-usage"
           },
           {
             "text": "Assistants Code Interpreter 代码解释器",
@@ -2045,484 +2860,44 @@
             "link": "/mirror/api/docs/assistants/tools/function-calling"
           },
           {
-            "text": "Assistants 迁移指南",
-            "link": "/mirror/api/docs/assistants/migration"
-          },
-          {
-            "text": "音频与语音",
-            "link": "/mirror/api/docs/guides/audio"
-          },
-          {
-            "text": "Background mode 后台模式",
-            "link": "/mirror/api/docs/guides/background"
-          },
-          {
-            "text": "Batch API 批处理 API",
-            "link": "/mirror/api/docs/guides/batch"
-          },
-          {
-            "text": "为 ChatGPT Apps 和 API 集成构建 MCP server",
-            "link": "/mirror/api/docs/mcp"
-          },
-          {
-            "text": "ChatGPT Developer mode 开发者模式",
-            "link": "/mirror/api/docs/guides/developer-mode"
-          },
-          {
-            "text": "ChatKit 聊天组件",
-            "link": "/mirror/api/docs/guides/chatkit"
-          },
-          {
-            "text": "ChatKit widgets 小组件",
-            "link": "/mirror/api/docs/guides/chatkit-widgets"
-          },
-          {
-            "text": "引用格式化",
-            "link": "/mirror/api/docs/guides/citation-formatting"
-          },
-          {
-            "text": "代码生成",
-            "link": "/mirror/api/docs/guides/code-generation"
-          },
-          {
-            "text": "Code Interpreter 代码解释器",
-            "link": "/mirror/api/docs/guides/tools-code-interpreter"
-          },
-          {
-            "text": "Compaction（压缩）",
-            "link": "/mirror/api/docs/guides/compaction"
-          },
-          {
             "text": "Completions API 补全 API",
             "link": "/mirror/api/docs/guides/completions"
-          },
-          {
-            "text": "Computer use 计算机使用",
-            "link": "/mirror/api/docs/guides/tools-computer-use"
-          },
-          {
-            "text": "为 AWS 配置工作负载身份联合",
-            "link": "/mirror/api/docs/guides/workload-identity-federation/aws"
-          },
-          {
-            "text": "为 GitHub Actions 配置工作负载身份联合",
-            "link": "/mirror/api/docs/guides/workload-identity-federation/github-actions"
-          },
-          {
-            "text": "为 Google Cloud 配置 workload identity federation",
-            "link": "/mirror/api/docs/guides/workload-identity-federation/google-cloud"
-          },
-          {
-            "text": "为 Kubernetes 配置 workload identity federation",
-            "link": "/mirror/api/docs/guides/workload-identity-federation/kubernetes"
-          },
-          {
-            "text": "为 Microsoft Azure 配置工作负载身份联合",
-            "link": "/mirror/api/docs/guides/workload-identity-federation/microsoft-azure"
-          },
-          {
-            "text": "为 SPIFFE 配置工作负载身份联合",
-            "link": "/mirror/api/docs/guides/workload-identity-federation/spiffe"
-          },
-          {
-            "text": "对话状态",
-            "link": "/mirror/api/docs/guides/conversation-state"
-          },
-          {
-            "text": "成本优化",
-            "link": "/mirror/api/docs/guides/cost-optimization"
-          },
-          {
-            "text": "统计 token",
-            "link": "/mirror/api/docs/guides/token-counting"
-          },
-          {
-            "text": "网络安全检查",
-            "link": "/mirror/api/docs/guides/safety-checks/cybersecurity"
-          },
-          {
-            "text": "OpenAI 平台中的数据控制",
-            "link": "/mirror/api/docs/guides/your-data"
-          },
-          {
-            "text": "使用 GPT Actions 进行数据检索",
-            "link": "/mirror/api/docs/actions/data-retrieval"
-          },
-          {
-            "text": "深度研究",
-            "link": "/mirror/api/docs/guides/deep-research"
-          },
-          {
-            "text": "弃用",
-            "link": "/mirror/api/docs/deprecations"
-          },
-          {
-            "text": "开发者快速入门",
-            "link": "/mirror/api/docs/quickstart"
-          },
-          {
-            "text": "Direct preference optimization 直接偏好优化",
-            "link": "/mirror/api/docs/guides/direct-preference-optimization"
           },
           {
             "text": "错误代码",
             "link": "/mirror/api/docs/guides/error-codes"
           },
           {
-            "text": "评估 agent 工作流",
-            "link": "/mirror/api/docs/guides/agent-evals"
-          },
-          {
-            "text": "评估 external model",
-            "link": "/mirror/api/docs/guides/external-models"
-          },
-          {
-            "text": "Evaluation best practices 评估最佳实践",
-            "link": "/mirror/api/docs/guides/evaluation-best-practices"
-          },
-          {
-            "text": "文件输入",
-            "link": "/mirror/api/docs/guides/file-inputs"
-          },
-          {
-            "text": "文件搜索",
-            "link": "/mirror/api/docs/guides/tools-file-search"
-          },
-          {
-            "text": "Fine-tuning 最佳实践",
-            "link": "/mirror/api/docs/guides/fine-tuning-best-practices"
-          },
-          {
-            "text": "Flex processing 弹性处理",
-            "link": "/mirror/api/docs/guides/flex-processing"
-          },
-          {
             "text": "Frontend prompt 指令",
             "link": "/mirror/api/docs/guides/frontend-prompt"
-          },
-          {
-            "text": "Function calling 函数调用",
-            "link": "/mirror/api/docs/guides/function-calling"
-          },
-          {
-            "text": "数据集入门",
-            "link": "/mirror/api/docs/guides/evaluation-getting-started"
-          },
-          {
-            "text": "GPT Actions 入门",
-            "link": "/mirror/api/docs/actions/getting-started"
-          },
-          {
-            "text": "GPT Action authentication 身份验证",
-            "link": "/mirror/api/docs/actions/authentication"
-          },
-          {
-            "text": "GPT Actions 概览",
-            "link": "/mirror/api/docs/actions/introduction"
-          },
-          {
-            "text": "GPT Actions library 操作库",
-            "link": "/mirror/api/docs/actions/actions-library"
           },
           {
             "text": "GPT 发布说明",
             "link": "/mirror/api/docs/gpts/release-notes"
           },
           {
-            "text": "Graders 评分器",
-            "link": "/mirror/api/docs/guides/graders"
-          },
-          {
-            "text": "Guardrails 和人工审核",
-            "link": "/mirror/api/docs/guides/agents/guardrails-approvals"
-          },
-          {
-            "text": "Image generation 图像生成",
-            "link": "/mirror/api/docs/guides/image-generation"
-          },
-          {
-            "text": "图像生成",
-            "link": "/mirror/api/docs/guides/tools-image-generation"
-          },
-          {
-            "text": "图像与视觉",
-            "link": "/mirror/api/docs/guides/images-vision"
-          },
-          {
-            "text": "集成与可观测性",
-            "link": "/mirror/api/docs/guides/agents/integrations-observability"
-          },
-          {
-            "text": "IP 出站范围",
-            "link": "/mirror/api/docs/guides/ip-addresses"
-          },
-          {
             "text": "核心概念",
             "link": "/mirror/api/docs/concepts"
-          },
-          {
-            "text": "延迟优化",
-            "link": "/mirror/api/docs/guides/latency-optimization"
-          },
-          {
-            "text": "Local shell 本地 Shell",
-            "link": "/mirror/api/docs/guides/tools-local-shell"
-          },
-          {
-            "text": "在 OpenAI 平台中管理权限",
-            "link": "/mirror/api/docs/guides/rbac"
-          },
-          {
-            "text": "管理成本",
-            "link": "/mirror/api/docs/guides/realtime-costs"
-          },
-          {
-            "text": "MCP 和 Connectors",
-            "link": "/mirror/api/docs/guides/tools-connectors-mcp"
           },
           {
             "text": "会议纪要",
             "link": "/mirror/api/docs/tutorials/meeting-minutes"
           },
           {
-            "text": "从 Agent Builder 迁移",
-            "link": "/mirror/api/docs/guides/agent-builder/migrate-from-agent-builder"
-          },
-          {
-            "text": "从 prompt objects 迁移",
-            "link": "/mirror/api/docs/guides/prompting/migrate-from-prompt-object"
-          },
-          {
-            "text": "迁移到 Responses API",
-            "link": "/mirror/api/docs/guides/migrate-to-responses"
-          },
-          {
-            "text": "模型优化",
-            "link": "/mirror/api/docs/guides/model-optimization"
-          },
-          {
             "text": "模型选择",
             "link": "/mirror/api/docs/guides/model-selection"
-          },
-          {
-            "text": "Models 和 providers",
-            "link": "/mirror/api/docs/guides/agents/models"
-          },
-          {
-            "text": "Moderation 内容审核",
-            "link": "/mirror/api/docs/guides/moderation"
-          },
-          {
-            "text": "Node reference 节点参考",
-            "link": "/mirror/api/docs/guides/node-reference"
-          },
-          {
-            "text": "OpenAI CLI 命令行",
-            "link": "/mirror/api/docs/libraries/openai-cli"
-          },
-          {
-            "text": "Amazon Bedrock 中的 OpenAI 模型",
-            "link": "/mirror/api/docs/guides/amazon-bedrock"
-          },
-          {
-            "text": "优化 LLM 准确率",
-            "link": "/mirror/api/docs/guides/optimizing-llm-accuracy"
-          },
-          {
-            "text": "Orchestration 与 handoffs",
-            "link": "/mirror/api/docs/guides/agents/orchestration"
           },
           {
             "text": "OpenAI Crawlers 概览",
             "link": "/mirror/api/docs/bots"
           },
           {
-            "text": "Predicted Outputs 预测输出",
-            "link": "/mirror/api/docs/guides/predicted-outputs"
-          },
-          {
-            "text": "定价",
-            "link": "/mirror/api/docs/pricing"
-          },
-          {
-            "text": "Priority processing 优先处理",
-            "link": "/mirror/api/docs/guides/priority-processing"
-          },
-          {
-            "text": "生产最佳实践",
-            "link": "/mirror/api/docs/guides/production-best-practices"
-          },
-          {
-            "text": "GPT Actions 的生产说明",
-            "link": "/mirror/api/docs/actions/production"
-          },
-          {
-            "text": "Prompt caching 提示词缓存",
-            "link": "/mirror/api/docs/guides/prompt-caching"
-          },
-          {
-            "text": "Prompt engineering 提示词工程",
-            "link": "/mirror/api/docs/guides/prompt-engineering"
-          },
-          {
             "text": "提示词生成",
             "link": "/mirror/api/docs/guides/prompt-generation"
           },
           {
-            "text": "GPT-5.5 提示词指南",
-            "link": "/mirror/api/docs/guides/prompt-guidance"
-          },
-          {
-            "text": "提示词优化器",
-            "link": "/mirror/api/docs/guides/prompt-optimizer"
-          },
-          {
-            "text": "提示词",
-            "link": "/mirror/api/docs/guides/prompting"
-          },
-          {
-            "text": "快速入门",
-            "link": "/mirror/api/docs/guides/agents/quickstart"
-          },
-          {
-            "text": "速率限制",
-            "link": "/mirror/api/docs/guides/rate-limits"
-          },
-          {
-            "text": "Realtime 和音频",
-            "link": "/mirror/api/docs/guides/realtime"
-          },
-          {
-            "text": "使用 SIP 的 Realtime API",
-            "link": "/mirror/api/docs/guides/realtime-sip"
-          },
-          {
-            "text": "使用 WebRTC 的 Realtime API",
-            "link": "/mirror/api/docs/guides/realtime-webrtc"
-          },
-          {
-            "text": "使用 WebSocket 的 Realtime API",
-            "link": "/mirror/api/docs/guides/realtime-websocket"
-          },
-          {
-            "text": "Realtime 对话",
-            "link": "/mirror/api/docs/guides/realtime-conversations"
-          },
-          {
-            "text": "Realtime 转录",
-            "link": "/mirror/api/docs/guides/realtime-transcription"
-          },
-          {
-            "text": "Realtime 翻译",
-            "link": "/mirror/api/docs/guides/realtime-translation"
-          },
-          {
-            "text": "Realtime 与工具",
-            "link": "/mirror/api/docs/guides/realtime-mcp"
-          },
-          {
-            "text": "Reasoning 最佳实践",
-            "link": "/mirror/api/docs/guides/reasoning-best-practices"
-          },
-          {
-            "text": "Reasoning models 推理模型",
-            "link": "/mirror/api/docs/guides/reasoning"
-          },
-          {
-            "text": "Red teaming 红队测试",
-            "link": "/mirror/api/docs/guides/red-teaming"
-          },
-          {
-            "text": "Reinforcement fine-tuning 强化微调",
-            "link": "/mirror/api/docs/guides/reinforcement-fine-tuning"
-          },
-          {
-            "text": "Reinforcement fine-tuning 使用场景",
-            "link": "/mirror/api/docs/guides/rft-use-cases"
-          },
-          {
-            "text": "结果和状态",
-            "link": "/mirror/api/docs/guides/agents/results"
-          },
-          {
-            "text": "检索",
-            "link": "/mirror/api/docs/guides/retrieval"
-          },
-          {
-            "text": "运行 agents",
-            "link": "/mirror/api/docs/guides/agents/running-agents"
-          },
-          {
-            "text": "安全最佳实践",
-            "link": "/mirror/api/docs/guides/safety-best-practices"
-          },
-          {
-            "text": "Safety checks 安全检查",
-            "link": "/mirror/api/docs/guides/safety-checks"
-          },
-          {
-            "text": "构建 agents 时的安全",
-            "link": "/mirror/api/docs/guides/agent-builder-safety"
-          },
-          {
-            "text": "Sandbox Agents 沙盒智能体",
-            "link": "/mirror/api/docs/guides/agents/sandboxes"
-          },
-          {
-            "text": "SDKs 和 CLI",
-            "link": "/mirror/api/docs/libraries"
-          },
-          {
-            "text": "Secure MCP Tunnel 安全 MCP 隧道",
-            "link": "/mirror/api/docs/guides/secure-mcp-tunnels"
-          },
-          {
-            "text": "使用 GPT Actions 发送和返回文件",
-            "link": "/mirror/api/docs/actions/sending-files"
-          },
-          {
-            "text": "Shell 工具",
-            "link": "/mirror/api/docs/guides/tools-shell"
-          },
-          {
-            "text": "Skills 技能",
-            "link": "/mirror/api/docs/guides/tools-skills"
-          },
-          {
-            "text": "语音转文本",
-            "link": "/mirror/api/docs/guides/speech-to-text"
-          },
-          {
-            "text": "流式传输 API 响应",
-            "link": "/mirror/api/docs/guides/streaming-responses"
-          },
-          {
-            "text": "结构化模型输出",
-            "link": "/mirror/api/docs/guides/structured-outputs"
-          },
-          {
-            "text": "监督式微调",
-            "link": "/mirror/api/docs/guides/supervised-fine-tuning"
-          },
-          {
             "text": "支持的国家和地区",
             "link": "/mirror/api/docs/supported-countries"
-          },
-          {
-            "text": "文本生成",
-            "link": "/mirror/api/docs/guides/text"
-          },
-          {
-            "text": "文本转语音",
-            "link": "/mirror/api/docs/guides/text-to-speech"
-          },
-          {
-            "text": "ChatKit 中的主题和自定义",
-            "link": "/mirror/api/docs/guides/chatkit-themes"
-          },
-          {
-            "text": "Tool search 工具搜索",
-            "link": "/mirror/api/docs/guides/tools-tool-search"
           },
           {
             "text": "Trace grading 轨迹评分",
@@ -2533,10 +2908,6 @@
             "link": "/mirror/api/docs/ui-kit-demo"
           },
           {
-            "text": "未满 18 岁 API 指引",
-            "link": "/mirror/api/docs/guides/safety-checks/under-18-api-guidance"
-          },
-          {
             "text": "升级到 GPT-5.4",
             "link": "/mirror/api/docs/guides/upgrading-to-gpt-5p4"
           },
@@ -2545,64 +2916,8 @@
             "link": "/mirror/api/docs/guides/upgrading-to-gpt-5p5"
           },
           {
-            "text": "使用 GPT-5.5",
-            "link": "/mirror/api/docs/guides/latest-model"
-          },
-          {
-            "text": "使用 Realtime 模型",
-            "link": "/mirror/api/docs/guides/realtime-models-prompting"
-          },
-          {
-            "text": "使用工具",
-            "link": "/mirror/api/docs/guides/tools"
-          },
-          {
-            "text": "向量 embeddings",
-            "link": "/mirror/api/docs/guides/embeddings"
-          },
-          {
-            "text": "使用 Sora 生成视频",
-            "link": "/mirror/api/docs/guides/video-generation"
-          },
-          {
-            "text": "Vision fine-tuning 视觉微调",
-            "link": "/mirror/api/docs/guides/vision-fine-tuning"
-          },
-          {
-            "text": "语音活动检测（VAD）",
-            "link": "/mirror/api/docs/guides/realtime-vad"
-          },
-          {
-            "text": "语音 agents",
-            "link": "/mirror/api/docs/guides/voice-agents"
-          },
-          {
             "text": "使用 embeddings 进行网页问答",
             "link": "/mirror/api/docs/tutorials/web-qa-embeddings"
-          },
-          {
-            "text": "Web search 网页搜索",
-            "link": "/mirror/api/docs/guides/tools-web-search"
-          },
-          {
-            "text": "Webhooks 网络钩子",
-            "link": "/mirror/api/docs/guides/webhooks"
-          },
-          {
-            "text": "Webhooks 和服务端控制",
-            "link": "/mirror/api/docs/guides/realtime-server-controls"
-          },
-          {
-            "text": "WebSocket 模式",
-            "link": "/mirror/api/docs/guides/websocket-mode"
-          },
-          {
-            "text": "使用 evals",
-            "link": "/mirror/api/docs/guides/evals"
-          },
-          {
-            "text": "Workload identity federation 工作负载身份联合",
-            "link": "/mirror/api/docs/guides/workload-identity-federation"
           }
         ]
       }
@@ -2613,22 +2928,16 @@
     "collapsed": true,
     "items": [
       {
-        "text": "身份验证",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "使用 Workspace Agent 访问令牌进行认证",
-            "link": "/mirror/workspace-agents/authentication"
-          }
-        ]
-      },
-      {
-        "text": "触发运行",
+        "text": "入门",
         "collapsed": true,
         "items": [
           {
             "text": "触发 Workspace Agent 运行",
             "link": "/mirror/workspace-agents/trigger-runs"
+          },
+          {
+            "text": "使用 Workspace Agent 访问令牌进行认证",
+            "link": "/mirror/workspace-agents/authentication"
           }
         ]
       }

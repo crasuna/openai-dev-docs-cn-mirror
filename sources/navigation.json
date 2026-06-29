@@ -1,0 +1,4529 @@
+{
+  "generatedAt": "2026-06-29T07:27:24.661Z",
+  "source": "https://developers.openai.com",
+  "products": [
+    {
+      "product": "Ads",
+      "sourceUrl": "https://developers.openai.com/ads/api-overview",
+      "items": [
+        {
+          "type": "link",
+          "title": "Ads Overview",
+          "href": "/ads",
+          "slug": "ads"
+        },
+        {
+          "type": "section",
+          "title": "Measurement",
+          "items": [
+            {
+              "type": "link",
+              "title": "JavaScript Pixel",
+              "href": "/ads/measurement-pixel",
+              "slug": "ads/measurement-pixel"
+            },
+            {
+              "type": "link",
+              "title": "Image tag",
+              "href": "/ads/image-tag",
+              "slug": "ads/image-tag"
+            },
+            {
+              "type": "link",
+              "title": "Conversions API",
+              "href": "/ads/conversions-api",
+              "slug": "ads/conversions-api"
+            },
+            {
+              "type": "link",
+              "title": "Supported events",
+              "href": "/ads/supported-events",
+              "slug": "ads/supported-events"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Advertiser API",
+          "items": [
+            {
+              "type": "link",
+              "title": "Overview",
+              "href": "/ads/api-overview",
+              "slug": "ads/api-overview"
+            },
+            {
+              "type": "link",
+              "title": "Quickstart",
+              "href": "/ads/api-quickstart",
+              "slug": "ads/api-quickstart"
+            },
+            {
+              "type": "link",
+              "title": "Product feeds",
+              "href": "/ads/product-feeds",
+              "slug": "ads/product-feeds"
+            },
+            {
+              "type": "link",
+              "title": "Campaign Targeting",
+              "href": "/ads/campaign-targeting",
+              "slug": "ads/campaign-targeting"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "API Reference",
+          "items": [
+            {
+              "type": "link",
+              "title": "Authentication",
+              "href": "/ads/api-reference/authentication",
+              "slug": "ads/api-reference/authentication"
+            },
+            {
+              "type": "link",
+              "title": "Campaigns",
+              "href": "/ads/api-reference/campaigns",
+              "slug": "ads/api-reference/campaigns"
+            },
+            {
+              "type": "link",
+              "title": "Ad Groups",
+              "href": "/ads/api-reference/ad-groups",
+              "slug": "ads/api-reference/ad-groups"
+            },
+            {
+              "type": "link",
+              "title": "Ads",
+              "href": "/ads/api-reference/ads",
+              "slug": "ads/api-reference/ads"
+            },
+            {
+              "type": "link",
+              "title": "Ad Account",
+              "href": "/ads/api-reference/ad-account",
+              "slug": "ads/api-reference/ad-account"
+            },
+            {
+              "type": "link",
+              "title": "Insights",
+              "href": "/ads/api-reference/insights",
+              "slug": "ads/api-reference/insights"
+            },
+            {
+              "type": "link",
+              "title": "Files",
+              "href": "/ads/api-reference/files",
+              "slug": "ads/api-reference/files"
+            }
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "product": "API Reference",
+      "sourceUrl": "https://developers.openai.com/api/reference/overview",
+      "items": [
+        {
+          "type": "link",
+          "title": "API Reference",
+          "href": "/api/reference",
+          "slug": "api/reference"
+        },
+        {
+          "type": "section",
+          "title": "API Reference",
+          "items": [
+            {
+              "type": "link",
+              "title": "Introduction",
+              "href": "/api/reference/overview",
+              "slug": "api/reference/overview"
+            },
+            {
+              "type": "link",
+              "title": "Authentication",
+              "href": "/api/reference/overview#authentication",
+              "slug": "api/reference/overview"
+            },
+            {
+              "type": "link",
+              "title": "Workload identity tokens",
+              "href": "/api/reference/workload-identity-federation",
+              "slug": "api/reference/workload-identity-federation"
+            },
+            {
+              "type": "link",
+              "title": "Debugging requests",
+              "href": "/api/reference/overview#debugging-requests",
+              "slug": "api/reference/overview"
+            },
+            {
+              "type": "link",
+              "title": "Backwards compatibility",
+              "href": "/api/reference/overview#backwards-compatibility",
+              "slug": "api/reference/overview"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Responses API",
+          "items": [
+            {
+              "type": "link",
+              "title": "Overview",
+              "href": "/api/reference/responses/overview",
+              "slug": "api/reference/responses/overview"
+            },
+            {
+              "type": "section",
+              "title": "Responses",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create a response",
+                  "href": "/api/reference/resources/responses/methods/create",
+                  "slug": "api/reference/resources/responses/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve a response",
+                  "href": "/api/reference/resources/responses/methods/retrieve",
+                  "slug": "api/reference/resources/responses/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete a response",
+                  "href": "/api/reference/resources/responses/methods/delete",
+                  "slug": "api/reference/resources/responses/methods/delete"
+                },
+                {
+                  "type": "link",
+                  "title": "List input items",
+                  "href": "/api/reference/resources/responses/subresources/input_items/methods/list",
+                  "slug": "api/reference/resources/responses/subresources/input_items/methods/list"
+                },
+                {
+                  "type": "link",
+                  "title": "Count input tokens",
+                  "href": "/api/reference/resources/responses/subresources/input_tokens/methods/count",
+                  "slug": "api/reference/resources/responses/subresources/input_tokens/methods/count"
+                },
+                {
+                  "type": "link",
+                  "title": "Cancel a response",
+                  "href": "/api/reference/resources/responses/methods/cancel",
+                  "slug": "api/reference/resources/responses/methods/cancel"
+                },
+                {
+                  "type": "link",
+                  "title": "Compact a response",
+                  "href": "/api/reference/resources/responses/methods/compact",
+                  "slug": "api/reference/resources/responses/methods/compact"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Conversations",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create a conversation",
+                  "href": "/api/reference/resources/conversations/methods/create",
+                  "slug": "api/reference/resources/conversations/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve a conversation",
+                  "href": "/api/reference/resources/conversations/methods/retrieve",
+                  "slug": "api/reference/resources/conversations/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Update a conversation",
+                  "href": "/api/reference/resources/conversations/methods/update",
+                  "slug": "api/reference/resources/conversations/methods/update"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete a conversation",
+                  "href": "/api/reference/resources/conversations/methods/delete",
+                  "slug": "api/reference/resources/conversations/methods/delete"
+                },
+                {
+                  "type": "section",
+                  "title": "Items",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Create an item",
+                      "href": "/api/reference/resources/conversations/subresources/items/methods/create",
+                      "slug": "api/reference/resources/conversations/subresources/items/methods/create"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Retrieve an item",
+                      "href": "/api/reference/resources/conversations/subresources/items/methods/retrieve",
+                      "slug": "api/reference/resources/conversations/subresources/items/methods/retrieve"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Delete an item",
+                      "href": "/api/reference/resources/conversations/subresources/items/methods/delete",
+                      "slug": "api/reference/resources/conversations/subresources/items/methods/delete"
+                    },
+                    {
+                      "type": "link",
+                      "title": "List items",
+                      "href": "/api/reference/resources/conversations/subresources/items/methods/list",
+                      "slug": "api/reference/resources/conversations/subresources/items/methods/list"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "title": "Streaming events",
+              "href": "/api/reference/resources/responses/streaming-events",
+              "slug": "api/reference/resources/responses/streaming-events"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Webhooks",
+          "items": [
+            {
+              "type": "link",
+              "title": "Events",
+              "href": "/api/reference/resources/webhooks",
+              "slug": "api/reference/resources/webhooks"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Platform APIs",
+          "items": [
+            {
+              "type": "section",
+              "title": "Audio",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create a transcription",
+                  "href": "/api/reference/resources/audio/subresources/transcriptions/methods/create",
+                  "slug": "api/reference/resources/audio/subresources/transcriptions/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Create a translation",
+                  "href": "/api/reference/resources/audio/subresources/translations/methods/create",
+                  "slug": "api/reference/resources/audio/subresources/translations/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Create a speech",
+                  "href": "/api/reference/resources/audio/subresources/speech/methods/create",
+                  "slug": "api/reference/resources/audio/subresources/speech/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Create a voice",
+                  "href": "/api/reference/resources/audio/subresources/voices/methods/create",
+                  "slug": "api/reference/resources/audio/subresources/voices/methods/create"
+                },
+                {
+                  "type": "section",
+                  "title": "Voice Consents",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Create a voice consent",
+                      "href": "/api/reference/resources/audio/subresources/voice_consents/methods/create",
+                      "slug": "api/reference/resources/audio/subresources/voice_consents/methods/create"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Retrieve a voice consent",
+                      "href": "/api/reference/resources/audio/subresources/voice_consents/methods/retrieve",
+                      "slug": "api/reference/resources/audio/subresources/voice_consents/methods/retrieve"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Update a voice consent",
+                      "href": "/api/reference/resources/audio/subresources/voice_consents/methods/update",
+                      "slug": "api/reference/resources/audio/subresources/voice_consents/methods/update"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Delete a voice consent",
+                      "href": "/api/reference/resources/audio/subresources/voice_consents/methods/delete",
+                      "slug": "api/reference/resources/audio/subresources/voice_consents/methods/delete"
+                    },
+                    {
+                      "type": "link",
+                      "title": "List voice consents",
+                      "href": "/api/reference/resources/audio/subresources/voice_consents/methods/list",
+                      "slug": "api/reference/resources/audio/subresources/voice_consents/methods/list"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Videos",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create a video",
+                  "href": "/api/reference/resources/videos/methods/create",
+                  "slug": "api/reference/resources/videos/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Create Character",
+                  "href": "/api/reference/resources/videos/methods/create_character",
+                  "slug": "api/reference/resources/videos/methods/create_character"
+                },
+                {
+                  "type": "link",
+                  "title": "Get Character",
+                  "href": "/api/reference/resources/videos/methods/get_character",
+                  "slug": "api/reference/resources/videos/methods/get_character"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve a video",
+                  "href": "/api/reference/resources/videos/methods/retrieve",
+                  "slug": "api/reference/resources/videos/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete a video",
+                  "href": "/api/reference/resources/videos/methods/delete",
+                  "slug": "api/reference/resources/videos/methods/delete"
+                },
+                {
+                  "type": "link",
+                  "title": "List videos",
+                  "href": "/api/reference/resources/videos/methods/list",
+                  "slug": "api/reference/resources/videos/methods/list"
+                },
+                {
+                  "type": "link",
+                  "title": "Download Content",
+                  "href": "/api/reference/resources/videos/methods/download_content",
+                  "slug": "api/reference/resources/videos/methods/download_content"
+                },
+                {
+                  "type": "link",
+                  "title": "Edit",
+                  "href": "/api/reference/resources/videos/methods/edit",
+                  "slug": "api/reference/resources/videos/methods/edit"
+                },
+                {
+                  "type": "link",
+                  "title": "Extend",
+                  "href": "/api/reference/resources/videos/methods/extend",
+                  "slug": "api/reference/resources/videos/methods/extend"
+                },
+                {
+                  "type": "link",
+                  "title": "Remix",
+                  "href": "/api/reference/resources/videos/methods/remix",
+                  "slug": "api/reference/resources/videos/methods/remix"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Images",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Generate an Image",
+                  "href": "/api/reference/resources/images/methods/generate",
+                  "slug": "api/reference/resources/images/methods/generate"
+                },
+                {
+                  "type": "link",
+                  "title": "Edit an Image",
+                  "href": "/api/reference/resources/images/methods/edit",
+                  "slug": "api/reference/resources/images/methods/edit"
+                },
+                {
+                  "type": "link",
+                  "title": "Create Variation",
+                  "href": "/api/reference/resources/images/methods/create_variation",
+                  "slug": "api/reference/resources/images/methods/create_variation"
+                },
+                {
+                  "type": "link",
+                  "title": "Image generation streaming events",
+                  "href": "/api/reference/resources/images/generation-streaming-events",
+                  "slug": "api/reference/resources/images/generation-streaming-events"
+                },
+                {
+                  "type": "link",
+                  "title": "Image edit streaming events",
+                  "href": "/api/reference/resources/images/edit-streaming-events",
+                  "slug": "api/reference/resources/images/edit-streaming-events"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Embeddings",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create an embedding",
+                  "href": "/api/reference/resources/embeddings/methods/create",
+                  "slug": "api/reference/resources/embeddings/methods/create"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Evals",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create an eval",
+                  "href": "/api/reference/resources/evals/methods/create",
+                  "slug": "api/reference/resources/evals/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve an eval",
+                  "href": "/api/reference/resources/evals/methods/retrieve",
+                  "slug": "api/reference/resources/evals/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Update an eval",
+                  "href": "/api/reference/resources/evals/methods/update",
+                  "slug": "api/reference/resources/evals/methods/update"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete an eval",
+                  "href": "/api/reference/resources/evals/methods/delete",
+                  "slug": "api/reference/resources/evals/methods/delete"
+                },
+                {
+                  "type": "link",
+                  "title": "List evals",
+                  "href": "/api/reference/resources/evals/methods/list",
+                  "slug": "api/reference/resources/evals/methods/list"
+                },
+                {
+                  "type": "section",
+                  "title": "Runs",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Create a run",
+                      "href": "/api/reference/resources/evals/subresources/runs/methods/create",
+                      "slug": "api/reference/resources/evals/subresources/runs/methods/create"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Retrieve a run",
+                      "href": "/api/reference/resources/evals/subresources/runs/methods/retrieve",
+                      "slug": "api/reference/resources/evals/subresources/runs/methods/retrieve"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Delete a run",
+                      "href": "/api/reference/resources/evals/subresources/runs/methods/delete",
+                      "slug": "api/reference/resources/evals/subresources/runs/methods/delete"
+                    },
+                    {
+                      "type": "link",
+                      "title": "List runs",
+                      "href": "/api/reference/resources/evals/subresources/runs/methods/list",
+                      "slug": "api/reference/resources/evals/subresources/runs/methods/list"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Cancel a run",
+                      "href": "/api/reference/resources/evals/subresources/runs/methods/cancel",
+                      "slug": "api/reference/resources/evals/subresources/runs/methods/cancel"
+                    },
+                    {
+                      "type": "section",
+                      "title": "Output Items",
+                      "items": [
+                        {
+                          "type": "link",
+                          "title": "Retrieve an output item",
+                          "href": "/api/reference/resources/evals/subresources/runs/subresources/output_items/methods/retrieve",
+                          "slug": "api/reference/resources/evals/subresources/runs/subresources/output_items/methods/retrieve"
+                        },
+                        {
+                          "type": "link",
+                          "title": "List output items",
+                          "href": "/api/reference/resources/evals/subresources/runs/subresources/output_items/methods/list",
+                          "slug": "api/reference/resources/evals/subresources/runs/subresources/output_items/methods/list"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Fine Tuning",
+              "items": [
+                {
+                  "type": "section",
+                  "title": "Jobs",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Create a job",
+                      "href": "/api/reference/resources/fine_tuning/subresources/jobs/methods/create",
+                      "slug": "api/reference/resources/fine_tuning/subresources/jobs/methods/create"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Retrieve a job",
+                      "href": "/api/reference/resources/fine_tuning/subresources/jobs/methods/retrieve",
+                      "slug": "api/reference/resources/fine_tuning/subresources/jobs/methods/retrieve"
+                    },
+                    {
+                      "type": "link",
+                      "title": "List jobs",
+                      "href": "/api/reference/resources/fine_tuning/subresources/jobs/methods/list",
+                      "slug": "api/reference/resources/fine_tuning/subresources/jobs/methods/list"
+                    },
+                    {
+                      "type": "link",
+                      "title": "List Events",
+                      "href": "/api/reference/resources/fine_tuning/subresources/jobs/methods/list_events",
+                      "slug": "api/reference/resources/fine_tuning/subresources/jobs/methods/list_events"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Cancel a job",
+                      "href": "/api/reference/resources/fine_tuning/subresources/jobs/methods/cancel",
+                      "slug": "api/reference/resources/fine_tuning/subresources/jobs/methods/cancel"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Pause",
+                      "href": "/api/reference/resources/fine_tuning/subresources/jobs/methods/pause",
+                      "slug": "api/reference/resources/fine_tuning/subresources/jobs/methods/pause"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Resume",
+                      "href": "/api/reference/resources/fine_tuning/subresources/jobs/methods/resume",
+                      "slug": "api/reference/resources/fine_tuning/subresources/jobs/methods/resume"
+                    },
+                    {
+                      "type": "section",
+                      "title": "Checkpoints",
+                      "items": [
+                        {
+                          "type": "link",
+                          "title": "List checkpoints",
+                          "href": "/api/reference/resources/fine_tuning/subresources/jobs/subresources/checkpoints/methods/list",
+                          "slug": "api/reference/resources/fine_tuning/subresources/jobs/subresources/checkpoints/methods/list"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "title": "Checkpoints",
+                  "items": [
+                    {
+                      "type": "section",
+                      "title": "Permissions",
+                      "items": [
+                        {
+                          "type": "link",
+                          "title": "Create a permission",
+                          "href": "/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/create",
+                          "slug": "api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/create"
+                        },
+                        {
+                          "type": "link",
+                          "title": "Retrieve a permission",
+                          "href": "/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/retrieve",
+                          "slug": "api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/retrieve"
+                        },
+                        {
+                          "type": "link",
+                          "title": "Delete a permission",
+                          "href": "/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/delete",
+                          "slug": "api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/delete"
+                        },
+                        {
+                          "type": "link",
+                          "title": "List permissions",
+                          "href": "/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/retrieve",
+                          "slug": "api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/retrieve"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "title": "Alpha",
+                  "items": [
+                    {
+                      "type": "section",
+                      "title": "Graders",
+                      "items": [
+                        {
+                          "type": "link",
+                          "title": "Run",
+                          "href": "/api/reference/resources/fine_tuning/subresources/alpha/subresources/graders/methods/run",
+                          "slug": "api/reference/resources/fine_tuning/subresources/alpha/subresources/graders/methods/run"
+                        },
+                        {
+                          "type": "link",
+                          "title": "Validate",
+                          "href": "/api/reference/resources/fine_tuning/subresources/alpha/subresources/graders/methods/validate",
+                          "slug": "api/reference/resources/fine_tuning/subresources/alpha/subresources/graders/methods/validate"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Batches",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create a batch",
+                  "href": "/api/reference/resources/batches/methods/create",
+                  "slug": "api/reference/resources/batches/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve a batch",
+                  "href": "/api/reference/resources/batches/methods/retrieve",
+                  "slug": "api/reference/resources/batches/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "List batches",
+                  "href": "/api/reference/resources/batches/methods/list",
+                  "slug": "api/reference/resources/batches/methods/list"
+                },
+                {
+                  "type": "link",
+                  "title": "Cancel a batch",
+                  "href": "/api/reference/resources/batches/methods/cancel",
+                  "slug": "api/reference/resources/batches/methods/cancel"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Files",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "List files",
+                  "href": "/api/reference/resources/files/methods/list",
+                  "slug": "api/reference/resources/files/methods/list"
+                },
+                {
+                  "type": "link",
+                  "title": "Create a file",
+                  "href": "/api/reference/resources/files/methods/create",
+                  "slug": "api/reference/resources/files/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve a file",
+                  "href": "/api/reference/resources/files/methods/retrieve",
+                  "slug": "api/reference/resources/files/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete a file",
+                  "href": "/api/reference/resources/files/methods/delete",
+                  "slug": "api/reference/resources/files/methods/delete"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve file content",
+                  "href": "/api/reference/resources/files/methods/content",
+                  "slug": "api/reference/resources/files/methods/content"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Uploads",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create an upload",
+                  "href": "/api/reference/resources/uploads/methods/create",
+                  "slug": "api/reference/resources/uploads/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Cancel an upload",
+                  "href": "/api/reference/resources/uploads/methods/cancel",
+                  "slug": "api/reference/resources/uploads/methods/cancel"
+                },
+                {
+                  "type": "link",
+                  "title": "Complete",
+                  "href": "/api/reference/resources/uploads/methods/complete",
+                  "slug": "api/reference/resources/uploads/methods/complete"
+                },
+                {
+                  "type": "section",
+                  "title": "Parts",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Create a part",
+                      "href": "/api/reference/resources/uploads/subresources/parts/methods/create",
+                      "slug": "api/reference/resources/uploads/subresources/parts/methods/create"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Models",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Retrieve a model",
+                  "href": "/api/reference/resources/models/methods/retrieve",
+                  "slug": "api/reference/resources/models/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete a model",
+                  "href": "/api/reference/resources/models/methods/delete",
+                  "slug": "api/reference/resources/models/methods/delete"
+                },
+                {
+                  "type": "link",
+                  "title": "List models",
+                  "href": "/api/reference/resources/models/methods/list",
+                  "slug": "api/reference/resources/models/methods/list"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Moderations",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create a moderation",
+                  "href": "/api/reference/resources/moderations/methods/create",
+                  "slug": "api/reference/resources/moderations/methods/create"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Vector Stores",
+          "items": [
+            {
+              "type": "section",
+              "title": "Vector Stores",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create a vector store",
+                  "href": "/api/reference/resources/vector_stores/methods/create",
+                  "slug": "api/reference/resources/vector_stores/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve a vector store",
+                  "href": "/api/reference/resources/vector_stores/methods/retrieve",
+                  "slug": "api/reference/resources/vector_stores/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Update a vector store",
+                  "href": "/api/reference/resources/vector_stores/methods/update",
+                  "slug": "api/reference/resources/vector_stores/methods/update"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete a vector store",
+                  "href": "/api/reference/resources/vector_stores/methods/delete",
+                  "slug": "api/reference/resources/vector_stores/methods/delete"
+                },
+                {
+                  "type": "link",
+                  "title": "List vector stores",
+                  "href": "/api/reference/resources/vector_stores/methods/list",
+                  "slug": "api/reference/resources/vector_stores/methods/list"
+                },
+                {
+                  "type": "link",
+                  "title": "Search",
+                  "href": "/api/reference/resources/vector_stores/methods/search",
+                  "slug": "api/reference/resources/vector_stores/methods/search"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Files",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "List files",
+                  "href": "/api/reference/resources/vector_stores/subresources/files/methods/list",
+                  "slug": "api/reference/resources/vector_stores/subresources/files/methods/list"
+                },
+                {
+                  "type": "link",
+                  "title": "Create a file",
+                  "href": "/api/reference/resources/vector_stores/subresources/files/methods/create",
+                  "slug": "api/reference/resources/vector_stores/subresources/files/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve a file",
+                  "href": "/api/reference/resources/vector_stores/subresources/files/methods/retrieve",
+                  "slug": "api/reference/resources/vector_stores/subresources/files/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Update a file",
+                  "href": "/api/reference/resources/vector_stores/subresources/files/methods/update",
+                  "slug": "api/reference/resources/vector_stores/subresources/files/methods/update"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete a file",
+                  "href": "/api/reference/resources/vector_stores/subresources/files/methods/delete",
+                  "slug": "api/reference/resources/vector_stores/subresources/files/methods/delete"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve file content",
+                  "href": "/api/reference/resources/vector_stores/subresources/files/methods/content",
+                  "slug": "api/reference/resources/vector_stores/subresources/files/methods/content"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "File Batches",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create a file batch",
+                  "href": "/api/reference/resources/vector_stores/subresources/file_batches/methods/create",
+                  "slug": "api/reference/resources/vector_stores/subresources/file_batches/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve a file batch",
+                  "href": "/api/reference/resources/vector_stores/subresources/file_batches/methods/retrieve",
+                  "slug": "api/reference/resources/vector_stores/subresources/file_batches/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "List Files",
+                  "href": "/api/reference/resources/vector_stores/subresources/file_batches/methods/list_files",
+                  "slug": "api/reference/resources/vector_stores/subresources/file_batches/methods/list_files"
+                },
+                {
+                  "type": "link",
+                  "title": "Cancel a file batch",
+                  "href": "/api/reference/resources/vector_stores/subresources/file_batches/methods/cancel",
+                  "slug": "api/reference/resources/vector_stores/subresources/file_batches/methods/cancel"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "ChatKit",
+          "items": [
+            {
+              "type": "section",
+              "title": "Sessions",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create a session",
+                  "href": "/api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/create",
+                  "slug": "api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Cancel a session",
+                  "href": "/api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/cancel",
+                  "slug": "api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/cancel"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Threads",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Retrieve a thread",
+                  "href": "/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/retrieve",
+                  "slug": "api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete a thread",
+                  "href": "/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/delete",
+                  "slug": "api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/delete"
+                },
+                {
+                  "type": "link",
+                  "title": "List Items",
+                  "href": "/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/list_items",
+                  "slug": "api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/list_items"
+                },
+                {
+                  "type": "link",
+                  "title": "List threads",
+                  "href": "/api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/list",
+                  "slug": "api/reference/resources/beta/subresources/chatkit/subresources/threads/methods/list"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Containers",
+          "items": [
+            {
+              "type": "section",
+              "title": "Containers",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create a container",
+                  "href": "/api/reference/resources/containers/methods/create",
+                  "slug": "api/reference/resources/containers/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve a container",
+                  "href": "/api/reference/resources/containers/methods/retrieve",
+                  "slug": "api/reference/resources/containers/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete a container",
+                  "href": "/api/reference/resources/containers/methods/delete",
+                  "slug": "api/reference/resources/containers/methods/delete"
+                },
+                {
+                  "type": "link",
+                  "title": "List containers",
+                  "href": "/api/reference/resources/containers/methods/list",
+                  "slug": "api/reference/resources/containers/methods/list"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Files",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "List files",
+                  "href": "/api/reference/resources/containers/subresources/files/methods/list",
+                  "slug": "api/reference/resources/containers/subresources/files/methods/list"
+                },
+                {
+                  "type": "link",
+                  "title": "Create a file",
+                  "href": "/api/reference/resources/containers/subresources/files/methods/create",
+                  "slug": "api/reference/resources/containers/subresources/files/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve a file",
+                  "href": "/api/reference/resources/containers/subresources/files/methods/retrieve",
+                  "slug": "api/reference/resources/containers/subresources/files/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete a file",
+                  "href": "/api/reference/resources/containers/subresources/files/methods/delete",
+                  "slug": "api/reference/resources/containers/subresources/files/methods/delete"
+                },
+                {
+                  "type": "section",
+                  "title": "Content",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Retrieve a content",
+                      "href": "/api/reference/resources/containers/subresources/files/subresources/content/methods/retrieve",
+                      "slug": "api/reference/resources/containers/subresources/files/subresources/content/methods/retrieve"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Skills",
+          "items": [
+            {
+              "type": "section",
+              "title": "Skills",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create a skill",
+                  "href": "/api/reference/resources/skills/methods/create",
+                  "slug": "api/reference/resources/skills/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve a skill",
+                  "href": "/api/reference/resources/skills/methods/retrieve",
+                  "slug": "api/reference/resources/skills/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve skill content",
+                  "href": "/api/reference/resources/skills/subresources/content/methods/retrieve",
+                  "slug": "api/reference/resources/skills/subresources/content/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Update a skill",
+                  "href": "/api/reference/resources/skills/methods/update",
+                  "slug": "api/reference/resources/skills/methods/update"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete a skill",
+                  "href": "/api/reference/resources/skills/methods/delete",
+                  "slug": "api/reference/resources/skills/methods/delete"
+                },
+                {
+                  "type": "link",
+                  "title": "List skills",
+                  "href": "/api/reference/resources/skills/methods/list",
+                  "slug": "api/reference/resources/skills/methods/list"
+                },
+                {
+                  "type": "section",
+                  "title": "Versions",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Create skill version",
+                      "href": "/api/reference/resources/skills/subresources/versions/methods/create",
+                      "slug": "api/reference/resources/skills/subresources/versions/methods/create"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Retrieve skill version",
+                      "href": "/api/reference/resources/skills/subresources/versions/methods/retrieve",
+                      "slug": "api/reference/resources/skills/subresources/versions/methods/retrieve"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Retrieve Skill Version Content",
+                      "href": "/api/reference/resources/skills/subresources/versions/subresources/content/methods/retrieve",
+                      "slug": "api/reference/resources/skills/subresources/versions/subresources/content/methods/retrieve"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Delete skill version",
+                      "href": "/api/reference/resources/skills/subresources/versions/methods/delete",
+                      "slug": "api/reference/resources/skills/subresources/versions/methods/delete"
+                    },
+                    {
+                      "type": "link",
+                      "title": "List skill versions",
+                      "href": "/api/reference/resources/skills/subresources/versions/methods/list",
+                      "slug": "api/reference/resources/skills/subresources/versions/methods/list"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Realtime",
+          "items": [
+            {
+              "type": "section",
+              "title": "Translations",
+              "items": [
+                {
+                  "type": "section",
+                  "title": "Client Secrets",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Create a client secret",
+                      "href": "/api/reference/resources/realtime/subresources/translations/subresources/client_secrets/methods/create",
+                      "slug": "api/reference/resources/realtime/subresources/translations/subresources/client_secrets/methods/create"
+                    }
+                  ]
+                },
+                {
+                  "type": "link",
+                  "title": "Translation client events",
+                  "href": "/api/reference/resources/realtime/translation-client-events",
+                  "slug": "api/reference/resources/realtime/translation-client-events"
+                },
+                {
+                  "type": "link",
+                  "title": "Translation server events",
+                  "href": "/api/reference/resources/realtime/translation-server-events",
+                  "slug": "api/reference/resources/realtime/translation-server-events"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Client Secrets",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create a client secret",
+                  "href": "/api/reference/resources/realtime/subresources/client_secrets/methods/create",
+                  "slug": "api/reference/resources/realtime/subresources/client_secrets/methods/create"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Calls",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Accept",
+                  "href": "/api/reference/resources/realtime/subresources/calls/methods/accept",
+                  "slug": "api/reference/resources/realtime/subresources/calls/methods/accept"
+                },
+                {
+                  "type": "link",
+                  "title": "Hangup",
+                  "href": "/api/reference/resources/realtime/subresources/calls/methods/hangup",
+                  "slug": "api/reference/resources/realtime/subresources/calls/methods/hangup"
+                },
+                {
+                  "type": "link",
+                  "title": "Refer",
+                  "href": "/api/reference/resources/realtime/subresources/calls/methods/refer",
+                  "slug": "api/reference/resources/realtime/subresources/calls/methods/refer"
+                },
+                {
+                  "type": "link",
+                  "title": "Reject",
+                  "href": "/api/reference/resources/realtime/subresources/calls/methods/reject",
+                  "slug": "api/reference/resources/realtime/subresources/calls/methods/reject"
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "title": "Client events",
+              "href": "/api/reference/resources/realtime/client-events",
+              "slug": "api/reference/resources/realtime/client-events"
+            },
+            {
+              "type": "link",
+              "title": "Server events",
+              "href": "/api/reference/resources/realtime/server-events",
+              "slug": "api/reference/resources/realtime/server-events"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Administration",
+          "items": [
+            {
+              "type": "link",
+              "title": "Overview",
+              "href": "/api/reference/administration/overview",
+              "slug": "api/reference/administration/overview"
+            },
+            {
+              "type": "section",
+              "title": "Audit Logs",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "List audit logs",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/audit_logs/methods/list",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/audit_logs/methods/list"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Admin API Keys",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create an admin API key",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/admin_api_keys/methods/create",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/admin_api_keys/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve an admin API key",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/admin_api_keys/methods/retrieve",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/admin_api_keys/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete an admin API key",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/admin_api_keys/methods/delete",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/admin_api_keys/methods/delete"
+                },
+                {
+                  "type": "link",
+                  "title": "List admin API keys",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/admin_api_keys/methods/list",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/admin_api_keys/methods/list"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Usage",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Audio Speeches",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/usage/methods/audio_speeches",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/usage/methods/audio_speeches"
+                },
+                {
+                  "type": "link",
+                  "title": "Audio Transcriptions",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/usage/methods/audio_transcriptions",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/usage/methods/audio_transcriptions"
+                },
+                {
+                  "type": "link",
+                  "title": "Code Interpreter Sessions",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/usage/methods/code_interpreter_sessions",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/usage/methods/code_interpreter_sessions"
+                },
+                {
+                  "type": "link",
+                  "title": "Completions",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/usage/methods/completions",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/usage/methods/completions"
+                },
+                {
+                  "type": "link",
+                  "title": "Embeddings",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/usage/methods/embeddings",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/usage/methods/embeddings"
+                },
+                {
+                  "type": "link",
+                  "title": "Images",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/usage/methods/images",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/usage/methods/images"
+                },
+                {
+                  "type": "link",
+                  "title": "Moderations",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/usage/methods/moderations",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/usage/methods/moderations"
+                },
+                {
+                  "type": "link",
+                  "title": "Vector Stores",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/usage/methods/vector_stores",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/usage/methods/vector_stores"
+                },
+                {
+                  "type": "link",
+                  "title": "File Search Calls",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/usage/methods/file_search_calls",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/usage/methods/file_search_calls"
+                },
+                {
+                  "type": "link",
+                  "title": "Web Search Calls",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/usage/methods/web_search_calls",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/usage/methods/web_search_calls"
+                },
+                {
+                  "type": "link",
+                  "title": "Costs",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/usage/methods/costs",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/usage/methods/costs"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Invites",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create an invite",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/invites/methods/create",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/invites/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve an invite",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/invites/methods/retrieve",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/invites/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete an invite",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/invites/methods/delete",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/invites/methods/delete"
+                },
+                {
+                  "type": "link",
+                  "title": "List invites",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/invites/methods/list",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/invites/methods/list"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Users",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Retrieve an user",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/users/methods/retrieve",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/users/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Update an user",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/users/methods/update",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/users/methods/update"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete an user",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/users/methods/delete",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/users/methods/delete"
+                },
+                {
+                  "type": "link",
+                  "title": "List users",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/users/methods/list",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/users/methods/list"
+                },
+                {
+                  "type": "section",
+                  "title": "Roles",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Create a role",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/users/subresources/roles/methods/create",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/users/subresources/roles/methods/create"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Retrieve a role",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/users/subresources/roles/methods/retrieve",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/users/subresources/roles/methods/retrieve"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Delete a role",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/users/subresources/roles/methods/delete",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/users/subresources/roles/methods/delete"
+                    },
+                    {
+                      "type": "link",
+                      "title": "List roles",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/users/subresources/roles/methods/list",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/users/subresources/roles/methods/list"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Groups",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create a group",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/groups/methods/create",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/groups/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve a group",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/groups/methods/retrieve",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/groups/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Update a group",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/groups/methods/update",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/groups/methods/update"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete a group",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/groups/methods/delete",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/groups/methods/delete"
+                },
+                {
+                  "type": "link",
+                  "title": "List groups",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/groups/methods/list",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/groups/methods/list"
+                },
+                {
+                  "type": "section",
+                  "title": "Users",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Create an user",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/users/methods/create",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/groups/subresources/users/methods/create"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Retrieve an user",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/users/methods/retrieve",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/groups/subresources/users/methods/retrieve"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Delete an user",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/users/methods/delete",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/groups/subresources/users/methods/delete"
+                    },
+                    {
+                      "type": "link",
+                      "title": "List users",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/users/methods/list",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/groups/subresources/users/methods/list"
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "title": "Roles",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Create a role",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/roles/methods/create",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/groups/subresources/roles/methods/create"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Retrieve a role",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/roles/methods/retrieve",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/groups/subresources/roles/methods/retrieve"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Delete a role",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/roles/methods/delete",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/groups/subresources/roles/methods/delete"
+                    },
+                    {
+                      "type": "link",
+                      "title": "List roles",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/roles/methods/list",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/groups/subresources/roles/methods/list"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Roles",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create a role",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/roles/methods/create",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/roles/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve a role",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/roles/methods/retrieve",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/roles/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Update a role",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/roles/methods/update",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/roles/methods/update"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete a role",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/roles/methods/delete",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/roles/methods/delete"
+                },
+                {
+                  "type": "link",
+                  "title": "List roles",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/roles/methods/list",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/roles/methods/list"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Data Retention",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Retrieve a data retention",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/data_retention/methods/retrieve",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/data_retention/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Update a data retention",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/data_retention/methods/update",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/data_retention/methods/update"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Spend Alerts",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create a spend alert",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/create",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve a spend alert",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/retrieve",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Update a spend alert",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/update",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/update"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete a spend alert",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/delete",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/delete"
+                },
+                {
+                  "type": "link",
+                  "title": "List spend alerts",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/list",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/list"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Certificates",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create a certificate",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/create",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/certificates/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve a certificate",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/retrieve",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/certificates/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Update a certificate",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/update",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/certificates/methods/update"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete a certificate",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/delete",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/certificates/methods/delete"
+                },
+                {
+                  "type": "link",
+                  "title": "List certificates",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/list",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/certificates/methods/list"
+                },
+                {
+                  "type": "link",
+                  "title": "Activate",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/activate",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/certificates/methods/activate"
+                },
+                {
+                  "type": "link",
+                  "title": "Deactivate",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/deactivate",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/certificates/methods/deactivate"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Projects",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create a project",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/methods/create",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve a project",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/methods/retrieve",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Update a project",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/methods/update",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/methods/update"
+                },
+                {
+                  "type": "link",
+                  "title": "List projects",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/methods/list",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/methods/list"
+                },
+                {
+                  "type": "link",
+                  "title": "Archive",
+                  "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/methods/archive",
+                  "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/methods/archive"
+                },
+                {
+                  "type": "section",
+                  "title": "Users",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Create an user",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/create",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/create"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Retrieve an user",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/retrieve",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/retrieve"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Update an user",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/update",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/update"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Delete an user",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/delete",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/delete"
+                    },
+                    {
+                      "type": "link",
+                      "title": "List users",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/list",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/list"
+                    },
+                    {
+                      "type": "section",
+                      "title": "Roles",
+                      "items": [
+                        {
+                          "type": "link",
+                          "title": "Create a role",
+                          "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/subresources/roles/methods/create",
+                          "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/subresources/roles/methods/create"
+                        },
+                        {
+                          "type": "link",
+                          "title": "Retrieve a role",
+                          "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/subresources/roles/methods/retrieve",
+                          "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/subresources/roles/methods/retrieve"
+                        },
+                        {
+                          "type": "link",
+                          "title": "Delete a role",
+                          "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/subresources/roles/methods/delete",
+                          "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/subresources/roles/methods/delete"
+                        },
+                        {
+                          "type": "link",
+                          "title": "List roles",
+                          "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/subresources/roles/methods/list",
+                          "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/subresources/roles/methods/list"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "title": "Service Accounts",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Create a service account",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/create",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/create"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Retrieve a service account",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/retrieve",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/retrieve"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Update a service account",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/update",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/update"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Delete a service account",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/delete",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/delete"
+                    },
+                    {
+                      "type": "link",
+                      "title": "List service accounts",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/list",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/list"
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "title": "API Keys",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Retrieve an API key",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/api_keys/methods/retrieve",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/api_keys/methods/retrieve"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Delete an API key",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/api_keys/methods/delete",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/api_keys/methods/delete"
+                    },
+                    {
+                      "type": "link",
+                      "title": "List API keys",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/api_keys/methods/list",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/api_keys/methods/list"
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "title": "Rate Limits",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Update Rate Limit",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/rate_limits/methods/update_rate_limit",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/rate_limits/methods/update_rate_limit"
+                    },
+                    {
+                      "type": "link",
+                      "title": "List Rate Limits",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/rate_limits/methods/list_rate_limits",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/rate_limits/methods/list_rate_limits"
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "title": "Model Permissions",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Retrieve a model permission",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/model_permissions/methods/retrieve",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/model_permissions/methods/retrieve"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Update a model permission",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/model_permissions/methods/update",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/model_permissions/methods/update"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Delete a model permission",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/model_permissions/methods/delete",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/model_permissions/methods/delete"
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "title": "Hosted Tool Permissions",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Retrieve a hosted tool permission",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/hosted_tool_permissions/methods/retrieve",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/hosted_tool_permissions/methods/retrieve"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Update a hosted tool permission",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/hosted_tool_permissions/methods/update",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/hosted_tool_permissions/methods/update"
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "title": "Groups",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Create a group",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/methods/create",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/methods/create"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Retrieve a group",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/methods/retrieve",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/methods/retrieve"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Delete a group",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/methods/delete",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/methods/delete"
+                    },
+                    {
+                      "type": "link",
+                      "title": "List groups",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/methods/list",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/methods/list"
+                    },
+                    {
+                      "type": "section",
+                      "title": "Roles",
+                      "items": [
+                        {
+                          "type": "link",
+                          "title": "Create a role",
+                          "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/subresources/roles/methods/create",
+                          "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/subresources/roles/methods/create"
+                        },
+                        {
+                          "type": "link",
+                          "title": "Retrieve a role",
+                          "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/subresources/roles/methods/retrieve",
+                          "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/subresources/roles/methods/retrieve"
+                        },
+                        {
+                          "type": "link",
+                          "title": "Delete a role",
+                          "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/subresources/roles/methods/delete",
+                          "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/subresources/roles/methods/delete"
+                        },
+                        {
+                          "type": "link",
+                          "title": "List roles",
+                          "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/subresources/roles/methods/list",
+                          "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/subresources/roles/methods/list"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "title": "Roles",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Create a role",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles/methods/create",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles/methods/create"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Retrieve a role",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles/methods/retrieve",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles/methods/retrieve"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Update a role",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles/methods/update",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles/methods/update"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Delete a role",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles/methods/delete",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles/methods/delete"
+                    },
+                    {
+                      "type": "link",
+                      "title": "List roles",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles/methods/list",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles/methods/list"
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "title": "Data Retention",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Retrieve a data retention",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/data_retention/methods/retrieve",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/data_retention/methods/retrieve"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Update a data retention",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/data_retention/methods/update",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/data_retention/methods/update"
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "title": "Spend Alerts",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Create a spend alert",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/create",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/create"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Retrieve a spend alert",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/retrieve",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/retrieve"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Update a spend alert",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/update",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/update"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Delete a spend alert",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/delete",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/delete"
+                    },
+                    {
+                      "type": "link",
+                      "title": "List spend alerts",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/list",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/list"
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "title": "Certificates",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "List certificates",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/certificates/methods/list",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/certificates/methods/list"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Activate",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/certificates/methods/activate",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/certificates/methods/activate"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Deactivate",
+                      "href": "/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/certificates/methods/deactivate",
+                      "slug": "api/reference/resources/admin/subresources/organization/subresources/projects/subresources/certificates/methods/deactivate"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Chat Completions",
+          "items": [
+            {
+              "type": "section",
+              "title": "Chat Completions",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Overview",
+                  "href": "/api/reference/chat-completions/overview",
+                  "slug": "api/reference/chat-completions/overview"
+                },
+                {
+                  "type": "link",
+                  "title": "Create a chat completion",
+                  "href": "/api/reference/resources/chat/subresources/completions/methods/create",
+                  "slug": "api/reference/resources/chat/subresources/completions/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve a chat completion",
+                  "href": "/api/reference/resources/chat/subresources/completions/methods/retrieve",
+                  "slug": "api/reference/resources/chat/subresources/completions/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Update a chat completion",
+                  "href": "/api/reference/resources/chat/subresources/completions/methods/update",
+                  "slug": "api/reference/resources/chat/subresources/completions/methods/update"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete a chat completion",
+                  "href": "/api/reference/resources/chat/subresources/completions/methods/delete",
+                  "slug": "api/reference/resources/chat/subresources/completions/methods/delete"
+                },
+                {
+                  "type": "link",
+                  "title": "List chat completions",
+                  "href": "/api/reference/resources/chat/subresources/completions/methods/list",
+                  "slug": "api/reference/resources/chat/subresources/completions/methods/list"
+                },
+                {
+                  "type": "link",
+                  "title": "List chat completions",
+                  "href": "/api/reference/resources/chat/subresources/completions/subresources/messages/methods/list",
+                  "slug": "api/reference/resources/chat/subresources/completions/subresources/messages/methods/list"
+                },
+                {
+                  "type": "link",
+                  "title": "Streaming events",
+                  "href": "/api/reference/resources/chat/subresources/completions/streaming-events",
+                  "slug": "api/reference/resources/chat/subresources/completions/streaming-events"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Legacy",
+          "items": [
+            {
+              "type": "section",
+              "title": "Realtime Beta",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Overview",
+                  "href": "/api/reference/realtime-beta/overview",
+                  "slug": "api/reference/realtime-beta/overview"
+                },
+                {
+                  "type": "section",
+                  "title": "Sessions",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Create a session",
+                      "href": "/api/reference/resources/realtime/subresources/sessions/methods/create",
+                      "slug": "api/reference/resources/realtime/subresources/sessions/methods/create"
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "title": "Transcription Sessions",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Create a transcription session",
+                      "href": "/api/reference/resources/realtime/subresources/transcription_sessions/methods/create",
+                      "slug": "api/reference/resources/realtime/subresources/transcription_sessions/methods/create"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Assistants",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create an assistant",
+                  "href": "/api/reference/resources/beta/subresources/assistants/methods/create",
+                  "slug": "api/reference/resources/beta/subresources/assistants/methods/create"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieve an assistant",
+                  "href": "/api/reference/resources/beta/subresources/assistants/methods/retrieve",
+                  "slug": "api/reference/resources/beta/subresources/assistants/methods/retrieve"
+                },
+                {
+                  "type": "link",
+                  "title": "Update an assistant",
+                  "href": "/api/reference/resources/beta/subresources/assistants/methods/update",
+                  "slug": "api/reference/resources/beta/subresources/assistants/methods/update"
+                },
+                {
+                  "type": "link",
+                  "title": "Delete an assistant",
+                  "href": "/api/reference/resources/beta/subresources/assistants/methods/delete",
+                  "slug": "api/reference/resources/beta/subresources/assistants/methods/delete"
+                },
+                {
+                  "type": "link",
+                  "title": "List assistants",
+                  "href": "/api/reference/resources/beta/subresources/assistants/methods/list",
+                  "slug": "api/reference/resources/beta/subresources/assistants/methods/list"
+                },
+                {
+                  "type": "section",
+                  "title": "Threads",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Create a thread",
+                      "href": "/api/reference/resources/beta/subresources/threads/methods/create",
+                      "slug": "api/reference/resources/beta/subresources/threads/methods/create"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Create And Run",
+                      "href": "/api/reference/resources/beta/subresources/threads/methods/create_and_run",
+                      "slug": "api/reference/resources/beta/subresources/threads/methods/create_and_run"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Retrieve a thread",
+                      "href": "/api/reference/resources/beta/subresources/threads/methods/retrieve",
+                      "slug": "api/reference/resources/beta/subresources/threads/methods/retrieve"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Update a thread",
+                      "href": "/api/reference/resources/beta/subresources/threads/methods/update",
+                      "slug": "api/reference/resources/beta/subresources/threads/methods/update"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Delete a thread",
+                      "href": "/api/reference/resources/beta/subresources/threads/methods/delete",
+                      "slug": "api/reference/resources/beta/subresources/threads/methods/delete"
+                    },
+                    {
+                      "type": "section",
+                      "title": "Runs",
+                      "items": [
+                        {
+                          "type": "link",
+                          "title": "Create a run",
+                          "href": "/api/reference/resources/beta/subresources/threads/subresources/runs/methods/create",
+                          "slug": "api/reference/resources/beta/subresources/threads/subresources/runs/methods/create"
+                        },
+                        {
+                          "type": "link",
+                          "title": "Retrieve a run",
+                          "href": "/api/reference/resources/beta/subresources/threads/subresources/runs/methods/retrieve",
+                          "slug": "api/reference/resources/beta/subresources/threads/subresources/runs/methods/retrieve"
+                        },
+                        {
+                          "type": "link",
+                          "title": "Update a run",
+                          "href": "/api/reference/resources/beta/subresources/threads/subresources/runs/methods/update",
+                          "slug": "api/reference/resources/beta/subresources/threads/subresources/runs/methods/update"
+                        },
+                        {
+                          "type": "link",
+                          "title": "List runs",
+                          "href": "/api/reference/resources/beta/subresources/threads/subresources/runs/methods/list",
+                          "slug": "api/reference/resources/beta/subresources/threads/subresources/runs/methods/list"
+                        },
+                        {
+                          "type": "link",
+                          "title": "Cancel a run",
+                          "href": "/api/reference/resources/beta/subresources/threads/subresources/runs/methods/cancel",
+                          "slug": "api/reference/resources/beta/subresources/threads/subresources/runs/methods/cancel"
+                        },
+                        {
+                          "type": "link",
+                          "title": "Submit Tool Outputs",
+                          "href": "/api/reference/resources/beta/subresources/threads/subresources/runs/methods/submit_tool_outputs",
+                          "slug": "api/reference/resources/beta/subresources/threads/subresources/runs/methods/submit_tool_outputs"
+                        },
+                        {
+                          "type": "section",
+                          "title": "Steps",
+                          "items": [
+                            {
+                              "type": "link",
+                              "title": "Retrieve a step",
+                              "href": "/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps/methods/retrieve",
+                              "slug": "api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps/methods/retrieve"
+                            },
+                            {
+                              "type": "link",
+                              "title": "List steps",
+                              "href": "/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps/methods/list",
+                              "slug": "api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps/methods/list"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "section",
+                      "title": "Messages",
+                      "items": [
+                        {
+                          "type": "link",
+                          "title": "Create a message",
+                          "href": "/api/reference/resources/beta/subresources/threads/subresources/messages/methods/create",
+                          "slug": "api/reference/resources/beta/subresources/threads/subresources/messages/methods/create"
+                        },
+                        {
+                          "type": "link",
+                          "title": "Retrieve a message",
+                          "href": "/api/reference/resources/beta/subresources/threads/subresources/messages/methods/retrieve",
+                          "slug": "api/reference/resources/beta/subresources/threads/subresources/messages/methods/retrieve"
+                        },
+                        {
+                          "type": "link",
+                          "title": "Update a message",
+                          "href": "/api/reference/resources/beta/subresources/threads/subresources/messages/methods/update",
+                          "slug": "api/reference/resources/beta/subresources/threads/subresources/messages/methods/update"
+                        },
+                        {
+                          "type": "link",
+                          "title": "Delete a message",
+                          "href": "/api/reference/resources/beta/subresources/threads/subresources/messages/methods/delete",
+                          "slug": "api/reference/resources/beta/subresources/threads/subresources/messages/methods/delete"
+                        },
+                        {
+                          "type": "link",
+                          "title": "List messages",
+                          "href": "/api/reference/resources/beta/subresources/threads/subresources/messages/methods/list",
+                          "slug": "api/reference/resources/beta/subresources/threads/subresources/messages/methods/list"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "link",
+                  "title": "Assistants streaming events",
+                  "href": "/api/reference/resources/beta/subresources/assistants/streaming-events",
+                  "slug": "api/reference/resources/beta/subresources/assistants/streaming-events"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Completions",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Create a completion",
+                  "href": "/api/reference/resources/completions/methods/create",
+                  "slug": "api/reference/resources/completions/methods/create"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "product": "Apps SDK",
+      "sourceUrl": "https://developers.openai.com/apps-sdk/quickstart",
+      "items": [
+        {
+          "type": "link",
+          "title": "Home",
+          "href": "/apps-sdk",
+          "slug": "apps-sdk"
+        },
+        {
+          "type": "link",
+          "title": "Quickstart",
+          "href": "/apps-sdk/quickstart",
+          "slug": "apps-sdk/quickstart"
+        },
+        {
+          "type": "section",
+          "title": "Core Concepts",
+          "items": [
+            {
+              "type": "link",
+              "title": "MCP Apps in ChatGPT",
+              "href": "/apps-sdk/mcp-apps-in-chatgpt",
+              "slug": "apps-sdk/mcp-apps-in-chatgpt"
+            },
+            {
+              "type": "link",
+              "title": "MCP Server",
+              "href": "/apps-sdk/concepts/mcp-server",
+              "slug": "apps-sdk/concepts/mcp-server"
+            },
+            {
+              "type": "link",
+              "title": "UX principles",
+              "href": "/apps-sdk/concepts/ux-principles",
+              "slug": "apps-sdk/concepts/ux-principles"
+            },
+            {
+              "type": "link",
+              "title": "UI guidelines",
+              "href": "/apps-sdk/concepts/ui-guidelines",
+              "slug": "apps-sdk/concepts/ui-guidelines"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Plan",
+          "items": [
+            {
+              "type": "link",
+              "title": "Research use cases",
+              "href": "/apps-sdk/plan/use-case",
+              "slug": "apps-sdk/plan/use-case"
+            },
+            {
+              "type": "link",
+              "title": "Define tools",
+              "href": "/apps-sdk/plan/tools",
+              "slug": "apps-sdk/plan/tools"
+            },
+            {
+              "type": "link",
+              "title": "Design components",
+              "href": "/apps-sdk/plan/components",
+              "slug": "apps-sdk/plan/components"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Build",
+          "items": [
+            {
+              "type": "link",
+              "title": "Set up your server",
+              "href": "/apps-sdk/build/mcp-server",
+              "slug": "apps-sdk/build/mcp-server"
+            },
+            {
+              "type": "link",
+              "title": "Build your ChatGPT UI",
+              "href": "/apps-sdk/build/chatgpt-ui",
+              "slug": "apps-sdk/build/chatgpt-ui"
+            },
+            {
+              "type": "link",
+              "title": "Authenticate users",
+              "href": "/apps-sdk/build/auth",
+              "slug": "apps-sdk/build/auth"
+            },
+            {
+              "type": "link",
+              "title": "Manage state",
+              "href": "/apps-sdk/build/state-management",
+              "slug": "apps-sdk/build/state-management"
+            },
+            {
+              "type": "link",
+              "title": "Monetize your app",
+              "href": "/apps-sdk/build/monetization",
+              "slug": "apps-sdk/build/monetization"
+            },
+            {
+              "type": "link",
+              "title": "Examples",
+              "href": "/apps-sdk/build/examples",
+              "slug": "apps-sdk/build/examples"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Deploy",
+          "items": [
+            {
+              "type": "link",
+              "title": "Deploy your app",
+              "href": "/apps-sdk/deploy",
+              "slug": "apps-sdk/deploy"
+            },
+            {
+              "type": "link",
+              "title": "Connect from ChatGPT",
+              "href": "/apps-sdk/deploy/connect-chatgpt",
+              "slug": "apps-sdk/deploy/connect-chatgpt"
+            },
+            {
+              "type": "link",
+              "title": "Test your integration",
+              "href": "/apps-sdk/deploy/testing",
+              "slug": "apps-sdk/deploy/testing"
+            },
+            {
+              "type": "link",
+              "title": "Submit your app",
+              "href": "/apps-sdk/deploy/submission",
+              "slug": "apps-sdk/deploy/submission"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Conversion apps",
+          "items": [
+            {
+              "type": "link",
+              "title": "Restaurant reservation spec",
+              "href": "/apps-sdk/guides/restaurant-reservation-conversion-spec",
+              "slug": "apps-sdk/guides/restaurant-reservation-conversion-spec"
+            },
+            {
+              "type": "link",
+              "title": "Product checkout spec",
+              "href": "/apps-sdk/guides/product-checkout-conversion-spec",
+              "slug": "apps-sdk/guides/product-checkout-conversion-spec"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Guides",
+          "items": [
+            {
+              "type": "link",
+              "title": "Optimize Metadata",
+              "href": "/apps-sdk/guides/optimize-metadata",
+              "slug": "apps-sdk/guides/optimize-metadata"
+            },
+            {
+              "type": "link",
+              "title": "Security & Privacy",
+              "href": "/apps-sdk/guides/security-privacy",
+              "slug": "apps-sdk/guides/security-privacy"
+            },
+            {
+              "type": "link",
+              "title": "Troubleshooting",
+              "href": "/apps-sdk/deploy/troubleshooting",
+              "slug": "apps-sdk/deploy/troubleshooting"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Resources",
+          "items": [
+            {
+              "type": "link",
+              "title": "Changelog",
+              "href": "/apps-sdk/changelog",
+              "slug": "apps-sdk/changelog"
+            },
+            {
+              "type": "link",
+              "title": "App submission guidelines",
+              "href": "/apps-sdk/app-submission-guidelines",
+              "slug": "apps-sdk/app-submission-guidelines"
+            },
+            {
+              "type": "link",
+              "title": "Reference",
+              "href": "/apps-sdk/reference",
+              "slug": "apps-sdk/reference"
+            }
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "product": "Codex",
+      "sourceUrl": "https://developers.openai.com/codex/quickstart",
+      "items": [
+        {
+          "type": "section",
+          "title": "Getting Started",
+          "items": [
+            {
+              "type": "link",
+              "title": "Overview",
+              "href": "/codex",
+              "slug": "codex"
+            },
+            {
+              "type": "link",
+              "title": "Quickstart",
+              "href": "/codex/quickstart",
+              "slug": "codex/quickstart"
+            },
+            {
+              "type": "link",
+              "title": "Explore use cases",
+              "href": "/codex/use-cases",
+              "slug": "codex/use-cases"
+            },
+            {
+              "type": "link",
+              "title": "Import to Codex",
+              "href": "/codex/import",
+              "slug": "codex/import"
+            },
+            {
+              "type": "link",
+              "title": "Pricing",
+              "href": "/codex/pricing",
+              "slug": "codex/pricing"
+            },
+            {
+              "type": "section",
+              "title": "Concepts",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Prompting",
+                  "href": "/codex/prompting",
+                  "slug": "codex/prompting"
+                },
+                {
+                  "type": "link",
+                  "title": "Customization",
+                  "href": "/codex/concepts/customization",
+                  "slug": "codex/concepts/customization"
+                },
+                {
+                  "type": "section",
+                  "title": "Memories",
+                  "href": "/codex/memories",
+                  "slug": "codex/memories",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Chronicle",
+                      "href": "/codex/memories/chronicle",
+                      "slug": "codex/memories/chronicle"
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "title": "Sandboxing",
+                  "href": "/codex/concepts/sandboxing",
+                  "slug": "codex/concepts/sandboxing",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Auto-review",
+                      "href": "/codex/concepts/sandboxing/auto-review",
+                      "slug": "codex/concepts/sandboxing/auto-review"
+                    }
+                  ]
+                },
+                {
+                  "type": "link",
+                  "title": "Subagents",
+                  "href": "/codex/concepts/subagents",
+                  "slug": "codex/concepts/subagents"
+                },
+                {
+                  "type": "link",
+                  "title": "Workflows",
+                  "href": "/codex/workflows",
+                  "slug": "codex/workflows"
+                },
+                {
+                  "type": "link",
+                  "title": "Models",
+                  "href": "/codex/models",
+                  "slug": "codex/models"
+                },
+                {
+                  "type": "link",
+                  "title": "Cyber Safety",
+                  "href": "/codex/concepts/cyber-safety",
+                  "slug": "codex/concepts/cyber-safety"
+                },
+                {
+                  "type": "link",
+                  "title": "Glossary",
+                  "href": "/codex/glossary",
+                  "slug": "codex/glossary"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Using Codex",
+          "items": [
+            {
+              "type": "section",
+              "title": "App",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Overview",
+                  "href": "/codex/app",
+                  "slug": "codex/app"
+                },
+                {
+                  "type": "link",
+                  "title": "Features",
+                  "href": "/codex/app/features",
+                  "slug": "codex/app/features"
+                },
+                {
+                  "type": "link",
+                  "title": "Settings",
+                  "href": "/codex/app/settings",
+                  "slug": "codex/app/settings"
+                },
+                {
+                  "type": "link",
+                  "title": "Review",
+                  "href": "/codex/app/review",
+                  "slug": "codex/app/review"
+                },
+                {
+                  "type": "link",
+                  "title": "Automations",
+                  "href": "/codex/app/automations",
+                  "slug": "codex/app/automations"
+                },
+                {
+                  "type": "link",
+                  "title": "Worktrees",
+                  "href": "/codex/app/worktrees",
+                  "slug": "codex/app/worktrees"
+                },
+                {
+                  "type": "link",
+                  "title": "Local Environments",
+                  "href": "/codex/app/local-environments",
+                  "slug": "codex/app/local-environments"
+                },
+                {
+                  "type": "link",
+                  "title": "In-app browser",
+                  "href": "/codex/app/browser",
+                  "slug": "codex/app/browser"
+                },
+                {
+                  "type": "link",
+                  "title": "Chrome extension",
+                  "href": "/codex/app/chrome-extension",
+                  "slug": "codex/app/chrome-extension"
+                },
+                {
+                  "type": "link",
+                  "title": "Computer Use",
+                  "href": "/codex/app/computer-use",
+                  "slug": "codex/app/computer-use"
+                },
+                {
+                  "type": "link",
+                  "title": "Appshots",
+                  "href": "/codex/appshots",
+                  "slug": "codex/appshots"
+                },
+                {
+                  "type": "link",
+                  "title": "Commands",
+                  "href": "/codex/app/commands",
+                  "slug": "codex/app/commands"
+                },
+                {
+                  "type": "link",
+                  "title": "Windows",
+                  "href": "/codex/app/windows",
+                  "slug": "codex/app/windows"
+                },
+                {
+                  "type": "link",
+                  "title": "Troubleshooting",
+                  "href": "/codex/app/troubleshooting",
+                  "slug": "codex/app/troubleshooting"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "IDE Extension",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Overview",
+                  "href": "/codex/ide",
+                  "slug": "codex/ide"
+                },
+                {
+                  "type": "link",
+                  "title": "Features",
+                  "href": "/codex/ide/features",
+                  "slug": "codex/ide/features"
+                },
+                {
+                  "type": "link",
+                  "title": "Settings",
+                  "href": "/codex/ide/settings",
+                  "slug": "codex/ide/settings"
+                },
+                {
+                  "type": "link",
+                  "title": "IDE Commands",
+                  "href": "/codex/ide/commands",
+                  "slug": "codex/ide/commands"
+                },
+                {
+                  "type": "link",
+                  "title": "Slash commands",
+                  "href": "/codex/ide/slash-commands",
+                  "slug": "codex/ide/slash-commands"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "CLI",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Overview",
+                  "href": "/codex/cli",
+                  "slug": "codex/cli"
+                },
+                {
+                  "type": "link",
+                  "title": "Features",
+                  "href": "/codex/cli/features",
+                  "slug": "codex/cli/features"
+                },
+                {
+                  "type": "link",
+                  "title": "Command Line Options",
+                  "href": "/codex/cli/reference",
+                  "slug": "codex/cli/reference"
+                },
+                {
+                  "type": "link",
+                  "title": "Slash commands",
+                  "href": "/codex/cli/slash-commands",
+                  "slug": "codex/cli/slash-commands"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Web",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Overview",
+                  "href": "/codex/cloud",
+                  "slug": "codex/cloud"
+                },
+                {
+                  "type": "link",
+                  "title": "Environments",
+                  "href": "/codex/cloud/environments",
+                  "slug": "codex/cloud/environments"
+                },
+                {
+                  "type": "link",
+                  "title": "Internet Access",
+                  "href": "/codex/cloud/internet-access",
+                  "slug": "codex/cloud/internet-access"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Integrations",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "GitHub",
+                  "href": "/codex/integrations/github",
+                  "slug": "codex/integrations/github"
+                },
+                {
+                  "type": "link",
+                  "title": "Slack",
+                  "href": "/codex/integrations/slack",
+                  "slug": "codex/integrations/slack"
+                },
+                {
+                  "type": "link",
+                  "title": "Linear",
+                  "href": "/codex/integrations/linear",
+                  "slug": "codex/integrations/linear"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Codex Security",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Overview",
+                  "href": "/codex/security",
+                  "slug": "codex/security"
+                },
+                {
+                  "type": "section",
+                  "title": "Codex Security plugin",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Quickstart",
+                      "href": "/codex/security/plugin",
+                      "slug": "codex/security/plugin"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Run a security scan",
+                      "href": "/codex/security/plugin/scans",
+                      "slug": "codex/security/plugin/scans"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Run a deep scan",
+                      "href": "/codex/security/plugin/deep-scans",
+                      "slug": "codex/security/plugin/deep-scans"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Review code changes",
+                      "href": "/codex/security/plugin/code-changes",
+                      "slug": "codex/security/plugin/code-changes"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Triage a backlog",
+                      "href": "/codex/security/plugin/triage-backlog",
+                      "slug": "codex/security/plugin/triage-backlog"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Fix findings",
+                      "href": "/codex/security/plugin/fix-findings",
+                      "slug": "codex/security/plugin/fix-findings"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Export and track findings",
+                      "href": "/codex/security/plugin/export-findings",
+                      "slug": "codex/security/plugin/export-findings"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Changelog",
+                      "href": "/codex/security/plugin/changelog",
+                      "slug": "codex/security/plugin/changelog"
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "title": "Codex Security cloud",
+                  "items": [
+                    {
+                      "type": "link",
+                      "title": "Setup",
+                      "href": "/codex/security/setup",
+                      "slug": "codex/security/setup"
+                    },
+                    {
+                      "type": "link",
+                      "title": "Improving the threat model",
+                      "href": "/codex/security/threat-model",
+                      "slug": "codex/security/threat-model"
+                    }
+                  ]
+                },
+                {
+                  "type": "link",
+                  "title": "FAQ",
+                  "href": "/codex/security/faq",
+                  "slug": "codex/security/faq"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Configuration",
+          "items": [
+            {
+              "type": "section",
+              "title": "Config File",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Config Basics",
+                  "href": "/codex/config-basic",
+                  "slug": "codex/config-basic"
+                },
+                {
+                  "type": "link",
+                  "title": "Advanced Config",
+                  "href": "/codex/config-advanced",
+                  "slug": "codex/config-advanced"
+                },
+                {
+                  "type": "link",
+                  "title": "Config Reference",
+                  "href": "/codex/config-reference",
+                  "slug": "codex/config-reference"
+                },
+                {
+                  "type": "link",
+                  "title": "Environment Variables",
+                  "href": "/codex/environment-variables",
+                  "slug": "codex/environment-variables"
+                },
+                {
+                  "type": "link",
+                  "title": "Sample Config",
+                  "href": "/codex/config-sample",
+                  "slug": "codex/config-sample"
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "title": "Permissions",
+              "href": "/codex/permissions",
+              "slug": "codex/permissions"
+            },
+            {
+              "type": "link",
+              "title": "Speed",
+              "href": "/codex/speed",
+              "slug": "codex/speed"
+            },
+            {
+              "type": "link",
+              "title": "Rules",
+              "href": "/codex/rules",
+              "slug": "codex/rules"
+            },
+            {
+              "type": "link",
+              "title": "Hooks",
+              "href": "/codex/hooks",
+              "slug": "codex/hooks"
+            },
+            {
+              "type": "link",
+              "title": "AGENTS.md",
+              "href": "/codex/guides/agents-md",
+              "slug": "codex/guides/agents-md"
+            },
+            {
+              "type": "link",
+              "title": "MCP",
+              "href": "/codex/mcp",
+              "slug": "codex/mcp"
+            },
+            {
+              "type": "section",
+              "title": "Plugins",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Overview",
+                  "href": "/codex/plugins",
+                  "slug": "codex/plugins"
+                },
+                {
+                  "type": "link",
+                  "title": "Build plugins",
+                  "href": "/codex/plugins/build",
+                  "slug": "codex/plugins/build"
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "title": "Sites",
+              "href": "/codex/sites",
+              "slug": "codex/sites"
+            },
+            {
+              "type": "section",
+              "title": "Skills",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Overview",
+                  "href": "/codex/skills",
+                  "slug": "codex/skills"
+                },
+                {
+                  "type": "link",
+                  "title": "Record & Replay",
+                  "href": "/codex/record-and-replay",
+                  "slug": "codex/record-and-replay"
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "title": "Subagents",
+              "href": "/codex/subagents",
+              "slug": "codex/subagents"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Administration",
+          "items": [
+            {
+              "type": "section",
+              "title": "Authentication",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Overview",
+                  "href": "/codex/auth",
+                  "slug": "codex/auth"
+                },
+                {
+                  "type": "link",
+                  "title": "Access tokens",
+                  "href": "/codex/enterprise/access-tokens",
+                  "slug": "codex/enterprise/access-tokens"
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "title": "Agent approvals & security",
+              "href": "/codex/agent-approvals-security",
+              "slug": "codex/agent-approvals-security"
+            },
+            {
+              "type": "link",
+              "title": "Remote connections",
+              "href": "/codex/remote-connections",
+              "slug": "codex/remote-connections"
+            },
+            {
+              "type": "section",
+              "title": "Deployment",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Amazon Bedrock",
+                  "href": "/codex/amazon-bedrock",
+                  "slug": "codex/amazon-bedrock"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Enterprise",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Admin Setup",
+                  "href": "/codex/enterprise/admin-setup",
+                  "slug": "codex/enterprise/admin-setup"
+                },
+                {
+                  "type": "link",
+                  "title": "Governance",
+                  "href": "/codex/enterprise/governance",
+                  "slug": "codex/enterprise/governance"
+                },
+                {
+                  "type": "link",
+                  "title": "Managed configuration",
+                  "href": "/codex/enterprise/managed-configuration",
+                  "slug": "codex/enterprise/managed-configuration"
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "title": "Windows",
+              "href": "/codex/windows",
+              "slug": "codex/windows"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Automation",
+          "items": [
+            {
+              "type": "link",
+              "title": "Non-interactive Mode",
+              "href": "/codex/noninteractive",
+              "slug": "codex/noninteractive"
+            },
+            {
+              "type": "link",
+              "title": "Codex SDK",
+              "href": "/codex/sdk",
+              "slug": "codex/sdk"
+            },
+            {
+              "type": "link",
+              "title": "App Server",
+              "href": "/codex/app-server",
+              "slug": "codex/app-server"
+            },
+            {
+              "type": "link",
+              "title": "MCP Server",
+              "href": "/codex/guides/agents-sdk",
+              "slug": "codex/guides/agents-sdk"
+            },
+            {
+              "type": "link",
+              "title": "GitHub Action",
+              "href": "/codex/github-action",
+              "slug": "codex/github-action"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Learn",
+          "items": [
+            {
+              "type": "link",
+              "title": "Best practices",
+              "href": "/codex/learn/best-practices",
+              "slug": "codex/learn/best-practices"
+            },
+            {
+              "type": "link",
+              "title": "Videos",
+              "href": "/codex/videos",
+              "slug": "codex/videos"
+            },
+            {
+              "type": "link",
+              "title": "Community",
+              "href": "/community",
+              "slug": "community"
+            },
+            {
+              "type": "section",
+              "title": "Blog",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Mastering Codex Remote for engineering",
+                  "href": "/blog/mastering-codex-remote-for-engineering",
+                  "slug": "blog/mastering-codex-remote-for-engineering"
+                },
+                {
+                  "type": "link",
+                  "title": "Using skills to accelerate OSS maintenance",
+                  "href": "/blog/skills-agents-sdk",
+                  "slug": "blog/skills-agents-sdk"
+                },
+                {
+                  "type": "link",
+                  "title": "View all",
+                  "href": "/blog/topic/codex",
+                  "slug": "blog/topic/codex"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Cookbooks",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Build an Agent Improvement Loop with Traces, Evals, and Codex",
+                  "href": "/cookbook/examples/agents_sdk/agent_improvement_loop",
+                  "slug": "cookbook/examples/agents_sdk/agent_improvement_loop"
+                },
+                {
+                  "type": "link",
+                  "title": "Build iterative repair loops with Codex",
+                  "href": "/cookbook/examples/codex/build_iterative_repair_loops_with_codex",
+                  "slug": "cookbook/examples/codex/build_iterative_repair_loops_with_codex"
+                },
+                {
+                  "type": "link",
+                  "title": "View all",
+                  "href": "/cookbook/topic/codex",
+                  "slug": "cookbook/topic/codex"
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "title": "Building AI Teams",
+              "href": "/codex/guides/build-ai-native-engineering-team",
+              "slug": "codex/guides/build-ai-native-engineering-team"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Releases",
+          "items": [
+            {
+              "type": "link",
+              "title": "Changelog",
+              "href": "/codex/changelog",
+              "slug": "codex/changelog"
+            },
+            {
+              "type": "link",
+              "title": "Feature Maturity",
+              "href": "/codex/feature-maturity",
+              "slug": "codex/feature-maturity"
+            },
+            {
+              "type": "link",
+              "title": "Open Source",
+              "href": "/codex/open-source",
+              "slug": "codex/open-source"
+            }
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "product": "Commerce",
+      "sourceUrl": "https://developers.openai.com/commerce/guides/get-started",
+      "items": [
+        {
+          "type": "link",
+          "title": "Home",
+          "href": "/commerce",
+          "slug": "commerce"
+        },
+        {
+          "type": "section",
+          "title": "Guides",
+          "items": [
+            {
+              "type": "link",
+              "title": "Get started",
+              "href": "/commerce/guides/get-started",
+              "slug": "commerce/guides/get-started"
+            },
+            {
+              "type": "link",
+              "title": "Best practices",
+              "href": "/commerce/guides/best-practices",
+              "slug": "commerce/guides/best-practices"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "File Upload",
+          "items": [
+            {
+              "type": "link",
+              "title": "Overview",
+              "href": "/commerce/specs/file-upload/overview",
+              "slug": "commerce/specs/file-upload/overview"
+            },
+            {
+              "type": "link",
+              "title": "Products",
+              "href": "/commerce/specs/file-upload/products",
+              "slug": "commerce/specs/file-upload/products"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "API",
+          "items": [
+            {
+              "type": "link",
+              "title": "Overview",
+              "href": "/commerce/specs/api/overview",
+              "slug": "commerce/specs/api/overview"
+            },
+            {
+              "type": "link",
+              "title": "Feeds",
+              "href": "/commerce/specs/api/feeds",
+              "slug": "commerce/specs/api/feeds"
+            },
+            {
+              "type": "link",
+              "title": "Products",
+              "href": "/commerce/specs/api/products",
+              "slug": "commerce/specs/api/products"
+            },
+            {
+              "type": "link",
+              "title": "Promotions",
+              "href": "/commerce/specs/api/promotions",
+              "slug": "commerce/specs/api/promotions"
+            }
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "product": "OpenAI API Docs",
+      "sourceUrl": "https://developers.openai.com/docs/overview",
+      "items": [
+        {
+          "type": "section",
+          "title": "Get started",
+          "items": [
+            {
+              "type": "link",
+              "title": "Overview",
+              "href": "/api/docs",
+              "slug": "api/docs"
+            },
+            {
+              "type": "link",
+              "title": "Quickstart",
+              "href": "/api/docs/quickstart",
+              "slug": "api/docs/quickstart"
+            },
+            {
+              "type": "link",
+              "title": "Models",
+              "href": "/api/docs/models",
+              "slug": "api/docs/models"
+            },
+            {
+              "type": "link",
+              "title": "Pricing",
+              "href": "/api/docs/pricing",
+              "slug": "api/docs/pricing"
+            },
+            {
+              "type": "section",
+              "title": "SDKs and CLI",
+              "href": "/api/docs/libraries",
+              "slug": "api/docs/libraries",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "OpenAI SDK",
+                  "href": "/api/docs/libraries",
+                  "slug": "api/docs/libraries"
+                },
+                {
+                  "type": "link",
+                  "title": "Agents SDK",
+                  "href": "/api/docs/guides/agents",
+                  "slug": "api/docs/guides/agents"
+                },
+                {
+                  "type": "link",
+                  "title": "OpenAI CLI",
+                  "href": "/api/docs/libraries/openai-cli",
+                  "slug": "api/docs/libraries/openai-cli"
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "title": "Latest: GPT-5.5",
+              "href": "/api/docs/guides/latest-model",
+              "slug": "api/docs/guides/latest-model"
+            },
+            {
+              "type": "link",
+              "title": "Prompt guidance",
+              "href": "/api/docs/guides/prompt-guidance",
+              "slug": "api/docs/guides/prompt-guidance"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Core concepts",
+          "items": [
+            {
+              "type": "link",
+              "title": "Text generation",
+              "href": "/api/docs/guides/text",
+              "slug": "api/docs/guides/text"
+            },
+            {
+              "type": "link",
+              "title": "Code generation",
+              "href": "/api/docs/guides/code-generation",
+              "slug": "api/docs/guides/code-generation"
+            },
+            {
+              "type": "link",
+              "title": "Images and vision",
+              "href": "/api/docs/guides/images-vision",
+              "slug": "api/docs/guides/images-vision"
+            },
+            {
+              "type": "link",
+              "title": "Audio and speech",
+              "href": "/api/docs/guides/audio",
+              "slug": "api/docs/guides/audio"
+            },
+            {
+              "type": "link",
+              "title": "Structured output",
+              "href": "/api/docs/guides/structured-outputs",
+              "slug": "api/docs/guides/structured-outputs"
+            },
+            {
+              "type": "link",
+              "title": "Function calling",
+              "href": "/api/docs/guides/function-calling",
+              "slug": "api/docs/guides/function-calling"
+            },
+            {
+              "type": "link",
+              "title": "Responses API",
+              "href": "/api/docs/guides/migrate-to-responses",
+              "slug": "api/docs/guides/migrate-to-responses"
+            },
+            {
+              "type": "link",
+              "title": "Using tools",
+              "href": "/api/docs/guides/tools",
+              "slug": "api/docs/guides/tools"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Agents SDK",
+          "items": [
+            {
+              "type": "link",
+              "title": "Overview",
+              "href": "/api/docs/guides/agents",
+              "slug": "api/docs/guides/agents"
+            },
+            {
+              "type": "link",
+              "title": "Quickstart",
+              "href": "/api/docs/guides/agents/quickstart",
+              "slug": "api/docs/guides/agents/quickstart"
+            },
+            {
+              "type": "link",
+              "title": "Agent definitions",
+              "href": "/api/docs/guides/agents/define-agents",
+              "slug": "api/docs/guides/agents/define-agents"
+            },
+            {
+              "type": "link",
+              "title": "Models and providers",
+              "href": "/api/docs/guides/agents/models",
+              "slug": "api/docs/guides/agents/models"
+            },
+            {
+              "type": "link",
+              "title": "Running agents",
+              "href": "/api/docs/guides/agents/running-agents",
+              "slug": "api/docs/guides/agents/running-agents"
+            },
+            {
+              "type": "link",
+              "title": "Sandbox agents",
+              "href": "/api/docs/guides/agents/sandboxes",
+              "slug": "api/docs/guides/agents/sandboxes"
+            },
+            {
+              "type": "link",
+              "title": "Orchestration",
+              "href": "/api/docs/guides/agents/orchestration",
+              "slug": "api/docs/guides/agents/orchestration"
+            },
+            {
+              "type": "link",
+              "title": "Guardrails",
+              "href": "/api/docs/guides/agents/guardrails-approvals",
+              "slug": "api/docs/guides/agents/guardrails-approvals"
+            },
+            {
+              "type": "link",
+              "title": "Results and state",
+              "href": "/api/docs/guides/agents/results",
+              "slug": "api/docs/guides/agents/results"
+            },
+            {
+              "type": "link",
+              "title": "Integrations and observability",
+              "href": "/api/docs/guides/agents/integrations-observability",
+              "slug": "api/docs/guides/agents/integrations-observability"
+            },
+            {
+              "type": "link",
+              "title": "Evaluate agent workflows",
+              "href": "/api/docs/guides/agent-evals",
+              "slug": "api/docs/guides/agent-evals"
+            },
+            {
+              "type": "link",
+              "title": "Voice agents",
+              "href": "/api/docs/guides/voice-agents",
+              "slug": "api/docs/guides/voice-agents"
+            },
+            {
+              "type": "section",
+              "title": "ChatKit",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Overview",
+                  "href": "/api/docs/guides/chatkit",
+                  "slug": "api/docs/guides/chatkit"
+                },
+                {
+                  "type": "link",
+                  "title": "Customize",
+                  "href": "/api/docs/guides/chatkit-themes",
+                  "slug": "api/docs/guides/chatkit-themes"
+                },
+                {
+                  "type": "link",
+                  "title": "Widgets",
+                  "href": "/api/docs/guides/chatkit-widgets",
+                  "slug": "api/docs/guides/chatkit-widgets"
+                },
+                {
+                  "type": "link",
+                  "title": "Actions",
+                  "href": "/api/docs/guides/chatkit-actions",
+                  "slug": "api/docs/guides/chatkit-actions"
+                },
+                {
+                  "type": "link",
+                  "title": "Advanced integrations",
+                  "href": "/api/docs/guides/custom-chatkit",
+                  "slug": "api/docs/guides/custom-chatkit"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Tools",
+          "items": [
+            {
+              "type": "link",
+              "title": "Web search",
+              "href": "/api/docs/guides/tools-web-search",
+              "slug": "api/docs/guides/tools-web-search"
+            },
+            {
+              "type": "section",
+              "title": "MCP and Connectors",
+              "href": "/api/docs/guides/tools-connectors-mcp",
+              "slug": "api/docs/guides/tools-connectors-mcp",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Secure MCP Tunnel",
+                  "href": "/api/docs/guides/secure-mcp-tunnels",
+                  "slug": "api/docs/guides/secure-mcp-tunnels"
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "title": "Skills",
+              "href": "/api/docs/guides/tools-skills",
+              "slug": "api/docs/guides/tools-skills"
+            },
+            {
+              "type": "link",
+              "title": "Shell",
+              "href": "/api/docs/guides/tools-shell",
+              "slug": "api/docs/guides/tools-shell"
+            },
+            {
+              "type": "link",
+              "title": "Computer use",
+              "href": "/api/docs/guides/tools-computer-use",
+              "slug": "api/docs/guides/tools-computer-use"
+            },
+            {
+              "type": "section",
+              "title": "File search and retrieval",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "File search",
+                  "href": "/api/docs/guides/tools-file-search",
+                  "slug": "api/docs/guides/tools-file-search"
+                },
+                {
+                  "type": "link",
+                  "title": "Retrieval",
+                  "href": "/api/docs/guides/retrieval",
+                  "slug": "api/docs/guides/retrieval"
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "title": "Tool search",
+              "href": "/api/docs/guides/tools-tool-search",
+              "slug": "api/docs/guides/tools-tool-search"
+            },
+            {
+              "type": "section",
+              "title": "More tools",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Apply Patch",
+                  "href": "/api/docs/guides/tools-apply-patch",
+                  "slug": "api/docs/guides/tools-apply-patch"
+                },
+                {
+                  "type": "link",
+                  "title": "Local shell",
+                  "href": "/api/docs/guides/tools-local-shell",
+                  "slug": "api/docs/guides/tools-local-shell"
+                },
+                {
+                  "type": "link",
+                  "title": "Image generation",
+                  "href": "/api/docs/guides/tools-image-generation",
+                  "slug": "api/docs/guides/tools-image-generation"
+                },
+                {
+                  "type": "link",
+                  "title": "Code interpreter",
+                  "href": "/api/docs/guides/tools-code-interpreter",
+                  "slug": "api/docs/guides/tools-code-interpreter"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Run and scale",
+          "items": [
+            {
+              "type": "link",
+              "title": "Conversation state",
+              "href": "/api/docs/guides/conversation-state",
+              "slug": "api/docs/guides/conversation-state"
+            },
+            {
+              "type": "link",
+              "title": "Background mode",
+              "href": "/api/docs/guides/background",
+              "slug": "api/docs/guides/background"
+            },
+            {
+              "type": "link",
+              "title": "Streaming",
+              "href": "/api/docs/guides/streaming-responses",
+              "slug": "api/docs/guides/streaming-responses"
+            },
+            {
+              "type": "link",
+              "title": "WebSocket mode",
+              "href": "/api/docs/guides/websocket-mode",
+              "slug": "api/docs/guides/websocket-mode"
+            },
+            {
+              "type": "link",
+              "title": "Webhooks",
+              "href": "/api/docs/guides/webhooks",
+              "slug": "api/docs/guides/webhooks"
+            },
+            {
+              "type": "link",
+              "title": "File inputs",
+              "href": "/api/docs/guides/file-inputs",
+              "slug": "api/docs/guides/file-inputs"
+            },
+            {
+              "type": "section",
+              "title": "Context management",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Compaction",
+                  "href": "/api/docs/guides/compaction",
+                  "slug": "api/docs/guides/compaction"
+                },
+                {
+                  "type": "link",
+                  "title": "Counting tokens",
+                  "href": "/api/docs/guides/token-counting",
+                  "slug": "api/docs/guides/token-counting"
+                },
+                {
+                  "type": "link",
+                  "title": "Prompt caching",
+                  "href": "/api/docs/guides/prompt-caching",
+                  "slug": "api/docs/guides/prompt-caching"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Prompting",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Overview",
+                  "href": "/api/docs/guides/prompting",
+                  "slug": "api/docs/guides/prompting"
+                },
+                {
+                  "type": "link",
+                  "title": "Prompt engineering",
+                  "href": "/api/docs/guides/prompt-engineering",
+                  "slug": "api/docs/guides/prompt-engineering"
+                },
+                {
+                  "type": "link",
+                  "title": "Citation formatting",
+                  "href": "/api/docs/guides/citation-formatting",
+                  "slug": "api/docs/guides/citation-formatting"
+                },
+                {
+                  "type": "link",
+                  "title": "Migration guide",
+                  "href": "/api/docs/guides/prompting/migrate-from-prompt-object",
+                  "slug": "api/docs/guides/prompting/migrate-from-prompt-object"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Reasoning",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Reasoning models",
+                  "href": "/api/docs/guides/reasoning",
+                  "slug": "api/docs/guides/reasoning"
+                },
+                {
+                  "type": "link",
+                  "title": "Reasoning best practices",
+                  "href": "/api/docs/guides/reasoning-best-practices",
+                  "slug": "api/docs/guides/reasoning-best-practices"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Evaluation",
+          "items": [
+            {
+              "type": "link",
+              "title": "Red teaming",
+              "href": "/api/docs/guides/red-teaming",
+              "slug": "api/docs/guides/red-teaming"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Realtime and audio",
+          "items": [
+            {
+              "type": "link",
+              "title": "Overview",
+              "href": "/api/docs/guides/realtime",
+              "slug": "api/docs/guides/realtime"
+            },
+            {
+              "type": "link",
+              "title": "Voice agents",
+              "href": "/api/docs/guides/voice-agents",
+              "slug": "api/docs/guides/voice-agents"
+            },
+            {
+              "type": "link",
+              "title": "Live translation",
+              "href": "/api/docs/guides/realtime-translation",
+              "slug": "api/docs/guides/realtime-translation"
+            },
+            {
+              "type": "section",
+              "title": "Transcription",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Realtime transcription",
+                  "href": "/api/docs/guides/realtime-transcription",
+                  "slug": "api/docs/guides/realtime-transcription"
+                },
+                {
+                  "type": "link",
+                  "title": "Speech to text",
+                  "href": "/api/docs/guides/speech-to-text",
+                  "slug": "api/docs/guides/speech-to-text"
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "title": "Speech generation",
+              "href": "/api/docs/guides/text-to-speech",
+              "slug": "api/docs/guides/text-to-speech"
+            },
+            {
+              "type": "link",
+              "title": "Realtime prompting guide",
+              "href": "/api/docs/guides/realtime-models-prompting",
+              "slug": "api/docs/guides/realtime-models-prompting"
+            },
+            {
+              "type": "section",
+              "title": "Connection methods",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "WebRTC",
+                  "href": "/api/docs/guides/realtime-webrtc",
+                  "slug": "api/docs/guides/realtime-webrtc"
+                },
+                {
+                  "type": "link",
+                  "title": "WebSocket",
+                  "href": "/api/docs/guides/realtime-websocket",
+                  "slug": "api/docs/guides/realtime-websocket"
+                },
+                {
+                  "type": "link",
+                  "title": "SIP",
+                  "href": "/api/docs/guides/realtime-sip",
+                  "slug": "api/docs/guides/realtime-sip"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Realtime sessions",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Managing conversations",
+                  "href": "/api/docs/guides/realtime-conversations",
+                  "slug": "api/docs/guides/realtime-conversations"
+                },
+                {
+                  "type": "link",
+                  "title": "Voice activity detection",
+                  "href": "/api/docs/guides/realtime-vad",
+                  "slug": "api/docs/guides/realtime-vad"
+                },
+                {
+                  "type": "link",
+                  "title": "Realtime with tools",
+                  "href": "/api/docs/guides/realtime-mcp",
+                  "slug": "api/docs/guides/realtime-mcp"
+                },
+                {
+                  "type": "link",
+                  "title": "Webhooks and server-side controls",
+                  "href": "/api/docs/guides/realtime-server-controls",
+                  "slug": "api/docs/guides/realtime-server-controls"
+                },
+                {
+                  "type": "link",
+                  "title": "Managing costs",
+                  "href": "/api/docs/guides/realtime-costs",
+                  "slug": "api/docs/guides/realtime-costs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Specialized models",
+          "items": [
+            {
+              "type": "link",
+              "title": "Image generation",
+              "href": "/api/docs/guides/image-generation",
+              "slug": "api/docs/guides/image-generation"
+            },
+            {
+              "type": "link",
+              "title": "Video generation",
+              "href": "/api/docs/guides/video-generation",
+              "slug": "api/docs/guides/video-generation"
+            },
+            {
+              "type": "link",
+              "title": "Deep research",
+              "href": "/api/docs/guides/deep-research",
+              "slug": "api/docs/guides/deep-research"
+            },
+            {
+              "type": "link",
+              "title": "Embeddings",
+              "href": "/api/docs/guides/embeddings",
+              "slug": "api/docs/guides/embeddings"
+            },
+            {
+              "type": "link",
+              "title": "Moderation",
+              "href": "/api/docs/guides/moderation",
+              "slug": "api/docs/guides/moderation"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Going live",
+          "items": [
+            {
+              "type": "link",
+              "title": "Production best practices",
+              "href": "/api/docs/guides/production-best-practices",
+              "slug": "api/docs/guides/production-best-practices"
+            },
+            {
+              "type": "section",
+              "title": "Workload identity federation",
+              "href": "/api/docs/guides/workload-identity-federation",
+              "slug": "api/docs/guides/workload-identity-federation",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Overview",
+                  "href": "/api/docs/guides/workload-identity-federation",
+                  "slug": "api/docs/guides/workload-identity-federation"
+                },
+                {
+                  "type": "link",
+                  "title": "Kubernetes",
+                  "href": "/api/docs/guides/workload-identity-federation/kubernetes",
+                  "slug": "api/docs/guides/workload-identity-federation/kubernetes"
+                },
+                {
+                  "type": "link",
+                  "title": "AWS",
+                  "href": "/api/docs/guides/workload-identity-federation/aws",
+                  "slug": "api/docs/guides/workload-identity-federation/aws"
+                },
+                {
+                  "type": "link",
+                  "title": "Microsoft Azure",
+                  "href": "/api/docs/guides/workload-identity-federation/microsoft-azure",
+                  "slug": "api/docs/guides/workload-identity-federation/microsoft-azure"
+                },
+                {
+                  "type": "link",
+                  "title": "Google Cloud",
+                  "href": "/api/docs/guides/workload-identity-federation/google-cloud",
+                  "slug": "api/docs/guides/workload-identity-federation/google-cloud"
+                },
+                {
+                  "type": "link",
+                  "title": "GitHub Actions",
+                  "href": "/api/docs/guides/workload-identity-federation/github-actions",
+                  "slug": "api/docs/guides/workload-identity-federation/github-actions"
+                },
+                {
+                  "type": "link",
+                  "title": "SPIFFE",
+                  "href": "/api/docs/guides/workload-identity-federation/spiffe",
+                  "slug": "api/docs/guides/workload-identity-federation/spiffe"
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "title": "Deployment checklist",
+              "href": "/api/docs/guides/deployment-checklist",
+              "slug": "api/docs/guides/deployment-checklist"
+            },
+            {
+              "type": "link",
+              "title": "Amazon Bedrock",
+              "href": "/api/docs/guides/amazon-bedrock",
+              "slug": "api/docs/guides/amazon-bedrock"
+            },
+            {
+              "type": "section",
+              "title": "Latency optimization",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Overview",
+                  "href": "/api/docs/guides/latency-optimization",
+                  "slug": "api/docs/guides/latency-optimization"
+                },
+                {
+                  "type": "link",
+                  "title": "Predicted Outputs",
+                  "href": "/api/docs/guides/predicted-outputs",
+                  "slug": "api/docs/guides/predicted-outputs"
+                },
+                {
+                  "type": "link",
+                  "title": "Priority processing",
+                  "href": "/api/docs/guides/priority-processing",
+                  "slug": "api/docs/guides/priority-processing"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Cost optimization",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Overview",
+                  "href": "/api/docs/guides/cost-optimization",
+                  "slug": "api/docs/guides/cost-optimization"
+                },
+                {
+                  "type": "link",
+                  "title": "Batch",
+                  "href": "/api/docs/guides/batch",
+                  "slug": "api/docs/guides/batch"
+                },
+                {
+                  "type": "link",
+                  "title": "Flex processing",
+                  "href": "/api/docs/guides/flex-processing",
+                  "slug": "api/docs/guides/flex-processing"
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "title": "Accuracy optimization",
+              "href": "/api/docs/guides/optimizing-llm-accuracy",
+              "slug": "api/docs/guides/optimizing-llm-accuracy"
+            },
+            {
+              "type": "section",
+              "title": "Safety",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Safety best practices",
+                  "href": "/api/docs/guides/safety-best-practices",
+                  "slug": "api/docs/guides/safety-best-practices"
+                },
+                {
+                  "type": "link",
+                  "title": "Safety checks",
+                  "href": "/api/docs/guides/safety-checks",
+                  "slug": "api/docs/guides/safety-checks"
+                },
+                {
+                  "type": "link",
+                  "title": "Cybersecurity checks",
+                  "href": "/api/docs/guides/safety-checks/cybersecurity",
+                  "slug": "api/docs/guides/safety-checks/cybersecurity"
+                },
+                {
+                  "type": "link",
+                  "title": "Under 18 API Guidance",
+                  "href": "/api/docs/guides/safety-checks/under-18-api-guidance",
+                  "slug": "api/docs/guides/safety-checks/under-18-api-guidance"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Legacy APIs",
+          "items": [
+            {
+              "type": "section",
+              "title": "Agent Builder",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Overview",
+                  "href": "/api/docs/guides/agent-builder",
+                  "slug": "api/docs/guides/agent-builder"
+                },
+                {
+                  "type": "link",
+                  "title": "Migration guide",
+                  "href": "/api/docs/guides/agent-builder/migrate-from-agent-builder",
+                  "slug": "api/docs/guides/agent-builder/migrate-from-agent-builder"
+                },
+                {
+                  "type": "link",
+                  "title": "Node reference",
+                  "href": "/api/docs/guides/node-reference",
+                  "slug": "api/docs/guides/node-reference"
+                },
+                {
+                  "type": "link",
+                  "title": "Safety in building agents",
+                  "href": "/api/docs/guides/agent-builder-safety",
+                  "slug": "api/docs/guides/agent-builder-safety"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Evals",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Getting started",
+                  "href": "/api/docs/guides/evaluation-getting-started",
+                  "slug": "api/docs/guides/evaluation-getting-started"
+                },
+                {
+                  "type": "link",
+                  "title": "Working with evals",
+                  "href": "/api/docs/guides/evals",
+                  "slug": "api/docs/guides/evals"
+                },
+                {
+                  "type": "link",
+                  "title": "Prompt optimizer",
+                  "href": "/api/docs/guides/prompt-optimizer",
+                  "slug": "api/docs/guides/prompt-optimizer"
+                },
+                {
+                  "type": "link",
+                  "title": "External models",
+                  "href": "/api/docs/guides/external-models",
+                  "slug": "api/docs/guides/external-models"
+                },
+                {
+                  "type": "link",
+                  "title": "Best practices",
+                  "href": "/api/docs/guides/evaluation-best-practices",
+                  "slug": "api/docs/guides/evaluation-best-practices"
+                },
+                {
+                  "type": "link",
+                  "title": "Graders",
+                  "href": "/api/docs/guides/graders",
+                  "slug": "api/docs/guides/graders"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Fine-tuning",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Optimization cycle",
+                  "href": "/api/docs/guides/model-optimization",
+                  "slug": "api/docs/guides/model-optimization"
+                },
+                {
+                  "type": "link",
+                  "title": "Supervised fine-tuning",
+                  "href": "/api/docs/guides/supervised-fine-tuning",
+                  "slug": "api/docs/guides/supervised-fine-tuning"
+                },
+                {
+                  "type": "link",
+                  "title": "Vision fine-tuning",
+                  "href": "/api/docs/guides/vision-fine-tuning",
+                  "slug": "api/docs/guides/vision-fine-tuning"
+                },
+                {
+                  "type": "link",
+                  "title": "Direct preference optimization",
+                  "href": "/api/docs/guides/direct-preference-optimization",
+                  "slug": "api/docs/guides/direct-preference-optimization"
+                },
+                {
+                  "type": "link",
+                  "title": "Reinforcement fine-tuning",
+                  "href": "/api/docs/guides/reinforcement-fine-tuning",
+                  "slug": "api/docs/guides/reinforcement-fine-tuning"
+                },
+                {
+                  "type": "link",
+                  "title": "RFT use cases",
+                  "href": "/api/docs/guides/rft-use-cases",
+                  "slug": "api/docs/guides/rft-use-cases"
+                },
+                {
+                  "type": "link",
+                  "title": "Best practices",
+                  "href": "/api/docs/guides/fine-tuning-best-practices",
+                  "slug": "api/docs/guides/fine-tuning-best-practices"
+                }
+              ]
+            },
+            {
+              "type": "section",
+              "title": "Assistants API",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Migration guide",
+                  "href": "/api/docs/assistants/migration",
+                  "slug": "api/docs/assistants/migration"
+                },
+                {
+                  "type": "link",
+                  "title": "Deep dive",
+                  "href": "/api/docs/assistants/deep-dive",
+                  "slug": "api/docs/assistants/deep-dive"
+                },
+                {
+                  "type": "link",
+                  "title": "Tools",
+                  "href": "/api/docs/assistants/tools",
+                  "slug": "api/docs/assistants/tools"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Resources",
+          "items": [
+            {
+              "type": "link",
+              "title": "Changelog",
+              "href": "/api/docs/changelog",
+              "slug": "api/docs/changelog"
+            },
+            {
+              "type": "link",
+              "title": "Your data",
+              "href": "/api/docs/guides/your-data",
+              "slug": "api/docs/guides/your-data"
+            },
+            {
+              "type": "link",
+              "title": "Permissions",
+              "href": "/api/docs/guides/rbac",
+              "slug": "api/docs/guides/rbac"
+            },
+            {
+              "type": "link",
+              "title": "Rate limits",
+              "href": "/api/docs/guides/rate-limits",
+              "slug": "api/docs/guides/rate-limits"
+            },
+            {
+              "type": "link",
+              "title": "IP egress ranges",
+              "href": "/api/docs/guides/ip-addresses",
+              "slug": "api/docs/guides/ip-addresses"
+            },
+            {
+              "type": "link",
+              "title": "Admin APIs",
+              "href": "/api/docs/guides/admin-apis",
+              "slug": "api/docs/guides/admin-apis"
+            },
+            {
+              "type": "link",
+              "title": "Deprecations",
+              "href": "/api/docs/deprecations",
+              "slug": "api/docs/deprecations"
+            },
+            {
+              "type": "link",
+              "title": "MCP for deep research",
+              "href": "/api/docs/mcp",
+              "slug": "api/docs/mcp"
+            },
+            {
+              "type": "link",
+              "title": "Developer mode",
+              "href": "/api/docs/guides/developer-mode",
+              "slug": "api/docs/guides/developer-mode"
+            },
+            {
+              "type": "section",
+              "title": "ChatGPT Actions",
+              "items": [
+                {
+                  "type": "link",
+                  "title": "Introduction",
+                  "href": "/api/docs/actions/introduction",
+                  "slug": "api/docs/actions/introduction"
+                },
+                {
+                  "type": "link",
+                  "title": "Getting started",
+                  "href": "/api/docs/actions/getting-started",
+                  "slug": "api/docs/actions/getting-started"
+                },
+                {
+                  "type": "link",
+                  "title": "Actions library",
+                  "href": "/api/docs/actions/actions-library",
+                  "slug": "api/docs/actions/actions-library"
+                },
+                {
+                  "type": "link",
+                  "title": "Authentication",
+                  "href": "/api/docs/actions/authentication",
+                  "slug": "api/docs/actions/authentication"
+                },
+                {
+                  "type": "link",
+                  "title": "Production",
+                  "href": "/api/docs/actions/production",
+                  "slug": "api/docs/actions/production"
+                },
+                {
+                  "type": "link",
+                  "title": "Data retrieval",
+                  "href": "/api/docs/actions/data-retrieval",
+                  "slug": "api/docs/actions/data-retrieval"
+                },
+                {
+                  "type": "link",
+                  "title": "Sending files",
+                  "href": "/api/docs/actions/sending-files",
+                  "slug": "api/docs/actions/sending-files"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "product": "Workspace Agents",
+      "sourceUrl": "https://developers.openai.com/workspace-agents/authentication",
+      "items": [
+        {
+          "type": "link",
+          "title": "Home",
+          "href": "/workspace-agents",
+          "slug": "workspace-agents"
+        },
+        {
+          "type": "section",
+          "title": "Get started",
+          "items": [
+            {
+              "type": "link",
+              "title": "Trigger workspace agent runs",
+              "href": "/workspace-agents/trigger-runs",
+              "slug": "workspace-agents/trigger-runs"
+            },
+            {
+              "type": "link",
+              "title": "Authenticate with Workspace Agent access tokens",
+              "href": "/workspace-agents/authentication",
+              "slug": "workspace-agents/authentication"
+            }
+          ]
+        }
+      ],
+      "warnings": []
+    }
+  ]
+}

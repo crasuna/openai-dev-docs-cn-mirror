@@ -6,6 +6,7 @@
   "description": "A local, unofficial bilingual mirror scaffold for OpenAI developer documentation.",
   "scripts": {
     "fetch:docs": "tsx scripts/fetch-docs.ts",
+    "fetch:navigation": "tsx scripts/fetch-navigation.ts",
     "build:pages": "tsx scripts/build-pages.ts",
     "translate:plan": "tsx scripts/translation-plan.ts",
     "translate:report": "tsx scripts/translation-report.ts",

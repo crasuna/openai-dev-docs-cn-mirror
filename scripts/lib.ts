@@ -15,6 +15,7 @@ export const MIRROR_DIR = path.join(DOCS_DIR, "mirror");
 export const PUBLIC_ASSETS_DIR = path.join(DOCS_DIR, "public", "openai-assets");
 export const REPORTS_DIR = path.join(ROOT, "reports");
 export const MANIFEST_PATH = path.join(SOURCES_DIR, "manifest.json");
+export const NAVIGATION_PATH = path.join(SOURCES_DIR, "navigation.json");
 
 export function toPosixPath(value: string): string {
   return value.split(path.sep).join("/");
