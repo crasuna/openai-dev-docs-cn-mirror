@@ -7,7 +7,7 @@ outline: deep
 # 为 ChatGPT Apps 和 API 集成构建 MCP server
 
 **文档集**：OpenAI API 文档<br>
-**分组**：OpenAI API — 文档<br>
+**分组**：文档<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

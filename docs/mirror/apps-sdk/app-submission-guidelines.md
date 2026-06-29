@@ -6,8 +6,8 @@ outline: deep
 
 # 应用提交指南
 
-**文档集**：Apps SDK 应用 SDK<br>
-**分组**：Apps SDK — 应用提交指南<br>
+**文档集**：Apps SDK<br>
+**分组**：应用提交指南<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

@@ -6,8 +6,8 @@ outline: deep
 
 # 最佳实践
 
-**文档集**：Commerce 商务<br>
-**分组**：Agentic Commerce — 指南<br>
+**文档集**：商务<br>
+**分组**：指南<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

@@ -7,7 +7,7 @@ outline: deep
 # Secure MCP Tunnel 安全 MCP 隧道
 
 **文档集**：OpenAI API 文档<br>
-**分组**：OpenAI API — 文档<br>
+**分组**：文档<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

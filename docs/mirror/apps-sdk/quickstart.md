@@ -6,8 +6,8 @@ outline: deep
 
 # 快速开始
 
-**文档集**：Apps SDK 应用 SDK<br>
-**分组**：Apps SDK — 快速开始<br>
+**文档集**：Apps SDK<br>
+**分组**：快速开始<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

@@ -17,11 +17,11 @@
     ]
   },
   {
-    "text": "Ads 广告",
+    "text": "广告",
     "collapsed": true,
     "items": [
       {
-        "text": "Ads — API 概览",
+        "text": "API 概览",
         "collapsed": true,
         "items": [
           {
@@ -31,7 +31,7 @@
         ]
       },
       {
-        "text": "Ads — API 快速开始",
+        "text": "API 快速开始",
         "collapsed": true,
         "items": [
           {
@@ -41,7 +41,7 @@
         ]
       },
       {
-        "text": "Ads — API 参考",
+        "text": "API 参考",
         "collapsed": true,
         "items": [
           {
@@ -75,7 +75,7 @@
         ]
       },
       {
-        "text": "Ads — Campaign 定向",
+        "text": "广告活动定向",
         "collapsed": true,
         "items": [
           {
@@ -85,7 +85,7 @@
         ]
       },
       {
-        "text": "Ads — Conversions API",
+        "text": "转化 API",
         "collapsed": true,
         "items": [
           {
@@ -95,7 +95,7 @@
         ]
       },
       {
-        "text": "Ads — Image Tag 图片标签",
+        "text": "图片标签",
         "collapsed": true,
         "items": [
           {
@@ -105,7 +105,7 @@
         ]
       },
       {
-        "text": "Ads — Measurement Pixel 测量像素",
+        "text": "测量像素",
         "collapsed": true,
         "items": [
           {
@@ -115,7 +115,7 @@
         ]
       },
       {
-        "text": "Ads — Product Feeds 商品 Feed",
+        "text": "商品 Feed",
         "collapsed": true,
         "items": [
           {
@@ -125,7 +125,7 @@
         ]
       },
       {
-        "text": "Ads — Supported Events 支持事件",
+        "text": "支持的事件",
         "collapsed": true,
         "items": [
           {
@@ -137,11 +137,11 @@
     ]
   },
   {
-    "text": "API Reference 参考",
+    "text": "API 参考",
     "collapsed": true,
     "items": [
       {
-        "text": "OpenAI API — 参考",
+        "text": "参考",
         "collapsed": true,
         "items": [
           {
@@ -1053,11 +1053,11 @@
     ]
   },
   {
-    "text": "Apps SDK 应用 SDK",
+    "text": "Apps SDK",
     "collapsed": true,
     "items": [
       {
-        "text": "Apps SDK — 应用提交指南",
+        "text": "应用提交指南",
         "collapsed": true,
         "items": [
           {
@@ -1067,7 +1067,7 @@
         ]
       },
       {
-        "text": "Apps SDK — 构建",
+        "text": "构建",
         "collapsed": true,
         "items": [
           {
@@ -1097,7 +1097,7 @@
         ]
       },
       {
-        "text": "Apps SDK — 概念",
+        "text": "概念",
         "collapsed": true,
         "items": [
           {
@@ -1119,7 +1119,7 @@
         ]
       },
       {
-        "text": "Apps SDK — 部署",
+        "text": "部署",
         "collapsed": true,
         "items": [
           {
@@ -1145,7 +1145,7 @@
         ]
       },
       {
-        "text": "Apps SDK — 指南",
+        "text": "指南",
         "collapsed": true,
         "items": [
           {
@@ -1167,7 +1167,7 @@
         ]
       },
       {
-        "text": "Apps SDK — ChatGPT 中的 MCP Apps",
+        "text": "ChatGPT 中的 MCP 应用",
         "collapsed": true,
         "items": [
           {
@@ -1177,7 +1177,7 @@
         ]
       },
       {
-        "text": "Apps SDK — 规划",
+        "text": "规划",
         "collapsed": true,
         "items": [
           {
@@ -1195,7 +1195,7 @@
         ]
       },
       {
-        "text": "Apps SDK — 快速开始",
+        "text": "快速开始",
         "collapsed": true,
         "items": [
           {
@@ -1217,11 +1217,11 @@
     ]
   },
   {
-    "text": "Codex 编码智能体",
+    "text": "Codex",
     "collapsed": true,
     "items": [
       {
-        "text": "Codex — Agent 审批与安全",
+        "text": "智能体审批与安全",
         "collapsed": true,
         "items": [
           {
@@ -1231,7 +1231,7 @@
         ]
       },
       {
-        "text": "Codex — Amazon Bedrock",
+        "text": "Amazon Bedrock",
         "collapsed": true,
         "items": [
           {
@@ -1241,7 +1241,7 @@
         ]
       },
       {
-        "text": "Codex — 应用",
+        "text": "应用",
         "collapsed": true,
         "items": [
           {
@@ -1299,7 +1299,7 @@
         ]
       },
       {
-        "text": "Codex — App Server 应用服务器",
+        "text": "应用服务器",
         "collapsed": true,
         "items": [
           {
@@ -1309,7 +1309,7 @@
         ]
       },
       {
-        "text": "Codex — Appshots 应用快照",
+        "text": "应用快照",
         "collapsed": true,
         "items": [
           {
@@ -1319,7 +1319,7 @@
         ]
       },
       {
-        "text": "Codex — 身份验证",
+        "text": "身份验证",
         "collapsed": true,
         "items": [
           {
@@ -1329,7 +1329,7 @@
         ]
       },
       {
-        "text": "Codex — CLI",
+        "text": "CLI",
         "collapsed": true,
         "items": [
           {
@@ -1351,7 +1351,7 @@
         ]
       },
       {
-        "text": "Codex — 云端",
+        "text": "云端",
         "collapsed": true,
         "items": [
           {
@@ -1369,7 +1369,7 @@
         ]
       },
       {
-        "text": "Codex — 社区",
+        "text": "社区",
         "collapsed": true,
         "items": [
           {
@@ -1379,7 +1379,7 @@
         ]
       },
       {
-        "text": "Codex — 概念",
+        "text": "概念",
         "collapsed": true,
         "items": [
           {
@@ -1405,7 +1405,7 @@
         ]
       },
       {
-        "text": "Codex — 高级配置",
+        "text": "高级配置",
         "collapsed": true,
         "items": [
           {
@@ -1415,7 +1415,7 @@
         ]
       },
       {
-        "text": "Codex — 基础配置",
+        "text": "基础配置",
         "collapsed": true,
         "items": [
           {
@@ -1425,7 +1425,7 @@
         ]
       },
       {
-        "text": "Codex — 配置参考",
+        "text": "配置参考",
         "collapsed": true,
         "items": [
           {
@@ -1435,7 +1435,7 @@
         ]
       },
       {
-        "text": "Codex — 配置示例",
+        "text": "配置示例",
         "collapsed": true,
         "items": [
           {
@@ -1445,7 +1445,7 @@
         ]
       },
       {
-        "text": "Codex — 自定义提示",
+        "text": "自定义提示",
         "collapsed": true,
         "items": [
           {
@@ -1455,7 +1455,7 @@
         ]
       },
       {
-        "text": "Codex — 企业",
+        "text": "企业",
         "collapsed": true,
         "items": [
           {
@@ -1477,7 +1477,7 @@
         ]
       },
       {
-        "text": "Codex — 环境变量",
+        "text": "环境变量",
         "collapsed": true,
         "items": [
           {
@@ -1487,7 +1487,7 @@
         ]
       },
       {
-        "text": "Codex — 功能成熟度",
+        "text": "功能成熟度",
         "collapsed": true,
         "items": [
           {
@@ -1497,7 +1497,7 @@
         ]
       },
       {
-        "text": "Codex — GitHub Action",
+        "text": "GitHub Action",
         "collapsed": true,
         "items": [
           {
@@ -1507,7 +1507,7 @@
         ]
       },
       {
-        "text": "Codex — 术语表",
+        "text": "术语表",
         "collapsed": true,
         "items": [
           {
@@ -1517,7 +1517,7 @@
         ]
       },
       {
-        "text": "Codex — 指南",
+        "text": "指南",
         "collapsed": true,
         "items": [
           {
@@ -1535,7 +1535,7 @@
         ]
       },
       {
-        "text": "Codex — Hooks 钩子",
+        "text": "钩子",
         "collapsed": true,
         "items": [
           {
@@ -1545,7 +1545,7 @@
         ]
       },
       {
-        "text": "Codex — IDE",
+        "text": "IDE",
         "collapsed": true,
         "items": [
           {
@@ -1571,7 +1571,7 @@
         ]
       },
       {
-        "text": "Codex — 导入",
+        "text": "导入",
         "collapsed": true,
         "items": [
           {
@@ -1581,7 +1581,7 @@
         ]
       },
       {
-        "text": "Codex — 集成",
+        "text": "集成",
         "collapsed": true,
         "items": [
           {
@@ -1599,7 +1599,7 @@
         ]
       },
       {
-        "text": "Codex — 学习",
+        "text": "学习",
         "collapsed": true,
         "items": [
           {
@@ -1609,7 +1609,7 @@
         ]
       },
       {
-        "text": "Codex — MCP",
+        "text": "MCP",
         "collapsed": true,
         "items": [
           {
@@ -1619,7 +1619,7 @@
         ]
       },
       {
-        "text": "Codex — Memories 记忆",
+        "text": "记忆",
         "collapsed": true,
         "items": [
           {
@@ -1633,7 +1633,7 @@
         ]
       },
       {
-        "text": "Codex — 模型",
+        "text": "模型",
         "collapsed": true,
         "items": [
           {
@@ -1643,7 +1643,7 @@
         ]
       },
       {
-        "text": "Codex — 非交互式",
+        "text": "非交互式",
         "collapsed": true,
         "items": [
           {
@@ -1653,7 +1653,7 @@
         ]
       },
       {
-        "text": "Codex — 开源",
+        "text": "开源",
         "collapsed": true,
         "items": [
           {
@@ -1663,7 +1663,7 @@
         ]
       },
       {
-        "text": "Codex — 概览",
+        "text": "概览",
         "collapsed": true,
         "items": [
           {
@@ -1673,7 +1673,7 @@
         ]
       },
       {
-        "text": "Codex — 权限",
+        "text": "权限",
         "collapsed": true,
         "items": [
           {
@@ -1683,7 +1683,7 @@
         ]
       },
       {
-        "text": "Codex — Plugins 插件",
+        "text": "插件",
         "collapsed": true,
         "items": [
           {
@@ -1697,7 +1697,7 @@
         ]
       },
       {
-        "text": "Codex — 价格",
+        "text": "价格",
         "collapsed": true,
         "items": [
           {
@@ -1707,7 +1707,7 @@
         ]
       },
       {
-        "text": "Codex — Prompting 提示",
+        "text": "提示",
         "collapsed": true,
         "items": [
           {
@@ -1717,7 +1717,7 @@
         ]
       },
       {
-        "text": "Codex — 快速开始",
+        "text": "快速开始",
         "collapsed": true,
         "items": [
           {
@@ -1727,7 +1727,7 @@
         ]
       },
       {
-        "text": "Codex — Record and Replay 录制与回放",
+        "text": "录制与回放",
         "collapsed": true,
         "items": [
           {
@@ -1737,7 +1737,7 @@
         ]
       },
       {
-        "text": "Codex — 远程连接",
+        "text": "远程连接",
         "collapsed": true,
         "items": [
           {
@@ -1747,7 +1747,7 @@
         ]
       },
       {
-        "text": "Codex — Rules 规则",
+        "text": "规则",
         "collapsed": true,
         "items": [
           {
@@ -1757,7 +1757,7 @@
         ]
       },
       {
-        "text": "Codex — SDK",
+        "text": "SDK",
         "collapsed": true,
         "items": [
           {
@@ -1767,7 +1767,7 @@
         ]
       },
       {
-        "text": "Codex — Security 安全",
+        "text": "安全",
         "collapsed": true,
         "items": [
           {
@@ -1821,7 +1821,7 @@
         ]
       },
       {
-        "text": "Codex — Sites 站点",
+        "text": "站点",
         "collapsed": true,
         "items": [
           {
@@ -1831,7 +1831,7 @@
         ]
       },
       {
-        "text": "Codex — Skills 技能",
+        "text": "技能",
         "collapsed": true,
         "items": [
           {
@@ -1841,7 +1841,7 @@
         ]
       },
       {
-        "text": "Codex — 速度",
+        "text": "速度",
         "collapsed": true,
         "items": [
           {
@@ -1851,7 +1851,7 @@
         ]
       },
       {
-        "text": "Codex — Subagents 子代理",
+        "text": "子代理",
         "collapsed": true,
         "items": [
           {
@@ -1861,7 +1861,7 @@
         ]
       },
       {
-        "text": "Codex — 视频",
+        "text": "视频",
         "collapsed": true,
         "items": [
           {
@@ -1871,7 +1871,7 @@
         ]
       },
       {
-        "text": "Codex — Windows",
+        "text": "Windows",
         "collapsed": true,
         "items": [
           {
@@ -1881,7 +1881,7 @@
         ]
       },
       {
-        "text": "Codex — 工作流",
+        "text": "工作流",
         "collapsed": true,
         "items": [
           {
@@ -1903,11 +1903,11 @@
     ]
   },
   {
-    "text": "Commerce 商务",
+    "text": "商务",
     "collapsed": true,
     "items": [
       {
-        "text": "Agentic Commerce — 指南",
+        "text": "指南",
         "collapsed": true,
         "items": [
           {
@@ -1929,7 +1929,7 @@
         ]
       },
       {
-        "text": "Agentic Commerce — 规范",
+        "text": "规范",
         "collapsed": true,
         "items": [
           {
@@ -1985,7 +1985,7 @@
     "collapsed": true,
     "items": [
       {
-        "text": "OpenAI API — 文档",
+        "text": "文档",
         "collapsed": true,
         "items": [
           {
@@ -2609,11 +2609,11 @@
     ]
   },
   {
-    "text": "Workspace Agents 工作区智能体",
+    "text": "工作区智能体",
     "collapsed": true,
     "items": [
       {
-        "text": "Workspace Agents — 身份验证",
+        "text": "身份验证",
         "collapsed": true,
         "items": [
           {
@@ -2623,7 +2623,7 @@
         ]
       },
       {
-        "text": "Workspace Agents — 触发运行",
+        "text": "触发运行",
         "collapsed": true,
         "items": [
           {

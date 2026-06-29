@@ -6,8 +6,8 @@ outline: deep
 
 # Image tag（图片标签）
 
-**文档集**：Ads 广告<br>
-**分组**：Ads — Image Tag 图片标签<br>
+**文档集**：广告<br>
+**分组**：图片标签<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

@@ -6,8 +6,8 @@ outline: deep
 
 # Plugins 插件
 
-**文档集**：Codex 编码智能体<br>
-**分组**：Codex — Plugins 插件<br>
+**文档集**：Codex<br>
+**分组**：插件<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

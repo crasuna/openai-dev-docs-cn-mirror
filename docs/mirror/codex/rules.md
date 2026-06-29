@@ -6,8 +6,8 @@ outline: deep
 
 # Rules 规则
 
-**文档集**：Codex 编码智能体<br>
-**分组**：Codex — Rules 规则<br>
+**文档集**：Codex<br>
+**分组**：规则<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

@@ -6,8 +6,8 @@ outline: deep
 
 # Codex 定价
 
-**文档集**：Codex 编码智能体<br>
-**分组**：Codex — 价格<br>
+**文档集**：Codex<br>
+**分组**：价格<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

@@ -6,8 +6,8 @@ outline: deep
 
 # 餐厅预订转化规格
 
-**文档集**：Apps SDK 应用 SDK<br>
-**分组**：Apps SDK — 指南<br>
+**文档集**：Apps SDK<br>
+**分组**：指南<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像
