@@ -29,6 +29,7 @@ export default defineConfig({
     }
   },
   themeConfig: {
+    siteTitle: "OpenAI 文档镜像",
     nav: readGeneratedJson("nav.json", [
       { text: "首页", link: "/" },
       { text: "目录", link: "/catalog" },

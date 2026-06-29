@@ -26,6 +26,14 @@
   max-width: 920px;
 }
 
+.VPNavBarTitle .title {
+  min-width: 0;
+  max-width: min(260px, calc(100vw - 160px));
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .mirror-meta {
   display: flex;
   flex-wrap: wrap;
