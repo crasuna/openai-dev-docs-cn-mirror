@@ -66,6 +66,15 @@ interface VitePressNavItem {
   items?: VitePressNavItem[];
 }
 
+interface VitePressSidebarItem {
+  text: string;
+  link?: string;
+  collapsed?: boolean;
+  items?: VitePressSidebarItem[];
+}
+
+type VitePressSidebar = Record<string, VitePressSidebarItem[]>;
+
 interface TopNavigationGroupConfig {
   text: string;
   officialTitle: string;
@@ -88,6 +97,16 @@ const PRODUCT_DISPLAY_LABELS: Record<string, string> = {
   "Commerce": "商务",
   "OpenAI API Docs": "OpenAI API 文档",
   "Workspace Agents": "工作区智能体"
+};
+
+const PRODUCT_SIDEBAR_PREFIXES: Record<string, string> = {
+  "Ads": "/mirror/ads/",
+  "API Reference": "/mirror/api/reference/",
+  "Apps SDK": "/mirror/apps-sdk/",
+  "Codex": "/mirror/codex/",
+  "Commerce": "/mirror/commerce/",
+  "OpenAI API Docs": "/mirror/api/docs/",
+  "Workspace Agents": "/mirror/workspace-agents/"
 };
 
 const SECTION_DISPLAY_LABELS: Record<string, string> = {
@@ -1057,31 +1076,32 @@ function normalizeTopNavigationText(value: string): string {
   return value.toLowerCase().replace(/\s+/g, " ").trim();
 }
 
-function buildSidebar(manifest: DisplayManifest, navigation: NavigationSnapshot | null): unknown[] {
-  const base: unknown[] = [
-    {
-      text: "中文镜像",
-      items: [
-        { text: "首页", link: "/" },
-        { text: "文档目录", link: "/catalog" },
-        { text: "翻译状态", link: "/translation-status" }
-      ]
-    }
-  ];
-
+function buildSidebar(manifest: DisplayManifest, navigation: NavigationSnapshot | null): VitePressSidebar {
+  const sidebar: VitePressSidebar = {
+    "/": [
+      {
+        text: "中文镜像",
+        items: [
+          { text: "首页", link: "/" },
+          { text: "文档目录", link: "/catalog" },
+          { text: "翻译状态", link: "/translation-status" }
+        ]
+      }
+    ]
+  };
   const ordered = buildOrderedNavigation(manifest, navigation);
   for (const product of ordered.products) {
-    base.push({
-      text: product.displayProduct,
-      collapsed: true,
-      items: product.items.map(sidebarItemForNavigationItem)
-    });
+    const prefix = PRODUCT_SIDEBAR_PREFIXES[product.product];
+    if (!prefix) {
+      warnOnce(warnedNavigationBuild, `No sidebar path prefix configured for product: ${product.product}`);
+      continue;
+    }
+    sidebar[prefix] = product.items.map(sidebarItemForNavigationItem);
   }
-
-  return base;
+  return sidebar;
 }
 
-function sidebarItemForNavigationItem(item: OrderedNavigationItem): unknown {
+function sidebarItemForNavigationItem(item: OrderedNavigationItem): VitePressSidebarItem {
   if (item.type === "link") {
     return {
       text: item.doc.displayTitle,
@@ -1089,7 +1109,7 @@ function sidebarItemForNavigationItem(item: OrderedNavigationItem): unknown {
     };
   }
 
-  const sidebarItem: Record<string, unknown> = {
+  const sidebarItem: VitePressSidebarItem = {
     text: item.displayTitle,
     collapsed: true,
     items: item.items.map(sidebarItemForNavigationItem)

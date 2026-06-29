@@ -59,16 +59,25 @@ export default defineConfig({
       { text: "翻译状态", link: "/translation-status" },
       { text: "官方文档", link: "https://developers.openai.com/" }
     ]),
-    sidebar: readGeneratedJson("sidebar.json", [
-      {
-        text: "中文镜像",
-        items: [
-          { text: "首页", link: "/" },
-          { text: "文档目录", link: "/catalog" },
-          { text: "翻译状态", link: "/translation-status" }
-        ]
-      }
-    ]),
+    sidebar: readGeneratedJson("sidebar.json", {
+      "/": [
+        {
+          text: "中文镜像",
+          items: [
+            { text: "首页", link: "/" },
+            { text: "文档目录", link: "/catalog" },
+            { text: "翻译状态", link: "/translation-status" }
+          ]
+        }
+      ],
+      "/mirror/ads/": [{ text: "概览", link: "/mirror/ads/api-overview" }],
+      "/mirror/api/docs/": [{ text: "快速开始", link: "/mirror/api/docs/quickstart" }],
+      "/mirror/api/reference/": [{ text: "API 概览", link: "/mirror/api/reference/overview" }],
+      "/mirror/apps-sdk/": [{ text: "快速开始", link: "/mirror/apps-sdk/quickstart" }],
+      "/mirror/codex/": [{ text: "概览", link: "/mirror/codex/overview" }],
+      "/mirror/commerce/": [{ text: "开始使用", link: "/mirror/commerce/guides/get-started" }],
+      "/mirror/workspace-agents/": [{ text: "身份验证", link: "/mirror/workspace-agents/authentication" }]
+    }),
     search: {
       provider: "local",
       options: {
