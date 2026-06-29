@@ -6,8 +6,8 @@ outline: deep
 
 # 向量存储 — 列出
 
-**文档集**：API Reference  
-**分组**：OpenAI API — Reference  
+**文档集**：API Reference 参考<br>
+**分组**：OpenAI API — 参考<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

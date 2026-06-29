@@ -6,8 +6,8 @@ outline: deep
 
 # 触发 Workspace Agent 运行
 
-**文档集**：Workspace Agents  
-**分组**：Workspace Agents — Trigger Runs  
+**文档集**：Workspace Agents 工作区智能体<br>
+**分组**：Workspace Agents — 触发运行<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

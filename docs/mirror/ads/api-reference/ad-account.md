@@ -6,8 +6,8 @@ outline: deep
 
 # Ad Account（广告账户）
 
-**文档集**：Ads  
-**分组**：Ads — Api Reference  
+**文档集**：Ads 广告<br>
+**分组**：Ads — API 参考<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

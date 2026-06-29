@@ -6,8 +6,8 @@ outline: deep
 
 # 快速开始
 
-**文档集**：Ads  
-**分组**：Ads — Api Quickstart  
+**文档集**：Ads 广告<br>
+**分组**：Ads — API 快速开始<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

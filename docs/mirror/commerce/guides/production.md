@@ -6,8 +6,8 @@ outline: deep
 
 # 生产环境中的 Agentic Commerce
 
-**文档集**：Commerce  
-**分组**：Agentic Commerce — Guides  
+**文档集**：Commerce 商务<br>
+**分组**：Agentic Commerce — 指南<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

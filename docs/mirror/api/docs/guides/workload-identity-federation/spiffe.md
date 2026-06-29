@@ -6,8 +6,8 @@ outline: deep
 
 # 为 SPIFFE 配置工作负载身份联合
 
-**文档集**：OpenAI API Docs  
-**分组**：OpenAI API — Docs  
+**文档集**：OpenAI API 文档<br>
+**分组**：OpenAI API — 文档<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

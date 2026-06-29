@@ -21,13 +21,13 @@
 
 | 文档集 | 页面数 | 入口 |
 | --- | ---: | --- |
-| Ads | 15 | [浏览](/mirror/ads/api-overview) |
-| API Reference | 226 | [浏览](/mirror/api/reference/administration/overview) |
-| Apps SDK | 26 | [浏览](/mirror/apps-sdk/app-submission-guidelines) |
-| Codex | 95 | [浏览](/mirror/codex/agent-approvals-security) |
-| Commerce | 15 | [浏览](/mirror/commerce/guides/production) |
-| OpenAI API Docs | 154 | [浏览](/mirror/api/docs/guides/chatkit-actions) |
-| Workspace Agents | 2 | [浏览](/mirror/workspace-agents/authentication) |
+| Ads 广告 | 15 | [浏览](/mirror/ads/api-overview) |
+| API Reference 参考 | 226 | [浏览](/mirror/api/reference/administration/overview) |
+| Apps SDK 应用 SDK | 26 | [浏览](/mirror/apps-sdk/app-submission-guidelines) |
+| Codex 编码智能体 | 95 | [浏览](/mirror/codex/agent-approvals-security) |
+| Commerce 商务 | 15 | [浏览](/mirror/commerce/guides/production) |
+| OpenAI API 文档 | 154 | [浏览](/mirror/api/docs/guides/chatkit-actions) |
+| Workspace Agents 工作区智能体 | 2 | [浏览](/mirror/workspace-agents/authentication) |
 
 ## 维护工作流
 

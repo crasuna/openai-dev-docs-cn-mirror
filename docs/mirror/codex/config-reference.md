@@ -6,8 +6,8 @@ outline: deep
 
 # 配置参考
 
-**文档集**：Codex  
-**分组**：Codex — Config Reference  
+**文档集**：Codex 编码智能体<br>
+**分组**：Codex — 配置参考<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

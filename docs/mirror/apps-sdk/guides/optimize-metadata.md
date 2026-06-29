@@ -6,8 +6,8 @@ outline: deep
 
 # 优化元数据
 
-**文档集**：Apps SDK  
-**分组**：Apps SDK — Guides  
+**文档集**：Apps SDK 应用 SDK<br>
+**分组**：Apps SDK — 指南<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

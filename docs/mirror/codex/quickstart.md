@@ -6,8 +6,8 @@ outline: deep
 
 # 快速开始
 
-**文档集**：Codex  
-**分组**：Codex — Quickstart  
+**文档集**：Codex 编码智能体<br>
+**分组**：Codex — 快速开始<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

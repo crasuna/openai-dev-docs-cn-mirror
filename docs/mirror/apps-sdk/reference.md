@@ -6,8 +6,8 @@ outline: deep
 
 # 参考
 
-**文档集**：Apps SDK  
-**分组**：Documentation sets  
+**文档集**：Apps SDK 应用 SDK<br>
+**分组**：文档集<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

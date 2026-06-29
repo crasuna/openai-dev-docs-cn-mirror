@@ -23,8 +23,107 @@ import {
 } from "./lib.js";
 import type { DocEntry, Manifest } from "./types.js";
 
+interface DisplayDocEntry extends DocEntry {
+  displayProduct: string;
+  displaySection: string;
+  displayTitle: string;
+}
+
+interface DisplayManifest extends Omit<Manifest, "docs"> {
+  docs: DisplayDocEntry[];
+}
+
+const PRODUCT_DISPLAY_LABELS: Record<string, string> = {
+  "Ads": "Ads 广告",
+  "API Reference": "API Reference 参考",
+  "Apps SDK": "Apps SDK 应用 SDK",
+  "Codex": "Codex 编码智能体",
+  "Commerce": "Commerce 商务",
+  "OpenAI API Docs": "OpenAI API 文档",
+  "Workspace Agents": "Workspace Agents 工作区智能体"
+};
+
+const SECTION_DISPLAY_LABELS: Record<string, string> = {
+  "Ads — Api Overview": "Ads — API 概览",
+  "Ads — Api Quickstart": "Ads — API 快速开始",
+  "Ads — Api Reference": "Ads — API 参考",
+  "Ads — Campaign Targeting": "Ads — Campaign 定向",
+  "Ads — Conversions Api": "Ads — Conversions API",
+  "Ads — Image Tag": "Ads — Image Tag 图片标签",
+  "Ads — Measurement Pixel": "Ads — Measurement Pixel 测量像素",
+  "Ads — Product Feeds": "Ads — Product Feeds 商品 Feed",
+  "Ads — Supported Events": "Ads — Supported Events 支持事件",
+  "Agentic Commerce — Guides": "Agentic Commerce — 指南",
+  "Agentic Commerce — Specs": "Agentic Commerce — 规范",
+  "Apps SDK — App Submission Guidelines": "Apps SDK — 应用提交指南",
+  "Apps SDK — Build": "Apps SDK — 构建",
+  "Apps SDK — Concepts": "Apps SDK — 概念",
+  "Apps SDK — Deploy": "Apps SDK — 部署",
+  "Apps SDK — Guides": "Apps SDK — 指南",
+  "Apps SDK — Mcp Apps In Chatgpt": "Apps SDK — ChatGPT 中的 MCP Apps",
+  "Apps SDK — Plan": "Apps SDK — 规划",
+  "Apps SDK — Quickstart": "Apps SDK — 快速开始",
+  "Codex — Agent Approvals Security": "Codex — Agent 审批与安全",
+  "Codex — Amazon Bedrock": "Codex — Amazon Bedrock",
+  "Codex — App": "Codex — 应用",
+  "Codex — App Server": "Codex — App Server 应用服务器",
+  "Codex — Appshots": "Codex — Appshots 应用快照",
+  "Codex — Auth": "Codex — 身份验证",
+  "Codex — Cli": "Codex — CLI",
+  "Codex — Cloud": "Codex — 云端",
+  "Codex — Community": "Codex — 社区",
+  "Codex — Concepts": "Codex — 概念",
+  "Codex — Config Advanced": "Codex — 高级配置",
+  "Codex — Config Basic": "Codex — 基础配置",
+  "Codex — Config Reference": "Codex — 配置参考",
+  "Codex — Config Sample": "Codex — 配置示例",
+  "Codex — Custom Prompts": "Codex — 自定义提示",
+  "Codex — Enterprise": "Codex — 企业",
+  "Codex — Environment Variables": "Codex — 环境变量",
+  "Codex — Feature Maturity": "Codex — 功能成熟度",
+  "Codex — Github Action": "Codex — GitHub Action",
+  "Codex — Glossary": "Codex — 术语表",
+  "Codex — Guides": "Codex — 指南",
+  "Codex — Hooks": "Codex — Hooks 钩子",
+  "Codex — Ide": "Codex — IDE",
+  "Codex — Import": "Codex — 导入",
+  "Codex — Integrations": "Codex — 集成",
+  "Codex — Learn": "Codex — 学习",
+  "Codex — Mcp": "Codex — MCP",
+  "Codex — Memories": "Codex — Memories 记忆",
+  "Codex — Models": "Codex — 模型",
+  "Codex — Noninteractive": "Codex — 非交互式",
+  "Codex — Open Source": "Codex — 开源",
+  "Codex — Overview": "Codex — 概览",
+  "Codex — Permissions": "Codex — 权限",
+  "Codex — Plugins": "Codex — Plugins 插件",
+  "Codex — Pricing": "Codex — 价格",
+  "Codex — Prompting": "Codex — Prompting 提示",
+  "Codex — Quickstart": "Codex — 快速开始",
+  "Codex — Record And Replay": "Codex — Record and Replay 录制与回放",
+  "Codex — Remote Connections": "Codex — 远程连接",
+  "Codex — Rules": "Codex — Rules 规则",
+  "Codex — Sdk": "Codex — SDK",
+  "Codex — Security": "Codex — Security 安全",
+  "Codex — Sites": "Codex — Sites 站点",
+  "Codex — Skills": "Codex — Skills 技能",
+  "Codex — Speed": "Codex — 速度",
+  "Codex — Subagents": "Codex — Subagents 子代理",
+  "Codex — Videos": "Codex — 视频",
+  "Codex — Windows": "Codex — Windows",
+  "Codex — Workflows": "Codex — 工作流",
+  "Documentation sets": "文档集",
+  "OpenAI API — Docs": "OpenAI API — 文档",
+  "OpenAI API — Reference": "OpenAI API — 参考",
+  "Workspace Agents — Authentication": "Workspace Agents — 身份验证",
+  "Workspace Agents — Trigger Runs": "Workspace Agents — 触发运行"
+};
+
+const warnedDisplayProducts = new Set<string>();
+const warnedDisplaySections = new Set<string>();
+
 const manifest = await refreshTranslationStatuses(await readJsonFile<Manifest>(MANIFEST_PATH, createEmptyManifest()));
-const displayManifest = await addDisplayTitles(manifest);
+const displayManifest = await addDisplayMetadata(manifest);
 const urlMap = buildUrlMap(displayManifest.docs);
 
 await ensureDir(DOCS_DIR);
@@ -37,14 +136,6 @@ await generateVitePressData(displayManifest);
 await writeBuildReport(displayManifest);
 
 console.log(`Generated ${displayManifest.docs.length} pages under ${relativeFromRoot(MIRROR_DIR)}.`);
-
-interface DisplayDocEntry extends DocEntry {
-  displayTitle: string;
-}
-
-interface DisplayManifest extends Omit<Manifest, "docs"> {
-  docs: DisplayDocEntry[];
-}
 
 async function refreshTranslationStatuses(manifest: Manifest): Promise<Manifest> {
   let changed = false;
@@ -64,12 +155,37 @@ async function refreshTranslationStatuses(manifest: Manifest): Promise<Manifest>
   return nextManifest;
 }
 
-async function addDisplayTitles(manifest: Manifest): Promise<DisplayManifest> {
+async function addDisplayMetadata(manifest: Manifest): Promise<DisplayManifest> {
   const docs: DisplayDocEntry[] = [];
   for (const doc of manifest.docs) {
-    docs.push({ ...doc, displayTitle: await displayTitleForDoc(doc) });
+    docs.push({
+      ...doc,
+      displayProduct: displayProductLabel(doc.product),
+      displaySection: displaySectionLabel(doc.section),
+      displayTitle: await displayTitleForDoc(doc)
+    });
   }
   return { ...manifest, docs };
+}
+
+function displayProductLabel(product: string): string {
+  const label = PRODUCT_DISPLAY_LABELS[product];
+  if (label) return label;
+  warnOnce(warnedDisplayProducts, `Unmapped product metadata: ${product}`);
+  return product;
+}
+
+function displaySectionLabel(section: string): string {
+  const label = SECTION_DISPLAY_LABELS[section];
+  if (label) return label;
+  warnOnce(warnedDisplaySections, `Unmapped section metadata: ${section}`);
+  return section;
+}
+
+function warnOnce(warned: Set<string>, message: string): void {
+  if (warned.has(message)) return;
+  warned.add(message);
+  console.warn(message);
 }
 
 async function displayTitleForDoc(doc: DocEntry): Promise<string> {
@@ -91,7 +207,7 @@ async function generateHome(manifest: DisplayManifest): Promise<void> {
   const productRows = manifest.products
     .map((product) => {
       const count = manifest.docs.filter((doc) => doc.product === product).length;
-      return `| ${product} | ${count} | [浏览](${productLink(product, manifest.docs)}) |`;
+      return `| ${escapeTable(displayProductLabel(product))} | ${count} | [浏览](${productLink(product, manifest.docs)}) |`;
     })
     .join("\n");
 
@@ -145,7 +261,7 @@ async function generateCatalog(manifest: DisplayManifest): Promise<void> {
   const rows = manifest.docs
     .map(
       (doc) =>
-        `| ${doc.product} | ${doc.section} | [${escapeTable(doc.displayTitle)}](${pageLinkForSlug(doc.slug)}) | ${statusLabel(
+        `| ${escapeTable(doc.displayProduct)} | ${escapeTable(doc.displaySection)} | [${escapeTable(doc.displayTitle)}](${pageLinkForSlug(doc.slug)}) | ${statusLabel(
           doc.translationStatus
         )} | [官方](${doc.sourceUrl}) |`
     )
@@ -171,7 +287,9 @@ async function generateTranslationStatus(manifest: DisplayManifest): Promise<voi
 
   const sections = [...grouped.entries()]
     .map(([status, docs]) => {
-      const lines = docs.map((doc) => `- [${doc.displayTitle}](${pageLinkForSlug(doc.slug)}) — ${doc.product} / ${doc.section}`);
+      const lines = docs.map(
+        (doc) => `- [${doc.displayTitle}](${pageLinkForSlug(doc.slug)}) — ${doc.displayProduct} / ${doc.displaySection}`
+      );
       return `## ${status}\n\n${lines.join("\n") || "- None"}`;
     })
     .join("\n\n");
@@ -227,8 +345,8 @@ outline: deep
 
 # ${doc.displayTitle}
 
-**文档集**：${doc.product}  
-**分组**：${doc.section}  
+**文档集**：${doc.displayProduct}<br>
+**分组**：${doc.displaySection}<br>
 **翻译状态**：${statusLabel(doc.translationStatus)}
 
 ::: warning 非官方本地镜像
@@ -455,10 +573,10 @@ function buildSidebar(manifest: DisplayManifest): unknown[] {
       bySection.set(doc.section, [...(bySection.get(doc.section) ?? []), doc]);
     }
     base.push({
-      text: product,
+      text: displayProductLabel(product),
       collapsed: true,
       items: [...bySection.entries()].map(([section, sectionDocs]) => ({
-        text: section,
+        text: displaySectionLabel(section),
         collapsed: true,
         items: sectionDocs.map((doc) => ({
           text: doc.displayTitle,

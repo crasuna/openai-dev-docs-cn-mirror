@@ -6,8 +6,8 @@ outline: deep
 
 # 构建你的 MCP server
 
-**文档集**：Apps SDK  
-**分组**：Apps SDK — Build  
+**文档集**：Apps SDK 应用 SDK<br>
+**分组**：Apps SDK — 构建<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

@@ -6,8 +6,8 @@ outline: deep
 
 # Agentic Checkout Spec（Agentic Checkout 规范）
 
-**文档集**：Commerce  
-**分组**：Agentic Commerce — Specs  
+**文档集**：Commerce 商务<br>
+**分组**：Agentic Commerce — 规范<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

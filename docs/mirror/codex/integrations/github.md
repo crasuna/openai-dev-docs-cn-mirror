@@ -6,8 +6,8 @@ outline: deep
 
 # GitHub 中的 Codex 代码审查
 
-**文档集**：Codex  
-**分组**：Codex — Integrations  
+**文档集**：Codex 编码智能体<br>
+**分组**：Codex — 集成<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像

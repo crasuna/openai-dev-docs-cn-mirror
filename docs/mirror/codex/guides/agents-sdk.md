@@ -6,8 +6,8 @@ outline: deep
 
 # 将 Codex 与 Agents SDK 结合使用
 
-**文档集**：Codex  
-**分组**：Codex — Guides  
+**文档集**：Codex 编码智能体<br>
+**分组**：Codex — 指南<br>
 **翻译状态**：译文待复核
 
 ::: warning 非官方本地镜像
