@@ -966,11 +966,7 @@ function buildTopNavigation(manifest: DisplayManifest, navigation: NavigationSna
     }
   }
 
-  navItems.push(
-    { text: "目录", link: "/catalog" },
-    { text: "翻译状态", link: "/translation-status" },
-    { text: "官方文档", link: "https://developers.openai.com/" }
-  );
+  navItems.push({ text: "官方文档", link: "https://developers.openai.com/" });
 
   return navItems;
 }

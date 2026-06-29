@@ -55,8 +55,6 @@ export default defineConfig({
           { text: "广告", link: "/mirror/ads/api-overview" }
         ]
       },
-      { text: "目录", link: "/catalog" },
-      { text: "翻译状态", link: "/translation-status" },
       { text: "官方文档", link: "https://developers.openai.com/" }
     ]),
     sidebar: readGeneratedJson("sidebar.json", {
