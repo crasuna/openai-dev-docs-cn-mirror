@@ -1,10 +1,10 @@
 ---
-title: "Realtime API with WebSocket"
+title: "使用 WebSocket 的 Realtime API"
 description: "Learn how to connect to the Realtime API using WebSocket in a server-to-server application."
 outline: deep
 ---
 
-# Realtime API with WebSocket
+# 使用 WebSocket 的 Realtime API
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

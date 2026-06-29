@@ -1,10 +1,10 @@
 ---
-title: "Best practices"
+title: "最佳实践"
 description: "Getting started with Codex and proven practices for better results"
 outline: deep
 ---
 
-# Best practices
+# 最佳实践
 
 **文档集**：Codex  
 **分组**：Codex — Learn  

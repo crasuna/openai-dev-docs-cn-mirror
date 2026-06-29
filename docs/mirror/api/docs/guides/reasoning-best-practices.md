@@ -1,10 +1,10 @@
 ---
-title: "Reasoning best practices"
+title: "Reasoning 最佳实践"
 description: "Explore best practices for using o-series reasoning models, like o1 and o3-mini, vs. GPT models—including use cases, how to choose a model, and prompting guidance."
 outline: deep
 ---
 
-# Reasoning best practices
+# Reasoning 最佳实践
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

@@ -1,10 +1,10 @@
 ---
-title: "Configuration Reference"
+title: "配置参考"
 description: "Complete reference for Codex config.toml and requirements.toml"
 outline: deep
 ---
 
-# Configuration Reference
+# 配置参考
 
 **文档集**：Codex  
 **分组**：Codex — Config Reference  

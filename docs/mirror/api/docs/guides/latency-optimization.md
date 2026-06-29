@@ -1,10 +1,10 @@
 ---
-title: "Latency optimization"
+title: "延迟优化"
 description: "Improve latency across a wide variety of LLM-related use cases."
 outline: deep
 ---
 
-# Latency optimization
+# 延迟优化
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

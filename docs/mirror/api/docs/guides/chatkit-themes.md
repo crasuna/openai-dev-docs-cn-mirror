@@ -1,10 +1,10 @@
 ---
-title: "Theming and customization in ChatKit"
+title: "ChatKit 中的主题和自定义"
 description: "Configure colors, typography, density, and component variants in your ChatKit implementation."
 outline: deep
 ---
 
-# Theming and customization in ChatKit
+# ChatKit 中的主题和自定义
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

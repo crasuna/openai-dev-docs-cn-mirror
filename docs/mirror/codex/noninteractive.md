@@ -1,10 +1,10 @@
 ---
-title: "Non-interactive mode"
+title: "非交互模式"
 description: "Use `codex exec` to run Codex in scripts and CI"
 outline: deep
 ---
 
-# Non-interactive mode
+# 非交互模式
 
 **文档集**：Codex  
 **分组**：Codex — Noninteractive  

@@ -1,10 +1,10 @@
 ---
-title: "GPT Release Notes"
+title: "GPT 发布说明"
 description: "Keep track of updates to OpenAI GPTs and explore new features and capabilities in the release notes."
 outline: deep
 ---
 
-# GPT Release Notes
+# GPT 发布说明
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

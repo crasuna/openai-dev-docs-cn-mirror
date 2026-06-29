@@ -1,10 +1,10 @@
 ---
-title: "Models and providers"
+title: "Models 和 providers"
 description: "Learn how to choose models, set defaults, and think about providers and transport in the OpenAI Agents SDK."
 outline: deep
 ---
 
-# Models and providers
+# Models 和 providers
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

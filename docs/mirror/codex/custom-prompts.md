@@ -1,10 +1,10 @@
 ---
-title: "Custom Prompts"
+title: "自定义提示词"
 description: "Deprecated. Use skills for reusable prompts"
 outline: deep
 ---
 
-# Custom Prompts
+# 自定义提示词
 
 **文档集**：Codex  
 **分组**：Codex — Custom Prompts  

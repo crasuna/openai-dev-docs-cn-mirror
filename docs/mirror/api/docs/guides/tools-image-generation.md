@@ -1,10 +1,10 @@
 ---
-title: "Image generation"
+title: "图像生成"
 description: "Allow models to generate or edit images."
 outline: deep
 ---
 
-# Image generation
+# 图像生成
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

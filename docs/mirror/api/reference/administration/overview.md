@@ -1,10 +1,10 @@
 ---
-title: "Administration Overview"
+title: "Administration 概览"
 description: "Administration Overview"
 outline: deep
 ---
 
-# Administration Overview
+# Administration 概览
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

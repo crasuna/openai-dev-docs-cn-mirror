@@ -1,10 +1,10 @@
 ---
-title: "Slash commands in Codex CLI"
+title: "Codex CLI 中的 Slash commands"
 description: "Control Codex during interactive sessions"
 outline: deep
 ---
 
-# Slash commands in Codex CLI
+# Codex CLI 中的 Slash commands
 
 **文档集**：Codex  
 **分组**：Codex — Cli  

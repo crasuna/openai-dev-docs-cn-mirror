@@ -1,10 +1,10 @@
 ---
-title: "Authenticate with Workspace Agent access tokens"
+title: "使用 Workspace Agent access tokens 进行认证"
 description: "Provision and use bearer credentials for the Workspace Agents API."
 outline: deep
 ---
 
-# Authenticate with Workspace Agent access tokens
+# 使用 Workspace Agent access tokens 进行认证
 
 **文档集**：Workspace Agents  
 **分组**：Workspace Agents — Authentication  

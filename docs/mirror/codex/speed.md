@@ -1,10 +1,10 @@
 ---
-title: "Speed"
+title: "速度"
 description: "Increase speed without sacrificing intelligence"
 outline: deep
 ---
 
-# Speed
+# 速度
 
 **文档集**：Codex  
 **分组**：Codex — Speed  

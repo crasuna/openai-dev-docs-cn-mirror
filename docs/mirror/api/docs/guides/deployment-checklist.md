@@ -1,10 +1,10 @@
 ---
-title: "API deployment checklist"
+title: "API 部署检查清单"
 description: "Review commonly underused Responses API design choices that improve deployment quality, speed, cost, and reliability."
 outline: deep
 ---
 
-# API deployment checklist
+# API 部署检查清单
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

@@ -1,10 +1,10 @@
 ---
-title: "Responses — Compact"
+title: "Responses — 压缩"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Responses — Compact
+# Responses — 压缩
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

@@ -1,10 +1,10 @@
 ---
-title: "Getting started with GPT Actions"
+title: "GPT Actions 入门"
 description: "Learn how to set up and test GPT actions from scratch with the OpenAI API."
 outline: deep
 ---
 
-# Getting started with GPT Actions
+# GPT Actions 入门
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

@@ -1,10 +1,10 @@
 ---
-title: "Product checkout conversion spec"
+title: "产品结账转化规格"
 description: "Contract for integrating a product checkout app into ChatGPT's conversion flow."
 outline: deep
 ---
 
-# Product checkout conversion spec
+# 产品结账转化规格
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Guides  

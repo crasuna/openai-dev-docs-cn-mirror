@@ -1,10 +1,10 @@
 ---
-title: "Migrate to the Responses API"
+title: "迁移到 Responses API"
 description: "Migrate to the Responses API"
 outline: deep
 ---
 
-# Migrate to the Responses API
+# 迁移到 Responses API
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

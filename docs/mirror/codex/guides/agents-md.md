@@ -1,10 +1,10 @@
 ---
-title: "Custom instructions with AGENTS.md"
+title: "使用 AGENTS.md 编写自定义指令"
 description: "Give Codex extra instructions and context for your project"
 outline: deep
 ---
 
-# Custom instructions with AGENTS.md
+# 使用 AGENTS.md 编写自定义指令
 
 **文档集**：Codex  
 **分组**：Codex — Guides  

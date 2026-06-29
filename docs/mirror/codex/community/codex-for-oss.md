@@ -1,10 +1,10 @@
 ---
-title: "Codex for Open Source"
+title: "面向开源的 Codex"
 description: "Open-source maintainers can apply for API credits, six months of ChatGPT Pro with Codex, and Codex Security."
 outline: deep
 ---
 
-# Codex for Open Source
+# 面向开源的 Codex
 
 **文档集**：Codex  
 **分组**：Codex — Community  

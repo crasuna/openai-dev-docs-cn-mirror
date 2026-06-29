@@ -1,10 +1,10 @@
 ---
-title: "Responses — Create"
+title: "Responses — 创建"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Responses — Create
+# Responses — 创建
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

@@ -1,10 +1,10 @@
 ---
-title: "Prompt generation"
+title: "提示词生成"
 description: "Learn how to generate prompts, functions, and schemas in the OpenAI API's Playground."
 outline: deep
 ---
 
-# Prompt generation
+# 提示词生成
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

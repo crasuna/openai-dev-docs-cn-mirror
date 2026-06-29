@@ -1,10 +1,10 @@
 ---
-title: "Audio and speech"
+title: "音频与语音"
 description: "Learn core audio and speech concepts for building with the OpenAI API."
 outline: deep
 ---
 
-# Audio and speech
+# 音频与语音
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

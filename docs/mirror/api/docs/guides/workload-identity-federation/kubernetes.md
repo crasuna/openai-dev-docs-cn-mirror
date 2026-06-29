@@ -1,10 +1,10 @@
 ---
-title: "Configuring workload identity federation for Kubernetes"
+title: "为 Kubernetes 配置 workload identity federation"
 description: "Configure Kubernetes as a workload identity federation token provider."
 outline: deep
 ---
 
-# Configuring workload identity federation for Kubernetes
+# 为 Kubernetes 配置 workload identity federation
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

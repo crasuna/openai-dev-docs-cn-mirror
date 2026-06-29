@@ -1,10 +1,10 @@
 ---
-title: "Actions in ChatKit"
+title: "ChatKit 中的操作"
 description: "Embed a widget to build your own chat experiences."
 outline: deep
 ---
 
-# Actions in ChatKit
+# ChatKit 中的操作
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

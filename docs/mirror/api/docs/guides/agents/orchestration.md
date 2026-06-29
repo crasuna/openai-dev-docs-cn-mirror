@@ -1,10 +1,10 @@
 ---
-title: "Orchestration and handoffs"
+title: "Orchestration 与 handoffs"
 description: "Learn how to orchestrate multiple agents with handoffs and agents-as-tools in the OpenAI Agents SDK."
 outline: deep
 ---
 
-# Orchestration and handoffs
+# Orchestration 与 handoffs
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

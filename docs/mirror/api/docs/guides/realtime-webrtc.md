@@ -1,10 +1,10 @@
 ---
-title: "Realtime API with WebRTC"
+title: "使用 WebRTC 的 Realtime API"
 description: "Learn how to connect to the Realtime API using WebRTC."
 outline: deep
 ---
 
-# Realtime API with WebRTC
+# 使用 WebRTC 的 Realtime API
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

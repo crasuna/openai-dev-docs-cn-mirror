@@ -1,10 +1,10 @@
 ---
-title: "Connect from ChatGPT"
+title: "从 ChatGPT 连接"
 description: "Connect your app to ChatGPT clients."
 outline: deep
 ---
 
-# Connect from ChatGPT
+# 从 ChatGPT 连接
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Deploy  

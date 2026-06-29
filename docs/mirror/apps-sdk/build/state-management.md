@@ -1,10 +1,10 @@
 ---
-title: "Managing State"
+title: "管理状态"
 description: "How to manage business data, UI state, and cross-session state in ChatGPT apps using the Apps SDK and an MCP server."
 outline: deep
 ---
 
-# Managing State
+# 管理状态
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Build  

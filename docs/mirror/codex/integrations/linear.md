@@ -1,10 +1,10 @@
 ---
-title: "Use Codex in Linear"
+title: "在 Linear 中使用 Codex"
 description: "Run Codex tasks from Linear issues"
 outline: deep
 ---
 
-# Use Codex in Linear
+# 在 Linear 中使用 Codex
 
 **文档集**：Codex  
 **分组**：Codex — Integrations  

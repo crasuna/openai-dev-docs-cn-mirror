@@ -1,10 +1,10 @@
 ---
-title: "Supported countries and territories"
+title: "支持的国家和地区"
 description: "Countries and territories that currently support access to our API services."
 outline: deep
 ---
 
-# Supported countries and territories
+# 支持的国家和地区
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

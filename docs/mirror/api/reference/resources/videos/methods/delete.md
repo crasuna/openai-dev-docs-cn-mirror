@@ -1,10 +1,10 @@
 ---
-title: "Videos — Delete"
+title: "视频 — 删除"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Videos — Delete
+# 视频 — 删除
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

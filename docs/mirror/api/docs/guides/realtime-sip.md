@@ -1,10 +1,10 @@
 ---
-title: "Realtime API with SIP"
+title: "使用 SIP 的 Realtime API"
 description: "Learn how to connect to the Realtime API using SIP."
 outline: deep
 ---
 
-# Realtime API with SIP
+# 使用 SIP 的 Realtime API
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

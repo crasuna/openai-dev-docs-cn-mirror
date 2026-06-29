@@ -1,10 +1,10 @@
 ---
-title: "Vector Stores Files — Update"
+title: "向量存储文件 — 更新"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Vector Stores Files — Update
+# 向量存储文件 — 更新
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

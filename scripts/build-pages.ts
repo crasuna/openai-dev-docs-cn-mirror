@@ -24,18 +24,27 @@ import {
 import type { DocEntry, Manifest } from "./types.js";
 
 const manifest = await refreshTranslationStatuses(await readJsonFile<Manifest>(MANIFEST_PATH, createEmptyManifest()));
-const urlMap = buildUrlMap(manifest.docs);
+const displayManifest = await addDisplayTitles(manifest);
+const urlMap = buildUrlMap(displayManifest.docs);
 
 await ensureDir(DOCS_DIR);
 await removeGeneratedDir(MIRROR_DIR);
-await generateHome(manifest);
-await generateCatalog(manifest);
-await generateTranslationStatus(manifest);
-await generatePages(manifest);
-await generateVitePressData(manifest);
-await writeBuildReport(manifest);
+await generateHome(displayManifest);
+await generateCatalog(displayManifest);
+await generateTranslationStatus(displayManifest);
+await generatePages(displayManifest);
+await generateVitePressData(displayManifest);
+await writeBuildReport(displayManifest);
 
-console.log(`Generated ${manifest.docs.length} pages under ${relativeFromRoot(MIRROR_DIR)}.`);
+console.log(`Generated ${displayManifest.docs.length} pages under ${relativeFromRoot(MIRROR_DIR)}.`);
+
+interface DisplayDocEntry extends DocEntry {
+  displayTitle: string;
+}
+
+interface DisplayManifest extends Omit<Manifest, "docs"> {
+  docs: DisplayDocEntry[];
+}
 
 async function refreshTranslationStatuses(manifest: Manifest): Promise<Manifest> {
   let changed = false;
@@ -55,7 +64,30 @@ async function refreshTranslationStatuses(manifest: Manifest): Promise<Manifest>
   return nextManifest;
 }
 
-async function generateHome(manifest: Manifest): Promise<void> {
+async function addDisplayTitles(manifest: Manifest): Promise<DisplayManifest> {
+  const docs: DisplayDocEntry[] = [];
+  for (const doc of manifest.docs) {
+    docs.push({ ...doc, displayTitle: await displayTitleForDoc(doc) });
+  }
+  return { ...manifest, docs };
+}
+
+async function displayTitleForDoc(doc: DocEntry): Promise<string> {
+  const translationPath = translationPathForSlug(doc.slug);
+  if (!existsSync(translationPath)) return doc.title;
+  const translation = await readTextFile(translationPath);
+  return extractH1Title(translation) || doc.title;
+}
+
+function extractH1Title(markdown: string): string | null {
+  const body = stripFrontmatter(markdown);
+  const match = body.match(/^\s{0,3}#\s+(.+?)\s*$/m);
+  if (!match) return null;
+  const title = match[1].replace(/\s+\{#[A-Za-z0-9_-]+\}\s*$/, "").trim();
+  return title || null;
+}
+
+async function generateHome(manifest: DisplayManifest): Promise<void> {
   const productRows = manifest.products
     .map((product) => {
       const count = manifest.docs.filter((doc) => doc.product === product).length;
@@ -104,16 +136,16 @@ ${productRows || "| 暂无 | 0 | - |"}
   await writeTextFile(path.join(DOCS_DIR, "index.md"), content);
 }
 
-function productLink(product: string, docs: DocEntry[]): string {
+function productLink(product: string, docs: DisplayDocEntry[]): string {
   const firstDoc = docs.find((doc) => doc.product === product);
   return firstDoc ? pageLinkForSlug(firstDoc.slug) : "/catalog";
 }
 
-async function generateCatalog(manifest: Manifest): Promise<void> {
+async function generateCatalog(manifest: DisplayManifest): Promise<void> {
   const rows = manifest.docs
     .map(
       (doc) =>
-        `| ${doc.product} | ${doc.section} | [${escapeTable(doc.title)}](${pageLinkForSlug(doc.slug)}) | ${statusLabel(
+        `| ${doc.product} | ${doc.section} | [${escapeTable(doc.displayTitle)}](${pageLinkForSlug(doc.slug)}) | ${statusLabel(
           doc.translationStatus
         )} | [官方](${doc.sourceUrl}) |`
     )
@@ -130,8 +162,8 @@ ${rows || "| - | - | 暂无文档 | - | - |"}
   );
 }
 
-async function generateTranslationStatus(manifest: Manifest): Promise<void> {
-  const grouped = new Map<string, DocEntry[]>();
+async function generateTranslationStatus(manifest: DisplayManifest): Promise<void> {
+  const grouped = new Map<string, DisplayDocEntry[]>();
   for (const doc of manifest.docs) {
     const key = statusLabel(doc.translationStatus);
     grouped.set(key, [...(grouped.get(key) ?? []), doc]);
@@ -139,7 +171,7 @@ async function generateTranslationStatus(manifest: Manifest): Promise<void> {
 
   const sections = [...grouped.entries()]
     .map(([status, docs]) => {
-      const lines = docs.map((doc) => `- [${doc.title}](${pageLinkForSlug(doc.slug)}) — ${doc.product} / ${doc.section}`);
+      const lines = docs.map((doc) => `- [${doc.displayTitle}](${pageLinkForSlug(doc.slug)}) — ${doc.product} / ${doc.section}`);
       return `## ${status}\n\n${lines.join("\n") || "- None"}`;
     })
     .join("\n\n");
@@ -155,7 +187,7 @@ ${sections || "暂无文档。"}
   );
 }
 
-async function generatePages(manifest: Manifest): Promise<void> {
+async function generatePages(manifest: DisplayManifest): Promise<void> {
   for (const doc of manifest.docs) {
     const source = normalizeMarkdown(await readTextFile(path.join(process.cwd(), doc.localSourcePath)));
     const translationPath = translationPathForSlug(doc.slug);
@@ -165,7 +197,7 @@ async function generatePages(manifest: Manifest): Promise<void> {
   }
 }
 
-function buildPage(doc: DocEntry, source: string, translation: string): string {
+function buildPage(doc: DisplayDocEntry, source: string, translation: string): string {
   const safeRawFallback = requiresRawFallback(source);
   const sourceBody = safeRawFallback
     ? rawMarkdownBlock(stripLeadingH1(stripFrontmatter(source)))
@@ -188,12 +220,12 @@ function buildPage(doc: DocEntry, source: string, translation: string): string {
       }${sourceBody}${safeRawFallback ? "" : "\n:::"}\n`;
 
   return `---
-title: ${escapeYamlString(doc.title)}
+title: ${escapeYamlString(doc.displayTitle)}
 description: ${escapeYamlString(doc.description || doc.title)}
 outline: deep
 ---
 
-# ${doc.title}
+# ${doc.displayTitle}
 
 **文档集**：${doc.product}  
 **分组**：${doc.section}  
@@ -388,7 +420,7 @@ function buildUrlMap(docs: DocEntry[]): Map<string, string> {
   return map;
 }
 
-async function generateVitePressData(manifest: Manifest): Promise<void> {
+async function generateVitePressData(manifest: DisplayManifest): Promise<void> {
   const generatedDir = path.join(DOCS_DIR, ".vitepress", "generated");
   await ensureDir(generatedDir);
   await writeJsonFile(path.join(generatedDir, "sidebar.json"), buildSidebar(manifest));
@@ -400,7 +432,7 @@ async function generateVitePressData(manifest: Manifest): Promise<void> {
   ]);
 }
 
-function buildSidebar(manifest: Manifest): unknown[] {
+function buildSidebar(manifest: DisplayManifest): unknown[] {
   const base: unknown[] = [
     {
       text: "中文镜像",
@@ -412,13 +444,13 @@ function buildSidebar(manifest: Manifest): unknown[] {
     }
   ];
 
-  const byProduct = new Map<string, DocEntry[]>();
+  const byProduct = new Map<string, DisplayDocEntry[]>();
   for (const doc of manifest.docs) {
     byProduct.set(doc.product, [...(byProduct.get(doc.product) ?? []), doc]);
   }
 
   for (const [product, docs] of byProduct) {
-    const bySection = new Map<string, DocEntry[]>();
+    const bySection = new Map<string, DisplayDocEntry[]>();
     for (const doc of docs) {
       bySection.set(doc.section, [...(bySection.get(doc.section) ?? []), doc]);
     }
@@ -429,7 +461,7 @@ function buildSidebar(manifest: Manifest): unknown[] {
         text: section,
         collapsed: true,
         items: sectionDocs.map((doc) => ({
-          text: doc.title,
+          text: doc.displayTitle,
           link: pageLinkForSlug(doc.slug)
         }))
       }))
@@ -439,7 +471,7 @@ function buildSidebar(manifest: Manifest): unknown[] {
   return base;
 }
 
-async function writeBuildReport(manifest: Manifest): Promise<void> {
+async function writeBuildReport(manifest: DisplayManifest): Promise<void> {
   await ensureDir(REPORTS_DIR);
   await writeTextFile(
     path.join(REPORTS_DIR, "build-report.md"),

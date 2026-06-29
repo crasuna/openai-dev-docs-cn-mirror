@@ -1,10 +1,10 @@
 ---
-title: "Beta Threads Runs — Submit Tool Outputs"
+title: "Beta Threads Runs — 提交工具输出"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Beta Threads Runs — Submit Tool Outputs
+# Beta Threads Runs — 提交工具输出
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

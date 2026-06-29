@@ -1,10 +1,10 @@
 ---
-title: "Fine-tuning best practices"
+title: "Fine-tuning 最佳实践"
 description: "Improve results with practical tips for fine-tuning."
 outline: deep
 ---
 
-# Fine-tuning best practices
+# Fine-tuning 最佳实践
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

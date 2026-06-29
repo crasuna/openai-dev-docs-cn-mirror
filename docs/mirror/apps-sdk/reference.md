@@ -1,10 +1,10 @@
 ---
-title: "Apps SDK reference (Markdown)"
+title: "Reference"
 description: "Schema and API fields for tools, resources, and components."
 outline: deep
 ---
 
-# Apps SDK reference (Markdown)
+# Reference
 
 **文档集**：Apps SDK  
 **分组**：Documentation sets  

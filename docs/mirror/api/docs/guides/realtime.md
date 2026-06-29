@@ -1,10 +1,10 @@
 ---
-title: "Realtime and audio"
+title: "Realtime 和音频"
 description: "Learn which realtime and audio guide to use for each speech application."
 outline: deep
 ---
 
-# Realtime and audio
+# Realtime 和音频
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

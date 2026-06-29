@@ -1,10 +1,10 @@
 ---
-title: "Key concepts"
+title: "核心概念"
 description: "Key concepts to understand when working with the OpenAI API."
 outline: deep
 ---
 
-# Key concepts
+# 核心概念
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

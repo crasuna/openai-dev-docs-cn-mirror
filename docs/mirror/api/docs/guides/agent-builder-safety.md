@@ -1,10 +1,10 @@
 ---
-title: "Safety in building agents"
+title: "构建 agents 时的安全"
 description: "Minimize prompt injections and other risks when building agent workflows with OpenAI Agent Builder."
 outline: deep
 ---
 
-# Safety in building agents
+# 构建 agents 时的安全
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

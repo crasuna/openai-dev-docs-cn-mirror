@@ -1,10 +1,10 @@
 ---
-title: "Production notes on GPT Actions"
+title: "GPT Actions 的生产说明"
 description: "Guidelines for deploying GPT Actions in a production environment, including rate limits, timeouts, and security measures."
 outline: deep
 ---
 
-# Production notes on GPT Actions
+# GPT Actions 的生产说明
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

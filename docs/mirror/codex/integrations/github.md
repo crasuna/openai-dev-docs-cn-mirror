@@ -1,10 +1,10 @@
 ---
-title: "Codex code review in GitHub"
+title: "GitHub 中的 Codex 代码审查"
 description: "Set up Codex code review for GitHub pull requests, request reviews with @codex review, enable automatic reviews, and customize review guidelines."
 outline: deep
 ---
 
-# Codex code review in GitHub
+# GitHub 中的 Codex 代码审查
 
 **文档集**：Codex  
 **分组**：Codex — Integrations  

@@ -1,10 +1,10 @@
 ---
-title: "Run a Codex Security scan"
+title: "运行 Codex Security 扫描"
 description: "Scan an authorized repository or one scoped folder and review findings, coverage, and artifacts."
 outline: deep
 ---
 
-# Run a Codex Security scan
+# 运行 Codex Security 扫描
 
 **文档集**：Codex  
 **分组**：Codex — Security  

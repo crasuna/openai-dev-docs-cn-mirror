@@ -1,10 +1,10 @@
 ---
-title: "Responses Input Items — List"
+title: "Responses 输入项 — 列出"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Responses Input Items — List
+# Responses 输入项 — 列出
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

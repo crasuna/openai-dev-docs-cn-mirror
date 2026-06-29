@@ -1,10 +1,10 @@
 ---
-title: "Running agents"
+title: "运行 agents"
 description: "Learn how to run agents, stream output, and choose the right conversation-state strategy in the OpenAI Agents SDK."
 outline: deep
 ---
 
-# Running agents
+# 运行 agents
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

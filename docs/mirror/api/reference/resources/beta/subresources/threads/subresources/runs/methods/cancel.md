@@ -1,10 +1,10 @@
 ---
-title: "Beta Threads Runs — Cancel"
+title: "Beta Threads Runs — 取消"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Beta Threads Runs — Cancel
+# Beta Threads Runs — 取消
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

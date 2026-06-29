@@ -1,10 +1,10 @@
 ---
-title: "Developer quickstart"
+title: "开发者快速入门"
 description: "Learn how to use the OpenAI API to generate human-like responses to natural language prompts, analyze images with computer vision, use powerful built-in tools, and more."
 outline: deep
 ---
 
-# Developer quickstart
+# 开发者快速入门
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

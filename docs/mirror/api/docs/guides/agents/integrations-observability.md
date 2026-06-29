@@ -1,10 +1,10 @@
 ---
-title: "Integrations and observability"
+title: "集成与可观测性"
 description: "Learn how to integrate MCP into Agents SDK workflows and how to trace and debug runs."
 outline: deep
 ---
 
-# Integrations and observability
+# 集成与可观测性
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

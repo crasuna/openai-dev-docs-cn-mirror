@@ -1,10 +1,10 @@
 ---
-title: "Cybersecurity checks"
+title: "网络安全检查"
 description: "Cybersecurity checks"
 outline: deep
 ---
 
-# Cybersecurity checks
+# 网络安全检查
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

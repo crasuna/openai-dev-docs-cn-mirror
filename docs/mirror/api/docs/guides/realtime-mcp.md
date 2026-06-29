@@ -1,10 +1,10 @@
 ---
-title: "Realtime with tools"
+title: "Realtime 与工具"
 description: "Learn how to configure function tools, MCP tools, and connectors in a Realtime session."
 outline: deep
 ---
 
-# Realtime with tools
+# Realtime 与工具
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

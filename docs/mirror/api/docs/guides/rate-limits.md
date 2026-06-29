@@ -1,10 +1,10 @@
 ---
-title: "Rate limits"
+title: "速率限制"
 description: "Rate limits are restrictions that our API imposes on the number of times a user or client can access our services within a specified period of time."
 outline: deep
 ---
 
-# Rate limits
+# 速率限制
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

@@ -1,10 +1,10 @@
 ---
-title: "Responses Overview"
+title: "Responses 概览"
 description: "Responses Overview"
 outline: deep
 ---
 
-# Responses Overview
+# Responses 概览
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

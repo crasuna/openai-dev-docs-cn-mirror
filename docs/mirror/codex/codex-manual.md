@@ -1,10 +1,10 @@
 ---
-title: "Codex manual (Markdown)"
+title: "web_search = \"disabled\""
 description: "Machine-oriented condensed manual generated from the Codex docs set."
 outline: deep
 ---
 
-# Codex manual (Markdown)
+# web_search = "disabled"
 
 **文档集**：Codex  
 **分组**：Documentation sets  

@@ -1,10 +1,10 @@
 ---
-title: "Realtime translation"
+title: "Realtime 翻译"
 description: "Learn how to build live speech translation with Realtime translation sessions."
 outline: deep
 ---
 
-# Realtime translation
+# Realtime 翻译
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

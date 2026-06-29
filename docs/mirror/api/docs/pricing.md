@@ -1,10 +1,10 @@
 ---
-title: "Pricing"
+title: "定价"
 description: "Pricing information for the OpenAI platform."
 outline: deep
 ---
 
-# Pricing
+# 定价
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

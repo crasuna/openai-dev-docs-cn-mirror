@@ -1,10 +1,10 @@
 ---
-title: "Agent internet access"
+title: "Agent 互联网访问"
 description: "Control internet access for Codex cloud tasks"
 outline: deep
 ---
 
-# Agent internet access
+# Agent 互联网访问
 
 **文档集**：Codex  
 **分组**：Codex — Cloud  

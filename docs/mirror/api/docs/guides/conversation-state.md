@@ -1,10 +1,10 @@
 ---
-title: "Conversation state"
+title: "对话状态"
 description: "Learn how to manage conversation state during a model interaction with the OpenAI API."
 outline: deep
 ---
 
-# Conversation state
+# 对话状态
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

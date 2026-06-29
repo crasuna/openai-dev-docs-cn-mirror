@@ -1,10 +1,10 @@
 ---
-title: "Assistants API tools"
+title: "Assistants API 工具"
 description: "Learn about the tools available for OpenAI Assistants, including file search, code interpreter, and function calling."
 outline: deep
 ---
 
-# Assistants API tools
+# Assistants API 工具
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

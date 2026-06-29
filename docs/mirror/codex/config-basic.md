@@ -1,10 +1,10 @@
 ---
-title: "Config basics"
+title: "配置基础"
 description: "Learn the basics of configuring your local Codex client"
 outline: deep
 ---
 
-# Config basics
+# 配置基础
 
 **文档集**：Codex  
 **分组**：Codex — Config Basic  

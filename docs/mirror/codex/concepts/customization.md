@@ -1,10 +1,10 @@
 ---
-title: "Customization"
+title: "自定义"
 description: "How to customize Codex with project guidance, skills, MCP, and subagents"
 outline: deep
 ---
 
-# Customization
+# 自定义
 
 **文档集**：Codex  
 **分组**：Codex — Concepts  

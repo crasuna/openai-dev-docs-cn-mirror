@@ -1,10 +1,10 @@
 ---
-title: "Import to Codex"
+title: "导入到 Codex"
 description: "Bring your setup and recent work from other agents into Codex."
 outline: deep
 ---
 
-# Import to Codex
+# 导入到 Codex
 
 **文档集**：Codex  
 **分组**：Codex — Import  

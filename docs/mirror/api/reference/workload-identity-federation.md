@@ -1,10 +1,10 @@
 ---
-title: "Workload identity token exchange"
+title: "工作负载身份 token 交换"
 description: "Exchange a trusted workload identity token for a short-lived OpenAI API credential."
 outline: deep
 ---
 
-# Workload identity token exchange
+# 工作负载身份 token 交换
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

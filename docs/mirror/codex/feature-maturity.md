@@ -1,10 +1,10 @@
 ---
-title: "Feature Maturity"
+title: "功能成熟度"
 description: "How to interpret feature maturity levels in Codex docs and releases"
 outline: deep
 ---
 
-# Feature Maturity
+# 功能成熟度
 
 **文档集**：Codex  
 **分组**：Codex — Feature Maturity  

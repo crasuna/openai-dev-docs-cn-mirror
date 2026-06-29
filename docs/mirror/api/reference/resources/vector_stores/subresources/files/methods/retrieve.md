@@ -1,10 +1,10 @@
 ---
-title: "Vector Stores Files — Retrieve"
+title: "向量存储文件 — 检索"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Vector Stores Files — Retrieve
+# 向量存储文件 — 检索
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

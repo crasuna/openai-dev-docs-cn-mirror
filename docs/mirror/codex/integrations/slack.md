@@ -1,10 +1,10 @@
 ---
-title: "Use Codex in Slack"
+title: "在 Slack 中使用 Codex"
 description: "Ask Codex to run tasks from channels and threads"
 outline: deep
 ---
 
-# Use Codex in Slack
+# 在 Slack 中使用 Codex
 
 **文档集**：Codex  
 **分组**：Codex — Integrations  

@@ -1,10 +1,10 @@
 ---
-title: "MCP and Connectors"
+title: "MCP 和 Connectors"
 description: "Use remote MCP servers and OpenAI-maintained connectors for popular services to give models new capabilities."
 outline: deep
 ---
 
-# MCP and Connectors
+# MCP 和 Connectors
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

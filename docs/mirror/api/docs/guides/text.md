@@ -1,10 +1,10 @@
 ---
-title: "Text generation"
+title: "文本生成"
 description: "Learn how to use the OpenAI API to generate text from a prompt. Learn about message types and available text formats like JSON and Structured Outputs."
 outline: deep
 ---
 
-# Text generation
+# 文本生成
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

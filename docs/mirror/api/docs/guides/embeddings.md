@@ -1,10 +1,10 @@
 ---
-title: "Vector embeddings"
+title: "向量 embeddings"
 description: "Learn how to turn text into numbers, unlocking use cases like search, clustering, and more with OpenAI API embeddings."
 outline: deep
 ---
 
-# Vector embeddings
+# 向量 embeddings
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

@@ -1,10 +1,10 @@
 ---
-title: "Getting started with datasets"
+title: "数据集入门"
 description: "Learn how to get started with evals using datasets."
 outline: deep
 ---
 
-# Getting started with datasets
+# 数据集入门
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

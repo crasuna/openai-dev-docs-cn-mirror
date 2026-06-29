@@ -1,10 +1,10 @@
 ---
-title: "Using realtime models"
+title: "使用 realtime 模型"
 description: "Learn how to use realtime voice models, including Realtime 2 reasoning, preambles, tool use, and migration from earlier realtime models."
 outline: deep
 ---
 
-# Using realtime models
+# 使用 realtime 模型
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

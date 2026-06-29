@@ -1,10 +1,10 @@
 ---
-title: "Cost optimization"
+title: "成本优化"
 description: "Lower your OpenAI model costs by trying our tools and strategies."
 outline: deep
 ---
 
-# Cost optimization
+# 成本优化
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

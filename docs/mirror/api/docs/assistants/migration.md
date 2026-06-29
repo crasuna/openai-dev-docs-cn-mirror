@@ -1,10 +1,10 @@
 ---
-title: "Assistants migration guide"
+title: "Assistants 迁移指南"
 description: "Guidance for migrating from the Assistants API to the Responses API, including side-by-side comparisons and updated patterns."
 outline: deep
 ---
 
-# Assistants migration guide
+# Assistants 迁移指南
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

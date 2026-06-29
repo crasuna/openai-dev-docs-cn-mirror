@@ -1,10 +1,10 @@
 ---
-title: "Model selection"
+title: "模型选择"
 description: "Learn how to choose the right model by balancing accuracy, latency, and cost for optimal performance."
 outline: deep
 ---
 
-# Model selection
+# 模型选择
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

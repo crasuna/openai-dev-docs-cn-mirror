@@ -1,10 +1,10 @@
 ---
-title: "Advanced Configuration"
+title: "高级配置"
 description: "More advanced configuration options for Codex local clients"
 outline: deep
 ---
 
-# Advanced Configuration
+# 高级配置
 
 **文档集**：Codex  
 **分组**：Codex — Config Advanced  

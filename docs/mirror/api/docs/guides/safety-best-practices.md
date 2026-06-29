@@ -1,10 +1,10 @@
 ---
-title: "Safety best practices"
+title: "安全最佳实践"
 description: "Learn how to implement safety measures like moderation, adversarial testing, human oversight, and prompt engineering to ensure responsible AI deployment."
 outline: deep
 ---
 
-# Safety best practices
+# 安全最佳实践
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

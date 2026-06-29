@@ -1,10 +1,10 @@
 ---
-title: "User Interaction"
+title: "用户交互"
 description: "How users find, engage with, activate, and manage app experiences in ChatGPT."
 outline: deep
 ---
 
-# User Interaction
+# 用户交互
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Concepts  

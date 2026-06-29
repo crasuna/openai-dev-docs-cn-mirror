@@ -1,10 +1,10 @@
 ---
-title: "Compaction"
+title: "Compaction（压缩）"
 description: "Manage long-running conversations with server-side and standalone compaction."
 outline: deep
 ---
 
-# Compaction
+# Compaction（压缩）
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

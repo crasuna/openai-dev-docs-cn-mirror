@@ -1,10 +1,10 @@
 ---
-title: "Realtime Calls — Hangup"
+title: "Realtime Calls — 挂断"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Realtime Calls — Hangup
+# Realtime Calls — 挂断
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

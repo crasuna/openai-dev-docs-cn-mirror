@@ -1,10 +1,10 @@
 ---
-title: "Troubleshooting"
+title: "故障排查"
 description: "Troubleshoot issues in Apps SDK apps."
 outline: deep
 ---
 
-# Troubleshooting
+# 故障排查
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Deploy  

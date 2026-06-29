@@ -1,10 +1,10 @@
 ---
-title: "Codex IDE extension slash commands"
+title: "Codex IDE extension 斜杠命令"
 description: "Reference for slash commands in the Codex IDE extension"
 outline: deep
 ---
 
-# Codex IDE extension slash commands
+# Codex IDE extension 斜杠命令
 
 **文档集**：Codex  
 **分组**：Codex — Ide  

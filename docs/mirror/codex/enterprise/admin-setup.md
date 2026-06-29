@@ -1,10 +1,10 @@
 ---
-title: "Admin Setup"
+title: "管理员设置"
 description: "Set up Codex for your ChatGPT Enterprise workspace"
 outline: deep
 ---
 
-# Admin Setup
+# 管理员设置
 
 **文档集**：Codex  
 **分组**：Codex — Enterprise  

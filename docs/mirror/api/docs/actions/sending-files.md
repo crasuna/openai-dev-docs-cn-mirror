@@ -1,10 +1,10 @@
 ---
-title: "Sending and returning files with GPT Actions"
+title: "使用 GPT Actions 发送和返回文件"
 description: "Learn how to send and return files using GPT Actions in the OpenAI API."
 outline: deep
 ---
 
-# Sending and returning files with GPT Actions
+# 使用 GPT Actions 发送和返回文件
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

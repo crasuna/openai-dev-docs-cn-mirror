@@ -1,10 +1,10 @@
 ---
-title: "Under 18 API Guidance"
+title: "未满 18 岁 API 指引"
 description: "Under 18 API Guidance"
 outline: deep
 ---
 
-# Under 18 API Guidance
+# 未满 18 岁 API 指引
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

@@ -1,10 +1,10 @@
 ---
-title: "Guardrails and human review"
+title: "Guardrails 和人工审核"
 description: "Learn how to use guardrails and human review in the OpenAI Agents SDK for safer, more controlled workflows."
 outline: deep
 ---
 
-# Guardrails and human review
+# Guardrails 和人工审核
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

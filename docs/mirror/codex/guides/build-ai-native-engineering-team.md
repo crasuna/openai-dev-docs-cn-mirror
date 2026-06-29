@@ -1,10 +1,10 @@
 ---
-title: "Building an AI-Native Engineering Team"
+title: "构建 AI-Native 工程团队"
 description: "How coding agents speed up the software development lifecycle"
 outline: deep
 ---
 
-# Building an AI-Native Engineering Team
+# 构建 AI-Native 工程团队
 
 **文档集**：Codex  
 **分组**：Codex — Guides  

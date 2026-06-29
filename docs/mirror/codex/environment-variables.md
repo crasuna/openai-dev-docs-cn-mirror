@@ -1,10 +1,10 @@
 ---
-title: "Environment variables"
+title: "环境变量"
 description: "Environment variables supported by Codex"
 outline: deep
 ---
 
-# Environment variables
+# 环境变量
 
 **文档集**：Codex  
 **分组**：Codex — Environment Variables  

@@ -1,10 +1,10 @@
 ---
-title: "Text to speech"
+title: "文本转语音"
 description: "Learn how to turn text into lifelike spoken audio with the OpenAI API."
 outline: deep
 ---
 
-# Text to speech
+# 文本转语音
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

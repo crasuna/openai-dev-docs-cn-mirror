@@ -1,10 +1,10 @@
 ---
-title: "IP egress ranges"
+title: "IP 出站范围"
 description: "Find the published IP egress ranges used by OpenAI products."
 outline: deep
 ---
 
-# IP egress ranges
+# IP 出站范围
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

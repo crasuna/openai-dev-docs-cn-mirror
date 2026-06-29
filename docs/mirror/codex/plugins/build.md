@@ -1,10 +1,10 @@
 ---
-title: "Build plugins"
+title: "构建 plugins"
 description: "Create, test, and distribute plugins for Codex"
 outline: deep
 ---
 
-# Build plugins
+# 构建 plugins
 
 **文档集**：Codex  
 **分组**：Codex — Plugins  

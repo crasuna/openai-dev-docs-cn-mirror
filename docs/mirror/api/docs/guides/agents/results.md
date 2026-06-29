@@ -1,10 +1,10 @@
 ---
-title: "Results and state"
+title: "结果和状态"
 description: "Learn which result surfaces matter most in the OpenAI Agents SDK and how they connect to resumable workflow state."
 outline: deep
 ---
 
-# Results and state
+# 结果和状态
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

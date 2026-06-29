@@ -1,10 +1,10 @@
 ---
-title: "Using GPT-5.5"
+title: "使用 GPT-5.5"
 description: "Learn how to use and migrate to GPT-5.5, the latest model in the OpenAI API."
 outline: deep
 ---
 
-# Using GPT-5.5
+# 使用 GPT-5.5
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

@@ -1,10 +1,10 @@
 ---
-title: "Data retrieval with GPT Actions"
+title: "使用 GPT Actions 进行数据检索"
 description: "Learn about performing data retrieval using APIs, relational databases, and vector databases with GPT Actions."
 outline: deep
 ---
 
-# Data retrieval with GPT Actions
+# 使用 GPT Actions 进行数据检索
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

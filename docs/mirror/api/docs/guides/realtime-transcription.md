@@ -1,10 +1,10 @@
 ---
-title: "Realtime transcription"
+title: "Realtime 转录"
 description: "Learn how to transcribe live audio with realtime transcription sessions."
 outline: deep
 ---
 
-# Realtime transcription
+# Realtime 转录
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

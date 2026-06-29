@@ -1,10 +1,10 @@
 ---
-title: "Containers — Retrieve"
+title: "Containers — 检索"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Containers — Retrieve
+# Containers — 检索
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

@@ -1,10 +1,10 @@
 ---
-title: "Optimize Metadata"
+title: "优化 Metadata"
 description: "Improve discovery and behavior with rich metadata."
 outline: deep
 ---
 
-# Optimize Metadata
+# 优化 Metadata
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Guides  

@@ -1,10 +1,10 @@
 ---
-title: "Data controls in the OpenAI platform"
+title: "OpenAI 平台中的数据控制"
 description: "Your data is your data. An overview of how OpenAI uses your data, including retention and usage policies."
 outline: deep
 ---
 
-# Data controls in the OpenAI platform
+# OpenAI 平台中的数据控制
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

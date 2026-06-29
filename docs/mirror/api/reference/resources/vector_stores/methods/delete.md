@@ -1,10 +1,10 @@
 ---
-title: "Vector Stores — Delete"
+title: "向量存储 — 删除"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Vector Stores — Delete
+# 向量存储 — 删除
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

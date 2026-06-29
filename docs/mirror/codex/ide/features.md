@@ -1,10 +1,10 @@
 ---
-title: "Codex IDE extension features"
+title: "Codex IDE extension 功能"
 description: "What you can do with the Codex IDE extension"
 outline: deep
 ---
 
-# Codex IDE extension features
+# Codex IDE extension 功能
 
 **文档集**：Codex  
 **分组**：Codex — Ide  

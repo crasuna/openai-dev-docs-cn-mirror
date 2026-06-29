@@ -1,10 +1,10 @@
 ---
-title: "Meeting minutes"
+title: "会议纪要"
 description: "Create an automated meeting minutes generator with Whisper and a GPT model."
 outline: deep
 ---
 
-# Meeting minutes
+# 会议纪要
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

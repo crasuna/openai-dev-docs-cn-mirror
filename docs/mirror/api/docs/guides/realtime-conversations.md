@@ -1,10 +1,10 @@
 ---
-title: "Realtime conversations"
+title: "Realtime 对话"
 description: "Learn how to manage Realtime speech-to-speech conversations."
 outline: deep
 ---
 
-# Realtime conversations
+# Realtime 对话
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

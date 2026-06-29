@@ -1,10 +1,10 @@
 ---
-title: "Web QA with embeddings"
+title: "使用 embeddings 进行网页问答"
 description: "How to build an AI that can answer questions about your website."
 outline: deep
 ---
 
-# Web QA with embeddings
+# 使用 embeddings 进行网页问答
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

@@ -1,10 +1,10 @@
 ---
-title: "Codex IDE extension commands"
+title: "Codex IDE extension 命令"
 description: "Reference for Codex IDE extension commands and keyboard shortcuts"
 outline: deep
 ---
 
-# Codex IDE extension commands
+# Codex IDE extension 命令
 
 **文档集**：Codex  
 **分组**：Codex — Ide  

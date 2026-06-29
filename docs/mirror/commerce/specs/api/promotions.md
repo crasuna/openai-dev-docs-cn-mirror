@@ -1,10 +1,10 @@
 ---
-title: "Promotions"
+title: "促销"
 description: "Retrieve and upsert promotions for a feed."
 outline: deep
 ---
 
-# Promotions
+# 促销
 
 **文档集**：Commerce  
 **分组**：Agentic Commerce — Specs  

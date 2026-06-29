@@ -1,10 +1,10 @@
 ---
-title: "Test your integration"
+title: "测试你的集成"
 description: "Testing strategies for Apps SDK apps."
 outline: deep
 ---
 
-# Test your integration
+# 测试你的集成
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Deploy  

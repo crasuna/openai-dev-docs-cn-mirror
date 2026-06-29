@@ -1,10 +1,10 @@
 ---
-title: "Migrate from Agent Builder"
+title: "从 Agent Builder 迁移"
 description: "Learn how to export an Agent Builder workflow and continue with ChatGPT Workspace Agents or the Agents SDK."
 outline: deep
 ---
 
-# Migrate from Agent Builder
+# 从 Agent Builder 迁移
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

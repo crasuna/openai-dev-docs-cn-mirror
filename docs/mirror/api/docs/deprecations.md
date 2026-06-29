@@ -1,10 +1,10 @@
 ---
-title: "Deprecations"
+title: "弃用"
 description: "Find information about OpenAI API deprecations and recommended replacements."
 outline: deep
 ---
 
-# Deprecations
+# 弃用
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

@@ -1,10 +1,10 @@
 ---
-title: "Images and vision"
+title: "图像与视觉"
 description: "Learn how to understand or generate images with the OpenAI API."
 outline: deep
 ---
 
-# Images and vision
+# 图像与视觉
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

@@ -1,10 +1,10 @@
 ---
-title: "Managed configuration"
+title: "托管配置"
 description: "Configure managed Codex requirements and defaults"
 outline: deep
 ---
 
-# Managed configuration
+# 托管配置
 
 **文档集**：Codex  
 **分组**：Codex — Enterprise  

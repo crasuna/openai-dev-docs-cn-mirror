@@ -1,10 +1,10 @@
 ---
-title: "Projects Users Roles — Delete"
+title: "项目用户角色 — 删除"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Projects Users Roles — Delete
+# 项目用户角色 — 删除
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

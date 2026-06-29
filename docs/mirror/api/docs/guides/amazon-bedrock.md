@@ -1,10 +1,10 @@
 ---
-title: "OpenAI models in Amazon Bedrock"
+title: "Amazon Bedrock 中的 OpenAI 模型"
 description: "Learn how Amazon Bedrock availability differs from the OpenAI API, including supported capabilities, AWS-managed controls, and pricing considerations."
 outline: deep
 ---
 
-# OpenAI models in Amazon Bedrock
+# Amazon Bedrock 中的 OpenAI 模型
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

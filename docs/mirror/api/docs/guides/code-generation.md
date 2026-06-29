@@ -1,10 +1,10 @@
 ---
-title: "Code generation"
+title: "代码生成"
 description: "Learn how to use OpenAI models and Codex to generate code."
 outline: deep
 ---
 
-# Code generation
+# 代码生成
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

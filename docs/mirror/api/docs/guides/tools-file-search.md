@@ -1,10 +1,10 @@
 ---
-title: "File search"
+title: "File Search"
 description: "Allow models to search your files for relevant information before generating a response."
 outline: deep
 ---
 
-# File search
+# File Search
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

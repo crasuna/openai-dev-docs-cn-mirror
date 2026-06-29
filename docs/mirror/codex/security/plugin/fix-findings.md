@@ -1,10 +1,10 @@
 ---
-title: "Fix and verify security findings"
+title: "修复并验证安全发现项"
 description: "Turn accepted findings into minimal patches with focused regression evidence."
 outline: deep
 ---
 
-# Fix and verify security findings
+# 修复并验证安全发现项
 
 **文档集**：Codex  
 **分组**：Codex — Security  

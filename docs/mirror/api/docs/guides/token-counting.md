@@ -1,10 +1,10 @@
 ---
-title: "Counting tokens"
+title: "统计 token"
 description: "Use the Responses API to count input tokens for text, images, files, tools, and more—without estimation or tiktoken."
 outline: deep
 ---
 
-# Counting tokens
+# 统计 token
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

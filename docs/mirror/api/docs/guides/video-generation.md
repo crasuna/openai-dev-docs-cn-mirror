@@ -1,10 +1,10 @@
 ---
-title: "Video generation with Sora"
+title: "使用 Sora 生成视频"
 description: "Learn how to generate, refine, and manage videos using the OpenAI Videos API."
 outline: deep
 ---
 
-# Video generation with Sora
+# 使用 Sora 生成视频
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

@@ -1,10 +1,10 @@
 ---
-title: "Projects Users Roles — List"
+title: "项目用户角色 — 列出"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Projects Users Roles — List
+# 项目用户角色 — 列出
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

@@ -1,10 +1,10 @@
 ---
-title: "Quickstart"
+title: "快速入门"
 description: "Build your first agent with the OpenAI Agents SDK, add tools and handoffs, and understand where to go next."
 outline: deep
 ---
 
-# Quickstart
+# 快速入门
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

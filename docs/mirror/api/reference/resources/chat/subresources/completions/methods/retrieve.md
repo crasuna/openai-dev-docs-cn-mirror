@@ -1,10 +1,10 @@
 ---
-title: "Chat Completions — Retrieve"
+title: "Chat Completions — 检索"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Chat Completions — Retrieve
+# Chat Completions — 检索
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

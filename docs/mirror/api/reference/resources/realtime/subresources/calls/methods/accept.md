@@ -1,10 +1,10 @@
 ---
-title: "Realtime Calls — Accept"
+title: "Realtime Calls — 接受"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Realtime Calls — Accept
+# Realtime Calls — 接受
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

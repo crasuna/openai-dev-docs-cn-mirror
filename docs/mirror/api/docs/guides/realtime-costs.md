@@ -1,10 +1,10 @@
 ---
-title: "Managing costs"
+title: "管理成本"
 description: "Learn how to monitor and optimize your costs when using the Realtime API."
 outline: deep
 ---
 
-# Managing costs
+# 管理成本
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

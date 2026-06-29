@@ -1,10 +1,10 @@
 ---
-title: "Export and track security findings"
+title: "导出并跟踪安全发现项"
 description: "Create portable findings artifacts or prepare approval-gated issues and draft advisories from a completed scan."
 outline: deep
 ---
 
-# Export and track security findings
+# 导出并跟踪安全发现项
 
 **文档集**：Codex  
 **分组**：Codex — Security  

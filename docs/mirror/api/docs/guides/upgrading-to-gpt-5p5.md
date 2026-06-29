@@ -1,10 +1,10 @@
 ---
-title: "Upgrading to GPT-5.5"
+title: "升级到 GPT-5.5"
 description: "Guidance for upgrading OpenAI API model strings and directly related prompts to GPT-5.5."
 outline: deep
 ---
 
-# Upgrading to GPT-5.5
+# 升级到 GPT-5.5
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

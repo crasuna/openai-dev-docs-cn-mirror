@@ -1,10 +1,10 @@
 ---
-title: "Citation Formatting"
+title: "引用格式化"
 description: "Learn practical citation formatting patterns that help models generate reliable citations."
 outline: deep
 ---
 
-# Citation Formatting
+# 引用格式化
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

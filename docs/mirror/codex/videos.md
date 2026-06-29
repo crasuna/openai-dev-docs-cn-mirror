@@ -1,10 +1,10 @@
 ---
-title: "Videos"
+title: "视频"
 description: "Learn how to use Codex with demos, walkthroughs, and talks"
 outline: deep
 ---
 
-# Videos
+# 视频
 
 **文档集**：Codex  
 **分组**：Codex — Videos  

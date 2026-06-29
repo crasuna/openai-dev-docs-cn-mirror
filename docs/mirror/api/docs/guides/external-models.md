@@ -1,10 +1,10 @@
 ---
-title: "Evaluate external models"
+title: "评估 external model"
 description: "Learn how to run evals on non-OpenAI models, using the OpenAI platform."
 outline: deep
 ---
 
-# Evaluate external models
+# 评估 external model
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

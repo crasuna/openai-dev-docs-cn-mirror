@@ -1,10 +1,10 @@
 ---
-title: "Products"
+title: "商品"
 description: "Provide a structured product feed so ChatGPT accurately indexes and displays your products with up-to-date price and availability."
 outline: deep
 ---
 
-# Products
+# 商品
 
 **文档集**：Commerce  
 **分组**：Agentic Commerce — Specs  

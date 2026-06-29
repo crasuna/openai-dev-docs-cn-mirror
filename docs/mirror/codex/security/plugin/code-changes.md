@@ -1,10 +1,10 @@
 ---
-title: "Review code changes for security"
+title: "审查代码变更的安全性"
 description: "Review pull requests and local changes for security regressions manually or in CI/CD."
 outline: deep
 ---
 
-# Review code changes for security
+# 审查代码变更的安全性
 
 **文档集**：Codex  
 **分组**：Codex — Security  

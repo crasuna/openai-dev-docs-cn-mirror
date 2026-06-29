@@ -1,10 +1,10 @@
 ---
-title: "Use Codex with Amazon Bedrock"
+title: "将 Codex 与 Amazon Bedrock 搭配使用"
 description: "Configure Codex to use OpenAI models available through Amazon Bedrock."
 outline: deep
 ---
 
-# Use Codex with Amazon Bedrock
+# 将 Codex 与 Amazon Bedrock 搭配使用
 
 **文档集**：Codex  
 **分组**：Codex — Amazon Bedrock  

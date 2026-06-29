@@ -1,10 +1,10 @@
 ---
-title: "Workflows"
+title: "工作流"
 description: "Development usage patterns with Codex"
 outline: deep
 ---
 
-# Workflows
+# 工作流
 
 **文档集**：Codex  
 **分组**：Codex — Workflows  

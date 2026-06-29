@@ -1,10 +1,10 @@
 ---
-title: "Codex Models"
+title: "Codex 模型"
 description: "Meet the AI models that power Codex"
 outline: deep
 ---
 
-# Codex Models
+# Codex 模型
 
 **文档集**：Codex  
 **分组**：Codex — Models  

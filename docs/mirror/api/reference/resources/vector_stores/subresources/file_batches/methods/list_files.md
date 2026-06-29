@@ -1,10 +1,10 @@
 ---
-title: "Vector Stores File Batches — List Files"
+title: "向量存储文件批次 — 列出文件"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Vector Stores File Batches — List Files
+# 向量存储文件批次 — 列出文件
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

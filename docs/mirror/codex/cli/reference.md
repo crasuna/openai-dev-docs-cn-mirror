@@ -1,10 +1,10 @@
 ---
-title: "Command line options"
+title: "命令行选项"
 description: "Options and flags for the Codex terminal client"
 outline: deep
 ---
 
-# Command line options
+# 命令行选项
 
 **文档集**：Codex  
 **分组**：Codex — Cli  

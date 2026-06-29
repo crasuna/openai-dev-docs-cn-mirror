@@ -1,10 +1,10 @@
 ---
-title: "Examples"
+title: "示例"
 description: "End-to-end Apps SDK examples."
 outline: deep
 ---
 
-# Examples
+# 示例
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Build  

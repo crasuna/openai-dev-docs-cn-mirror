@@ -1,10 +1,10 @@
 ---
-title: "UX principles"
+title: "UX 原则"
 description: "Principles for building great ChatGPT apps."
 outline: deep
 ---
 
-# UX principles
+# UX 原则
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Concepts  

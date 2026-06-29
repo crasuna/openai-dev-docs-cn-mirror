@@ -1,10 +1,10 @@
 ---
-title: "Define tools"
+title: "定义 Tools"
 description: "Plan and define tools for your assistant."
 outline: deep
 ---
 
-# Define tools
+# 定义 Tools
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Plan  

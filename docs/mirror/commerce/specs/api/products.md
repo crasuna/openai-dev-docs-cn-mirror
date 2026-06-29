@@ -1,10 +1,10 @@
 ---
-title: "Products"
+title: "商品"
 description: "Retrieve and upsert products for a feed."
 outline: deep
 ---
 
-# Products
+# 商品
 
 **文档集**：Commerce  
 **分组**：Agentic Commerce — Specs  

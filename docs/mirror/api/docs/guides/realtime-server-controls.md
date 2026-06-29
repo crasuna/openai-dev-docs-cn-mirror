@@ -1,10 +1,10 @@
 ---
-title: "Webhooks and server-side controls"
+title: "Webhooks 和服务端控制"
 description: "Learn how to use webhooks and server-side controls with the Realtime API."
 outline: deep
 ---
 
-# Webhooks and server-side controls
+# Webhooks 和服务端控制
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

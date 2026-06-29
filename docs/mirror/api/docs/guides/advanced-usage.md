@@ -1,10 +1,10 @@
 ---
-title: "Advanced usage"
+title: "高级用法"
 description: "Discover advanced usage techniques for OpenAI's API, including reproducible outputs, token management, and parameter settings."
 outline: deep
 ---
 
-# Advanced usage
+# 高级用法
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

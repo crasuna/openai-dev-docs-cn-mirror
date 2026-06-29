@@ -1,10 +1,10 @@
 ---
-title: "Authentication"
+title: "认证"
 description: "Authentication patterns for Apps SDK apps."
 outline: deep
 ---
 
-# Authentication
+# 认证
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Build  

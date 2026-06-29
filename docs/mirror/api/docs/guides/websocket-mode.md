@@ -1,10 +1,10 @@
 ---
-title: "WebSocket Mode"
+title: "WebSocket 模式"
 description: "Learn how to use Responses API WebSocket mode with response.create and previous_response_id."
 outline: deep
 ---
 
-# WebSocket Mode
+# WebSocket 模式
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

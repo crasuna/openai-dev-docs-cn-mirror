@@ -1,10 +1,10 @@
 ---
-title: "Vector Stores — Create"
+title: "向量存储 — 创建"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Vector Stores — Create
+# 向量存储 — 创建
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

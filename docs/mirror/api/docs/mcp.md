@@ -1,10 +1,10 @@
 ---
-title: "Building MCP servers for ChatGPT Apps and API integrations"
+title: "为 ChatGPT Apps 和 API 集成构建 MCP server"
 description: "Learn how to build MCP servers for use with ChatGPT Apps, deep research, or API integrations."
 outline: deep
 ---
 
-# Building MCP servers for ChatGPT Apps and API integrations
+# 为 ChatGPT Apps 和 API 集成构建 MCP server
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

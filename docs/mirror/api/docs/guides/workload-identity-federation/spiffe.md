@@ -1,10 +1,10 @@
 ---
-title: "Configuring workload identity federation for SPIFFE"
+title: "为 SPIFFE 配置工作负载身份联合"
 description: "Configure SPIFFE JWT-SVIDs as workload identity federation subject tokens."
 outline: deep
 ---
 
-# Configuring workload identity federation for SPIFFE
+# 为 SPIFFE 配置工作负载身份联合
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

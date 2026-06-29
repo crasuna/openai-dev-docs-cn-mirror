@@ -1,10 +1,10 @@
 ---
-title: "Access tokens"
+title: "访问令牌"
 description: "Create and manage access tokens for Codex programmatic workflows"
 outline: deep
 ---
 
-# Access tokens
+# 访问令牌
 
 **文档集**：Codex  
 **分组**：Codex — Enterprise  

@@ -1,10 +1,10 @@
 ---
-title: "Governance"
+title: "治理"
 description: "Governance guidance for managing Codex in your organization"
 outline: deep
 ---
 
-# Governance
+# 治理
 
 **文档集**：Codex  
 **分组**：Codex — Enterprise  

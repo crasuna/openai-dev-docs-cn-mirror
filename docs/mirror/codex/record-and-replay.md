@@ -1,10 +1,10 @@
 ---
-title: "Record & Replay"
+title: "录制与回放"
 description: "Show Codex a workflow once and turn it into a reusable skill"
 outline: deep
 ---
 
-# Record & Replay
+# 录制与回放
 
 **文档集**：Codex  
 **分组**：Codex — Record And Replay  

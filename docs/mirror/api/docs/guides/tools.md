@@ -1,10 +1,10 @@
 ---
-title: "Using tools"
+title: "使用工具"
 description: "Use powerful tools like remote MCP servers, or built-in tools like web search and file search to extend the model's capabilities."
 outline: deep
 ---
 
-# Using tools
+# 使用工具
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

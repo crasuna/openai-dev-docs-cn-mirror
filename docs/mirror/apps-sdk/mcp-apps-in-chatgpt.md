@@ -1,10 +1,10 @@
 ---
-title: "MCP Apps compatibility in ChatGPT"
+title: "ChatGPT 中的 MCP Apps 兼容性"
 description: "Build portable MCP Apps UIs that run in ChatGPT"
 outline: deep
 ---
 
-# MCP Apps compatibility in ChatGPT
+# ChatGPT 中的 MCP Apps 兼容性
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Mcp Apps In Chatgpt  

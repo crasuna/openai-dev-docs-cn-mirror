@@ -1,10 +1,10 @@
 ---
-title: "Migrate from prompt objects"
+title: "从 prompt objects 迁移"
 description: "Learn how to migrate from reusable prompt objects to versioned prompts in your application code."
 outline: deep
 ---
 
-# Migrate from prompt objects
+# 从 prompt objects 迁移
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

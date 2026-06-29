@@ -1,10 +1,10 @@
 ---
-title: "Codex Pricing"
+title: "Codex 定价"
 description: "Codex is included in your ChatGPT Free, Go, Plus, Pro, Business, Edu, or Enterprise plan"
 outline: deep
 ---
 
-# Codex Pricing
+# Codex 定价
 
 **文档集**：Codex  
 **分组**：Codex — Pricing  

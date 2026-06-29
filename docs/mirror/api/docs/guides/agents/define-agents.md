@@ -1,10 +1,10 @@
 ---
-title: "Agent definitions"
+title: "Agent 定义"
 description: "Learn how to define an agent's instructions, model, tools, and local context in the OpenAI Agents SDK."
 outline: deep
 ---
 
-# Agent definitions
+# Agent 定义
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

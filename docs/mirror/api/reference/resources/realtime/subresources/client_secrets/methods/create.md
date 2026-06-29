@@ -1,10 +1,10 @@
 ---
-title: "Realtime Client Secrets — Create"
+title: "Realtime 客户端密钥 — 创建"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Realtime Client Secrets — Create
+# Realtime 客户端密钥 — 创建
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

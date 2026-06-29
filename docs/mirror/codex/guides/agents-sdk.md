@@ -1,10 +1,10 @@
 ---
-title: "Use Codex with the Agents SDK"
+title: "将 Codex 与 Agents SDK 结合使用"
 description: "Invoke Codex as an MCP server to build multi-agent development workflows"
 outline: deep
 ---
 
-# Use Codex with the Agents SDK
+# 将 Codex 与 Agents SDK 结合使用
 
 **文档集**：Codex  
 **分组**：Codex — Guides  

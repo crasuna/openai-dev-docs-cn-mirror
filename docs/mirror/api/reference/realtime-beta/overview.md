@@ -1,10 +1,10 @@
 ---
-title: "Realtime Beta Overview"
+title: "Realtime Beta 概览"
 description: "Realtime Beta Overview"
 outline: deep
 ---
 
-# Realtime Beta Overview
+# Realtime Beta 概览
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

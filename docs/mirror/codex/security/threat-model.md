@@ -1,10 +1,10 @@
 ---
-title: "Improving the threat model"
+title: "改进 threat model"
 description: "Refine the Codex Security context that ranks findings and helps you review faster"
 outline: deep
 ---
 
-# Improving the threat model
+# 改进 threat model
 
 **文档集**：Codex  
 **分组**：Codex — Security  

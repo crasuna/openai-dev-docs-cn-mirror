@@ -1,10 +1,10 @@
 ---
-title: "Deep research"
+title: "深度研究"
 description: "Use deep research models for complex analysis and research tasks."
 outline: deep
 ---
 
-# Deep research
+# 深度研究
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

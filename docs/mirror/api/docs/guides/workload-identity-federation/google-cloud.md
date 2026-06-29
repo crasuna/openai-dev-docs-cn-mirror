@@ -1,10 +1,10 @@
 ---
-title: "Configuring workload identity federation for Google Cloud"
+title: "为 Google Cloud 配置 workload identity federation"
 description: "Configure Google workload identity or GKE as a workload identity federation token provider."
 outline: deep
 ---
 
-# Configuring workload identity federation for Google Cloud
+# 为 Google Cloud 配置 workload identity federation
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

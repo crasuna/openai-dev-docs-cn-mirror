@@ -1,10 +1,10 @@
 ---
-title: "Restaurant reservation conversion spec"
+title: "餐厅预订转化规格"
 description: "Contract for integrating a restaurant reservation app into ChatGPT's Reserve flow."
 outline: deep
 ---
 
-# Restaurant reservation conversion spec
+# 餐厅预订转化规格
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Guides  

@@ -1,10 +1,10 @@
 ---
-title: "Prompt guidance"
+title: "GPT-5.5 提示词指南"
 description: "Prompt guidance"
 outline: deep
 ---
 
-# Prompt guidance
+# GPT-5.5 提示词指南
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

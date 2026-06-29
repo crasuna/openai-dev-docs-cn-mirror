@@ -1,10 +1,10 @@
 ---
-title: "Structured model outputs"
+title: "结构化模型输出"
 description: "Understand how to ensure model responses follow specific JSON Schema you define."
 outline: deep
 ---
 
-# Structured model outputs
+# 结构化模型输出
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

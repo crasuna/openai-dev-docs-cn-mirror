@@ -1,10 +1,10 @@
 ---
-title: "Remote connections"
+title: "远程连接"
 description: "Connect your phone or another device to a Codex host, or use projects on remote machines over SSH"
 outline: deep
 ---
 
-# Remote connections
+# 远程连接
 
 **文档集**：Codex  
 **分组**：Codex — Remote Connections  

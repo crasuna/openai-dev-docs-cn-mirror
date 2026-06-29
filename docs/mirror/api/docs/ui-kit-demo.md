@@ -1,10 +1,10 @@
 ---
-title: "UI Kit Demo"
+title: "UI Kit 演示"
 description: "Component demos for the platform docs UI kit."
 outline: deep
 ---
 
-# UI Kit Demo
+# UI Kit 演示
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

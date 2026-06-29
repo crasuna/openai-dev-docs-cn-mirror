@@ -1,10 +1,10 @@
 ---
-title: "File inputs"
+title: "文件输入"
 description: "Learn how to use files as file inputs in the OpenAI API."
 outline: deep
 ---
 
-# File inputs
+# 文件输入
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

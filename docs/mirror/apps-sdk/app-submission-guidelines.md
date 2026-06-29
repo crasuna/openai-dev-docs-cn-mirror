@@ -1,10 +1,10 @@
 ---
-title: "App submission guidelines"
+title: "应用提交指南"
 description: "Guidelines for submitting ChatGPT apps for publishing."
 outline: deep
 ---
 
-# App submission guidelines
+# 应用提交指南
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — App Submission Guidelines  

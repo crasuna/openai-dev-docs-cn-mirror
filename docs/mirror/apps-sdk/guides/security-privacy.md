@@ -1,10 +1,10 @@
 ---
-title: "Security & Privacy"
+title: "安全与隐私"
 description: "Security and privacy considerations for Apps SDK."
 outline: deep
 ---
 
-# Security & Privacy
+# 安全与隐私
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Guides  

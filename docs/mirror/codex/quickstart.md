@@ -1,10 +1,10 @@
 ---
-title: "Quickstart"
+title: "快速开始"
 description: "Start using Codex in your IDE, CLI, or the cloud"
 outline: deep
 ---
 
-# Quickstart
+# 快速开始
 
 **文档集**：Codex  
 **分组**：Codex — Quickstart  

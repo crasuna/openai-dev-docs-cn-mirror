@@ -1,10 +1,10 @@
 ---
-title: "Build your MCP server"
+title: "构建你的 MCP server"
 description: "Wire tools, templates, and the widget runtime that powers ChatGPT Apps."
 outline: deep
 ---
 
-# Build your MCP server
+# 构建你的 MCP server
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Build  

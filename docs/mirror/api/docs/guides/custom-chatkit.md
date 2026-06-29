@@ -1,10 +1,10 @@
 ---
-title: "Advanced integrations with ChatKit"
+title: "ChatKit 高级集成"
 description: "Use your own server with ChatKit to integrate agent workflows into your product with more customization."
 outline: deep
 ---
 
-# Advanced integrations with ChatKit
+# ChatKit 高级集成
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

@@ -1,10 +1,10 @@
 ---
-title: "UI guidelines"
+title: "UI 指南"
 description: "Guidelines for designing beautiful ChatGPT apps."
 outline: deep
 ---
 
-# UI guidelines
+# UI 指南
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Concepts  

@@ -1,10 +1,10 @@
 ---
-title: "Submit and maintain your app"
+title: "提交并维护你的应用"
 description: "Learn how to submit your app to the ChatGPT Apps Directory and Codex Plugin Directory."
 outline: deep
 ---
 
-# Submit and maintain your app
+# 提交并维护你的应用
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Deploy  

@@ -1,10 +1,10 @@
 ---
-title: "Responses Input Tokens"
+title: "Responses 输入 tokens"
 description: "OpenAI API endpoint reference."
 outline: deep
 ---
 
-# Responses Input Tokens
+# Responses 输入 tokens
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

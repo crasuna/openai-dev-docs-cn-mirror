@@ -1,10 +1,10 @@
 ---
-title: "Sample Configuration"
+title: "配置示例"
 description: "A complete example config.toml you can copy and adapt"
 outline: deep
 ---
 
-# Sample Configuration
+# 配置示例
 
 **文档集**：Codex  
 **分组**：Codex — Config Sample  

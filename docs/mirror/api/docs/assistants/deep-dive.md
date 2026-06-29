@@ -1,10 +1,10 @@
 ---
-title: "Assistants API deep dive"
+title: "Assistants API 深入指南"
 description: "A detailed guide to creating and managing assistants with the Assistants API on the OpenAI platform."
 outline: deep
 ---
 
-# Assistants API deep dive
+# Assistants API 深入指南
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

@@ -1,10 +1,10 @@
 ---
-title: "Voice agents"
+title: "语音 agents"
 description: "Learn how to build voice agents with the OpenAI Agents SDK, choose the right architecture, and connect voice workflows to the rest of the agent stack."
 outline: deep
 ---
 
-# Voice agents
+# 语音 agents
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

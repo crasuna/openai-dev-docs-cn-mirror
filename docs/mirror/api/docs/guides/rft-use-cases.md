@@ -1,10 +1,10 @@
 ---
-title: "Reinforcement fine-tuning use cases"
+title: "Reinforcement fine-tuning 使用场景"
 description: "Explore best practices and practical use cases for reinforcement fine-tuning (RFT) with OpenAI models."
 outline: deep
 ---
 
-# Reinforcement fine-tuning use cases
+# Reinforcement fine-tuning 使用场景
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

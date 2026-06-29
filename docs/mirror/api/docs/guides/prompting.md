@@ -1,10 +1,10 @@
 ---
-title: "Prompting"
+title: "提示词"
 description: "Learn how to create, optimize, and maintain prompts with OpenAI models."
 outline: deep
 ---
 
-# Prompting
+# 提示词
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

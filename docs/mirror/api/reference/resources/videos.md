@@ -1,10 +1,10 @@
 ---
-title: "Videos"
+title: "视频"
 description: "OpenAI API endpoint reference."
 outline: deep
 ---
 
-# Videos
+# 视频
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

@@ -25,7 +25,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Overview",
+            "text": "概览",
             "link": "/mirror/ads/api-overview"
           }
         ]
@@ -145,11 +145,11 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Administration Overview",
+            "text": "Administration 概览",
             "link": "/mirror/api/reference/administration/overview"
           },
           {
-            "text": "API Overview",
+            "text": "API 概览",
             "link": "/mirror/api/reference/overview"
           },
           {
@@ -321,27 +321,27 @@
             "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs"
           },
           {
-            "text": "Beta Threads Runs — Cancel",
+            "text": "Beta Threads Runs — 取消",
             "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/cancel"
           },
           {
-            "text": "Beta Threads Runs — Create",
+            "text": "Beta Threads Runs — 创建",
             "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/create"
           },
           {
-            "text": "Beta Threads Runs — List",
+            "text": "Beta Threads Runs — 列出",
             "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/list"
           },
           {
-            "text": "Beta Threads Runs — Retrieve",
+            "text": "Beta Threads Runs — 检索",
             "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/retrieve"
           },
           {
-            "text": "Beta Threads Runs — Submit Tool Outputs",
+            "text": "Beta Threads Runs — 提交工具输出",
             "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/submit_tool_outputs"
           },
           {
-            "text": "Beta Threads Runs — Update",
+            "text": "Beta Threads Runs — 更新",
             "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/methods/update"
           },
           {
@@ -349,11 +349,11 @@
             "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps"
           },
           {
-            "text": "Beta Threads Runs Steps — List",
+            "text": "Beta Threads Runs Steps — 列出",
             "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps/methods/list"
           },
           {
-            "text": "Beta Threads Runs Steps — Retrieve",
+            "text": "Beta Threads Runs Steps — 检索",
             "link": "/mirror/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps/methods/retrieve"
           },
           {
@@ -361,11 +361,11 @@
             "link": "/mirror/api/reference/resources/chat"
           },
           {
-            "text": "Chat Completions — Retrieve",
+            "text": "Chat Completions — 检索",
             "link": "/mirror/api/reference/resources/chat/subresources/completions/methods/retrieve"
           },
           {
-            "text": "Chat Completions Overview",
+            "text": "Chat Completions 概览",
             "link": "/mirror/api/reference/chat-completions/overview"
           },
           {
@@ -373,7 +373,7 @@
             "link": "/mirror/api/reference/resources/completions"
           },
           {
-            "text": "Completions — Create",
+            "text": "Completions — 创建",
             "link": "/mirror/api/reference/resources/completions/methods/create"
           },
           {
@@ -381,19 +381,19 @@
             "link": "/mirror/api/reference/resources/containers"
           },
           {
-            "text": "Containers — Create",
+            "text": "Containers — 创建",
             "link": "/mirror/api/reference/resources/containers/methods/create"
           },
           {
-            "text": "Containers — Delete",
+            "text": "Containers — 删除",
             "link": "/mirror/api/reference/resources/containers/methods/delete"
           },
           {
-            "text": "Containers — List",
+            "text": "Containers — 列出",
             "link": "/mirror/api/reference/resources/containers/methods/list"
           },
           {
-            "text": "Containers — Retrieve",
+            "text": "Containers — 检索",
             "link": "/mirror/api/reference/resources/containers/methods/retrieve"
           },
           {
@@ -401,19 +401,19 @@
             "link": "/mirror/api/reference/resources/containers/subresources/files"
           },
           {
-            "text": "Containers Files — Create",
+            "text": "Containers Files — 创建",
             "link": "/mirror/api/reference/resources/containers/subresources/files/methods/create"
           },
           {
-            "text": "Containers Files — Delete",
+            "text": "Containers Files — 删除",
             "link": "/mirror/api/reference/resources/containers/subresources/files/methods/delete"
           },
           {
-            "text": "Containers Files — List",
+            "text": "Containers Files — 列出",
             "link": "/mirror/api/reference/resources/containers/subresources/files/methods/list"
           },
           {
-            "text": "Containers Files — Retrieve",
+            "text": "Containers Files — 检索",
             "link": "/mirror/api/reference/resources/containers/subresources/files/methods/retrieve"
           },
           {
@@ -817,35 +817,35 @@
             "link": "/mirror/api/reference/resources/projects/subresources/groups/subresources/roles/methods/list"
           },
           {
-            "text": "Projects Roles — Create",
+            "text": "项目角色 — 创建",
             "link": "/mirror/api/reference/resources/projects/subresources/roles/methods/create"
           },
           {
-            "text": "Projects Roles — Delete",
+            "text": "项目角色 — 删除",
             "link": "/mirror/api/reference/resources/projects/subresources/roles/methods/delete"
           },
           {
-            "text": "Projects Roles — List",
+            "text": "项目角色 — 列出",
             "link": "/mirror/api/reference/resources/projects/subresources/roles/methods/list"
           },
           {
-            "text": "Projects Roles — Update",
+            "text": "项目角色 — 更新",
             "link": "/mirror/api/reference/resources/projects/subresources/roles/methods/update"
           },
           {
-            "text": "Projects Users",
+            "text": "项目用户",
             "link": "/mirror/api/reference/resources/projects/subresources/users"
           },
           {
-            "text": "Projects Users Roles — Create",
+            "text": "项目用户角色 — 创建",
             "link": "/mirror/api/reference/resources/projects/subresources/users/subresources/roles/methods/create"
           },
           {
-            "text": "Projects Users Roles — Delete",
+            "text": "项目用户角色 — 删除",
             "link": "/mirror/api/reference/resources/projects/subresources/users/subresources/roles/methods/delete"
           },
           {
-            "text": "Projects Users Roles — List",
+            "text": "项目用户角色 — 列出",
             "link": "/mirror/api/reference/resources/projects/subresources/users/subresources/roles/methods/list"
           },
           {
@@ -853,7 +853,7 @@
             "link": "/mirror/api/reference/resources/realtime"
           },
           {
-            "text": "Realtime Beta Overview",
+            "text": "Realtime Beta 概览",
             "link": "/mirror/api/reference/realtime-beta/overview"
           },
           {
@@ -861,31 +861,31 @@
             "link": "/mirror/api/reference/resources/realtime/subresources/calls"
           },
           {
-            "text": "Realtime Calls — Accept",
+            "text": "Realtime Calls — 接受",
             "link": "/mirror/api/reference/resources/realtime/subresources/calls/methods/accept"
           },
           {
-            "text": "Realtime Calls — Create",
+            "text": "Realtime Calls — 创建",
             "link": "/mirror/api/reference/resources/realtime/subresources/calls/methods/create"
           },
           {
-            "text": "Realtime Calls — Hangup",
+            "text": "Realtime Calls — 挂断",
             "link": "/mirror/api/reference/resources/realtime/subresources/calls/methods/hangup"
           },
           {
-            "text": "Realtime Calls — Refer",
+            "text": "Realtime Calls — 转接",
             "link": "/mirror/api/reference/resources/realtime/subresources/calls/methods/refer"
           },
           {
-            "text": "Realtime Calls — Reject",
+            "text": "Realtime Calls — 拒绝",
             "link": "/mirror/api/reference/resources/realtime/subresources/calls/methods/reject"
           },
           {
-            "text": "Realtime Client Secrets",
+            "text": "Realtime 客户端密钥",
             "link": "/mirror/api/reference/resources/realtime/subresources/client_secrets"
           },
           {
-            "text": "Realtime Client Secrets — Create",
+            "text": "Realtime 客户端密钥 — 创建",
             "link": "/mirror/api/reference/resources/realtime/subresources/client_secrets/methods/create"
           },
           {
@@ -893,35 +893,35 @@
             "link": "/mirror/api/reference/resources/responses"
           },
           {
-            "text": "Responses — Cancel",
+            "text": "Responses — 取消",
             "link": "/mirror/api/reference/resources/responses/methods/cancel"
           },
           {
-            "text": "Responses — Compact",
+            "text": "Responses — 压缩",
             "link": "/mirror/api/reference/resources/responses/methods/compact"
           },
           {
-            "text": "Responses — Create",
+            "text": "Responses — 创建",
             "link": "/mirror/api/reference/resources/responses/methods/create"
           },
           {
-            "text": "Responses — Delete",
+            "text": "Responses — 删除",
             "link": "/mirror/api/reference/resources/responses/methods/delete"
           },
           {
-            "text": "Responses — Retrieve",
+            "text": "Responses — 检索",
             "link": "/mirror/api/reference/resources/responses/methods/retrieve"
           },
           {
-            "text": "Responses Input Items — List",
+            "text": "Responses 输入项 — 列出",
             "link": "/mirror/api/reference/resources/responses/subresources/input_items/methods/list"
           },
           {
-            "text": "Responses Input Tokens",
+            "text": "Responses 输入 tokens",
             "link": "/mirror/api/reference/resources/responses/subresources/input_tokens"
           },
           {
-            "text": "Responses Overview",
+            "text": "Responses 概览",
             "link": "/mirror/api/reference/responses/overview"
           },
           {
@@ -933,111 +933,111 @@
             "link": "/mirror/api/reference/resources/uploads"
           },
           {
-            "text": "Uploads — Cancel",
+            "text": "Uploads — 取消",
             "link": "/mirror/api/reference/resources/uploads/methods/cancel"
           },
           {
-            "text": "Uploads — Create",
+            "text": "Uploads — 创建",
             "link": "/mirror/api/reference/resources/uploads/methods/create"
           },
           {
-            "text": "Uploads Parts — Create",
+            "text": "Uploads Parts — 创建",
             "link": "/mirror/api/reference/resources/uploads/subresources/parts/methods/create"
           },
           {
-            "text": "Vector Stores",
+            "text": "向量存储",
             "link": "/mirror/api/reference/resources/vector_stores"
           },
           {
-            "text": "Vector Stores — Create",
+            "text": "向量存储 — 创建",
             "link": "/mirror/api/reference/resources/vector_stores/methods/create"
           },
           {
-            "text": "Vector Stores — Delete",
+            "text": "向量存储 — 删除",
             "link": "/mirror/api/reference/resources/vector_stores/methods/delete"
           },
           {
-            "text": "Vector Stores — List",
+            "text": "向量存储 — 列出",
             "link": "/mirror/api/reference/resources/vector_stores/methods/list"
           },
           {
-            "text": "Vector Stores — Retrieve",
+            "text": "向量存储 — 检索",
             "link": "/mirror/api/reference/resources/vector_stores/methods/retrieve"
           },
           {
-            "text": "Vector Stores — Search",
+            "text": "向量存储 — 搜索",
             "link": "/mirror/api/reference/resources/vector_stores/methods/search"
           },
           {
-            "text": "Vector Stores — Update",
+            "text": "向量存储 — 更新",
             "link": "/mirror/api/reference/resources/vector_stores/methods/update"
           },
           {
-            "text": "Vector Stores File Batches",
+            "text": "向量存储文件批次",
             "link": "/mirror/api/reference/resources/vector_stores/subresources/file_batches"
           },
           {
-            "text": "Vector Stores File Batches — Cancel",
+            "text": "向量存储文件批次 — 取消",
             "link": "/mirror/api/reference/resources/vector_stores/subresources/file_batches/methods/cancel"
           },
           {
-            "text": "Vector Stores File Batches — Create",
+            "text": "向量存储文件批次 — 创建",
             "link": "/mirror/api/reference/resources/vector_stores/subresources/file_batches/methods/create"
           },
           {
-            "text": "Vector Stores File Batches — List Files",
+            "text": "向量存储文件批次 — 列出文件",
             "link": "/mirror/api/reference/resources/vector_stores/subresources/file_batches/methods/list_files"
           },
           {
-            "text": "Vector Stores File Batches — Retrieve",
+            "text": "向量存储文件批次 — 检索",
             "link": "/mirror/api/reference/resources/vector_stores/subresources/file_batches/methods/retrieve"
           },
           {
-            "text": "Vector Stores Files",
+            "text": "向量存储文件",
             "link": "/mirror/api/reference/resources/vector_stores/subresources/files"
           },
           {
-            "text": "Vector Stores Files — Content",
+            "text": "向量存储文件 — 内容",
             "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/content"
           },
           {
-            "text": "Vector Stores Files — Create",
+            "text": "向量存储文件 — 创建",
             "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/create"
           },
           {
-            "text": "Vector Stores Files — Delete",
+            "text": "向量存储文件 — 删除",
             "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/delete"
           },
           {
-            "text": "Vector Stores Files — List",
+            "text": "向量存储文件 — 列出",
             "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/list"
           },
           {
-            "text": "Vector Stores Files — Retrieve",
+            "text": "向量存储文件 — 检索",
             "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/retrieve"
           },
           {
-            "text": "Vector Stores Files — Update",
+            "text": "向量存储文件 — 更新",
             "link": "/mirror/api/reference/resources/vector_stores/subresources/files/methods/update"
           },
           {
-            "text": "Videos",
+            "text": "视频",
             "link": "/mirror/api/reference/resources/videos"
           },
           {
-            "text": "Videos — Create",
+            "text": "视频 — 创建",
             "link": "/mirror/api/reference/resources/videos/methods/create"
           },
           {
-            "text": "Videos — Delete",
+            "text": "视频 — 删除",
             "link": "/mirror/api/reference/resources/videos/methods/delete"
           },
           {
-            "text": "Videos — List",
+            "text": "视频 — 列出",
             "link": "/mirror/api/reference/resources/videos/methods/list"
           },
           {
-            "text": "Videos — Retrieve",
+            "text": "视频 — 检索",
             "link": "/mirror/api/reference/resources/videos/methods/retrieve"
           },
           {
@@ -1045,7 +1045,7 @@
             "link": "/mirror/api/reference/resources/webhooks"
           },
           {
-            "text": "Workload identity token exchange",
+            "text": "工作负载身份 token 交换",
             "link": "/mirror/api/reference/workload-identity-federation"
           }
         ]
@@ -1061,7 +1061,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "App submission guidelines",
+            "text": "应用提交指南",
             "link": "/mirror/apps-sdk/app-submission-guidelines"
           }
         ]
@@ -1071,27 +1071,27 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Authentication",
+            "text": "认证",
             "link": "/mirror/apps-sdk/build/auth"
           },
           {
-            "text": "Build your ChatGPT UI",
+            "text": "构建你的 ChatGPT UI",
             "link": "/mirror/apps-sdk/build/chatgpt-ui"
           },
           {
-            "text": "Build your MCP server",
+            "text": "构建你的 MCP server",
             "link": "/mirror/apps-sdk/build/mcp-server"
           },
           {
-            "text": "Examples",
+            "text": "示例",
             "link": "/mirror/apps-sdk/build/examples"
           },
           {
-            "text": "Managing State",
+            "text": "管理状态",
             "link": "/mirror/apps-sdk/build/state-management"
           },
           {
-            "text": "Monetization",
+            "text": "商业化",
             "link": "/mirror/apps-sdk/build/monetization"
           }
         ]
@@ -1105,15 +1105,15 @@
             "link": "/mirror/apps-sdk/concepts/mcp-server"
           },
           {
-            "text": "UI guidelines",
+            "text": "UI 指南",
             "link": "/mirror/apps-sdk/concepts/ui-guidelines"
           },
           {
-            "text": "User Interaction",
+            "text": "用户交互",
             "link": "/mirror/apps-sdk/concepts/user-interaction"
           },
           {
-            "text": "UX principles",
+            "text": "UX 原则",
             "link": "/mirror/apps-sdk/concepts/ux-principles"
           }
         ]
@@ -1123,23 +1123,23 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Connect from ChatGPT",
+            "text": "从 ChatGPT 连接",
             "link": "/mirror/apps-sdk/deploy/connect-chatgpt"
           },
           {
-            "text": "Deploy your app",
+            "text": "部署你的应用",
             "link": "/mirror/apps-sdk/deploy"
           },
           {
-            "text": "Submit and maintain your app",
+            "text": "提交并维护你的应用",
             "link": "/mirror/apps-sdk/deploy/submission"
           },
           {
-            "text": "Test your integration",
+            "text": "测试你的集成",
             "link": "/mirror/apps-sdk/deploy/testing"
           },
           {
-            "text": "Troubleshooting",
+            "text": "故障排查",
             "link": "/mirror/apps-sdk/deploy/troubleshooting"
           }
         ]
@@ -1149,19 +1149,19 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Optimize Metadata",
+            "text": "优化 Metadata",
             "link": "/mirror/apps-sdk/guides/optimize-metadata"
           },
           {
-            "text": "Product checkout conversion spec",
+            "text": "产品结账转化规格",
             "link": "/mirror/apps-sdk/guides/product-checkout-conversion-spec"
           },
           {
-            "text": "Restaurant reservation conversion spec",
+            "text": "餐厅预订转化规格",
             "link": "/mirror/apps-sdk/guides/restaurant-reservation-conversion-spec"
           },
           {
-            "text": "Security & Privacy",
+            "text": "安全与隐私",
             "link": "/mirror/apps-sdk/guides/security-privacy"
           }
         ]
@@ -1171,7 +1171,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "MCP Apps compatibility in ChatGPT",
+            "text": "ChatGPT 中的 MCP Apps 兼容性",
             "link": "/mirror/apps-sdk/mcp-apps-in-chatgpt"
           }
         ]
@@ -1181,15 +1181,15 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Define tools",
+            "text": "定义 Tools",
             "link": "/mirror/apps-sdk/plan/tools"
           },
           {
-            "text": "Design components",
+            "text": "设计 Components",
             "link": "/mirror/apps-sdk/plan/components"
           },
           {
-            "text": "Research use cases",
+            "text": "研究 Use Cases",
             "link": "/mirror/apps-sdk/plan/use-case"
           }
         ]
@@ -1209,7 +1209,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Apps SDK reference (Markdown)",
+            "text": "Reference",
             "link": "/mirror/apps-sdk/reference"
           }
         ]
@@ -1225,7 +1225,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Agent approvals & security",
+            "text": "Agent approvals 与安全",
             "link": "/mirror/codex/agent-approvals-security"
           }
         ]
@@ -1235,7 +1235,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Use Codex with Amazon Bedrock",
+            "text": "将 Codex 与 Amazon Bedrock 搭配使用",
             "link": "/mirror/codex/amazon-bedrock"
           }
         ]
@@ -1285,7 +1285,7 @@
             "link": "/mirror/codex/app/review"
           },
           {
-            "text": "Troubleshooting",
+            "text": "故障排除",
             "link": "/mirror/codex/app/troubleshooting"
           },
           {
@@ -1341,11 +1341,11 @@
             "link": "/mirror/codex/cli/features"
           },
           {
-            "text": "Command line options",
+            "text": "命令行选项",
             "link": "/mirror/codex/cli/reference"
           },
           {
-            "text": "Slash commands in Codex CLI",
+            "text": "Codex CLI 中的 Slash commands",
             "link": "/mirror/codex/cli/slash-commands"
           }
         ]
@@ -1355,7 +1355,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Agent internet access",
+            "text": "Agent 互联网访问",
             "link": "/mirror/codex/cloud/internet-access"
           },
           {
@@ -1373,7 +1373,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Codex for Open Source",
+            "text": "面向开源的 Codex",
             "link": "/mirror/codex/community/codex-for-oss"
           }
         ]
@@ -1387,11 +1387,11 @@
             "link": "/mirror/codex/concepts/sandboxing/auto-review"
           },
           {
-            "text": "Customization",
+            "text": "自定义",
             "link": "/mirror/codex/concepts/customization"
           },
           {
-            "text": "Cyber Safety",
+            "text": "网络安全",
             "link": "/mirror/codex/concepts/cyber-safety"
           },
           {
@@ -1409,7 +1409,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Advanced Configuration",
+            "text": "高级配置",
             "link": "/mirror/codex/config-advanced"
           }
         ]
@@ -1419,7 +1419,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Config basics",
+            "text": "配置基础",
             "link": "/mirror/codex/config-basic"
           }
         ]
@@ -1429,7 +1429,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Configuration Reference",
+            "text": "配置参考",
             "link": "/mirror/codex/config-reference"
           }
         ]
@@ -1439,7 +1439,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Sample Configuration",
+            "text": "配置示例",
             "link": "/mirror/codex/config-sample"
           }
         ]
@@ -1449,7 +1449,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Custom Prompts",
+            "text": "自定义提示词",
             "link": "/mirror/codex/custom-prompts"
           }
         ]
@@ -1459,19 +1459,19 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Access tokens",
+            "text": "访问令牌",
             "link": "/mirror/codex/enterprise/access-tokens"
           },
           {
-            "text": "Admin Setup",
+            "text": "管理员设置",
             "link": "/mirror/codex/enterprise/admin-setup"
           },
           {
-            "text": "Governance",
+            "text": "治理",
             "link": "/mirror/codex/enterprise/governance"
           },
           {
-            "text": "Managed configuration",
+            "text": "托管配置",
             "link": "/mirror/codex/enterprise/managed-configuration"
           }
         ]
@@ -1481,7 +1481,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Environment variables",
+            "text": "环境变量",
             "link": "/mirror/codex/environment-variables"
           }
         ]
@@ -1491,7 +1491,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Feature Maturity",
+            "text": "功能成熟度",
             "link": "/mirror/codex/feature-maturity"
           }
         ]
@@ -1511,7 +1511,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Glossary",
+            "text": "术语表",
             "link": "/mirror/codex/glossary"
           }
         ]
@@ -1521,15 +1521,15 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Building an AI-Native Engineering Team",
+            "text": "构建 AI-Native 工程团队",
             "link": "/mirror/codex/guides/build-ai-native-engineering-team"
           },
           {
-            "text": "Custom instructions with AGENTS.md",
+            "text": "使用 AGENTS.md 编写自定义指令",
             "link": "/mirror/codex/guides/agents-md"
           },
           {
-            "text": "Use Codex with the Agents SDK",
+            "text": "将 Codex 与 Agents SDK 结合使用",
             "link": "/mirror/codex/guides/agents-sdk"
           }
         ]
@@ -1553,19 +1553,19 @@
             "link": "/mirror/codex/ide"
           },
           {
-            "text": "Codex IDE extension commands",
+            "text": "Codex IDE extension 命令",
             "link": "/mirror/codex/ide/commands"
           },
           {
-            "text": "Codex IDE extension features",
+            "text": "Codex IDE extension 功能",
             "link": "/mirror/codex/ide/features"
           },
           {
-            "text": "Codex IDE extension settings",
+            "text": "Codex IDE extension 设置",
             "link": "/mirror/codex/ide/settings"
           },
           {
-            "text": "Codex IDE extension slash commands",
+            "text": "Codex IDE extension 斜杠命令",
             "link": "/mirror/codex/ide/slash-commands"
           }
         ]
@@ -1575,7 +1575,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Import to Codex",
+            "text": "导入到 Codex",
             "link": "/mirror/codex/import"
           }
         ]
@@ -1585,15 +1585,15 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Codex code review in GitHub",
+            "text": "GitHub 中的 Codex 代码审查",
             "link": "/mirror/codex/integrations/github"
           },
           {
-            "text": "Use Codex in Linear",
+            "text": "在 Linear 中使用 Codex",
             "link": "/mirror/codex/integrations/linear"
           },
           {
-            "text": "Use Codex in Slack",
+            "text": "在 Slack 中使用 Codex",
             "link": "/mirror/codex/integrations/slack"
           }
         ]
@@ -1603,7 +1603,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Best practices",
+            "text": "最佳实践",
             "link": "/mirror/codex/learn/best-practices"
           }
         ]
@@ -1637,7 +1637,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Codex Models",
+            "text": "Codex 模型",
             "link": "/mirror/codex/models"
           }
         ]
@@ -1647,7 +1647,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Non-interactive mode",
+            "text": "非交互模式",
             "link": "/mirror/codex/noninteractive"
           }
         ]
@@ -1677,7 +1677,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Permissions",
+            "text": "权限",
             "link": "/mirror/codex/permissions"
           }
         ]
@@ -1687,7 +1687,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Build plugins",
+            "text": "构建 plugins",
             "link": "/mirror/codex/plugins/build"
           },
           {
@@ -1701,7 +1701,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Codex Pricing",
+            "text": "Codex 定价",
             "link": "/mirror/codex/pricing"
           }
         ]
@@ -1721,7 +1721,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Quickstart",
+            "text": "快速开始",
             "link": "/mirror/codex/quickstart"
           }
         ]
@@ -1731,7 +1731,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Record & Replay",
+            "text": "录制与回放",
             "link": "/mirror/codex/record-and-replay"
           }
         ]
@@ -1741,7 +1741,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Remote connections",
+            "text": "远程连接",
             "link": "/mirror/codex/remote-connections"
           }
         ]
@@ -1787,7 +1787,7 @@
             "link": "/mirror/codex/security/setup"
           },
           {
-            "text": "Export and track security findings",
+            "text": "导出并跟踪安全发现项",
             "link": "/mirror/codex/security/plugin/export-findings"
           },
           {
@@ -1795,27 +1795,27 @@
             "link": "/mirror/codex/security/faq"
           },
           {
-            "text": "Fix and verify security findings",
+            "text": "修复并验证安全发现项",
             "link": "/mirror/codex/security/plugin/fix-findings"
           },
           {
-            "text": "Improving the threat model",
+            "text": "改进 threat model",
             "link": "/mirror/codex/security/threat-model"
           },
           {
-            "text": "Review code changes for security",
+            "text": "审查代码变更的安全性",
             "link": "/mirror/codex/security/plugin/code-changes"
           },
           {
-            "text": "Run a Codex Security scan",
+            "text": "运行 Codex Security 扫描",
             "link": "/mirror/codex/security/plugin/scans"
           },
           {
-            "text": "Run a deep security scan",
+            "text": "运行深度安全扫描",
             "link": "/mirror/codex/security/plugin/deep-scans"
           },
           {
-            "text": "Triage a backlog",
+            "text": "分流 backlog",
             "link": "/mirror/codex/security/plugin/triage-backlog"
           }
         ]
@@ -1845,7 +1845,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Speed",
+            "text": "速度",
             "link": "/mirror/codex/speed"
           }
         ]
@@ -1865,7 +1865,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Videos",
+            "text": "视频",
             "link": "/mirror/codex/videos"
           }
         ]
@@ -1885,7 +1885,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Workflows",
+            "text": "工作流",
             "link": "/mirror/codex/workflows"
           }
         ]
@@ -1895,7 +1895,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Codex manual (Markdown)",
+            "text": "web_search = \"disabled\"",
             "link": "/mirror/codex/codex-manual"
           }
         ]
@@ -1911,7 +1911,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Agentic commerce in production",
+            "text": "生产环境中的 Agentic commerce",
             "link": "/mirror/commerce/guides/production"
           },
           {
@@ -1965,15 +1965,15 @@
             "link": "/mirror/commerce/specs/spec"
           },
           {
-            "text": "Products",
+            "text": "商品",
             "link": "/mirror/commerce/specs/api/products"
           },
           {
-            "text": "Products",
+            "text": "商品",
             "link": "/mirror/commerce/specs/file-upload/products"
           },
           {
-            "text": "Promotions",
+            "text": "促销",
             "link": "/mirror/commerce/specs/api/promotions"
           }
         ]
@@ -1989,7 +1989,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Actions in ChatKit",
+            "text": "ChatKit 中的操作",
             "link": "/mirror/api/docs/guides/chatkit-actions"
           },
           {
@@ -1997,11 +1997,11 @@
             "link": "/mirror/api/docs/guides/admin-apis"
           },
           {
-            "text": "Advanced integrations with ChatKit",
+            "text": "ChatKit 高级集成",
             "link": "/mirror/api/docs/guides/custom-chatkit"
           },
           {
-            "text": "Advanced usage",
+            "text": "高级用法",
             "link": "/mirror/api/docs/guides/advanced-usage"
           },
           {
@@ -2009,7 +2009,7 @@
             "link": "/mirror/api/docs/guides/agent-builder"
           },
           {
-            "text": "Agent definitions",
+            "text": "Agent 定义",
             "link": "/mirror/api/docs/guides/agents/define-agents"
           },
           {
@@ -2017,7 +2017,7 @@
             "link": "/mirror/api/docs/guides/agents"
           },
           {
-            "text": "API deployment checklist",
+            "text": "API 部署检查清单",
             "link": "/mirror/api/docs/guides/deployment-checklist"
           },
           {
@@ -2025,11 +2025,11 @@
             "link": "/mirror/api/docs/guides/tools-apply-patch"
           },
           {
-            "text": "Assistants API deep dive",
+            "text": "Assistants API 深入指南",
             "link": "/mirror/api/docs/assistants/deep-dive"
           },
           {
-            "text": "Assistants API tools",
+            "text": "Assistants API 工具",
             "link": "/mirror/api/docs/assistants/tools"
           },
           {
@@ -2045,11 +2045,11 @@
             "link": "/mirror/api/docs/assistants/tools/function-calling"
           },
           {
-            "text": "Assistants migration guide",
+            "text": "Assistants 迁移指南",
             "link": "/mirror/api/docs/assistants/migration"
           },
           {
-            "text": "Audio and speech",
+            "text": "音频与语音",
             "link": "/mirror/api/docs/guides/audio"
           },
           {
@@ -2061,7 +2061,7 @@
             "link": "/mirror/api/docs/guides/batch"
           },
           {
-            "text": "Building MCP servers for ChatGPT Apps and API integrations",
+            "text": "为 ChatGPT Apps 和 API 集成构建 MCP server",
             "link": "/mirror/api/docs/mcp"
           },
           {
@@ -2077,11 +2077,11 @@
             "link": "/mirror/api/docs/guides/chatkit-widgets"
           },
           {
-            "text": "Citation Formatting",
+            "text": "引用格式化",
             "link": "/mirror/api/docs/guides/citation-formatting"
           },
           {
-            "text": "Code generation",
+            "text": "代码生成",
             "link": "/mirror/api/docs/guides/code-generation"
           },
           {
@@ -2089,7 +2089,7 @@
             "link": "/mirror/api/docs/guides/tools-code-interpreter"
           },
           {
-            "text": "Compaction",
+            "text": "Compaction（压缩）",
             "link": "/mirror/api/docs/guides/compaction"
           },
           {
@@ -2101,63 +2101,63 @@
             "link": "/mirror/api/docs/guides/tools-computer-use"
           },
           {
-            "text": "Configuring workload identity federation for AWS",
+            "text": "为 AWS 配置工作负载身份联合",
             "link": "/mirror/api/docs/guides/workload-identity-federation/aws"
           },
           {
-            "text": "Configuring workload identity federation for GitHub Actions",
+            "text": "为 GitHub Actions 配置工作负载身份联合",
             "link": "/mirror/api/docs/guides/workload-identity-federation/github-actions"
           },
           {
-            "text": "Configuring workload identity federation for Google Cloud",
+            "text": "为 Google Cloud 配置 workload identity federation",
             "link": "/mirror/api/docs/guides/workload-identity-federation/google-cloud"
           },
           {
-            "text": "Configuring workload identity federation for Kubernetes",
+            "text": "为 Kubernetes 配置 workload identity federation",
             "link": "/mirror/api/docs/guides/workload-identity-federation/kubernetes"
           },
           {
-            "text": "Configuring workload identity federation for Microsoft Azure",
+            "text": "为 Microsoft Azure 配置工作负载身份联合",
             "link": "/mirror/api/docs/guides/workload-identity-federation/microsoft-azure"
           },
           {
-            "text": "Configuring workload identity federation for SPIFFE",
+            "text": "为 SPIFFE 配置工作负载身份联合",
             "link": "/mirror/api/docs/guides/workload-identity-federation/spiffe"
           },
           {
-            "text": "Conversation state",
+            "text": "对话状态",
             "link": "/mirror/api/docs/guides/conversation-state"
           },
           {
-            "text": "Cost optimization",
+            "text": "成本优化",
             "link": "/mirror/api/docs/guides/cost-optimization"
           },
           {
-            "text": "Counting tokens",
+            "text": "统计 token",
             "link": "/mirror/api/docs/guides/token-counting"
           },
           {
-            "text": "Cybersecurity checks",
+            "text": "网络安全检查",
             "link": "/mirror/api/docs/guides/safety-checks/cybersecurity"
           },
           {
-            "text": "Data controls in the OpenAI platform",
+            "text": "OpenAI 平台中的数据控制",
             "link": "/mirror/api/docs/guides/your-data"
           },
           {
-            "text": "Data retrieval with GPT Actions",
+            "text": "使用 GPT Actions 进行数据检索",
             "link": "/mirror/api/docs/actions/data-retrieval"
           },
           {
-            "text": "Deep research",
+            "text": "深度研究",
             "link": "/mirror/api/docs/guides/deep-research"
           },
           {
-            "text": "Deprecations",
+            "text": "弃用",
             "link": "/mirror/api/docs/deprecations"
           },
           {
-            "text": "Developer quickstart",
+            "text": "开发者快速入门",
             "link": "/mirror/api/docs/quickstart"
           },
           {
@@ -2169,11 +2169,11 @@
             "link": "/mirror/api/docs/guides/error-codes"
           },
           {
-            "text": "Evaluate agent workflows",
+            "text": "评估 agent 工作流",
             "link": "/mirror/api/docs/guides/agent-evals"
           },
           {
-            "text": "Evaluate external models",
+            "text": "评估 external model",
             "link": "/mirror/api/docs/guides/external-models"
           },
           {
@@ -2181,15 +2181,15 @@
             "link": "/mirror/api/docs/guides/evaluation-best-practices"
           },
           {
-            "text": "File inputs",
+            "text": "文件输入",
             "link": "/mirror/api/docs/guides/file-inputs"
           },
           {
-            "text": "File search",
+            "text": "File Search",
             "link": "/mirror/api/docs/guides/tools-file-search"
           },
           {
-            "text": "Fine-tuning best practices",
+            "text": "Fine-tuning 最佳实践",
             "link": "/mirror/api/docs/guides/fine-tuning-best-practices"
           },
           {
@@ -2197,7 +2197,7 @@
             "link": "/mirror/api/docs/guides/flex-processing"
           },
           {
-            "text": "Frontend prompt instructions",
+            "text": "Frontend prompt 指令",
             "link": "/mirror/api/docs/guides/frontend-prompt"
           },
           {
@@ -2205,11 +2205,11 @@
             "link": "/mirror/api/docs/guides/function-calling"
           },
           {
-            "text": "Getting started with datasets",
+            "text": "数据集入门",
             "link": "/mirror/api/docs/guides/evaluation-getting-started"
           },
           {
-            "text": "Getting started with GPT Actions",
+            "text": "GPT Actions 入门",
             "link": "/mirror/api/docs/actions/getting-started"
           },
           {
@@ -2225,7 +2225,7 @@
             "link": "/mirror/api/docs/actions/actions-library"
           },
           {
-            "text": "GPT Release Notes",
+            "text": "GPT 发布说明",
             "link": "/mirror/api/docs/gpts/release-notes"
           },
           {
@@ -2233,7 +2233,7 @@
             "link": "/mirror/api/docs/guides/graders"
           },
           {
-            "text": "Guardrails and human review",
+            "text": "Guardrails 和人工审核",
             "link": "/mirror/api/docs/guides/agents/guardrails-approvals"
           },
           {
@@ -2241,27 +2241,27 @@
             "link": "/mirror/api/docs/guides/image-generation"
           },
           {
-            "text": "Image generation",
+            "text": "图像生成",
             "link": "/mirror/api/docs/guides/tools-image-generation"
           },
           {
-            "text": "Images and vision",
+            "text": "图像与视觉",
             "link": "/mirror/api/docs/guides/images-vision"
           },
           {
-            "text": "Integrations and observability",
+            "text": "集成与可观测性",
             "link": "/mirror/api/docs/guides/agents/integrations-observability"
           },
           {
-            "text": "IP egress ranges",
+            "text": "IP 出站范围",
             "link": "/mirror/api/docs/guides/ip-addresses"
           },
           {
-            "text": "Key concepts",
+            "text": "核心概念",
             "link": "/mirror/api/docs/concepts"
           },
           {
-            "text": "Latency optimization",
+            "text": "延迟优化",
             "link": "/mirror/api/docs/guides/latency-optimization"
           },
           {
@@ -2269,43 +2269,43 @@
             "link": "/mirror/api/docs/guides/tools-local-shell"
           },
           {
-            "text": "Manage permissions in the OpenAI platform",
+            "text": "在 OpenAI 平台中管理权限",
             "link": "/mirror/api/docs/guides/rbac"
           },
           {
-            "text": "Managing costs",
+            "text": "管理成本",
             "link": "/mirror/api/docs/guides/realtime-costs"
           },
           {
-            "text": "MCP and Connectors",
+            "text": "MCP 和 Connectors",
             "link": "/mirror/api/docs/guides/tools-connectors-mcp"
           },
           {
-            "text": "Meeting minutes",
+            "text": "会议纪要",
             "link": "/mirror/api/docs/tutorials/meeting-minutes"
           },
           {
-            "text": "Migrate from Agent Builder",
+            "text": "从 Agent Builder 迁移",
             "link": "/mirror/api/docs/guides/agent-builder/migrate-from-agent-builder"
           },
           {
-            "text": "Migrate from prompt objects",
+            "text": "从 prompt objects 迁移",
             "link": "/mirror/api/docs/guides/prompting/migrate-from-prompt-object"
           },
           {
-            "text": "Migrate to the Responses API",
+            "text": "迁移到 Responses API",
             "link": "/mirror/api/docs/guides/migrate-to-responses"
           },
           {
-            "text": "Model optimization",
+            "text": "模型优化",
             "link": "/mirror/api/docs/guides/model-optimization"
           },
           {
-            "text": "Model selection",
+            "text": "模型选择",
             "link": "/mirror/api/docs/guides/model-selection"
           },
           {
-            "text": "Models and providers",
+            "text": "Models 和 providers",
             "link": "/mirror/api/docs/guides/agents/models"
           },
           {
@@ -2321,19 +2321,19 @@
             "link": "/mirror/api/docs/libraries/openai-cli"
           },
           {
-            "text": "OpenAI models in Amazon Bedrock",
+            "text": "Amazon Bedrock 中的 OpenAI 模型",
             "link": "/mirror/api/docs/guides/amazon-bedrock"
           },
           {
-            "text": "Optimizing LLM Accuracy",
+            "text": "优化 LLM 准确率",
             "link": "/mirror/api/docs/guides/optimizing-llm-accuracy"
           },
           {
-            "text": "Orchestration and handoffs",
+            "text": "Orchestration 与 handoffs",
             "link": "/mirror/api/docs/guides/agents/orchestration"
           },
           {
-            "text": "Overview of OpenAI Crawlers",
+            "text": "OpenAI Crawlers 概览",
             "link": "/mirror/api/docs/bots"
           },
           {
@@ -2341,7 +2341,7 @@
             "link": "/mirror/api/docs/guides/predicted-outputs"
           },
           {
-            "text": "Pricing",
+            "text": "定价",
             "link": "/mirror/api/docs/pricing"
           },
           {
@@ -2349,11 +2349,11 @@
             "link": "/mirror/api/docs/guides/priority-processing"
           },
           {
-            "text": "Production best practices",
+            "text": "生产最佳实践",
             "link": "/mirror/api/docs/guides/production-best-practices"
           },
           {
-            "text": "Production notes on GPT Actions",
+            "text": "GPT Actions 的生产说明",
             "link": "/mirror/api/docs/actions/production"
           },
           {
@@ -2365,63 +2365,63 @@
             "link": "/mirror/api/docs/guides/prompt-engineering"
           },
           {
-            "text": "Prompt generation",
+            "text": "提示词生成",
             "link": "/mirror/api/docs/guides/prompt-generation"
           },
           {
-            "text": "Prompt guidance",
+            "text": "GPT-5.5 提示词指南",
             "link": "/mirror/api/docs/guides/prompt-guidance"
           },
           {
-            "text": "Prompt optimizer",
+            "text": "提示词优化器",
             "link": "/mirror/api/docs/guides/prompt-optimizer"
           },
           {
-            "text": "Prompting",
+            "text": "提示词",
             "link": "/mirror/api/docs/guides/prompting"
           },
           {
-            "text": "Quickstart",
+            "text": "快速入门",
             "link": "/mirror/api/docs/guides/agents/quickstart"
           },
           {
-            "text": "Rate limits",
+            "text": "速率限制",
             "link": "/mirror/api/docs/guides/rate-limits"
           },
           {
-            "text": "Realtime and audio",
+            "text": "Realtime 和音频",
             "link": "/mirror/api/docs/guides/realtime"
           },
           {
-            "text": "Realtime API with SIP",
+            "text": "使用 SIP 的 Realtime API",
             "link": "/mirror/api/docs/guides/realtime-sip"
           },
           {
-            "text": "Realtime API with WebRTC",
+            "text": "使用 WebRTC 的 Realtime API",
             "link": "/mirror/api/docs/guides/realtime-webrtc"
           },
           {
-            "text": "Realtime API with WebSocket",
+            "text": "使用 WebSocket 的 Realtime API",
             "link": "/mirror/api/docs/guides/realtime-websocket"
           },
           {
-            "text": "Realtime conversations",
+            "text": "Realtime 对话",
             "link": "/mirror/api/docs/guides/realtime-conversations"
           },
           {
-            "text": "Realtime transcription",
+            "text": "Realtime 转录",
             "link": "/mirror/api/docs/guides/realtime-transcription"
           },
           {
-            "text": "Realtime translation",
+            "text": "Realtime 翻译",
             "link": "/mirror/api/docs/guides/realtime-translation"
           },
           {
-            "text": "Realtime with tools",
+            "text": "Realtime 与工具",
             "link": "/mirror/api/docs/guides/realtime-mcp"
           },
           {
-            "text": "Reasoning best practices",
+            "text": "Reasoning 最佳实践",
             "link": "/mirror/api/docs/guides/reasoning-best-practices"
           },
           {
@@ -2437,11 +2437,11 @@
             "link": "/mirror/api/docs/guides/reinforcement-fine-tuning"
           },
           {
-            "text": "Reinforcement fine-tuning use cases",
+            "text": "Reinforcement fine-tuning 使用场景",
             "link": "/mirror/api/docs/guides/rft-use-cases"
           },
           {
-            "text": "Results and state",
+            "text": "结果和状态",
             "link": "/mirror/api/docs/guides/agents/results"
           },
           {
@@ -2449,11 +2449,11 @@
             "link": "/mirror/api/docs/guides/retrieval"
           },
           {
-            "text": "Running agents",
+            "text": "运行 agents",
             "link": "/mirror/api/docs/guides/agents/running-agents"
           },
           {
-            "text": "Safety best practices",
+            "text": "安全最佳实践",
             "link": "/mirror/api/docs/guides/safety-best-practices"
           },
           {
@@ -2461,7 +2461,7 @@
             "link": "/mirror/api/docs/guides/safety-checks"
           },
           {
-            "text": "Safety in building agents",
+            "text": "构建 agents 时的安全",
             "link": "/mirror/api/docs/guides/agent-builder-safety"
           },
           {
@@ -2469,7 +2469,7 @@
             "link": "/mirror/api/docs/guides/agents/sandboxes"
           },
           {
-            "text": "SDKs and CLI",
+            "text": "SDKs 和 CLI",
             "link": "/mirror/api/docs/libraries"
           },
           {
@@ -2477,7 +2477,7 @@
             "link": "/mirror/api/docs/guides/secure-mcp-tunnels"
           },
           {
-            "text": "Sending and returning files with GPT Actions",
+            "text": "使用 GPT Actions 发送和返回文件",
             "link": "/mirror/api/docs/actions/sending-files"
           },
           {
@@ -2489,35 +2489,35 @@
             "link": "/mirror/api/docs/guides/tools-skills"
           },
           {
-            "text": "Speech to text",
+            "text": "语音转文本",
             "link": "/mirror/api/docs/guides/speech-to-text"
           },
           {
-            "text": "Streaming API responses",
+            "text": "流式传输 API 响应",
             "link": "/mirror/api/docs/guides/streaming-responses"
           },
           {
-            "text": "Structured model outputs",
+            "text": "结构化模型输出",
             "link": "/mirror/api/docs/guides/structured-outputs"
           },
           {
-            "text": "Supervised fine-tuning",
+            "text": "监督式微调",
             "link": "/mirror/api/docs/guides/supervised-fine-tuning"
           },
           {
-            "text": "Supported countries and territories",
+            "text": "支持的国家和地区",
             "link": "/mirror/api/docs/supported-countries"
           },
           {
-            "text": "Text generation",
+            "text": "文本生成",
             "link": "/mirror/api/docs/guides/text"
           },
           {
-            "text": "Text to speech",
+            "text": "文本转语音",
             "link": "/mirror/api/docs/guides/text-to-speech"
           },
           {
-            "text": "Theming and customization in ChatKit",
+            "text": "ChatKit 中的主题和自定义",
             "link": "/mirror/api/docs/guides/chatkit-themes"
           },
           {
@@ -2529,39 +2529,39 @@
             "link": "/mirror/api/docs/guides/trace-grading"
           },
           {
-            "text": "UI Kit Demo",
+            "text": "UI Kit 演示",
             "link": "/mirror/api/docs/ui-kit-demo"
           },
           {
-            "text": "Under 18 API Guidance",
+            "text": "未满 18 岁 API 指引",
             "link": "/mirror/api/docs/guides/safety-checks/under-18-api-guidance"
           },
           {
-            "text": "Upgrading to GPT-5.4",
+            "text": "升级到 GPT-5.4",
             "link": "/mirror/api/docs/guides/upgrading-to-gpt-5p4"
           },
           {
-            "text": "Upgrading to GPT-5.5",
+            "text": "升级到 GPT-5.5",
             "link": "/mirror/api/docs/guides/upgrading-to-gpt-5p5"
           },
           {
-            "text": "Using GPT-5.5",
+            "text": "使用 GPT-5.5",
             "link": "/mirror/api/docs/guides/latest-model"
           },
           {
-            "text": "Using realtime models",
+            "text": "使用 realtime 模型",
             "link": "/mirror/api/docs/guides/realtime-models-prompting"
           },
           {
-            "text": "Using tools",
+            "text": "使用工具",
             "link": "/mirror/api/docs/guides/tools"
           },
           {
-            "text": "Vector embeddings",
+            "text": "向量 embeddings",
             "link": "/mirror/api/docs/guides/embeddings"
           },
           {
-            "text": "Video generation with Sora",
+            "text": "使用 Sora 生成视频",
             "link": "/mirror/api/docs/guides/video-generation"
           },
           {
@@ -2569,15 +2569,15 @@
             "link": "/mirror/api/docs/guides/vision-fine-tuning"
           },
           {
-            "text": "Voice activity detection (VAD)",
+            "text": "语音活动检测（VAD）",
             "link": "/mirror/api/docs/guides/realtime-vad"
           },
           {
-            "text": "Voice agents",
+            "text": "语音 agents",
             "link": "/mirror/api/docs/guides/voice-agents"
           },
           {
-            "text": "Web QA with embeddings",
+            "text": "使用 embeddings 进行网页问答",
             "link": "/mirror/api/docs/tutorials/web-qa-embeddings"
           },
           {
@@ -2589,15 +2589,15 @@
             "link": "/mirror/api/docs/guides/webhooks"
           },
           {
-            "text": "Webhooks and server-side controls",
+            "text": "Webhooks 和服务端控制",
             "link": "/mirror/api/docs/guides/realtime-server-controls"
           },
           {
-            "text": "WebSocket Mode",
+            "text": "WebSocket 模式",
             "link": "/mirror/api/docs/guides/websocket-mode"
           },
           {
-            "text": "Working with evals",
+            "text": "使用 evals",
             "link": "/mirror/api/docs/guides/evals"
           },
           {
@@ -2617,7 +2617,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Authenticate with Workspace Agent access tokens",
+            "text": "使用 Workspace Agent access tokens 进行认证",
             "link": "/mirror/workspace-agents/authentication"
           }
         ]
@@ -2627,7 +2627,7 @@
         "collapsed": true,
         "items": [
           {
-            "text": "Trigger workspace agent runs",
+            "text": "触发 workspace agent runs",
             "link": "/mirror/workspace-agents/trigger-runs"
           }
         ]

@@ -1,10 +1,10 @@
 ---
-title: "Permissions"
+title: "权限"
 description: "Configure beta Codex permission profiles for filesystem and network access"
 outline: deep
 ---
 
-# Permissions
+# 权限
 
 **文档集**：Codex  
 **分组**：Codex — Permissions  

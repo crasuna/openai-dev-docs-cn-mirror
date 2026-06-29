@@ -1,10 +1,10 @@
 ---
-title: "Optimizing LLM Accuracy"
+title: "优化 LLM 准确率"
 description: "Learn strategies to enhance the accuracy of large language models using techniques like prompt engineering, retrieval-augmented generation, and fine-tuning."
 outline: deep
 ---
 
-# Optimizing LLM Accuracy
+# 优化 LLM 准确率
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

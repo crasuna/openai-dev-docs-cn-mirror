@@ -1,10 +1,10 @@
 ---
-title: "Responses — Delete"
+title: "Responses — 删除"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Responses — Delete
+# Responses — 删除
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

@@ -1,10 +1,10 @@
 ---
-title: "Design components"
+title: "设计 Components"
 description: "Plan and design UI components that users can interact with."
 outline: deep
 ---
 
-# Design components
+# 设计 Components
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Plan  

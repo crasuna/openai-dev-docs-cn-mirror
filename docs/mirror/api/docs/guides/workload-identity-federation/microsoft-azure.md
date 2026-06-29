@@ -1,10 +1,10 @@
 ---
-title: "Configuring workload identity federation for Microsoft Azure"
+title: "为 Microsoft Azure 配置工作负载身份联合"
 description: "Configure Azure managed identity or AKS as a workload identity federation token provider."
 outline: deep
 ---
 
-# Configuring workload identity federation for Microsoft Azure
+# 为 Microsoft Azure 配置工作负载身份联合
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

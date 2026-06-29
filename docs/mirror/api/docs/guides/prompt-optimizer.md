@@ -1,10 +1,10 @@
 ---
-title: "Prompt optimizer"
+title: "提示词优化器"
 description: "Learn how to use your dataset to automatically improve your prompts."
 outline: deep
 ---
 
-# Prompt optimizer
+# 提示词优化器
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

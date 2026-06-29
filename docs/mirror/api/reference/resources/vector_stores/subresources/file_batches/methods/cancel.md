@@ -1,10 +1,10 @@
 ---
-title: "Vector Stores File Batches — Cancel"
+title: "向量存储文件批次 — 取消"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Vector Stores File Batches — Cancel
+# 向量存储文件批次 — 取消
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

@@ -1,10 +1,10 @@
 ---
-title: "Supervised fine-tuning"
+title: "监督式微调"
 description: "Fine-tune models with example inputs and known good outputs for better results and efficiency."
 outline: deep
 ---
 
-# Supervised fine-tuning
+# 监督式微调
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

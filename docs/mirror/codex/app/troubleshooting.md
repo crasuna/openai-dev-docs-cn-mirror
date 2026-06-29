@@ -1,10 +1,10 @@
 ---
-title: "Troubleshooting"
+title: "故障排除"
 description: "FAQ and fixes for common Codex app issues"
 outline: deep
 ---
 
-# Troubleshooting
+# 故障排除
 
 **文档集**：Codex  
 **分组**：Codex — App  

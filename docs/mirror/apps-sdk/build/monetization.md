@@ -1,10 +1,10 @@
 ---
-title: "Monetization"
+title: "商业化"
 description: "Monetize your ChatGPT app."
 outline: deep
 ---
 
-# Monetization
+# 商业化
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Build  

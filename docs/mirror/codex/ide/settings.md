@@ -1,10 +1,10 @@
 ---
-title: "Codex IDE extension settings"
+title: "Codex IDE extension 设置"
 description: "Reference for Codex IDE extension settings"
 outline: deep
 ---
 
-# Codex IDE extension settings
+# Codex IDE extension 设置
 
 **文档集**：Codex  
 **分组**：Codex — Ide  

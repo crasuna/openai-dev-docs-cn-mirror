@@ -1,10 +1,10 @@
 ---
-title: "Agent approvals & security"
+title: "Agent approvals 与安全"
 description: "How to securely operate Codex with sandboxing, approvals, and network controls"
 outline: deep
 ---
 
-# Agent approvals & security
+# Agent approvals 与安全
 
 **文档集**：Codex  
 **分组**：Codex — Agent Approvals Security  

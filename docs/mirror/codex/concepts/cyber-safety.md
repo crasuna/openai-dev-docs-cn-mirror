@@ -1,10 +1,10 @@
 ---
-title: "Cyber Safety"
+title: "网络安全"
 description: "Cybersecurity safeguards and trusted access for Codex users"
 outline: deep
 ---
 
-# Cyber Safety
+# 网络安全
 
 **文档集**：Codex  
 **分组**：Codex — Concepts  

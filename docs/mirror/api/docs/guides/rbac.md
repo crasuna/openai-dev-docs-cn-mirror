@@ -1,10 +1,10 @@
 ---
-title: "Manage permissions in the OpenAI platform"
+title: "在 OpenAI 平台中管理权限"
 description: "Learn how to use role-based access control to assign permissions, create custom roles, group users, and scope access across both the OpenAI API and dashboard."
 outline: deep
 ---
 
-# Manage permissions in the OpenAI platform
+# 在 OpenAI 平台中管理权限
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

@@ -1,10 +1,10 @@
 ---
-title: "Voice activity detection (VAD)"
+title: "语音活动检测（VAD）"
 description: "Learn about automatic voice activity detection in the Realtime API."
 outline: deep
 ---
 
-# Voice activity detection (VAD)
+# 语音活动检测（VAD）
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

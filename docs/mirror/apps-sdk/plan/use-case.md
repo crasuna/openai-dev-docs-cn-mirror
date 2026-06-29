@@ -1,10 +1,10 @@
 ---
-title: "Research use cases"
+title: "研究 Use Cases"
 description: "Identify and prioritize Apps SDK use cases."
 outline: deep
 ---
 
-# Research use cases
+# 研究 Use Cases
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Plan  

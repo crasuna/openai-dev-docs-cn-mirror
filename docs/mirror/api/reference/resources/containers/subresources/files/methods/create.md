@@ -1,10 +1,10 @@
 ---
-title: "Containers Files — Create"
+title: "Containers Files — 创建"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Containers Files — Create
+# Containers Files — 创建
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

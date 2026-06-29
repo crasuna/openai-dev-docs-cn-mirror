@@ -1,10 +1,10 @@
 ---
-title: "Streaming API responses"
+title: "流式传输 API 响应"
 description: "Learn how to stream model responses from the OpenAI API using server-sent events."
 outline: deep
 ---
 
-# Streaming API responses
+# 流式传输 API 响应
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

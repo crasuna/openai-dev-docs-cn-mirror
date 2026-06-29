@@ -1,10 +1,10 @@
 ---
-title: "Configuring workload identity federation for AWS"
+title: "为 AWS 配置工作负载身份联合"
 description: "Configure AWS outbound identity federation or Amazon EKS as a workload identity federation token provider."
 outline: deep
 ---
 
-# Configuring workload identity federation for AWS
+# 为 AWS 配置工作负载身份联合
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

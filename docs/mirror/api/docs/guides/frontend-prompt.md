@@ -1,10 +1,10 @@
 ---
-title: "Frontend prompt instructions"
+title: "Frontend prompt 指令"
 description: "Example prompt instructions for frontend work, written for GPT-5.5."
 outline: deep
 ---
 
-# Frontend prompt instructions
+# Frontend prompt 指令
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

@@ -1,10 +1,10 @@
 ---
-title: "Realtime Calls — Refer"
+title: "Realtime Calls — 转接"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Realtime Calls — Refer
+# Realtime Calls — 转接
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

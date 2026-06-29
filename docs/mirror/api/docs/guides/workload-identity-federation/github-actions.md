@@ -1,10 +1,10 @@
 ---
-title: "Configuring workload identity federation for GitHub Actions"
+title: "为 GitHub Actions 配置工作负载身份联合"
 description: "Configure GitHub Actions as a workload identity federation token provider."
 outline: deep
 ---
 
-# Configuring workload identity federation for GitHub Actions
+# 为 GitHub Actions 配置工作负载身份联合
 
 **文档集**：OpenAI API Docs  
 **分组**：OpenAI API — Docs  

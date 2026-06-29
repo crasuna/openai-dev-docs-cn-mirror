@@ -1,10 +1,10 @@
 ---
-title: "Deploy your app"
+title: "部署你的应用"
 description: "Learn how to deploy your MCP server"
 outline: deep
 ---
 
-# Deploy your app
+# 部署你的应用
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Deploy  

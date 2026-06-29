@@ -1,10 +1,10 @@
 ---
-title: "Glossary"
+title: "术语表"
 description: "Definitions for common Codex terms and concepts"
 outline: deep
 ---
 
-# Glossary
+# 术语表
 
 **文档集**：Codex  
 **分组**：Codex — Glossary  

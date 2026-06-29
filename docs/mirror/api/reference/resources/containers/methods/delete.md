@@ -1,10 +1,10 @@
 ---
-title: "Containers — Delete"
+title: "Containers — 删除"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Containers — Delete
+# Containers — 删除
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

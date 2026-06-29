@@ -1,10 +1,10 @@
 ---
-title: "Build your ChatGPT UI"
+title: "构建你的 ChatGPT UI"
 description: "Build custom UI components for your ChatGPT app."
 outline: deep
 ---
 
-# Build your ChatGPT UI
+# 构建你的 ChatGPT UI
 
 **文档集**：Apps SDK  
 **分组**：Apps SDK — Build  

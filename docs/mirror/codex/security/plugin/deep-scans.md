@@ -1,10 +1,10 @@
 ---
-title: "Run a deep security scan"
+title: "运行深度安全扫描"
 description: "Run a slower, more thorough review of a repository or scoped folder."
 outline: deep
 ---
 
-# Run a deep security scan
+# 运行深度安全扫描
 
 **文档集**：Codex  
 **分组**：Codex — Security  

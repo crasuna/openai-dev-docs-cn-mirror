@@ -1,10 +1,10 @@
 ---
-title: "Projects Roles — Update"
+title: "项目角色 — 更新"
 description: "OpenAI API endpoint method reference."
 outline: deep
 ---
 
-# Projects Roles — Update
+# 项目角色 — 更新
 
 **文档集**：API Reference  
 **分组**：OpenAI API — Reference  

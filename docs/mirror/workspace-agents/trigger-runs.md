@@ -1,10 +1,10 @@
 ---
-title: "Trigger workspace agent runs"
+title: "触发 workspace agent runs"
 description: "Kick off ChatGPT workspace agents from backend systems or automations."
 outline: deep
 ---
 
-# Trigger workspace agent runs
+# 触发 workspace agent runs
 
 **文档集**：Workspace Agents  
 **分组**：Workspace Agents — Trigger Runs  

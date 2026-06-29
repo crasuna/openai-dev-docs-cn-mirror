@@ -1,10 +1,10 @@
 ---
-title: "Triage a backlog"
+title: "分流 backlog"
 description: "Review existing security findings against a repository and order follow-up work."
 outline: deep
 ---
 
-# Triage a backlog
+# 分流 backlog
 
 **文档集**：Codex  
 **分组**：Codex — Security  
