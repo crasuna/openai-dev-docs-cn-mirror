@@ -131,6 +131,8 @@ pnpm translate:plan -- --include-needs-review
 
 其中 `reports/translation-plan.md` 和 `reports/translation-queue.json` 是按需生成的本地翻译队列；`reports/dev-server*` 和 `reports/dev-server/` 是本地开发服务器日志；`reports/codex-manual-chunks/` 是大文档分块翻译中间产物。最终译文应进入 `translations/zh/**`，生成页面应进入 `docs/**`。
 
+`reports/update-report.md` 中的 `Asset warnings` 表示待排查的新资源抓取问题；`Known upstream asset warnings` 表示已确认的官方上游资源不一致。对 known upstream 项，默认保留官方 Markdown 原文，不手改 `sources/en/**`，也不伪造本地替代图片。后续同步时应关注 known warning 是否自然消失，以及是否出现新的普通 asset warning。
+
 推荐检查方式：
 
 ```powershell

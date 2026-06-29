@@ -26,6 +26,8 @@ import {
   writeJsonFile,
   writeTextFile
 } from "./lib.js";
+import { getKnownUpstreamAssetWarning } from "./known-upstream-asset-warnings.js";
+import type { KnownUpstreamAssetWarning } from "./known-upstream-asset-warnings.js";
 import type { DiscoveredDoc, DocEntry, Manifest } from "./types.js";
 
 const execFileAsync = promisify(execFile);
@@ -48,7 +50,13 @@ interface FetchResult {
   doc: DocEntry;
   changed: boolean;
   previousChecksum?: string;
-  assetFailures: string[];
+  assetFailures: AssetFailure[];
+}
+
+interface AssetFailure {
+  url: string;
+  message: string;
+  knownUpstream?: KnownUpstreamAssetWarning;
 }
 
 const args = parseArgs(process.argv.slice(2));
@@ -77,8 +85,12 @@ await writeReport(results, previousManifest, discovered.length, filtered.length)
 
 const changed = results.filter((result) => result.changed).length;
 const assetFailures = results.flatMap((result) => result.assetFailures);
+const knownUpstreamAssetFailures = assetFailures.filter(isKnownUpstreamAssetFailure);
+const unknownAssetFailures = assetFailures.filter((failure) => !failure.knownUpstream);
 console.log(`Wrote ${relativeFromRoot(MANIFEST_PATH)} with ${manifest.docCount} docs.`);
-console.log(`Changed docs: ${changed}; asset warnings: ${assetFailures.length}.`);
+console.log(
+  `Changed docs: ${changed}; asset warnings: ${unknownAssetFailures.length}; known upstream asset warnings: ${knownUpstreamAssetFailures.length}.`
+);
 
 function parseArgs(rawArgs: string[]): FetchArgs {
   const parsed: FetchArgs = { concurrency: 6, includeAssets: true };
@@ -187,8 +199,8 @@ async function fetchDoc(discovered: DiscoveredDoc, previous?: DocEntry): Promise
   };
 }
 
-async function cacheAssets(markdown: string, markdownUrl: string): Promise<string[]> {
-  const failures: string[] = [];
+async function cacheAssets(markdown: string, markdownUrl: string): Promise<AssetFailure[]> {
+  const failures: AssetFailure[] = [];
   const assetUrls = discoverAssetUrls(markdown, markdownUrl);
   await mapLimit(assetUrls, 4, async (assetUrl) => {
     try {
@@ -198,7 +210,11 @@ async function cacheAssets(markdown: string, markdownUrl: string): Promise<strin
       await ensureDir(path.dirname(localPath));
       await writeFile(localPath, buffer);
     } catch (error) {
-      failures.push(`${assetUrl}: ${summarizeError(error)}`);
+      failures.push({
+        url: assetUrl,
+        message: summarizeError(error),
+        knownUpstream: getKnownUpstreamAssetWarning(assetUrl)
+      });
     }
   });
   return failures;
@@ -209,6 +225,7 @@ function summarizeError(error: unknown): string {
   return message
     .replace(/\x1b\[[0-9;]*m/g, "")
     .replace(/\s+/g, " ")
+    .trim()
     .slice(0, 300);
 }
 
@@ -382,7 +399,9 @@ async function writeReport(
   const added = results.filter((result) => !previousByUrl.has(result.doc.markdownUrl));
   const updated = results.filter((result) => result.previousChecksum && result.previousChecksum !== result.doc.checksum);
   const needsReview = results.filter((result) => result.doc.translationStatus === "needs-review");
-  const assetFailures = results.flatMap((result) => result.assetFailures.map((failure) => `- ${failure}`));
+  const assetFailures = results.flatMap((result) => result.assetFailures);
+  const unknownAssetFailures = assetFailures.filter((failure) => !failure.knownUpstream).map(formatAssetFailure);
+  const knownUpstreamAssetFailures = assetFailures.filter(isKnownUpstreamAssetFailure).map(formatKnownUpstreamAssetFailure);
 
   const lines = [
     "# OpenAI Docs Update Report",
@@ -394,7 +413,8 @@ async function writeReport(
     `Added docs: ${added.length}`,
     `Updated docs: ${updated.length}`,
     `Translations needing review: ${needsReview.length}`,
-    `Asset warnings: ${assetFailures.length}`,
+    `Asset warnings: ${unknownAssetFailures.length}`,
+    `Known upstream asset warnings: ${knownUpstreamAssetFailures.length}`,
     "",
     "## Added",
     ...formatDocList(added.map((result) => result.doc)),
@@ -406,7 +426,10 @@ async function writeReport(
     ...formatDocList(needsReview.map((result) => result.doc)),
     "",
     "## Asset Warnings",
-    ...(assetFailures.length ? assetFailures : ["- None"])
+    ...(unknownAssetFailures.length ? unknownAssetFailures : ["- None"]),
+    "",
+    "## Known Upstream Asset Warnings",
+    ...(knownUpstreamAssetFailures.length ? knownUpstreamAssetFailures : ["- None"])
   ];
 
   await writeTextFile(path.join(REPORTS_DIR, "update-report.md"), lines.join("\n"));
@@ -415,4 +438,19 @@ async function writeReport(
 function formatDocList(docs: DocEntry[]): string[] {
   if (!docs.length) return ["- None"];
   return docs.map((doc) => `- ${doc.product} / ${doc.section}: [${doc.title}](${doc.sourceUrl})`);
+}
+
+function formatAssetFailure(failure: AssetFailure): string {
+  return `- ${failure.url}: ${failure.message}`;
+}
+
+function formatKnownUpstreamAssetFailure(failure: AssetFailure & { knownUpstream: KnownUpstreamAssetWarning }): string {
+  const warning = failure.knownUpstream;
+  return `- ${failure.url} (source: ${warning.sourceSlug}; first seen: ${warning.firstSeen}; last verified: ${warning.lastVerified}): ${warning.reason} Latest error: ${failure.message}`;
+}
+
+function isKnownUpstreamAssetFailure(
+  failure: AssetFailure
+): failure is AssetFailure & { knownUpstream: KnownUpstreamAssetWarning } {
+  return Boolean(failure.knownUpstream);
 }
